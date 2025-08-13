@@ -285,9 +285,9 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
 
             // Conservative variables
             cur.h_rho[local_sd_index] = U_rho;
-            cur.h_E[local_sd_index] = U_p;
-            cur.h_u[local_sd_index] = U_ux;
-            cur.h_v[local_sd_index] = U_uy;
+            cur.h_E[local_sd_index]   = U_p;
+            cur.h_u[local_sd_index]   = U_ux;
+            cur.h_v[local_sd_index]   = U_uy;
 
             // Compute first Dt
             // Primitive variables
@@ -344,31 +344,31 @@ static void update_bound(const sub_domain &from, sub_domain &to, const size_t in
 // }
 
 // Y boundaries (top/bottom rows)
-static void periodic_boundaries_y_bottom(const sub_domain &from, sub_domain &to, size_t nb_x, size_t nb_y)
-{
-    size_t y_stride = nb_y + 2 * ghost_size;
-    for (size_t i = 0; i < nb_x + 2 * ghost_size; ++i) {
-        size_t index_from = i * y_stride + ghost_size;           // last real column of 'from'
-        size_t index_to   = i * y_stride + nb_y + ghost_size;    // right ghost column of 'to'
-        update_bound(from, to, index_from, index_to);
-    }
-}
+// static void periodic_boundaries_y_bottom(const sub_domain &from, sub_domain &to, size_t nb_x, size_t nb_y)
+// {
+//     size_t y_stride = nb_y + 2 * ghost_size;
+//     for (size_t i = 0; i < nb_x + 2 * ghost_size; ++i) {
+//         size_t index_from = i * y_stride + ghost_size;           // last real column of 'from'
+//         size_t index_to   = i * y_stride + nb_y + ghost_size;    // right ghost column of 'to'
+//         update_bound(from, to, index_from, index_to);
+//     }
+// }
 
-static void periodic_boundaries_y_top(const sub_domain &from, sub_domain &to, size_t nb_x, size_t nb_y)
-{
-    size_t y_stride = nb_y + 2 * ghost_size;
-    for (size_t i = 0; i < nb_x + 2 * ghost_size; ++i) {
-        size_t index_from = i * y_stride + nb_y;                 // first real column of 'from'
-        size_t index_to   = i * y_stride + 0;                    // left ghost column of 'to'
-        update_bound(from, to, index_from, index_to);
-    }
-}
+// static void periodic_boundaries_y_top(const sub_domain &from, sub_domain &to, size_t nb_x, size_t nb_y)
+// {
+//     size_t y_stride = nb_y + 2 * ghost_size;
+//     for (size_t i = 0; i < nb_x + 2 * ghost_size; ++i) {
+//         size_t index_from = i * y_stride + nb_y;                 // first real column of 'from'
+//         size_t index_to   = i * y_stride + 0;                    // left ghost column of 'to'
+//         update_bound(from, to, index_from, index_to);
+//     }
+// }
 
 // Dirty Ghost-Cells update : hard-coded copy from 0 to 1, assuming only 2 subdomains on the X axis.
 static void update_ghost_cells(vector<vector<sub_domain>> &subdomains, it_timers_t &T)
 {
     struct timespec boundaries_x_t1, boundaries_x_t2;
-    struct timespec boundaries_y_t1, boundaries_y_t2;
+    // struct timespec boundaries_y_t1, boundaries_y_t2;
 
     MPI_Request requests[16];
     int req = 0;
@@ -415,13 +415,13 @@ static void update_ghost_cells(vector<vector<sub_domain>> &subdomains, it_timers
     MPI_Barrier(MPI_COMM_WORLD);
     clock_gettime(CLOCK_MONOTONIC, &boundaries_x_t2);
 
-    clock_gettime(CLOCK_MONOTONIC, &boundaries_y_t1);
-    // periodic_boundaries_y_top(cur, cur, cur.nb_x, cur.nb_y);
-    // periodic_boundaries_y_bottom(cur, cur, cur.nb_x, cur.nb_y);
-    clock_gettime(CLOCK_MONOTONIC, &boundaries_y_t2);
+    // clock_gettime(CLOCK_MONOTONIC, &boundaries_y_t1);
+    // // periodic_boundaries_y_top(cur, cur, cur.nb_x, cur.nb_y);
+    // // periodic_boundaries_y_bottom(cur, cur, cur.nb_x, cur.nb_y);
+    // clock_gettime(CLOCK_MONOTONIC, &boundaries_y_t2);
 
     T.boundaries_x += get_time_us(boundaries_x_t1, boundaries_x_t2);
-    T.boundaries_y += get_time_us(boundaries_y_t1, boundaries_y_t2);
+    // T.boundaries_y += get_time_us(boundaries_y_t1, boundaries_y_t2);
 }
 
 int main(int argc, char *argv[])
@@ -447,9 +447,9 @@ int main(int argc, char *argv[])
     }
 
     /* Argument parsing */
-    const char *short_options = "b:n:x:y:t:i:o:w:h";
-    const struct option long_options[] = { { "sdx", required_argument, nullptr, 'b' },
-                                           { "sdy", required_argument, nullptr, 'n' },
+    const char *short_options = "j:k:x:y:t:i:o:w:h";
+    const struct option long_options[] = { { "sdx", required_argument, nullptr, 'j' },
+                                           { "sdy", required_argument, nullptr, 'k' },
                                            { "x_points", required_argument, nullptr, 'x' },
                                            { "y_points", required_argument, nullptr, 'y' },
                                            { "max_time", required_argument, nullptr, 't' },
@@ -463,8 +463,8 @@ int main(int argc, char *argv[])
     while ((option = getopt_long_only(argc, argv, short_options, long_options, nullptr)) != -1) {
         switch (option) {
             case 'h': return print_usage(argv[0]);
-            case 'b': NB_SUBDOMAINS_X = size_t(stoi(optarg)); break;
-            case 'n': NB_SUBDOMAINS_Y = size_t(stoi(optarg)); break;
+            case 'j': NB_SUBDOMAINS_X = size_t(stoi(optarg)); break;
+            case 'k': NB_SUBDOMAINS_Y = size_t(stoi(optarg)); break;
             case 'x': NB_X = size_t(stoi(optarg)); break;
             case 'y': NB_Y = size_t(stoi(optarg)); break;
             case 't': MAX_T = atof(optarg); break;
@@ -497,7 +497,7 @@ int main(int argc, char *argv[])
         if (write_interval) buffer << "  Write interval                : " << write_interval << "\n";
 
         // Check cache size
-        needed_cache_size = 2 * (NB_Y + 2) + 1;
+        needed_cache_size = 2 * (NB_Y + 2 * ghost_size) + 1;
         buffer << "\n"
                << "  Device Max cache size (2*nb_y)                : " << CACHE_SIZE << "\n"
                << "  Used cache size                               : " << needed_cache_size << "\n";
@@ -541,7 +541,7 @@ int main(int argc, char *argv[])
 
     // Requirements
     constexpr size_t arrays_count = 2 * NBVAR;
-    const size_t domain_size = (NB_X + 2) * (NB_Y + 2);
+    const size_t domain_size = (NB_X + 2 * ghost_size) * (NB_Y + 2 * ghost_size);
     const size_t bytes_needed = sizeof(DATATYPE) * arrays_count * domain_size;
     const double needed_mem_gb = double(bytes_needed) / double(one_gb) / nprocs;
     // size_t max_problem_size = size_t(sqrt(double(global_mem_b) / double(sizeof(DATATYPE) * arrays_count)));
@@ -586,7 +586,7 @@ int main(int argc, char *argv[])
     constexpr DATATYPE divgamma = ONE / gamma_minus_one;
 
     // Global scope within main/simulation function
-    DATATYPE Dt_local;                // Only used on rank 0
+    DATATYPE Dt_local;                // Host-side, used by all ranks
 
     it_timers_t *T = nullptr;         // Ref to timers.back() - Only used on rank 0
     struct timespec simu_t1, simu_t2; // Only used on rank 0
@@ -631,12 +631,6 @@ int main(int argc, char *argv[])
             queue.memcpy(cur.d_E  , cur.h_E.data()  , cur.alloc_size);
             queue.wait();
 
-            // queue.memcpy(cur.d_rho_next, cur.h_rho.data(), cur.alloc_size);
-            // queue.memcpy(cur.d_u_next  , cur.h_u.data()  , cur.alloc_size);
-            // queue.memcpy(cur.d_v_next  , cur.h_v.data()  , cur.alloc_size);
-            // queue.memcpy(cur.d_E_next  , cur.h_E.data()  , cur.alloc_size);
-            // queue.wait();
-
             first_Dt = std::min(first_Dt, min_Dt);
         }
         subdomains.push_back(std::move(row));
@@ -645,7 +639,6 @@ int main(int argc, char *argv[])
     // MPI DONE : Gather all first_Dt, get the minimum and set it to Dt_local
     MPI_Allreduce(&first_Dt, &Dt_local, 1, MPI_DATATYPE, MPI_MIN, MPI_COMM_WORLD);
 
-    // MPI DONE : Gather all total mass,
     initial_mass = compute_total_mass(subdomains);
 
     if (rank == 0) {
@@ -673,9 +666,6 @@ int main(int argc, char *argv[])
     double t = 0.0;
     size_t it = 0;
 
-    const size_t y_stride = NB_Y + 2 * ghost_size;
-    const size_t y_stride_bytes = y_stride * sizeof(DATATYPE);
-
     while (t < MAX_T && it < MAX_IT) {
         timers.emplace_back(it_timers_t{});
         T = &timers.back();
@@ -683,7 +673,6 @@ int main(int argc, char *argv[])
         struct timespec host_to_device_t1, host_to_device_t2;
         struct timespec device_to_host_t1, device_to_host_t2;
         struct timespec total_usage_t1, total_usage_t2;
-        // struct timespec device_computation_t1, device_computation_t2;
 
         if (rank == 0) clock_gettime(CLOCK_MONOTONIC, &total_usage_t1);
 
@@ -707,32 +696,37 @@ int main(int argc, char *argv[])
 
                 sub_domain &cur = subdomains[sd_i][sd_j];
 
+                // fprintf(stderr, "Copy host to device ...");
                 clock_gettime(CLOCK_MONOTONIC, &host_to_device_t1);
-                const size_t idx_from_right = (cur.nb_x + 1) * cur.y_stride;
-                const size_t idx_from_left  = 0 * cur.y_stride;
-                const size_t index_from = (rank == 0) ? idx_from_right : idx_from_left;
+                const size_t idx_from_left  = 0 * cur.y_stride;                       // left ghost (i=0)
+                const size_t idx_from_right = (cur.nb_x + ghost_size) * cur.y_stride;          // right ghost (i=nb_x+1)
+                const size_t y_stride_bytes = cur.y_stride * sizeof(DATATYPE);
 
-                queue.memcpy(cur.d_rho + index_from, cur.h_rho.data() + index_from, y_stride_bytes);
-                queue.memcpy(cur.d_u + index_from  , cur.h_u.data()   + index_from, y_stride_bytes);
-                queue.memcpy(cur.d_v + index_from  , cur.h_v.data()   + index_from, y_stride_bytes);
-                queue.memcpy(cur.d_E + index_from  , cur.h_E.data()   + index_from, y_stride_bytes);
+                queue.memcpy(cur.d_rho + idx_from_left , cur.h_rho.data() + idx_from_left , y_stride_bytes);
+                queue.memcpy(cur.d_u   + idx_from_left , cur.h_u.data()   + idx_from_left , y_stride_bytes);
+                queue.memcpy(cur.d_v   + idx_from_left , cur.h_v.data()   + idx_from_left , y_stride_bytes);
+                queue.memcpy(cur.d_E   + idx_from_left , cur.h_E.data()   + idx_from_left , y_stride_bytes);
 
+                queue.memcpy(cur.d_rho + idx_from_right, cur.h_rho.data() + idx_from_right, y_stride_bytes);
+                queue.memcpy(cur.d_u   + idx_from_right, cur.h_u.data()   + idx_from_right, y_stride_bytes);
+                queue.memcpy(cur.d_v   + idx_from_right, cur.h_v.data()   + idx_from_right, y_stride_bytes);
+                queue.memcpy(cur.d_E   + idx_from_right, cur.h_E.data()   + idx_from_right, y_stride_bytes);
                 queue.wait();
                 clock_gettime(CLOCK_MONOTONIC, &host_to_device_t2);
+                // fprintf(stderr, " done \n");
 
-                // clock_gettime(CLOCK_MONOTONIC, &device_computation_t1);
                 printf("[rank %d] iteration #%ld - starting launcher [%lu][%lu] ...\n", rank, it, sd_i, sd_j);
-                DATATYPE fpga_hydro_compute =
-                    launcher(cur.d_rho, cur.d_u, cur.d_v, cur.d_E, cur.d_rho_next, cur.d_u_next, cur.d_v_next, cur.d_E_next, cur.Dt_next, C, gamma,
-                            gamma_minus_one, divgamma, K, cur.nb_x, cur.nb_y, DtDx, DtDy, min_spacing, queue);
+                double fpga_hydro_compute =
+                    launcher(cur.d_rho, cur.d_u, cur.d_v, cur.d_E, cur.d_rho_next, cur.d_u_next, cur.d_v_next,
+                             cur.d_E_next, cur.Dt_next, C, gamma, gamma_minus_one, divgamma, K, cur.nb_x, cur.nb_y,
+                             DtDx, DtDy, min_spacing, queue);
                 queue.wait();
                 printf("[rank %d] done\n", rank);
-                // clock_gettime(CLOCK_MONOTONIC, &device_computation_t2);
 
                 std::swap(cur.d_rho, cur.d_rho_next);
-                std::swap(cur.d_u, cur.d_u_next);
-                std::swap(cur.d_v, cur.d_v_next);
-                std::swap(cur.d_E, cur.d_E_next);
+                std::swap(cur.d_u  , cur.d_u_next);
+                std::swap(cur.d_v  , cur.d_v_next);
+                std::swap(cur.d_E  , cur.d_E_next);
                 queue.wait();
 
                 // Next Dt
@@ -744,14 +738,18 @@ int main(int argc, char *argv[])
                 // fprintf(stderr, "Copy device to host ...");
                 clock_gettime(CLOCK_MONOTONIC, &device_to_host_t1);
 
-                const size_t idx_to_left = 0;
-                const size_t idx_to_right = (cur.nb_x + ghost_size) * cur.y_stride;
+                const size_t idx_real_first = 1 * cur.y_stride;          // first real (i=1)
+                const size_t idx_real_last  = (cur.nb_x) * cur.y_stride; // last real  (i=nb_x)
 
-                const size_t index_to = (rank == 0) ? idx_to_right : idx_to_left;
-                queue.memcpy(cur.h_rho.data() + index_to, cur.d_rho + index_to, y_stride_bytes);
-                queue.memcpy(cur.h_u.data()   + index_to, cur.d_u + index_to  , y_stride_bytes);
-                queue.memcpy(cur.h_v.data()   + index_to, cur.d_v + index_to  , y_stride_bytes);
-                queue.memcpy(cur.h_E.data()   + index_to, cur.d_E + index_to  , y_stride_bytes);
+                queue.memcpy(cur.h_rho.data() + idx_real_first, cur.d_rho + idx_real_first, y_stride_bytes);
+                queue.memcpy(cur.h_u.data()   + idx_real_first, cur.d_u   + idx_real_first, y_stride_bytes);
+                queue.memcpy(cur.h_v.data()   + idx_real_first, cur.d_v   + idx_real_first, y_stride_bytes);
+                queue.memcpy(cur.h_E.data()   + idx_real_first, cur.d_E   + idx_real_first, y_stride_bytes);
+
+                queue.memcpy(cur.h_rho.data() + idx_real_last , cur.d_rho + idx_real_last , y_stride_bytes);
+                queue.memcpy(cur.h_u.data()   + idx_real_last , cur.d_u   + idx_real_last , y_stride_bytes);
+                queue.memcpy(cur.h_v.data()   + idx_real_last , cur.d_v   + idx_real_last , y_stride_bytes);
+                queue.memcpy(cur.h_E.data()   + idx_real_last , cur.d_E   + idx_real_last , y_stride_bytes);
                 queue.wait();
                 clock_gettime(CLOCK_MONOTONIC, &device_to_host_t2);
                 // fprintf(stderr, " done \n");
@@ -788,9 +786,9 @@ int main(int argc, char *argv[])
                     sub_domain &cur = subdomains[sd_i][sd_j];
 
                     queue.memcpy(cur.h_rho.data(), cur.d_rho, cur.alloc_size);
-                    queue.memcpy(cur.h_u.data(), cur.d_u, cur.alloc_size);
-                    queue.memcpy(cur.h_v.data(), cur.d_v, cur.alloc_size);
-                    queue.memcpy(cur.h_E.data(), cur.d_E, cur.alloc_size);
+                    queue.memcpy(cur.h_u.data()  , cur.d_u  , cur.alloc_size);
+                    queue.memcpy(cur.h_v.data()  , cur.d_v  , cur.alloc_size);
+                    queue.memcpy(cur.h_E.data()  , cur.d_E  , cur.alloc_size);
                     queue.wait();
                 }
             }
@@ -825,6 +823,7 @@ int main(int argc, char *argv[])
             queue.wait();
         }
     }
+
     final_mass_change = ensure_mass_conservation(initial_mass, subdomains, it, t);
     write_results(subdomains, it, t);
 
@@ -842,7 +841,6 @@ int main(int argc, char *argv[])
         stats_t res_device_to_host = print_stats(timers, &it_timers_t::device_to_host, "FPGA→CPU");
         stats_t res_total_usage    = print_stats(timers, &it_timers_t::total_usage, "TOTAL usage");
         stats_t res_total_compute  = print_stats(timers, &it_timers_t::total_compute, "TOTAL compute");
-        // stats_t res_total_compute2 = print_stats(timers, &it_timers_t::total_compute2, "TOTAL compute");
         stats_t res_boundaries_x   = print_stats(timers, &it_timers_t::boundaries_x, "boundaries X");
         stats_t res_boundaries_y   = print_stats(timers, &it_timers_t::boundaries_y, "boundaries Y");
 
@@ -857,8 +855,7 @@ int main(int argc, char *argv[])
         printf("update_boundaries_x   ~ II = %.3lf\n", ii(res_boundaries_x.mean, frequency, double(boundary_problem_size_x)));
         printf("update_boundaries_y   ~ II = %.3lf\n", ii(res_boundaries_y.mean, frequency, double(boundary_problem_size_y)));
         printf("compute_hydro         ~ II = %.3lf\n", ii(res_total_compute.mean, frequency, problem_size));
-        // printf("compute_hydro         ~ II = %.3lf\n", ii(res_total_compute2.mean, frequency, problem_size));
-
+     
         printf("TOTAL usage           ~ II = %.3lf\n", ii(res_total_usage.mean, frequency, problem_size));
 
         printf("\nTiming Breakdown\n");
@@ -882,6 +879,9 @@ int main(int argc, char *argv[])
         printf("Mass change : %.2e\n", final_mass_change);
 
         const double total_bytes = sizeof(DATATYPE) * problem_size * arrays_count;
+        const size_t y_stride = NB_Y + 2 * ghost_size;
+        const size_t y_stride_bytes = y_stride * sizeof(DATATYPE);
+
         printf("Estimated Throughput : %.3f GB/s (all code)\n", throughput(total_bytes, res_total_usage.mean));
         printf("Estimated Throughput : %.3f GB/s (FPGA compute)\n", throughput(total_bytes, res_total_compute.mean));
         printf("Estimated Throughput : %.3f GB/s (CPU to FPGA)\n", throughput(y_stride_bytes, res_host_to_device.mean));

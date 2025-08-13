@@ -67,8 +67,8 @@ static void compute_fluxes(const DATATYPE Q_rho_left, const DATATYPE inv_U_rho_l
     DATATYPE Q_u_star = HALF * ((Q_ux_left + Q_ux_right) - diva * (Q_p_right - Q_p_left));
     DATATYPE Q_p_star = HALF * ((Q_p_left + Q_p_right) - /* theta - assumed to be 1 */ a * (Q_ux_right - Q_ux_left));
 
-    const bool up_ustar = Q_u_star >= ZERO; 
-    Q_upwind_rho = up_ustar ? Q_rho_left : Q_rho_right;
+    const bool up_ustar = Q_u_star >= ZERO;
+Q_upwind_rho = up_ustar ? Q_rho_left : Q_rho_right;
     Q_upwind_ux  = up_ustar ? Q_ux_left : Q_ux_right;
     Q_upwind_uy  = up_ustar ? Q_uy_left : Q_uy_right;
     Q_upwind_p   = up_ustar ? Q_p_left : Q_p_right;
@@ -165,13 +165,14 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rho, const DATATYPE 
             [[intel::fpga_register]] DATATYPE inv_U_rho_left;
 
             // bool is_left_wall = ((row_pos == 2) && (x_border_type != 1)); // Reflective left wall disabled when right sub_domain
-            bool is_left_wall = (row_pos == 2);
-            size_t index_left = is_left_wall ? index_right : (k - 2 * y_stride) % CACHE_SIZE;
+            // bool is_left_wall = (row_pos == 2);
+            // size_t index_left = is_left_wall ? index_right : (k - 2 * y_stride) % CACHE_SIZE;
+            size_t index_left = (k - 2 * y_stride) % CACHE_SIZE;
 
             convert_to_primitives(index_left, U_rho_left, inv_U_rho_left, U_ux_left, U_uy_left, U_p_left,
                                   Q_rho_left, Q_ux_left, Q_uy_left, Q_p_left, cache_U_rho, cache_U_ux, cache_U_uy,
                                   cache_U_E, gamma_minus_one);
-            Q_ux_left = is_left_wall ? -Q_ux_left : Q_ux_left;
+            // Q_ux_left = is_left_wall ? -Q_ux_left : Q_ux_left;
 
             compute_fluxes(Q_rho_left, inv_U_rho_left, Q_ux_left, Q_uy_left, Q_p_left, Q_rho_right,
                            inv_U_rho_right, Q_ux_right, Q_uy_right, Q_p_right, K, gamma, divgamma, fx1_rho, fx1_ux,
@@ -185,14 +186,14 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rho, const DATATYPE 
             [[intel::fpga_register]] DATATYPE inv_U_rho_left;
 
             // bool is_right_wall = ((row_pos == x_stride-1) && (x_border_type != 0)); // Reflective right wall disabled when left sub_domain
-            bool is_right_wall = (row_pos == x_stride-1);
-            size_t index_left = is_right_wall ? index_right : k % CACHE_SIZE;
+            // bool is_right_wall = (row_pos == x_stride-1);
+            // size_t index_left = is_right_wall ? index_right : k % CACHE_SIZE;
+            size_t index_left = k % CACHE_SIZE;
 
             convert_to_primitives(index_left, U_rho_left, inv_U_rho_left, U_ux_left, U_uy_left, U_p_left,
                                   Q_rho_left, Q_ux_left, Q_uy_left, Q_p_left, cache_U_rho, cache_U_ux, cache_U_uy,
                                   cache_U_E, gamma_minus_one);
-
-            Q_ux_left = is_right_wall ? -Q_ux_left : Q_ux_left;
+            // Q_ux_left = is_right_wall ? -Q_ux_left : Q_ux_left;
 
             // Care, invert left & right, since right is our ij cell.
             compute_fluxes(Q_rho_right, inv_U_rho_right, Q_ux_right, Q_uy_right, Q_p_right, Q_rho_left,
