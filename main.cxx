@@ -125,11 +125,11 @@ class sub_domain {
 static int print_usage(char *exec)
 {
     printf("Hydrodynamics 2D\n");
-    printf("Usage : %s [-bnxytiowh]\n", exec);
+    printf("Usage : %s [-jkxytiowh]\n", exec);
     printf("\n");
     printf("Options : \n"
-        " -b Set the number of sub-domains in the X axis. (--sdx) Default : %ld\n"
-        " -n Set the number of sub-domains in the Y axis. (--sdy) Default : %ld\n"
+        " -j Set the number of sub-domains in the X axis. (--sdx) Default : %ld\n"
+        " -k Set the number of sub-domains in the Y axis. (--sdy) Default : %ld\n"
         " -x Set the number of spatial grid points in the X axis. Default : %ld\n"
         " -y Set the number of spatial grid points in the Y axis. Default : %ld\n"
         " -t Set the time at which the simulation stops (does not translate to iterations count). Default : %.2e\n"
