@@ -380,7 +380,7 @@ static void update_ghost_cells(vector<vector<sub_domain>> &subdomains, it_timers
     int send_base_tag = (rank == 0) ? 90100 : 91000;
     int recv_base_tag = (rank == 0) ? 91000 : 90100;
 
-    MPI_Barrier(MPI_COMM_WORLD); // why ?
+    MPI_Barrier(MPI_COMM_WORLD);
 
     clock_gettime(CLOCK_MONOTONIC, &boundaries_x_t1);
 
