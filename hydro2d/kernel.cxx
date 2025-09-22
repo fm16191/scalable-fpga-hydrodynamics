@@ -99,13 +99,12 @@ Q_upwind_rho = up_ustar ? Q_rho_left : Q_rho_right;
  * @param NB_Y Block size of the y axis
  */
 // static void kernel_hydro_fvm(const bool x_border_type, const DATATYPE *__restrict__ d_rho,
-static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rho, const DATATYPE *__restrict__ d_u,
-                             const DATATYPE *__restrict__ d_v, const DATATYPE *__restrict__ d_E,
-                             DATATYPE *__restrict__ d_rho_next, DATATYPE *__restrict__ d_u_next,
-                             DATATYPE *__restrict__ d_v_next, DATATYPE *__restrict__ d_E_next, const DATATYPE K,
-                             const DATATYPE gamma, const DATATYPE gamma_minus_one, const DATATYPE divgamma,
-                             const size_t &NB_X, const size_t &NB_Y, const DATATYPE &DtDx, const DATATYPE &DtDy,
-                             const DATATYPE &min_spacing, const DATATYPE C, DATATYPE *__restrict__ Dt_next)
+static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE *__restrict__ d_uv,
+                             DATATYPE *__restrict__ d_rhoE_next, DATATYPE *__restrict__ d_uv_next,
+                             const DATATYPE K, const DATATYPE gamma, const DATATYPE gamma_minus_one,
+                             const DATATYPE divgamma, const size_t &NB_X, const size_t &NB_Y, const DATATYPE &DtDx,
+                             const DATATYPE &DtDy, const DATATYPE &min_spacing, const DATATYPE C,
+                             DATATYPE *__restrict__ Dt_next)
 {
     const size_t x_stride = NB_X + 2;
     const size_t y_stride = NB_Y + 2;
@@ -121,13 +120,13 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rho, const DATATYPE 
     // Need to visit all cells except the opposite, in order to get ghost cells in cache.
     // Skip first and last cell, since this is a first order stencil.
     for (size_t k = 1; k < max - 1; ++k) {
-        size_t index_ipoj = k;
+        // size_t index_ipoj = k;
         size_t index_ij = k - y_stride;
         size_t cache_index_ipoj = k % CACHE_SIZE;
-        cache_U_rho[cache_index_ipoj] = d_rho[index_ipoj];
-        cache_U_ux[cache_index_ipoj]  = d_u[index_ipoj];
-        cache_U_uy[cache_index_ipoj]  = d_v[index_ipoj];
-        cache_U_E[cache_index_ipoj]   = d_E[index_ipoj];
+        cache_U_rho[cache_index_ipoj] = d_rhoE[2*k];
+        cache_U_ux[cache_index_ipoj]  = d_uv[2*k];
+        cache_U_uy[cache_index_ipoj]  = d_uv[2*k+1];
+        cache_U_E[cache_index_ipoj]   = d_rhoE[2*k+1];
 
         // ipoj row and col
         const size_t row_pos = k / y_stride;
@@ -264,10 +263,10 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rho, const DATATYPE 
         U_v_next   = U_uy_right  + x_uy  + y_uy ;
         U_E_next   = U_p_right   + x_E   + y_E  ;
 
-        d_rho_next[index_next] = U_rho_next;
-        d_u_next[index_next]   = U_u_next;
-        d_v_next[index_next]   = U_v_next;
-        d_E_next[index_next]   = U_E_next;
+        d_rhoE_next[2*index_next] = U_rho_next;
+        d_uv_next[2*index_next]   = U_u_next;
+        d_uv_next[2*index_next+1]   = U_v_next;
+        d_rhoE_next[2*index_next+1]   = U_E_next;
 
         // now compute Dt_next
         {
@@ -316,10 +315,9 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rho, const DATATYPE 
  * @param queue the device queue
  */
 // extern "C" double launcher(const bool x_border_type, DATATYPE *__restrict__ d_rho, DATATYPE *__restrict__ d_u, DATATYPE *__restrict__ d_v,
-extern "C" double launcher(DATATYPE *__restrict__ d_rho, DATATYPE *__restrict__ d_u, DATATYPE *__restrict__ d_v,
-                           DATATYPE *__restrict__ d_E, DATATYPE *__restrict__ d_rho_next,
-                           DATATYPE *__restrict__ d_u_next, DATATYPE *__restrict__ d_v_next,
-                           DATATYPE *__restrict__ d_E_next, DATATYPE *__restrict__ Dt_next, const DATATYPE C,
+extern "C" double launcher(DATATYPE *__restrict__ d_rhoE, DATATYPE *__restrict__ d_uv,
+                           DATATYPE *__restrict__ d_rhoE_next,
+                           DATATYPE *__restrict__ d_uv_next, DATATYPE *__restrict__ Dt_next, const DATATYPE C,
                            const DATATYPE gamma, const DATATYPE gamma_minus_one, const DATATYPE divgamma,
                            const DATATYPE K, const size_t NB_X, const size_t NB_Y, const DATATYPE &DtDx,
                            const DATATYPE &DtDy, const DATATYPE &min_spacing, sycl::queue queue)
@@ -330,7 +328,7 @@ extern "C" double launcher(DATATYPE *__restrict__ d_rho, DATATYPE *__restrict__ 
     queue.submit([&](sycl::handler &h) {
         h.single_task([=]() [[intel::kernel_args_restrict]] {
             // kernel_hydro_fvm(x_border_type, d_rho, d_u, d_v, d_E, d_rho_next, d_u_next, d_v_next, d_E_next, K, gamma,
-            kernel_hydro_fvm(d_rho, d_u, d_v, d_E, d_rho_next, d_u_next, d_v_next, d_E_next, K, gamma,
+            kernel_hydro_fvm(d_rhoE, d_uv, d_rhoE_next, d_uv_next, K, gamma,
                              gamma_minus_one, divgamma, NB_X, NB_Y, DtDx, DtDy, min_spacing, C, Dt_next);
         });
     });
@@ -344,7 +342,7 @@ extern "C" double launcher(DATATYPE *__restrict__ d_rho, DATATYPE *__restrict__ 
     queue.submit([&](sycl::handler &h) {
         h.single_task([=]() [[intel::kernel_args_restrict]] {
             // kernel_hydro_fvm(x_border_type, d_rho, d_u, d_v, d_E, d_rho_next, d_u_next, d_v_next, d_E_next, K, gamma,
-            kernel_hydro_fvm(d_rho, d_u, d_v, d_E, d_rho_next, d_u_next, d_v_next, d_E_next, K, gamma,
+            kernel_hydro_fvm(d_rhoE, d_uv, d_rhoE_next, d_uv_next, K, gamma,
                              gamma_minus_one, divgamma, NB_X, NB_Y, DtDx, DtDy, min_spacing, C, Dt_next);
         });
     });
