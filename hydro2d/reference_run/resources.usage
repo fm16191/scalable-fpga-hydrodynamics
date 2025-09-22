@@ -1,0 +1,17 @@
+AOCX File: binedit/aocx.0
+ALUTs: 352696
+Registers: 829,962
+Logic utilization: 287,100 / 912,800 ( 31 % )
+I/O pins: 321 / 886 ( 36 % )
+DSP blocks: 688 / 8,528 ( 8 % )
+Memory bits: 84,157,400 / 271,810,560 ( 31 % )
+RAM blocks: 4,955 / 13,272 ( 37 % )
+Actual clock freq: 542
+Kernel fmax: 542
+1x clock fmax: 542
+2x clock fmax: 542
+Highest non-global fanout: 38677
+AOCX File: binedit/aocx.1
+
+
+352696	829962	287100 (31%)	321 (36%)	688 (8%)	84157400 (31%)	4955 (37%)	542	542
