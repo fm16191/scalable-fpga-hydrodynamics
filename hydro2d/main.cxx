@@ -271,7 +271,7 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
                                    (double(j) - center_y) * (double(j) - center_y));
             const size_t local_sd_index = cur_i * cur.y_stride + cur_j;
 
-            DATATYPE U_rho, inv_U_rho, U_ux, U_uy, U_p;
+            DATATYPE U_rho, inv_Q_rho, U_ux, U_uy, U_p;
             DATATYPE Q_rho, Q_ux, Q_uy, Q_p;
 
             U_rho = (distance <= radius ? u_inside : u_outside);
@@ -288,17 +288,17 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
             // Compute first Dt
             // Primitive variables
             Q_rho = U_rho;
-            inv_U_rho = ONE / U_rho;
-            Q_ux = U_ux * inv_U_rho;
-            Q_uy = U_uy * inv_U_rho;
+            inv_Q_rho = ONE / Q_rho;
+            Q_ux = U_ux * inv_Q_rho;
+            Q_uy = U_uy * inv_Q_rho;
 
-            // e_int = U_p * inv_U_rho - HALF * (Q_ux * Q_ux) - HALF * (Q_uy * Q_uy);
+            // e_int = U_p * inv_Q_rho - HALF * (Q_ux * Q_ux) - HALF * (Q_uy * Q_uy);
             DATATYPE temp_e_int = Q_ux*Q_ux + Q_uy*Q_uy;
-            DATATYPE e_int = U_p * inv_U_rho - HALF * temp_e_int;
+            DATATYPE e_int = U_p * inv_Q_rho - HALF * temp_e_int;
             Q_p = gamma_minus_one * Q_rho * e_int;
 
             // compute speed of sound
-            DATATYPE c_s = SQRT(gamma * Q_p * inv_U_rho);
+            DATATYPE c_s = SQRT(gamma * Q_p * inv_Q_rho);
 
             // Compute Dt
             DATATYPE Unorm = SQRT(temp_e_int);

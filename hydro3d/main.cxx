@@ -140,6 +140,9 @@ static int print_usage(char *exec)
     printf("Usage : %s [-xyztiowh]\n", exec);
     printf("\n");
     printf("Options : \n"
+           " -j Set the number of sub-domains in the X axis. (--sdx) Default : %ld\n"
+           " -k Set the number of sub-domains in the Y axis. (--sdy) Default : %ld\n"
+           " -l Set the number of sub-domains in the Y axis. (--sdz) Default : %ld\n"
            " -x Set the number of spatial grid points in the X axis. Default : %ld\n"
            " -y Set the number of spatial grid points in the Y axis. Default : %ld\n"
            " -z Set the number of spatial grid points in the Z axis. Default : %ld\n"
@@ -149,7 +152,7 @@ static int print_usage(char *exec)
            " -w Write result data each <w> timestep. Default : only write final result"
            "\n"
            " -h, --help Show this message and exit\n",
-           NB_X, NB_Y, NB_Z, MAX_T, out_filename.c_str());
+           NB_SUBDOMAINS_X, NB_SUBDOMAINS_Y, NB_SUBDOMAINS_Z, NB_X, NB_Y, NB_Z, MAX_T, out_filename.c_str());
     return 0;
 }
 
@@ -301,7 +304,7 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
                                        (double(k) - center_z) * (double(k) - center_z));
                 const size_t local_sd_index = cur_i * cur.zy_stride + cur_j * cur.z_stride + cur_k;
 
-                DATATYPE U_rho, inv_U_rho, U_ux, U_uy, U_uz, U_p;
+                DATATYPE U_rho, inv_Q_rho, U_ux, U_uy, U_uz, U_p;
                 DATATYPE Q_rho, Q_ux, Q_uy, Q_uz, Q_p;
 
                 U_rho = (distance <= radius ? u_inside : u_outside);
@@ -320,18 +323,18 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
                 // Compute first Dt
                 // Primitive variables
                 Q_rho = U_rho;
-                inv_U_rho = ONE / U_rho;
-                Q_ux = U_ux * inv_U_rho;
-                Q_uy = U_uy * inv_U_rho;
-                Q_uz = U_uz * inv_U_rho;
+                inv_Q_rho = ONE / Q_rho;
+                Q_ux = U_ux * inv_Q_rho;
+                Q_uy = U_uy * inv_Q_rho;
+                Q_uz = U_uz * inv_Q_rho;
 
-                // e_int = U_p * inv_U_rho - HALF * (Q_ux * Q_ux) - HALF * (Q_uy * Q_uy);
+                // e_int = U_p * inv_Q_rho - HALF * (Q_ux * Q_ux) - HALF * (Q_uy * Q_uy);
                 DATATYPE temp_e_int = Q_ux*Q_ux + Q_uy*Q_uy + Q_uz*Q_uz;
-                DATATYPE e_int = U_p * inv_U_rho - HALF * temp_e_int;
+                DATATYPE e_int = U_p * inv_Q_rho - HALF * temp_e_int;
                 Q_p = gamma_minus_one * Q_rho * e_int;
 
                 // compute speed of sound
-                DATATYPE c_s = SQRT(gamma * Q_p * inv_U_rho);
+                DATATYPE c_s = SQRT(gamma * Q_p * inv_Q_rho);
 
                 // Compute Dt
                 DATATYPE Unorm = SQRT(temp_e_int);
@@ -549,7 +552,7 @@ int main(int argc, char *argv[])
 
         if (needed_cache_size > CACHE_SIZE) {
             buffer << "\nThis configuration can't run on FPGA : needed cache size exceeds the available one\n"
-                   << " Max available : " << CACHE_SIZE << " of 2 * (NB_Y + 2) * (NB_Z + 2) + 1\n"
+                   << " Max available : " << CACHE_SIZE        << " of 2 * (NB_Y + 2) * (NB_Z + 2) + 1\n"
                    << " Requested     : " << needed_cache_size << " of 2 * (" << NB_Y << " + 2) * (" << NB_Z << " + 2) + 1\n";
             cerr << buffer.str();
             exit(1);
@@ -823,7 +826,6 @@ int main(int argc, char *argv[])
             }
         }
 
-        // MPI DONE :
         // Gather Every T.total_compute, T.host_to_device, T.device_to_host, T.boundaries_x, T.boundaries_y
         // Sum them all to rank(0) => T.total_compute, T.host_to_device, T.device_to_host, T.boundaries_x, T.boundaries_y
         it_timers_t T_total;
