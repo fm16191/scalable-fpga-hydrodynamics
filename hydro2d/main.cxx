@@ -324,19 +324,26 @@ static void update_ghost_cells_single_device(vector<vector<sub_domain>> &subdoma
     // Periodic X boundaries on a single subdomain
     sub_domain &cur = subdomains[0][0];
     const size_t y_stride = cur.y_stride;
+    const size_t copy_size = 2 * y_stride * sizeof(DATATYPE);
+    
     clock_gettime(CLOCK_MONOTONIC, &boundaries_x_t1);
+    
+    // Bulk memory operation possible thanks to X's linearity aspect
+    
     // Copy last real column (i = nb_x) to left ghost (i = 0)
-    for (size_t j = 0; j < y_stride; ++j) {
-        size_t index_from = cur.nb_x * y_stride + j;
-        size_t index_to   = 0 * y_stride + j;
-        update_bound(cur, cur, index_from, index_to);
-    }
+    const size_t index_from = cur.nb_x * y_stride;
+    const size_t index_to = 0;
+    
+    std::memcpy(&cur.h_rhoE[2*index_to], &cur.h_rhoE[2*index_from], copy_size);
+    std::memcpy(&cur.h_uv[2*index_to], &cur.h_uv[2*index_from], copy_size);
+    
     // Copy first real column (i = 1) to right ghost (i = nb_x + 1)
-    for (size_t j = 0; j < y_stride; ++j) {
-        size_t index_from = ghost_size * y_stride + j;
-        size_t index_to   = (cur.nb_x + ghost_size) * y_stride + j;
-        update_bound(cur, cur, index_from, index_to);
-    }
+    const size_t index_from2 = ghost_size * y_stride;
+    const size_t index_to2 = (cur.nb_x + ghost_size) * y_stride;
+    
+    std::memcpy(&cur.h_rhoE[2*index_to2], &cur.h_rhoE[2*index_from2], copy_size);
+    std::memcpy(&cur.h_uv[2*index_to2], &cur.h_uv[2*index_from2], copy_size);
+    
     clock_gettime(CLOCK_MONOTONIC, &boundaries_x_t2);
     T.boundaries_x += get_time_us(boundaries_x_t1, boundaries_x_t2);
     return;
@@ -385,13 +392,7 @@ static void update_ghost_cells(vector<vector<sub_domain>> &subdomains, it_timers
     MPI_Barrier(MPI_COMM_WORLD);
     clock_gettime(CLOCK_MONOTONIC, &boundaries_x_t2);
 
-    // clock_gettime(CLOCK_MONOTONIC, &boundaries_y_t1);
-    // // periodic_boundaries_y_top(cur, cur, cur.nb_x, cur.nb_y);
-    // // periodic_boundaries_y_bottom(cur, cur, cur.nb_x, cur.nb_y);
-    // clock_gettime(CLOCK_MONOTONIC, &boundaries_y_t2);
-
     T.boundaries_x += get_time_us(boundaries_x_t1, boundaries_x_t2);
-    // T.boundaries_y += get_time_us(boundaries_y_t1, boundaries_y_t2);
 }
 
 int main(int argc, char *argv[])
@@ -480,7 +481,7 @@ int main(int argc, char *argv[])
 
         if (needed_cache_size > CACHE_SIZE) {
             buffer << "\nThis configuration can't run on FPGA : needed cache size exceeds the available one\n"
-                   << " Max available : " << CACHE_SIZE << " of 2 * (NB_Y + 2) + 1\n"
+                   << " Max available : " << CACHE_SIZE        << " of 2 * (NB_Y + 2) + 1\n"
                    << " Requested     : " << needed_cache_size << " of 2 * (" << NB_Y << " + 2) + 1\n";
             cerr << buffer.str();
             exit(1);
@@ -521,7 +522,9 @@ int main(int argc, char *argv[])
     // size_t max_problem_size = size_t(sqrt(double(global_mem_b) / double(sizeof(DATATYPE) * arrays_count)));
 
 #if FPGA_HARDWARE
-    size_t max_device_elements = global_mem_b / arrays_count / sizeof(DATATYPE) - 8095; // - 1*k
+    // Safety offset used when estimating the maximum device elements to allocate.
+    constexpr size_t DEVICE_OFFSET = 8095;
+    size_t max_device_elements = global_mem_b / arrays_count / sizeof(DATATYPE) - DEVICE_OFFSET; // - k
 #else
     size_t max_device_elements = domain_size;
 #endif
@@ -676,8 +679,6 @@ int main(int argc, char *argv[])
 
         // printf("iteration #%ld - starting launcher ...\n", it);
 
-        // for (auto &row : subdomains)
-        //     for (auto &cur : row) {
         for (size_t sd_i = 0; sd_i < NB_SUBDOMAINS_X; ++sd_i) {
             for (size_t sd_j = 0; sd_j < NB_SUBDOMAINS_Y; ++sd_j) {
                 size_t sd_index = sd_i * NB_SUBDOMAINS_Y + sd_j;
@@ -757,7 +758,7 @@ int main(int argc, char *argv[])
             T->total_usage = get_time_us(total_usage_t1, total_usage_t2);
         }
 
-        if (write_interval && it && it % write_interval == 0 && it) {
+        if (write_interval && it && (it % write_interval == 0)) {
             for (size_t sd_i = 0; sd_i < NB_SUBDOMAINS_X; ++sd_i) {
                 for (size_t sd_j = 0; sd_j < NB_SUBDOMAINS_Y; ++sd_j) {
                     size_t sd_index = sd_i * NB_SUBDOMAINS_Y + sd_j;
