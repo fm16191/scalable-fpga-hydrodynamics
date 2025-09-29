@@ -369,18 +369,24 @@ static void update_ghost_cells_single_device(vector<vector<vector<sub_domain>>> 
     clock_gettime(CLOCK_MONOTONIC, &boundaries_x_t1);
 
     // Copy last real plane (i = nb_x) to left ghost (i = 0)
-    for (size_t j = 0; j < zy_stride; ++j) {
-        size_t index_from = cur.nb_x * zy_stride + j;
-        size_t index_to   = 0 * zy_stride + j;
-        update_bound(cur, cur, index_from, index_to);
-    }
+    const size_t index_from = cur.nb_x * zy_stride;
+    const size_t index_to   = 0;
+
+    std::memcpy(&cur.h_rho[index_to], &cur.h_rho[index_from], zy_stride * sizeof(cur.h_rho[0]));
+    std::memcpy(&cur.h_u[index_to],   &cur.h_u[index_from],   zy_stride * sizeof(cur.h_u[0]));
+    std::memcpy(&cur.h_v[index_to],   &cur.h_v[index_from],   zy_stride * sizeof(cur.h_v[0]));
+    std::memcpy(&cur.h_w[index_to],   &cur.h_w[index_from],   zy_stride * sizeof(cur.h_w[0]));
+    std::memcpy(&cur.h_E[index_to],   &cur.h_E[index_from],   zy_stride * sizeof(cur.h_E[0]));
 
     // Copy first real plane (i = 1) to right ghost (i = nb_x + 1)
-    for (size_t j = 0; j < zy_stride; ++j) {
-        size_t index_from = ghost_size * zy_stride + j;
-        size_t index_to   = (cur.nb_x + ghost_size) * zy_stride + j;
-        update_bound(cur, cur, index_from, index_to);
-    }
+    const size_t index_from2 = ghost_size * zy_stride;
+    const size_t index_to2   = (cur.nb_x + ghost_size) * zy_stride;
+
+    std::memcpy(&cur.h_rho[index_to2], &cur.h_rho[index_from2], zy_stride * sizeof(cur.h_rho[0]));
+    std::memcpy(&cur.h_u[index_to2],   &cur.h_u[index_from2],   zy_stride * sizeof(cur.h_u[0]));
+    std::memcpy(&cur.h_v[index_to2],   &cur.h_v[index_from2],   zy_stride * sizeof(cur.h_v[0]));
+    std::memcpy(&cur.h_w[index_to2],   &cur.h_w[index_from2],   zy_stride * sizeof(cur.h_w[0]));
+    std::memcpy(&cur.h_E[index_to2],   &cur.h_E[index_from2],   zy_stride * sizeof(cur.h_E[0]));
 
     clock_gettime(CLOCK_MONOTONIC, &boundaries_x_t2);
     T.boundaries_x += get_time_us(boundaries_x_t1, boundaries_x_t2);
