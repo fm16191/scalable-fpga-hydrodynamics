@@ -179,7 +179,7 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE
         size_t index_right = index_ij & (CACHE_SIZE - 1);
         convert_to_primitives_get_U(index_right, U_rho_right, U_ux_right, U_uy_right, U_p_right, Q_rho_right,
                                     Q_ux_right, Q_uy_right, Q_p_right, cache_U_rho, cache_U_ux, cache_U_uy,
-                              cache_U_E, gamma_minus_one);
+                                    cache_U_E, gamma_minus_one);
 
         // Compute fluxes
         /* First flux in X axis (i-1) */
@@ -212,7 +212,7 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE
         /* First flux in Y axis (j-1) */
         {
             bool is_top_wall = (col_pos == 1);
-            size_t index_left = is_top_wall ? index_right : (k - y_stride - 1) & (CACHE_SIZE - 1);
+            size_t index_left = (k - y_stride - 1) & (CACHE_SIZE - 1);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_p_left;
 
