@@ -1,0 +1,12 @@
+.vscode
+*.data
+*.txt
+*.out
+*.csv
+
+*.o
+*.cpu
+*.fpga_emu
+*.fpga
+*.prj
+*.a
