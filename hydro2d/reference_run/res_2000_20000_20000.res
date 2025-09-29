@@ -21,6 +21,7 @@ Configuration :
 [rank 0] Estimated Required Mem     : 23.85 GB
 [rank 0] Allocation Strategy        : Maximum (FPGA alignment)
 [rank 0] Max device elements        : 536862817
+
 Init device arrays ...       done
 
 Init conditions : Diffusion of a 100 times higher pressurized circle at simulation center
@@ -34,6060 +35,6060 @@ Initial total mass       : 4.7301802e+08
 Initial Dt : 6.68e-06
 [rank 0] iteration #0 - starting launcher [0][0] ...
 [rank 0] done
-[it=   0] hydro_fvm compute time t=0.0000e+00 (Dt=5.143e-06) : 0.81106 s (5.37 ms, 0 us, 749 us, 796468 us, 5.52 ms)
+[it=   0] hydro_fvm compute time t=0.0000e+00 (Dt=5.143e-06) : 2.21085 s (5.44 ms, 0 us, 145 us, 2197934 us, 4.45 ms)
 [rank 0] iteration #1 - starting launcher [0][0] ...
 [rank 0] done
-[it=   1] hydro_fvm compute time t=5.1426e-06 (Dt=5.292e-06) : 0.80442 s (5.38 ms, 0 us, 695 us, 790220 us, 5.44 ms)
+[it=   1] hydro_fvm compute time t=5.1426e-06 (Dt=5.292e-06) : 0.79813 s (4.47 ms, 0 us, 130 us, 787105 us, 4.13 ms)
 [rank 0] iteration #2 - starting launcher [0][0] ...
 [rank 0] done
-[it=   2] hydro_fvm compute time t=1.0435e-05 (Dt=5.152e-06) : 0.80416 s (5.31 ms, 0 us, 723 us, 790215 us, 5.42 ms)
+[it=   2] hydro_fvm compute time t=1.0435e-05 (Dt=5.152e-06) : 0.79575 s (4.30 ms, 0 us, 109 us, 785195 us, 4.12 ms)
 [rank 0] iteration #3 - starting launcher [0][0] ...
 [rank 0] done
-[it=   3] hydro_fvm compute time t=1.5586e-05 (Dt=5.095e-06) : 0.80460 s (5.33 ms, 0 us, 701 us, 790763 us, 5.40 ms)
+[it=   3] hydro_fvm compute time t=1.5586e-05 (Dt=5.095e-06) : 0.79661 s (4.33 ms, 0 us, 93 us, 786083 us, 4.09 ms)
 [rank 0] iteration #4 - starting launcher [0][0] ...
 [rank 0] done
-[it=   4] hydro_fvm compute time t=2.0682e-05 (Dt=5.037e-06) : 0.80391 s (5.33 ms, 0 us, 686 us, 790145 us, 5.41 ms)
+[it=   4] hydro_fvm compute time t=2.0682e-05 (Dt=5.037e-06) : 0.79553 s (4.28 ms, 0 us, 93 us, 785052 us, 4.11 ms)
 [rank 0] iteration #5 - starting launcher [0][0] ...
 [rank 0] done
-[it=   5] hydro_fvm compute time t=2.5719e-05 (Dt=4.999e-06) : 0.80374 s (5.32 ms, 0 us, 672 us, 789958 us, 5.43 ms)
+[it=   5] hydro_fvm compute time t=2.5719e-05 (Dt=4.999e-06) : 0.79592 s (4.30 ms, 0 us, 91 us, 785453 us, 4.11 ms)
 [rank 0] iteration #6 - starting launcher [0][0] ...
 [rank 0] done
-[it=   6] hydro_fvm compute time t=3.0718e-05 (Dt=4.973e-06) : 0.80414 s (5.34 ms, 0 us, 709 us, 790330 us, 5.43 ms)
+[it=   6] hydro_fvm compute time t=3.0718e-05 (Dt=4.973e-06) : 0.79579 s (4.33 ms, 0 us, 89 us, 785289 us, 4.10 ms)
 [rank 0] iteration #7 - starting launcher [0][0] ...
 [rank 0] done
-[it=   7] hydro_fvm compute time t=3.5692e-05 (Dt=4.953e-06) : 0.80326 s (5.37 ms, 0 us, 688 us, 789373 us, 5.46 ms)
+[it=   7] hydro_fvm compute time t=3.5692e-05 (Dt=4.953e-06) : 0.79600 s (4.30 ms, 0 us, 88 us, 785584 us, 4.10 ms)
 [rank 0] iteration #8 - starting launcher [0][0] ...
 [rank 0] done
-[it=   8] hydro_fvm compute time t=4.0645e-05 (Dt=4.939e-06) : 0.80416 s (5.33 ms, 0 us, 694 us, 790370 us, 5.43 ms)
+[it=   8] hydro_fvm compute time t=4.0645e-05 (Dt=4.939e-06) : 0.79562 s (4.27 ms, 0 us, 86 us, 785218 us, 4.09 ms)
 [rank 0] iteration #9 - starting launcher [0][0] ...
 [rank 0] done
-[it=   9] hydro_fvm compute time t=4.5584e-05 (Dt=4.927e-06) : 0.80358 s (5.37 ms, 0 us, 693 us, 789763 us, 5.42 ms)
+[it=   9] hydro_fvm compute time t=4.5584e-05 (Dt=4.927e-06) : 0.79780 s (4.29 ms, 0 us, 84 us, 787375 us, 4.09 ms)
 [rank 0] iteration #10 - starting launcher [0][0] ...
 [rank 0] done
-[it=  10] hydro_fvm compute time t=5.0511e-05 (Dt=4.918e-06) : 0.80416 s (5.33 ms, 0 us, 685 us, 790345 us, 5.45 ms)
+[it=  10] hydro_fvm compute time t=5.0511e-05 (Dt=4.918e-06) : 0.79711 s (4.26 ms, 0 us, 86 us, 786701 us, 4.10 ms)
 [rank 0] iteration #11 - starting launcher [0][0] ...
 [rank 0] done
-[it=  11] hydro_fvm compute time t=5.5430e-05 (Dt=4.907e-06) : 0.80409 s (5.38 ms, 0 us, 666 us, 790281 us, 5.43 ms)
+[it=  11] hydro_fvm compute time t=5.5430e-05 (Dt=4.907e-06) : 0.79577 s (4.16 ms, 0 us, 87 us, 785475 us, 4.08 ms)
 [rank 0] iteration #12 - starting launcher [0][0] ...
 [rank 0] done
-[it=  12] hydro_fvm compute time t=6.0337e-05 (Dt=4.897e-06) : 0.80341 s (5.34 ms, 0 us, 698 us, 789582 us, 5.45 ms)
+[it=  12] hydro_fvm compute time t=6.0337e-05 (Dt=4.897e-06) : 0.79558 s (4.14 ms, 0 us, 88 us, 785283 us, 4.09 ms)
 [rank 0] iteration #13 - starting launcher [0][0] ...
 [rank 0] done
-[it=  13] hydro_fvm compute time t=6.5234e-05 (Dt=4.879e-06) : 0.80435 s (5.38 ms, 0 us, 700 us, 790522 us, 5.42 ms)
+[it=  13] hydro_fvm compute time t=6.5234e-05 (Dt=4.879e-06) : 0.79579 s (4.14 ms, 0 us, 92 us, 785515 us, 4.09 ms)
 [rank 0] iteration #14 - starting launcher [0][0] ...
 [rank 0] done
-[it=  14] hydro_fvm compute time t=7.0113e-05 (Dt=4.861e-06) : 0.80381 s (5.37 ms, 0 us, 686 us, 790024 us, 5.42 ms)
+[it=  14] hydro_fvm compute time t=7.0113e-05 (Dt=4.861e-06) : 0.79565 s (4.14 ms, 0 us, 89 us, 785368 us, 4.09 ms)
 [rank 0] iteration #15 - starting launcher [0][0] ...
 [rank 0] done
-[it=  15] hydro_fvm compute time t=7.4974e-05 (Dt=4.846e-06) : 0.80425 s (5.33 ms, 0 us, 716 us, 790409 us, 5.45 ms)
+[it=  15] hydro_fvm compute time t=7.4974e-05 (Dt=4.846e-06) : 0.79578 s (4.14 ms, 0 us, 84 us, 785494 us, 4.10 ms)
 [rank 0] iteration #16 - starting launcher [0][0] ...
 [rank 0] done
-[it=  16] hydro_fvm compute time t=7.9820e-05 (Dt=4.835e-06) : 0.80400 s (5.41 ms, 0 us, 669 us, 790178 us, 5.42 ms)
+[it=  16] hydro_fvm compute time t=7.9820e-05 (Dt=4.835e-06) : 0.79541 s (4.14 ms, 0 us, 86 us, 785166 us, 4.09 ms)
 [rank 0] iteration #17 - starting launcher [0][0] ...
 [rank 0] done
-[it=  17] hydro_fvm compute time t=8.4655e-05 (Dt=4.827e-06) : 0.80417 s (5.34 ms, 0 us, 685 us, 790339 us, 5.47 ms)
+[it=  17] hydro_fvm compute time t=8.4655e-05 (Dt=4.827e-06) : 0.79572 s (4.17 ms, 0 us, 86 us, 785425 us, 4.10 ms)
 [rank 0] iteration #18 - starting launcher [0][0] ...
 [rank 0] done
-[it=  18] hydro_fvm compute time t=8.9482e-05 (Dt=4.822e-06) : 0.80416 s (5.37 ms, 0 us, 709 us, 790336 us, 5.43 ms)
+[it=  18] hydro_fvm compute time t=8.9482e-05 (Dt=4.822e-06) : 0.79576 s (4.15 ms, 0 us, 84 us, 785392 us, 4.13 ms)
 [rank 0] iteration #19 - starting launcher [0][0] ...
 [rank 0] done
-[it=  19] hydro_fvm compute time t=9.4304e-05 (Dt=4.816e-06) : 0.80399 s (5.34 ms, 0 us, 694 us, 790224 us, 5.43 ms)
+[it=  19] hydro_fvm compute time t=9.4304e-05 (Dt=4.816e-06) : 0.79587 s (4.19 ms, 0 us, 83 us, 785545 us, 4.11 ms)
 [rank 0] iteration #20 - starting launcher [0][0] ...
 [rank 0] done
-[it=  20] hydro_fvm compute time t=9.9120e-05 (Dt=4.812e-06) : 0.80400 s (5.35 ms, 0 us, 698 us, 790188 us, 5.44 ms)
+[it=  20] hydro_fvm compute time t=9.9120e-05 (Dt=4.812e-06) : 0.79574 s (4.26 ms, 0 us, 85 us, 785312 us, 4.11 ms)
 [rank 0] iteration #21 - starting launcher [0][0] ...
 [rank 0] done
-[it=  21] hydro_fvm compute time t=1.0393e-04 (Dt=4.805e-06) : 0.80402 s (5.36 ms, 0 us, 684 us, 790203 us, 5.45 ms)
+[it=  21] hydro_fvm compute time t=1.0393e-04 (Dt=4.805e-06) : 0.79637 s (4.27 ms, 0 us, 85 us, 785958 us, 4.11 ms)
 [rank 0] iteration #22 - starting launcher [0][0] ...
 [rank 0] done
-[it=  22] hydro_fvm compute time t=1.0874e-04 (Dt=4.799e-06) : 0.80444 s (5.38 ms, 0 us, 688 us, 790587 us, 5.45 ms)
+[it=  22] hydro_fvm compute time t=1.0874e-04 (Dt=4.799e-06) : 0.79547 s (4.25 ms, 0 us, 87 us, 785112 us, 4.12 ms)
 [rank 0] iteration #23 - starting launcher [0][0] ...
 [rank 0] done
-[it=  23] hydro_fvm compute time t=1.1354e-04 (Dt=4.792e-06) : 0.80386 s (5.39 ms, 0 us, 698 us, 790025 us, 5.42 ms)
+[it=  23] hydro_fvm compute time t=1.1354e-04 (Dt=4.792e-06) : 0.79607 s (4.36 ms, 0 us, 81 us, 785607 us, 4.10 ms)
 [rank 0] iteration #24 - starting launcher [0][0] ...
 [rank 0] done
-[it=  24] hydro_fvm compute time t=1.1833e-04 (Dt=4.787e-06) : 0.80392 s (5.35 ms, 0 us, 717 us, 790062 us, 5.45 ms)
+[it=  24] hydro_fvm compute time t=1.1833e-04 (Dt=4.787e-06) : 0.79561 s (4.26 ms, 0 us, 80 us, 785253 us, 4.11 ms)
 [rank 0] iteration #25 - starting launcher [0][0] ...
 [rank 0] done
-[it=  25] hydro_fvm compute time t=1.2312e-04 (Dt=4.783e-06) : 0.80375 s (5.36 ms, 0 us, 689 us, 789926 us, 5.45 ms)
+[it=  25] hydro_fvm compute time t=1.2312e-04 (Dt=4.783e-06) : 0.79595 s (4.27 ms, 0 us, 82 us, 785551 us, 4.11 ms)
 [rank 0] iteration #26 - starting launcher [0][0] ...
 [rank 0] done
-[it=  26] hydro_fvm compute time t=1.2790e-04 (Dt=4.780e-06) : 0.80443 s (5.34 ms, 0 us, 706 us, 790640 us, 5.43 ms)
+[it=  26] hydro_fvm compute time t=1.2790e-04 (Dt=4.780e-06) : 0.79587 s (4.25 ms, 0 us, 82 us, 785517 us, 4.10 ms)
 [rank 0] iteration #27 - starting launcher [0][0] ...
 [rank 0] done
-[it=  27] hydro_fvm compute time t=1.3268e-04 (Dt=4.778e-06) : 0.80453 s (5.32 ms, 0 us, 703 us, 790602 us, 5.51 ms)
+[it=  27] hydro_fvm compute time t=1.3268e-04 (Dt=4.778e-06) : 0.79569 s (4.28 ms, 0 us, 81 us, 785306 us, 4.10 ms)
 [rank 0] iteration #28 - starting launcher [0][0] ...
 [rank 0] done
-[it=  28] hydro_fvm compute time t=1.3746e-04 (Dt=4.776e-06) : 0.80413 s (5.40 ms, 0 us, 678 us, 790259 us, 5.45 ms)
+[it=  28] hydro_fvm compute time t=1.3746e-04 (Dt=4.776e-06) : 0.79750 s (4.27 ms, 0 us, 89 us, 787109 us, 4.12 ms)
 [rank 0] iteration #29 - starting launcher [0][0] ...
 [rank 0] done
-[it=  29] hydro_fvm compute time t=1.4223e-04 (Dt=4.774e-06) : 0.80409 s (5.37 ms, 0 us, 699 us, 790261 us, 5.43 ms)
+[it=  29] hydro_fvm compute time t=1.4223e-04 (Dt=4.774e-06) : 0.79596 s (4.27 ms, 0 us, 80 us, 785579 us, 4.11 ms)
 [rank 0] iteration #30 - starting launcher [0][0] ...
 [rank 0] done
-[it=  30] hydro_fvm compute time t=1.4701e-04 (Dt=4.773e-06) : 0.80436 s (5.34 ms, 0 us, 682 us, 790553 us, 5.46 ms)
+[it=  30] hydro_fvm compute time t=1.4701e-04 (Dt=4.773e-06) : 0.79561 s (4.31 ms, 0 us, 78 us, 785196 us, 4.12 ms)
 [rank 0] iteration #31 - starting launcher [0][0] ...
 [rank 0] done
-[it=  31] hydro_fvm compute time t=1.5178e-04 (Dt=4.772e-06) : 0.80416 s (5.33 ms, 0 us, 686 us, 790395 us, 5.43 ms)
+[it=  31] hydro_fvm compute time t=1.5178e-04 (Dt=4.772e-06) : 0.79594 s (4.24 ms, 0 us, 79 us, 785598 us, 4.10 ms)
 [rank 0] iteration #32 - starting launcher [0][0] ...
 [rank 0] done
-[it=  32] hydro_fvm compute time t=1.5655e-04 (Dt=4.769e-06) : 0.80443 s (5.33 ms, 0 us, 683 us, 790240 us, 5.60 ms)
+[it=  32] hydro_fvm compute time t=1.5655e-04 (Dt=4.769e-06) : 0.79620 s (4.39 ms, 0 us, 84 us, 785680 us, 4.13 ms)
 [rank 0] iteration #33 - starting launcher [0][0] ...
 [rank 0] done
-[it=  33] hydro_fvm compute time t=1.6132e-04 (Dt=4.764e-06) : 0.80429 s (5.42 ms, 0 us, 697 us, 790270 us, 5.46 ms)
+[it=  33] hydro_fvm compute time t=1.6132e-04 (Dt=4.764e-06) : 0.79593 s (4.30 ms, 0 us, 78 us, 785487 us, 4.14 ms)
 [rank 0] iteration #34 - starting launcher [0][0] ...
 [rank 0] done
-[it=  34] hydro_fvm compute time t=1.6608e-04 (Dt=4.759e-06) : 0.80384 s (5.36 ms, 0 us, 690 us, 790031 us, 5.44 ms)
+[it=  34] hydro_fvm compute time t=1.6608e-04 (Dt=4.759e-06) : 0.79590 s (4.28 ms, 0 us, 90 us, 785485 us, 4.12 ms)
 [rank 0] iteration #35 - starting launcher [0][0] ...
 [rank 0] done
-[it=  35] hydro_fvm compute time t=1.7084e-04 (Dt=4.756e-06) : 0.80418 s (5.32 ms, 0 us, 648 us, 790406 us, 5.46 ms)
+[it=  35] hydro_fvm compute time t=1.7084e-04 (Dt=4.756e-06) : 0.79598 s (4.25 ms, 0 us, 83 us, 785609 us, 4.11 ms)
 [rank 0] iteration #36 - starting launcher [0][0] ...
 [rank 0] done
-[it=  36] hydro_fvm compute time t=1.7560e-04 (Dt=4.753e-06) : 0.80385 s (5.39 ms, 0 us, 695 us, 790005 us, 5.44 ms)
+[it=  36] hydro_fvm compute time t=1.7560e-04 (Dt=4.753e-06) : 0.79550 s (4.28 ms, 0 us, 82 us, 785082 us, 4.14 ms)
 [rank 0] iteration #37 - starting launcher [0][0] ...
 [rank 0] done
-[it=  37] hydro_fvm compute time t=1.8035e-04 (Dt=4.752e-06) : 0.80448 s (5.34 ms, 0 us, 686 us, 790653 us, 5.46 ms)
+[it=  37] hydro_fvm compute time t=1.8035e-04 (Dt=4.752e-06) : 0.79587 s (4.28 ms, 0 us, 81 us, 785457 us, 4.14 ms)
 [rank 0] iteration #38 - starting launcher [0][0] ...
 [rank 0] done
-[it=  38] hydro_fvm compute time t=1.8510e-04 (Dt=4.750e-06) : 0.80395 s (5.40 ms, 0 us, 698 us, 790091 us, 5.45 ms)
+[it=  38] hydro_fvm compute time t=1.8510e-04 (Dt=4.750e-06) : 0.79564 s (4.29 ms, 0 us, 86 us, 785212 us, 4.13 ms)
 [rank 0] iteration #39 - starting launcher [0][0] ...
 [rank 0] done
-[it=  39] hydro_fvm compute time t=1.8985e-04 (Dt=4.749e-06) : 0.80401 s (5.39 ms, 0 us, 704 us, 790136 us, 5.47 ms)
+[it=  39] hydro_fvm compute time t=1.8985e-04 (Dt=4.749e-06) : 0.79642 s (4.29 ms, 0 us, 82 us, 785947 us, 4.15 ms)
 [rank 0] iteration #40 - starting launcher [0][0] ...
 [rank 0] done
-[it=  40] hydro_fvm compute time t=1.9460e-04 (Dt=4.749e-06) : 0.80407 s (5.36 ms, 0 us, 694 us, 790239 us, 5.45 ms)
+[it=  40] hydro_fvm compute time t=1.9460e-04 (Dt=4.749e-06) : 0.79577 s (4.33 ms, 0 us, 81 us, 785316 us, 4.13 ms)
 [rank 0] iteration #41 - starting launcher [0][0] ...
 [rank 0] done
-[it=  41] hydro_fvm compute time t=1.9935e-04 (Dt=4.748e-06) : 0.80407 s (5.39 ms, 0 us, 673 us, 790285 us, 5.42 ms)
+[it=  41] hydro_fvm compute time t=1.9935e-04 (Dt=4.748e-06) : 0.79613 s (4.29 ms, 0 us, 81 us, 785715 us, 4.13 ms)
 [rank 0] iteration #42 - starting launcher [0][0] ...
 [rank 0] done
-[it=  42] hydro_fvm compute time t=2.0410e-04 (Dt=4.748e-06) : 0.80410 s (5.35 ms, 0 us, 701 us, 790278 us, 5.44 ms)
+[it=  42] hydro_fvm compute time t=2.0410e-04 (Dt=4.748e-06) : 0.79643 s (4.26 ms, 0 us, 81 us, 786066 us, 4.12 ms)
 [rank 0] iteration #43 - starting launcher [0][0] ...
 [rank 0] done
-[it=  43] hydro_fvm compute time t=2.0885e-04 (Dt=4.748e-06) : 0.80422 s (5.39 ms, 0 us, 704 us, 790391 us, 5.42 ms)
+[it=  43] hydro_fvm compute time t=2.0885e-04 (Dt=4.748e-06) : 0.79586 s (4.34 ms, 0 us, 81 us, 785407 us, 4.12 ms)
 [rank 0] iteration #44 - starting launcher [0][0] ...
 [rank 0] done
-[it=  44] hydro_fvm compute time t=2.1360e-04 (Dt=4.749e-06) : 0.80382 s (5.37 ms, 0 us, 706 us, 790001 us, 5.44 ms)
+[it=  44] hydro_fvm compute time t=2.1360e-04 (Dt=4.749e-06) : 0.79603 s (4.40 ms, 0 us, 79 us, 785525 us, 4.12 ms)
 [rank 0] iteration #45 - starting launcher [0][0] ...
 [rank 0] done
-[it=  45] hydro_fvm compute time t=2.1835e-04 (Dt=4.746e-06) : 0.80429 s (5.57 ms, 0 us, 676 us, 790297 us, 5.43 ms)
+[it=  45] hydro_fvm compute time t=2.1835e-04 (Dt=4.746e-06) : 0.79581 s (4.28 ms, 0 us, 81 us, 785415 us, 4.12 ms)
 [rank 0] iteration #46 - starting launcher [0][0] ...
 [rank 0] done
-[it=  46] hydro_fvm compute time t=2.2309e-04 (Dt=4.744e-06) : 0.80414 s (5.58 ms, 0 us, 700 us, 790136 us, 5.43 ms)
+[it=  46] hydro_fvm compute time t=2.2309e-04 (Dt=4.744e-06) : 0.79563 s (4.26 ms, 0 us, 80 us, 785263 us, 4.11 ms)
 [rank 0] iteration #47 - starting launcher [0][0] ...
 [rank 0] done
-[it=  47] hydro_fvm compute time t=2.2784e-04 (Dt=4.743e-06) : 0.80384 s (5.59 ms, 0 us, 695 us, 789805 us, 5.43 ms)
+[it=  47] hydro_fvm compute time t=2.2784e-04 (Dt=4.743e-06) : 0.79590 s (4.27 ms, 0 us, 81 us, 785544 us, 4.10 ms)
 [rank 0] iteration #48 - starting launcher [0][0] ...
 [rank 0] done
-[it=  48] hydro_fvm compute time t=2.3258e-04 (Dt=4.742e-06) : 0.80417 s (5.59 ms, 0 us, 687 us, 790160 us, 5.44 ms)
+[it=  48] hydro_fvm compute time t=2.3258e-04 (Dt=4.742e-06) : 0.79560 s (4.25 ms, 0 us, 79 us, 785258 us, 4.10 ms)
 [rank 0] iteration #49 - starting launcher [0][0] ...
 [rank 0] done
-[it=  49] hydro_fvm compute time t=2.3732e-04 (Dt=4.741e-06) : 0.80462 s (5.55 ms, 0 us, 644 us, 790638 us, 5.47 ms)
+[it=  49] hydro_fvm compute time t=2.3732e-04 (Dt=4.741e-06) : 0.79621 s (4.28 ms, 0 us, 82 us, 785829 us, 4.12 ms)
 [rank 0] iteration #50 - starting launcher [0][0] ...
 [rank 0] done
-[it=  50] hydro_fvm compute time t=2.4206e-04 (Dt=4.741e-06) : 0.80465 s (5.57 ms, 0 us, 674 us, 790645 us, 5.44 ms)
+[it=  50] hydro_fvm compute time t=2.4206e-04 (Dt=4.741e-06) : 0.79611 s (4.26 ms, 0 us, 80 us, 785735 us, 4.12 ms)
 [rank 0] iteration #51 - starting launcher [0][0] ...
 [rank 0] done
-[it=  51] hydro_fvm compute time t=2.4680e-04 (Dt=4.741e-06) : 0.80442 s (5.59 ms, 0 us, 692 us, 790414 us, 5.41 ms)
+[it=  51] hydro_fvm compute time t=2.4680e-04 (Dt=4.741e-06) : 0.79579 s (4.26 ms, 0 us, 82 us, 785420 us, 4.12 ms)
 [rank 0] iteration #52 - starting launcher [0][0] ...
 [rank 0] done
-[it=  52] hydro_fvm compute time t=2.5155e-04 (Dt=4.741e-06) : 0.80456 s (5.58 ms, 0 us, 668 us, 790535 us, 5.45 ms)
+[it=  52] hydro_fvm compute time t=2.5155e-04 (Dt=4.741e-06) : 0.79567 s (4.28 ms, 0 us, 81 us, 785266 us, 4.13 ms)
 [rank 0] iteration #53 - starting launcher [0][0] ...
 [rank 0] done
-[it=  53] hydro_fvm compute time t=2.5629e-04 (Dt=4.741e-06) : 0.80431 s (5.63 ms, 0 us, 700 us, 790233 us, 5.43 ms)
+[it=  53] hydro_fvm compute time t=2.5629e-04 (Dt=4.741e-06) : 0.79618 s (4.27 ms, 0 us, 79 us, 785797 us, 4.12 ms)
 [rank 0] iteration #54 - starting launcher [0][0] ...
 [rank 0] done
-[it=  54] hydro_fvm compute time t=2.6103e-04 (Dt=4.742e-06) : 0.80473 s (5.58 ms, 0 us, 702 us, 790627 us, 5.47 ms)
+[it=  54] hydro_fvm compute time t=2.6103e-04 (Dt=4.742e-06) : 0.79562 s (4.33 ms, 0 us, 80 us, 785180 us, 4.12 ms)
 [rank 0] iteration #55 - starting launcher [0][0] ...
 [rank 0] done
-[it=  55] hydro_fvm compute time t=2.6577e-04 (Dt=4.743e-06) : 0.80468 s (5.63 ms, 0 us, 697 us, 790649 us, 5.41 ms)
+[it=  55] hydro_fvm compute time t=2.6577e-04 (Dt=4.743e-06) : 0.79563 s (4.28 ms, 0 us, 80 us, 785260 us, 4.11 ms)
 [rank 0] iteration #56 - starting launcher [0][0] ...
 [rank 0] done
-[it=  56] hydro_fvm compute time t=2.7051e-04 (Dt=4.742e-06) : 0.80467 s (5.63 ms, 0 us, 697 us, 790624 us, 5.43 ms)
+[it=  56] hydro_fvm compute time t=2.7051e-04 (Dt=4.742e-06) : 0.79576 s (4.25 ms, 0 us, 80 us, 785405 us, 4.11 ms)
 [rank 0] iteration #57 - starting launcher [0][0] ...
 [rank 0] done
-[it=  57] hydro_fvm compute time t=2.7525e-04 (Dt=4.741e-06) : 0.80445 s (5.57 ms, 0 us, 677 us, 790419 us, 5.46 ms)
+[it=  57] hydro_fvm compute time t=2.7525e-04 (Dt=4.741e-06) : 0.79575 s (4.29 ms, 0 us, 81 us, 785368 us, 4.11 ms)
 [rank 0] iteration #58 - starting launcher [0][0] ...
 [rank 0] done
-[it=  58] hydro_fvm compute time t=2.8000e-04 (Dt=4.741e-06) : 0.80426 s (5.63 ms, 0 us, 696 us, 790195 us, 5.43 ms)
+[it=  58] hydro_fvm compute time t=2.8000e-04 (Dt=4.741e-06) : 0.79563 s (4.27 ms, 0 us, 80 us, 785273 us, 4.10 ms)
 [rank 0] iteration #59 - starting launcher [0][0] ...
 [rank 0] done
-[it=  59] hydro_fvm compute time t=2.8474e-04 (Dt=4.740e-06) : 0.80462 s (5.63 ms, 0 us, 702 us, 790506 us, 5.45 ms)
+[it=  59] hydro_fvm compute time t=2.8474e-04 (Dt=4.740e-06) : 0.79564 s (4.24 ms, 0 us, 80 us, 785302 us, 4.12 ms)
 [rank 0] iteration #60 - starting launcher [0][0] ...
 [rank 0] done
-[it=  60] hydro_fvm compute time t=2.8948e-04 (Dt=4.740e-06) : 0.80425 s (5.64 ms, 0 us, 678 us, 790189 us, 5.43 ms)
+[it=  60] hydro_fvm compute time t=2.8948e-04 (Dt=4.740e-06) : 0.79573 s (4.27 ms, 0 us, 81 us, 785352 us, 4.13 ms)
 [rank 0] iteration #61 - starting launcher [0][0] ...
 [rank 0] done
-[it=  61] hydro_fvm compute time t=2.9422e-04 (Dt=4.740e-06) : 0.80472 s (5.57 ms, 0 us, 697 us, 790732 us, 5.43 ms)
+[it=  61] hydro_fvm compute time t=2.9422e-04 (Dt=4.740e-06) : 0.79588 s (4.22 ms, 0 us, 80 us, 785482 us, 4.14 ms)
 [rank 0] iteration #62 - starting launcher [0][0] ...
 [rank 0] done
-[it=  62] hydro_fvm compute time t=2.9896e-04 (Dt=4.740e-06) : 0.80422 s (5.61 ms, 0 us, 704 us, 790156 us, 5.43 ms)
+[it=  62] hydro_fvm compute time t=2.9896e-04 (Dt=4.740e-06) : 0.79704 s (4.24 ms, 0 us, 80 us, 786683 us, 4.12 ms)
 [rank 0] iteration #63 - starting launcher [0][0] ...
 [rank 0] done
-[it=  63] hydro_fvm compute time t=3.0370e-04 (Dt=4.741e-06) : 0.80481 s (5.59 ms, 0 us, 666 us, 790706 us, 5.44 ms)
+[it=  63] hydro_fvm compute time t=3.0370e-04 (Dt=4.741e-06) : 0.79570 s (4.27 ms, 0 us, 79 us, 785340 us, 4.11 ms)
 [rank 0] iteration #64 - starting launcher [0][0] ...
 [rank 0] done
-[it=  64] hydro_fvm compute time t=3.0844e-04 (Dt=4.741e-06) : 0.80464 s (5.58 ms, 0 us, 687 us, 790608 us, 5.40 ms)
+[it=  64] hydro_fvm compute time t=3.0844e-04 (Dt=4.741e-06) : 0.79594 s (4.25 ms, 0 us, 81 us, 785599 us, 4.10 ms)
 [rank 0] iteration #65 - starting launcher [0][0] ...
 [rank 0] done
-[it=  65] hydro_fvm compute time t=3.1318e-04 (Dt=4.742e-06) : 0.80420 s (5.57 ms, 0 us, 703 us, 790205 us, 5.43 ms)
+[it=  65] hydro_fvm compute time t=3.1318e-04 (Dt=4.742e-06) : 0.79598 s (4.27 ms, 0 us, 82 us, 785578 us, 4.14 ms)
 [rank 0] iteration #66 - starting launcher [0][0] ...
 [rank 0] done
-[it=  66] hydro_fvm compute time t=3.1792e-04 (Dt=4.743e-06) : 0.80437 s (5.54 ms, 0 us, 685 us, 790451 us, 5.39 ms)
+[it=  66] hydro_fvm compute time t=3.1792e-04 (Dt=4.743e-06) : 0.79568 s (4.24 ms, 0 us, 81 us, 785329 us, 4.12 ms)
 [rank 0] iteration #67 - starting launcher [0][0] ...
 [rank 0] done
-[it=  67] hydro_fvm compute time t=3.2266e-04 (Dt=4.742e-06) : 0.80474 s (5.57 ms, 0 us, 698 us, 790739 us, 5.41 ms)
+[it=  67] hydro_fvm compute time t=3.2266e-04 (Dt=4.742e-06) : 0.79585 s (4.27 ms, 0 us, 81 us, 785478 us, 4.11 ms)
 [rank 0] iteration #68 - starting launcher [0][0] ...
 [rank 0] done
-[it=  68] hydro_fvm compute time t=3.2741e-04 (Dt=4.742e-06) : 0.80464 s (5.61 ms, 0 us, 662 us, 790687 us, 5.38 ms)
+[it=  68] hydro_fvm compute time t=3.2741e-04 (Dt=4.742e-06) : 0.79564 s (4.27 ms, 0 us, 81 us, 785275 us, 4.10 ms)
 [rank 0] iteration #69 - starting launcher [0][0] ...
 [rank 0] done
-[it=  69] hydro_fvm compute time t=3.3215e-04 (Dt=4.742e-06) : 0.80443 s (5.55 ms, 0 us, 705 us, 790413 us, 5.42 ms)
+[it=  69] hydro_fvm compute time t=3.3215e-04 (Dt=4.742e-06) : 0.79568 s (4.23 ms, 0 us, 78 us, 785341 us, 4.13 ms)
 [rank 0] iteration #70 - starting launcher [0][0] ...
 [rank 0] done
-[it=  70] hydro_fvm compute time t=3.3689e-04 (Dt=4.742e-06) : 0.80427 s (5.59 ms, 0 us, 619 us, 790365 us, 5.40 ms)
+[it=  70] hydro_fvm compute time t=3.3689e-04 (Dt=4.742e-06) : 0.79551 s (4.27 ms, 0 us, 80 us, 785131 us, 4.12 ms)
 [rank 0] iteration #71 - starting launcher [0][0] ...
 [rank 0] done
-[it=  71] hydro_fvm compute time t=3.4163e-04 (Dt=4.742e-06) : 0.80408 s (5.57 ms, 0 us, 702 us, 790120 us, 5.39 ms)
+[it=  71] hydro_fvm compute time t=3.4163e-04 (Dt=4.742e-06) : 0.79581 s (4.26 ms, 0 us, 78 us, 785453 us, 4.12 ms)
 [rank 0] iteration #72 - starting launcher [0][0] ...
 [rank 0] done
-[it=  72] hydro_fvm compute time t=3.4637e-04 (Dt=4.742e-06) : 0.80416 s (5.56 ms, 0 us, 680 us, 790231 us, 5.39 ms)
+[it=  72] hydro_fvm compute time t=3.4637e-04 (Dt=4.742e-06) : 0.79661 s (4.25 ms, 0 us, 80 us, 786259 us, 4.12 ms)
 [rank 0] iteration #73 - starting launcher [0][0] ...
 [rank 0] done
-[it=  73] hydro_fvm compute time t=3.5112e-04 (Dt=4.743e-06) : 0.80452 s (5.56 ms, 0 us, 701 us, 790592 us, 5.39 ms)
+[it=  73] hydro_fvm compute time t=3.5112e-04 (Dt=4.743e-06) : 0.79582 s (4.26 ms, 0 us, 79 us, 785451 us, 4.12 ms)
 [rank 0] iteration #74 - starting launcher [0][0] ...
 [rank 0] done
-[it=  74] hydro_fvm compute time t=3.5586e-04 (Dt=4.744e-06) : 0.80392 s (5.58 ms, 0 us, 708 us, 789956 us, 5.39 ms)
+[it=  74] hydro_fvm compute time t=3.5586e-04 (Dt=4.744e-06) : 0.79560 s (4.27 ms, 0 us, 78 us, 785233 us, 4.12 ms)
 [rank 0] iteration #75 - starting launcher [0][0] ...
 [rank 0] done
-[it=  75] hydro_fvm compute time t=3.6060e-04 (Dt=4.744e-06) : 0.80421 s (5.58 ms, 0 us, 694 us, 790256 us, 5.39 ms)
+[it=  75] hydro_fvm compute time t=3.6060e-04 (Dt=4.744e-06) : 0.79583 s (4.26 ms, 0 us, 78 us, 785466 us, 4.13 ms)
 [rank 0] iteration #76 - starting launcher [0][0] ...
 [rank 0] done
-[it=  76] hydro_fvm compute time t=3.6535e-04 (Dt=4.745e-06) : 0.80460 s (5.58 ms, 0 us, 705 us, 790541 us, 5.41 ms)
+[it=  76] hydro_fvm compute time t=3.6535e-04 (Dt=4.745e-06) : 0.79586 s (4.26 ms, 0 us, 80 us, 785491 us, 4.13 ms)
 [rank 0] iteration #77 - starting launcher [0][0] ...
 [rank 0] done
-[it=  77] hydro_fvm compute time t=3.7009e-04 (Dt=4.745e-06) : 0.80438 s (5.55 ms, 0 us, 712 us, 790450 us, 5.35 ms)
+[it=  77] hydro_fvm compute time t=3.7009e-04 (Dt=4.745e-06) : 0.79577 s (4.25 ms, 0 us, 83 us, 785422 us, 4.11 ms)
 [rank 0] iteration #78 - starting launcher [0][0] ...
 [rank 0] done
-[it=  78] hydro_fvm compute time t=3.7484e-04 (Dt=4.745e-06) : 0.80392 s (5.50 ms, 0 us, 700 us, 790064 us, 5.36 ms)
+[it=  78] hydro_fvm compute time t=3.7484e-04 (Dt=4.745e-06) : 0.79566 s (4.29 ms, 0 us, 80 us, 785285 us, 4.10 ms)
 [rank 0] iteration #79 - starting launcher [0][0] ...
 [rank 0] done
-[it=  79] hydro_fvm compute time t=3.7958e-04 (Dt=4.745e-06) : 0.80462 s (5.54 ms, 0 us, 699 us, 790733 us, 5.36 ms)
+[it=  79] hydro_fvm compute time t=3.7958e-04 (Dt=4.745e-06) : 0.79583 s (4.31 ms, 0 us, 80 us, 785417 us, 4.12 ms)
 [rank 0] iteration #80 - starting launcher [0][0] ...
 [rank 0] done
-[it=  80] hydro_fvm compute time t=3.8433e-04 (Dt=4.745e-06) : 0.80424 s (5.55 ms, 0 us, 687 us, 790281 us, 5.40 ms)
+[it=  80] hydro_fvm compute time t=3.8433e-04 (Dt=4.745e-06) : 0.79585 s (4.21 ms, 0 us, 78 us, 785550 us, 4.12 ms)
 [rank 0] iteration #81 - starting launcher [0][0] ...
 [rank 0] done
-[it=  81] hydro_fvm compute time t=3.8907e-04 (Dt=4.746e-06) : 0.80426 s (5.64 ms, 0 us, 690 us, 790267 us, 5.39 ms)
+[it=  81] hydro_fvm compute time t=3.8907e-04 (Dt=4.746e-06) : 0.79608 s (4.38 ms, 0 us, 79 us, 785601 us, 4.14 ms)
 [rank 0] iteration #82 - starting launcher [0][0] ...
 [rank 0] done
-[it=  82] hydro_fvm compute time t=3.9382e-04 (Dt=4.746e-06) : 0.80418 s (5.50 ms, 0 us, 689 us, 790366 us, 5.35 ms)
+[it=  82] hydro_fvm compute time t=3.9382e-04 (Dt=4.746e-06) : 0.79553 s (4.30 ms, 0 us, 80 us, 785119 us, 4.12 ms)
 [rank 0] iteration #83 - starting launcher [0][0] ...
 [rank 0] done
-[it=  83] hydro_fvm compute time t=3.9856e-04 (Dt=4.747e-06) : 0.80454 s (5.50 ms, 0 us, 707 us, 790684 us, 5.35 ms)
+[it=  83] hydro_fvm compute time t=3.9856e-04 (Dt=4.747e-06) : 0.79583 s (4.37 ms, 0 us, 79 us, 785348 us, 4.12 ms)
 [rank 0] iteration #84 - starting launcher [0][0] ...
 [rank 0] done
-[it=  84] hydro_fvm compute time t=4.0331e-04 (Dt=4.747e-06) : 0.80389 s (5.53 ms, 0 us, 707 us, 790007 us, 5.36 ms)
+[it=  84] hydro_fvm compute time t=4.0331e-04 (Dt=4.747e-06) : 0.79587 s (4.29 ms, 0 us, 79 us, 785482 us, 4.12 ms)
 [rank 0] iteration #85 - starting launcher [0][0] ...
 [rank 0] done
-[it=  85] hydro_fvm compute time t=4.0806e-04 (Dt=4.748e-06) : 0.80441 s (5.52 ms, 0 us, 693 us, 790537 us, 5.38 ms)
+[it=  85] hydro_fvm compute time t=4.0806e-04 (Dt=4.748e-06) : 0.79627 s (4.29 ms, 0 us, 78 us, 785875 us, 4.12 ms)
 [rank 0] iteration #86 - starting launcher [0][0] ...
 [rank 0] done
-[it=  86] hydro_fvm compute time t=4.1281e-04 (Dt=4.749e-06) : 0.80443 s (5.57 ms, 0 us, 693 us, 790537 us, 5.34 ms)
+[it=  86] hydro_fvm compute time t=4.1281e-04 (Dt=4.749e-06) : 0.79587 s (4.29 ms, 0 us, 79 us, 785448 us, 4.15 ms)
 [rank 0] iteration #87 - starting launcher [0][0] ...
 [rank 0] done
-[it=  87] hydro_fvm compute time t=4.1755e-04 (Dt=4.749e-06) : 0.80444 s (5.56 ms, 0 us, 702 us, 790552 us, 5.35 ms)
+[it=  87] hydro_fvm compute time t=4.1755e-04 (Dt=4.749e-06) : 0.79594 s (4.37 ms, 0 us, 79 us, 785460 us, 4.12 ms)
 [rank 0] iteration #88 - starting launcher [0][0] ...
 [rank 0] done
-[it=  88] hydro_fvm compute time t=4.2230e-04 (Dt=4.749e-06) : 0.80391 s (5.51 ms, 0 us, 701 us, 790045 us, 5.37 ms)
+[it=  88] hydro_fvm compute time t=4.2230e-04 (Dt=4.749e-06) : 0.79611 s (4.30 ms, 0 us, 79 us, 785714 us, 4.12 ms)
 [rank 0] iteration #89 - starting launcher [0][0] ...
 [rank 0] done
-[it=  89] hydro_fvm compute time t=4.2705e-04 (Dt=4.749e-06) : 0.80329 s (5.52 ms, 0 us, 656 us, 789475 us, 5.38 ms)
+[it=  89] hydro_fvm compute time t=4.2705e-04 (Dt=4.749e-06) : 0.79584 s (4.28 ms, 0 us, 80 us, 785455 us, 4.12 ms)
 [rank 0] iteration #90 - starting launcher [0][0] ...
 [rank 0] done
-[it=  90] hydro_fvm compute time t=4.3180e-04 (Dt=4.750e-06) : 0.80453 s (5.52 ms, 0 us, 704 us, 790646 us, 5.39 ms)
+[it=  90] hydro_fvm compute time t=4.3180e-04 (Dt=4.750e-06) : 0.79562 s (4.34 ms, 0 us, 79 us, 785188 us, 4.12 ms)
 [rank 0] iteration #91 - starting launcher [0][0] ...
 [rank 0] done
-[it=  91] hydro_fvm compute time t=4.3655e-04 (Dt=4.750e-06) : 0.80412 s (5.55 ms, 0 us, 680 us, 790246 us, 5.35 ms)
+[it=  91] hydro_fvm compute time t=4.3655e-04 (Dt=4.750e-06) : 0.79612 s (4.29 ms, 0 us, 80 us, 785743 us, 4.11 ms)
 [rank 0] iteration #92 - starting launcher [0][0] ...
 [rank 0] done
-[it=  92] hydro_fvm compute time t=4.4130e-04 (Dt=4.751e-06) : 0.80381 s (5.52 ms, 0 us, 667 us, 789976 us, 5.35 ms)
+[it=  92] hydro_fvm compute time t=4.4130e-04 (Dt=4.751e-06) : 0.79566 s (4.28 ms, 0 us, 80 us, 785258 us, 4.13 ms)
 [rank 0] iteration #93 - starting launcher [0][0] ...
 [rank 0] done
-[it=  93] hydro_fvm compute time t=4.4605e-04 (Dt=4.752e-06) : 0.80432 s (5.52 ms, 0 us, 665 us, 790507 us, 5.35 ms)
+[it=  93] hydro_fvm compute time t=4.4605e-04 (Dt=4.752e-06) : 0.79579 s (4.28 ms, 0 us, 80 us, 785437 us, 4.10 ms)
 [rank 0] iteration #94 - starting launcher [0][0] ...
 [rank 0] done
-[it=  94] hydro_fvm compute time t=4.5080e-04 (Dt=4.752e-06) : 0.80423 s (5.52 ms, 0 us, 700 us, 790379 us, 5.36 ms)
+[it=  94] hydro_fvm compute time t=4.5080e-04 (Dt=4.752e-06) : 0.79560 s (4.34 ms, 0 us, 79 us, 785148 us, 4.14 ms)
 [rank 0] iteration #95 - starting launcher [0][0] ...
 [rank 0] done
-[it=  95] hydro_fvm compute time t=4.5556e-04 (Dt=4.753e-06) : 0.80395 s (5.51 ms, 0 us, 707 us, 790045 us, 5.39 ms)
+[it=  95] hydro_fvm compute time t=4.5556e-04 (Dt=4.753e-06) : 0.79609 s (4.29 ms, 0 us, 79 us, 785715 us, 4.12 ms)
 [rank 0] iteration #96 - starting launcher [0][0] ...
 [rank 0] done
-[it=  96] hydro_fvm compute time t=4.6031e-04 (Dt=4.753e-06) : 0.80402 s (5.53 ms, 0 us, 705 us, 790161 us, 5.35 ms)
+[it=  96] hydro_fvm compute time t=4.6031e-04 (Dt=4.753e-06) : 0.79552 s (4.29 ms, 0 us, 79 us, 785121 us, 4.13 ms)
 [rank 0] iteration #97 - starting launcher [0][0] ...
 [rank 0] done
-[it=  97] hydro_fvm compute time t=4.6506e-04 (Dt=4.754e-06) : 0.80413 s (5.50 ms, 0 us, 695 us, 790323 us, 5.33 ms)
+[it=  97] hydro_fvm compute time t=4.6506e-04 (Dt=4.754e-06) : 0.79590 s (4.28 ms, 0 us, 81 us, 785501 us, 4.13 ms)
 [rank 0] iteration #98 - starting launcher [0][0] ...
 [rank 0] done
-[it=  98] hydro_fvm compute time t=4.6982e-04 (Dt=4.754e-06) : 0.80398 s (5.52 ms, 0 us, 708 us, 790142 us, 5.34 ms)
+[it=  98] hydro_fvm compute time t=4.6982e-04 (Dt=4.754e-06) : 0.79636 s (4.31 ms, 0 us, 82 us, 785924 us, 4.13 ms)
 [rank 0] iteration #99 - starting launcher [0][0] ...
 [rank 0] done
-[it=  99] hydro_fvm compute time t=4.7457e-04 (Dt=4.754e-06) : 0.80401 s (5.53 ms, 0 us, 698 us, 790160 us, 5.33 ms)
+[it=  99] hydro_fvm compute time t=4.7457e-04 (Dt=4.754e-06) : 0.79639 s (4.38 ms, 0 us, 80 us, 785900 us, 4.12 ms)
 [rank 0] iteration #100 - starting launcher [0][0] ...
 [rank 0] done
-[it= 100] hydro_fvm compute time t=4.7932e-04 (Dt=4.755e-06) : 0.80415 s (5.50 ms, 0 us, 707 us, 790319 us, 5.35 ms)
+[it= 100] hydro_fvm compute time t=4.7932e-04 (Dt=4.755e-06) : 0.79565 s (4.27 ms, 0 us, 80 us, 785260 us, 4.13 ms)
 [rank 0] iteration #101 - starting launcher [0][0] ...
 [rank 0] done
-[it= 101] hydro_fvm compute time t=4.8408e-04 (Dt=4.756e-06) : 0.80414 s (5.51 ms, 0 us, 690 us, 790302 us, 5.36 ms)
+[it= 101] hydro_fvm compute time t=4.8408e-04 (Dt=4.756e-06) : 0.79593 s (4.27 ms, 0 us, 81 us, 785541 us, 4.13 ms)
 [rank 0] iteration #102 - starting launcher [0][0] ...
 [rank 0] done
-[it= 102] hydro_fvm compute time t=4.8883e-04 (Dt=4.756e-06) : 0.80417 s (5.51 ms, 0 us, 663 us, 790342 us, 5.36 ms)
+[it= 102] hydro_fvm compute time t=4.8883e-04 (Dt=4.756e-06) : 0.79576 s (4.30 ms, 0 us, 80 us, 785365 us, 4.11 ms)
 [rank 0] iteration #103 - starting launcher [0][0] ...
 [rank 0] done
-[it= 103] hydro_fvm compute time t=4.9359e-04 (Dt=4.756e-06) : 0.80414 s (5.54 ms, 0 us, 673 us, 790248 us, 5.39 ms)
+[it= 103] hydro_fvm compute time t=4.9359e-04 (Dt=4.756e-06) : 0.79590 s (4.31 ms, 0 us, 84 us, 785494 us, 4.15 ms)
 [rank 0] iteration #104 - starting launcher [0][0] ...
 [rank 0] done
-[it= 104] hydro_fvm compute time t=4.9835e-04 (Dt=4.757e-06) : 0.80418 s (5.50 ms, 0 us, 705 us, 790333 us, 5.36 ms)
+[it= 104] hydro_fvm compute time t=4.9835e-04 (Dt=4.757e-06) : 0.79573 s (4.26 ms, 0 us, 79 us, 785371 us, 4.13 ms)
 [rank 0] iteration #105 - starting launcher [0][0] ...
 [rank 0] done
-[it= 105] hydro_fvm compute time t=5.0310e-04 (Dt=4.757e-06) : 0.80428 s (5.55 ms, 0 us, 704 us, 790393 us, 5.35 ms)
+[it= 105] hydro_fvm compute time t=5.0310e-04 (Dt=4.757e-06) : 0.79589 s (4.26 ms, 0 us, 79 us, 785531 us, 4.11 ms)
 [rank 0] iteration #106 - starting launcher [0][0] ...
 [rank 0] done
-[it= 106] hydro_fvm compute time t=5.0786e-04 (Dt=4.757e-06) : 0.80416 s (5.51 ms, 0 us, 711 us, 790303 us, 5.35 ms)
+[it= 106] hydro_fvm compute time t=5.0786e-04 (Dt=4.757e-06) : 0.79704 s (4.26 ms, 0 us, 79 us, 786711 us, 4.13 ms)
 [rank 0] iteration #107 - starting launcher [0][0] ...
 [rank 0] done
-[it= 107] hydro_fvm compute time t=5.1262e-04 (Dt=4.757e-06) : 0.80460 s (5.53 ms, 0 us, 692 us, 790397 us, 5.47 ms)
+[it= 107] hydro_fvm compute time t=5.1262e-04 (Dt=4.757e-06) : 0.79606 s (4.40 ms, 0 us, 80 us, 785536 us, 4.13 ms)
 [rank 0] iteration #108 - starting launcher [0][0] ...
 [rank 0] done
-[it= 108] hydro_fvm compute time t=5.1737e-04 (Dt=4.757e-06) : 0.80460 s (5.58 ms, 0 us, 702 us, 790490 us, 5.40 ms)
+[it= 108] hydro_fvm compute time t=5.1737e-04 (Dt=4.757e-06) : 0.79580 s (4.28 ms, 0 us, 79 us, 785379 us, 4.14 ms)
 [rank 0] iteration #109 - starting launcher [0][0] ...
 [rank 0] done
-[it= 109] hydro_fvm compute time t=5.2213e-04 (Dt=4.757e-06) : 0.80411 s (5.57 ms, 0 us, 706 us, 790131 us, 5.39 ms)
+[it= 109] hydro_fvm compute time t=5.2213e-04 (Dt=4.757e-06) : 0.79584 s (4.26 ms, 0 us, 89 us, 785460 us, 4.11 ms)
 [rank 0] iteration #110 - starting launcher [0][0] ...
 [rank 0] done
-[it= 110] hydro_fvm compute time t=5.2689e-04 (Dt=4.757e-06) : 0.80456 s (5.53 ms, 0 us, 686 us, 790607 us, 5.42 ms)
+[it= 110] hydro_fvm compute time t=5.2689e-04 (Dt=4.757e-06) : 0.79548 s (4.26 ms, 0 us, 82 us, 785113 us, 4.11 ms)
 [rank 0] iteration #111 - starting launcher [0][0] ...
 [rank 0] done
-[it= 111] hydro_fvm compute time t=5.3165e-04 (Dt=4.758e-06) : 0.80465 s (5.51 ms, 0 us, 700 us, 790756 us, 5.39 ms)
+[it= 111] hydro_fvm compute time t=5.3165e-04 (Dt=4.758e-06) : 0.79846 s (4.26 ms, 0 us, 80 us, 788144 us, 4.11 ms)
 [rank 0] iteration #112 - starting launcher [0][0] ...
 [rank 0] done
-[it= 112] hydro_fvm compute time t=5.3640e-04 (Dt=4.758e-06) : 0.80483 s (5.51 ms, 0 us, 706 us, 790567 us, 5.64 ms)
+[it= 112] hydro_fvm compute time t=5.3640e-04 (Dt=4.758e-06) : 0.79560 s (4.27 ms, 0 us, 81 us, 785220 us, 4.12 ms)
 [rank 0] iteration #113 - starting launcher [0][0] ...
 [rank 0] done
-[it= 113] hydro_fvm compute time t=5.4116e-04 (Dt=4.759e-06) : 0.80452 s (5.59 ms, 0 us, 678 us, 790610 us, 5.36 ms)
+[it= 113] hydro_fvm compute time t=5.4116e-04 (Dt=4.759e-06) : 0.79577 s (4.26 ms, 0 us, 81 us, 785457 us, 4.08 ms)
 [rank 0] iteration #114 - starting launcher [0][0] ...
 [rank 0] done
-[it= 114] hydro_fvm compute time t=5.4592e-04 (Dt=4.759e-06) : 0.80411 s (5.57 ms, 0 us, 697 us, 790198 us, 5.37 ms)
+[it= 114] hydro_fvm compute time t=5.4592e-04 (Dt=4.759e-06) : 0.79570 s (4.23 ms, 0 us, 83 us, 785372 us, 4.12 ms)
 [rank 0] iteration #115 - starting launcher [0][0] ...
 [rank 0] done
-[it= 115] hydro_fvm compute time t=5.5068e-04 (Dt=4.759e-06) : 0.80424 s (5.54 ms, 0 us, 681 us, 790377 us, 5.36 ms)
+[it= 115] hydro_fvm compute time t=5.5068e-04 (Dt=4.759e-06) : 0.79564 s (4.20 ms, 0 us, 80 us, 785376 us, 4.08 ms)
 [rank 0] iteration #116 - starting launcher [0][0] ...
 [rank 0] done
-[it= 116] hydro_fvm compute time t=5.5544e-04 (Dt=4.759e-06) : 0.80406 s (5.51 ms, 0 us, 692 us, 790218 us, 5.36 ms)
+[it= 116] hydro_fvm compute time t=5.5544e-04 (Dt=4.759e-06) : 0.79541 s (4.23 ms, 0 us, 79 us, 785159 us, 4.09 ms)
 [rank 0] iteration #117 - starting launcher [0][0] ...
 [rank 0] done
-[it= 117] hydro_fvm compute time t=5.6020e-04 (Dt=4.759e-06) : 0.80449 s (5.54 ms, 0 us, 689 us, 790615 us, 5.36 ms)
+[it= 117] hydro_fvm compute time t=5.6020e-04 (Dt=4.759e-06) : 0.79555 s (4.24 ms, 0 us, 80 us, 785262 us, 4.08 ms)
 [rank 0] iteration #118 - starting launcher [0][0] ...
 [rank 0] done
-[it= 118] hydro_fvm compute time t=5.6495e-04 (Dt=4.759e-06) : 0.80401 s (5.56 ms, 0 us, 715 us, 790083 us, 5.37 ms)
+[it= 118] hydro_fvm compute time t=5.6495e-04 (Dt=4.759e-06) : 0.79569 s (4.23 ms, 0 us, 79 us, 785412 us, 4.08 ms)
 [rank 0] iteration #119 - starting launcher [0][0] ...
 [rank 0] done
-[it= 119] hydro_fvm compute time t=5.6971e-04 (Dt=4.759e-06) : 0.80436 s (5.49 ms, 0 us, 678 us, 790564 us, 5.35 ms)
+[it= 119] hydro_fvm compute time t=5.6971e-04 (Dt=4.759e-06) : 0.79565 s (4.23 ms, 0 us, 80 us, 785364 us, 4.08 ms)
 [rank 0] iteration #120 - starting launcher [0][0] ...
 [rank 0] done
-[it= 120] hydro_fvm compute time t=5.7447e-04 (Dt=4.760e-06) : 0.80452 s (5.53 ms, 0 us, 671 us, 790666 us, 5.37 ms)
+[it= 120] hydro_fvm compute time t=5.7447e-04 (Dt=4.760e-06) : 0.79554 s (4.23 ms, 0 us, 80 us, 785261 us, 4.07 ms)
 [rank 0] iteration #121 - starting launcher [0][0] ...
 [rank 0] done
-[it= 121] hydro_fvm compute time t=5.7923e-04 (Dt=4.760e-06) : 0.80450 s (5.50 ms, 0 us, 684 us, 790679 us, 5.36 ms)
+[it= 121] hydro_fvm compute time t=5.7923e-04 (Dt=4.760e-06) : 0.79586 s (4.36 ms, 0 us, 79 us, 785467 us, 4.09 ms)
 [rank 0] iteration #122 - starting launcher [0][0] ...
 [rank 0] done
-[it= 122] hydro_fvm compute time t=5.8399e-04 (Dt=4.761e-06) : 0.80447 s (5.51 ms, 0 us, 692 us, 790589 us, 5.38 ms)
+[it= 122] hydro_fvm compute time t=5.8399e-04 (Dt=4.761e-06) : 0.79567 s (4.38 ms, 0 us, 78 us, 785219 us, 4.10 ms)
 [rank 0] iteration #123 - starting launcher [0][0] ...
 [rank 0] done
-[it= 123] hydro_fvm compute time t=5.8875e-04 (Dt=4.761e-06) : 0.80420 s (5.47 ms, 0 us, 699 us, 790366 us, 5.38 ms)
+[it= 123] hydro_fvm compute time t=5.8875e-04 (Dt=4.761e-06) : 0.79566 s (4.22 ms, 0 us, 80 us, 785372 us, 4.08 ms)
 [rank 0] iteration #124 - starting launcher [0][0] ...
 [rank 0] done
-[it= 124] hydro_fvm compute time t=5.9352e-04 (Dt=4.761e-06) : 0.80410 s (5.51 ms, 0 us, 661 us, 790282 us, 5.37 ms)
+[it= 124] hydro_fvm compute time t=5.9352e-04 (Dt=4.761e-06) : 0.79571 s (4.21 ms, 0 us, 83 us, 785424 us, 4.11 ms)
 [rank 0] iteration #125 - starting launcher [0][0] ...
 [rank 0] done
-[it= 125] hydro_fvm compute time t=5.9828e-04 (Dt=4.761e-06) : 0.80418 s (5.50 ms, 0 us, 685 us, 790337 us, 5.37 ms)
+[it= 125] hydro_fvm compute time t=5.9828e-04 (Dt=4.761e-06) : 0.79576 s (4.26 ms, 0 us, 79 us, 785446 us, 4.07 ms)
 [rank 0] iteration #126 - starting launcher [0][0] ...
 [rank 0] done
-[it= 126] hydro_fvm compute time t=6.0304e-04 (Dt=4.761e-06) : 0.80439 s (5.53 ms, 0 us, 682 us, 790502 us, 5.37 ms)
+[it= 126] hydro_fvm compute time t=6.0304e-04 (Dt=4.761e-06) : 0.79550 s (4.20 ms, 0 us, 80 us, 785263 us, 4.09 ms)
 [rank 0] iteration #127 - starting launcher [0][0] ...
 [rank 0] done
-[it= 127] hydro_fvm compute time t=6.0780e-04 (Dt=4.762e-06) : 0.80385 s (5.54 ms, 0 us, 703 us, 789959 us, 5.36 ms)
+[it= 127] hydro_fvm compute time t=6.0780e-04 (Dt=4.762e-06) : 0.79622 s (4.25 ms, 0 us, 84 us, 785920 us, 4.07 ms)
 [rank 0] iteration #128 - starting launcher [0][0] ...
 [rank 0] done
-[it= 128] hydro_fvm compute time t=6.1256e-04 (Dt=4.762e-06) : 0.80445 s (5.52 ms, 0 us, 704 us, 790587 us, 5.36 ms)
+[it= 128] hydro_fvm compute time t=6.1256e-04 (Dt=4.762e-06) : 0.79540 s (4.21 ms, 0 us, 79 us, 785144 us, 4.08 ms)
 [rank 0] iteration #129 - starting launcher [0][0] ...
 [rank 0] done
-[it= 129] hydro_fvm compute time t=6.1732e-04 (Dt=4.763e-06) : 0.80409 s (5.52 ms, 0 us, 695 us, 790235 us, 5.36 ms)
+[it= 129] hydro_fvm compute time t=6.1732e-04 (Dt=4.763e-06) : 0.79583 s (4.22 ms, 0 us, 79 us, 785559 us, 4.07 ms)
 [rank 0] iteration #130 - starting launcher [0][0] ...
 [rank 0] done
-[it= 130] hydro_fvm compute time t=6.2209e-04 (Dt=4.763e-06) : 0.80448 s (5.52 ms, 0 us, 697 us, 790593 us, 5.38 ms)
+[it= 130] hydro_fvm compute time t=6.2209e-04 (Dt=4.763e-06) : 0.79559 s (4.23 ms, 0 us, 80 us, 785317 us, 4.07 ms)
 [rank 0] iteration #131 - starting launcher [0][0] ...
 [rank 0] done
-[it= 131] hydro_fvm compute time t=6.2685e-04 (Dt=4.764e-06) : 0.80454 s (5.52 ms, 0 us, 691 us, 790677 us, 5.37 ms)
+[it= 131] hydro_fvm compute time t=6.2685e-04 (Dt=4.764e-06) : 0.79590 s (4.21 ms, 0 us, 82 us, 785654 us, 4.10 ms)
 [rank 0] iteration #132 - starting launcher [0][0] ...
 [rank 0] done
-[it= 132] hydro_fvm compute time t=6.3161e-04 (Dt=4.764e-06) : 0.80431 s (5.53 ms, 0 us, 653 us, 790465 us, 5.38 ms)
+[it= 132] hydro_fvm compute time t=6.3161e-04 (Dt=4.764e-06) : 0.79621 s (4.36 ms, 0 us, 79 us, 785702 us, 4.17 ms)
 [rank 0] iteration #133 - starting launcher [0][0] ...
 [rank 0] done
-[it= 133] hydro_fvm compute time t=6.3638e-04 (Dt=4.764e-06) : 0.80425 s (5.52 ms, 0 us, 696 us, 790380 us, 5.37 ms)
+[it= 133] hydro_fvm compute time t=6.3638e-04 (Dt=4.764e-06) : 0.79584 s (4.26 ms, 0 us, 79 us, 785529 us, 4.08 ms)
 [rank 0] iteration #134 - starting launcher [0][0] ...
 [rank 0] done
-[it= 134] hydro_fvm compute time t=6.4114e-04 (Dt=4.764e-06) : 0.80425 s (5.51 ms, 0 us, 704 us, 790374 us, 5.39 ms)
+[it= 134] hydro_fvm compute time t=6.4114e-04 (Dt=4.764e-06) : 0.79563 s (4.24 ms, 0 us, 82 us, 785322 us, 4.09 ms)
 [rank 0] iteration #135 - starting launcher [0][0] ...
 [rank 0] done
-[it= 135] hydro_fvm compute time t=6.4590e-04 (Dt=4.765e-06) : 0.80430 s (5.49 ms, 0 us, 701 us, 790467 us, 5.37 ms)
+[it= 135] hydro_fvm compute time t=6.4590e-04 (Dt=4.765e-06) : 0.79621 s (4.42 ms, 0 us, 79 us, 785718 us, 4.09 ms)
 [rank 0] iteration #136 - starting launcher [0][0] ...
 [rank 0] done
-[it= 136] hydro_fvm compute time t=6.5067e-04 (Dt=4.765e-06) : 0.80454 s (5.52 ms, 0 us, 707 us, 790611 us, 5.42 ms)
+[it= 136] hydro_fvm compute time t=6.5067e-04 (Dt=4.765e-06) : 0.79559 s (4.22 ms, 0 us, 79 us, 785347 us, 4.06 ms)
 [rank 0] iteration #137 - starting launcher [0][0] ...
 [rank 0] done
-[it= 137] hydro_fvm compute time t=6.5543e-04 (Dt=4.766e-06) : 0.80413 s (5.55 ms, 0 us, 686 us, 790249 us, 5.36 ms)
+[it= 137] hydro_fvm compute time t=6.5543e-04 (Dt=4.766e-06) : 0.79579 s (4.23 ms, 0 us, 78 us, 785567 us, 4.07 ms)
 [rank 0] iteration #138 - starting launcher [0][0] ...
 [rank 0] done
-[it= 138] hydro_fvm compute time t=6.6020e-04 (Dt=4.766e-06) : 0.80417 s (5.52 ms, 0 us, 711 us, 790278 us, 5.38 ms)
+[it= 138] hydro_fvm compute time t=6.6020e-04 (Dt=4.766e-06) : 0.79549 s (4.17 ms, 0 us, 79 us, 785277 us, 4.06 ms)
 [rank 0] iteration #139 - starting launcher [0][0] ...
 [rank 0] done
-[it= 139] hydro_fvm compute time t=6.6497e-04 (Dt=4.767e-06) : 0.80407 s (5.54 ms, 0 us, 698 us, 790183 us, 5.36 ms)
+[it= 139] hydro_fvm compute time t=6.6497e-04 (Dt=4.767e-06) : 0.79579 s (4.20 ms, 0 us, 81 us, 785571 us, 4.05 ms)
 [rank 0] iteration #140 - starting launcher [0][0] ...
 [rank 0] done
-[it= 140] hydro_fvm compute time t=6.6973e-04 (Dt=4.767e-06) : 0.80364 s (5.54 ms, 0 us, 681 us, 789773 us, 5.38 ms)
+[it= 140] hydro_fvm compute time t=6.6973e-04 (Dt=4.767e-06) : 0.79596 s (4.19 ms, 0 us, 79 us, 785744 us, 4.05 ms)
 [rank 0] iteration #141 - starting launcher [0][0] ...
 [rank 0] done
-[it= 141] hydro_fvm compute time t=6.7450e-04 (Dt=4.767e-06) : 0.80415 s (5.49 ms, 0 us, 704 us, 790301 us, 5.37 ms)
+[it= 141] hydro_fvm compute time t=6.7450e-04 (Dt=4.767e-06) : 0.79581 s (4.21 ms, 0 us, 80 us, 785485 us, 4.10 ms)
 [rank 0] iteration #142 - starting launcher [0][0] ...
 [rank 0] done
-[it= 142] hydro_fvm compute time t=6.7927e-04 (Dt=4.768e-06) : 0.80449 s (5.57 ms, 0 us, 702 us, 790565 us, 5.38 ms)
+[it= 142] hydro_fvm compute time t=6.7927e-04 (Dt=4.768e-06) : 0.79560 s (4.11 ms, 0 us, 81 us, 785479 us, 4.05 ms)
 [rank 0] iteration #143 - starting launcher [0][0] ...
 [rank 0] done
-[it= 143] hydro_fvm compute time t=6.8403e-04 (Dt=4.768e-06) : 0.80446 s (5.54 ms, 0 us, 693 us, 790568 us, 5.37 ms)
+[it= 143] hydro_fvm compute time t=6.8403e-04 (Dt=4.768e-06) : 0.79576 s (4.21 ms, 0 us, 79 us, 785528 us, 4.06 ms)
 [rank 0] iteration #144 - starting launcher [0][0] ...
 [rank 0] done
-[it= 144] hydro_fvm compute time t=6.8880e-04 (Dt=4.768e-06) : 0.80376 s (5.51 ms, 0 us, 696 us, 789898 us, 5.37 ms)
+[it= 144] hydro_fvm compute time t=6.8880e-04 (Dt=4.768e-06) : 0.79558 s (4.34 ms, 0 us, 79 us, 785239 us, 4.05 ms)
 [rank 0] iteration #145 - starting launcher [0][0] ...
 [rank 0] done
-[it= 145] hydro_fvm compute time t=6.9357e-04 (Dt=4.769e-06) : 0.80420 s (5.52 ms, 0 us, 707 us, 790313 us, 5.38 ms)
+[it= 145] hydro_fvm compute time t=6.9357e-04 (Dt=4.769e-06) : 0.79564 s (4.19 ms, 0 us, 79 us, 785440 us, 4.05 ms)
 [rank 0] iteration #146 - starting launcher [0][0] ...
 [rank 0] done
-[it= 146] hydro_fvm compute time t=6.9834e-04 (Dt=4.769e-06) : 0.80418 s (5.50 ms, 0 us, 688 us, 790295 us, 5.41 ms)
+[it= 146] hydro_fvm compute time t=6.9834e-04 (Dt=4.769e-06) : 0.79554 s (4.20 ms, 0 us, 79 us, 785258 us, 4.06 ms)
 [rank 0] iteration #147 - starting launcher [0][0] ...
 [rank 0] done
-[it= 147] hydro_fvm compute time t=7.0311e-04 (Dt=4.770e-06) : 0.80437 s (5.54 ms, 0 us, 704 us, 790480 us, 5.36 ms)
+[it= 147] hydro_fvm compute time t=7.0311e-04 (Dt=4.770e-06) : 0.79580 s (4.10 ms, 0 us, 78 us, 785700 us, 4.05 ms)
 [rank 0] iteration #148 - starting launcher [0][0] ...
 [rank 0] done
-[it= 148] hydro_fvm compute time t=7.0788e-04 (Dt=4.770e-06) : 0.80437 s (5.52 ms, 0 us, 695 us, 790520 us, 5.35 ms)
+[it= 148] hydro_fvm compute time t=7.0788e-04 (Dt=4.770e-06) : 0.79529 s (4.08 ms, 0 us, 78 us, 785203 us, 4.03 ms)
 [rank 0] iteration #149 - starting launcher [0][0] ...
 [rank 0] done
-[it= 149] hydro_fvm compute time t=7.1265e-04 (Dt=4.770e-06) : 0.80433 s (5.51 ms, 0 us, 686 us, 790473 us, 5.37 ms)
+[it= 149] hydro_fvm compute time t=7.1265e-04 (Dt=4.770e-06) : 0.79604 s (4.09 ms, 0 us, 78 us, 785851 us, 4.07 ms)
 [rank 0] iteration #150 - starting launcher [0][0] ...
 [rank 0] done
-[it= 150] hydro_fvm compute time t=7.1742e-04 (Dt=4.770e-06) : 0.80381 s (5.52 ms, 0 us, 677 us, 789936 us, 5.38 ms)
+[it= 150] hydro_fvm compute time t=7.1742e-04 (Dt=4.770e-06) : 0.79543 s (4.13 ms, 0 us, 76 us, 785265 us, 4.07 ms)
 [rank 0] iteration #151 - starting launcher [0][0] ...
 [rank 0] done
-[it= 151] hydro_fvm compute time t=7.2219e-04 (Dt=4.770e-06) : 0.80409 s (5.54 ms, 0 us, 694 us, 790207 us, 5.37 ms)
+[it= 151] hydro_fvm compute time t=7.2219e-04 (Dt=4.770e-06) : 0.79604 s (4.20 ms, 0 us, 81 us, 785748 us, 4.07 ms)
 [rank 0] iteration #152 - starting launcher [0][0] ...
 [rank 0] done
-[it= 152] hydro_fvm compute time t=7.2696e-04 (Dt=4.771e-06) : 0.80382 s (5.52 ms, 0 us, 678 us, 789951 us, 5.38 ms)
+[it= 152] hydro_fvm compute time t=7.2696e-04 (Dt=4.771e-06) : 0.79530 s (4.08 ms, 0 us, 82 us, 785240 us, 4.03 ms)
 [rank 0] iteration #153 - starting launcher [0][0] ...
 [rank 0] done
-[it= 153] hydro_fvm compute time t=7.3173e-04 (Dt=4.771e-06) : 0.80436 s (5.51 ms, 0 us, 682 us, 790514 us, 5.37 ms)
+[it= 153] hydro_fvm compute time t=7.3173e-04 (Dt=4.771e-06) : 0.79556 s (4.07 ms, 0 us, 78 us, 785479 us, 4.04 ms)
 [rank 0] iteration #154 - starting launcher [0][0] ...
 [rank 0] done
-[it= 154] hydro_fvm compute time t=7.3650e-04 (Dt=4.771e-06) : 0.80403 s (5.54 ms, 0 us, 694 us, 790130 us, 5.38 ms)
+[it= 154] hydro_fvm compute time t=7.3650e-04 (Dt=4.771e-06) : 0.79604 s (4.10 ms, 0 us, 77 us, 785937 us, 4.04 ms)
 [rank 0] iteration #155 - starting launcher [0][0] ...
 [rank 0] done
-[it= 155] hydro_fvm compute time t=7.4127e-04 (Dt=4.771e-06) : 0.80367 s (5.52 ms, 0 us, 696 us, 789828 us, 5.35 ms)
+[it= 155] hydro_fvm compute time t=7.4127e-04 (Dt=4.771e-06) : 0.79540 s (4.07 ms, 0 us, 78 us, 785331 us, 4.03 ms)
 [rank 0] iteration #156 - starting launcher [0][0] ...
 [rank 0] done
-[it= 156] hydro_fvm compute time t=7.4604e-04 (Dt=4.771e-06) : 0.80436 s (5.56 ms, 0 us, 709 us, 790472 us, 5.35 ms)
+[it= 156] hydro_fvm compute time t=7.4604e-04 (Dt=4.771e-06) : 0.79741 s (4.07 ms, 0 us, 79 us, 787327 us, 4.04 ms)
 [rank 0] iteration #157 - starting launcher [0][0] ...
 [rank 0] done
-[it= 157] hydro_fvm compute time t=7.5082e-04 (Dt=4.771e-06) : 0.80411 s (5.56 ms, 0 us, 690 us, 790235 us, 5.35 ms)
+[it= 157] hydro_fvm compute time t=7.5082e-04 (Dt=4.771e-06) : 0.79555 s (4.08 ms, 0 us, 78 us, 785478 us, 4.04 ms)
 [rank 0] iteration #158 - starting launcher [0][0] ...
 [rank 0] done
-[it= 158] hydro_fvm compute time t=7.5559e-04 (Dt=4.771e-06) : 0.80407 s (5.53 ms, 0 us, 686 us, 790168 us, 5.39 ms)
+[it= 158] hydro_fvm compute time t=7.5559e-04 (Dt=4.771e-06) : 0.79644 s (4.08 ms, 0 us, 79 us, 786343 us, 4.05 ms)
 [rank 0] iteration #159 - starting launcher [0][0] ...
 [rank 0] done
-[it= 159] hydro_fvm compute time t=7.6036e-04 (Dt=4.772e-06) : 0.80361 s (5.52 ms, 0 us, 692 us, 789744 us, 5.37 ms)
+[it= 159] hydro_fvm compute time t=7.6036e-04 (Dt=4.772e-06) : 0.79560 s (4.08 ms, 0 us, 78 us, 785519 us, 4.03 ms)
 [rank 0] iteration #160 - starting launcher [0][0] ...
 [rank 0] done
-[it= 160] hydro_fvm compute time t=7.6513e-04 (Dt=4.772e-06) : 0.80451 s (5.52 ms, 0 us, 683 us, 790653 us, 5.37 ms)
+[it= 160] hydro_fvm compute time t=7.6513e-04 (Dt=4.772e-06) : 0.79862 s (4.03 ms, 0 us, 79 us, 788599 us, 4.05 ms)
 [rank 0] iteration #161 - starting launcher [0][0] ...
 [rank 0] done
-[it= 161] hydro_fvm compute time t=7.6990e-04 (Dt=4.772e-06) : 0.80434 s (5.50 ms, 0 us, 694 us, 790451 us, 5.39 ms)
+[it= 161] hydro_fvm compute time t=7.6990e-04 (Dt=4.772e-06) : 0.79557 s (4.10 ms, 0 us, 81 us, 785458 us, 4.04 ms)
 [rank 0] iteration #162 - starting launcher [0][0] ...
 [rank 0] done
-[it= 162] hydro_fvm compute time t=7.7467e-04 (Dt=4.772e-06) : 0.80405 s (5.54 ms, 0 us, 704 us, 790158 us, 5.36 ms)
+[it= 162] hydro_fvm compute time t=7.7467e-04 (Dt=4.772e-06) : 0.79614 s (4.08 ms, 0 us, 78 us, 786067 us, 4.03 ms)
 [rank 0] iteration #163 - starting launcher [0][0] ...
 [rank 0] done
-[it= 163] hydro_fvm compute time t=7.7945e-04 (Dt=4.772e-06) : 0.80397 s (5.52 ms, 0 us, 650 us, 790134 us, 5.39 ms)
+[it= 163] hydro_fvm compute time t=7.7945e-04 (Dt=4.772e-06) : 0.79559 s (4.09 ms, 0 us, 78 us, 785387 us, 4.08 ms)
 [rank 0] iteration #164 - starting launcher [0][0] ...
 [rank 0] done
-[it= 164] hydro_fvm compute time t=7.8422e-04 (Dt=4.773e-06) : 0.80409 s (5.50 ms, 0 us, 701 us, 790249 us, 5.36 ms)
+[it= 164] hydro_fvm compute time t=7.8422e-04 (Dt=4.773e-06) : 0.79730 s (4.12 ms, 0 us, 81 us, 787168 us, 4.05 ms)
 [rank 0] iteration #165 - starting launcher [0][0] ...
 [rank 0] done
-[it= 165] hydro_fvm compute time t=7.8899e-04 (Dt=4.773e-06) : 0.80472 s (5.57 ms, 0 us, 692 us, 790768 us, 5.40 ms)
+[it= 165] hydro_fvm compute time t=7.8899e-04 (Dt=4.773e-06) : 0.79602 s (4.19 ms, 0 us, 81 us, 785772 us, 4.06 ms)
 [rank 0] iteration #166 - starting launcher [0][0] ...
 [rank 0] done
-[it= 166] hydro_fvm compute time t=7.9376e-04 (Dt=4.773e-06) : 0.80431 s (5.50 ms, 0 us, 695 us, 790414 us, 5.40 ms)
+[it= 166] hydro_fvm compute time t=7.9376e-04 (Dt=4.773e-06) : 0.79573 s (4.18 ms, 0 us, 79 us, 785564 us, 4.05 ms)
 [rank 0] iteration #167 - starting launcher [0][0] ...
 [rank 0] done
-[it= 167] hydro_fvm compute time t=7.9854e-04 (Dt=4.773e-06) : 0.80425 s (5.54 ms, 0 us, 684 us, 790376 us, 5.37 ms)
+[it= 167] hydro_fvm compute time t=7.9854e-04 (Dt=4.773e-06) : 0.79573 s (4.18 ms, 0 us, 79 us, 785563 us, 4.03 ms)
 [rank 0] iteration #168 - starting launcher [0][0] ...
 [rank 0] done
-[it= 168] hydro_fvm compute time t=8.0331e-04 (Dt=4.773e-06) : 0.80414 s (5.55 ms, 0 us, 691 us, 790241 us, 5.38 ms)
+[it= 168] hydro_fvm compute time t=8.0331e-04 (Dt=4.773e-06) : 0.79552 s (4.17 ms, 0 us, 79 us, 785348 us, 4.03 ms)
 [rank 0] iteration #169 - starting launcher [0][0] ...
 [rank 0] done
-[it= 169] hydro_fvm compute time t=8.0808e-04 (Dt=4.773e-06) : 0.80449 s (5.51 ms, 0 us, 703 us, 790648 us, 5.37 ms)
+[it= 169] hydro_fvm compute time t=8.0808e-04 (Dt=4.773e-06) : 0.79554 s (4.20 ms, 0 us, 80 us, 785346 us, 4.03 ms)
 [rank 0] iteration #170 - starting launcher [0][0] ...
 [rank 0] done
-[it= 170] hydro_fvm compute time t=8.1285e-04 (Dt=4.774e-06) : 0.80421 s (5.53 ms, 0 us, 696 us, 790326 us, 5.38 ms)
+[it= 170] hydro_fvm compute time t=8.1285e-04 (Dt=4.774e-06) : 0.79545 s (4.18 ms, 0 us, 79 us, 785257 us, 4.04 ms)
 [rank 0] iteration #171 - starting launcher [0][0] ...
 [rank 0] done
-[it= 171] hydro_fvm compute time t=8.1763e-04 (Dt=4.774e-06) : 0.80462 s (5.53 ms, 0 us, 707 us, 790700 us, 5.39 ms)
+[it= 171] hydro_fvm compute time t=8.1763e-04 (Dt=4.774e-06) : 0.79598 s (4.37 ms, 0 us, 80 us, 785626 us, 4.05 ms)
 [rank 0] iteration #172 - starting launcher [0][0] ...
 [rank 0] done
-[it= 172] hydro_fvm compute time t=8.2240e-04 (Dt=4.774e-06) : 0.80421 s (5.51 ms, 0 us, 696 us, 790345 us, 5.38 ms)
+[it= 172] hydro_fvm compute time t=8.2240e-04 (Dt=4.774e-06) : 0.79558 s (4.22 ms, 0 us, 80 us, 785328 us, 4.05 ms)
 [rank 0] iteration #173 - starting launcher [0][0] ...
 [rank 0] done
-[it= 173] hydro_fvm compute time t=8.2718e-04 (Dt=4.774e-06) : 0.80438 s (5.52 ms, 0 us, 687 us, 790551 us, 5.36 ms)
+[it= 173] hydro_fvm compute time t=8.2718e-04 (Dt=4.774e-06) : 0.79601 s (4.19 ms, 0 us, 79 us, 785807 us, 4.05 ms)
 [rank 0] iteration #174 - starting launcher [0][0] ...
 [rank 0] done
-[it= 174] hydro_fvm compute time t=8.3195e-04 (Dt=4.774e-06) : 0.80434 s (5.52 ms, 0 us, 703 us, 790449 us, 5.38 ms)
+[it= 174] hydro_fvm compute time t=8.3195e-04 (Dt=4.774e-06) : 0.79546 s (4.20 ms, 0 us, 79 us, 785267 us, 4.03 ms)
 [rank 0] iteration #175 - starting launcher [0][0] ...
 [rank 0] done
-[it= 175] hydro_fvm compute time t=8.3672e-04 (Dt=4.774e-06) : 0.80459 s (5.52 ms, 0 us, 706 us, 790683 us, 5.39 ms)
+[it= 175] hydro_fvm compute time t=8.3672e-04 (Dt=4.774e-06) : 0.79578 s (4.21 ms, 0 us, 80 us, 785593 us, 4.05 ms)
 [rank 0] iteration #176 - starting launcher [0][0] ...
 [rank 0] done
-[it= 176] hydro_fvm compute time t=8.4150e-04 (Dt=4.775e-06) : 0.80362 s (5.53 ms, 0 us, 705 us, 789734 us, 5.37 ms)
+[it= 176] hydro_fvm compute time t=8.4150e-04 (Dt=4.775e-06) : 0.79540 s (4.22 ms, 0 us, 78 us, 785185 us, 4.03 ms)
 [rank 0] iteration #177 - starting launcher [0][0] ...
 [rank 0] done
-[it= 177] hydro_fvm compute time t=8.4627e-04 (Dt=4.775e-06) : 0.80386 s (5.53 ms, 0 us, 694 us, 789975 us, 5.37 ms)
+[it= 177] hydro_fvm compute time t=8.4627e-04 (Dt=4.775e-06) : 0.79692 s (4.22 ms, 0 us, 81 us, 786683 us, 4.04 ms)
 [rank 0] iteration #178 - starting launcher [0][0] ...
 [rank 0] done
-[it= 178] hydro_fvm compute time t=8.5105e-04 (Dt=4.775e-06) : 0.80419 s (5.52 ms, 0 us, 688 us, 790329 us, 5.37 ms)
+[it= 178] hydro_fvm compute time t=8.5105e-04 (Dt=4.775e-06) : 0.79548 s (4.22 ms, 0 us, 79 us, 785275 us, 4.02 ms)
 [rank 0] iteration #179 - starting launcher [0][0] ...
 [rank 0] done
-[it= 179] hydro_fvm compute time t=8.5582e-04 (Dt=4.776e-06) : 0.80414 s (5.50 ms, 0 us, 673 us, 790322 us, 5.36 ms)
+[it= 179] hydro_fvm compute time t=8.5582e-04 (Dt=4.776e-06) : 0.79886 s (4.22 ms, 0 us, 79 us, 788611 us, 4.05 ms)
 [rank 0] iteration #180 - starting launcher [0][0] ...
 [rank 0] done
-[it= 180] hydro_fvm compute time t=8.6060e-04 (Dt=4.776e-06) : 0.80412 s (5.51 ms, 0 us, 675 us, 790293 us, 5.37 ms)
+[it= 180] hydro_fvm compute time t=8.6060e-04 (Dt=4.776e-06) : 0.79562 s (4.18 ms, 0 us, 79 us, 785432 us, 4.03 ms)
 [rank 0] iteration #181 - starting launcher [0][0] ...
 [rank 0] done
-[it= 181] hydro_fvm compute time t=8.6538e-04 (Dt=4.776e-06) : 0.80354 s (5.51 ms, 0 us, 702 us, 789707 us, 5.35 ms)
+[it= 181] hydro_fvm compute time t=8.6538e-04 (Dt=4.776e-06) : 0.79604 s (4.21 ms, 0 us, 79 us, 785805 us, 4.06 ms)
 [rank 0] iteration #182 - starting launcher [0][0] ...
 [rank 0] done
-[it= 182] hydro_fvm compute time t=8.7015e-04 (Dt=4.776e-06) : 0.80475 s (5.53 ms, 0 us, 705 us, 790580 us, 5.46 ms)
+[it= 182] hydro_fvm compute time t=8.7015e-04 (Dt=4.776e-06) : 0.79555 s (4.26 ms, 0 us, 79 us, 785293 us, 4.03 ms)
 [rank 0] iteration #183 - starting launcher [0][0] ...
 [rank 0] done
-[it= 183] hydro_fvm compute time t=8.7493e-04 (Dt=4.776e-06) : 0.80449 s (5.54 ms, 0 us, 707 us, 790461 us, 5.38 ms)
+[it= 183] hydro_fvm compute time t=8.7493e-04 (Dt=4.776e-06) : 0.79563 s (4.22 ms, 0 us, 78 us, 785395 us, 4.07 ms)
 [rank 0] iteration #184 - starting launcher [0][0] ...
 [rank 0] done
-[it= 184] hydro_fvm compute time t=8.7970e-04 (Dt=4.776e-06) : 0.80459 s (5.53 ms, 0 us, 709 us, 790649 us, 5.39 ms)
+[it= 184] hydro_fvm compute time t=8.7970e-04 (Dt=4.776e-06) : 0.79568 s (4.32 ms, 0 us, 90 us, 785320 us, 4.03 ms)
 [rank 0] iteration #185 - starting launcher [0][0] ...
 [rank 0] done
-[it= 185] hydro_fvm compute time t=8.8448e-04 (Dt=4.777e-06) : 0.80406 s (5.50 ms, 0 us, 690 us, 790203 us, 5.37 ms)
+[it= 185] hydro_fvm compute time t=8.8448e-04 (Dt=4.777e-06) : 0.79570 s (4.17 ms, 0 us, 82 us, 785539 us, 4.03 ms)
 [rank 0] iteration #186 - starting launcher [0][0] ...
 [rank 0] done
-[it= 186] hydro_fvm compute time t=8.8926e-04 (Dt=4.777e-06) : 0.80398 s (5.51 ms, 0 us, 708 us, 790093 us, 5.38 ms)
+[it= 186] hydro_fvm compute time t=8.8926e-04 (Dt=4.777e-06) : 0.79564 s (4.20 ms, 0 us, 81 us, 785432 us, 4.04 ms)
 [rank 0] iteration #187 - starting launcher [0][0] ...
 [rank 0] done
-[it= 187] hydro_fvm compute time t=8.9403e-04 (Dt=4.777e-06) : 0.80399 s (5.52 ms, 0 us, 691 us, 790114 us, 5.38 ms)
+[it= 187] hydro_fvm compute time t=8.9403e-04 (Dt=4.777e-06) : 0.79564 s (4.18 ms, 0 us, 82 us, 785442 us, 4.05 ms)
 [rank 0] iteration #188 - starting launcher [0][0] ...
 [rank 0] done
-[it= 188] hydro_fvm compute time t=8.9881e-04 (Dt=4.778e-06) : 0.80416 s (5.50 ms, 0 us, 695 us, 790282 us, 5.38 ms)
+[it= 188] hydro_fvm compute time t=8.9881e-04 (Dt=4.778e-06) : 0.79557 s (4.20 ms, 0 us, 80 us, 785374 us, 4.06 ms)
 [rank 0] iteration #189 - starting launcher [0][0] ...
 [rank 0] done
-[it= 189] hydro_fvm compute time t=9.0359e-04 (Dt=4.778e-06) : 0.80362 s (5.52 ms, 0 us, 682 us, 789758 us, 5.38 ms)
+[it= 189] hydro_fvm compute time t=9.0359e-04 (Dt=4.778e-06) : 0.79563 s (4.20 ms, 0 us, 81 us, 785410 us, 4.05 ms)
 [rank 0] iteration #190 - starting launcher [0][0] ...
 [rank 0] done
-[it= 190] hydro_fvm compute time t=9.0837e-04 (Dt=4.778e-06) : 0.80428 s (5.57 ms, 0 us, 684 us, 790347 us, 5.38 ms)
+[it= 190] hydro_fvm compute time t=9.0837e-04 (Dt=4.778e-06) : 0.79547 s (4.17 ms, 0 us, 80 us, 785295 us, 4.04 ms)
 [rank 0] iteration #191 - starting launcher [0][0] ...
 [rank 0] done
-[it= 191] hydro_fvm compute time t=9.1314e-04 (Dt=4.778e-06) : 0.80401 s (5.52 ms, 0 us, 700 us, 790130 us, 5.37 ms)
+[it= 191] hydro_fvm compute time t=9.1314e-04 (Dt=4.778e-06) : 0.79571 s (4.19 ms, 0 us, 79 us, 785510 us, 4.05 ms)
 [rank 0] iteration #192 - starting launcher [0][0] ...
 [rank 0] done
-[it= 192] hydro_fvm compute time t=9.1792e-04 (Dt=4.778e-06) : 0.80414 s (5.52 ms, 0 us, 679 us, 790285 us, 5.38 ms)
+[it= 192] hydro_fvm compute time t=9.1792e-04 (Dt=4.778e-06) : 0.79542 s (4.18 ms, 0 us, 80 us, 785220 us, 4.04 ms)
 [rank 0] iteration #193 - starting launcher [0][0] ...
 [rank 0] done
-[it= 193] hydro_fvm compute time t=9.2270e-04 (Dt=4.778e-06) : 0.80450 s (5.55 ms, 0 us, 694 us, 790595 us, 5.37 ms)
+[it= 193] hydro_fvm compute time t=9.2270e-04 (Dt=4.778e-06) : 0.79572 s (4.20 ms, 0 us, 81 us, 785546 us, 4.04 ms)
 [rank 0] iteration #194 - starting launcher [0][0] ...
 [rank 0] done
-[it= 194] hydro_fvm compute time t=9.2748e-04 (Dt=4.779e-06) : 0.80404 s (5.51 ms, 0 us, 694 us, 790195 us, 5.37 ms)
+[it= 194] hydro_fvm compute time t=9.2748e-04 (Dt=4.779e-06) : 0.79671 s (4.18 ms, 0 us, 79 us, 786517 us, 4.04 ms)
 [rank 0] iteration #195 - starting launcher [0][0] ...
 [rank 0] done
-[it= 195] hydro_fvm compute time t=9.3226e-04 (Dt=4.779e-06) : 0.80450 s (5.56 ms, 0 us, 685 us, 790579 us, 5.38 ms)
+[it= 195] hydro_fvm compute time t=9.3226e-04 (Dt=4.779e-06) : 0.79608 s (4.20 ms, 0 us, 81 us, 785860 us, 4.04 ms)
 [rank 0] iteration #196 - starting launcher [0][0] ...
 [rank 0] done
-[it= 196] hydro_fvm compute time t=9.3704e-04 (Dt=4.779e-06) : 0.80446 s (5.53 ms, 0 us, 679 us, 790599 us, 5.36 ms)
+[it= 196] hydro_fvm compute time t=9.3704e-04 (Dt=4.779e-06) : 0.79550 s (4.31 ms, 0 us, 85 us, 785157 us, 4.06 ms)
 [rank 0] iteration #197 - starting launcher [0][0] ...
 [rank 0] done
-[it= 197] hydro_fvm compute time t=9.4182e-04 (Dt=4.779e-06) : 0.80424 s (5.52 ms, 0 us, 700 us, 790317 us, 5.38 ms)
+[it= 197] hydro_fvm compute time t=9.4182e-04 (Dt=4.779e-06) : 0.79563 s (4.18 ms, 0 us, 80 us, 785428 us, 4.05 ms)
 [rank 0] iteration #198 - starting launcher [0][0] ...
 [rank 0] done
-[it= 198] hydro_fvm compute time t=9.4660e-04 (Dt=4.780e-06) : 0.80416 s (5.54 ms, 0 us, 672 us, 790288 us, 5.38 ms)
+[it= 198] hydro_fvm compute time t=9.4660e-04 (Dt=4.780e-06) : 0.79569 s (4.17 ms, 0 us, 78 us, 785505 us, 4.08 ms)
 [rank 0] iteration #199 - starting launcher [0][0] ...
 [rank 0] done
-[it= 199] hydro_fvm compute time t=9.5137e-04 (Dt=4.780e-06) : 0.80432 s (5.51 ms, 0 us, 703 us, 790446 us, 5.38 ms)
+[it= 199] hydro_fvm compute time t=9.5137e-04 (Dt=4.780e-06) : 0.79570 s (4.20 ms, 0 us, 79 us, 785487 us, 4.04 ms)
 [rank 0] iteration #200 - starting launcher [0][0] ...
 [rank 0] done
-[it= 200] hydro_fvm compute time t=9.5615e-04 (Dt=4.780e-06) : 0.80436 s (5.51 ms, 0 us, 660 us, 790543 us, 5.38 ms)
+[it= 200] hydro_fvm compute time t=9.5615e-04 (Dt=4.780e-06) : 0.79549 s (4.20 ms, 0 us, 80 us, 785292 us, 4.03 ms)
 [rank 0] iteration #201 - starting launcher [0][0] ...
 [rank 0] done
-[it= 201] hydro_fvm compute time t=9.6093e-04 (Dt=4.780e-06) : 0.80435 s (5.49 ms, 0 us, 693 us, 790526 us, 5.37 ms)
+[it= 201] hydro_fvm compute time t=9.6093e-04 (Dt=4.780e-06) : 0.79571 s (4.20 ms, 0 us, 83 us, 785500 us, 4.03 ms)
 [rank 0] iteration #202 - starting launcher [0][0] ...
 [rank 0] done
-[it= 202] hydro_fvm compute time t=9.6571e-04 (Dt=4.780e-06) : 0.80412 s (5.55 ms, 0 us, 673 us, 790238 us, 5.34 ms)
+[it= 202] hydro_fvm compute time t=9.6571e-04 (Dt=4.780e-06) : 0.79559 s (4.19 ms, 0 us, 80 us, 785413 us, 4.02 ms)
 [rank 0] iteration #203 - starting launcher [0][0] ...
 [rank 0] done
-[it= 203] hydro_fvm compute time t=9.7049e-04 (Dt=4.781e-06) : 0.80452 s (5.54 ms, 0 us, 688 us, 790637 us, 5.38 ms)
+[it= 203] hydro_fvm compute time t=9.7049e-04 (Dt=4.781e-06) : 0.79561 s (4.21 ms, 0 us, 80 us, 785453 us, 4.03 ms)
 [rank 0] iteration #204 - starting launcher [0][0] ...
 [rank 0] done
-[it= 204] hydro_fvm compute time t=9.7528e-04 (Dt=4.781e-06) : 0.80391 s (5.50 ms, 0 us, 704 us, 790044 us, 5.38 ms)
+[it= 204] hydro_fvm compute time t=9.7528e-04 (Dt=4.781e-06) : 0.79593 s (4.30 ms, 0 us, 81 us, 785612 us, 4.04 ms)
 [rank 0] iteration #205 - starting launcher [0][0] ...
 [rank 0] done
-[it= 205] hydro_fvm compute time t=9.8006e-04 (Dt=4.781e-06) : 0.80439 s (5.51 ms, 0 us, 703 us, 790546 us, 5.35 ms)
+[it= 205] hydro_fvm compute time t=9.8006e-04 (Dt=4.781e-06) : 0.79574 s (4.23 ms, 0 us, 79 us, 785506 us, 4.03 ms)
 [rank 0] iteration #206 - starting launcher [0][0] ...
 [rank 0] done
-[it= 206] hydro_fvm compute time t=9.8484e-04 (Dt=4.781e-06) : 0.80400 s (5.52 ms, 0 us, 705 us, 790133 us, 5.37 ms)
+[it= 206] hydro_fvm compute time t=9.8484e-04 (Dt=4.781e-06) : 0.79607 s (4.37 ms, 0 us, 79 us, 785661 us, 4.08 ms)
 [rank 0] iteration #207 - starting launcher [0][0] ...
 [rank 0] done
-[it= 207] hydro_fvm compute time t=9.8962e-04 (Dt=4.781e-06) : 0.80469 s (5.52 ms, 0 us, 698 us, 790849 us, 5.34 ms)
+[it= 207] hydro_fvm compute time t=9.8962e-04 (Dt=4.781e-06) : 0.79564 s (4.17 ms, 0 us, 80 us, 785458 us, 4.05 ms)
 [rank 0] iteration #208 - starting launcher [0][0] ...
 [rank 0] done
-[it= 208] hydro_fvm compute time t=9.9440e-04 (Dt=4.781e-06) : 0.80453 s (5.52 ms, 0 us, 688 us, 790683 us, 5.36 ms)
+[it= 208] hydro_fvm compute time t=9.9440e-04 (Dt=4.781e-06) : 0.79621 s (4.21 ms, 0 us, 79 us, 786035 us, 4.04 ms)
 [rank 0] iteration #209 - starting launcher [0][0] ...
 [rank 0] done
-[it= 209] hydro_fvm compute time t=9.9918e-04 (Dt=4.781e-06) : 0.80347 s (5.53 ms, 0 us, 643 us, 789658 us, 5.35 ms)
+[it= 209] hydro_fvm compute time t=9.9918e-04 (Dt=4.781e-06) : 0.79602 s (4.16 ms, 0 us, 79 us, 785858 us, 4.04 ms)
 [rank 0] iteration #210 - starting launcher [0][0] ...
 [rank 0] done
-[it= 210] hydro_fvm compute time t=1.0040e-03 (Dt=4.782e-06) : 0.80435 s (5.50 ms, 0 us, 691 us, 790526 us, 5.35 ms)
+[it= 210] hydro_fvm compute time t=1.0040e-03 (Dt=4.782e-06) : 0.79547 s (4.23 ms, 0 us, 80 us, 785226 us, 4.04 ms)
 [rank 0] iteration #211 - starting launcher [0][0] ...
 [rank 0] done
-[it= 211] hydro_fvm compute time t=1.0087e-03 (Dt=4.782e-06) : 0.80376 s (5.51 ms, 0 us, 680 us, 789934 us, 5.37 ms)
+[it= 211] hydro_fvm compute time t=1.0087e-03 (Dt=4.782e-06) : 0.79570 s (4.17 ms, 0 us, 79 us, 785524 us, 4.04 ms)
 [rank 0] iteration #212 - starting launcher [0][0] ...
 [rank 0] done
-[it= 212] hydro_fvm compute time t=1.0135e-03 (Dt=4.782e-06) : 0.80391 s (5.52 ms, 0 us, 705 us, 790023 us, 5.36 ms)
+[it= 212] hydro_fvm compute time t=1.0135e-03 (Dt=4.782e-06) : 0.79556 s (4.20 ms, 0 us, 78 us, 785367 us, 4.03 ms)
 [rank 0] iteration #213 - starting launcher [0][0] ...
 [rank 0] done
-[it= 213] hydro_fvm compute time t=1.0183e-03 (Dt=4.782e-06) : 0.80450 s (5.53 ms, 0 us, 704 us, 790622 us, 5.36 ms)
+[it= 213] hydro_fvm compute time t=1.0183e-03 (Dt=4.782e-06) : 0.79591 s (4.16 ms, 0 us, 78 us, 785778 us, 4.02 ms)
 [rank 0] iteration #214 - starting launcher [0][0] ...
 [rank 0] done
-[it= 214] hydro_fvm compute time t=1.0231e-03 (Dt=4.782e-06) : 0.80382 s (5.56 ms, 0 us, 672 us, 789958 us, 5.35 ms)
+[it= 214] hydro_fvm compute time t=1.0231e-03 (Dt=4.782e-06) : 0.79556 s (4.20 ms, 0 us, 81 us, 785347 us, 4.05 ms)
 [rank 0] iteration #215 - starting launcher [0][0] ...
 [rank 0] done
-[it= 215] hydro_fvm compute time t=1.0279e-03 (Dt=4.782e-06) : 0.80416 s (5.54 ms, 0 us, 696 us, 790308 us, 5.34 ms)
+[it= 215] hydro_fvm compute time t=1.0279e-03 (Dt=4.782e-06) : 0.79584 s (4.35 ms, 0 us, 80 us, 785468 us, 4.05 ms)
 [rank 0] iteration #216 - starting launcher [0][0] ...
 [rank 0] done
-[it= 216] hydro_fvm compute time t=1.0327e-03 (Dt=4.782e-06) : 0.80399 s (5.50 ms, 0 us, 686 us, 790164 us, 5.36 ms)
+[it= 216] hydro_fvm compute time t=1.0327e-03 (Dt=4.782e-06) : 0.79546 s (4.22 ms, 0 us, 79 us, 785214 us, 4.06 ms)
 [rank 0] iteration #217 - starting launcher [0][0] ...
 [rank 0] done
-[it= 217] hydro_fvm compute time t=1.0374e-03 (Dt=4.783e-06) : 0.80427 s (5.52 ms, 0 us, 679 us, 790414 us, 5.37 ms)
+[it= 217] hydro_fvm compute time t=1.0374e-03 (Dt=4.783e-06) : 0.79572 s (4.20 ms, 0 us, 78 us, 785522 us, 4.04 ms)
 [rank 0] iteration #218 - starting launcher [0][0] ...
 [rank 0] done
-[it= 218] hydro_fvm compute time t=1.0422e-03 (Dt=4.783e-06) : 0.80450 s (5.55 ms, 0 us, 695 us, 790649 us, 5.33 ms)
+[it= 218] hydro_fvm compute time t=1.0422e-03 (Dt=4.783e-06) : 0.79541 s (4.21 ms, 0 us, 78 us, 785193 us, 4.04 ms)
 [rank 0] iteration #219 - starting launcher [0][0] ...
 [rank 0] done
-[it= 219] hydro_fvm compute time t=1.0470e-03 (Dt=4.783e-06) : 0.80417 s (5.52 ms, 0 us, 669 us, 790348 us, 5.35 ms)
+[it= 219] hydro_fvm compute time t=1.0470e-03 (Dt=4.783e-06) : 0.79576 s (4.23 ms, 0 us, 78 us, 785474 us, 4.09 ms)
 [rank 0] iteration #220 - starting launcher [0][0] ...
 [rank 0] done
-[it= 220] hydro_fvm compute time t=1.0518e-03 (Dt=4.783e-06) : 0.80411 s (5.49 ms, 0 us, 695 us, 790286 us, 5.35 ms)
+[it= 220] hydro_fvm compute time t=1.0518e-03 (Dt=4.783e-06) : 0.79559 s (4.24 ms, 0 us, 83 us, 785332 us, 4.04 ms)
 [rank 0] iteration #221 - starting launcher [0][0] ...
 [rank 0] done
-[it= 221] hydro_fvm compute time t=1.0566e-03 (Dt=4.783e-06) : 0.80421 s (5.51 ms, 0 us, 694 us, 790371 us, 5.36 ms)
+[it= 221] hydro_fvm compute time t=1.0566e-03 (Dt=4.783e-06) : 0.79561 s (4.25 ms, 0 us, 78 us, 785353 us, 4.04 ms)
 [rank 0] iteration #222 - starting launcher [0][0] ...
 [rank 0] done
-[it= 222] hydro_fvm compute time t=1.0614e-03 (Dt=4.783e-06) : 0.80447 s (5.50 ms, 0 us, 698 us, 790666 us, 5.35 ms)
+[it= 222] hydro_fvm compute time t=1.0614e-03 (Dt=4.783e-06) : 0.79552 s (4.20 ms, 0 us, 78 us, 785328 us, 4.03 ms)
 [rank 0] iteration #223 - starting launcher [0][0] ...
 [rank 0] done
-[it= 223] hydro_fvm compute time t=1.0661e-03 (Dt=4.783e-06) : 0.80407 s (5.51 ms, 0 us, 704 us, 790237 us, 5.33 ms)
+[it= 223] hydro_fvm compute time t=1.0661e-03 (Dt=4.783e-06) : 0.79563 s (4.24 ms, 0 us, 80 us, 785376 us, 4.05 ms)
 [rank 0] iteration #224 - starting launcher [0][0] ...
 [rank 0] done
-[it= 224] hydro_fvm compute time t=1.0709e-03 (Dt=4.784e-06) : 0.80443 s (5.52 ms, 0 us, 680 us, 790601 us, 5.35 ms)
+[it= 224] hydro_fvm compute time t=1.0709e-03 (Dt=4.784e-06) : 0.79656 s (4.21 ms, 0 us, 79 us, 786349 us, 4.04 ms)
 [rank 0] iteration #225 - starting launcher [0][0] ...
 [rank 0] done
-[it= 225] hydro_fvm compute time t=1.0757e-03 (Dt=4.784e-06) : 0.80404 s (5.51 ms, 0 us, 706 us, 790183 us, 5.36 ms)
+[it= 225] hydro_fvm compute time t=1.0757e-03 (Dt=4.784e-06) : 0.79576 s (4.22 ms, 0 us, 79 us, 785551 us, 4.02 ms)
 [rank 0] iteration #226 - starting launcher [0][0] ...
 [rank 0] done
-[it= 226] hydro_fvm compute time t=1.0805e-03 (Dt=4.784e-06) : 0.80309 s (5.51 ms, 0 us, 703 us, 789231 us, 5.37 ms)
+[it= 226] hydro_fvm compute time t=1.0805e-03 (Dt=4.784e-06) : 0.79561 s (4.20 ms, 0 us, 77 us, 785411 us, 4.04 ms)
 [rank 0] iteration #227 - starting launcher [0][0] ...
 [rank 0] done
-[it= 227] hydro_fvm compute time t=1.0853e-03 (Dt=4.784e-06) : 0.80410 s (5.49 ms, 0 us, 675 us, 790288 us, 5.36 ms)
+[it= 227] hydro_fvm compute time t=1.0853e-03 (Dt=4.784e-06) : 0.79583 s (4.21 ms, 0 us, 80 us, 785609 us, 4.04 ms)
 [rank 0] iteration #228 - starting launcher [0][0] ...
 [rank 0] done
-[it= 228] hydro_fvm compute time t=1.0901e-03 (Dt=4.784e-06) : 0.80425 s (5.49 ms, 0 us, 685 us, 790439 us, 5.36 ms)
+[it= 228] hydro_fvm compute time t=1.0901e-03 (Dt=4.784e-06) : 0.79545 s (4.20 ms, 0 us, 80 us, 785259 us, 4.04 ms)
 [rank 0] iteration #229 - starting launcher [0][0] ...
 [rank 0] done
-[it= 229] hydro_fvm compute time t=1.0948e-03 (Dt=4.784e-06) : 0.80419 s (5.50 ms, 0 us, 702 us, 790354 us, 5.35 ms)
+[it= 229] hydro_fvm compute time t=1.0948e-03 (Dt=4.784e-06) : 0.79575 s (4.22 ms, 0 us, 80 us, 785532 us, 4.04 ms)
 [rank 0] iteration #230 - starting launcher [0][0] ...
 [rank 0] done
-[it= 230] hydro_fvm compute time t=1.0996e-03 (Dt=4.784e-06) : 0.80443 s (5.51 ms, 0 us, 707 us, 790557 us, 5.37 ms)
+[it= 230] hydro_fvm compute time t=1.0996e-03 (Dt=4.784e-06) : 0.79544 s (4.23 ms, 0 us, 79 us, 785206 us, 4.04 ms)
 [rank 0] iteration #231 - starting launcher [0][0] ...
 [rank 0] done
-[it= 231] hydro_fvm compute time t=1.1044e-03 (Dt=4.784e-06) : 0.80383 s (5.50 ms, 0 us, 699 us, 789986 us, 5.37 ms)
+[it= 231] hydro_fvm compute time t=1.1044e-03 (Dt=4.784e-06) : 0.79564 s (4.24 ms, 0 us, 77 us, 785419 us, 4.02 ms)
 [rank 0] iteration #232 - starting launcher [0][0] ...
 [rank 0] done
-[it= 232] hydro_fvm compute time t=1.1092e-03 (Dt=4.785e-06) : 0.80406 s (5.50 ms, 0 us, 703 us, 790227 us, 5.36 ms)
+[it= 232] hydro_fvm compute time t=1.1092e-03 (Dt=4.785e-06) : 0.79527 s (4.20 ms, 0 us, 79 us, 785081 us, 4.02 ms)
 [rank 0] iteration #233 - starting launcher [0][0] ...
 [rank 0] done
-[it= 233] hydro_fvm compute time t=1.1140e-03 (Dt=4.785e-06) : 0.80435 s (5.49 ms, 0 us, 689 us, 790546 us, 5.34 ms)
+[it= 233] hydro_fvm compute time t=1.1140e-03 (Dt=4.785e-06) : 0.79580 s (4.24 ms, 0 us, 78 us, 785544 us, 4.03 ms)
 [rank 0] iteration #234 - starting launcher [0][0] ...
 [rank 0] done
-[it= 234] hydro_fvm compute time t=1.1188e-03 (Dt=4.785e-06) : 0.80413 s (5.50 ms, 0 us, 679 us, 790318 us, 5.36 ms)
+[it= 234] hydro_fvm compute time t=1.1188e-03 (Dt=4.785e-06) : 0.79635 s (4.21 ms, 0 us, 77 us, 786153 us, 4.04 ms)
 [rank 0] iteration #235 - starting launcher [0][0] ...
 [rank 0] done
-[it= 235] hydro_fvm compute time t=1.1235e-03 (Dt=4.785e-06) : 0.80410 s (5.49 ms, 0 us, 692 us, 790290 us, 5.35 ms)
+[it= 235] hydro_fvm compute time t=1.1235e-03 (Dt=4.785e-06) : 0.79606 s (4.22 ms, 0 us, 79 us, 785823 us, 4.04 ms)
 [rank 0] iteration #236 - starting launcher [0][0] ...
 [rank 0] done
-[it= 236] hydro_fvm compute time t=1.1283e-03 (Dt=4.785e-06) : 0.80398 s (5.52 ms, 0 us, 685 us, 790143 us, 5.36 ms)
+[it= 236] hydro_fvm compute time t=1.1283e-03 (Dt=4.785e-06) : 0.79631 s (4.25 ms, 0 us, 79 us, 786054 us, 4.04 ms)
 [rank 0] iteration #237 - starting launcher [0][0] ...
 [rank 0] done
-[it= 237] hydro_fvm compute time t=1.1331e-03 (Dt=4.785e-06) : 0.80413 s (5.49 ms, 0 us, 711 us, 790274 us, 5.38 ms)
+[it= 237] hydro_fvm compute time t=1.1331e-03 (Dt=4.785e-06) : 0.79579 s (4.20 ms, 0 us, 78 us, 785581 us, 4.04 ms)
 [rank 0] iteration #238 - starting launcher [0][0] ...
 [rank 0] done
-[it= 238] hydro_fvm compute time t=1.1379e-03 (Dt=4.785e-06) : 0.80411 s (5.49 ms, 0 us, 694 us, 790288 us, 5.35 ms)
+[it= 238] hydro_fvm compute time t=1.1379e-03 (Dt=4.785e-06) : 0.79561 s (4.21 ms, 0 us, 78 us, 785408 us, 4.03 ms)
 [rank 0] iteration #239 - starting launcher [0][0] ...
 [rank 0] done
-[it= 239] hydro_fvm compute time t=1.1427e-03 (Dt=4.785e-06) : 0.80417 s (5.52 ms, 0 us, 699 us, 790301 us, 5.38 ms)
+[it= 239] hydro_fvm compute time t=1.1427e-03 (Dt=4.785e-06) : 0.79584 s (4.16 ms, 0 us, 79 us, 785676 us, 4.04 ms)
 [rank 0] iteration #240 - starting launcher [0][0] ...
 [rank 0] done
-[it= 240] hydro_fvm compute time t=1.1475e-03 (Dt=4.786e-06) : 0.80442 s (5.50 ms, 0 us, 702 us, 790584 us, 5.36 ms)
+[it= 240] hydro_fvm compute time t=1.1475e-03 (Dt=4.786e-06) : 0.79576 s (4.21 ms, 0 us, 78 us, 785517 us, 4.05 ms)
 [rank 0] iteration #241 - starting launcher [0][0] ...
 [rank 0] done
-[it= 241] hydro_fvm compute time t=1.1523e-03 (Dt=4.786e-06) : 0.80422 s (5.51 ms, 0 us, 705 us, 790357 us, 5.36 ms)
+[it= 241] hydro_fvm compute time t=1.1523e-03 (Dt=4.786e-06) : 0.79582 s (4.25 ms, 0 us, 80 us, 785583 us, 4.02 ms)
 [rank 0] iteration #242 - starting launcher [0][0] ...
 [rank 0] done
-[it= 242] hydro_fvm compute time t=1.1570e-03 (Dt=4.786e-06) : 0.80385 s (5.52 ms, 0 us, 686 us, 790013 us, 5.36 ms)
+[it= 242] hydro_fvm compute time t=1.1570e-03 (Dt=4.786e-06) : 0.79556 s (4.20 ms, 0 us, 78 us, 785363 us, 4.03 ms)
 [rank 0] iteration #243 - starting launcher [0][0] ...
 [rank 0] done
-[it= 243] hydro_fvm compute time t=1.1618e-03 (Dt=4.786e-06) : 0.80337 s (5.52 ms, 0 us, 708 us, 789508 us, 5.37 ms)
+[it= 243] hydro_fvm compute time t=1.1618e-03 (Dt=4.786e-06) : 0.79581 s (4.21 ms, 0 us, 79 us, 785615 us, 4.04 ms)
 [rank 0] iteration #244 - starting launcher [0][0] ...
 [rank 0] done
-[it= 244] hydro_fvm compute time t=1.1666e-03 (Dt=4.786e-06) : 0.80447 s (5.53 ms, 0 us, 691 us, 790586 us, 5.37 ms)
+[it= 244] hydro_fvm compute time t=1.1666e-03 (Dt=4.786e-06) : 0.79567 s (4.26 ms, 0 us, 78 us, 785396 us, 4.04 ms)
 [rank 0] iteration #245 - starting launcher [0][0] ...
 [rank 0] done
-[it= 245] hydro_fvm compute time t=1.1714e-03 (Dt=4.786e-06) : 0.80460 s (5.52 ms, 0 us, 697 us, 790735 us, 5.37 ms)
+[it= 245] hydro_fvm compute time t=1.1714e-03 (Dt=4.786e-06) : 0.79576 s (4.20 ms, 0 us, 78 us, 785560 us, 4.04 ms)
 [rank 0] iteration #246 - starting launcher [0][0] ...
 [rank 0] done
-[it= 246] hydro_fvm compute time t=1.1762e-03 (Dt=4.786e-06) : 0.80423 s (5.50 ms, 0 us, 698 us, 790403 us, 5.35 ms)
+[it= 246] hydro_fvm compute time t=1.1762e-03 (Dt=4.786e-06) : 0.79544 s (4.23 ms, 0 us, 78 us, 785214 us, 4.04 ms)
 [rank 0] iteration #247 - starting launcher [0][0] ...
 [rank 0] done
-[it= 247] hydro_fvm compute time t=1.1810e-03 (Dt=4.786e-06) : 0.80376 s (5.50 ms, 0 us, 680 us, 789945 us, 5.36 ms)
+[it= 247] hydro_fvm compute time t=1.1810e-03 (Dt=4.786e-06) : 0.79556 s (4.21 ms, 0 us, 77 us, 785347 us, 4.04 ms)
 [rank 0] iteration #248 - starting launcher [0][0] ...
 [rank 0] done
-[it= 248] hydro_fvm compute time t=1.1858e-03 (Dt=4.787e-06) : 0.80380 s (5.52 ms, 0 us, 691 us, 789959 us, 5.36 ms)
+[it= 248] hydro_fvm compute time t=1.1858e-03 (Dt=4.787e-06) : 0.79544 s (4.21 ms, 0 us, 78 us, 785240 us, 4.03 ms)
 [rank 0] iteration #249 - starting launcher [0][0] ...
 [rank 0] done
-[it= 249] hydro_fvm compute time t=1.1905e-03 (Dt=4.787e-06) : 0.80399 s (5.52 ms, 0 us, 652 us, 790180 us, 5.35 ms)
+[it= 249] hydro_fvm compute time t=1.1905e-03 (Dt=4.787e-06) : 0.79548 s (4.21 ms, 0 us, 79 us, 785265 us, 4.04 ms)
 [rank 0] iteration #250 - starting launcher [0][0] ...
 [rank 0] done
-[it= 250] hydro_fvm compute time t=1.1953e-03 (Dt=4.787e-06) : 0.80447 s (5.55 ms, 0 us, 694 us, 790594 us, 5.36 ms)
+[it= 250] hydro_fvm compute time t=1.1953e-03 (Dt=4.787e-06) : 0.79568 s (4.21 ms, 0 us, 80 us, 785462 us, 4.04 ms)
 [rank 0] iteration #251 - starting launcher [0][0] ...
 [rank 0] done
-[it= 251] hydro_fvm compute time t=1.2001e-03 (Dt=4.787e-06) : 0.80426 s (5.48 ms, 0 us, 688 us, 790439 us, 5.36 ms)
+[it= 251] hydro_fvm compute time t=1.2001e-03 (Dt=4.787e-06) : 0.79566 s (4.22 ms, 0 us, 78 us, 785423 us, 4.05 ms)
 [rank 0] iteration #252 - starting launcher [0][0] ...
 [rank 0] done
-[it= 252] hydro_fvm compute time t=1.2049e-03 (Dt=4.787e-06) : 0.80422 s (5.53 ms, 0 us, 679 us, 790356 us, 5.36 ms)
+[it= 252] hydro_fvm compute time t=1.2049e-03 (Dt=4.787e-06) : 0.79555 s (4.20 ms, 0 us, 79 us, 785327 us, 4.05 ms)
 [rank 0] iteration #253 - starting launcher [0][0] ...
 [rank 0] done
-[it= 253] hydro_fvm compute time t=1.2097e-03 (Dt=4.787e-06) : 0.80439 s (5.48 ms, 0 us, 670 us, 790561 us, 5.38 ms)
+[it= 253] hydro_fvm compute time t=1.2097e-03 (Dt=4.787e-06) : 0.79584 s (4.25 ms, 0 us, 78 us, 785577 us, 4.05 ms)
 [rank 0] iteration #254 - starting launcher [0][0] ...
 [rank 0] done
-[it= 254] hydro_fvm compute time t=1.2145e-03 (Dt=4.787e-06) : 0.80384 s (5.47 ms, 0 us, 694 us, 790034 us, 5.37 ms)
+[it= 254] hydro_fvm compute time t=1.2145e-03 (Dt=4.787e-06) : 0.79572 s (4.21 ms, 0 us, 79 us, 785491 us, 4.05 ms)
 [rank 0] iteration #255 - starting launcher [0][0] ...
 [rank 0] done
-[it= 255] hydro_fvm compute time t=1.2193e-03 (Dt=4.787e-06) : 0.80454 s (5.52 ms, 0 us, 700 us, 790678 us, 5.37 ms)
+[it= 255] hydro_fvm compute time t=1.2193e-03 (Dt=4.787e-06) : 0.79568 s (4.23 ms, 0 us, 78 us, 785465 us, 4.03 ms)
 [rank 0] iteration #256 - starting launcher [0][0] ...
 [rank 0] done
-[it= 256] hydro_fvm compute time t=1.2241e-03 (Dt=4.788e-06) : 0.80483 s (5.54 ms, 0 us, 652 us, 790678 us, 5.47 ms)
+[it= 256] hydro_fvm compute time t=1.2241e-03 (Dt=4.788e-06) : 0.79552 s (4.21 ms, 0 us, 81 us, 785299 us, 4.04 ms)
 [rank 0] iteration #257 - starting launcher [0][0] ...
 [rank 0] done
-[it= 257] hydro_fvm compute time t=1.2288e-03 (Dt=4.788e-06) : 0.80437 s (5.59 ms, 0 us, 707 us, 790283 us, 5.38 ms)
+[it= 257] hydro_fvm compute time t=1.2288e-03 (Dt=4.788e-06) : 0.79579 s (4.24 ms, 0 us, 78 us, 785545 us, 4.04 ms)
 [rank 0] iteration #258 - starting launcher [0][0] ...
 [rank 0] done
-[it= 258] hydro_fvm compute time t=1.2336e-03 (Dt=4.788e-06) : 0.80382 s (5.54 ms, 0 us, 708 us, 789926 us, 5.36 ms)
+[it= 258] hydro_fvm compute time t=1.2336e-03 (Dt=4.788e-06) : 0.79688 s (4.16 ms, 0 us, 79 us, 786706 us, 4.05 ms)
 [rank 0] iteration #259 - starting launcher [0][0] ...
 [rank 0] done
-[it= 259] hydro_fvm compute time t=1.2384e-03 (Dt=4.788e-06) : 0.80439 s (5.50 ms, 0 us, 706 us, 790524 us, 5.37 ms)
+[it= 259] hydro_fvm compute time t=1.2384e-03 (Dt=4.788e-06) : 0.79571 s (4.19 ms, 0 us, 78 us, 785497 us, 4.03 ms)
 [rank 0] iteration #260 - starting launcher [0][0] ...
 [rank 0] done
-[it= 260] hydro_fvm compute time t=1.2432e-03 (Dt=4.788e-06) : 0.80420 s (5.57 ms, 0 us, 697 us, 790272 us, 5.36 ms)
+[it= 260] hydro_fvm compute time t=1.2432e-03 (Dt=4.788e-06) : 0.79553 s (4.23 ms, 0 us, 84 us, 785283 us, 4.04 ms)
 [rank 0] iteration #261 - starting launcher [0][0] ...
 [rank 0] done
-[it= 261] hydro_fvm compute time t=1.2480e-03 (Dt=4.788e-06) : 0.80398 s (5.52 ms, 0 us, 700 us, 790110 us, 5.37 ms)
+[it= 261] hydro_fvm compute time t=1.2480e-03 (Dt=4.788e-06) : 0.79563 s (4.20 ms, 0 us, 82 us, 785416 us, 4.02 ms)
 [rank 0] iteration #262 - starting launcher [0][0] ...
 [rank 0] done
-[it= 262] hydro_fvm compute time t=1.2528e-03 (Dt=4.788e-06) : 0.80444 s (5.51 ms, 0 us, 709 us, 790533 us, 5.38 ms)
+[it= 262] hydro_fvm compute time t=1.2528e-03 (Dt=4.788e-06) : 0.79546 s (4.21 ms, 0 us, 81 us, 785244 us, 4.05 ms)
 [rank 0] iteration #263 - starting launcher [0][0] ...
 [rank 0] done
-[it= 263] hydro_fvm compute time t=1.2576e-03 (Dt=4.788e-06) : 0.80379 s (5.51 ms, 0 us, 688 us, 789951 us, 5.36 ms)
+[it= 263] hydro_fvm compute time t=1.2576e-03 (Dt=4.788e-06) : 0.79562 s (4.22 ms, 0 us, 78 us, 785394 us, 4.04 ms)
 [rank 0] iteration #264 - starting launcher [0][0] ...
 [rank 0] done
-[it= 264] hydro_fvm compute time t=1.2624e-03 (Dt=4.789e-06) : 0.80412 s (5.53 ms, 0 us, 696 us, 790248 us, 5.37 ms)
+[it= 264] hydro_fvm compute time t=1.2624e-03 (Dt=4.789e-06) : 0.79542 s (4.25 ms, 0 us, 78 us, 785166 us, 4.04 ms)
 [rank 0] iteration #265 - starting launcher [0][0] ...
 [rank 0] done
-[it= 265] hydro_fvm compute time t=1.2671e-03 (Dt=4.789e-06) : 0.80456 s (5.52 ms, 0 us, 670 us, 790717 us, 5.38 ms)
+[it= 265] hydro_fvm compute time t=1.2671e-03 (Dt=4.789e-06) : 0.79688 s (4.21 ms, 0 us, 79 us, 786671 us, 4.03 ms)
 [rank 0] iteration #266 - starting launcher [0][0] ...
 [rank 0] done
-[it= 266] hydro_fvm compute time t=1.2719e-03 (Dt=4.789e-06) : 0.80399 s (5.51 ms, 0 us, 680 us, 790132 us, 5.38 ms)
+[it= 266] hydro_fvm compute time t=1.2719e-03 (Dt=4.789e-06) : 0.79538 s (4.22 ms, 0 us, 79 us, 785155 us, 4.04 ms)
 [rank 0] iteration #267 - starting launcher [0][0] ...
 [rank 0] done
-[it= 267] hydro_fvm compute time t=1.2767e-03 (Dt=4.789e-06) : 0.80358 s (5.51 ms, 0 us, 702 us, 789712 us, 5.37 ms)
+[it= 267] hydro_fvm compute time t=1.2767e-03 (Dt=4.789e-06) : 0.79566 s (4.25 ms, 0 us, 78 us, 785396 us, 4.04 ms)
 [rank 0] iteration #268 - starting launcher [0][0] ...
 [rank 0] done
-[it= 268] hydro_fvm compute time t=1.2815e-03 (Dt=4.789e-06) : 0.80437 s (5.51 ms, 0 us, 650 us, 790491 us, 5.41 ms)
+[it= 268] hydro_fvm compute time t=1.2815e-03 (Dt=4.789e-06) : 0.79531 s (4.26 ms, 0 us, 78 us, 785059 us, 4.03 ms)
 [rank 0] iteration #269 - starting launcher [0][0] ...
 [rank 0] done
-[it= 269] hydro_fvm compute time t=1.2863e-03 (Dt=4.789e-06) : 0.80438 s (5.56 ms, 0 us, 692 us, 790506 us, 5.36 ms)
+[it= 269] hydro_fvm compute time t=1.2863e-03 (Dt=4.789e-06) : 0.79568 s (4.22 ms, 0 us, 79 us, 785478 us, 4.03 ms)
 [rank 0] iteration #270 - starting launcher [0][0] ...
 [rank 0] done
-[it= 270] hydro_fvm compute time t=1.2911e-03 (Dt=4.789e-06) : 0.80451 s (5.56 ms, 0 us, 682 us, 790611 us, 5.39 ms)
+[it= 270] hydro_fvm compute time t=1.2911e-03 (Dt=4.789e-06) : 0.79530 s (4.23 ms, 0 us, 79 us, 785053 us, 4.05 ms)
 [rank 0] iteration #271 - starting launcher [0][0] ...
 [rank 0] done
-[it= 271] hydro_fvm compute time t=1.2959e-03 (Dt=4.789e-06) : 0.80405 s (5.52 ms, 0 us, 691 us, 790176 us, 5.38 ms)
+[it= 271] hydro_fvm compute time t=1.2959e-03 (Dt=4.789e-06) : 0.79719 s (4.21 ms, 0 us, 79 us, 786973 us, 4.05 ms)
 [rank 0] iteration #272 - starting launcher [0][0] ...
 [rank 0] done
-[it= 272] hydro_fvm compute time t=1.3007e-03 (Dt=4.790e-06) : 0.80447 s (5.52 ms, 0 us, 695 us, 790588 us, 5.39 ms)
+[it= 272] hydro_fvm compute time t=1.3007e-03 (Dt=4.790e-06) : 0.79538 s (4.20 ms, 0 us, 83 us, 785175 us, 4.05 ms)
 [rank 0] iteration #273 - starting launcher [0][0] ...
 [rank 0] done
-[it= 273] hydro_fvm compute time t=1.3055e-03 (Dt=4.790e-06) : 0.80442 s (5.52 ms, 0 us, 664 us, 790510 us, 5.40 ms)
+[it= 273] hydro_fvm compute time t=1.3055e-03 (Dt=4.790e-06) : 0.79562 s (4.22 ms, 0 us, 78 us, 785422 us, 4.02 ms)
 [rank 0] iteration #274 - starting launcher [0][0] ...
 [rank 0] done
-[it= 274] hydro_fvm compute time t=1.3103e-03 (Dt=4.790e-06) : 0.80363 s (5.56 ms, 0 us, 692 us, 789725 us, 5.36 ms)
+[it= 274] hydro_fvm compute time t=1.3103e-03 (Dt=4.790e-06) : 0.79542 s (4.21 ms, 0 us, 82 us, 785208 us, 4.03 ms)
 [rank 0] iteration #275 - starting launcher [0][0] ...
 [rank 0] done
-[it= 275] hydro_fvm compute time t=1.3150e-03 (Dt=4.790e-06) : 0.80408 s (5.52 ms, 0 us, 707 us, 790205 us, 5.37 ms)
+[it= 275] hydro_fvm compute time t=1.3150e-03 (Dt=4.790e-06) : 0.79579 s (4.24 ms, 0 us, 79 us, 785508 us, 4.05 ms)
 [rank 0] iteration #276 - starting launcher [0][0] ...
 [rank 0] done
-[it= 276] hydro_fvm compute time t=1.3198e-03 (Dt=4.790e-06) : 0.80448 s (5.53 ms, 0 us, 700 us, 790590 us, 5.38 ms)
+[it= 276] hydro_fvm compute time t=1.3198e-03 (Dt=4.790e-06) : 0.79557 s (4.25 ms, 0 us, 78 us, 785321 us, 4.03 ms)
 [rank 0] iteration #277 - starting launcher [0][0] ...
 [rank 0] done
-[it= 277] hydro_fvm compute time t=1.3246e-03 (Dt=4.790e-06) : 0.80461 s (5.53 ms, 0 us, 691 us, 790749 us, 5.37 ms)
+[it= 277] hydro_fvm compute time t=1.3246e-03 (Dt=4.790e-06) : 0.79587 s (4.18 ms, 0 us, 79 us, 785613 us, 4.08 ms)
 [rank 0] iteration #278 - starting launcher [0][0] ...
 [rank 0] done
-[it= 278] hydro_fvm compute time t=1.3294e-03 (Dt=4.790e-06) : 0.80444 s (5.52 ms, 0 us, 696 us, 790601 us, 5.35 ms)
+[it= 278] hydro_fvm compute time t=1.3294e-03 (Dt=4.790e-06) : 0.79581 s (4.23 ms, 0 us, 79 us, 785569 us, 4.05 ms)
 [rank 0] iteration #279 - starting launcher [0][0] ...
 [rank 0] done
-[it= 279] hydro_fvm compute time t=1.3342e-03 (Dt=4.790e-06) : 0.80413 s (5.51 ms, 0 us, 695 us, 790277 us, 5.37 ms)
+[it= 279] hydro_fvm compute time t=1.3342e-03 (Dt=4.790e-06) : 0.79567 s (4.21 ms, 0 us, 79 us, 785458 us, 4.04 ms)
 [rank 0] iteration #280 - starting launcher [0][0] ...
 [rank 0] done
-[it= 280] hydro_fvm compute time t=1.3390e-03 (Dt=4.791e-06) : 0.80457 s (5.52 ms, 0 us, 690 us, 790695 us, 5.38 ms)
+[it= 280] hydro_fvm compute time t=1.3390e-03 (Dt=4.791e-06) : 0.79578 s (4.20 ms, 0 us, 77 us, 785583 us, 4.05 ms)
 [rank 0] iteration #281 - starting launcher [0][0] ...
 [rank 0] done
-[it= 281] hydro_fvm compute time t=1.3438e-03 (Dt=4.791e-06) : 0.80405 s (5.51 ms, 0 us, 688 us, 790205 us, 5.36 ms)
+[it= 281] hydro_fvm compute time t=1.3438e-03 (Dt=4.791e-06) : 0.79558 s (4.22 ms, 0 us, 78 us, 785346 us, 4.04 ms)
 [rank 0] iteration #282 - starting launcher [0][0] ...
 [rank 0] done
-[it= 282] hydro_fvm compute time t=1.3486e-03 (Dt=4.791e-06) : 0.80455 s (5.56 ms, 0 us, 699 us, 790669 us, 5.36 ms)
+[it= 282] hydro_fvm compute time t=1.3486e-03 (Dt=4.791e-06) : 0.79557 s (4.20 ms, 0 us, 79 us, 785286 us, 4.09 ms)
 [rank 0] iteration #283 - starting launcher [0][0] ...
 [rank 0] done
-[it= 283] hydro_fvm compute time t=1.3534e-03 (Dt=4.791e-06) : 0.80430 s (5.50 ms, 0 us, 701 us, 790464 us, 5.36 ms)
+[it= 283] hydro_fvm compute time t=1.3534e-03 (Dt=4.791e-06) : 0.79557 s (4.19 ms, 0 us, 81 us, 785366 us, 4.05 ms)
 [rank 0] iteration #284 - starting launcher [0][0] ...
 [rank 0] done
-[it= 284] hydro_fvm compute time t=1.3582e-03 (Dt=4.791e-06) : 0.80444 s (5.52 ms, 0 us, 672 us, 790609 us, 5.37 ms)
+[it= 284] hydro_fvm compute time t=1.3582e-03 (Dt=4.791e-06) : 0.79526 s (4.19 ms, 0 us, 79 us, 785077 us, 4.04 ms)
 [rank 0] iteration #285 - starting launcher [0][0] ...
 [rank 0] done
-[it= 285] hydro_fvm compute time t=1.3629e-03 (Dt=4.791e-06) : 0.80439 s (5.50 ms, 0 us, 693 us, 790543 us, 5.37 ms)
+[it= 285] hydro_fvm compute time t=1.3629e-03 (Dt=4.791e-06) : 0.79588 s (4.18 ms, 0 us, 78 us, 785713 us, 4.04 ms)
 [rank 0] iteration #286 - starting launcher [0][0] ...
 [rank 0] done
-[it= 286] hydro_fvm compute time t=1.3677e-03 (Dt=4.791e-06) : 0.80417 s (5.51 ms, 0 us, 651 us, 790378 us, 5.34 ms)
+[it= 286] hydro_fvm compute time t=1.3677e-03 (Dt=4.791e-06) : 0.79556 s (4.23 ms, 0 us, 79 us, 785327 us, 4.05 ms)
 [rank 0] iteration #287 - starting launcher [0][0] ...
 [rank 0] done
-[it= 287] hydro_fvm compute time t=1.3725e-03 (Dt=4.791e-06) : 0.80448 s (5.52 ms, 0 us, 702 us, 790627 us, 5.35 ms)
+[it= 287] hydro_fvm compute time t=1.3725e-03 (Dt=4.791e-06) : 0.79551 s (4.21 ms, 0 us, 77 us, 785297 us, 4.04 ms)
 [rank 0] iteration #288 - starting launcher [0][0] ...
 [rank 0] done
-[it= 288] hydro_fvm compute time t=1.3773e-03 (Dt=4.791e-06) : 0.80394 s (5.54 ms, 0 us, 688 us, 790066 us, 5.36 ms)
+[it= 288] hydro_fvm compute time t=1.3773e-03 (Dt=4.791e-06) : 0.79570 s (4.22 ms, 0 us, 78 us, 785464 us, 4.05 ms)
 [rank 0] iteration #289 - starting launcher [0][0] ...
 [rank 0] done
-[it= 289] hydro_fvm compute time t=1.3821e-03 (Dt=4.792e-06) : 0.80450 s (5.51 ms, 0 us, 696 us, 790670 us, 5.35 ms)
+[it= 289] hydro_fvm compute time t=1.3821e-03 (Dt=4.792e-06) : 0.79602 s (4.23 ms, 0 us, 79 us, 785808 us, 4.04 ms)
 [rank 0] iteration #290 - starting launcher [0][0] ...
 [rank 0] done
-[it= 290] hydro_fvm compute time t=1.3869e-03 (Dt=4.792e-06) : 0.80421 s (5.55 ms, 0 us, 678 us, 790328 us, 5.38 ms)
+[it= 290] hydro_fvm compute time t=1.3869e-03 (Dt=4.792e-06) : 0.79599 s (4.27 ms, 0 us, 80 us, 785711 us, 4.04 ms)
 [rank 0] iteration #291 - starting launcher [0][0] ...
 [rank 0] done
-[it= 291] hydro_fvm compute time t=1.3917e-03 (Dt=4.792e-06) : 0.80399 s (5.52 ms, 0 us, 694 us, 790143 us, 5.36 ms)
+[it= 291] hydro_fvm compute time t=1.3917e-03 (Dt=4.792e-06) : 0.79570 s (4.23 ms, 0 us, 79 us, 785459 us, 4.05 ms)
 [rank 0] iteration #292 - starting launcher [0][0] ...
 [rank 0] done
-[it= 292] hydro_fvm compute time t=1.3965e-03 (Dt=4.792e-06) : 0.80401 s (5.52 ms, 0 us, 701 us, 790149 us, 5.36 ms)
+[it= 292] hydro_fvm compute time t=1.3965e-03 (Dt=4.792e-06) : 0.79539 s (4.21 ms, 0 us, 78 us, 785181 us, 4.03 ms)
 [rank 0] iteration #293 - starting launcher [0][0] ...
 [rank 0] done
-[it= 293] hydro_fvm compute time t=1.4013e-03 (Dt=4.792e-06) : 0.80381 s (5.50 ms, 0 us, 702 us, 789957 us, 5.37 ms)
+[it= 293] hydro_fvm compute time t=1.4013e-03 (Dt=4.792e-06) : 0.79572 s (4.21 ms, 0 us, 77 us, 785511 us, 4.04 ms)
 [rank 0] iteration #294 - starting launcher [0][0] ...
 [rank 0] done
-[it= 294] hydro_fvm compute time t=1.4061e-03 (Dt=4.792e-06) : 0.80368 s (5.53 ms, 0 us, 696 us, 789823 us, 5.35 ms)
+[it= 294] hydro_fvm compute time t=1.4061e-03 (Dt=4.792e-06) : 0.79567 s (4.22 ms, 0 us, 78 us, 785436 us, 4.05 ms)
 [rank 0] iteration #295 - starting launcher [0][0] ...
 [rank 0] done
-[it= 295] hydro_fvm compute time t=1.4109e-03 (Dt=4.792e-06) : 0.80425 s (5.53 ms, 0 us, 697 us, 790375 us, 5.37 ms)
+[it= 295] hydro_fvm compute time t=1.4109e-03 (Dt=4.792e-06) : 0.79566 s (4.20 ms, 0 us, 79 us, 785469 us, 4.03 ms)
 [rank 0] iteration #296 - starting launcher [0][0] ...
 [rank 0] done
-[it= 296] hydro_fvm compute time t=1.4157e-03 (Dt=4.792e-06) : 0.80396 s (5.50 ms, 0 us, 686 us, 790118 us, 5.38 ms)
+[it= 296] hydro_fvm compute time t=1.4157e-03 (Dt=4.792e-06) : 0.79531 s (4.20 ms, 0 us, 78 us, 785099 us, 4.06 ms)
 [rank 0] iteration #297 - starting launcher [0][0] ...
 [rank 0] done
-[it= 297] hydro_fvm compute time t=1.4204e-03 (Dt=4.792e-06) : 0.80451 s (5.53 ms, 0 us, 674 us, 790660 us, 5.36 ms)
+[it= 297] hydro_fvm compute time t=1.4204e-03 (Dt=4.792e-06) : 0.79562 s (4.18 ms, 0 us, 79 us, 785424 us, 4.04 ms)
 [rank 0] iteration #298 - starting launcher [0][0] ...
 [rank 0] done
-[it= 298] hydro_fvm compute time t=1.4252e-03 (Dt=4.792e-06) : 0.80399 s (5.50 ms, 0 us, 690 us, 790152 us, 5.36 ms)
+[it= 298] hydro_fvm compute time t=1.4252e-03 (Dt=4.792e-06) : 0.79558 s (4.22 ms, 0 us, 79 us, 785388 us, 4.05 ms)
 [rank 0] iteration #299 - starting launcher [0][0] ...
 [rank 0] done
-[it= 299] hydro_fvm compute time t=1.4300e-03 (Dt=4.792e-06) : 0.80442 s (5.52 ms, 0 us, 703 us, 790547 us, 5.37 ms)
+[it= 299] hydro_fvm compute time t=1.4300e-03 (Dt=4.792e-06) : 0.79645 s (4.20 ms, 0 us, 78 us, 786256 us, 4.04 ms)
 [rank 0] iteration #300 - starting launcher [0][0] ...
 [rank 0] done
-[it= 300] hydro_fvm compute time t=1.4348e-03 (Dt=4.793e-06) : 0.80445 s (5.51 ms, 0 us, 700 us, 790588 us, 5.37 ms)
+[it= 300] hydro_fvm compute time t=1.4348e-03 (Dt=4.793e-06) : 0.79567 s (4.25 ms, 0 us, 78 us, 785418 us, 4.04 ms)
 [rank 0] iteration #301 - starting launcher [0][0] ...
 [rank 0] done
-[it= 301] hydro_fvm compute time t=1.4396e-03 (Dt=4.793e-06) : 0.80448 s (5.50 ms, 0 us, 696 us, 790647 us, 5.40 ms)
+[it= 301] hydro_fvm compute time t=1.4396e-03 (Dt=4.793e-06) : 0.79697 s (4.22 ms, 0 us, 79 us, 786735 us, 4.05 ms)
 [rank 0] iteration #302 - starting launcher [0][0] ...
 [rank 0] done
-[it= 302] hydro_fvm compute time t=1.4444e-03 (Dt=4.793e-06) : 0.80408 s (5.57 ms, 0 us, 665 us, 790188 us, 5.39 ms)
+[it= 302] hydro_fvm compute time t=1.4444e-03 (Dt=4.793e-06) : 0.79562 s (4.21 ms, 0 us, 81 us, 785422 us, 4.04 ms)
 [rank 0] iteration #303 - starting launcher [0][0] ...
 [rank 0] done
-[it= 303] hydro_fvm compute time t=1.4492e-03 (Dt=4.793e-06) : 0.80400 s (5.52 ms, 0 us, 699 us, 790116 us, 5.38 ms)
+[it= 303] hydro_fvm compute time t=1.4492e-03 (Dt=4.793e-06) : 0.79678 s (4.20 ms, 0 us, 82 us, 786575 us, 4.04 ms)
 [rank 0] iteration #304 - starting launcher [0][0] ...
 [rank 0] done
-[it= 304] hydro_fvm compute time t=1.4540e-03 (Dt=4.793e-06) : 0.80449 s (5.55 ms, 0 us, 703 us, 790591 us, 5.37 ms)
+[it= 304] hydro_fvm compute time t=1.4540e-03 (Dt=4.793e-06) : 0.79564 s (4.33 ms, 0 us, 79 us, 785299 us, 4.05 ms)
 [rank 0] iteration #305 - starting launcher [0][0] ...
 [rank 0] done
-[it= 305] hydro_fvm compute time t=1.4588e-03 (Dt=4.793e-06) : 0.80453 s (5.47 ms, 0 us, 701 us, 790714 us, 5.37 ms)
+[it= 305] hydro_fvm compute time t=1.4588e-03 (Dt=4.793e-06) : 0.79568 s (4.19 ms, 0 us, 79 us, 785483 us, 4.04 ms)
 [rank 0] iteration #306 - starting launcher [0][0] ...
 [rank 0] done
-[it= 306] hydro_fvm compute time t=1.4636e-03 (Dt=4.793e-06) : 0.80401 s (5.53 ms, 0 us, 659 us, 790101 us, 5.40 ms)
+[it= 306] hydro_fvm compute time t=1.4636e-03 (Dt=4.793e-06) : 0.79535 s (4.19 ms, 0 us, 78 us, 785158 us, 4.05 ms)
 [rank 0] iteration #307 - starting launcher [0][0] ...
 [rank 0] done
-[it= 307] hydro_fvm compute time t=1.4684e-03 (Dt=4.793e-06) : 0.80432 s (5.53 ms, 0 us, 725 us, 790397 us, 5.38 ms)
+[it= 307] hydro_fvm compute time t=1.4684e-03 (Dt=4.793e-06) : 0.79557 s (4.20 ms, 0 us, 79 us, 785309 us, 4.10 ms)
 [rank 0] iteration #308 - starting launcher [0][0] ...
 [rank 0] done
-[it= 308] hydro_fvm compute time t=1.4732e-03 (Dt=4.793e-06) : 0.80381 s (5.53 ms, 0 us, 702 us, 789912 us, 5.38 ms)
+[it= 308] hydro_fvm compute time t=1.4732e-03 (Dt=4.793e-06) : 0.79531 s (4.14 ms, 0 us, 80 us, 785165 us, 4.03 ms)
 [rank 0] iteration #309 - starting launcher [0][0] ...
 [rank 0] done
-[it= 309] hydro_fvm compute time t=1.4780e-03 (Dt=4.793e-06) : 0.80412 s (5.52 ms, 0 us, 684 us, 790266 us, 5.37 ms)
+[it= 309] hydro_fvm compute time t=1.4780e-03 (Dt=4.793e-06) : 0.79569 s (4.19 ms, 0 us, 77 us, 785509 us, 4.03 ms)
 [rank 0] iteration #310 - starting launcher [0][0] ...
 [rank 0] done
-[it= 310] hydro_fvm compute time t=1.4828e-03 (Dt=4.794e-06) : 0.80406 s (5.53 ms, 0 us, 668 us, 790230 us, 5.36 ms)
+[it= 310] hydro_fvm compute time t=1.4828e-03 (Dt=4.794e-06) : 0.79558 s (4.16 ms, 0 us, 80 us, 785424 us, 4.03 ms)
 [rank 0] iteration #311 - starting launcher [0][0] ...
 [rank 0] done
-[it= 311] hydro_fvm compute time t=1.4875e-03 (Dt=4.794e-06) : 0.80373 s (5.52 ms, 0 us, 695 us, 789796 us, 5.40 ms)
+[it= 311] hydro_fvm compute time t=1.4875e-03 (Dt=4.794e-06) : 0.79571 s (4.18 ms, 0 us, 79 us, 785520 us, 4.04 ms)
 [rank 0] iteration #312 - starting launcher [0][0] ...
 [rank 0] done
-[it= 312] hydro_fvm compute time t=1.4923e-03 (Dt=4.794e-06) : 0.80417 s (5.57 ms, 0 us, 702 us, 790247 us, 5.38 ms)
+[it= 312] hydro_fvm compute time t=1.4923e-03 (Dt=4.794e-06) : 0.79553 s (4.23 ms, 0 us, 78 us, 785309 us, 4.04 ms)
 [rank 0] iteration #313 - starting launcher [0][0] ...
 [rank 0] done
-[it= 313] hydro_fvm compute time t=1.4971e-03 (Dt=4.794e-06) : 0.80420 s (5.51 ms, 0 us, 673 us, 790357 us, 5.38 ms)
+[it= 313] hydro_fvm compute time t=1.4971e-03 (Dt=4.794e-06) : 0.79599 s (4.35 ms, 0 us, 80 us, 785655 us, 4.06 ms)
 [rank 0] iteration #314 - starting launcher [0][0] ...
 [rank 0] done
-[it= 314] hydro_fvm compute time t=1.5019e-03 (Dt=4.794e-06) : 0.80368 s (5.48 ms, 0 us, 694 us, 789859 us, 5.37 ms)
+[it= 314] hydro_fvm compute time t=1.5019e-03 (Dt=4.794e-06) : 0.79558 s (4.25 ms, 0 us, 80 us, 785327 us, 4.03 ms)
 [rank 0] iteration #315 - starting launcher [0][0] ...
 [rank 0] done
-[it= 315] hydro_fvm compute time t=1.5067e-03 (Dt=4.794e-06) : 0.80454 s (5.53 ms, 0 us, 692 us, 790677 us, 5.36 ms)
+[it= 315] hydro_fvm compute time t=1.5067e-03 (Dt=4.794e-06) : 0.79579 s (4.18 ms, 0 us, 79 us, 785608 us, 4.03 ms)
 [rank 0] iteration #316 - starting launcher [0][0] ...
 [rank 0] done
-[it= 316] hydro_fvm compute time t=1.5115e-03 (Dt=4.794e-06) : 0.80422 s (5.51 ms, 0 us, 694 us, 790351 us, 5.38 ms)
+[it= 316] hydro_fvm compute time t=1.5115e-03 (Dt=4.794e-06) : 0.79537 s (4.22 ms, 0 us, 78 us, 785151 us, 4.04 ms)
 [rank 0] iteration #317 - starting launcher [0][0] ...
 [rank 0] done
-[it= 317] hydro_fvm compute time t=1.5163e-03 (Dt=4.794e-06) : 0.80440 s (5.51 ms, 0 us, 706 us, 790529 us, 5.38 ms)
+[it= 317] hydro_fvm compute time t=1.5163e-03 (Dt=4.794e-06) : 0.79630 s (4.20 ms, 0 us, 77 us, 785972 us, 4.11 ms)
 [rank 0] iteration #318 - starting launcher [0][0] ...
 [rank 0] done
-[it= 318] hydro_fvm compute time t=1.5211e-03 (Dt=4.794e-06) : 0.80438 s (5.52 ms, 0 us, 700 us, 790488 us, 5.39 ms)
+[it= 318] hydro_fvm compute time t=1.5211e-03 (Dt=4.794e-06) : 0.79545 s (4.23 ms, 0 us, 81 us, 785206 us, 4.04 ms)
 [rank 0] iteration #319 - starting launcher [0][0] ...
 [rank 0] done
-[it= 319] hydro_fvm compute time t=1.5259e-03 (Dt=4.794e-06) : 0.80429 s (5.51 ms, 0 us, 704 us, 790357 us, 5.40 ms)
+[it= 319] hydro_fvm compute time t=1.5259e-03 (Dt=4.794e-06) : 0.79564 s (4.21 ms, 0 us, 78 us, 785436 us, 4.05 ms)
 [rank 0] iteration #320 - starting launcher [0][0] ...
 [rank 0] done
-[it= 320] hydro_fvm compute time t=1.5307e-03 (Dt=4.795e-06) : 0.80436 s (5.55 ms, 0 us, 696 us, 790446 us, 5.39 ms)
+[it= 320] hydro_fvm compute time t=1.5307e-03 (Dt=4.795e-06) : 0.79551 s (4.17 ms, 0 us, 78 us, 785347 us, 4.03 ms)
 [rank 0] iteration #321 - starting launcher [0][0] ...
 [rank 0] done
-[it= 321] hydro_fvm compute time t=1.5355e-03 (Dt=4.795e-06) : 0.80417 s (5.52 ms, 0 us, 695 us, 790295 us, 5.38 ms)
+[it= 321] hydro_fvm compute time t=1.5355e-03 (Dt=4.795e-06) : 0.79631 s (4.22 ms, 0 us, 79 us, 786091 us, 4.05 ms)
 [rank 0] iteration #322 - starting launcher [0][0] ...
 [rank 0] done
-[it= 322] hydro_fvm compute time t=1.5403e-03 (Dt=4.795e-06) : 0.80401 s (5.49 ms, 0 us, 702 us, 790179 us, 5.37 ms)
+[it= 322] hydro_fvm compute time t=1.5403e-03 (Dt=4.795e-06) : 0.79656 s (4.30 ms, 0 us, 79 us, 786232 us, 4.06 ms)
 [rank 0] iteration #323 - starting launcher [0][0] ...
 [rank 0] done
-[it= 323] hydro_fvm compute time t=1.5451e-03 (Dt=4.795e-06) : 0.80434 s (5.49 ms, 0 us, 689 us, 790502 us, 5.38 ms)
+[it= 323] hydro_fvm compute time t=1.5451e-03 (Dt=4.795e-06) : 0.79575 s (4.19 ms, 0 us, 79 us, 785555 us, 4.04 ms)
 [rank 0] iteration #324 - starting launcher [0][0] ...
 [rank 0] done
-[it= 324] hydro_fvm compute time t=1.5499e-03 (Dt=4.795e-06) : 0.80411 s (5.51 ms, 0 us, 707 us, 790254 us, 5.36 ms)
+[it= 324] hydro_fvm compute time t=1.5499e-03 (Dt=4.795e-06) : 0.79547 s (4.18 ms, 0 us, 79 us, 785297 us, 4.03 ms)
 [rank 0] iteration #325 - starting launcher [0][0] ...
 [rank 0] done
-[it= 325] hydro_fvm compute time t=1.5547e-03 (Dt=4.795e-06) : 0.80446 s (5.53 ms, 0 us, 697 us, 790587 us, 5.36 ms)
+[it= 325] hydro_fvm compute time t=1.5547e-03 (Dt=4.795e-06) : 0.79588 s (4.24 ms, 0 us, 79 us, 785616 us, 4.06 ms)
 [rank 0] iteration #326 - starting launcher [0][0] ...
 [rank 0] done
-[it= 326] hydro_fvm compute time t=1.5595e-03 (Dt=4.795e-06) : 0.80417 s (5.48 ms, 0 us, 702 us, 790323 us, 5.38 ms)
+[it= 326] hydro_fvm compute time t=1.5595e-03 (Dt=4.795e-06) : 0.79552 s (4.19 ms, 0 us, 80 us, 785329 us, 4.04 ms)
 [rank 0] iteration #327 - starting launcher [0][0] ...
 [rank 0] done
-[it= 327] hydro_fvm compute time t=1.5643e-03 (Dt=4.795e-06) : 0.80374 s (5.52 ms, 0 us, 711 us, 789836 us, 5.38 ms)
+[it= 327] hydro_fvm compute time t=1.5643e-03 (Dt=4.795e-06) : 0.79563 s (4.17 ms, 0 us, 78 us, 785462 us, 4.04 ms)
 [rank 0] iteration #328 - starting launcher [0][0] ...
 [rank 0] done
-[it= 328] hydro_fvm compute time t=1.5691e-03 (Dt=4.795e-06) : 0.80406 s (5.53 ms, 0 us, 704 us, 790178 us, 5.37 ms)
+[it= 328] hydro_fvm compute time t=1.5691e-03 (Dt=4.795e-06) : 0.79555 s (4.19 ms, 0 us, 79 us, 785356 us, 4.03 ms)
 [rank 0] iteration #329 - starting launcher [0][0] ...
 [rank 0] done
-[it= 329] hydro_fvm compute time t=1.5738e-03 (Dt=4.795e-06) : 0.80433 s (5.55 ms, 0 us, 706 us, 790445 us, 5.38 ms)
+[it= 329] hydro_fvm compute time t=1.5738e-03 (Dt=4.795e-06) : 0.79564 s (4.23 ms, 0 us, 79 us, 785414 us, 4.04 ms)
 [rank 0] iteration #330 - starting launcher [0][0] ...
 [rank 0] done
-[it= 330] hydro_fvm compute time t=1.5786e-03 (Dt=4.795e-06) : 0.80444 s (5.55 ms, 0 us, 658 us, 790578 us, 5.38 ms)
+[it= 330] hydro_fvm compute time t=1.5786e-03 (Dt=4.795e-06) : 0.79556 s (4.20 ms, 0 us, 78 us, 785364 us, 4.03 ms)
 [rank 0] iteration #331 - starting launcher [0][0] ...
 [rank 0] done
-[it= 331] hydro_fvm compute time t=1.5834e-03 (Dt=4.795e-06) : 0.80429 s (5.51 ms, 0 us, 684 us, 790115 us, 5.45 ms)
+[it= 331] hydro_fvm compute time t=1.5834e-03 (Dt=4.795e-06) : 0.79573 s (4.31 ms, 0 us, 79 us, 785384 us, 4.04 ms)
 [rank 0] iteration #332 - starting launcher [0][0] ...
 [rank 0] done
-[it= 332] hydro_fvm compute time t=1.5882e-03 (Dt=4.795e-06) : 0.80429 s (5.56 ms, 0 us, 703 us, 790223 us, 5.38 ms)
+[it= 332] hydro_fvm compute time t=1.5882e-03 (Dt=4.795e-06) : 0.79554 s (4.19 ms, 0 us, 79 us, 785238 us, 4.10 ms)
 [rank 0] iteration #333 - starting launcher [0][0] ...
 [rank 0] done
-[it= 333] hydro_fvm compute time t=1.5930e-03 (Dt=4.795e-06) : 0.80399 s (5.52 ms, 0 us, 697 us, 790090 us, 5.37 ms)
+[it= 333] hydro_fvm compute time t=1.5930e-03 (Dt=4.795e-06) : 0.79597 s (4.28 ms, 0 us, 78 us, 785703 us, 4.02 ms)
 [rank 0] iteration #334 - starting launcher [0][0] ...
 [rank 0] done
-[it= 334] hydro_fvm compute time t=1.5978e-03 (Dt=4.795e-06) : 0.80418 s (5.53 ms, 0 us, 674 us, 790275 us, 5.39 ms)
+[it= 334] hydro_fvm compute time t=1.5978e-03 (Dt=4.795e-06) : 0.79549 s (4.21 ms, 0 us, 79 us, 785241 us, 4.05 ms)
 [rank 0] iteration #335 - starting launcher [0][0] ...
 [rank 0] done
-[it= 335] hydro_fvm compute time t=1.6026e-03 (Dt=4.795e-06) : 0.80429 s (5.55 ms, 0 us, 652 us, 790417 us, 5.39 ms)
+[it= 335] hydro_fvm compute time t=1.6026e-03 (Dt=4.795e-06) : 0.79567 s (4.21 ms, 0 us, 85 us, 785446 us, 4.04 ms)
 [rank 0] iteration #336 - starting launcher [0][0] ...
 [rank 0] done
-[it= 336] hydro_fvm compute time t=1.6074e-03 (Dt=4.795e-06) : 0.80412 s (5.52 ms, 0 us, 703 us, 790238 us, 5.38 ms)
+[it= 336] hydro_fvm compute time t=1.6074e-03 (Dt=4.795e-06) : 0.79536 s (4.21 ms, 0 us, 82 us, 785136 us, 4.04 ms)
 [rank 0] iteration #337 - starting launcher [0][0] ...
 [rank 0] done
-[it= 337] hydro_fvm compute time t=1.6122e-03 (Dt=4.795e-06) : 0.80416 s (5.50 ms, 0 us, 702 us, 790291 us, 5.39 ms)
+[it= 337] hydro_fvm compute time t=1.6122e-03 (Dt=4.795e-06) : 0.79566 s (4.24 ms, 0 us, 78 us, 785432 us, 4.02 ms)
 [rank 0] iteration #338 - starting launcher [0][0] ...
 [rank 0] done
-[it= 338] hydro_fvm compute time t=1.6170e-03 (Dt=4.795e-06) : 0.80427 s (5.50 ms, 0 us, 709 us, 790403 us, 5.37 ms)
+[it= 338] hydro_fvm compute time t=1.6170e-03 (Dt=4.795e-06) : 0.79547 s (4.19 ms, 0 us, 78 us, 785219 us, 4.08 ms)
 [rank 0] iteration #339 - starting launcher [0][0] ...
 [rank 0] done
-[it= 339] hydro_fvm compute time t=1.6218e-03 (Dt=4.795e-06) : 0.80425 s (5.55 ms, 0 us, 690 us, 790370 us, 5.37 ms)
+[it= 339] hydro_fvm compute time t=1.6218e-03 (Dt=4.795e-06) : 0.79573 s (4.22 ms, 0 us, 77 us, 785530 us, 4.03 ms)
 [rank 0] iteration #340 - starting launcher [0][0] ...
 [rank 0] done
-[it= 340] hydro_fvm compute time t=1.6266e-03 (Dt=4.795e-06) : 0.80424 s (5.56 ms, 0 us, 681 us, 790355 us, 5.37 ms)
+[it= 340] hydro_fvm compute time t=1.6266e-03 (Dt=4.795e-06) : 0.79551 s (4.20 ms, 0 us, 81 us, 785301 us, 4.03 ms)
 [rank 0] iteration #341 - starting launcher [0][0] ...
 [rank 0] done
-[it= 341] hydro_fvm compute time t=1.6314e-03 (Dt=4.796e-06) : 0.80456 s (5.52 ms, 0 us, 696 us, 790669 us, 5.38 ms)
+[it= 341] hydro_fvm compute time t=1.6314e-03 (Dt=4.796e-06) : 0.79555 s (4.21 ms, 0 us, 80 us, 785348 us, 4.02 ms)
 [rank 0] iteration #342 - starting launcher [0][0] ...
 [rank 0] done
-[it= 342] hydro_fvm compute time t=1.6362e-03 (Dt=4.796e-06) : 0.80425 s (5.52 ms, 0 us, 656 us, 790414 us, 5.37 ms)
+[it= 342] hydro_fvm compute time t=1.6362e-03 (Dt=4.796e-06) : 0.79548 s (4.19 ms, 0 us, 79 us, 785292 us, 4.02 ms)
 [rank 0] iteration #343 - starting launcher [0][0] ...
 [rank 0] done
-[it= 343] hydro_fvm compute time t=1.6410e-03 (Dt=4.796e-06) : 0.80375 s (5.50 ms, 0 us, 685 us, 789935 us, 5.35 ms)
+[it= 343] hydro_fvm compute time t=1.6410e-03 (Dt=4.796e-06) : 0.79570 s (4.22 ms, 0 us, 78 us, 785499 us, 4.02 ms)
 [rank 0] iteration #344 - starting launcher [0][0] ...
 [rank 0] done
-[it= 344] hydro_fvm compute time t=1.6458e-03 (Dt=4.796e-06) : 0.80361 s (5.52 ms, 0 us, 650 us, 789827 us, 5.34 ms)
+[it= 344] hydro_fvm compute time t=1.6458e-03 (Dt=4.796e-06) : 0.79542 s (4.21 ms, 0 us, 79 us, 785223 us, 4.02 ms)
 [rank 0] iteration #345 - starting launcher [0][0] ...
 [rank 0] done
-[it= 345] hydro_fvm compute time t=1.6506e-03 (Dt=4.796e-06) : 0.80438 s (5.50 ms, 0 us, 701 us, 790555 us, 5.35 ms)
+[it= 345] hydro_fvm compute time t=1.6506e-03 (Dt=4.796e-06) : 0.79562 s (4.22 ms, 0 us, 78 us, 785428 us, 4.02 ms)
 [rank 0] iteration #346 - starting launcher [0][0] ...
 [rank 0] done
-[it= 346] hydro_fvm compute time t=1.6554e-03 (Dt=4.796e-06) : 0.80452 s (5.52 ms, 0 us, 701 us, 790641 us, 5.38 ms)
+[it= 346] hydro_fvm compute time t=1.6554e-03 (Dt=4.796e-06) : 0.79536 s (4.17 ms, 0 us, 78 us, 785197 us, 4.03 ms)
 [rank 0] iteration #347 - starting launcher [0][0] ...
 [rank 0] done
-[it= 347] hydro_fvm compute time t=1.6602e-03 (Dt=4.796e-06) : 0.80350 s (5.49 ms, 0 us, 697 us, 789637 us, 5.40 ms)
+[it= 347] hydro_fvm compute time t=1.6602e-03 (Dt=4.796e-06) : 0.79565 s (4.26 ms, 0 us, 78 us, 785409 us, 4.03 ms)
 [rank 0] iteration #348 - starting launcher [0][0] ...
 [rank 0] done
-[it= 348] hydro_fvm compute time t=1.6650e-03 (Dt=4.796e-06) : 0.80419 s (5.49 ms, 0 us, 675 us, 790371 us, 5.37 ms)
+[it= 348] hydro_fvm compute time t=1.6650e-03 (Dt=4.796e-06) : 0.79536 s (4.21 ms, 0 us, 80 us, 785153 us, 4.03 ms)
 [rank 0] iteration #349 - starting launcher [0][0] ...
 [rank 0] done
-[it= 349] hydro_fvm compute time t=1.6698e-03 (Dt=4.796e-06) : 0.80431 s (5.51 ms, 0 us, 669 us, 790498 us, 5.35 ms)
+[it= 349] hydro_fvm compute time t=1.6698e-03 (Dt=4.796e-06) : 0.79576 s (4.21 ms, 0 us, 79 us, 785552 us, 4.03 ms)
 [rank 0] iteration #350 - starting launcher [0][0] ...
 [rank 0] done
-[it= 350] hydro_fvm compute time t=1.6746e-03 (Dt=4.796e-06) : 0.80430 s (5.48 ms, 0 us, 697 us, 790499 us, 5.35 ms)
+[it= 350] hydro_fvm compute time t=1.6746e-03 (Dt=4.796e-06) : 0.79562 s (4.22 ms, 0 us, 78 us, 785328 us, 4.05 ms)
 [rank 0] iteration #351 - starting launcher [0][0] ...
 [rank 0] done
-[it= 351] hydro_fvm compute time t=1.6793e-03 (Dt=4.796e-06) : 0.80434 s (5.52 ms, 0 us, 683 us, 790505 us, 5.36 ms)
+[it= 351] hydro_fvm compute time t=1.6793e-03 (Dt=4.796e-06) : 0.79570 s (4.21 ms, 0 us, 79 us, 785478 us, 4.06 ms)
 [rank 0] iteration #352 - starting launcher [0][0] ...
 [rank 0] done
-[it= 352] hydro_fvm compute time t=1.6841e-03 (Dt=4.796e-06) : 0.80401 s (5.51 ms, 0 us, 705 us, 790157 us, 5.36 ms)
+[it= 352] hydro_fvm compute time t=1.6841e-03 (Dt=4.796e-06) : 0.79551 s (4.22 ms, 0 us, 78 us, 785264 us, 4.04 ms)
 [rank 0] iteration #353 - starting launcher [0][0] ...
 [rank 0] done
-[it= 353] hydro_fvm compute time t=1.6889e-03 (Dt=4.796e-06) : 0.80439 s (5.55 ms, 0 us, 697 us, 790480 us, 5.39 ms)
+[it= 353] hydro_fvm compute time t=1.6889e-03 (Dt=4.796e-06) : 0.79613 s (4.33 ms, 0 us, 78 us, 785786 us, 4.04 ms)
 [rank 0] iteration #354 - starting launcher [0][0] ...
 [rank 0] done
-[it= 354] hydro_fvm compute time t=1.6937e-03 (Dt=4.796e-06) : 0.80425 s (5.54 ms, 0 us, 699 us, 790397 us, 5.34 ms)
+[it= 354] hydro_fvm compute time t=1.6937e-03 (Dt=4.796e-06) : 0.79568 s (4.20 ms, 0 us, 79 us, 785475 us, 4.03 ms)
 [rank 0] iteration #355 - starting launcher [0][0] ...
 [rank 0] done
-[it= 355] hydro_fvm compute time t=1.6985e-03 (Dt=4.796e-06) : 0.80411 s (5.51 ms, 0 us, 713 us, 790236 us, 5.38 ms)
+[it= 355] hydro_fvm compute time t=1.6985e-03 (Dt=4.796e-06) : 0.79575 s (4.14 ms, 0 us, 78 us, 785621 us, 4.03 ms)
 [rank 0] iteration #356 - starting launcher [0][0] ...
 [rank 0] done
-[it= 356] hydro_fvm compute time t=1.7033e-03 (Dt=4.796e-06) : 0.80411 s (5.50 ms, 0 us, 700 us, 790285 us, 5.36 ms)
+[it= 356] hydro_fvm compute time t=1.7033e-03 (Dt=4.796e-06) : 0.79555 s (4.19 ms, 0 us, 82 us, 785354 us, 4.04 ms)
 [rank 0] iteration #357 - starting launcher [0][0] ...
 [rank 0] done
-[it= 357] hydro_fvm compute time t=1.7081e-03 (Dt=4.796e-06) : 0.80417 s (5.52 ms, 0 us, 681 us, 790333 us, 5.36 ms)
+[it= 357] hydro_fvm compute time t=1.7081e-03 (Dt=4.796e-06) : 0.79567 s (4.22 ms, 0 us, 78 us, 785446 us, 4.04 ms)
 [rank 0] iteration #358 - starting launcher [0][0] ...
 [rank 0] done
-[it= 358] hydro_fvm compute time t=1.7129e-03 (Dt=4.796e-06) : 0.80449 s (5.51 ms, 0 us, 702 us, 790618 us, 5.38 ms)
+[it= 358] hydro_fvm compute time t=1.7129e-03 (Dt=4.796e-06) : 0.79530 s (4.21 ms, 0 us, 78 us, 785065 us, 4.04 ms)
 [rank 0] iteration #359 - starting launcher [0][0] ...
 [rank 0] done
-[it= 359] hydro_fvm compute time t=1.7177e-03 (Dt=4.796e-06) : 0.80429 s (5.53 ms, 0 us, 694 us, 790451 us, 5.34 ms)
+[it= 359] hydro_fvm compute time t=1.7177e-03 (Dt=4.796e-06) : 0.79564 s (4.20 ms, 0 us, 77 us, 785434 us, 4.04 ms)
 [rank 0] iteration #360 - starting launcher [0][0] ...
 [rank 0] done
-[it= 360] hydro_fvm compute time t=1.7225e-03 (Dt=4.796e-06) : 0.80406 s (5.53 ms, 0 us, 703 us, 790204 us, 5.36 ms)
+[it= 360] hydro_fvm compute time t=1.7225e-03 (Dt=4.796e-06) : 0.79579 s (4.34 ms, 0 us, 78 us, 785441 us, 4.03 ms)
 [rank 0] iteration #361 - starting launcher [0][0] ...
 [rank 0] done
-[it= 361] hydro_fvm compute time t=1.7273e-03 (Dt=4.796e-06) : 0.80459 s (5.50 ms, 0 us, 694 us, 790725 us, 5.37 ms)
+[it= 361] hydro_fvm compute time t=1.7273e-03 (Dt=4.796e-06) : 0.79572 s (4.21 ms, 0 us, 80 us, 785507 us, 4.03 ms)
 [rank 0] iteration #362 - starting launcher [0][0] ...
 [rank 0] done
-[it= 362] hydro_fvm compute time t=1.7321e-03 (Dt=4.796e-06) : 0.80387 s (5.51 ms, 0 us, 680 us, 790041 us, 5.36 ms)
+[it= 362] hydro_fvm compute time t=1.7321e-03 (Dt=4.796e-06) : 0.79720 s (4.27 ms, 0 us, 78 us, 786921 us, 4.04 ms)
 [rank 0] iteration #363 - starting launcher [0][0] ...
 [rank 0] done
-[it= 363] hydro_fvm compute time t=1.7369e-03 (Dt=4.796e-06) : 0.80428 s (5.48 ms, 0 us, 706 us, 790463 us, 5.36 ms)
+[it= 363] hydro_fvm compute time t=1.7369e-03 (Dt=4.796e-06) : 0.79569 s (4.23 ms, 0 us, 76 us, 785458 us, 4.05 ms)
 [rank 0] iteration #364 - starting launcher [0][0] ...
 [rank 0] done
-[it= 364] hydro_fvm compute time t=1.7417e-03 (Dt=4.796e-06) : 0.80413 s (5.51 ms, 0 us, 706 us, 790289 us, 5.36 ms)
+[it= 364] hydro_fvm compute time t=1.7417e-03 (Dt=4.796e-06) : 0.79542 s (4.21 ms, 0 us, 78 us, 785188 us, 4.04 ms)
 [rank 0] iteration #365 - starting launcher [0][0] ...
 [rank 0] done
-[it= 365] hydro_fvm compute time t=1.7465e-03 (Dt=4.796e-06) : 0.80407 s (5.51 ms, 0 us, 696 us, 790201 us, 5.38 ms)
+[it= 365] hydro_fvm compute time t=1.7465e-03 (Dt=4.796e-06) : 0.79557 s (4.16 ms, 0 us, 87 us, 785365 us, 4.06 ms)
 [rank 0] iteration #366 - starting launcher [0][0] ...
 [rank 0] done
-[it= 366] hydro_fvm compute time t=1.7513e-03 (Dt=4.796e-06) : 0.80427 s (5.49 ms, 0 us, 703 us, 790439 us, 5.36 ms)
+[it= 366] hydro_fvm compute time t=1.7513e-03 (Dt=4.796e-06) : 0.79538 s (4.21 ms, 0 us, 81 us, 785167 us, 4.03 ms)
 [rank 0] iteration #367 - starting launcher [0][0] ...
 [rank 0] done
-[it= 367] hydro_fvm compute time t=1.7561e-03 (Dt=4.796e-06) : 0.80407 s (5.52 ms, 0 us, 674 us, 790210 us, 5.37 ms)
+[it= 367] hydro_fvm compute time t=1.7561e-03 (Dt=4.796e-06) : 0.79554 s (4.33 ms, 0 us, 82 us, 785182 us, 4.05 ms)
 [rank 0] iteration #368 - starting launcher [0][0] ...
 [rank 0] done
-[it= 368] hydro_fvm compute time t=1.7609e-03 (Dt=4.796e-06) : 0.80372 s (5.51 ms, 0 us, 687 us, 789887 us, 5.35 ms)
+[it= 368] hydro_fvm compute time t=1.7609e-03 (Dt=4.796e-06) : 0.79557 s (4.19 ms, 0 us, 78 us, 785386 us, 4.03 ms)
 [rank 0] iteration #369 - starting launcher [0][0] ...
 [rank 0] done
-[it= 369] hydro_fvm compute time t=1.7657e-03 (Dt=4.796e-06) : 0.80431 s (5.51 ms, 0 us, 638 us, 790529 us, 5.36 ms)
+[it= 369] hydro_fvm compute time t=1.7657e-03 (Dt=4.796e-06) : 0.79578 s (4.20 ms, 0 us, 79 us, 785518 us, 4.07 ms)
 [rank 0] iteration #370 - starting launcher [0][0] ...
 [rank 0] done
-[it= 370] hydro_fvm compute time t=1.7705e-03 (Dt=4.796e-06) : 0.80432 s (5.49 ms, 0 us, 697 us, 790509 us, 5.34 ms)
+[it= 370] hydro_fvm compute time t=1.7705e-03 (Dt=4.796e-06) : 0.79568 s (4.20 ms, 0 us, 80 us, 785486 us, 4.03 ms)
 [rank 0] iteration #371 - starting launcher [0][0] ...
 [rank 0] done
-[it= 371] hydro_fvm compute time t=1.7753e-03 (Dt=4.795e-06) : 0.80377 s (5.50 ms, 0 us, 710 us, 789923 us, 5.36 ms)
+[it= 371] hydro_fvm compute time t=1.7753e-03 (Dt=4.795e-06) : 0.79569 s (4.18 ms, 0 us, 79 us, 785503 us, 4.04 ms)
 [rank 0] iteration #372 - starting launcher [0][0] ...
 [rank 0] done
-[it= 372] hydro_fvm compute time t=1.7801e-03 (Dt=4.795e-06) : 0.80429 s (5.49 ms, 0 us, 688 us, 790469 us, 5.36 ms)
+[it= 372] hydro_fvm compute time t=1.7801e-03 (Dt=4.795e-06) : 0.79556 s (4.18 ms, 0 us, 79 us, 785376 us, 4.03 ms)
 [rank 0] iteration #373 - starting launcher [0][0] ...
 [rank 0] done
-[it= 373] hydro_fvm compute time t=1.7849e-03 (Dt=4.795e-06) : 0.80412 s (5.52 ms, 0 us, 685 us, 790283 us, 5.36 ms)
+[it= 373] hydro_fvm compute time t=1.7849e-03 (Dt=4.795e-06) : 0.79556 s (4.18 ms, 0 us, 79 us, 785367 us, 4.05 ms)
 [rank 0] iteration #374 - starting launcher [0][0] ...
 [rank 0] done
-[it= 374] hydro_fvm compute time t=1.7896e-03 (Dt=4.795e-06) : 0.80429 s (5.52 ms, 0 us, 701 us, 790436 us, 5.35 ms)
+[it= 374] hydro_fvm compute time t=1.7896e-03 (Dt=4.795e-06) : 0.79601 s (4.20 ms, 0 us, 78 us, 785823 us, 4.04 ms)
 [rank 0] iteration #375 - starting launcher [0][0] ...
 [rank 0] done
-[it= 375] hydro_fvm compute time t=1.7944e-03 (Dt=4.795e-06) : 0.80400 s (5.51 ms, 0 us, 695 us, 790155 us, 5.36 ms)
+[it= 375] hydro_fvm compute time t=1.7944e-03 (Dt=4.795e-06) : 0.79567 s (4.20 ms, 0 us, 80 us, 785459 us, 4.04 ms)
 [rank 0] iteration #376 - starting launcher [0][0] ...
 [rank 0] done
-[it= 376] hydro_fvm compute time t=1.7992e-03 (Dt=4.795e-06) : 0.80404 s (5.52 ms, 0 us, 688 us, 790206 us, 5.35 ms)
+[it= 376] hydro_fvm compute time t=1.7992e-03 (Dt=4.795e-06) : 0.79552 s (4.17 ms, 0 us, 78 us, 785348 us, 4.03 ms)
 [rank 0] iteration #377 - starting launcher [0][0] ...
 [rank 0] done
-[it= 377] hydro_fvm compute time t=1.8040e-03 (Dt=4.795e-06) : 0.80427 s (5.50 ms, 0 us, 680 us, 790440 us, 5.36 ms)
+[it= 377] hydro_fvm compute time t=1.8040e-03 (Dt=4.795e-06) : 0.79580 s (4.32 ms, 0 us, 79 us, 785486 us, 4.03 ms)
 [rank 0] iteration #378 - starting launcher [0][0] ...
 [rank 0] done
-[it= 378] hydro_fvm compute time t=1.8088e-03 (Dt=4.795e-06) : 0.80445 s (5.48 ms, 0 us, 698 us, 790641 us, 5.35 ms)
+[it= 378] hydro_fvm compute time t=1.8088e-03 (Dt=4.795e-06) : 0.79558 s (4.22 ms, 0 us, 80 us, 785336 us, 4.05 ms)
 [rank 0] iteration #379 - starting launcher [0][0] ...
 [rank 0] done
-[it= 379] hydro_fvm compute time t=1.8136e-03 (Dt=4.795e-06) : 0.80416 s (5.55 ms, 0 us, 702 us, 790274 us, 5.36 ms)
+[it= 379] hydro_fvm compute time t=1.8136e-03 (Dt=4.795e-06) : 0.79609 s (4.22 ms, 0 us, 82 us, 785847 us, 4.06 ms)
 [rank 0] iteration #380 - starting launcher [0][0] ...
 [rank 0] done
-[it= 380] hydro_fvm compute time t=1.8184e-03 (Dt=4.795e-06) : 0.80385 s (5.52 ms, 0 us, 697 us, 790001 us, 5.35 ms)
+[it= 380] hydro_fvm compute time t=1.8184e-03 (Dt=4.795e-06) : 0.79564 s (4.23 ms, 0 us, 78 us, 785406 us, 4.03 ms)
 [rank 0] iteration #381 - starting launcher [0][0] ...
 [rank 0] done
-[it= 381] hydro_fvm compute time t=1.8232e-03 (Dt=4.795e-06) : 0.80451 s (5.53 ms, 0 us, 653 us, 790694 us, 5.35 ms)
+[it= 381] hydro_fvm compute time t=1.8232e-03 (Dt=4.795e-06) : 0.79562 s (4.22 ms, 0 us, 78 us, 785379 us, 4.06 ms)
 [rank 0] iteration #382 - starting launcher [0][0] ...
 [rank 0] done
-[it= 382] hydro_fvm compute time t=1.8280e-03 (Dt=4.795e-06) : 0.80403 s (5.48 ms, 0 us, 703 us, 790211 us, 5.36 ms)
+[it= 382] hydro_fvm compute time t=1.8280e-03 (Dt=4.795e-06) : 0.79581 s (4.24 ms, 0 us, 79 us, 785551 us, 4.06 ms)
 [rank 0] iteration #383 - starting launcher [0][0] ...
 [rank 0] done
-[it= 383] hydro_fvm compute time t=1.8328e-03 (Dt=4.795e-06) : 0.80461 s (5.49 ms, 0 us, 710 us, 790773 us, 5.36 ms)
+[it= 383] hydro_fvm compute time t=1.8328e-03 (Dt=4.795e-06) : 0.79572 s (4.20 ms, 0 us, 78 us, 785524 us, 4.04 ms)
 [rank 0] iteration #384 - starting launcher [0][0] ...
 [rank 0] done
-[it= 384] hydro_fvm compute time t=1.8376e-03 (Dt=4.795e-06) : 0.80405 s (5.51 ms, 0 us, 674 us, 790233 us, 5.36 ms)
+[it= 384] hydro_fvm compute time t=1.8376e-03 (Dt=4.795e-06) : 0.79553 s (4.17 ms, 0 us, 79 us, 785366 us, 4.04 ms)
 [rank 0] iteration #385 - starting launcher [0][0] ...
 [rank 0] done
-[it= 385] hydro_fvm compute time t=1.8424e-03 (Dt=4.795e-06) : 0.80401 s (5.50 ms, 0 us, 695 us, 790187 us, 5.35 ms)
+[it= 385] hydro_fvm compute time t=1.8424e-03 (Dt=4.795e-06) : 0.79626 s (4.41 ms, 0 us, 77 us, 785851 us, 4.03 ms)
 [rank 0] iteration #386 - starting launcher [0][0] ...
 [rank 0] done
-[it= 386] hydro_fvm compute time t=1.8472e-03 (Dt=4.795e-06) : 0.80437 s (5.53 ms, 0 us, 688 us, 790536 us, 5.34 ms)
+[it= 386] hydro_fvm compute time t=1.8472e-03 (Dt=4.795e-06) : 0.79552 s (4.19 ms, 0 us, 78 us, 785312 us, 4.05 ms)
 [rank 0] iteration #387 - starting launcher [0][0] ...
 [rank 0] done
-[it= 387] hydro_fvm compute time t=1.8520e-03 (Dt=4.795e-06) : 0.80430 s (5.48 ms, 0 us, 677 us, 790509 us, 5.35 ms)
+[it= 387] hydro_fvm compute time t=1.8520e-03 (Dt=4.795e-06) : 0.79618 s (4.18 ms, 0 us, 78 us, 785990 us, 4.05 ms)
 [rank 0] iteration #388 - starting launcher [0][0] ...
 [rank 0] done
-[it= 388] hydro_fvm compute time t=1.8568e-03 (Dt=4.795e-06) : 0.80424 s (5.50 ms, 0 us, 705 us, 790414 us, 5.35 ms)
+[it= 388] hydro_fvm compute time t=1.8568e-03 (Dt=4.795e-06) : 0.79668 s (4.18 ms, 0 us, 77 us, 786499 us, 4.04 ms)
 [rank 0] iteration #389 - starting launcher [0][0] ...
 [rank 0] done
-[it= 389] hydro_fvm compute time t=1.8616e-03 (Dt=4.795e-06) : 0.80410 s (5.51 ms, 0 us, 697 us, 790238 us, 5.37 ms)
+[it= 389] hydro_fvm compute time t=1.8616e-03 (Dt=4.795e-06) : 0.79788 s (4.18 ms, 0 us, 77 us, 787703 us, 4.03 ms)
 [rank 0] iteration #390 - starting launcher [0][0] ...
 [rank 0] done
-[it= 390] hydro_fvm compute time t=1.8664e-03 (Dt=4.795e-06) : 0.80410 s (5.50 ms, 0 us, 704 us, 790270 us, 5.35 ms)
+[it= 390] hydro_fvm compute time t=1.8664e-03 (Dt=4.795e-06) : 0.79551 s (4.20 ms, 0 us, 77 us, 785301 us, 4.05 ms)
 [rank 0] iteration #391 - starting launcher [0][0] ...
 [rank 0] done
-[it= 391] hydro_fvm compute time t=1.8712e-03 (Dt=4.795e-06) : 0.80421 s (5.54 ms, 0 us, 695 us, 790347 us, 5.36 ms)
+[it= 391] hydro_fvm compute time t=1.8712e-03 (Dt=4.795e-06) : 0.79673 s (4.24 ms, 0 us, 80 us, 786481 us, 4.04 ms)
 [rank 0] iteration #392 - starting launcher [0][0] ...
 [rank 0] done
-[it= 392] hydro_fvm compute time t=1.8760e-03 (Dt=4.795e-06) : 0.80443 s (5.50 ms, 0 us, 700 us, 790604 us, 5.35 ms)
+[it= 392] hydro_fvm compute time t=1.8760e-03 (Dt=4.795e-06) : 0.79559 s (4.16 ms, 0 us, 80 us, 785404 us, 4.05 ms)
 [rank 0] iteration #393 - starting launcher [0][0] ...
 [rank 0] done
-[it= 393] hydro_fvm compute time t=1.8808e-03 (Dt=4.795e-06) : 0.80448 s (5.51 ms, 0 us, 681 us, 790659 us, 5.35 ms)
+[it= 393] hydro_fvm compute time t=1.8808e-03 (Dt=4.795e-06) : 0.79583 s (4.19 ms, 0 us, 78 us, 785647 us, 4.04 ms)
 [rank 0] iteration #394 - starting launcher [0][0] ...
 [rank 0] done
-[it= 394] hydro_fvm compute time t=1.8856e-03 (Dt=4.795e-06) : 0.80362 s (5.47 ms, 0 us, 704 us, 789827 us, 5.34 ms)
+[it= 394] hydro_fvm compute time t=1.8856e-03 (Dt=4.795e-06) : 0.79544 s (4.22 ms, 0 us, 78 us, 785160 us, 4.05 ms)
 [rank 0] iteration #395 - starting launcher [0][0] ...
 [rank 0] done
-[it= 395] hydro_fvm compute time t=1.8903e-03 (Dt=4.795e-06) : 0.80436 s (5.51 ms, 0 us, 699 us, 790511 us, 5.36 ms)
+[it= 395] hydro_fvm compute time t=1.8903e-03 (Dt=4.795e-06) : 0.79543 s (4.08 ms, 0 us, 77 us, 785410 us, 4.02 ms)
 [rank 0] iteration #396 - starting launcher [0][0] ...
 [rank 0] done
-[it= 396] hydro_fvm compute time t=1.8951e-03 (Dt=4.795e-06) : 0.80407 s (5.49 ms, 0 us, 672 us, 790301 us, 5.33 ms)
+[it= 396] hydro_fvm compute time t=1.8951e-03 (Dt=4.795e-06) : 0.79527 s (4.06 ms, 0 us, 78 us, 785198 us, 4.03 ms)
 [rank 0] iteration #397 - starting launcher [0][0] ...
 [rank 0] done
-[it= 397] hydro_fvm compute time t=1.8999e-03 (Dt=4.795e-06) : 0.80453 s (5.48 ms, 0 us, 691 us, 790712 us, 5.36 ms)
+[it= 397] hydro_fvm compute time t=1.8999e-03 (Dt=4.795e-06) : 0.79560 s (4.09 ms, 0 us, 78 us, 785525 us, 4.02 ms)
 [rank 0] iteration #398 - starting launcher [0][0] ...
 [rank 0] done
-[it= 398] hydro_fvm compute time t=1.9047e-03 (Dt=4.795e-06) : 0.80423 s (5.52 ms, 0 us, 704 us, 790362 us, 5.36 ms)
+[it= 398] hydro_fvm compute time t=1.9047e-03 (Dt=4.795e-06) : 0.79528 s (4.08 ms, 0 us, 77 us, 785216 us, 4.03 ms)
 [rank 0] iteration #399 - starting launcher [0][0] ...
 [rank 0] done
-[it= 399] hydro_fvm compute time t=1.9095e-03 (Dt=4.795e-06) : 0.80433 s (5.51 ms, 0 us, 707 us, 790513 us, 5.33 ms)
+[it= 399] hydro_fvm compute time t=1.9095e-03 (Dt=4.795e-06) : 0.79559 s (4.02 ms, 0 us, 78 us, 785603 us, 4.00 ms)
 [rank 0] iteration #400 - starting launcher [0][0] ...
 [rank 0] done
-[it= 400] hydro_fvm compute time t=1.9143e-03 (Dt=4.795e-06) : 0.80393 s (5.51 ms, 0 us, 680 us, 790116 us, 5.35 ms)
+[it= 400] hydro_fvm compute time t=1.9143e-03 (Dt=4.795e-06) : 0.79717 s (4.07 ms, 0 us, 79 us, 787113 us, 4.03 ms)
 [rank 0] iteration #401 - starting launcher [0][0] ...
 [rank 0] done
-[it= 401] hydro_fvm compute time t=1.9191e-03 (Dt=4.795e-06) : 0.80383 s (5.50 ms, 0 us, 684 us, 790040 us, 5.33 ms)
+[it= 401] hydro_fvm compute time t=1.9191e-03 (Dt=4.795e-06) : 0.79543 s (4.08 ms, 0 us, 77 us, 785382 us, 4.04 ms)
 [rank 0] iteration #402 - starting launcher [0][0] ...
 [rank 0] done
-[it= 402] hydro_fvm compute time t=1.9239e-03 (Dt=4.795e-06) : 0.80453 s (5.48 ms, 0 us, 700 us, 790694 us, 5.37 ms)
+[it= 402] hydro_fvm compute time t=1.9239e-03 (Dt=4.795e-06) : 0.79551 s (4.09 ms, 0 us, 78 us, 785429 us, 4.03 ms)
 [rank 0] iteration #403 - starting launcher [0][0] ...
 [rank 0] done
-[it= 403] hydro_fvm compute time t=1.9287e-03 (Dt=4.795e-06) : 0.80404 s (5.51 ms, 0 us, 687 us, 790180 us, 5.39 ms)
+[it= 403] hydro_fvm compute time t=1.9287e-03 (Dt=4.795e-06) : 0.79584 s (4.03 ms, 0 us, 78 us, 785829 us, 4.03 ms)
 [rank 0] iteration #404 - starting launcher [0][0] ...
 [rank 0] done
-[it= 404] hydro_fvm compute time t=1.9335e-03 (Dt=4.795e-06) : 0.80442 s (5.52 ms, 0 us, 705 us, 790576 us, 5.35 ms)
+[it= 404] hydro_fvm compute time t=1.9335e-03 (Dt=4.795e-06) : 0.79667 s (4.06 ms, 0 us, 78 us, 786648 us, 4.01 ms)
 [rank 0] iteration #405 - starting launcher [0][0] ...
 [rank 0] done
-[it= 405] hydro_fvm compute time t=1.9383e-03 (Dt=4.795e-06) : 0.80450 s (5.50 ms, 0 us, 696 us, 790653 us, 5.37 ms)
+[it= 405] hydro_fvm compute time t=1.9383e-03 (Dt=4.795e-06) : 0.79556 s (4.07 ms, 0 us, 78 us, 785494 us, 4.03 ms)
 [rank 0] iteration #406 - starting launcher [0][0] ...
 [rank 0] done
-[it= 406] hydro_fvm compute time t=1.9431e-03 (Dt=4.795e-06) : 0.80406 s (5.55 ms, 0 us, 698 us, 789919 us, 5.41 ms)
+[it= 406] hydro_fvm compute time t=1.9431e-03 (Dt=4.795e-06) : 0.79530 s (4.09 ms, 0 us, 79 us, 785240 us, 4.02 ms)
 [rank 0] iteration #407 - starting launcher [0][0] ...
 [rank 0] done
-[it= 407] hydro_fvm compute time t=1.9479e-03 (Dt=4.795e-06) : 0.80380 s (5.54 ms, 0 us, 700 us, 789792 us, 5.36 ms)
+[it= 407] hydro_fvm compute time t=1.9479e-03 (Dt=4.795e-06) : 0.79672 s (4.09 ms, 0 us, 78 us, 786541 us, 4.13 ms)
 [rank 0] iteration #408 - starting launcher [0][0] ...
 [rank 0] done
-[it= 408] hydro_fvm compute time t=1.9527e-03 (Dt=4.795e-06) : 0.80431 s (5.54 ms, 0 us, 708 us, 790384 us, 5.37 ms)
+[it= 408] hydro_fvm compute time t=1.9527e-03 (Dt=4.795e-06) : 0.79541 s (4.10 ms, 0 us, 78 us, 785324 us, 4.03 ms)
 [rank 0] iteration #409 - starting launcher [0][0] ...
 [rank 0] done
-[it= 409] hydro_fvm compute time t=1.9575e-03 (Dt=4.795e-06) : 0.80428 s (5.52 ms, 0 us, 693 us, 790382 us, 5.37 ms)
+[it= 409] hydro_fvm compute time t=1.9575e-03 (Dt=4.795e-06) : 0.79543 s (4.07 ms, 0 us, 77 us, 785375 us, 4.02 ms)
 [rank 0] iteration #410 - starting launcher [0][0] ...
 [rank 0] done
-[it= 410] hydro_fvm compute time t=1.9623e-03 (Dt=4.795e-06) : 0.80428 s (5.51 ms, 0 us, 700 us, 790411 us, 5.37 ms)
+[it= 410] hydro_fvm compute time t=1.9623e-03 (Dt=4.795e-06) : 0.79537 s (4.05 ms, 0 us, 79 us, 785292 us, 4.03 ms)
 [rank 0] iteration #411 - starting launcher [0][0] ...
 [rank 0] done
-[it= 411] hydro_fvm compute time t=1.9671e-03 (Dt=4.795e-06) : 0.80458 s (5.54 ms, 0 us, 705 us, 790680 us, 5.38 ms)
+[it= 411] hydro_fvm compute time t=1.9671e-03 (Dt=4.795e-06) : 0.79590 s (4.09 ms, 0 us, 85 us, 785801 us, 4.03 ms)
 [rank 0] iteration #412 - starting launcher [0][0] ...
 [rank 0] done
-[it= 412] hydro_fvm compute time t=1.9719e-03 (Dt=4.795e-06) : 0.80386 s (5.49 ms, 0 us, 697 us, 789989 us, 5.39 ms)
+[it= 412] hydro_fvm compute time t=1.9719e-03 (Dt=4.795e-06) : 0.79538 s (4.07 ms, 0 us, 81 us, 785314 us, 4.04 ms)
 [rank 0] iteration #413 - starting launcher [0][0] ...
 [rank 0] done
-[it= 413] hydro_fvm compute time t=1.9767e-03 (Dt=4.795e-06) : 0.80415 s (5.56 ms, 0 us, 683 us, 790261 us, 5.37 ms)
+[it= 413] hydro_fvm compute time t=1.9767e-03 (Dt=4.795e-06) : 0.79526 s (4.08 ms, 0 us, 84 us, 785216 us, 4.01 ms)
 [rank 0] iteration #414 - starting launcher [0][0] ...
 [rank 0] done
-[it= 414] hydro_fvm compute time t=1.9814e-03 (Dt=4.794e-06) : 0.80410 s (5.52 ms, 0 us, 700 us, 790241 us, 5.37 ms)
+[it= 414] hydro_fvm compute time t=1.9814e-03 (Dt=4.794e-06) : 0.79525 s (4.05 ms, 0 us, 81 us, 785198 us, 4.03 ms)
 [rank 0] iteration #415 - starting launcher [0][0] ...
 [rank 0] done
-[it= 415] hydro_fvm compute time t=1.9862e-03 (Dt=4.794e-06) : 0.80344 s (5.50 ms, 0 us, 697 us, 789608 us, 5.35 ms)
+[it= 415] hydro_fvm compute time t=1.9862e-03 (Dt=4.794e-06) : 0.79533 s (4.07 ms, 0 us, 82 us, 785162 us, 4.07 ms)
 [rank 0] iteration #416 - starting launcher [0][0] ...
 [rank 0] done
-[it= 416] hydro_fvm compute time t=1.9910e-03 (Dt=4.794e-06) : 0.80457 s (5.52 ms, 0 us, 697 us, 790695 us, 5.38 ms)
+[it= 416] hydro_fvm compute time t=1.9910e-03 (Dt=4.794e-06) : 0.79596 s (4.16 ms, 0 us, 79 us, 785800 us, 4.04 ms)
 [rank 0] iteration #417 - starting launcher [0][0] ...
 [rank 0] done
-[it= 417] hydro_fvm compute time t=1.9958e-03 (Dt=4.794e-06) : 0.80445 s (5.49 ms, 0 us, 691 us, 790609 us, 5.36 ms)
+[it= 417] hydro_fvm compute time t=1.9958e-03 (Dt=4.794e-06) : 0.79602 s (4.19 ms, 0 us, 79 us, 785832 us, 4.07 ms)
 [rank 0] iteration #418 - starting launcher [0][0] ...
 [rank 0] done
-[it= 418] hydro_fvm compute time t=2.0006e-03 (Dt=4.794e-06) : 0.80445 s (5.55 ms, 0 us, 652 us, 790579 us, 5.39 ms)
+[it= 418] hydro_fvm compute time t=2.0006e-03 (Dt=4.794e-06) : 0.79543 s (4.20 ms, 0 us, 79 us, 785241 us, 4.02 ms)
 [rank 0] iteration #419 - starting launcher [0][0] ...
 [rank 0] done
-[it= 419] hydro_fvm compute time t=2.0054e-03 (Dt=4.794e-06) : 0.80433 s (5.54 ms, 0 us, 682 us, 790448 us, 5.37 ms)
+[it= 419] hydro_fvm compute time t=2.0054e-03 (Dt=4.794e-06) : 0.79570 s (4.18 ms, 0 us, 79 us, 785528 us, 4.03 ms)
 [rank 0] iteration #420 - starting launcher [0][0] ...
 [rank 0] done
-[it= 420] hydro_fvm compute time t=2.0102e-03 (Dt=4.794e-06) : 0.80420 s (5.49 ms, 0 us, 678 us, 790416 us, 5.36 ms)
+[it= 420] hydro_fvm compute time t=2.0102e-03 (Dt=4.794e-06) : 0.79568 s (4.20 ms, 0 us, 82 us, 785465 us, 4.04 ms)
 [rank 0] iteration #421 - starting launcher [0][0] ...
 [rank 0] done
-[it= 421] hydro_fvm compute time t=2.0150e-03 (Dt=4.794e-06) : 0.80343 s (5.51 ms, 0 us, 688 us, 789608 us, 5.34 ms)
+[it= 421] hydro_fvm compute time t=2.0150e-03 (Dt=4.794e-06) : 0.79581 s (4.20 ms, 0 us, 78 us, 785593 us, 4.04 ms)
 [rank 0] iteration #422 - starting launcher [0][0] ...
 [rank 0] done
-[it= 422] hydro_fvm compute time t=2.0198e-03 (Dt=4.794e-06) : 0.80329 s (5.53 ms, 0 us, 703 us, 789414 us, 5.36 ms)
+[it= 422] hydro_fvm compute time t=2.0198e-03 (Dt=4.794e-06) : 0.79531 s (4.13 ms, 0 us, 79 us, 785176 us, 4.04 ms)
 [rank 0] iteration #423 - starting launcher [0][0] ...
 [rank 0] done
-[it= 423] hydro_fvm compute time t=2.0246e-03 (Dt=4.794e-06) : 0.80455 s (5.52 ms, 0 us, 690 us, 790694 us, 5.37 ms)
+[it= 423] hydro_fvm compute time t=2.0246e-03 (Dt=4.794e-06) : 0.79610 s (4.21 ms, 0 us, 78 us, 785897 us, 4.04 ms)
 [rank 0] iteration #424 - starting launcher [0][0] ...
 [rank 0] done
-[it= 424] hydro_fvm compute time t=2.0294e-03 (Dt=4.794e-06) : 0.80394 s (5.53 ms, 0 us, 704 us, 790045 us, 5.38 ms)
+[it= 424] hydro_fvm compute time t=2.0294e-03 (Dt=4.794e-06) : 0.79617 s (4.20 ms, 0 us, 79 us, 785969 us, 4.04 ms)
 [rank 0] iteration #425 - starting launcher [0][0] ...
 [rank 0] done
-[it= 425] hydro_fvm compute time t=2.0342e-03 (Dt=4.794e-06) : 0.80371 s (5.51 ms, 0 us, 686 us, 789871 us, 5.37 ms)
+[it= 425] hydro_fvm compute time t=2.0342e-03 (Dt=4.794e-06) : 0.79563 s (4.16 ms, 0 us, 78 us, 785484 us, 4.02 ms)
 [rank 0] iteration #426 - starting launcher [0][0] ...
 [rank 0] done
-[it= 426] hydro_fvm compute time t=2.0390e-03 (Dt=4.794e-06) : 0.80439 s (5.52 ms, 0 us, 667 us, 790592 us, 5.37 ms)
+[it= 426] hydro_fvm compute time t=2.0390e-03 (Dt=4.794e-06) : 0.79557 s (4.19 ms, 0 us, 78 us, 785389 us, 4.02 ms)
 [rank 0] iteration #427 - starting launcher [0][0] ...
 [rank 0] done
-[it= 427] hydro_fvm compute time t=2.0438e-03 (Dt=4.794e-06) : 0.80443 s (5.56 ms, 0 us, 686 us, 790529 us, 5.37 ms)
+[it= 427] hydro_fvm compute time t=2.0438e-03 (Dt=4.794e-06) : 0.79581 s (4.24 ms, 0 us, 79 us, 785570 us, 4.03 ms)
 [rank 0] iteration #428 - starting launcher [0][0] ...
 [rank 0] done
-[it= 428] hydro_fvm compute time t=2.0486e-03 (Dt=4.794e-06) : 0.80452 s (5.54 ms, 0 us, 712 us, 790619 us, 5.38 ms)
+[it= 428] hydro_fvm compute time t=2.0486e-03 (Dt=4.794e-06) : 0.79545 s (4.18 ms, 0 us, 79 us, 785276 us, 4.04 ms)
 [rank 0] iteration #429 - starting launcher [0][0] ...
 [rank 0] done
-[it= 429] hydro_fvm compute time t=2.0534e-03 (Dt=4.794e-06) : 0.80450 s (5.49 ms, 0 us, 694 us, 790678 us, 5.35 ms)
+[it= 429] hydro_fvm compute time t=2.0534e-03 (Dt=4.794e-06) : 0.79588 s (4.23 ms, 0 us, 80 us, 785662 us, 4.03 ms)
 [rank 0] iteration #430 - starting launcher [0][0] ...
 [rank 0] done
-[it= 430] hydro_fvm compute time t=2.0582e-03 (Dt=4.794e-06) : 0.80449 s (5.52 ms, 0 us, 707 us, 790624 us, 5.36 ms)
+[it= 430] hydro_fvm compute time t=2.0582e-03 (Dt=4.794e-06) : 0.79561 s (4.20 ms, 0 us, 80 us, 785413 us, 4.03 ms)
 [rank 0] iteration #431 - starting launcher [0][0] ...
 [rank 0] done
-[it= 431] hydro_fvm compute time t=2.0629e-03 (Dt=4.794e-06) : 0.80329 s (5.50 ms, 0 us, 700 us, 789444 us, 5.37 ms)
+[it= 431] hydro_fvm compute time t=2.0629e-03 (Dt=4.794e-06) : 0.79638 s (4.47 ms, 0 us, 79 us, 785883 us, 4.06 ms)
 [rank 0] iteration #432 - starting launcher [0][0] ...
 [rank 0] done
-[it= 432] hydro_fvm compute time t=2.0677e-03 (Dt=4.794e-06) : 0.80443 s (5.53 ms, 0 us, 707 us, 790569 us, 5.34 ms)
+[it= 432] hydro_fvm compute time t=2.0677e-03 (Dt=4.794e-06) : 0.79544 s (4.19 ms, 0 us, 77 us, 785243 us, 4.04 ms)
 [rank 0] iteration #433 - starting launcher [0][0] ...
 [rank 0] done
-[it= 433] hydro_fvm compute time t=2.0725e-03 (Dt=4.794e-06) : 0.80352 s (5.53 ms, 0 us, 696 us, 789654 us, 5.35 ms)
+[it= 433] hydro_fvm compute time t=2.0725e-03 (Dt=4.794e-06) : 0.79562 s (4.21 ms, 0 us, 79 us, 785403 us, 4.04 ms)
 [rank 0] iteration #434 - starting launcher [0][0] ...
 [rank 0] done
-[it= 434] hydro_fvm compute time t=2.0773e-03 (Dt=4.794e-06) : 0.80389 s (5.49 ms, 0 us, 692 us, 790080 us, 5.35 ms)
+[it= 434] hydro_fvm compute time t=2.0773e-03 (Dt=4.794e-06) : 0.79557 s (4.15 ms, 0 us, 80 us, 785411 us, 4.05 ms)
 [rank 0] iteration #435 - starting launcher [0][0] ...
 [rank 0] done
-[it= 435] hydro_fvm compute time t=2.0821e-03 (Dt=4.794e-06) : 0.80351 s (5.51 ms, 0 us, 694 us, 789676 us, 5.35 ms)
+[it= 435] hydro_fvm compute time t=2.0821e-03 (Dt=4.794e-06) : 0.79562 s (4.17 ms, 0 us, 80 us, 785450 us, 4.03 ms)
 [rank 0] iteration #436 - starting launcher [0][0] ...
 [rank 0] done
-[it= 436] hydro_fvm compute time t=2.0869e-03 (Dt=4.794e-06) : 0.80426 s (5.51 ms, 0 us, 689 us, 790452 us, 5.35 ms)
+[it= 436] hydro_fvm compute time t=2.0869e-03 (Dt=4.794e-06) : 0.79543 s (4.21 ms, 0 us, 79 us, 785197 us, 4.05 ms)
 [rank 0] iteration #437 - starting launcher [0][0] ...
 [rank 0] done
-[it= 437] hydro_fvm compute time t=2.0917e-03 (Dt=4.794e-06) : 0.80435 s (5.54 ms, 0 us, 696 us, 790533 us, 5.35 ms)
+[it= 437] hydro_fvm compute time t=2.0917e-03 (Dt=4.794e-06) : 0.79569 s (4.17 ms, 0 us, 78 us, 785527 us, 4.04 ms)
 [rank 0] iteration #438 - starting launcher [0][0] ...
 [rank 0] done
-[it= 438] hydro_fvm compute time t=2.0965e-03 (Dt=4.794e-06) : 0.80391 s (5.49 ms, 0 us, 704 us, 790097 us, 5.35 ms)
+[it= 438] hydro_fvm compute time t=2.0965e-03 (Dt=4.794e-06) : 0.79534 s (4.20 ms, 0 us, 78 us, 785147 us, 4.04 ms)
 [rank 0] iteration #439 - starting launcher [0][0] ...
 [rank 0] done
-[it= 439] hydro_fvm compute time t=2.1013e-03 (Dt=4.794e-06) : 0.80428 s (5.51 ms, 0 us, 694 us, 790459 us, 5.36 ms)
+[it= 439] hydro_fvm compute time t=2.1013e-03 (Dt=4.794e-06) : 0.79561 s (4.18 ms, 0 us, 79 us, 785401 us, 4.05 ms)
 [rank 0] iteration #440 - starting launcher [0][0] ...
 [rank 0] done
-[it= 440] hydro_fvm compute time t=2.1061e-03 (Dt=4.794e-06) : 0.80370 s (5.51 ms, 0 us, 703 us, 789863 us, 5.35 ms)
+[it= 440] hydro_fvm compute time t=2.1061e-03 (Dt=4.794e-06) : 0.79556 s (4.21 ms, 0 us, 80 us, 785351 us, 4.04 ms)
 [rank 0] iteration #441 - starting launcher [0][0] ...
 [rank 0] done
-[it= 441] hydro_fvm compute time t=2.1109e-03 (Dt=4.794e-06) : 0.80362 s (5.50 ms, 0 us, 706 us, 789815 us, 5.35 ms)
+[it= 441] hydro_fvm compute time t=2.1109e-03 (Dt=4.794e-06) : 0.79556 s (4.15 ms, 0 us, 80 us, 785412 us, 4.04 ms)
 [rank 0] iteration #442 - starting launcher [0][0] ...
 [rank 0] done
-[it= 442] hydro_fvm compute time t=2.1157e-03 (Dt=4.794e-06) : 0.80420 s (5.57 ms, 0 us, 697 us, 790317 us, 5.34 ms)
+[it= 442] hydro_fvm compute time t=2.1157e-03 (Dt=4.794e-06) : 0.79562 s (4.20 ms, 0 us, 79 us, 785339 us, 4.05 ms)
 [rank 0] iteration #443 - starting launcher [0][0] ...
 [rank 0] done
-[it= 443] hydro_fvm compute time t=2.1205e-03 (Dt=4.794e-06) : 0.80408 s (5.50 ms, 0 us, 696 us, 790245 us, 5.36 ms)
+[it= 443] hydro_fvm compute time t=2.1205e-03 (Dt=4.794e-06) : 0.79562 s (4.07 ms, 0 us, 79 us, 785596 us, 4.02 ms)
 [rank 0] iteration #444 - starting launcher [0][0] ...
 [rank 0] done
-[it= 444] hydro_fvm compute time t=2.1253e-03 (Dt=4.794e-06) : 0.80390 s (5.53 ms, 0 us, 699 us, 790031 us, 5.36 ms)
+[it= 444] hydro_fvm compute time t=2.1253e-03 (Dt=4.794e-06) : 0.79545 s (4.06 ms, 0 us, 77 us, 785368 us, 4.03 ms)
 [rank 0] iteration #445 - starting launcher [0][0] ...
 [rank 0] done
-[it= 445] hydro_fvm compute time t=2.1301e-03 (Dt=4.794e-06) : 0.80414 s (5.53 ms, 0 us, 695 us, 790273 us, 5.37 ms)
+[it= 445] hydro_fvm compute time t=2.1301e-03 (Dt=4.794e-06) : 0.79585 s (4.08 ms, 0 us, 77 us, 785696 us, 4.05 ms)
 [rank 0] iteration #446 - starting launcher [0][0] ...
 [rank 0] done
-[it= 446] hydro_fvm compute time t=2.1349e-03 (Dt=4.794e-06) : 0.80340 s (5.49 ms, 0 us, 679 us, 789648 us, 5.36 ms)
+[it= 446] hydro_fvm compute time t=2.1349e-03 (Dt=4.794e-06) : 0.79522 s (4.13 ms, 0 us, 77 us, 785148 us, 4.03 ms)
 [rank 0] iteration #447 - starting launcher [0][0] ...
 [rank 0] done
-[it= 447] hydro_fvm compute time t=2.1397e-03 (Dt=4.794e-06) : 0.80371 s (5.53 ms, 0 us, 690 us, 789855 us, 5.37 ms)
+[it= 447] hydro_fvm compute time t=2.1397e-03 (Dt=4.794e-06) : 0.79561 s (4.17 ms, 0 us, 80 us, 785415 us, 4.04 ms)
 [rank 0] iteration #448 - starting launcher [0][0] ...
 [rank 0] done
-[it= 448] hydro_fvm compute time t=2.1444e-03 (Dt=4.794e-06) : 0.80388 s (5.52 ms, 0 us, 700 us, 790007 us, 5.36 ms)
+[it= 448] hydro_fvm compute time t=2.1444e-03 (Dt=4.794e-06) : 0.79546 s (4.18 ms, 0 us, 77 us, 785271 us, 4.04 ms)
 [rank 0] iteration #449 - starting launcher [0][0] ...
 [rank 0] done
-[it= 449] hydro_fvm compute time t=2.1492e-03 (Dt=4.794e-06) : 0.80447 s (5.52 ms, 0 us, 701 us, 790636 us, 5.36 ms)
+[it= 449] hydro_fvm compute time t=2.1492e-03 (Dt=4.794e-06) : 0.79545 s (4.21 ms, 0 us, 79 us, 785240 us, 4.04 ms)
 [rank 0] iteration #450 - starting launcher [0][0] ...
 [rank 0] done
-[it= 450] hydro_fvm compute time t=2.1540e-03 (Dt=4.794e-06) : 0.80455 s (5.56 ms, 0 us, 679 us, 790667 us, 5.36 ms)
+[it= 450] hydro_fvm compute time t=2.1540e-03 (Dt=4.794e-06) : 0.79584 s (4.39 ms, 0 us, 79 us, 785425 us, 4.05 ms)
 [rank 0] iteration #451 - starting launcher [0][0] ...
 [rank 0] done
-[it= 451] hydro_fvm compute time t=2.1588e-03 (Dt=4.794e-06) : 0.80428 s (5.53 ms, 0 us, 683 us, 790464 us, 5.33 ms)
+[it= 451] hydro_fvm compute time t=2.1588e-03 (Dt=4.794e-06) : 0.79585 s (4.24 ms, 0 us, 80 us, 785610 us, 4.03 ms)
 [rank 0] iteration #452 - starting launcher [0][0] ...
 [rank 0] done
-[it= 452] hydro_fvm compute time t=2.1636e-03 (Dt=4.794e-06) : 0.80392 s (5.53 ms, 0 us, 690 us, 790066 us, 5.35 ms)
+[it= 452] hydro_fvm compute time t=2.1636e-03 (Dt=4.794e-06) : 0.79647 s (4.21 ms, 0 us, 79 us, 786260 us, 4.04 ms)
 [rank 0] iteration #453 - starting launcher [0][0] ...
 [rank 0] done
-[it= 453] hydro_fvm compute time t=2.1684e-03 (Dt=4.793e-06) : 0.80456 s (5.51 ms, 0 us, 711 us, 790712 us, 5.36 ms)
+[it= 453] hydro_fvm compute time t=2.1684e-03 (Dt=4.793e-06) : 0.79586 s (4.34 ms, 0 us, 79 us, 785501 us, 4.04 ms)
 [rank 0] iteration #454 - starting launcher [0][0] ...
 [rank 0] done
-[it= 454] hydro_fvm compute time t=2.1732e-03 (Dt=4.793e-06) : 0.80438 s (5.51 ms, 0 us, 672 us, 790551 us, 5.37 ms)
+[it= 454] hydro_fvm compute time t=2.1732e-03 (Dt=4.793e-06) : 0.79546 s (4.18 ms, 0 us, 80 us, 785289 us, 4.03 ms)
 [rank 0] iteration #455 - starting launcher [0][0] ...
 [rank 0] done
-[it= 455] hydro_fvm compute time t=2.1780e-03 (Dt=4.793e-06) : 0.80421 s (5.48 ms, 0 us, 710 us, 790359 us, 5.38 ms)
+[it= 455] hydro_fvm compute time t=2.1780e-03 (Dt=4.793e-06) : 0.79566 s (4.21 ms, 0 us, 78 us, 785491 us, 4.03 ms)
 [rank 0] iteration #456 - starting launcher [0][0] ...
 [rank 0] done
-[it= 456] hydro_fvm compute time t=2.1828e-03 (Dt=4.793e-06) : 0.80437 s (5.52 ms, 0 us, 689 us, 790530 us, 5.35 ms)
+[it= 456] hydro_fvm compute time t=2.1828e-03 (Dt=4.793e-06) : 0.79540 s (4.17 ms, 0 us, 78 us, 785228 us, 4.05 ms)
 [rank 0] iteration #457 - starting launcher [0][0] ...
 [rank 0] done
-[it= 457] hydro_fvm compute time t=2.1876e-03 (Dt=4.793e-06) : 0.80449 s (5.51 ms, 0 us, 704 us, 790646 us, 5.36 ms)
+[it= 457] hydro_fvm compute time t=2.1876e-03 (Dt=4.793e-06) : 0.79602 s (4.22 ms, 0 us, 76 us, 785803 us, 4.04 ms)
 [rank 0] iteration #458 - starting launcher [0][0] ...
 [rank 0] done
-[it= 458] hydro_fvm compute time t=2.1924e-03 (Dt=4.793e-06) : 0.80407 s (5.51 ms, 0 us, 699 us, 790216 us, 5.37 ms)
+[it= 458] hydro_fvm compute time t=2.1924e-03 (Dt=4.793e-06) : 0.79552 s (4.21 ms, 0 us, 78 us, 785290 us, 4.04 ms)
 [rank 0] iteration #459 - starting launcher [0][0] ...
 [rank 0] done
-[it= 459] hydro_fvm compute time t=2.1972e-03 (Dt=4.793e-06) : 0.80389 s (5.48 ms, 0 us, 689 us, 790086 us, 5.36 ms)
+[it= 459] hydro_fvm compute time t=2.1972e-03 (Dt=4.793e-06) : 0.79627 s (4.19 ms, 0 us, 80 us, 786055 us, 4.06 ms)
 [rank 0] iteration #460 - starting launcher [0][0] ...
 [rank 0] done
-[it= 460] hydro_fvm compute time t=2.2020e-03 (Dt=4.793e-06) : 0.80360 s (5.54 ms, 0 us, 694 us, 789737 us, 5.35 ms)
+[it= 460] hydro_fvm compute time t=2.2020e-03 (Dt=4.793e-06) : 0.79579 s (4.14 ms, 0 us, 77 us, 785583 us, 4.05 ms)
 [rank 0] iteration #461 - starting launcher [0][0] ...
 [rank 0] done
-[it= 461] hydro_fvm compute time t=2.2068e-03 (Dt=4.793e-06) : 0.80371 s (5.52 ms, 0 us, 696 us, 789867 us, 5.34 ms)
+[it= 461] hydro_fvm compute time t=2.2068e-03 (Dt=4.793e-06) : 0.79551 s (4.07 ms, 0 us, 78 us, 785483 us, 4.02 ms)
 [rank 0] iteration #462 - starting launcher [0][0] ...
 [rank 0] done
-[it= 462] hydro_fvm compute time t=2.2116e-03 (Dt=4.793e-06) : 0.80416 s (5.49 ms, 0 us, 688 us, 790387 us, 5.33 ms)
+[it= 462] hydro_fvm compute time t=2.2116e-03 (Dt=4.793e-06) : 0.79611 s (4.08 ms, 0 us, 77 us, 786041 us, 4.02 ms)
 [rank 0] iteration #463 - starting launcher [0][0] ...
 [rank 0] done
-[it= 463] hydro_fvm compute time t=2.2163e-03 (Dt=4.793e-06) : 0.80446 s (5.51 ms, 0 us, 693 us, 790620 us, 5.36 ms)
+[it= 463] hydro_fvm compute time t=2.2163e-03 (Dt=4.793e-06) : 0.79556 s (4.08 ms, 0 us, 78 us, 785479 us, 4.03 ms)
 [rank 0] iteration #464 - starting launcher [0][0] ...
 [rank 0] done
-[it= 464] hydro_fvm compute time t=2.2211e-03 (Dt=4.793e-06) : 0.80428 s (5.49 ms, 0 us, 707 us, 790445 us, 5.36 ms)
+[it= 464] hydro_fvm compute time t=2.2211e-03 (Dt=4.793e-06) : 0.79549 s (4.10 ms, 0 us, 78 us, 785418 us, 4.03 ms)
 [rank 0] iteration #465 - starting launcher [0][0] ...
 [rank 0] done
-[it= 465] hydro_fvm compute time t=2.2259e-03 (Dt=4.793e-06) : 0.80459 s (5.51 ms, 0 us, 699 us, 790738 us, 5.39 ms)
+[it= 465] hydro_fvm compute time t=2.2259e-03 (Dt=4.793e-06) : 0.79560 s (4.08 ms, 0 us, 80 us, 785535 us, 4.01 ms)
 [rank 0] iteration #466 - starting launcher [0][0] ...
 [rank 0] done
-[it= 466] hydro_fvm compute time t=2.2307e-03 (Dt=4.793e-06) : 0.80368 s (5.50 ms, 0 us, 699 us, 789853 us, 5.36 ms)
+[it= 466] hydro_fvm compute time t=2.2307e-03 (Dt=4.793e-06) : 0.79543 s (4.08 ms, 0 us, 79 us, 785340 us, 4.03 ms)
 [rank 0] iteration #467 - starting launcher [0][0] ...
 [rank 0] done
-[it= 467] hydro_fvm compute time t=2.2355e-03 (Dt=4.793e-06) : 0.80444 s (5.51 ms, 0 us, 687 us, 790616 us, 5.35 ms)
+[it= 467] hydro_fvm compute time t=2.2355e-03 (Dt=4.793e-06) : 0.79562 s (4.05 ms, 0 us, 80 us, 785582 us, 4.01 ms)
 [rank 0] iteration #468 - starting launcher [0][0] ...
 [rank 0] done
-[it= 468] hydro_fvm compute time t=2.2403e-03 (Dt=4.793e-06) : 0.80439 s (5.46 ms, 0 us, 707 us, 790581 us, 5.35 ms)
+[it= 468] hydro_fvm compute time t=2.2403e-03 (Dt=4.793e-06) : 0.79595 s (4.07 ms, 0 us, 79 us, 785872 us, 4.04 ms)
 [rank 0] iteration #469 - starting launcher [0][0] ...
 [rank 0] done
-[it= 469] hydro_fvm compute time t=2.2451e-03 (Dt=4.793e-06) : 0.80395 s (5.49 ms, 0 us, 689 us, 790150 us, 5.35 ms)
+[it= 469] hydro_fvm compute time t=2.2451e-03 (Dt=4.793e-06) : 0.79556 s (4.12 ms, 0 us, 79 us, 785374 us, 4.04 ms)
 [rank 0] iteration #470 - starting launcher [0][0] ...
 [rank 0] done
-[it= 470] hydro_fvm compute time t=2.2499e-03 (Dt=4.793e-06) : 0.80413 s (5.50 ms, 0 us, 675 us, 790323 us, 5.35 ms)
+[it= 470] hydro_fvm compute time t=2.2499e-03 (Dt=4.793e-06) : 0.79550 s (4.11 ms, 0 us, 77 us, 785397 us, 4.04 ms)
 [rank 0] iteration #471 - starting launcher [0][0] ...
 [rank 0] done
-[it= 471] hydro_fvm compute time t=2.2547e-03 (Dt=4.793e-06) : 0.80455 s (5.52 ms, 0 us, 705 us, 790672 us, 5.37 ms)
+[it= 471] hydro_fvm compute time t=2.2547e-03 (Dt=4.793e-06) : 0.79576 s (4.32 ms, 0 us, 79 us, 785424 us, 4.05 ms)
 [rank 0] iteration #472 - starting launcher [0][0] ...
 [rank 0] done
-[it= 472] hydro_fvm compute time t=2.2595e-03 (Dt=4.793e-06) : 0.80442 s (5.52 ms, 0 us, 687 us, 790584 us, 5.35 ms)
+[it= 472] hydro_fvm compute time t=2.2595e-03 (Dt=4.793e-06) : 0.79534 s (4.20 ms, 0 us, 77 us, 785148 us, 4.04 ms)
 [rank 0] iteration #473 - starting launcher [0][0] ...
 [rank 0] done
-[it= 473] hydro_fvm compute time t=2.2643e-03 (Dt=4.793e-06) : 0.80436 s (5.51 ms, 0 us, 687 us, 790539 us, 5.36 ms)
+[it= 473] hydro_fvm compute time t=2.2643e-03 (Dt=4.793e-06) : 0.79605 s (4.38 ms, 0 us, 78 us, 785648 us, 4.05 ms)
 [rank 0] iteration #474 - starting launcher [0][0] ...
 [rank 0] done
-[it= 474] hydro_fvm compute time t=2.2691e-03 (Dt=4.793e-06) : 0.80407 s (5.48 ms, 0 us, 699 us, 790239 us, 5.37 ms)
+[it= 474] hydro_fvm compute time t=2.2691e-03 (Dt=4.793e-06) : 0.79564 s (4.21 ms, 0 us, 79 us, 785353 us, 4.05 ms)
 [rank 0] iteration #475 - starting launcher [0][0] ...
 [rank 0] done
-[it= 475] hydro_fvm compute time t=2.2739e-03 (Dt=4.793e-06) : 0.80412 s (5.50 ms, 0 us, 709 us, 790249 us, 5.39 ms)
+[it= 475] hydro_fvm compute time t=2.2739e-03 (Dt=4.793e-06) : 0.79559 s (4.23 ms, 0 us, 78 us, 785396 us, 4.03 ms)
 [rank 0] iteration #476 - starting launcher [0][0] ...
 [rank 0] done
-[it= 476] hydro_fvm compute time t=2.2787e-03 (Dt=4.793e-06) : 0.80450 s (5.55 ms, 0 us, 708 us, 790601 us, 5.36 ms)
+[it= 476] hydro_fvm compute time t=2.2787e-03 (Dt=4.793e-06) : 0.79638 s (4.17 ms, 0 us, 78 us, 786244 us, 4.03 ms)
 [rank 0] iteration #477 - starting launcher [0][0] ...
 [rank 0] done
-[it= 477] hydro_fvm compute time t=2.2834e-03 (Dt=4.793e-06) : 0.80425 s (5.52 ms, 0 us, 691 us, 790418 us, 5.35 ms)
+[it= 477] hydro_fvm compute time t=2.2834e-03 (Dt=4.793e-06) : 0.79554 s (4.15 ms, 0 us, 79 us, 785400 us, 4.01 ms)
 [rank 0] iteration #478 - starting launcher [0][0] ...
 [rank 0] done
-[it= 478] hydro_fvm compute time t=2.2882e-03 (Dt=4.793e-06) : 0.80449 s (5.50 ms, 0 us, 702 us, 790647 us, 5.35 ms)
+[it= 478] hydro_fvm compute time t=2.2882e-03 (Dt=4.793e-06) : 0.79558 s (4.19 ms, 0 us, 79 us, 785409 us, 4.02 ms)
 [rank 0] iteration #479 - starting launcher [0][0] ...
 [rank 0] done
-[it= 479] hydro_fvm compute time t=2.2930e-03 (Dt=4.793e-06) : 0.80376 s (5.51 ms, 0 us, 692 us, 789900 us, 5.37 ms)
+[it= 479] hydro_fvm compute time t=2.2930e-03 (Dt=4.793e-06) : 0.79547 s (4.20 ms, 0 us, 78 us, 785279 us, 4.02 ms)
 [rank 0] iteration #480 - starting launcher [0][0] ...
 [rank 0] done
-[it= 480] hydro_fvm compute time t=2.2978e-03 (Dt=4.793e-06) : 0.80446 s (5.52 ms, 0 us, 701 us, 790230 us, 5.46 ms)
+[it= 480] hydro_fvm compute time t=2.2978e-03 (Dt=4.793e-06) : 0.79546 s (4.18 ms, 0 us, 79 us, 785289 us, 4.02 ms)
 [rank 0] iteration #481 - starting launcher [0][0] ...
 [rank 0] done
-[it= 481] hydro_fvm compute time t=2.3026e-03 (Dt=4.793e-06) : 0.80451 s (5.60 ms, 0 us, 682 us, 790407 us, 5.38 ms)
+[it= 481] hydro_fvm compute time t=2.3026e-03 (Dt=4.793e-06) : 0.79552 s (4.20 ms, 0 us, 81 us, 785345 us, 4.01 ms)
 [rank 0] iteration #482 - starting launcher [0][0] ...
 [rank 0] done
-[it= 482] hydro_fvm compute time t=2.3074e-03 (Dt=4.793e-06) : 0.80365 s (5.54 ms, 0 us, 705 us, 789728 us, 5.38 ms)
+[it= 482] hydro_fvm compute time t=2.3074e-03 (Dt=4.793e-06) : 0.79554 s (4.19 ms, 0 us, 78 us, 785367 us, 4.02 ms)
 [rank 0] iteration #483 - starting launcher [0][0] ...
 [rank 0] done
-[it= 483] hydro_fvm compute time t=2.3122e-03 (Dt=4.793e-06) : 0.80447 s (5.57 ms, 0 us, 699 us, 790546 us, 5.37 ms)
+[it= 483] hydro_fvm compute time t=2.3122e-03 (Dt=4.793e-06) : 0.79580 s (4.20 ms, 0 us, 78 us, 785624 us, 4.01 ms)
 [rank 0] iteration #484 - starting launcher [0][0] ...
 [rank 0] done
-[it= 484] hydro_fvm compute time t=2.3170e-03 (Dt=4.793e-06) : 0.80447 s (5.52 ms, 0 us, 661 us, 790607 us, 5.37 ms)
+[it= 484] hydro_fvm compute time t=2.3170e-03 (Dt=4.793e-06) : 0.79541 s (4.06 ms, 0 us, 78 us, 785362 us, 4.02 ms)
 [rank 0] iteration #485 - starting launcher [0][0] ...
 [rank 0] done
-[it= 485] hydro_fvm compute time t=2.3218e-03 (Dt=4.793e-06) : 0.80411 s (5.50 ms, 0 us, 685 us, 790269 us, 5.37 ms)
+[it= 485] hydro_fvm compute time t=2.3218e-03 (Dt=4.793e-06) : 0.79635 s (4.07 ms, 0 us, 79 us, 786275 us, 4.02 ms)
 [rank 0] iteration #486 - starting launcher [0][0] ...
 [rank 0] done
-[it= 486] hydro_fvm compute time t=2.3266e-03 (Dt=4.793e-06) : 0.80363 s (5.49 ms, 0 us, 693 us, 789800 us, 5.35 ms)
+[it= 486] hydro_fvm compute time t=2.3266e-03 (Dt=4.793e-06) : 0.79531 s (4.06 ms, 0 us, 87 us, 785249 us, 4.02 ms)
 [rank 0] iteration #487 - starting launcher [0][0] ...
 [rank 0] done
-[it= 487] hydro_fvm compute time t=2.3314e-03 (Dt=4.793e-06) : 0.80393 s (5.52 ms, 0 us, 662 us, 790140 us, 5.34 ms)
+[it= 487] hydro_fvm compute time t=2.3314e-03 (Dt=4.793e-06) : 0.79545 s (4.08 ms, 0 us, 83 us, 785371 us, 4.04 ms)
 [rank 0] iteration #488 - starting launcher [0][0] ...
 [rank 0] done
-[it= 488] hydro_fvm compute time t=2.3362e-03 (Dt=4.793e-06) : 0.80379 s (5.54 ms, 0 us, 700 us, 789890 us, 5.37 ms)
+[it= 488] hydro_fvm compute time t=2.3362e-03 (Dt=4.793e-06) : 0.79545 s (4.08 ms, 0 us, 82 us, 785379 us, 4.02 ms)
 [rank 0] iteration #489 - starting launcher [0][0] ...
 [rank 0] done
-[it= 489] hydro_fvm compute time t=2.3410e-03 (Dt=4.793e-06) : 0.80406 s (5.53 ms, 0 us, 694 us, 790210 us, 5.35 ms)
+[it= 489] hydro_fvm compute time t=2.3410e-03 (Dt=4.793e-06) : 0.79557 s (4.07 ms, 0 us, 81 us, 785520 us, 4.04 ms)
 [rank 0] iteration #490 - starting launcher [0][0] ...
 [rank 0] done
-[it= 490] hydro_fvm compute time t=2.3458e-03 (Dt=4.792e-06) : 0.80389 s (5.52 ms, 0 us, 705 us, 790016 us, 5.37 ms)
+[it= 490] hydro_fvm compute time t=2.3458e-03 (Dt=4.792e-06) : 0.79540 s (4.08 ms, 0 us, 82 us, 785320 us, 4.03 ms)
 [rank 0] iteration #491 - starting launcher [0][0] ...
 [rank 0] done
-[it= 491] hydro_fvm compute time t=2.3505e-03 (Dt=4.792e-06) : 0.80426 s (5.51 ms, 0 us, 692 us, 790416 us, 5.36 ms)
+[it= 491] hydro_fvm compute time t=2.3505e-03 (Dt=4.792e-06) : 0.79561 s (4.06 ms, 0 us, 80 us, 785551 us, 4.03 ms)
 [rank 0] iteration #492 - starting launcher [0][0] ...
 [rank 0] done
-[it= 492] hydro_fvm compute time t=2.3553e-03 (Dt=4.792e-06) : 0.80429 s (5.53 ms, 0 us, 663 us, 790488 us, 5.35 ms)
+[it= 492] hydro_fvm compute time t=2.3553e-03 (Dt=4.792e-06) : 0.79540 s (4.07 ms, 0 us, 81 us, 785340 us, 4.02 ms)
 [rank 0] iteration #493 - starting launcher [0][0] ...
 [rank 0] done
-[it= 493] hydro_fvm compute time t=2.3601e-03 (Dt=4.792e-06) : 0.80425 s (5.54 ms, 0 us, 688 us, 790367 us, 5.37 ms)
+[it= 493] hydro_fvm compute time t=2.3601e-03 (Dt=4.792e-06) : 0.79614 s (4.06 ms, 0 us, 79 us, 786108 us, 4.02 ms)
 [rank 0] iteration #494 - starting launcher [0][0] ...
 [rank 0] done
-[it= 494] hydro_fvm compute time t=2.3649e-03 (Dt=4.792e-06) : 0.80433 s (5.48 ms, 0 us, 680 us, 790504 us, 5.39 ms)
+[it= 494] hydro_fvm compute time t=2.3649e-03 (Dt=4.792e-06) : 0.79525 s (4.09 ms, 0 us, 80 us, 785176 us, 4.03 ms)
 [rank 0] iteration #495 - starting launcher [0][0] ...
 [rank 0] done
-[it= 495] hydro_fvm compute time t=2.3697e-03 (Dt=4.792e-06) : 0.80453 s (5.51 ms, 0 us, 707 us, 790628 us, 5.38 ms)
+[it= 495] hydro_fvm compute time t=2.3697e-03 (Dt=4.792e-06) : 0.79549 s (4.09 ms, 0 us, 80 us, 785417 us, 4.01 ms)
 [rank 0] iteration #496 - starting launcher [0][0] ...
 [rank 0] done
-[it= 496] hydro_fvm compute time t=2.3745e-03 (Dt=4.792e-06) : 0.80431 s (5.54 ms, 0 us, 703 us, 790384 us, 5.37 ms)
+[it= 496] hydro_fvm compute time t=2.3745e-03 (Dt=4.792e-06) : 0.79536 s (4.09 ms, 0 us, 80 us, 785283 us, 4.03 ms)
 [rank 0] iteration #497 - starting launcher [0][0] ...
 [rank 0] done
-[it= 497] hydro_fvm compute time t=2.3793e-03 (Dt=4.792e-06) : 0.80412 s (5.52 ms, 0 us, 690 us, 790302 us, 5.35 ms)
+[it= 497] hydro_fvm compute time t=2.3793e-03 (Dt=4.792e-06) : 0.79551 s (4.07 ms, 0 us, 79 us, 785452 us, 4.02 ms)
 [rank 0] iteration #498 - starting launcher [0][0] ...
 [rank 0] done
-[it= 498] hydro_fvm compute time t=2.3841e-03 (Dt=4.792e-06) : 0.80372 s (5.53 ms, 0 us, 709 us, 789807 us, 5.40 ms)
+[it= 498] hydro_fvm compute time t=2.3841e-03 (Dt=4.792e-06) : 0.79575 s (4.06 ms, 0 us, 78 us, 785726 us, 4.02 ms)
 [rank 0] iteration #499 - starting launcher [0][0] ...
 [rank 0] done
-[it= 499] hydro_fvm compute time t=2.3889e-03 (Dt=4.792e-06) : 0.80377 s (5.48 ms, 0 us, 696 us, 789929 us, 5.37 ms)
+[it= 499] hydro_fvm compute time t=2.3889e-03 (Dt=4.792e-06) : 0.79536 s (4.07 ms, 0 us, 81 us, 785294 us, 4.03 ms)
 [rank 0] iteration #500 - starting launcher [0][0] ...
 [rank 0] done
-[it= 500] hydro_fvm compute time t=2.3937e-03 (Dt=4.792e-06) : 0.80407 s (5.53 ms, 0 us, 694 us, 790212 us, 5.40 ms)
+[it= 500] hydro_fvm compute time t=2.3937e-03 (Dt=4.792e-06) : 0.79542 s (4.06 ms, 0 us, 80 us, 785376 us, 4.03 ms)
 [rank 0] iteration #501 - starting launcher [0][0] ...
 [rank 0] done
-[it= 501] hydro_fvm compute time t=2.3985e-03 (Dt=4.792e-06) : 0.80419 s (5.55 ms, 0 us, 690 us, 790318 us, 5.36 ms)
+[it= 501] hydro_fvm compute time t=2.3985e-03 (Dt=4.792e-06) : 0.79537 s (4.08 ms, 0 us, 79 us, 785302 us, 4.02 ms)
 [rank 0] iteration #502 - starting launcher [0][0] ...
 [rank 0] done
-[it= 502] hydro_fvm compute time t=2.4033e-03 (Dt=4.792e-06) : 0.80364 s (5.50 ms, 0 us, 698 us, 789844 us, 5.37 ms)
+[it= 502] hydro_fvm compute time t=2.4033e-03 (Dt=4.792e-06) : 0.79518 s (4.06 ms, 0 us, 79 us, 785119 us, 4.03 ms)
 [rank 0] iteration #503 - starting launcher [0][0] ...
 [rank 0] done
-[it= 503] hydro_fvm compute time t=2.4081e-03 (Dt=4.792e-06) : 0.80404 s (5.54 ms, 0 us, 702 us, 790180 us, 5.36 ms)
+[it= 503] hydro_fvm compute time t=2.4081e-03 (Dt=4.792e-06) : 0.79530 s (4.04 ms, 0 us, 81 us, 785266 us, 4.04 ms)
 [rank 0] iteration #504 - starting launcher [0][0] ...
 [rank 0] done
-[it= 504] hydro_fvm compute time t=2.4128e-03 (Dt=4.792e-06) : 0.80389 s (5.48 ms, 0 us, 679 us, 790084 us, 5.37 ms)
+[it= 504] hydro_fvm compute time t=2.4128e-03 (Dt=4.792e-06) : 0.79520 s (4.08 ms, 0 us, 80 us, 785160 us, 4.03 ms)
 [rank 0] iteration #505 - starting launcher [0][0] ...
 [rank 0] done
-[it= 505] hydro_fvm compute time t=2.4176e-03 (Dt=4.792e-06) : 0.80357 s (5.50 ms, 0 us, 691 us, 789735 us, 5.36 ms)
+[it= 505] hydro_fvm compute time t=2.4176e-03 (Dt=4.792e-06) : 0.79542 s (4.07 ms, 0 us, 79 us, 785367 us, 4.02 ms)
 [rank 0] iteration #506 - starting launcher [0][0] ...
 [rank 0] done
-[it= 506] hydro_fvm compute time t=2.4224e-03 (Dt=4.792e-06) : 0.80431 s (5.47 ms, 0 us, 705 us, 790492 us, 5.36 ms)
+[it= 506] hydro_fvm compute time t=2.4224e-03 (Dt=4.792e-06) : 0.79534 s (4.05 ms, 0 us, 80 us, 785298 us, 4.02 ms)
 [rank 0] iteration #507 - starting launcher [0][0] ...
 [rank 0] done
-[it= 507] hydro_fvm compute time t=2.4272e-03 (Dt=4.792e-06) : 0.80430 s (5.52 ms, 0 us, 702 us, 790437 us, 5.36 ms)
+[it= 507] hydro_fvm compute time t=2.4272e-03 (Dt=4.792e-06) : 0.79537 s (4.09 ms, 0 us, 77 us, 785309 us, 4.02 ms)
 [rank 0] iteration #508 - starting launcher [0][0] ...
 [rank 0] done
-[it= 508] hydro_fvm compute time t=2.4320e-03 (Dt=4.792e-06) : 0.80419 s (5.51 ms, 0 us, 703 us, 790351 us, 5.35 ms)
+[it= 508] hydro_fvm compute time t=2.4320e-03 (Dt=4.792e-06) : 0.79523 s (4.06 ms, 0 us, 83 us, 785189 us, 4.02 ms)
 [rank 0] iteration #509 - starting launcher [0][0] ...
 [rank 0] done
-[it= 509] hydro_fvm compute time t=2.4368e-03 (Dt=4.792e-06) : 0.80411 s (5.48 ms, 0 us, 703 us, 790283 us, 5.37 ms)
+[it= 509] hydro_fvm compute time t=2.4368e-03 (Dt=4.792e-06) : 0.79554 s (4.05 ms, 0 us, 78 us, 785502 us, 4.03 ms)
 [rank 0] iteration #510 - starting launcher [0][0] ...
 [rank 0] done
-[it= 510] hydro_fvm compute time t=2.4416e-03 (Dt=4.792e-06) : 0.80430 s (5.48 ms, 0 us, 705 us, 790476 us, 5.36 ms)
+[it= 510] hydro_fvm compute time t=2.4416e-03 (Dt=4.792e-06) : 0.79621 s (4.07 ms, 0 us, 78 us, 786184 us, 4.00 ms)
 [rank 0] iteration #511 - starting launcher [0][0] ...
 [rank 0] done
-[it= 511] hydro_fvm compute time t=2.4464e-03 (Dt=4.792e-06) : 0.80412 s (5.49 ms, 0 us, 704 us, 790273 us, 5.37 ms)
+[it= 511] hydro_fvm compute time t=2.4464e-03 (Dt=4.792e-06) : 0.79563 s (4.15 ms, 0 us, 83 us, 785499 us, 4.01 ms)
 [rank 0] iteration #512 - starting launcher [0][0] ...
 [rank 0] done
-[it= 512] hydro_fvm compute time t=2.4512e-03 (Dt=4.792e-06) : 0.80400 s (5.51 ms, 0 us, 703 us, 790137 us, 5.37 ms)
+[it= 512] hydro_fvm compute time t=2.4512e-03 (Dt=4.792e-06) : 0.79513 s (4.09 ms, 0 us, 79 us, 785062 us, 4.03 ms)
 [rank 0] iteration #513 - starting launcher [0][0] ...
 [rank 0] done
-[it= 513] hydro_fvm compute time t=2.4560e-03 (Dt=4.792e-06) : 0.80421 s (5.50 ms, 0 us, 690 us, 790384 us, 5.36 ms)
+[it= 513] hydro_fvm compute time t=2.4560e-03 (Dt=4.792e-06) : 0.79565 s (4.09 ms, 0 us, 78 us, 785577 us, 4.02 ms)
 [rank 0] iteration #514 - starting launcher [0][0] ...
 [rank 0] done
-[it= 514] hydro_fvm compute time t=2.4608e-03 (Dt=4.792e-06) : 0.80424 s (5.54 ms, 0 us, 701 us, 790347 us, 5.36 ms)
+[it= 514] hydro_fvm compute time t=2.4608e-03 (Dt=4.792e-06) : 0.79541 s (4.08 ms, 0 us, 78 us, 785339 us, 4.04 ms)
 [rank 0] iteration #515 - starting launcher [0][0] ...
 [rank 0] done
-[it= 515] hydro_fvm compute time t=2.4656e-03 (Dt=4.792e-06) : 0.80399 s (5.50 ms, 0 us, 695 us, 790135 us, 5.37 ms)
+[it= 515] hydro_fvm compute time t=2.4656e-03 (Dt=4.792e-06) : 0.79590 s (4.08 ms, 0 us, 79 us, 785818 us, 4.04 ms)
 [rank 0] iteration #516 - starting launcher [0][0] ...
 [rank 0] done
-[it= 516] hydro_fvm compute time t=2.4703e-03 (Dt=4.792e-06) : 0.80440 s (5.50 ms, 0 us, 696 us, 790575 us, 5.36 ms)
+[it= 516] hydro_fvm compute time t=2.4703e-03 (Dt=4.792e-06) : 0.79539 s (4.06 ms, 0 us, 80 us, 785346 us, 4.02 ms)
 [rank 0] iteration #517 - starting launcher [0][0] ...
 [rank 0] done
-[it= 517] hydro_fvm compute time t=2.4751e-03 (Dt=4.792e-06) : 0.80381 s (5.55 ms, 0 us, 674 us, 789991 us, 5.38 ms)
+[it= 517] hydro_fvm compute time t=2.4751e-03 (Dt=4.792e-06) : 0.79604 s (4.05 ms, 0 us, 79 us, 786029 us, 4.02 ms)
 [rank 0] iteration #518 - starting launcher [0][0] ...
 [rank 0] done
-[it= 518] hydro_fvm compute time t=2.4799e-03 (Dt=4.792e-06) : 0.80404 s (5.53 ms, 0 us, 689 us, 790220 us, 5.35 ms)
+[it= 518] hydro_fvm compute time t=2.4799e-03 (Dt=4.792e-06) : 0.79526 s (4.05 ms, 0 us, 79 us, 785227 us, 4.02 ms)
 [rank 0] iteration #519 - starting launcher [0][0] ...
 [rank 0] done
-[it= 519] hydro_fvm compute time t=2.4847e-03 (Dt=4.792e-06) : 0.80421 s (5.51 ms, 0 us, 669 us, 790391 us, 5.37 ms)
+[it= 519] hydro_fvm compute time t=2.4847e-03 (Dt=4.792e-06) : 0.79553 s (4.08 ms, 0 us, 78 us, 785475 us, 4.02 ms)
 [rank 0] iteration #520 - starting launcher [0][0] ...
 [rank 0] done
-[it= 520] hydro_fvm compute time t=2.4895e-03 (Dt=4.792e-06) : 0.80436 s (5.51 ms, 0 us, 680 us, 790532 us, 5.37 ms)
+[it= 520] hydro_fvm compute time t=2.4895e-03 (Dt=4.792e-06) : 0.79542 s (4.07 ms, 0 us, 81 us, 785365 us, 4.02 ms)
 [rank 0] iteration #521 - starting launcher [0][0] ...
 [rank 0] done
-[it= 521] hydro_fvm compute time t=2.4943e-03 (Dt=4.792e-06) : 0.80412 s (5.50 ms, 0 us, 701 us, 790280 us, 5.36 ms)
+[it= 521] hydro_fvm compute time t=2.4943e-03 (Dt=4.792e-06) : 0.79571 s (4.03 ms, 0 us, 79 us, 785706 us, 4.04 ms)
 [rank 0] iteration #522 - starting launcher [0][0] ...
 [rank 0] done
-[it= 522] hydro_fvm compute time t=2.4991e-03 (Dt=4.792e-06) : 0.80454 s (5.51 ms, 0 us, 710 us, 790641 us, 5.39 ms)
+[it= 522] hydro_fvm compute time t=2.4991e-03 (Dt=4.792e-06) : 0.79520 s (4.08 ms, 0 us, 77 us, 785152 us, 4.02 ms)
 [rank 0] iteration #523 - starting launcher [0][0] ...
 [rank 0] done
-[it= 523] hydro_fvm compute time t=2.5039e-03 (Dt=4.792e-06) : 0.80426 s (5.54 ms, 0 us, 670 us, 790443 us, 5.34 ms)
+[it= 523] hydro_fvm compute time t=2.5039e-03 (Dt=4.792e-06) : 0.79552 s (4.04 ms, 0 us, 79 us, 785520 us, 4.01 ms)
 [rank 0] iteration #524 - starting launcher [0][0] ...
 [rank 0] done
-[it= 524] hydro_fvm compute time t=2.5087e-03 (Dt=4.791e-06) : 0.80447 s (5.50 ms, 0 us, 700 us, 790617 us, 5.37 ms)
+[it= 524] hydro_fvm compute time t=2.5087e-03 (Dt=4.791e-06) : 0.79677 s (4.07 ms, 0 us, 79 us, 786716 us, 4.03 ms)
 [rank 0] iteration #525 - starting launcher [0][0] ...
 [rank 0] done
-[it= 525] hydro_fvm compute time t=2.5135e-03 (Dt=4.791e-06) : 0.80418 s (5.51 ms, 0 us, 663 us, 790382 us, 5.35 ms)
+[it= 525] hydro_fvm compute time t=2.5135e-03 (Dt=4.791e-06) : 0.79559 s (4.08 ms, 0 us, 81 us, 785532 us, 4.03 ms)
 [rank 0] iteration #526 - starting launcher [0][0] ...
 [rank 0] done
-[it= 526] hydro_fvm compute time t=2.5183e-03 (Dt=4.791e-06) : 0.80450 s (5.51 ms, 0 us, 705 us, 790664 us, 5.35 ms)
+[it= 526] hydro_fvm compute time t=2.5183e-03 (Dt=4.791e-06) : 0.79541 s (4.01 ms, 0 us, 79 us, 785419 us, 4.03 ms)
 [rank 0] iteration #527 - starting launcher [0][0] ...
 [rank 0] done
-[it= 527] hydro_fvm compute time t=2.5231e-03 (Dt=4.791e-06) : 0.80455 s (5.48 ms, 0 us, 707 us, 790671 us, 5.39 ms)
+[it= 527] hydro_fvm compute time t=2.5231e-03 (Dt=4.791e-06) : 0.79554 s (4.08 ms, 0 us, 78 us, 785366 us, 4.14 ms)
 [rank 0] iteration #528 - starting launcher [0][0] ...
 [rank 0] done
-[it= 528] hydro_fvm compute time t=2.5278e-03 (Dt=4.791e-06) : 0.80414 s (5.51 ms, 0 us, 692 us, 790303 us, 5.36 ms)
+[it= 528] hydro_fvm compute time t=2.5278e-03 (Dt=4.791e-06) : 0.79546 s (4.06 ms, 0 us, 79 us, 785427 us, 4.02 ms)
 [rank 0] iteration #529 - starting launcher [0][0] ...
 [rank 0] done
-[it= 529] hydro_fvm compute time t=2.5326e-03 (Dt=4.791e-06) : 0.80440 s (5.52 ms, 0 us, 685 us, 790563 us, 5.36 ms)
+[it= 529] hydro_fvm compute time t=2.5326e-03 (Dt=4.791e-06) : 0.79542 s (4.06 ms, 0 us, 80 us, 785380 us, 4.02 ms)
 [rank 0] iteration #530 - starting launcher [0][0] ...
 [rank 0] done
-[it= 530] hydro_fvm compute time t=2.5374e-03 (Dt=4.791e-06) : 0.80361 s (5.49 ms, 0 us, 706 us, 789780 us, 5.35 ms)
+[it= 530] hydro_fvm compute time t=2.5374e-03 (Dt=4.791e-06) : 0.79840 s (4.07 ms, 0 us, 79 us, 788351 us, 4.01 ms)
 [rank 0] iteration #531 - starting launcher [0][0] ...
 [rank 0] done
-[it= 531] hydro_fvm compute time t=2.5422e-03 (Dt=4.791e-06) : 0.80436 s (5.51 ms, 0 us, 693 us, 790512 us, 5.36 ms)
+[it= 531] hydro_fvm compute time t=2.5422e-03 (Dt=4.791e-06) : 0.79565 s (4.07 ms, 0 us, 78 us, 785517 us, 4.05 ms)
 [rank 0] iteration #532 - starting launcher [0][0] ...
 [rank 0] done
-[it= 532] hydro_fvm compute time t=2.5470e-03 (Dt=4.791e-06) : 0.80431 s (5.49 ms, 0 us, 706 us, 790455 us, 5.36 ms)
+[it= 532] hydro_fvm compute time t=2.5470e-03 (Dt=4.791e-06) : 0.79539 s (4.11 ms, 0 us, 77 us, 785297 us, 4.03 ms)
 [rank 0] iteration #533 - starting launcher [0][0] ...
 [rank 0] done
-[it= 533] hydro_fvm compute time t=2.5518e-03 (Dt=4.791e-06) : 0.80427 s (5.51 ms, 0 us, 680 us, 790449 us, 5.36 ms)
+[it= 533] hydro_fvm compute time t=2.5518e-03 (Dt=4.791e-06) : 0.79604 s (4.20 ms, 0 us, 79 us, 785816 us, 4.04 ms)
 [rank 0] iteration #534 - starting launcher [0][0] ...
 [rank 0] done
-[it= 534] hydro_fvm compute time t=2.5566e-03 (Dt=4.791e-06) : 0.80416 s (5.52 ms, 0 us, 685 us, 790319 us, 5.36 ms)
+[it= 534] hydro_fvm compute time t=2.5566e-03 (Dt=4.791e-06) : 0.79541 s (4.20 ms, 0 us, 77 us, 785209 us, 4.03 ms)
 [rank 0] iteration #535 - starting launcher [0][0] ...
 [rank 0] done
-[it= 535] hydro_fvm compute time t=2.5614e-03 (Dt=4.791e-06) : 0.80414 s (5.51 ms, 0 us, 675 us, 790324 us, 5.36 ms)
+[it= 535] hydro_fvm compute time t=2.5614e-03 (Dt=4.791e-06) : 0.79564 s (4.20 ms, 0 us, 83 us, 785444 us, 4.03 ms)
 [rank 0] iteration #536 - starting launcher [0][0] ...
 [rank 0] done
-[it= 536] hydro_fvm compute time t=2.5662e-03 (Dt=4.791e-06) : 0.80399 s (5.50 ms, 0 us, 680 us, 790144 us, 5.38 ms)
+[it= 536] hydro_fvm compute time t=2.5662e-03 (Dt=4.791e-06) : 0.79652 s (4.35 ms, 0 us, 78 us, 786151 us, 4.05 ms)
 [rank 0] iteration #537 - starting launcher [0][0] ...
 [rank 0] done
-[it= 537] hydro_fvm compute time t=2.5710e-03 (Dt=4.791e-06) : 0.80365 s (5.48 ms, 0 us, 699 us, 789830 us, 5.36 ms)
+[it= 537] hydro_fvm compute time t=2.5710e-03 (Dt=4.791e-06) : 0.79583 s (4.18 ms, 0 us, 78 us, 785587 us, 4.05 ms)
 [rank 0] iteration #538 - starting launcher [0][0] ...
 [rank 0] done
-[it= 538] hydro_fvm compute time t=2.5758e-03 (Dt=4.791e-06) : 0.80427 s (5.52 ms, 0 us, 707 us, 790436 us, 5.34 ms)
+[it= 538] hydro_fvm compute time t=2.5758e-03 (Dt=4.791e-06) : 0.79552 s (4.22 ms, 0 us, 81 us, 785335 us, 4.02 ms)
 [rank 0] iteration #539 - starting launcher [0][0] ...
 [rank 0] done
-[it= 539] hydro_fvm compute time t=2.5806e-03 (Dt=4.791e-06) : 0.80424 s (5.48 ms, 0 us, 700 us, 790405 us, 5.38 ms)
+[it= 539] hydro_fvm compute time t=2.5806e-03 (Dt=4.791e-06) : 0.79555 s (4.08 ms, 0 us, 78 us, 785492 us, 4.01 ms)
 [rank 0] iteration #540 - starting launcher [0][0] ...
 [rank 0] done
-[it= 540] hydro_fvm compute time t=2.5853e-03 (Dt=4.791e-06) : 0.80420 s (5.49 ms, 0 us, 708 us, 790366 us, 5.36 ms)
+[it= 540] hydro_fvm compute time t=2.5853e-03 (Dt=4.791e-06) : 0.79561 s (4.07 ms, 0 us, 78 us, 785533 us, 4.04 ms)
 [rank 0] iteration #541 - starting launcher [0][0] ...
 [rank 0] done
-[it= 541] hydro_fvm compute time t=2.5901e-03 (Dt=4.791e-06) : 0.80427 s (5.50 ms, 0 us, 651 us, 790488 us, 5.36 ms)
+[it= 541] hydro_fvm compute time t=2.5901e-03 (Dt=4.791e-06) : 0.79558 s (4.08 ms, 0 us, 78 us, 785514 us, 4.02 ms)
 [rank 0] iteration #542 - starting launcher [0][0] ...
 [rank 0] done
-[it= 542] hydro_fvm compute time t=2.5949e-03 (Dt=4.791e-06) : 0.80381 s (5.49 ms, 0 us, 700 us, 789960 us, 5.37 ms)
+[it= 542] hydro_fvm compute time t=2.5949e-03 (Dt=4.791e-06) : 0.79542 s (4.07 ms, 0 us, 79 us, 785351 us, 4.03 ms)
 [rank 0] iteration #543 - starting launcher [0][0] ...
 [rank 0] done
-[it= 543] hydro_fvm compute time t=2.5997e-03 (Dt=4.791e-06) : 0.80445 s (5.52 ms, 0 us, 700 us, 790612 us, 5.38 ms)
+[it= 543] hydro_fvm compute time t=2.5997e-03 (Dt=4.791e-06) : 0.79542 s (4.08 ms, 0 us, 77 us, 785352 us, 4.01 ms)
 [rank 0] iteration #544 - starting launcher [0][0] ...
 [rank 0] done
-[it= 544] hydro_fvm compute time t=2.6045e-03 (Dt=4.791e-06) : 0.80378 s (5.52 ms, 0 us, 706 us, 789909 us, 5.38 ms)
+[it= 544] hydro_fvm compute time t=2.6045e-03 (Dt=4.791e-06) : 0.79522 s (4.07 ms, 0 us, 79 us, 785201 us, 4.03 ms)
 [rank 0] iteration #545 - starting launcher [0][0] ...
 [rank 0] done
-[it= 545] hydro_fvm compute time t=2.6093e-03 (Dt=4.791e-06) : 0.80450 s (5.49 ms, 0 us, 701 us, 790659 us, 5.36 ms)
+[it= 545] hydro_fvm compute time t=2.6093e-03 (Dt=4.791e-06) : 0.79804 s (4.05 ms, 0 us, 80 us, 788028 us, 4.01 ms)
 [rank 0] iteration #546 - starting launcher [0][0] ...
 [rank 0] done
-[it= 546] hydro_fvm compute time t=2.6141e-03 (Dt=4.791e-06) : 0.80405 s (5.51 ms, 0 us, 704 us, 790202 us, 5.35 ms)
+[it= 546] hydro_fvm compute time t=2.6141e-03 (Dt=4.791e-06) : 0.79533 s (4.07 ms, 0 us, 78 us, 785280 us, 4.01 ms)
 [rank 0] iteration #547 - starting launcher [0][0] ...
 [rank 0] done
-[it= 547] hydro_fvm compute time t=2.6189e-03 (Dt=4.791e-06) : 0.80420 s (5.53 ms, 0 us, 703 us, 790322 us, 5.37 ms)
+[it= 547] hydro_fvm compute time t=2.6189e-03 (Dt=4.791e-06) : 0.79565 s (4.07 ms, 0 us, 79 us, 785608 us, 4.01 ms)
 [rank 0] iteration #548 - starting launcher [0][0] ...
 [rank 0] done
-[it= 548] hydro_fvm compute time t=2.6237e-03 (Dt=4.791e-06) : 0.80416 s (5.55 ms, 0 us, 685 us, 790295 us, 5.36 ms)
+[it= 548] hydro_fvm compute time t=2.6237e-03 (Dt=4.791e-06) : 0.79573 s (4.06 ms, 0 us, 77 us, 785676 us, 4.03 ms)
 [rank 0] iteration #549 - starting launcher [0][0] ...
 [rank 0] done
-[it= 549] hydro_fvm compute time t=2.6285e-03 (Dt=4.791e-06) : 0.80381 s (5.54 ms, 0 us, 698 us, 789930 us, 5.37 ms)
+[it= 549] hydro_fvm compute time t=2.6285e-03 (Dt=4.791e-06) : 0.79546 s (4.07 ms, 0 us, 79 us, 785412 us, 4.02 ms)
 [rank 0] iteration #550 - starting launcher [0][0] ...
 [rank 0] done
-[it= 550] hydro_fvm compute time t=2.6333e-03 (Dt=4.791e-06) : 0.80399 s (5.50 ms, 0 us, 647 us, 790189 us, 5.37 ms)
+[it= 550] hydro_fvm compute time t=2.6333e-03 (Dt=4.791e-06) : 0.79814 s (4.07 ms, 0 us, 80 us, 788003 us, 4.03 ms)
 [rank 0] iteration #551 - starting launcher [0][0] ...
 [rank 0] done
-[it= 551] hydro_fvm compute time t=2.6380e-03 (Dt=4.791e-06) : 0.80413 s (5.51 ms, 0 us, 703 us, 790293 us, 5.35 ms)
+[it= 551] hydro_fvm compute time t=2.6380e-03 (Dt=4.791e-06) : 0.79546 s (4.08 ms, 0 us, 78 us, 785383 us, 4.03 ms)
 [rank 0] iteration #552 - starting launcher [0][0] ...
 [rank 0] done
-[it= 552] hydro_fvm compute time t=2.6428e-03 (Dt=4.791e-06) : 0.80420 s (5.51 ms, 0 us, 648 us, 790383 us, 5.37 ms)
+[it= 552] hydro_fvm compute time t=2.6428e-03 (Dt=4.791e-06) : 0.79537 s (4.07 ms, 0 us, 78 us, 785304 us, 4.02 ms)
 [rank 0] iteration #553 - starting launcher [0][0] ...
 [rank 0] done
-[it= 553] hydro_fvm compute time t=2.6476e-03 (Dt=4.791e-06) : 0.80401 s (5.47 ms, 0 us, 699 us, 790274 us, 5.33 ms)
+[it= 553] hydro_fvm compute time t=2.6476e-03 (Dt=4.791e-06) : 0.79591 s (4.08 ms, 0 us, 79 us, 785855 us, 4.02 ms)
 [rank 0] iteration #554 - starting launcher [0][0] ...
 [rank 0] done
-[it= 554] hydro_fvm compute time t=2.6524e-03 (Dt=4.791e-06) : 0.80433 s (5.53 ms, 0 us, 698 us, 790468 us, 5.35 ms)
+[it= 554] hydro_fvm compute time t=2.6524e-03 (Dt=4.791e-06) : 0.79634 s (4.09 ms, 0 us, 80 us, 786257 us, 4.03 ms)
 [rank 0] iteration #555 - starting launcher [0][0] ...
 [rank 0] done
-[it= 555] hydro_fvm compute time t=2.6572e-03 (Dt=4.791e-06) : 0.80501 s (5.49 ms, 0 us, 703 us, 790777 us, 5.47 ms)
+[it= 555] hydro_fvm compute time t=2.6572e-03 (Dt=4.791e-06) : 0.79561 s (4.03 ms, 0 us, 78 us, 785505 us, 4.06 ms)
 [rank 0] iteration #556 - starting launcher [0][0] ...
 [rank 0] done
-[it= 556] hydro_fvm compute time t=2.6620e-03 (Dt=4.790e-06) : 0.80437 s (5.60 ms, 0 us, 685 us, 790281 us, 5.37 ms)
+[it= 556] hydro_fvm compute time t=2.6620e-03 (Dt=4.790e-06) : 0.79580 s (4.12 ms, 0 us, 77 us, 785683 us, 4.04 ms)
 [rank 0] iteration #557 - starting launcher [0][0] ...
 [rank 0] done
-[it= 557] hydro_fvm compute time t=2.6668e-03 (Dt=4.790e-06) : 0.80410 s (5.53 ms, 0 us, 687 us, 790170 us, 5.38 ms)
+[it= 557] hydro_fvm compute time t=2.6668e-03 (Dt=4.790e-06) : 0.79562 s (4.25 ms, 0 us, 78 us, 785366 us, 4.04 ms)
 [rank 0] iteration #558 - starting launcher [0][0] ...
 [rank 0] done
-[it= 558] hydro_fvm compute time t=2.6716e-03 (Dt=4.790e-06) : 0.80376 s (5.52 ms, 0 us, 677 us, 789864 us, 5.38 ms)
+[it= 558] hydro_fvm compute time t=2.6716e-03 (Dt=4.790e-06) : 0.79615 s (4.21 ms, 0 us, 78 us, 785906 us, 4.07 ms)
 [rank 0] iteration #559 - starting launcher [0][0] ...
 [rank 0] done
-[it= 559] hydro_fvm compute time t=2.6764e-03 (Dt=4.790e-06) : 0.80441 s (5.56 ms, 0 us, 706 us, 790509 us, 5.35 ms)
+[it= 559] hydro_fvm compute time t=2.6764e-03 (Dt=4.790e-06) : 0.79558 s (4.18 ms, 0 us, 82 us, 785377 us, 4.05 ms)
 [rank 0] iteration #560 - starting launcher [0][0] ...
 [rank 0] done
-[it= 560] hydro_fvm compute time t=2.6812e-03 (Dt=4.790e-06) : 0.80405 s (5.52 ms, 0 us, 700 us, 790191 us, 5.37 ms)
+[it= 560] hydro_fvm compute time t=2.6812e-03 (Dt=4.790e-06) : 0.79529 s (4.15 ms, 0 us, 78 us, 785113 us, 4.04 ms)
 [rank 0] iteration #561 - starting launcher [0][0] ...
 [rank 0] done
-[it= 561] hydro_fvm compute time t=2.6859e-03 (Dt=4.790e-06) : 0.80428 s (5.51 ms, 0 us, 692 us, 790419 us, 5.37 ms)
+[it= 561] hydro_fvm compute time t=2.6859e-03 (Dt=4.790e-06) : 0.79575 s (4.34 ms, 0 us, 85 us, 785378 us, 4.04 ms)
 [rank 0] iteration #562 - starting launcher [0][0] ...
 [rank 0] done
-[it= 562] hydro_fvm compute time t=2.6907e-03 (Dt=4.790e-06) : 0.80408 s (5.54 ms, 0 us, 697 us, 790200 us, 5.36 ms)
+[it= 562] hydro_fvm compute time t=2.6907e-03 (Dt=4.790e-06) : 0.79627 s (4.19 ms, 0 us, 81 us, 786074 us, 4.03 ms)
 [rank 0] iteration #563 - starting launcher [0][0] ...
 [rank 0] done
-[it= 563] hydro_fvm compute time t=2.6955e-03 (Dt=4.790e-06) : 0.80371 s (5.49 ms, 0 us, 706 us, 789866 us, 5.37 ms)
+[it= 563] hydro_fvm compute time t=2.6955e-03 (Dt=4.790e-06) : 0.79614 s (4.34 ms, 0 us, 81 us, 785794 us, 4.05 ms)
 [rank 0] iteration #564 - starting launcher [0][0] ...
 [rank 0] done
-[it= 564] hydro_fvm compute time t=2.7003e-03 (Dt=4.790e-06) : 0.80416 s (5.49 ms, 0 us, 706 us, 790324 us, 5.36 ms)
+[it= 564] hydro_fvm compute time t=2.7003e-03 (Dt=4.790e-06) : 0.79517 s (4.20 ms, 0 us, 80 us, 784969 us, 4.03 ms)
 [rank 0] iteration #565 - starting launcher [0][0] ...
 [rank 0] done
-[it= 565] hydro_fvm compute time t=2.7051e-03 (Dt=4.790e-06) : 0.80420 s (5.51 ms, 0 us, 695 us, 790346 us, 5.36 ms)
+[it= 565] hydro_fvm compute time t=2.7051e-03 (Dt=4.790e-06) : 0.79582 s (4.20 ms, 0 us, 80 us, 785624 us, 4.02 ms)
 [rank 0] iteration #566 - starting launcher [0][0] ...
 [rank 0] done
-[it= 566] hydro_fvm compute time t=2.7099e-03 (Dt=4.790e-06) : 0.80413 s (5.50 ms, 0 us, 670 us, 790312 us, 5.36 ms)
+[it= 566] hydro_fvm compute time t=2.7099e-03 (Dt=4.790e-06) : 0.79545 s (4.20 ms, 0 us, 80 us, 785235 us, 4.05 ms)
 [rank 0] iteration #567 - starting launcher [0][0] ...
 [rank 0] done
-[it= 567] hydro_fvm compute time t=2.7147e-03 (Dt=4.790e-06) : 0.80447 s (5.49 ms, 0 us, 703 us, 790615 us, 5.37 ms)
+[it= 567] hydro_fvm compute time t=2.7147e-03 (Dt=4.790e-06) : 0.79622 s (4.21 ms, 0 us, 80 us, 786003 us, 4.05 ms)
 [rank 0] iteration #568 - starting launcher [0][0] ...
 [rank 0] done
-[it= 568] hydro_fvm compute time t=2.7195e-03 (Dt=4.790e-06) : 0.80444 s (5.52 ms, 0 us, 702 us, 790565 us, 5.37 ms)
+[it= 568] hydro_fvm compute time t=2.7195e-03 (Dt=4.790e-06) : 0.79561 s (4.21 ms, 0 us, 79 us, 785395 us, 4.04 ms)
 [rank 0] iteration #569 - starting launcher [0][0] ...
 [rank 0] done
-[it= 569] hydro_fvm compute time t=2.7243e-03 (Dt=4.790e-06) : 0.80425 s (5.52 ms, 0 us, 668 us, 790412 us, 5.37 ms)
+[it= 569] hydro_fvm compute time t=2.7243e-03 (Dt=4.790e-06) : 0.79580 s (4.22 ms, 0 us, 80 us, 785580 us, 4.04 ms)
 [rank 0] iteration #570 - starting launcher [0][0] ...
 [rank 0] done
-[it= 570] hydro_fvm compute time t=2.7291e-03 (Dt=4.790e-06) : 0.80419 s (5.52 ms, 0 us, 672 us, 790337 us, 5.38 ms)
+[it= 570] hydro_fvm compute time t=2.7291e-03 (Dt=4.790e-06) : 0.79547 s (4.21 ms, 0 us, 79 us, 785242 us, 4.05 ms)
 [rank 0] iteration #571 - starting launcher [0][0] ...
 [rank 0] done
-[it= 571] hydro_fvm compute time t=2.7338e-03 (Dt=4.790e-06) : 0.80424 s (5.50 ms, 0 us, 702 us, 790388 us, 5.37 ms)
+[it= 571] hydro_fvm compute time t=2.7338e-03 (Dt=4.790e-06) : 0.79576 s (4.21 ms, 0 us, 79 us, 785546 us, 4.03 ms)
 [rank 0] iteration #572 - starting launcher [0][0] ...
 [rank 0] done
-[it= 572] hydro_fvm compute time t=2.7386e-03 (Dt=4.790e-06) : 0.80445 s (5.49 ms, 0 us, 698 us, 790561 us, 5.40 ms)
+[it= 572] hydro_fvm compute time t=2.7386e-03 (Dt=4.790e-06) : 0.79540 s (4.21 ms, 0 us, 79 us, 785187 us, 4.03 ms)
 [rank 0] iteration #573 - starting launcher [0][0] ...
 [rank 0] done
-[it= 573] hydro_fvm compute time t=2.7434e-03 (Dt=4.790e-06) : 0.80430 s (5.55 ms, 0 us, 703 us, 790427 us, 5.36 ms)
+[it= 573] hydro_fvm compute time t=2.7434e-03 (Dt=4.790e-06) : 0.79597 s (4.25 ms, 0 us, 80 us, 785569 us, 4.13 ms)
 [rank 0] iteration #574 - starting launcher [0][0] ...
 [rank 0] done
-[it= 574] hydro_fvm compute time t=2.7482e-03 (Dt=4.790e-06) : 0.80450 s (5.55 ms, 0 us, 698 us, 790620 us, 5.37 ms)
+[it= 574] hydro_fvm compute time t=2.7482e-03 (Dt=4.790e-06) : 0.79542 s (4.28 ms, 0 us, 78 us, 785187 us, 4.02 ms)
 [rank 0] iteration #575 - starting launcher [0][0] ...
 [rank 0] done
-[it= 575] hydro_fvm compute time t=2.7530e-03 (Dt=4.790e-06) : 0.80431 s (5.52 ms, 0 us, 682 us, 790460 us, 5.37 ms)
+[it= 575] hydro_fvm compute time t=2.7530e-03 (Dt=4.790e-06) : 0.79582 s (4.20 ms, 0 us, 79 us, 785631 us, 4.01 ms)
 [rank 0] iteration #576 - starting launcher [0][0] ...
 [rank 0] done
-[it= 576] hydro_fvm compute time t=2.7578e-03 (Dt=4.790e-06) : 0.80386 s (5.55 ms, 0 us, 701 us, 789940 us, 5.37 ms)
+[it= 576] hydro_fvm compute time t=2.7578e-03 (Dt=4.790e-06) : 0.79541 s (4.23 ms, 0 us, 82 us, 785176 us, 4.03 ms)
 [rank 0] iteration #577 - starting launcher [0][0] ...
 [rank 0] done
-[it= 577] hydro_fvm compute time t=2.7626e-03 (Dt=4.790e-06) : 0.80437 s (5.53 ms, 0 us, 708 us, 790488 us, 5.36 ms)
+[it= 577] hydro_fvm compute time t=2.7626e-03 (Dt=4.790e-06) : 0.79570 s (4.22 ms, 0 us, 79 us, 785500 us, 4.01 ms)
 [rank 0] iteration #578 - starting launcher [0][0] ...
 [rank 0] done
-[it= 578] hydro_fvm compute time t=2.7674e-03 (Dt=4.790e-06) : 0.80445 s (5.49 ms, 0 us, 687 us, 790640 us, 5.37 ms)
+[it= 578] hydro_fvm compute time t=2.7674e-03 (Dt=4.790e-06) : 0.79549 s (4.21 ms, 0 us, 78 us, 785298 us, 4.01 ms)
 [rank 0] iteration #579 - starting launcher [0][0] ...
 [rank 0] done
-[it= 579] hydro_fvm compute time t=2.7722e-03 (Dt=4.790e-06) : 0.80417 s (5.58 ms, 0 us, 685 us, 790247 us, 5.37 ms)
+[it= 579] hydro_fvm compute time t=2.7722e-03 (Dt=4.790e-06) : 0.79605 s (4.22 ms, 0 us, 78 us, 785850 us, 4.01 ms)
 [rank 0] iteration #580 - starting launcher [0][0] ...
 [rank 0] done
-[it= 580] hydro_fvm compute time t=2.7770e-03 (Dt=4.790e-06) : 0.80419 s (5.51 ms, 0 us, 686 us, 790318 us, 5.39 ms)
+[it= 580] hydro_fvm compute time t=2.7770e-03 (Dt=4.790e-06) : 0.79531 s (4.21 ms, 0 us, 79 us, 785109 us, 4.02 ms)
 [rank 0] iteration #581 - starting launcher [0][0] ...
 [rank 0] done
-[it= 581] hydro_fvm compute time t=2.7817e-03 (Dt=4.790e-06) : 0.80432 s (5.50 ms, 0 us, 699 us, 790477 us, 5.36 ms)
+[it= 581] hydro_fvm compute time t=2.7817e-03 (Dt=4.790e-06) : 0.79566 s (4.20 ms, 0 us, 84 us, 785450 us, 4.03 ms)
 [rank 0] iteration #582 - starting launcher [0][0] ...
 [rank 0] done
-[it= 582] hydro_fvm compute time t=2.7865e-03 (Dt=4.790e-06) : 0.80390 s (5.50 ms, 0 us, 697 us, 790045 us, 5.36 ms)
+[it= 582] hydro_fvm compute time t=2.7865e-03 (Dt=4.790e-06) : 0.79552 s (4.20 ms, 0 us, 78 us, 785329 us, 4.02 ms)
 [rank 0] iteration #583 - starting launcher [0][0] ...
 [rank 0] done
-[it= 583] hydro_fvm compute time t=2.7913e-03 (Dt=4.790e-06) : 0.80397 s (5.49 ms, 0 us, 697 us, 790119 us, 5.38 ms)
+[it= 583] hydro_fvm compute time t=2.7913e-03 (Dt=4.790e-06) : 0.79568 s (4.19 ms, 0 us, 78 us, 785513 us, 4.02 ms)
 [rank 0] iteration #584 - starting launcher [0][0] ...
 [rank 0] done
-[it= 584] hydro_fvm compute time t=2.7961e-03 (Dt=4.790e-06) : 0.80443 s (5.50 ms, 0 us, 693 us, 790615 us, 5.35 ms)
+[it= 584] hydro_fvm compute time t=2.7961e-03 (Dt=4.790e-06) : 0.79531 s (4.21 ms, 0 us, 79 us, 785123 us, 4.02 ms)
 [rank 0] iteration #585 - starting launcher [0][0] ...
 [rank 0] done
-[it= 585] hydro_fvm compute time t=2.8009e-03 (Dt=4.790e-06) : 0.80460 s (5.50 ms, 0 us, 674 us, 790777 us, 5.37 ms)
+[it= 585] hydro_fvm compute time t=2.8009e-03 (Dt=4.790e-06) : 0.79572 s (4.19 ms, 0 us, 79 us, 785548 us, 4.02 ms)
 [rank 0] iteration #586 - starting launcher [0][0] ...
 [rank 0] done
-[it= 586] hydro_fvm compute time t=2.8057e-03 (Dt=4.790e-06) : 0.80382 s (5.48 ms, 0 us, 710 us, 790020 us, 5.37 ms)
+[it= 586] hydro_fvm compute time t=2.8057e-03 (Dt=4.790e-06) : 0.79562 s (4.08 ms, 0 us, 80 us, 785551 us, 4.02 ms)
 [rank 0] iteration #587 - starting launcher [0][0] ...
 [rank 0] done
-[it= 587] hydro_fvm compute time t=2.8105e-03 (Dt=4.789e-06) : 0.80422 s (5.52 ms, 0 us, 699 us, 790366 us, 5.36 ms)
+[it= 587] hydro_fvm compute time t=2.8105e-03 (Dt=4.789e-06) : 0.79601 s (4.08 ms, 0 us, 80 us, 785916 us, 4.04 ms)
 [rank 0] iteration #588 - starting launcher [0][0] ...
 [rank 0] done
-[it= 588] hydro_fvm compute time t=2.8153e-03 (Dt=4.789e-06) : 0.80426 s (5.49 ms, 0 us, 704 us, 790316 us, 5.42 ms)
+[it= 588] hydro_fvm compute time t=2.8153e-03 (Dt=4.789e-06) : 0.79548 s (4.10 ms, 0 us, 77 us, 785394 us, 4.03 ms)
 [rank 0] iteration #589 - starting launcher [0][0] ...
 [rank 0] done
-[it= 589] hydro_fvm compute time t=2.8201e-03 (Dt=4.789e-06) : 0.80420 s (5.51 ms, 0 us, 704 us, 790350 us, 5.35 ms)
+[it= 589] hydro_fvm compute time t=2.8201e-03 (Dt=4.789e-06) : 0.79739 s (4.07 ms, 0 us, 83 us, 787245 us, 4.05 ms)
 [rank 0] iteration #590 - starting launcher [0][0] ...
 [rank 0] done
-[it= 590] hydro_fvm compute time t=2.8249e-03 (Dt=4.789e-06) : 0.80446 s (5.49 ms, 0 us, 705 us, 790603 us, 5.38 ms)
+[it= 590] hydro_fvm compute time t=2.8249e-03 (Dt=4.789e-06) : 0.79556 s (4.13 ms, 0 us, 79 us, 785456 us, 4.02 ms)
 [rank 0] iteration #591 - starting launcher [0][0] ...
 [rank 0] done
-[it= 591] hydro_fvm compute time t=2.8296e-03 (Dt=4.789e-06) : 0.80329 s (5.52 ms, 0 us, 703 us, 789422 us, 5.36 ms)
+[it= 591] hydro_fvm compute time t=2.8296e-03 (Dt=4.789e-06) : 0.79560 s (4.20 ms, 0 us, 82 us, 785385 us, 4.03 ms)
 [rank 0] iteration #592 - starting launcher [0][0] ...
 [rank 0] done
-[it= 592] hydro_fvm compute time t=2.8344e-03 (Dt=4.789e-06) : 0.80417 s (5.52 ms, 0 us, 670 us, 790326 us, 5.37 ms)
+[it= 592] hydro_fvm compute time t=2.8344e-03 (Dt=4.789e-06) : 0.79561 s (4.20 ms, 0 us, 79 us, 785402 us, 4.03 ms)
 [rank 0] iteration #593 - starting launcher [0][0] ...
 [rank 0] done
-[it= 593] hydro_fvm compute time t=2.8392e-03 (Dt=4.789e-06) : 0.80457 s (5.55 ms, 0 us, 705 us, 790653 us, 5.38 ms)
+[it= 593] hydro_fvm compute time t=2.8392e-03 (Dt=4.789e-06) : 0.79561 s (4.17 ms, 0 us, 80 us, 785431 us, 4.04 ms)
 [rank 0] iteration #594 - starting launcher [0][0] ...
 [rank 0] done
-[it= 594] hydro_fvm compute time t=2.8440e-03 (Dt=4.789e-06) : 0.80393 s (5.50 ms, 0 us, 685 us, 790118 us, 5.36 ms)
+[it= 594] hydro_fvm compute time t=2.8440e-03 (Dt=4.789e-06) : 0.79547 s (4.20 ms, 0 us, 78 us, 785269 us, 4.04 ms)
 [rank 0] iteration #595 - starting launcher [0][0] ...
 [rank 0] done
-[it= 595] hydro_fvm compute time t=2.8488e-03 (Dt=4.789e-06) : 0.80449 s (5.53 ms, 0 us, 703 us, 790605 us, 5.37 ms)
+[it= 595] hydro_fvm compute time t=2.8488e-03 (Dt=4.789e-06) : 0.79565 s (4.19 ms, 0 us, 79 us, 785462 us, 4.04 ms)
 [rank 0] iteration #596 - starting launcher [0][0] ...
 [rank 0] done
-[it= 596] hydro_fvm compute time t=2.8536e-03 (Dt=4.789e-06) : 0.80417 s (5.51 ms, 0 us, 709 us, 790313 us, 5.35 ms)
+[it= 596] hydro_fvm compute time t=2.8536e-03 (Dt=4.789e-06) : 0.79558 s (4.20 ms, 0 us, 78 us, 785353 us, 4.04 ms)
 [rank 0] iteration #597 - starting launcher [0][0] ...
 [rank 0] done
-[it= 597] hydro_fvm compute time t=2.8584e-03 (Dt=4.789e-06) : 0.80427 s (5.51 ms, 0 us, 690 us, 790440 us, 5.35 ms)
+[it= 597] hydro_fvm compute time t=2.8584e-03 (Dt=4.789e-06) : 0.79576 s (4.32 ms, 0 us, 77 us, 785441 us, 4.04 ms)
 [rank 0] iteration #598 - starting launcher [0][0] ...
 [rank 0] done
-[it= 598] hydro_fvm compute time t=2.8632e-03 (Dt=4.789e-06) : 0.80446 s (5.51 ms, 0 us, 693 us, 790610 us, 5.35 ms)
+[it= 598] hydro_fvm compute time t=2.8632e-03 (Dt=4.789e-06) : 0.79555 s (4.24 ms, 0 us, 78 us, 785317 us, 4.04 ms)
 [rank 0] iteration #599 - starting launcher [0][0] ...
 [rank 0] done
-[it= 599] hydro_fvm compute time t=2.8680e-03 (Dt=4.789e-06) : 0.80382 s (5.51 ms, 0 us, 674 us, 790009 us, 5.34 ms)
+[it= 599] hydro_fvm compute time t=2.8680e-03 (Dt=4.789e-06) : 0.79555 s (4.21 ms, 0 us, 80 us, 785324 us, 4.03 ms)
 [rank 0] iteration #600 - starting launcher [0][0] ...
 [rank 0] done
-[it= 600] hydro_fvm compute time t=2.8727e-03 (Dt=4.789e-06) : 0.80406 s (5.54 ms, 0 us, 703 us, 790183 us, 5.35 ms)
+[it= 600] hydro_fvm compute time t=2.8727e-03 (Dt=4.789e-06) : 0.79560 s (4.20 ms, 0 us, 79 us, 785385 us, 4.05 ms)
 [rank 0] iteration #601 - starting launcher [0][0] ...
 [rank 0] done
-[it= 601] hydro_fvm compute time t=2.8775e-03 (Dt=4.789e-06) : 0.80437 s (5.52 ms, 0 us, 702 us, 790505 us, 5.36 ms)
+[it= 601] hydro_fvm compute time t=2.8775e-03 (Dt=4.789e-06) : 0.79573 s (4.20 ms, 0 us, 81 us, 785525 us, 4.04 ms)
 [rank 0] iteration #602 - starting launcher [0][0] ...
 [rank 0] done
-[it= 602] hydro_fvm compute time t=2.8823e-03 (Dt=4.789e-06) : 0.80400 s (5.50 ms, 0 us, 697 us, 790153 us, 5.36 ms)
+[it= 602] hydro_fvm compute time t=2.8823e-03 (Dt=4.789e-06) : 0.79615 s (4.21 ms, 0 us, 78 us, 785946 us, 4.04 ms)
 [rank 0] iteration #603 - starting launcher [0][0] ...
 [rank 0] done
-[it= 603] hydro_fvm compute time t=2.8871e-03 (Dt=4.789e-06) : 0.80435 s (5.51 ms, 0 us, 698 us, 790477 us, 5.38 ms)
+[it= 603] hydro_fvm compute time t=2.8871e-03 (Dt=4.789e-06) : 0.79580 s (4.28 ms, 0 us, 77 us, 785562 us, 4.04 ms)
 [rank 0] iteration #604 - starting launcher [0][0] ...
 [rank 0] done
-[it= 604] hydro_fvm compute time t=2.8919e-03 (Dt=4.789e-06) : 0.80341 s (5.50 ms, 0 us, 700 us, 789605 us, 5.33 ms)
+[it= 604] hydro_fvm compute time t=2.8919e-03 (Dt=4.789e-06) : 0.79545 s (4.21 ms, 0 us, 79 us, 785215 us, 4.05 ms)
 [rank 0] iteration #605 - starting launcher [0][0] ...
 [rank 0] done
-[it= 605] hydro_fvm compute time t=2.8967e-03 (Dt=4.789e-06) : 0.80434 s (5.53 ms, 0 us, 708 us, 790445 us, 5.37 ms)
+[it= 605] hydro_fvm compute time t=2.8967e-03 (Dt=4.789e-06) : 0.79615 s (4.19 ms, 0 us, 77 us, 785984 us, 4.01 ms)
 [rank 0] iteration #606 - starting launcher [0][0] ...
 [rank 0] done
-[it= 606] hydro_fvm compute time t=2.9015e-03 (Dt=4.789e-06) : 0.80410 s (5.51 ms, 0 us, 690 us, 790268 us, 5.36 ms)
+[it= 606] hydro_fvm compute time t=2.9015e-03 (Dt=4.789e-06) : 0.79580 s (4.23 ms, 0 us, 79 us, 785538 us, 4.05 ms)
 [rank 0] iteration #607 - starting launcher [0][0] ...
 [rank 0] done
-[it= 607] hydro_fvm compute time t=2.9063e-03 (Dt=4.789e-06) : 0.80388 s (5.51 ms, 0 us, 665 us, 790081 us, 5.35 ms)
+[it= 607] hydro_fvm compute time t=2.9063e-03 (Dt=4.789e-06) : 0.79563 s (4.22 ms, 0 us, 77 us, 785417 us, 4.03 ms)
 [rank 0] iteration #608 - starting launcher [0][0] ...
 [rank 0] done
-[it= 608] hydro_fvm compute time t=2.9111e-03 (Dt=4.789e-06) : 0.80392 s (5.50 ms, 0 us, 689 us, 790111 us, 5.35 ms)
+[it= 608] hydro_fvm compute time t=2.9111e-03 (Dt=4.789e-06) : 0.79551 s (4.24 ms, 0 us, 79 us, 785258 us, 4.03 ms)
 [rank 0] iteration #609 - starting launcher [0][0] ...
 [rank 0] done
-[it= 609] hydro_fvm compute time t=2.9158e-03 (Dt=4.789e-06) : 0.80391 s (5.52 ms, 0 us, 684 us, 790012 us, 5.38 ms)
+[it= 609] hydro_fvm compute time t=2.9158e-03 (Dt=4.789e-06) : 0.79569 s (4.20 ms, 0 us, 77 us, 785479 us, 4.03 ms)
 [rank 0] iteration #610 - starting launcher [0][0] ...
 [rank 0] done
-[it= 610] hydro_fvm compute time t=2.9206e-03 (Dt=4.789e-06) : 0.80434 s (5.52 ms, 0 us, 702 us, 790501 us, 5.34 ms)
+[it= 610] hydro_fvm compute time t=2.9206e-03 (Dt=4.789e-06) : 0.79543 s (4.35 ms, 0 us, 78 us, 785076 us, 4.04 ms)
 [rank 0] iteration #611 - starting launcher [0][0] ...
 [rank 0] done
-[it= 611] hydro_fvm compute time t=2.9254e-03 (Dt=4.789e-06) : 0.80395 s (5.52 ms, 0 us, 700 us, 790116 us, 5.34 ms)
+[it= 611] hydro_fvm compute time t=2.9254e-03 (Dt=4.789e-06) : 0.79591 s (4.20 ms, 0 us, 78 us, 785706 us, 4.03 ms)
 [rank 0] iteration #612 - starting launcher [0][0] ...
 [rank 0] done
-[it= 612] hydro_fvm compute time t=2.9302e-03 (Dt=4.789e-06) : 0.80401 s (5.51 ms, 0 us, 698 us, 790178 us, 5.36 ms)
+[it= 612] hydro_fvm compute time t=2.9302e-03 (Dt=4.789e-06) : 0.79574 s (4.24 ms, 0 us, 79 us, 785439 us, 4.11 ms)
 [rank 0] iteration #613 - starting launcher [0][0] ...
 [rank 0] done
-[it= 613] hydro_fvm compute time t=2.9350e-03 (Dt=4.789e-06) : 0.80449 s (5.51 ms, 0 us, 688 us, 790691 us, 5.34 ms)
+[it= 613] hydro_fvm compute time t=2.9350e-03 (Dt=4.789e-06) : 0.79589 s (4.26 ms, 0 us, 82 us, 785613 us, 4.04 ms)
 [rank 0] iteration #614 - starting launcher [0][0] ...
 [rank 0] done
-[it= 614] hydro_fvm compute time t=2.9398e-03 (Dt=4.789e-06) : 0.80445 s (5.52 ms, 0 us, 691 us, 790607 us, 5.35 ms)
+[it= 614] hydro_fvm compute time t=2.9398e-03 (Dt=4.789e-06) : 0.79532 s (4.22 ms, 0 us, 80 us, 785093 us, 4.05 ms)
 [rank 0] iteration #615 - starting launcher [0][0] ...
 [rank 0] done
-[it= 615] hydro_fvm compute time t=2.9446e-03 (Dt=4.789e-06) : 0.80442 s (5.56 ms, 0 us, 676 us, 790548 us, 5.36 ms)
+[it= 615] hydro_fvm compute time t=2.9446e-03 (Dt=4.789e-06) : 0.79548 s (4.21 ms, 0 us, 78 us, 785289 us, 4.03 ms)
 [rank 0] iteration #616 - starting launcher [0][0] ...
 [rank 0] done
-[it= 616] hydro_fvm compute time t=2.9494e-03 (Dt=4.789e-06) : 0.80451 s (5.52 ms, 0 us, 707 us, 790664 us, 5.34 ms)
+[it= 616] hydro_fvm compute time t=2.9494e-03 (Dt=4.789e-06) : 0.79549 s (4.22 ms, 0 us, 79 us, 785266 us, 4.04 ms)
 [rank 0] iteration #617 - starting launcher [0][0] ...
 [rank 0] done
-[it= 617] hydro_fvm compute time t=2.9542e-03 (Dt=4.788e-06) : 0.80429 s (5.52 ms, 0 us, 694 us, 790447 us, 5.35 ms)
+[it= 617] hydro_fvm compute time t=2.9542e-03 (Dt=4.788e-06) : 0.79579 s (4.21 ms, 0 us, 79 us, 785587 us, 4.03 ms)
 [rank 0] iteration #618 - starting launcher [0][0] ...
 [rank 0] done
-[it= 618] hydro_fvm compute time t=2.9589e-03 (Dt=4.788e-06) : 0.80382 s (5.48 ms, 0 us, 706 us, 789996 us, 5.36 ms)
+[it= 618] hydro_fvm compute time t=2.9589e-03 (Dt=4.788e-06) : 0.79604 s (4.20 ms, 0 us, 82 us, 785840 us, 4.04 ms)
 [rank 0] iteration #619 - starting launcher [0][0] ...
 [rank 0] done
-[it= 619] hydro_fvm compute time t=2.9637e-03 (Dt=4.788e-06) : 0.80424 s (5.52 ms, 0 us, 701 us, 790404 us, 5.33 ms)
+[it= 619] hydro_fvm compute time t=2.9637e-03 (Dt=4.788e-06) : 0.79566 s (4.18 ms, 0 us, 78 us, 785472 us, 4.04 ms)
 [rank 0] iteration #620 - starting launcher [0][0] ...
 [rank 0] done
-[it= 620] hydro_fvm compute time t=2.9685e-03 (Dt=4.788e-06) : 0.80394 s (5.50 ms, 0 us, 698 us, 790125 us, 5.34 ms)
+[it= 620] hydro_fvm compute time t=2.9685e-03 (Dt=4.788e-06) : 0.79576 s (4.23 ms, 0 us, 77 us, 785536 us, 4.03 ms)
 [rank 0] iteration #621 - starting launcher [0][0] ...
 [rank 0] done
-[it= 621] hydro_fvm compute time t=2.9733e-03 (Dt=4.788e-06) : 0.80443 s (5.47 ms, 0 us, 701 us, 790630 us, 5.34 ms)
+[it= 621] hydro_fvm compute time t=2.9733e-03 (Dt=4.788e-06) : 0.79560 s (4.24 ms, 0 us, 79 us, 785349 us, 4.03 ms)
 [rank 0] iteration #622 - starting launcher [0][0] ...
 [rank 0] done
-[it= 622] hydro_fvm compute time t=2.9781e-03 (Dt=4.788e-06) : 0.80418 s (5.50 ms, 0 us, 683 us, 790355 us, 5.36 ms)
+[it= 622] hydro_fvm compute time t=2.9781e-03 (Dt=4.788e-06) : 0.79554 s (4.21 ms, 0 us, 78 us, 785315 us, 4.04 ms)
 [rank 0] iteration #623 - starting launcher [0][0] ...
 [rank 0] done
-[it= 623] hydro_fvm compute time t=2.9829e-03 (Dt=4.788e-06) : 0.80351 s (5.54 ms, 0 us, 689 us, 789668 us, 5.34 ms)
+[it= 623] hydro_fvm compute time t=2.9829e-03 (Dt=4.788e-06) : 0.79569 s (4.23 ms, 0 us, 79 us, 785458 us, 4.05 ms)
 [rank 0] iteration #624 - starting launcher [0][0] ...
 [rank 0] done
-[it= 624] hydro_fvm compute time t=2.9877e-03 (Dt=4.788e-06) : 0.80432 s (5.49 ms, 0 us, 692 us, 790500 us, 5.36 ms)
+[it= 624] hydro_fvm compute time t=2.9877e-03 (Dt=4.788e-06) : 0.79658 s (4.21 ms, 0 us, 78 us, 786348 us, 4.05 ms)
 [rank 0] iteration #625 - starting launcher [0][0] ...
 [rank 0] done
-[it= 625] hydro_fvm compute time t=2.9925e-03 (Dt=4.788e-06) : 0.80442 s (5.54 ms, 0 us, 680 us, 790577 us, 5.34 ms)
+[it= 625] hydro_fvm compute time t=2.9925e-03 (Dt=4.788e-06) : 0.79570 s (4.21 ms, 0 us, 79 us, 785478 us, 4.04 ms)
 [rank 0] iteration #626 - starting launcher [0][0] ...
 [rank 0] done
-[it= 626] hydro_fvm compute time t=2.9973e-03 (Dt=4.788e-06) : 0.80412 s (5.51 ms, 0 us, 686 us, 790309 us, 5.34 ms)
+[it= 626] hydro_fvm compute time t=2.9973e-03 (Dt=4.788e-06) : 0.79549 s (4.23 ms, 0 us, 79 us, 785254 us, 4.05 ms)
 [rank 0] iteration #627 - starting launcher [0][0] ...
 [rank 0] done
-[it= 627] hydro_fvm compute time t=3.0020e-03 (Dt=4.788e-06) : 0.80440 s (5.49 ms, 0 us, 709 us, 790551 us, 5.37 ms)
+[it= 627] hydro_fvm compute time t=3.0020e-03 (Dt=4.788e-06) : 0.79569 s (4.19 ms, 0 us, 78 us, 785510 us, 4.03 ms)
 [rank 0] iteration #628 - starting launcher [0][0] ...
 [rank 0] done
-[it= 628] hydro_fvm compute time t=3.0068e-03 (Dt=4.788e-06) : 0.80391 s (5.50 ms, 0 us, 678 us, 790116 us, 5.34 ms)
+[it= 628] hydro_fvm compute time t=3.0068e-03 (Dt=4.788e-06) : 0.79540 s (4.23 ms, 0 us, 79 us, 785175 us, 4.03 ms)
 [rank 0] iteration #629 - starting launcher [0][0] ...
 [rank 0] done
-[it= 629] hydro_fvm compute time t=3.0116e-03 (Dt=4.788e-06) : 0.80444 s (5.51 ms, 0 us, 696 us, 790294 us, 5.46 ms)
+[it= 629] hydro_fvm compute time t=3.0116e-03 (Dt=4.788e-06) : 0.79626 s (4.22 ms, 0 us, 79 us, 786025 us, 4.04 ms)
 [rank 0] iteration #630 - starting launcher [0][0] ...
 [rank 0] done
-[it= 630] hydro_fvm compute time t=3.0164e-03 (Dt=4.788e-06) : 0.80470 s (5.60 ms, 0 us, 686 us, 790629 us, 5.38 ms)
+[it= 630] hydro_fvm compute time t=3.0164e-03 (Dt=4.788e-06) : 0.79550 s (4.20 ms, 0 us, 78 us, 785290 us, 4.05 ms)
 [rank 0] iteration #631 - starting launcher [0][0] ...
 [rank 0] done
-[it= 631] hydro_fvm compute time t=3.0212e-03 (Dt=4.788e-06) : 0.80432 s (5.53 ms, 0 us, 629 us, 790497 us, 5.36 ms)
+[it= 631] hydro_fvm compute time t=3.0212e-03 (Dt=4.788e-06) : 0.79694 s (4.34 ms, 0 us, 82 us, 786597 us, 4.03 ms)
 [rank 0] iteration #632 - starting launcher [0][0] ...
 [rank 0] done
-[it= 632] hydro_fvm compute time t=3.0260e-03 (Dt=4.788e-06) : 0.80390 s (5.51 ms, 0 us, 687 us, 790037 us, 5.37 ms)
+[it= 632] hydro_fvm compute time t=3.0260e-03 (Dt=4.788e-06) : 0.79545 s (4.20 ms, 0 us, 78 us, 785232 us, 4.05 ms)
 [rank 0] iteration #633 - starting launcher [0][0] ...
 [rank 0] done
-[it= 633] hydro_fvm compute time t=3.0308e-03 (Dt=4.788e-06) : 0.80352 s (5.51 ms, 0 us, 710 us, 789621 us, 5.38 ms)
+[it= 633] hydro_fvm compute time t=3.0308e-03 (Dt=4.788e-06) : 0.79565 s (4.20 ms, 0 us, 77 us, 785463 us, 4.04 ms)
 [rank 0] iteration #634 - starting launcher [0][0] ...
 [rank 0] done
-[it= 634] hydro_fvm compute time t=3.0356e-03 (Dt=4.788e-06) : 0.80408 s (5.50 ms, 0 us, 704 us, 790197 us, 5.38 ms)
+[it= 634] hydro_fvm compute time t=3.0356e-03 (Dt=4.788e-06) : 0.79545 s (4.19 ms, 0 us, 83 us, 785253 us, 4.04 ms)
 [rank 0] iteration #635 - starting launcher [0][0] ...
 [rank 0] done
-[it= 635] hydro_fvm compute time t=3.0403e-03 (Dt=4.788e-06) : 0.80435 s (5.56 ms, 0 us, 700 us, 790457 us, 5.36 ms)
+[it= 635] hydro_fvm compute time t=3.0403e-03 (Dt=4.788e-06) : 0.79559 s (4.20 ms, 0 us, 80 us, 785385 us, 4.05 ms)
 [rank 0] iteration #636 - starting launcher [0][0] ...
 [rank 0] done
-[it= 636] hydro_fvm compute time t=3.0451e-03 (Dt=4.788e-06) : 0.80397 s (5.50 ms, 0 us, 686 us, 790127 us, 5.37 ms)
+[it= 636] hydro_fvm compute time t=3.0451e-03 (Dt=4.788e-06) : 0.79548 s (4.17 ms, 0 us, 79 us, 785280 us, 4.05 ms)
 [rank 0] iteration #637 - starting launcher [0][0] ...
 [rank 0] done
-[it= 637] hydro_fvm compute time t=3.0499e-03 (Dt=4.788e-06) : 0.80425 s (5.51 ms, 0 us, 685 us, 790398 us, 5.36 ms)
+[it= 637] hydro_fvm compute time t=3.0499e-03 (Dt=4.788e-06) : 0.79583 s (4.18 ms, 0 us, 79 us, 785639 us, 4.04 ms)
 [rank 0] iteration #638 - starting launcher [0][0] ...
 [rank 0] done
-[it= 638] hydro_fvm compute time t=3.0547e-03 (Dt=4.788e-06) : 0.80367 s (5.49 ms, 0 us, 690 us, 789838 us, 5.36 ms)
+[it= 638] hydro_fvm compute time t=3.0547e-03 (Dt=4.788e-06) : 0.79545 s (4.17 ms, 0 us, 79 us, 785286 us, 4.03 ms)
 [rank 0] iteration #639 - starting launcher [0][0] ...
 [rank 0] done
-[it= 639] hydro_fvm compute time t=3.0595e-03 (Dt=4.788e-06) : 0.80423 s (5.50 ms, 0 us, 694 us, 790392 us, 5.36 ms)
+[it= 639] hydro_fvm compute time t=3.0595e-03 (Dt=4.788e-06) : 0.79584 s (4.38 ms, 0 us, 77 us, 785469 us, 4.03 ms)
 [rank 0] iteration #640 - starting launcher [0][0] ...
 [rank 0] done
-[it= 640] hydro_fvm compute time t=3.0643e-03 (Dt=4.788e-06) : 0.80410 s (5.51 ms, 0 us, 701 us, 790247 us, 5.35 ms)
+[it= 640] hydro_fvm compute time t=3.0643e-03 (Dt=4.788e-06) : 0.79572 s (4.20 ms, 0 us, 79 us, 785527 us, 4.03 ms)
 [rank 0] iteration #641 - starting launcher [0][0] ...
 [rank 0] done
-[it= 641] hydro_fvm compute time t=3.0691e-03 (Dt=4.788e-06) : 0.80402 s (5.53 ms, 0 us, 708 us, 790157 us, 5.35 ms)
+[it= 641] hydro_fvm compute time t=3.0691e-03 (Dt=4.788e-06) : 0.79581 s (4.22 ms, 0 us, 78 us, 785577 us, 4.04 ms)
 [rank 0] iteration #642 - starting launcher [0][0] ...
 [rank 0] done
-[it= 642] hydro_fvm compute time t=3.0739e-03 (Dt=4.788e-06) : 0.80412 s (5.49 ms, 0 us, 698 us, 790274 us, 5.37 ms)
+[it= 642] hydro_fvm compute time t=3.0739e-03 (Dt=4.788e-06) : 0.79557 s (4.23 ms, 0 us, 79 us, 785332 us, 4.05 ms)
 [rank 0] iteration #643 - starting launcher [0][0] ...
 [rank 0] done
-[it= 643] hydro_fvm compute time t=3.0786e-03 (Dt=4.788e-06) : 0.80457 s (5.54 ms, 0 us, 694 us, 790681 us, 5.37 ms)
+[it= 643] hydro_fvm compute time t=3.0786e-03 (Dt=4.788e-06) : 0.79558 s (4.21 ms, 0 us, 79 us, 785352 us, 4.05 ms)
 [rank 0] iteration #644 - starting launcher [0][0] ...
 [rank 0] done
-[it= 644] hydro_fvm compute time t=3.0834e-03 (Dt=4.788e-06) : 0.80416 s (5.52 ms, 0 us, 693 us, 790316 us, 5.37 ms)
+[it= 644] hydro_fvm compute time t=3.0834e-03 (Dt=4.788e-06) : 0.79810 s (4.22 ms, 0 us, 77 us, 787893 us, 4.03 ms)
 [rank 0] iteration #645 - starting launcher [0][0] ...
 [rank 0] done
-[it= 645] hydro_fvm compute time t=3.0882e-03 (Dt=4.788e-06) : 0.80406 s (5.54 ms, 0 us, 668 us, 790227 us, 5.36 ms)
+[it= 645] hydro_fvm compute time t=3.0882e-03 (Dt=4.788e-06) : 0.79561 s (4.25 ms, 0 us, 80 us, 785367 us, 4.03 ms)
 [rank 0] iteration #646 - starting launcher [0][0] ...
 [rank 0] done
-[it= 646] hydro_fvm compute time t=3.0930e-03 (Dt=4.788e-06) : 0.80426 s (5.50 ms, 0 us, 690 us, 790436 us, 5.35 ms)
+[it= 646] hydro_fvm compute time t=3.0930e-03 (Dt=4.788e-06) : 0.79555 s (4.20 ms, 0 us, 79 us, 785380 us, 4.01 ms)
 [rank 0] iteration #647 - starting launcher [0][0] ...
 [rank 0] done
-[it= 647] hydro_fvm compute time t=3.0978e-03 (Dt=4.787e-06) : 0.80407 s (5.52 ms, 0 us, 708 us, 790200 us, 5.35 ms)
+[it= 647] hydro_fvm compute time t=3.0978e-03 (Dt=4.787e-06) : 0.79562 s (4.20 ms, 0 us, 77 us, 785430 us, 4.04 ms)
 [rank 0] iteration #648 - starting launcher [0][0] ...
 [rank 0] done
-[it= 648] hydro_fvm compute time t=3.1026e-03 (Dt=4.787e-06) : 0.80376 s (5.52 ms, 0 us, 681 us, 789926 us, 5.35 ms)
+[it= 648] hydro_fvm compute time t=3.1026e-03 (Dt=4.787e-06) : 0.79562 s (4.23 ms, 0 us, 78 us, 785329 us, 4.04 ms)
 [rank 0] iteration #649 - starting launcher [0][0] ...
 [rank 0] done
-[it= 649] hydro_fvm compute time t=3.1074e-03 (Dt=4.787e-06) : 0.80447 s (5.49 ms, 0 us, 694 us, 790674 us, 5.34 ms)
+[it= 649] hydro_fvm compute time t=3.1074e-03 (Dt=4.787e-06) : 0.79577 s (4.24 ms, 0 us, 78 us, 785549 us, 4.03 ms)
 [rank 0] iteration #650 - starting launcher [0][0] ...
 [rank 0] done
-[it= 650] hydro_fvm compute time t=3.1122e-03 (Dt=4.787e-06) : 0.80437 s (5.54 ms, 0 us, 648 us, 790544 us, 5.37 ms)
+[it= 650] hydro_fvm compute time t=3.1122e-03 (Dt=4.787e-06) : 0.79545 s (4.20 ms, 0 us, 77 us, 785246 us, 4.03 ms)
 [rank 0] iteration #651 - starting launcher [0][0] ...
 [rank 0] done
-[it= 651] hydro_fvm compute time t=3.1169e-03 (Dt=4.787e-06) : 0.80440 s (5.47 ms, 0 us, 683 us, 790625 us, 5.34 ms)
+[it= 651] hydro_fvm compute time t=3.1169e-03 (Dt=4.787e-06) : 0.79569 s (4.20 ms, 0 us, 77 us, 785495 us, 4.03 ms)
 [rank 0] iteration #652 - starting launcher [0][0] ...
 [rank 0] done
-[it= 652] hydro_fvm compute time t=3.1217e-03 (Dt=4.787e-06) : 0.80400 s (5.50 ms, 0 us, 671 us, 790206 us, 5.34 ms)
+[it= 652] hydro_fvm compute time t=3.1217e-03 (Dt=4.787e-06) : 0.79595 s (4.22 ms, 0 us, 77 us, 785744 us, 4.02 ms)
 [rank 0] iteration #653 - starting launcher [0][0] ...
 [rank 0] done
-[it= 653] hydro_fvm compute time t=3.1265e-03 (Dt=4.787e-06) : 0.80435 s (5.50 ms, 0 us, 699 us, 790498 us, 5.37 ms)
+[it= 653] hydro_fvm compute time t=3.1265e-03 (Dt=4.787e-06) : 0.79551 s (4.21 ms, 0 us, 77 us, 785335 us, 4.03 ms)
 [rank 0] iteration #654 - starting launcher [0][0] ...
 [rank 0] done
-[it= 654] hydro_fvm compute time t=3.1313e-03 (Dt=4.787e-06) : 0.80423 s (5.52 ms, 0 us, 698 us, 790377 us, 5.36 ms)
+[it= 654] hydro_fvm compute time t=3.1313e-03 (Dt=4.787e-06) : 0.79523 s (4.21 ms, 0 us, 78 us, 785001 us, 4.06 ms)
 [rank 0] iteration #655 - starting launcher [0][0] ...
 [rank 0] done
-[it= 655] hydro_fvm compute time t=3.1361e-03 (Dt=4.787e-06) : 0.80399 s (5.50 ms, 0 us, 691 us, 790171 us, 5.35 ms)
+[it= 655] hydro_fvm compute time t=3.1361e-03 (Dt=4.787e-06) : 0.79629 s (4.13 ms, 0 us, 79 us, 786204 us, 4.02 ms)
 [rank 0] iteration #656 - starting launcher [0][0] ...
 [rank 0] done
-[it= 656] hydro_fvm compute time t=3.1409e-03 (Dt=4.787e-06) : 0.80444 s (5.52 ms, 0 us, 691 us, 790632 us, 5.34 ms)
+[it= 656] hydro_fvm compute time t=3.1409e-03 (Dt=4.787e-06) : 0.79538 s (4.06 ms, 0 us, 78 us, 785328 us, 4.03 ms)
 [rank 0] iteration #657 - starting launcher [0][0] ...
 [rank 0] done
-[it= 657] hydro_fvm compute time t=3.1457e-03 (Dt=4.787e-06) : 0.80379 s (5.53 ms, 0 us, 681 us, 789932 us, 5.36 ms)
+[it= 657] hydro_fvm compute time t=3.1457e-03 (Dt=4.787e-06) : 0.79574 s (4.07 ms, 0 us, 78 us, 785672 us, 4.04 ms)
 [rank 0] iteration #658 - starting launcher [0][0] ...
 [rank 0] done
-[it= 658] hydro_fvm compute time t=3.1505e-03 (Dt=4.787e-06) : 0.80419 s (5.54 ms, 0 us, 708 us, 790317 us, 5.34 ms)
+[it= 658] hydro_fvm compute time t=3.1505e-03 (Dt=4.787e-06) : 0.79537 s (4.07 ms, 0 us, 82 us, 785314 us, 4.02 ms)
 [rank 0] iteration #659 - starting launcher [0][0] ...
 [rank 0] done
-[it= 659] hydro_fvm compute time t=3.1552e-03 (Dt=4.787e-06) : 0.80433 s (5.55 ms, 0 us, 702 us, 790434 us, 5.36 ms)
+[it= 659] hydro_fvm compute time t=3.1552e-03 (Dt=4.787e-06) : 0.79594 s (4.06 ms, 0 us, 78 us, 785803 us, 4.07 ms)
 [rank 0] iteration #660 - starting launcher [0][0] ...
 [rank 0] done
-[it= 660] hydro_fvm compute time t=3.1600e-03 (Dt=4.787e-06) : 0.80415 s (5.53 ms, 0 us, 697 us, 790332 us, 5.35 ms)
+[it= 660] hydro_fvm compute time t=3.1600e-03 (Dt=4.787e-06) : 0.79542 s (4.05 ms, 0 us, 78 us, 785391 us, 4.02 ms)
 [rank 0] iteration #661 - starting launcher [0][0] ...
 [rank 0] done
-[it= 661] hydro_fvm compute time t=3.1648e-03 (Dt=4.787e-06) : 0.80450 s (5.55 ms, 0 us, 699 us, 790626 us, 5.35 ms)
+[it= 661] hydro_fvm compute time t=3.1648e-03 (Dt=4.787e-06) : 0.79737 s (4.08 ms, 0 us, 79 us, 787304 us, 4.02 ms)
 [rank 0] iteration #662 - starting launcher [0][0] ...
 [rank 0] done
-[it= 662] hydro_fvm compute time t=3.1696e-03 (Dt=4.787e-06) : 0.80428 s (5.52 ms, 0 us, 701 us, 790424 us, 5.36 ms)
+[it= 662] hydro_fvm compute time t=3.1696e-03 (Dt=4.787e-06) : 0.79556 s (4.08 ms, 0 us, 78 us, 785512 us, 4.02 ms)
 [rank 0] iteration #663 - starting launcher [0][0] ...
 [rank 0] done
-[it= 663] hydro_fvm compute time t=3.1744e-03 (Dt=4.787e-06) : 0.80445 s (5.54 ms, 0 us, 701 us, 790583 us, 5.35 ms)
+[it= 663] hydro_fvm compute time t=3.1744e-03 (Dt=4.787e-06) : 0.79530 s (4.08 ms, 0 us, 78 us, 785246 us, 4.02 ms)
 [rank 0] iteration #664 - starting launcher [0][0] ...
 [rank 0] done
-[it= 664] hydro_fvm compute time t=3.1792e-03 (Dt=4.787e-06) : 0.80425 s (5.49 ms, 0 us, 701 us, 790436 us, 5.37 ms)
+[it= 664] hydro_fvm compute time t=3.1792e-03 (Dt=4.787e-06) : 0.79640 s (4.07 ms, 0 us, 81 us, 786327 us, 4.04 ms)
 [rank 0] iteration #665 - starting launcher [0][0] ...
 [rank 0] done
-[it= 665] hydro_fvm compute time t=3.1840e-03 (Dt=4.787e-06) : 0.80451 s (5.52 ms, 0 us, 694 us, 790671 us, 5.35 ms)
+[it= 665] hydro_fvm compute time t=3.1840e-03 (Dt=4.787e-06) : 0.79566 s (4.06 ms, 0 us, 78 us, 785623 us, 4.02 ms)
 [rank 0] iteration #666 - starting launcher [0][0] ...
 [rank 0] done
-[it= 666] hydro_fvm compute time t=3.1888e-03 (Dt=4.787e-06) : 0.80438 s (5.54 ms, 0 us, 683 us, 790539 us, 5.35 ms)
+[it= 666] hydro_fvm compute time t=3.1888e-03 (Dt=4.787e-06) : 0.79590 s (4.12 ms, 0 us, 81 us, 785799 us, 4.01 ms)
 [rank 0] iteration #667 - starting launcher [0][0] ...
 [rank 0] done
-[it= 667] hydro_fvm compute time t=3.1935e-03 (Dt=4.787e-06) : 0.80359 s (5.51 ms, 0 us, 693 us, 789742 us, 5.37 ms)
+[it= 667] hydro_fvm compute time t=3.1935e-03 (Dt=4.787e-06) : 0.79552 s (4.08 ms, 0 us, 81 us, 785456 us, 4.03 ms)
 [rank 0] iteration #668 - starting launcher [0][0] ...
 [rank 0] done
-[it= 668] hydro_fvm compute time t=3.1983e-03 (Dt=4.787e-06) : 0.80387 s (5.51 ms, 0 us, 702 us, 790017 us, 5.37 ms)
+[it= 668] hydro_fvm compute time t=3.1983e-03 (Dt=4.787e-06) : 0.79543 s (4.06 ms, 0 us, 77 us, 785384 us, 4.02 ms)
 [rank 0] iteration #669 - starting launcher [0][0] ...
 [rank 0] done
-[it= 669] hydro_fvm compute time t=3.2031e-03 (Dt=4.787e-06) : 0.80385 s (5.52 ms, 0 us, 699 us, 790009 us, 5.35 ms)
+[it= 669] hydro_fvm compute time t=3.2031e-03 (Dt=4.787e-06) : 0.79569 s (4.08 ms, 0 us, 79 us, 785627 us, 4.03 ms)
 [rank 0] iteration #670 - starting launcher [0][0] ...
 [rank 0] done
-[it= 670] hydro_fvm compute time t=3.2079e-03 (Dt=4.787e-06) : 0.80452 s (5.51 ms, 0 us, 695 us, 790679 us, 5.35 ms)
+[it= 670] hydro_fvm compute time t=3.2079e-03 (Dt=4.787e-06) : 0.79521 s (4.06 ms, 0 us, 77 us, 785168 us, 4.02 ms)
 [rank 0] iteration #671 - starting launcher [0][0] ...
 [rank 0] done
-[it= 671] hydro_fvm compute time t=3.2127e-03 (Dt=4.787e-06) : 0.80440 s (5.50 ms, 0 us, 712 us, 790555 us, 5.35 ms)
+[it= 671] hydro_fvm compute time t=3.2127e-03 (Dt=4.787e-06) : 0.79665 s (4.08 ms, 0 us, 78 us, 786588 us, 4.03 ms)
 [rank 0] iteration #672 - starting launcher [0][0] ...
 [rank 0] done
-[it= 672] hydro_fvm compute time t=3.2175e-03 (Dt=4.787e-06) : 0.80450 s (5.51 ms, 0 us, 670 us, 790672 us, 5.37 ms)
+[it= 672] hydro_fvm compute time t=3.2175e-03 (Dt=4.787e-06) : 0.79535 s (4.07 ms, 0 us, 77 us, 785311 us, 4.02 ms)
 [rank 0] iteration #673 - starting launcher [0][0] ...
 [rank 0] done
-[it= 673] hydro_fvm compute time t=3.2223e-03 (Dt=4.787e-06) : 0.80403 s (5.49 ms, 0 us, 698 us, 790193 us, 5.36 ms)
+[it= 673] hydro_fvm compute time t=3.2223e-03 (Dt=4.787e-06) : 0.79610 s (4.09 ms, 0 us, 77 us, 786038 us, 4.03 ms)
 [rank 0] iteration #674 - starting launcher [0][0] ...
 [rank 0] done
-[it= 674] hydro_fvm compute time t=3.2270e-03 (Dt=4.787e-06) : 0.80401 s (5.51 ms, 0 us, 705 us, 790158 us, 5.36 ms)
+[it= 674] hydro_fvm compute time t=3.2270e-03 (Dt=4.787e-06) : 0.79545 s (4.08 ms, 0 us, 77 us, 785376 us, 4.03 ms)
 [rank 0] iteration #675 - starting launcher [0][0] ...
 [rank 0] done
-[it= 675] hydro_fvm compute time t=3.2318e-03 (Dt=4.787e-06) : 0.80430 s (5.50 ms, 0 us, 687 us, 790494 us, 5.34 ms)
+[it= 675] hydro_fvm compute time t=3.2318e-03 (Dt=4.787e-06) : 0.79578 s (4.07 ms, 0 us, 78 us, 785731 us, 4.02 ms)
 [rank 0] iteration #676 - starting launcher [0][0] ...
 [rank 0] done
-[it= 676] hydro_fvm compute time t=3.2366e-03 (Dt=4.786e-06) : 0.80438 s (5.50 ms, 0 us, 686 us, 790544 us, 5.36 ms)
+[it= 676] hydro_fvm compute time t=3.2366e-03 (Dt=4.786e-06) : 0.79514 s (4.06 ms, 0 us, 78 us, 785115 us, 4.04 ms)
 [rank 0] iteration #677 - starting launcher [0][0] ...
 [rank 0] done
-[it= 677] hydro_fvm compute time t=3.2414e-03 (Dt=4.786e-06) : 0.80416 s (5.49 ms, 0 us, 689 us, 790336 us, 5.36 ms)
+[it= 677] hydro_fvm compute time t=3.2414e-03 (Dt=4.786e-06) : 0.79570 s (4.03 ms, 0 us, 78 us, 785687 us, 4.03 ms)
 [rank 0] iteration #678 - starting launcher [0][0] ...
 [rank 0] done
-[it= 678] hydro_fvm compute time t=3.2462e-03 (Dt=4.786e-06) : 0.80408 s (5.47 ms, 0 us, 687 us, 790289 us, 5.35 ms)
+[it= 678] hydro_fvm compute time t=3.2462e-03 (Dt=4.786e-06) : 0.79588 s (4.07 ms, 0 us, 82 us, 785822 us, 4.02 ms)
 [rank 0] iteration #679 - starting launcher [0][0] ...
 [rank 0] done
-[it= 679] hydro_fvm compute time t=3.2510e-03 (Dt=4.786e-06) : 0.80432 s (5.55 ms, 0 us, 707 us, 790428 us, 5.35 ms)
+[it= 679] hydro_fvm compute time t=3.2510e-03 (Dt=4.786e-06) : 0.79539 s (4.08 ms, 0 us, 78 us, 785333 us, 4.02 ms)
 [rank 0] iteration #680 - starting launcher [0][0] ...
 [rank 0] done
-[it= 680] hydro_fvm compute time t=3.2558e-03 (Dt=4.786e-06) : 0.80375 s (5.51 ms, 0 us, 684 us, 789913 us, 5.35 ms)
+[it= 680] hydro_fvm compute time t=3.2558e-03 (Dt=4.786e-06) : 0.79545 s (4.06 ms, 0 us, 78 us, 785388 us, 4.02 ms)
 [rank 0] iteration #681 - starting launcher [0][0] ...
 [rank 0] done
-[it= 681] hydro_fvm compute time t=3.2605e-03 (Dt=4.786e-06) : 0.80398 s (5.53 ms, 0 us, 697 us, 790124 us, 5.35 ms)
+[it= 681] hydro_fvm compute time t=3.2605e-03 (Dt=4.786e-06) : 0.79554 s (4.08 ms, 0 us, 80 us, 785487 us, 4.02 ms)
 [rank 0] iteration #682 - starting launcher [0][0] ...
 [rank 0] done
-[it= 682] hydro_fvm compute time t=3.2653e-03 (Dt=4.786e-06) : 0.80425 s (5.48 ms, 0 us, 697 us, 790456 us, 5.34 ms)
+[it= 682] hydro_fvm compute time t=3.2653e-03 (Dt=4.786e-06) : 0.79532 s (4.06 ms, 0 us, 79 us, 785200 us, 4.10 ms)
 [rank 0] iteration #683 - starting launcher [0][0] ...
 [rank 0] done
-[it= 683] hydro_fvm compute time t=3.2701e-03 (Dt=4.786e-06) : 0.80403 s (5.49 ms, 0 us, 662 us, 790265 us, 5.33 ms)
+[it= 683] hydro_fvm compute time t=3.2701e-03 (Dt=4.786e-06) : 0.79563 s (4.10 ms, 0 us, 77 us, 785533 us, 4.04 ms)
 [rank 0] iteration #684 - starting launcher [0][0] ...
 [rank 0] done
-[it= 684] hydro_fvm compute time t=3.2749e-03 (Dt=4.786e-06) : 0.80484 s (5.51 ms, 0 us, 705 us, 790630 us, 5.59 ms)
+[it= 684] hydro_fvm compute time t=3.2749e-03 (Dt=4.786e-06) : 0.79655 s (4.07 ms, 0 us, 76 us, 786485 us, 4.05 ms)
 [rank 0] iteration #685 - starting launcher [0][0] ...
 [rank 0] done
-[it= 685] hydro_fvm compute time t=3.2797e-03 (Dt=4.786e-06) : 0.80425 s (5.53 ms, 0 us, 680 us, 790383 us, 5.38 ms)
+[it= 685] hydro_fvm compute time t=3.2797e-03 (Dt=4.786e-06) : 0.79563 s (4.10 ms, 0 us, 77 us, 785547 us, 4.03 ms)
 [rank 0] iteration #686 - starting launcher [0][0] ...
 [rank 0] done
-[it= 686] hydro_fvm compute time t=3.2845e-03 (Dt=4.786e-06) : 0.80409 s (5.55 ms, 0 us, 702 us, 790255 us, 5.33 ms)
+[it= 686] hydro_fvm compute time t=3.2845e-03 (Dt=4.786e-06) : 0.79589 s (4.10 ms, 0 us, 78 us, 785809 us, 4.02 ms)
 [rank 0] iteration #687 - starting launcher [0][0] ...
 [rank 0] done
-[it= 687] hydro_fvm compute time t=3.2893e-03 (Dt=4.786e-06) : 0.80378 s (5.53 ms, 0 us, 698 us, 789941 us, 5.34 ms)
+[it= 687] hydro_fvm compute time t=3.2893e-03 (Dt=4.786e-06) : 0.79547 s (4.06 ms, 0 us, 78 us, 785413 us, 4.03 ms)
 [rank 0] iteration #688 - starting launcher [0][0] ...
 [rank 0] done
-[it= 688] hydro_fvm compute time t=3.2941e-03 (Dt=4.786e-06) : 0.80438 s (5.48 ms, 0 us, 654 us, 790606 us, 5.35 ms)
+[it= 688] hydro_fvm compute time t=3.2941e-03 (Dt=4.786e-06) : 0.79607 s (4.08 ms, 0 us, 78 us, 786009 us, 4.02 ms)
 [rank 0] iteration #689 - starting launcher [0][0] ...
 [rank 0] done
-[it= 689] hydro_fvm compute time t=3.2988e-03 (Dt=4.786e-06) : 0.80356 s (5.50 ms, 0 us, 695 us, 789700 us, 5.37 ms)
+[it= 689] hydro_fvm compute time t=3.2988e-03 (Dt=4.786e-06) : 0.79549 s (4.06 ms, 0 us, 78 us, 785445 us, 4.03 ms)
 [rank 0] iteration #690 - starting launcher [0][0] ...
 [rank 0] done
-[it= 690] hydro_fvm compute time t=3.3036e-03 (Dt=4.786e-06) : 0.80418 s (5.49 ms, 0 us, 705 us, 790351 us, 5.34 ms)
+[it= 690] hydro_fvm compute time t=3.3036e-03 (Dt=4.786e-06) : 0.79533 s (4.07 ms, 0 us, 78 us, 785269 us, 4.04 ms)
 [rank 0] iteration #691 - starting launcher [0][0] ...
 [rank 0] done
-[it= 691] hydro_fvm compute time t=3.3084e-03 (Dt=4.786e-06) : 0.80379 s (5.54 ms, 0 us, 691 us, 789958 us, 5.33 ms)
+[it= 691] hydro_fvm compute time t=3.3084e-03 (Dt=4.786e-06) : 0.79548 s (4.09 ms, 0 us, 76 us, 785407 us, 4.02 ms)
 [rank 0] iteration #692 - starting launcher [0][0] ...
 [rank 0] done
-[it= 692] hydro_fvm compute time t=3.3132e-03 (Dt=4.786e-06) : 0.80409 s (5.49 ms, 0 us, 699 us, 790274 us, 5.36 ms)
+[it= 692] hydro_fvm compute time t=3.3132e-03 (Dt=4.786e-06) : 0.79769 s (4.08 ms, 0 us, 79 us, 787527 us, 4.07 ms)
 [rank 0] iteration #693 - starting launcher [0][0] ...
 [rank 0] done
-[it= 693] hydro_fvm compute time t=3.3180e-03 (Dt=4.786e-06) : 0.80444 s (5.49 ms, 0 us, 700 us, 790643 us, 5.33 ms)
+[it= 693] hydro_fvm compute time t=3.3180e-03 (Dt=4.786e-06) : 0.79574 s (4.14 ms, 0 us, 79 us, 785624 us, 4.05 ms)
 [rank 0] iteration #694 - starting launcher [0][0] ...
 [rank 0] done
-[it= 694] hydro_fvm compute time t=3.3228e-03 (Dt=4.786e-06) : 0.80427 s (5.52 ms, 0 us, 697 us, 790358 us, 5.39 ms)
+[it= 694] hydro_fvm compute time t=3.3228e-03 (Dt=4.786e-06) : 0.79616 s (4.21 ms, 0 us, 77 us, 785934 us, 4.05 ms)
 [rank 0] iteration #695 - starting launcher [0][0] ...
 [rank 0] done
-[it= 695] hydro_fvm compute time t=3.3276e-03 (Dt=4.786e-06) : 0.80412 s (5.54 ms, 0 us, 700 us, 790249 us, 5.35 ms)
+[it= 695] hydro_fvm compute time t=3.3276e-03 (Dt=4.786e-06) : 0.79563 s (4.20 ms, 0 us, 76 us, 785432 us, 4.04 ms)
 [rank 0] iteration #696 - starting launcher [0][0] ...
 [rank 0] done
-[it= 696] hydro_fvm compute time t=3.3323e-03 (Dt=4.786e-06) : 0.80444 s (5.51 ms, 0 us, 704 us, 790633 us, 5.33 ms)
+[it= 696] hydro_fvm compute time t=3.3323e-03 (Dt=4.786e-06) : 0.79549 s (4.21 ms, 0 us, 77 us, 785274 us, 4.03 ms)
 [rank 0] iteration #697 - starting launcher [0][0] ...
 [rank 0] done
-[it= 697] hydro_fvm compute time t=3.3371e-03 (Dt=4.786e-06) : 0.80416 s (5.51 ms, 0 us, 692 us, 790320 us, 5.36 ms)
+[it= 697] hydro_fvm compute time t=3.3371e-03 (Dt=4.786e-06) : 0.79577 s (4.21 ms, 0 us, 78 us, 785560 us, 4.04 ms)
 [rank 0] iteration #698 - starting launcher [0][0] ...
 [rank 0] done
-[it= 698] hydro_fvm compute time t=3.3419e-03 (Dt=4.786e-06) : 0.80435 s (5.49 ms, 0 us, 701 us, 790526 us, 5.33 ms)
+[it= 698] hydro_fvm compute time t=3.3419e-03 (Dt=4.786e-06) : 0.79536 s (4.20 ms, 0 us, 78 us, 785155 us, 4.03 ms)
 [rank 0] iteration #699 - starting launcher [0][0] ...
 [rank 0] done
-[it= 699] hydro_fvm compute time t=3.3467e-03 (Dt=4.786e-06) : 0.80429 s (5.50 ms, 0 us, 694 us, 790498 us, 5.34 ms)
+[it= 699] hydro_fvm compute time t=3.3467e-03 (Dt=4.786e-06) : 0.79540 s (4.19 ms, 0 us, 81 us, 785221 us, 4.02 ms)
 [rank 0] iteration #700 - starting launcher [0][0] ...
 [rank 0] done
-[it= 700] hydro_fvm compute time t=3.3515e-03 (Dt=4.786e-06) : 0.80413 s (5.51 ms, 0 us, 676 us, 790319 us, 5.35 ms)
+[it= 700] hydro_fvm compute time t=3.3515e-03 (Dt=4.786e-06) : 0.79551 s (4.20 ms, 0 us, 79 us, 785312 us, 4.03 ms)
 [rank 0] iteration #701 - starting launcher [0][0] ...
 [rank 0] done
-[it= 701] hydro_fvm compute time t=3.3563e-03 (Dt=4.786e-06) : 0.80442 s (5.49 ms, 0 us, 661 us, 790660 us, 5.34 ms)
+[it= 701] hydro_fvm compute time t=3.3563e-03 (Dt=4.786e-06) : 0.79557 s (4.20 ms, 0 us, 78 us, 785350 us, 4.05 ms)
 [rank 0] iteration #702 - starting launcher [0][0] ...
 [rank 0] done
-[it= 702] hydro_fvm compute time t=3.3611e-03 (Dt=4.786e-06) : 0.80392 s (5.46 ms, 0 us, 703 us, 790138 us, 5.34 ms)
+[it= 702] hydro_fvm compute time t=3.3611e-03 (Dt=4.786e-06) : 0.79629 s (4.24 ms, 0 us, 78 us, 786042 us, 4.04 ms)
 [rank 0] iteration #703 - starting launcher [0][0] ...
 [rank 0] done
-[it= 703] hydro_fvm compute time t=3.3658e-03 (Dt=4.786e-06) : 0.80407 s (5.47 ms, 0 us, 694 us, 790271 us, 5.35 ms)
+[it= 703] hydro_fvm compute time t=3.3658e-03 (Dt=4.786e-06) : 0.79583 s (4.35 ms, 0 us, 78 us, 785457 us, 4.05 ms)
 [rank 0] iteration #704 - starting launcher [0][0] ...
 [rank 0] done
-[it= 704] hydro_fvm compute time t=3.3706e-03 (Dt=4.786e-06) : 0.80441 s (5.48 ms, 0 us, 708 us, 790248 us, 5.45 ms)
+[it= 704] hydro_fvm compute time t=3.3706e-03 (Dt=4.786e-06) : 0.79530 s (4.25 ms, 0 us, 79 us, 785033 us, 4.06 ms)
 [rank 0] iteration #705 - starting launcher [0][0] ...
 [rank 0] done
-[it= 705] hydro_fvm compute time t=3.3754e-03 (Dt=4.786e-06) : 0.80480 s (5.57 ms, 0 us, 709 us, 790722 us, 5.37 ms)
+[it= 705] hydro_fvm compute time t=3.3754e-03 (Dt=4.786e-06) : 0.79568 s (4.32 ms, 0 us, 80 us, 785352 us, 4.04 ms)
 [rank 0] iteration #706 - starting launcher [0][0] ...
 [rank 0] done
-[it= 706] hydro_fvm compute time t=3.3802e-03 (Dt=4.785e-06) : 0.80444 s (5.53 ms, 0 us, 694 us, 790550 us, 5.37 ms)
+[it= 706] hydro_fvm compute time t=3.3802e-03 (Dt=4.785e-06) : 0.79547 s (4.17 ms, 0 us, 79 us, 785313 us, 4.03 ms)
 [rank 0] iteration #707 - starting launcher [0][0] ...
 [rank 0] done
-[it= 707] hydro_fvm compute time t=3.3850e-03 (Dt=4.785e-06) : 0.80432 s (5.55 ms, 0 us, 686 us, 790440 us, 5.36 ms)
+[it= 707] hydro_fvm compute time t=3.3850e-03 (Dt=4.785e-06) : 0.79575 s (4.19 ms, 0 us, 78 us, 785577 us, 4.03 ms)
 [rank 0] iteration #708 - starting launcher [0][0] ...
 [rank 0] done
-[it= 708] hydro_fvm compute time t=3.3898e-03 (Dt=4.785e-06) : 0.80443 s (5.51 ms, 0 us, 691 us, 790577 us, 5.36 ms)
+[it= 708] hydro_fvm compute time t=3.3898e-03 (Dt=4.785e-06) : 0.79549 s (4.21 ms, 0 us, 79 us, 785274 us, 4.04 ms)
 [rank 0] iteration #709 - starting launcher [0][0] ...
 [rank 0] done
-[it= 709] hydro_fvm compute time t=3.3946e-03 (Dt=4.785e-06) : 0.80465 s (5.54 ms, 0 us, 694 us, 790757 us, 5.37 ms)
+[it= 709] hydro_fvm compute time t=3.3946e-03 (Dt=4.785e-06) : 0.79582 s (4.20 ms, 0 us, 78 us, 785627 us, 4.04 ms)
 [rank 0] iteration #710 - starting launcher [0][0] ...
 [rank 0] done
-[it= 710] hydro_fvm compute time t=3.3993e-03 (Dt=4.785e-06) : 0.80403 s (5.50 ms, 0 us, 706 us, 790177 us, 5.36 ms)
+[it= 710] hydro_fvm compute time t=3.3993e-03 (Dt=4.785e-06) : 0.79546 s (4.18 ms, 0 us, 79 us, 785280 us, 4.04 ms)
 [rank 0] iteration #711 - starting launcher [0][0] ...
 [rank 0] done
-[it= 711] hydro_fvm compute time t=3.4041e-03 (Dt=4.785e-06) : 0.80432 s (5.52 ms, 0 us, 696 us, 790461 us, 5.36 ms)
+[it= 711] hydro_fvm compute time t=3.4041e-03 (Dt=4.785e-06) : 0.79580 s (4.19 ms, 0 us, 79 us, 785568 us, 4.05 ms)
 [rank 0] iteration #712 - starting launcher [0][0] ...
 [rank 0] done
-[it= 712] hydro_fvm compute time t=3.4089e-03 (Dt=4.785e-06) : 0.80417 s (5.53 ms, 0 us, 705 us, 790288 us, 5.36 ms)
+[it= 712] hydro_fvm compute time t=3.4089e-03 (Dt=4.785e-06) : 0.79552 s (4.20 ms, 0 us, 87 us, 785317 us, 4.03 ms)
 [rank 0] iteration #713 - starting launcher [0][0] ...
 [rank 0] done
-[it= 713] hydro_fvm compute time t=3.4137e-03 (Dt=4.785e-06) : 0.80402 s (5.56 ms, 0 us, 677 us, 790131 us, 5.38 ms)
+[it= 713] hydro_fvm compute time t=3.4137e-03 (Dt=4.785e-06) : 0.79562 s (4.32 ms, 0 us, 84 us, 785285 us, 4.03 ms)
 [rank 0] iteration #714 - starting launcher [0][0] ...
 [rank 0] done
-[it= 714] hydro_fvm compute time t=3.4185e-03 (Dt=4.785e-06) : 0.80430 s (5.53 ms, 0 us, 702 us, 790427 us, 5.35 ms)
+[it= 714] hydro_fvm compute time t=3.4185e-03 (Dt=4.785e-06) : 0.79546 s (4.17 ms, 0 us, 81 us, 785287 us, 4.03 ms)
 [rank 0] iteration #715 - starting launcher [0][0] ...
 [rank 0] done
-[it= 715] hydro_fvm compute time t=3.4233e-03 (Dt=4.785e-06) : 0.80396 s (5.51 ms, 0 us, 703 us, 790100 us, 5.36 ms)
+[it= 715] hydro_fvm compute time t=3.4233e-03 (Dt=4.785e-06) : 0.79612 s (4.20 ms, 0 us, 80 us, 785912 us, 4.03 ms)
 [rank 0] iteration #716 - starting launcher [0][0] ...
 [rank 0] done
-[it= 716] hydro_fvm compute time t=3.4281e-03 (Dt=4.785e-06) : 0.80439 s (5.50 ms, 0 us, 689 us, 790544 us, 5.38 ms)
+[it= 716] hydro_fvm compute time t=3.4281e-03 (Dt=4.785e-06) : 0.79605 s (4.20 ms, 0 us, 80 us, 785839 us, 4.04 ms)
 [rank 0] iteration #717 - starting launcher [0][0] ...
 [rank 0] done
-[it= 717] hydro_fvm compute time t=3.4328e-03 (Dt=4.785e-06) : 0.80398 s (5.55 ms, 0 us, 663 us, 790093 us, 5.38 ms)
+[it= 717] hydro_fvm compute time t=3.4328e-03 (Dt=4.785e-06) : 0.79581 s (4.21 ms, 0 us, 80 us, 785595 us, 4.03 ms)
 [rank 0] iteration #718 - starting launcher [0][0] ...
 [rank 0] done
-[it= 718] hydro_fvm compute time t=3.4376e-03 (Dt=4.785e-06) : 0.80437 s (5.53 ms, 0 us, 684 us, 790484 us, 5.38 ms)
+[it= 718] hydro_fvm compute time t=3.4376e-03 (Dt=4.785e-06) : 0.79561 s (4.20 ms, 0 us, 81 us, 785396 us, 4.04 ms)
 [rank 0] iteration #719 - starting launcher [0][0] ...
 [rank 0] done
-[it= 719] hydro_fvm compute time t=3.4424e-03 (Dt=4.785e-06) : 0.80409 s (5.53 ms, 0 us, 700 us, 790212 us, 5.37 ms)
+[it= 719] hydro_fvm compute time t=3.4424e-03 (Dt=4.785e-06) : 0.79581 s (4.20 ms, 0 us, 79 us, 785587 us, 4.05 ms)
 [rank 0] iteration #720 - starting launcher [0][0] ...
 [rank 0] done
-[it= 720] hydro_fvm compute time t=3.4472e-03 (Dt=4.785e-06) : 0.80403 s (5.50 ms, 0 us, 692 us, 790165 us, 5.38 ms)
+[it= 720] hydro_fvm compute time t=3.4472e-03 (Dt=4.785e-06) : 0.79703 s (4.23 ms, 0 us, 81 us, 786762 us, 4.04 ms)
 [rank 0] iteration #721 - starting launcher [0][0] ...
 [rank 0] done
-[it= 721] hydro_fvm compute time t=3.4520e-03 (Dt=4.785e-06) : 0.80410 s (5.50 ms, 0 us, 700 us, 790242 us, 5.37 ms)
+[it= 721] hydro_fvm compute time t=3.4520e-03 (Dt=4.785e-06) : 0.79577 s (4.14 ms, 0 us, 79 us, 785623 us, 4.04 ms)
 [rank 0] iteration #722 - starting launcher [0][0] ...
 [rank 0] done
-[it= 722] hydro_fvm compute time t=3.4568e-03 (Dt=4.785e-06) : 0.80426 s (5.58 ms, 0 us, 691 us, 790332 us, 5.36 ms)
+[it= 722] hydro_fvm compute time t=3.4568e-03 (Dt=4.785e-06) : 0.79574 s (4.22 ms, 0 us, 78 us, 785529 us, 4.04 ms)
 [rank 0] iteration #723 - starting launcher [0][0] ...
 [rank 0] done
-[it= 723] hydro_fvm compute time t=3.4615e-03 (Dt=4.785e-06) : 0.80439 s (5.52 ms, 0 us, 706 us, 790515 us, 5.37 ms)
+[it= 723] hydro_fvm compute time t=3.4615e-03 (Dt=4.785e-06) : 0.79562 s (4.21 ms, 0 us, 78 us, 785417 us, 4.03 ms)
 [rank 0] iteration #724 - starting launcher [0][0] ...
 [rank 0] done
-[it= 724] hydro_fvm compute time t=3.4663e-03 (Dt=4.785e-06) : 0.80396 s (5.53 ms, 0 us, 658 us, 790145 us, 5.35 ms)
+[it= 724] hydro_fvm compute time t=3.4663e-03 (Dt=4.785e-06) : 0.79563 s (4.24 ms, 0 us, 79 us, 785389 us, 4.04 ms)
 [rank 0] iteration #725 - starting launcher [0][0] ...
 [rank 0] done
-[it= 725] hydro_fvm compute time t=3.4711e-03 (Dt=4.785e-06) : 0.80410 s (5.55 ms, 0 us, 629 us, 790289 us, 5.35 ms)
+[it= 725] hydro_fvm compute time t=3.4711e-03 (Dt=4.785e-06) : 0.79589 s (4.23 ms, 0 us, 80 us, 785636 us, 4.05 ms)
 [rank 0] iteration #726 - starting launcher [0][0] ...
 [rank 0] done
-[it= 726] hydro_fvm compute time t=3.4759e-03 (Dt=4.785e-06) : 0.80411 s (5.56 ms, 0 us, 672 us, 790197 us, 5.37 ms)
+[it= 726] hydro_fvm compute time t=3.4759e-03 (Dt=4.785e-06) : 0.79543 s (4.16 ms, 0 us, 79 us, 785275 us, 4.03 ms)
 [rank 0] iteration #727 - starting launcher [0][0] ...
 [rank 0] done
-[it= 727] hydro_fvm compute time t=3.4807e-03 (Dt=4.785e-06) : 0.80429 s (5.51 ms, 0 us, 701 us, 790468 us, 5.33 ms)
+[it= 727] hydro_fvm compute time t=3.4807e-03 (Dt=4.785e-06) : 0.79622 s (4.26 ms, 0 us, 78 us, 785958 us, 4.03 ms)
 [rank 0] iteration #728 - starting launcher [0][0] ...
 [rank 0] done
-[it= 728] hydro_fvm compute time t=3.4855e-03 (Dt=4.785e-06) : 0.80387 s (5.53 ms, 0 us, 684 us, 790036 us, 5.34 ms)
+[it= 728] hydro_fvm compute time t=3.4855e-03 (Dt=4.785e-06) : 0.79796 s (4.23 ms, 0 us, 79 us, 787733 us, 4.03 ms)
 [rank 0] iteration #729 - starting launcher [0][0] ...
 [rank 0] done
-[it= 729] hydro_fvm compute time t=3.4903e-03 (Dt=4.785e-06) : 0.80414 s (5.49 ms, 0 us, 685 us, 790324 us, 5.36 ms)
+[it= 729] hydro_fvm compute time t=3.4903e-03 (Dt=4.785e-06) : 0.79553 s (4.25 ms, 0 us, 80 us, 785266 us, 4.03 ms)
 [rank 0] iteration #730 - starting launcher [0][0] ...
 [rank 0] done
-[it= 730] hydro_fvm compute time t=3.4950e-03 (Dt=4.785e-06) : 0.80400 s (5.51 ms, 0 us, 691 us, 790152 us, 5.37 ms)
+[it= 730] hydro_fvm compute time t=3.4950e-03 (Dt=4.785e-06) : 0.79561 s (4.21 ms, 0 us, 78 us, 785391 us, 4.02 ms)
 [rank 0] iteration #731 - starting launcher [0][0] ...
 [rank 0] done
-[it= 731] hydro_fvm compute time t=3.4998e-03 (Dt=4.785e-06) : 0.80443 s (5.51 ms, 0 us, 702 us, 790582 us, 5.36 ms)
+[it= 731] hydro_fvm compute time t=3.4998e-03 (Dt=4.785e-06) : 0.79598 s (4.21 ms, 0 us, 82 us, 785770 us, 4.03 ms)
 [rank 0] iteration #732 - starting launcher [0][0] ...
 [rank 0] done
-[it= 732] hydro_fvm compute time t=3.5046e-03 (Dt=4.785e-06) : 0.80427 s (5.54 ms, 0 us, 653 us, 790472 us, 5.35 ms)
+[it= 732] hydro_fvm compute time t=3.5046e-03 (Dt=4.785e-06) : 0.79693 s (4.20 ms, 0 us, 79 us, 786702 us, 4.05 ms)
 [rank 0] iteration #733 - starting launcher [0][0] ...
 [rank 0] done
-[it= 733] hydro_fvm compute time t=3.5094e-03 (Dt=4.785e-06) : 0.80452 s (5.54 ms, 0 us, 700 us, 790651 us, 5.35 ms)
+[it= 733] hydro_fvm compute time t=3.5094e-03 (Dt=4.785e-06) : 0.79561 s (4.20 ms, 0 us, 78 us, 785421 us, 4.03 ms)
 [rank 0] iteration #734 - starting launcher [0][0] ...
 [rank 0] done
-[it= 734] hydro_fvm compute time t=3.5142e-03 (Dt=4.785e-06) : 0.80405 s (5.51 ms, 0 us, 705 us, 790213 us, 5.35 ms)
+[it= 734] hydro_fvm compute time t=3.5142e-03 (Dt=4.785e-06) : 0.79641 s (4.23 ms, 0 us, 79 us, 786118 us, 4.10 ms)
 [rank 0] iteration #735 - starting launcher [0][0] ...
 [rank 0] done
-[it= 735] hydro_fvm compute time t=3.5190e-03 (Dt=4.785e-06) : 0.80440 s (5.50 ms, 0 us, 705 us, 790588 us, 5.37 ms)
+[it= 735] hydro_fvm compute time t=3.5190e-03 (Dt=4.785e-06) : 0.79554 s (4.17 ms, 0 us, 79 us, 785367 us, 4.03 ms)
 [rank 0] iteration #736 - starting launcher [0][0] ...
 [rank 0] done
-[it= 736] hydro_fvm compute time t=3.5237e-03 (Dt=4.784e-06) : 0.80460 s (5.55 ms, 0 us, 696 us, 790652 us, 5.40 ms)
+[it= 736] hydro_fvm compute time t=3.5237e-03 (Dt=4.784e-06) : 0.79549 s (4.21 ms, 0 us, 80 us, 785256 us, 4.04 ms)
 [rank 0] iteration #737 - starting launcher [0][0] ...
 [rank 0] done
-[it= 737] hydro_fvm compute time t=3.5285e-03 (Dt=4.784e-06) : 0.80398 s (5.53 ms, 0 us, 700 us, 790128 us, 5.35 ms)
+[it= 737] hydro_fvm compute time t=3.5285e-03 (Dt=4.784e-06) : 0.79566 s (4.21 ms, 0 us, 79 us, 785447 us, 4.04 ms)
 [rank 0] iteration #738 - starting launcher [0][0] ...
 [rank 0] done
-[it= 738] hydro_fvm compute time t=3.5333e-03 (Dt=4.784e-06) : 0.80450 s (5.53 ms, 0 us, 660 us, 790668 us, 5.35 ms)
+[it= 738] hydro_fvm compute time t=3.5333e-03 (Dt=4.784e-06) : 0.79552 s (4.24 ms, 0 us, 80 us, 785272 us, 4.04 ms)
 [rank 0] iteration #739 - starting launcher [0][0] ...
 [rank 0] done
-[it= 739] hydro_fvm compute time t=3.5381e-03 (Dt=4.784e-06) : 0.80372 s (5.50 ms, 0 us, 701 us, 789898 us, 5.34 ms)
+[it= 739] hydro_fvm compute time t=3.5381e-03 (Dt=4.784e-06) : 0.79587 s (4.23 ms, 0 us, 79 us, 785637 us, 4.04 ms)
 [rank 0] iteration #740 - starting launcher [0][0] ...
 [rank 0] done
-[it= 740] hydro_fvm compute time t=3.5429e-03 (Dt=4.784e-06) : 0.80440 s (5.53 ms, 0 us, 629 us, 790609 us, 5.35 ms)
+[it= 740] hydro_fvm compute time t=3.5429e-03 (Dt=4.784e-06) : 0.79523 s (4.18 ms, 0 us, 82 us, 785044 us, 4.04 ms)
 [rank 0] iteration #741 - starting launcher [0][0] ...
 [rank 0] done
-[it= 741] hydro_fvm compute time t=3.5477e-03 (Dt=4.784e-06) : 0.80456 s (5.50 ms, 0 us, 701 us, 790728 us, 5.37 ms)
+[it= 741] hydro_fvm compute time t=3.5477e-03 (Dt=4.784e-06) : 0.79597 s (4.20 ms, 0 us, 79 us, 785771 us, 4.04 ms)
 [rank 0] iteration #742 - starting launcher [0][0] ...
 [rank 0] done
-[it= 742] hydro_fvm compute time t=3.5525e-03 (Dt=4.784e-06) : 0.80344 s (5.53 ms, 0 us, 688 us, 789566 us, 5.37 ms)
+[it= 742] hydro_fvm compute time t=3.5525e-03 (Dt=4.784e-06) : 0.79551 s (4.19 ms, 0 us, 79 us, 785322 us, 4.03 ms)
 [rank 0] iteration #743 - starting launcher [0][0] ...
 [rank 0] done
-[it= 743] hydro_fvm compute time t=3.5572e-03 (Dt=4.784e-06) : 0.80375 s (5.48 ms, 0 us, 688 us, 789949 us, 5.35 ms)
+[it= 743] hydro_fvm compute time t=3.5572e-03 (Dt=4.784e-06) : 0.79575 s (4.21 ms, 0 us, 80 us, 785533 us, 4.04 ms)
 [rank 0] iteration #744 - starting launcher [0][0] ...
 [rank 0] done
-[it= 744] hydro_fvm compute time t=3.5620e-03 (Dt=4.784e-06) : 0.80439 s (5.51 ms, 0 us, 682 us, 790555 us, 5.36 ms)
+[it= 744] hydro_fvm compute time t=3.5620e-03 (Dt=4.784e-06) : 0.79557 s (4.20 ms, 0 us, 78 us, 785372 us, 4.04 ms)
 [rank 0] iteration #745 - starting launcher [0][0] ...
 [rank 0] done
-[it= 745] hydro_fvm compute time t=3.5668e-03 (Dt=4.784e-06) : 0.80438 s (5.53 ms, 0 us, 683 us, 790545 us, 5.35 ms)
+[it= 745] hydro_fvm compute time t=3.5668e-03 (Dt=4.784e-06) : 0.79578 s (4.20 ms, 0 us, 78 us, 785559 us, 4.04 ms)
 [rank 0] iteration #746 - starting launcher [0][0] ...
 [rank 0] done
-[it= 746] hydro_fvm compute time t=3.5716e-03 (Dt=4.784e-06) : 0.80352 s (5.50 ms, 0 us, 688 us, 789683 us, 5.36 ms)
+[it= 746] hydro_fvm compute time t=3.5716e-03 (Dt=4.784e-06) : 0.79541 s (4.24 ms, 0 us, 80 us, 785179 us, 4.03 ms)
 [rank 0] iteration #747 - starting launcher [0][0] ...
 [rank 0] done
-[it= 747] hydro_fvm compute time t=3.5764e-03 (Dt=4.784e-06) : 0.80432 s (5.54 ms, 0 us, 708 us, 790438 us, 5.36 ms)
+[it= 747] hydro_fvm compute time t=3.5764e-03 (Dt=4.784e-06) : 0.79559 s (4.18 ms, 0 us, 79 us, 785413 us, 4.04 ms)
 [rank 0] iteration #748 - starting launcher [0][0] ...
 [rank 0] done
-[it= 748] hydro_fvm compute time t=3.5812e-03 (Dt=4.784e-06) : 0.80353 s (5.50 ms, 0 us, 705 us, 789696 us, 5.35 ms)
+[it= 748] hydro_fvm compute time t=3.5812e-03 (Dt=4.784e-06) : 0.79574 s (4.21 ms, 0 us, 80 us, 785520 us, 4.04 ms)
 [rank 0] iteration #749 - starting launcher [0][0] ...
 [rank 0] done
-[it= 749] hydro_fvm compute time t=3.5859e-03 (Dt=4.784e-06) : 0.80443 s (5.49 ms, 0 us, 689 us, 790627 us, 5.34 ms)
+[it= 749] hydro_fvm compute time t=3.5859e-03 (Dt=4.784e-06) : 0.79577 s (4.22 ms, 0 us, 78 us, 785552 us, 4.04 ms)
 [rank 0] iteration #750 - starting launcher [0][0] ...
 [rank 0] done
-[it= 750] hydro_fvm compute time t=3.5907e-03 (Dt=4.784e-06) : 0.80382 s (5.52 ms, 0 us, 694 us, 789966 us, 5.36 ms)
+[it= 750] hydro_fvm compute time t=3.5907e-03 (Dt=4.784e-06) : 0.79526 s (4.22 ms, 0 us, 78 us, 785043 us, 4.04 ms)
 [rank 0] iteration #751 - starting launcher [0][0] ...
 [rank 0] done
-[it= 751] hydro_fvm compute time t=3.5955e-03 (Dt=4.784e-06) : 0.80407 s (5.51 ms, 0 us, 698 us, 790211 us, 5.36 ms)
+[it= 751] hydro_fvm compute time t=3.5955e-03 (Dt=4.784e-06) : 0.79562 s (4.25 ms, 0 us, 78 us, 785381 us, 4.03 ms)
 [rank 0] iteration #752 - starting launcher [0][0] ...
 [rank 0] done
-[it= 752] hydro_fvm compute time t=3.6003e-03 (Dt=4.784e-06) : 0.80431 s (5.52 ms, 0 us, 675 us, 790500 us, 5.35 ms)
+[it= 752] hydro_fvm compute time t=3.6003e-03 (Dt=4.784e-06) : 0.79562 s (4.16 ms, 0 us, 79 us, 785447 us, 4.04 ms)
 [rank 0] iteration #753 - starting launcher [0][0] ...
 [rank 0] done
-[it= 753] hydro_fvm compute time t=3.6051e-03 (Dt=4.784e-06) : 0.80367 s (5.52 ms, 0 us, 669 us, 789861 us, 5.35 ms)
+[it= 753] hydro_fvm compute time t=3.6051e-03 (Dt=4.784e-06) : 0.79559 s (4.20 ms, 0 us, 77 us, 785418 us, 4.01 ms)
 [rank 0] iteration #754 - starting launcher [0][0] ...
 [rank 0] done
-[it= 754] hydro_fvm compute time t=3.6099e-03 (Dt=4.784e-06) : 0.80418 s (5.51 ms, 0 us, 706 us, 790309 us, 5.35 ms)
+[it= 754] hydro_fvm compute time t=3.6099e-03 (Dt=4.784e-06) : 0.79536 s (4.20 ms, 0 us, 78 us, 785176 us, 4.02 ms)
 [rank 0] iteration #755 - starting launcher [0][0] ...
 [rank 0] done
-[it= 755] hydro_fvm compute time t=3.6146e-03 (Dt=4.784e-06) : 0.80457 s (5.52 ms, 0 us, 694 us, 790725 us, 5.35 ms)
+[it= 755] hydro_fvm compute time t=3.6146e-03 (Dt=4.784e-06) : 0.79568 s (4.21 ms, 0 us, 80 us, 785471 us, 4.04 ms)
 [rank 0] iteration #756 - starting launcher [0][0] ...
 [rank 0] done
-[it= 756] hydro_fvm compute time t=3.6194e-03 (Dt=4.784e-06) : 0.80339 s (5.47 ms, 0 us, 692 us, 789615 us, 5.35 ms)
+[it= 756] hydro_fvm compute time t=3.6194e-03 (Dt=4.784e-06) : 0.79532 s (4.20 ms, 0 us, 79 us, 785121 us, 4.03 ms)
 [rank 0] iteration #757 - starting launcher [0][0] ...
 [rank 0] done
-[it= 757] hydro_fvm compute time t=3.6242e-03 (Dt=4.784e-06) : 0.80425 s (5.51 ms, 0 us, 691 us, 790431 us, 5.35 ms)
+[it= 757] hydro_fvm compute time t=3.6242e-03 (Dt=4.784e-06) : 0.79556 s (4.21 ms, 0 us, 79 us, 785361 us, 4.03 ms)
 [rank 0] iteration #758 - starting launcher [0][0] ...
 [rank 0] done
-[it= 758] hydro_fvm compute time t=3.6290e-03 (Dt=4.784e-06) : 0.80411 s (5.51 ms, 0 us, 707 us, 790258 us, 5.35 ms)
+[it= 758] hydro_fvm compute time t=3.6290e-03 (Dt=4.784e-06) : 0.79536 s (4.23 ms, 0 us, 80 us, 785126 us, 4.03 ms)
 [rank 0] iteration #759 - starting launcher [0][0] ...
 [rank 0] done
-[it= 759] hydro_fvm compute time t=3.6338e-03 (Dt=4.784e-06) : 0.80442 s (5.51 ms, 0 us, 692 us, 790578 us, 5.35 ms)
+[it= 759] hydro_fvm compute time t=3.6338e-03 (Dt=4.784e-06) : 0.79582 s (4.26 ms, 0 us, 79 us, 785546 us, 4.04 ms)
 [rank 0] iteration #760 - starting launcher [0][0] ...
 [rank 0] done
-[it= 760] hydro_fvm compute time t=3.6386e-03 (Dt=4.784e-06) : 0.80408 s (5.50 ms, 0 us, 702 us, 790249 us, 5.35 ms)
+[it= 760] hydro_fvm compute time t=3.6386e-03 (Dt=4.784e-06) : 0.79590 s (4.18 ms, 0 us, 78 us, 785752 us, 4.04 ms)
 [rank 0] iteration #761 - starting launcher [0][0] ...
 [rank 0] done
-[it= 761] hydro_fvm compute time t=3.6433e-03 (Dt=4.784e-06) : 0.80454 s (5.52 ms, 0 us, 704 us, 790666 us, 5.36 ms)
+[it= 761] hydro_fvm compute time t=3.6433e-03 (Dt=4.784e-06) : 0.79572 s (4.20 ms, 0 us, 79 us, 785458 us, 4.05 ms)
 [rank 0] iteration #762 - starting launcher [0][0] ...
 [rank 0] done
-[it= 762] hydro_fvm compute time t=3.6481e-03 (Dt=4.784e-06) : 0.80334 s (5.49 ms, 0 us, 703 us, 789517 us, 5.34 ms)
+[it= 762] hydro_fvm compute time t=3.6481e-03 (Dt=4.784e-06) : 0.79608 s (4.24 ms, 0 us, 78 us, 785899 us, 4.04 ms)
 [rank 0] iteration #763 - starting launcher [0][0] ...
 [rank 0] done
-[it= 763] hydro_fvm compute time t=3.6529e-03 (Dt=4.784e-06) : 0.80430 s (5.51 ms, 0 us, 688 us, 790462 us, 5.36 ms)
+[it= 763] hydro_fvm compute time t=3.6529e-03 (Dt=4.784e-06) : 0.79564 s (4.22 ms, 0 us, 77 us, 785438 us, 4.01 ms)
 [rank 0] iteration #764 - starting launcher [0][0] ...
 [rank 0] done
-[it= 764] hydro_fvm compute time t=3.6577e-03 (Dt=4.784e-06) : 0.80412 s (5.50 ms, 0 us, 667 us, 790318 us, 5.34 ms)
+[it= 764] hydro_fvm compute time t=3.6577e-03 (Dt=4.784e-06) : 0.79555 s (4.20 ms, 0 us, 81 us, 785358 us, 4.02 ms)
 [rank 0] iteration #765 - starting launcher [0][0] ...
 [rank 0] done
-[it= 765] hydro_fvm compute time t=3.6625e-03 (Dt=4.783e-06) : 0.80462 s (5.53 ms, 0 us, 680 us, 790779 us, 5.36 ms)
+[it= 765] hydro_fvm compute time t=3.6625e-03 (Dt=4.783e-06) : 0.79552 s (4.08 ms, 0 us, 79 us, 785454 us, 4.03 ms)
 [rank 0] iteration #766 - starting launcher [0][0] ...
 [rank 0] done
-[it= 766] hydro_fvm compute time t=3.6673e-03 (Dt=4.783e-06) : 0.80452 s (5.54 ms, 0 us, 704 us, 790636 us, 5.36 ms)
+[it= 766] hydro_fvm compute time t=3.6673e-03 (Dt=4.783e-06) : 0.79550 s (4.08 ms, 0 us, 79 us, 785425 us, 4.02 ms)
 [rank 0] iteration #767 - starting launcher [0][0] ...
 [rank 0] done
-[it= 767] hydro_fvm compute time t=3.6721e-03 (Dt=4.783e-06) : 0.80443 s (5.53 ms, 0 us, 694 us, 790574 us, 5.36 ms)
+[it= 767] hydro_fvm compute time t=3.6721e-03 (Dt=4.783e-06) : 0.79551 s (4.08 ms, 0 us, 79 us, 785446 us, 4.03 ms)
 [rank 0] iteration #768 - starting launcher [0][0] ...
 [rank 0] done
-[it= 768] hydro_fvm compute time t=3.6768e-03 (Dt=4.783e-06) : 0.80416 s (5.51 ms, 0 us, 689 us, 790340 us, 5.35 ms)
+[it= 768] hydro_fvm compute time t=3.6768e-03 (Dt=4.783e-06) : 0.79530 s (4.07 ms, 0 us, 79 us, 785134 us, 4.04 ms)
 [rank 0] iteration #769 - starting launcher [0][0] ...
 [rank 0] done
-[it= 769] hydro_fvm compute time t=3.6816e-03 (Dt=4.783e-06) : 0.80432 s (5.52 ms, 0 us, 704 us, 790443 us, 5.37 ms)
+[it= 769] hydro_fvm compute time t=3.6816e-03 (Dt=4.783e-06) : 0.79535 s (4.06 ms, 0 us, 80 us, 785339 us, 4.03 ms)
 [rank 0] iteration #770 - starting launcher [0][0] ...
 [rank 0] done
-[it= 770] hydro_fvm compute time t=3.6864e-03 (Dt=4.783e-06) : 0.80431 s (5.50 ms, 0 us, 683 us, 790483 us, 5.36 ms)
+[it= 770] hydro_fvm compute time t=3.6864e-03 (Dt=4.783e-06) : 0.79553 s (4.09 ms, 0 us, 78 us, 785378 us, 4.05 ms)
 [rank 0] iteration #771 - starting launcher [0][0] ...
 [rank 0] done
-[it= 771] hydro_fvm compute time t=3.6912e-03 (Dt=4.783e-06) : 0.80458 s (5.54 ms, 0 us, 701 us, 790686 us, 5.35 ms)
+[it= 771] hydro_fvm compute time t=3.6912e-03 (Dt=4.783e-06) : 0.79560 s (4.06 ms, 0 us, 78 us, 785545 us, 4.03 ms)
 [rank 0] iteration #772 - starting launcher [0][0] ...
 [rank 0] done
-[it= 772] hydro_fvm compute time t=3.6960e-03 (Dt=4.783e-06) : 0.80442 s (5.52 ms, 0 us, 704 us, 790565 us, 5.36 ms)
+[it= 772] hydro_fvm compute time t=3.6960e-03 (Dt=4.783e-06) : 0.79528 s (4.20 ms, 0 us, 78 us, 785114 us, 4.03 ms)
 [rank 0] iteration #773 - starting launcher [0][0] ...
 [rank 0] done
-[it= 773] hydro_fvm compute time t=3.7008e-03 (Dt=4.783e-06) : 0.80404 s (5.52 ms, 0 us, 699 us, 790188 us, 5.35 ms)
+[it= 773] hydro_fvm compute time t=3.7008e-03 (Dt=4.783e-06) : 0.79584 s (4.23 ms, 0 us, 78 us, 785598 us, 4.05 ms)
 [rank 0] iteration #774 - starting launcher [0][0] ...
 [rank 0] done
-[it= 774] hydro_fvm compute time t=3.7055e-03 (Dt=4.783e-06) : 0.80390 s (5.50 ms, 0 us, 693 us, 790073 us, 5.35 ms)
+[it= 774] hydro_fvm compute time t=3.7055e-03 (Dt=4.783e-06) : 0.79540 s (4.23 ms, 0 us, 81 us, 785165 us, 4.04 ms)
 [rank 0] iteration #775 - starting launcher [0][0] ...
 [rank 0] done
-[it= 775] hydro_fvm compute time t=3.7103e-03 (Dt=4.783e-06) : 0.80399 s (5.48 ms, 0 us, 703 us, 790180 us, 5.35 ms)
+[it= 775] hydro_fvm compute time t=3.7103e-03 (Dt=4.783e-06) : 0.79565 s (4.18 ms, 0 us, 79 us, 785444 us, 4.05 ms)
 [rank 0] iteration #776 - starting launcher [0][0] ...
 [rank 0] done
-[it= 776] hydro_fvm compute time t=3.7151e-03 (Dt=4.783e-06) : 0.80351 s (5.50 ms, 0 us, 702 us, 789667 us, 5.36 ms)
+[it= 776] hydro_fvm compute time t=3.7151e-03 (Dt=4.783e-06) : 0.79526 s (4.18 ms, 0 us, 80 us, 785068 us, 4.05 ms)
 [rank 0] iteration #777 - starting launcher [0][0] ...
 [rank 0] done
-[it= 777] hydro_fvm compute time t=3.7199e-03 (Dt=4.783e-06) : 0.80421 s (5.52 ms, 0 us, 694 us, 790373 us, 5.34 ms)
+[it= 777] hydro_fvm compute time t=3.7199e-03 (Dt=4.783e-06) : 0.79563 s (4.21 ms, 0 us, 78 us, 785461 us, 4.03 ms)
 [rank 0] iteration #778 - starting launcher [0][0] ...
 [rank 0] done
-[it= 778] hydro_fvm compute time t=3.7247e-03 (Dt=4.783e-06) : 0.80444 s (5.50 ms, 0 us, 694 us, 790626 us, 5.35 ms)
+[it= 778] hydro_fvm compute time t=3.7247e-03 (Dt=4.783e-06) : 0.79553 s (4.30 ms, 0 us, 78 us, 785190 us, 4.05 ms)
 [rank 0] iteration #779 - starting launcher [0][0] ...
 [rank 0] done
-[it= 779] hydro_fvm compute time t=3.7294e-03 (Dt=4.783e-06) : 0.80465 s (5.54 ms, 0 us, 708 us, 790399 us, 5.46 ms)
+[it= 779] hydro_fvm compute time t=3.7294e-03 (Dt=4.783e-06) : 0.79581 s (4.27 ms, 0 us, 78 us, 785545 us, 4.03 ms)
 [rank 0] iteration #780 - starting launcher [0][0] ...
 [rank 0] done
-[it= 780] hydro_fvm compute time t=3.7342e-03 (Dt=4.783e-06) : 0.80474 s (5.60 ms, 0 us, 691 us, 790616 us, 5.40 ms)
+[it= 780] hydro_fvm compute time t=3.7342e-03 (Dt=4.783e-06) : 0.79648 s (4.20 ms, 0 us, 80 us, 786248 us, 4.05 ms)
 [rank 0] iteration #781 - starting launcher [0][0] ...
 [rank 0] done
-[it= 781] hydro_fvm compute time t=3.7390e-03 (Dt=4.783e-06) : 0.80451 s (5.52 ms, 0 us, 693 us, 790615 us, 5.37 ms)
+[it= 781] hydro_fvm compute time t=3.7390e-03 (Dt=4.783e-06) : 0.79577 s (4.24 ms, 0 us, 80 us, 785526 us, 4.04 ms)
 [rank 0] iteration #782 - starting launcher [0][0] ...
 [rank 0] done
-[it= 782] hydro_fvm compute time t=3.7438e-03 (Dt=4.783e-06) : 0.80411 s (5.52 ms, 0 us, 709 us, 790191 us, 5.36 ms)
+[it= 782] hydro_fvm compute time t=3.7438e-03 (Dt=4.783e-06) : 0.79540 s (4.21 ms, 0 us, 79 us, 785189 us, 4.03 ms)
 [rank 0] iteration #783 - starting launcher [0][0] ...
 [rank 0] done
-[it= 783] hydro_fvm compute time t=3.7486e-03 (Dt=4.783e-06) : 0.80459 s (5.52 ms, 0 us, 707 us, 790700 us, 5.37 ms)
+[it= 783] hydro_fvm compute time t=3.7486e-03 (Dt=4.783e-06) : 0.79559 s (4.23 ms, 0 us, 79 us, 785349 us, 4.05 ms)
 [rank 0] iteration #784 - starting launcher [0][0] ...
 [rank 0] done
-[it= 784] hydro_fvm compute time t=3.7534e-03 (Dt=4.783e-06) : 0.80431 s (5.55 ms, 0 us, 679 us, 790386 us, 5.39 ms)
+[it= 784] hydro_fvm compute time t=3.7534e-03 (Dt=4.783e-06) : 0.79628 s (4.21 ms, 0 us, 79 us, 786059 us, 4.04 ms)
 [rank 0] iteration #785 - starting launcher [0][0] ...
 [rank 0] done
-[it= 785] hydro_fvm compute time t=3.7581e-03 (Dt=4.783e-06) : 0.80449 s (5.51 ms, 0 us, 708 us, 790605 us, 5.41 ms)
+[it= 785] hydro_fvm compute time t=3.7581e-03 (Dt=4.783e-06) : 0.79639 s (4.25 ms, 0 us, 78 us, 786138 us, 4.03 ms)
 [rank 0] iteration #786 - starting launcher [0][0] ...
 [rank 0] done
-[it= 786] hydro_fvm compute time t=3.7629e-03 (Dt=4.783e-06) : 0.80393 s (5.50 ms, 0 us, 685 us, 790083 us, 5.37 ms)
+[it= 786] hydro_fvm compute time t=3.7629e-03 (Dt=4.783e-06) : 0.79563 s (4.20 ms, 0 us, 79 us, 785428 us, 4.04 ms)
 [rank 0] iteration #787 - starting launcher [0][0] ...
 [rank 0] done
-[it= 787] hydro_fvm compute time t=3.7677e-03 (Dt=4.783e-06) : 0.80448 s (5.55 ms, 0 us, 683 us, 790573 us, 5.38 ms)
+[it= 787] hydro_fvm compute time t=3.7677e-03 (Dt=4.783e-06) : 0.79593 s (4.21 ms, 0 us, 77 us, 785693 us, 4.04 ms)
 [rank 0] iteration #788 - starting launcher [0][0] ...
 [rank 0] done
-[it= 788] hydro_fvm compute time t=3.7725e-03 (Dt=4.783e-06) : 0.80371 s (5.54 ms, 0 us, 701 us, 789828 us, 5.36 ms)
+[it= 788] hydro_fvm compute time t=3.7725e-03 (Dt=4.783e-06) : 0.79552 s (4.22 ms, 0 us, 80 us, 785300 us, 4.03 ms)
 [rank 0] iteration #789 - starting launcher [0][0] ...
 [rank 0] done
-[it= 789] hydro_fvm compute time t=3.7773e-03 (Dt=4.783e-06) : 0.80432 s (5.53 ms, 0 us, 696 us, 790435 us, 5.38 ms)
+[it= 789] hydro_fvm compute time t=3.7773e-03 (Dt=4.783e-06) : 0.79571 s (4.23 ms, 0 us, 78 us, 785508 us, 4.04 ms)
 [rank 0] iteration #790 - starting launcher [0][0] ...
 [rank 0] done
-[it= 790] hydro_fvm compute time t=3.7821e-03 (Dt=4.783e-06) : 0.80435 s (5.49 ms, 0 us, 704 us, 790504 us, 5.37 ms)
+[it= 790] hydro_fvm compute time t=3.7821e-03 (Dt=4.783e-06) : 0.79554 s (4.16 ms, 0 us, 81 us, 785360 us, 4.05 ms)
 [rank 0] iteration #791 - starting launcher [0][0] ...
 [rank 0] done
-[it= 791] hydro_fvm compute time t=3.7868e-03 (Dt=4.783e-06) : 0.80419 s (5.50 ms, 0 us, 691 us, 790347 us, 5.37 ms)
+[it= 791] hydro_fvm compute time t=3.7868e-03 (Dt=4.783e-06) : 0.79580 s (4.22 ms, 0 us, 79 us, 785576 us, 4.03 ms)
 [rank 0] iteration #792 - starting launcher [0][0] ...
 [rank 0] done
-[it= 792] hydro_fvm compute time t=3.7916e-03 (Dt=4.783e-06) : 0.80432 s (5.53 ms, 0 us, 696 us, 790449 us, 5.35 ms)
+[it= 792] hydro_fvm compute time t=3.7916e-03 (Dt=4.783e-06) : 0.79563 s (4.27 ms, 0 us, 81 us, 785350 us, 4.03 ms)
 [rank 0] iteration #793 - starting launcher [0][0] ...
 [rank 0] done
-[it= 793] hydro_fvm compute time t=3.7964e-03 (Dt=4.782e-06) : 0.80425 s (5.56 ms, 0 us, 705 us, 790359 us, 5.35 ms)
+[it= 793] hydro_fvm compute time t=3.7964e-03 (Dt=4.782e-06) : 0.79577 s (4.21 ms, 0 us, 87 us, 785549 us, 4.04 ms)
 [rank 0] iteration #794 - starting launcher [0][0] ...
 [rank 0] done
-[it= 794] hydro_fvm compute time t=3.8012e-03 (Dt=4.782e-06) : 0.80378 s (5.48 ms, 0 us, 684 us, 789990 us, 5.35 ms)
+[it= 794] hydro_fvm compute time t=3.8012e-03 (Dt=4.782e-06) : 0.79558 s (4.23 ms, 0 us, 79 us, 785361 us, 4.06 ms)
 [rank 0] iteration #795 - starting launcher [0][0] ...
 [rank 0] done
-[it= 795] hydro_fvm compute time t=3.8060e-03 (Dt=4.782e-06) : 0.80454 s (5.54 ms, 0 us, 693 us, 790669 us, 5.36 ms)
+[it= 795] hydro_fvm compute time t=3.8060e-03 (Dt=4.782e-06) : 0.79559 s (4.23 ms, 0 us, 79 us, 785354 us, 4.03 ms)
 [rank 0] iteration #796 - starting launcher [0][0] ...
 [rank 0] done
-[it= 796] hydro_fvm compute time t=3.8108e-03 (Dt=4.782e-06) : 0.80401 s (5.50 ms, 0 us, 706 us, 790192 us, 5.34 ms)
+[it= 796] hydro_fvm compute time t=3.8108e-03 (Dt=4.782e-06) : 0.79535 s (4.23 ms, 0 us, 78 us, 785117 us, 4.04 ms)
 [rank 0] iteration #797 - starting launcher [0][0] ...
 [rank 0] done
-[it= 797] hydro_fvm compute time t=3.8155e-03 (Dt=4.782e-06) : 0.80448 s (5.54 ms, 0 us, 709 us, 790541 us, 5.39 ms)
+[it= 797] hydro_fvm compute time t=3.8155e-03 (Dt=4.782e-06) : 0.79614 s (4.22 ms, 0 us, 78 us, 785908 us, 4.04 ms)
 [rank 0] iteration #798 - starting launcher [0][0] ...
 [rank 0] done
-[it= 798] hydro_fvm compute time t=3.8203e-03 (Dt=4.782e-06) : 0.80452 s (5.53 ms, 0 us, 701 us, 790679 us, 5.34 ms)
+[it= 798] hydro_fvm compute time t=3.8203e-03 (Dt=4.782e-06) : 0.79557 s (4.20 ms, 0 us, 79 us, 785381 us, 4.03 ms)
 [rank 0] iteration #799 - starting launcher [0][0] ...
 [rank 0] done
-[it= 799] hydro_fvm compute time t=3.8251e-03 (Dt=4.782e-06) : 0.80431 s (5.50 ms, 0 us, 706 us, 790475 us, 5.35 ms)
+[it= 799] hydro_fvm compute time t=3.8251e-03 (Dt=4.782e-06) : 0.79589 s (4.17 ms, 0 us, 81 us, 785717 us, 4.07 ms)
 [rank 0] iteration #800 - starting launcher [0][0] ...
 [rank 0] done
-[it= 800] hydro_fvm compute time t=3.8299e-03 (Dt=4.782e-06) : 0.80419 s (5.52 ms, 0 us, 685 us, 790362 us, 5.35 ms)
+[it= 800] hydro_fvm compute time t=3.8299e-03 (Dt=4.782e-06) : 0.79542 s (4.22 ms, 0 us, 78 us, 785187 us, 4.05 ms)
 [rank 0] iteration #801 - starting launcher [0][0] ...
 [rank 0] done
-[it= 801] hydro_fvm compute time t=3.8347e-03 (Dt=4.782e-06) : 0.80442 s (5.47 ms, 0 us, 691 us, 790648 us, 5.36 ms)
+[it= 801] hydro_fvm compute time t=3.8347e-03 (Dt=4.782e-06) : 0.79580 s (4.22 ms, 0 us, 78 us, 785577 us, 4.04 ms)
 [rank 0] iteration #802 - starting launcher [0][0] ...
 [rank 0] done
-[it= 802] hydro_fvm compute time t=3.8394e-03 (Dt=4.782e-06) : 0.80436 s (5.51 ms, 0 us, 694 us, 790517 us, 5.36 ms)
+[it= 802] hydro_fvm compute time t=3.8394e-03 (Dt=4.782e-06) : 0.79851 s (4.21 ms, 0 us, 78 us, 788306 us, 4.03 ms)
 [rank 0] iteration #803 - starting launcher [0][0] ...
 [rank 0] done
-[it= 803] hydro_fvm compute time t=3.8442e-03 (Dt=4.782e-06) : 0.80383 s (5.52 ms, 0 us, 689 us, 790014 us, 5.34 ms)
+[it= 803] hydro_fvm compute time t=3.8442e-03 (Dt=4.782e-06) : 0.79574 s (4.22 ms, 0 us, 79 us, 785523 us, 4.05 ms)
 [rank 0] iteration #804 - starting launcher [0][0] ...
 [rank 0] done
-[it= 804] hydro_fvm compute time t=3.8490e-03 (Dt=4.782e-06) : 0.80444 s (5.53 ms, 0 us, 682 us, 790616 us, 5.33 ms)
+[it= 804] hydro_fvm compute time t=3.8490e-03 (Dt=4.782e-06) : 0.79552 s (4.20 ms, 0 us, 78 us, 785327 us, 4.07 ms)
 [rank 0] iteration #805 - starting launcher [0][0] ...
 [rank 0] done
-[it= 805] hydro_fvm compute time t=3.8538e-03 (Dt=4.782e-06) : 0.80451 s (5.50 ms, 0 us, 696 us, 790663 us, 5.36 ms)
+[it= 805] hydro_fvm compute time t=3.8538e-03 (Dt=4.782e-06) : 0.79566 s (4.26 ms, 0 us, 78 us, 785438 us, 4.03 ms)
 [rank 0] iteration #806 - starting launcher [0][0] ...
 [rank 0] done
-[it= 806] hydro_fvm compute time t=3.8586e-03 (Dt=4.782e-06) : 0.80447 s (5.52 ms, 0 us, 689 us, 790584 us, 5.39 ms)
+[it= 806] hydro_fvm compute time t=3.8586e-03 (Dt=4.782e-06) : 0.79543 s (4.21 ms, 0 us, 78 us, 785208 us, 4.03 ms)
 [rank 0] iteration #807 - starting launcher [0][0] ...
 [rank 0] done
-[it= 807] hydro_fvm compute time t=3.8634e-03 (Dt=4.782e-06) : 0.80452 s (5.50 ms, 0 us, 705 us, 790701 us, 5.35 ms)
+[it= 807] hydro_fvm compute time t=3.8634e-03 (Dt=4.782e-06) : 0.79561 s (4.20 ms, 0 us, 81 us, 785383 us, 4.06 ms)
 [rank 0] iteration #808 - starting launcher [0][0] ...
 [rank 0] done
-[it= 808] hydro_fvm compute time t=3.8681e-03 (Dt=4.782e-06) : 0.80374 s (5.50 ms, 0 us, 669 us, 789915 us, 5.38 ms)
+[it= 808] hydro_fvm compute time t=3.8681e-03 (Dt=4.782e-06) : 0.79623 s (4.23 ms, 0 us, 78 us, 785998 us, 4.04 ms)
 [rank 0] iteration #809 - starting launcher [0][0] ...
 [rank 0] done
-[it= 809] hydro_fvm compute time t=3.8729e-03 (Dt=4.782e-06) : 0.80440 s (5.50 ms, 0 us, 678 us, 790596 us, 5.34 ms)
+[it= 809] hydro_fvm compute time t=3.8729e-03 (Dt=4.782e-06) : 0.79578 s (4.19 ms, 0 us, 78 us, 785609 us, 4.05 ms)
 [rank 0] iteration #810 - starting launcher [0][0] ...
 [rank 0] done
-[it= 810] hydro_fvm compute time t=3.8777e-03 (Dt=4.782e-06) : 0.80378 s (5.52 ms, 0 us, 703 us, 789925 us, 5.35 ms)
+[it= 810] hydro_fvm compute time t=3.8777e-03 (Dt=4.782e-06) : 0.79616 s (4.20 ms, 0 us, 77 us, 785951 us, 4.04 ms)
 [rank 0] iteration #811 - starting launcher [0][0] ...
 [rank 0] done
-[it= 811] hydro_fvm compute time t=3.8825e-03 (Dt=4.782e-06) : 0.80402 s (5.52 ms, 0 us, 698 us, 790137 us, 5.39 ms)
+[it= 811] hydro_fvm compute time t=3.8825e-03 (Dt=4.782e-06) : 0.79555 s (4.22 ms, 0 us, 78 us, 785333 us, 4.04 ms)
 [rank 0] iteration #812 - starting launcher [0][0] ...
 [rank 0] done
-[it= 812] hydro_fvm compute time t=3.8873e-03 (Dt=4.782e-06) : 0.80436 s (5.55 ms, 0 us, 699 us, 790476 us, 5.36 ms)
+[it= 812] hydro_fvm compute time t=3.8873e-03 (Dt=4.782e-06) : 0.79551 s (4.23 ms, 0 us, 78 us, 785291 us, 4.04 ms)
 [rank 0] iteration #813 - starting launcher [0][0] ...
 [rank 0] done
-[it= 813] hydro_fvm compute time t=3.8921e-03 (Dt=4.782e-06) : 0.80417 s (5.51 ms, 0 us, 698 us, 790342 us, 5.35 ms)
+[it= 813] hydro_fvm compute time t=3.8921e-03 (Dt=4.782e-06) : 0.79567 s (4.22 ms, 0 us, 78 us, 785441 us, 4.05 ms)
 [rank 0] iteration #814 - starting launcher [0][0] ...
 [rank 0] done
-[it= 814] hydro_fvm compute time t=3.8968e-03 (Dt=4.782e-06) : 0.80410 s (5.51 ms, 0 us, 689 us, 790248 us, 5.37 ms)
+[it= 814] hydro_fvm compute time t=3.8968e-03 (Dt=4.782e-06) : 0.79559 s (4.22 ms, 0 us, 78 us, 785390 us, 4.05 ms)
 [rank 0] iteration #815 - starting launcher [0][0] ...
 [rank 0] done
-[it= 815] hydro_fvm compute time t=3.9016e-03 (Dt=4.782e-06) : 0.80415 s (5.51 ms, 0 us, 681 us, 790341 us, 5.35 ms)
+[it= 815] hydro_fvm compute time t=3.9016e-03 (Dt=4.782e-06) : 0.79608 s (4.22 ms, 0 us, 79 us, 785838 us, 4.05 ms)
 [rank 0] iteration #816 - starting launcher [0][0] ...
 [rank 0] done
-[it= 816] hydro_fvm compute time t=3.9064e-03 (Dt=4.782e-06) : 0.80410 s (5.53 ms, 0 us, 688 us, 790237 us, 5.37 ms)
+[it= 816] hydro_fvm compute time t=3.9064e-03 (Dt=4.782e-06) : 0.79611 s (4.21 ms, 0 us, 78 us, 785918 us, 4.04 ms)
 [rank 0] iteration #817 - starting launcher [0][0] ...
 [rank 0] done
-[it= 817] hydro_fvm compute time t=3.9112e-03 (Dt=4.782e-06) : 0.80420 s (5.50 ms, 0 us, 644 us, 790420 us, 5.35 ms)
+[it= 817] hydro_fvm compute time t=3.9112e-03 (Dt=4.782e-06) : 0.79566 s (4.22 ms, 0 us, 78 us, 785473 us, 4.04 ms)
 [rank 0] iteration #818 - starting launcher [0][0] ...
 [rank 0] done
-[it= 818] hydro_fvm compute time t=3.9160e-03 (Dt=4.782e-06) : 0.80415 s (5.52 ms, 0 us, 701 us, 790319 us, 5.35 ms)
+[it= 818] hydro_fvm compute time t=3.9160e-03 (Dt=4.782e-06) : 0.79600 s (4.19 ms, 0 us, 82 us, 785754 us, 4.08 ms)
 [rank 0] iteration #819 - starting launcher [0][0] ...
 [rank 0] done
-[it= 819] hydro_fvm compute time t=3.9207e-03 (Dt=4.782e-06) : 0.80430 s (5.49 ms, 0 us, 694 us, 790472 us, 5.35 ms)
+[it= 819] hydro_fvm compute time t=3.9207e-03 (Dt=4.782e-06) : 0.79565 s (4.21 ms, 0 us, 82 us, 785459 us, 4.05 ms)
 [rank 0] iteration #820 - starting launcher [0][0] ...
 [rank 0] done
-[it= 820] hydro_fvm compute time t=3.9255e-03 (Dt=4.782e-06) : 0.80440 s (5.48 ms, 0 us, 693 us, 790570 us, 5.36 ms)
+[it= 820] hydro_fvm compute time t=3.9255e-03 (Dt=4.782e-06) : 0.79579 s (4.19 ms, 0 us, 77 us, 785602 us, 4.03 ms)
 [rank 0] iteration #821 - starting launcher [0][0] ...
 [rank 0] done
-[it= 821] hydro_fvm compute time t=3.9303e-03 (Dt=4.781e-06) : 0.80447 s (5.51 ms, 0 us, 688 us, 790637 us, 5.36 ms)
+[it= 821] hydro_fvm compute time t=3.9303e-03 (Dt=4.781e-06) : 0.79574 s (4.22 ms, 0 us, 77 us, 785552 us, 4.03 ms)
 [rank 0] iteration #822 - starting launcher [0][0] ...
 [rank 0] done
-[it= 822] hydro_fvm compute time t=3.9351e-03 (Dt=4.781e-06) : 0.80406 s (5.49 ms, 0 us, 711 us, 790208 us, 5.37 ms)
+[it= 822] hydro_fvm compute time t=3.9351e-03 (Dt=4.781e-06) : 0.79556 s (4.20 ms, 0 us, 79 us, 785376 us, 4.03 ms)
 [rank 0] iteration #823 - starting launcher [0][0] ...
 [rank 0] done
-[it= 823] hydro_fvm compute time t=3.9399e-03 (Dt=4.781e-06) : 0.80394 s (5.49 ms, 0 us, 704 us, 790121 us, 5.35 ms)
+[it= 823] hydro_fvm compute time t=3.9399e-03 (Dt=4.781e-06) : 0.79563 s (4.21 ms, 0 us, 79 us, 785417 us, 4.03 ms)
 [rank 0] iteration #824 - starting launcher [0][0] ...
 [rank 0] done
-[it= 824] hydro_fvm compute time t=3.9446e-03 (Dt=4.781e-06) : 0.80421 s (5.49 ms, 0 us, 701 us, 790382 us, 5.36 ms)
+[it= 824] hydro_fvm compute time t=3.9446e-03 (Dt=4.781e-06) : 0.79535 s (4.20 ms, 0 us, 78 us, 785157 us, 4.03 ms)
 [rank 0] iteration #825 - starting launcher [0][0] ...
 [rank 0] done
-[it= 825] hydro_fvm compute time t=3.9494e-03 (Dt=4.781e-06) : 0.80434 s (5.52 ms, 0 us, 710 us, 790458 us, 5.37 ms)
+[it= 825] hydro_fvm compute time t=3.9494e-03 (Dt=4.781e-06) : 0.79550 s (4.21 ms, 0 us, 78 us, 785275 us, 4.03 ms)
 [rank 0] iteration #826 - starting launcher [0][0] ...
 [rank 0] done
-[it= 826] hydro_fvm compute time t=3.9542e-03 (Dt=4.781e-06) : 0.80428 s (5.53 ms, 0 us, 699 us, 790404 us, 5.37 ms)
+[it= 826] hydro_fvm compute time t=3.9542e-03 (Dt=4.781e-06) : 0.79541 s (4.20 ms, 0 us, 79 us, 785203 us, 4.04 ms)
 [rank 0] iteration #827 - starting launcher [0][0] ...
 [rank 0] done
-[it= 827] hydro_fvm compute time t=3.9590e-03 (Dt=4.781e-06) : 0.80433 s (5.55 ms, 0 us, 697 us, 790439 us, 5.37 ms)
+[it= 827] hydro_fvm compute time t=3.9590e-03 (Dt=4.781e-06) : 0.79575 s (4.21 ms, 0 us, 78 us, 785593 us, 4.03 ms)
 [rank 0] iteration #828 - starting launcher [0][0] ...
 [rank 0] done
-[it= 828] hydro_fvm compute time t=3.9638e-03 (Dt=4.781e-06) : 0.80425 s (5.51 ms, 0 us, 685 us, 790423 us, 5.36 ms)
+[it= 828] hydro_fvm compute time t=3.9638e-03 (Dt=4.781e-06) : 0.79533 s (4.17 ms, 0 us, 77 us, 785200 us, 4.04 ms)
 [rank 0] iteration #829 - starting launcher [0][0] ...
 [rank 0] done
-[it= 829] hydro_fvm compute time t=3.9686e-03 (Dt=4.781e-06) : 0.80427 s (5.53 ms, 0 us, 685 us, 790429 us, 5.35 ms)
+[it= 829] hydro_fvm compute time t=3.9686e-03 (Dt=4.781e-06) : 0.79563 s (4.21 ms, 0 us, 78 us, 785395 us, 4.05 ms)
 [rank 0] iteration #830 - starting launcher [0][0] ...
 [rank 0] done
-[it= 830] hydro_fvm compute time t=3.9733e-03 (Dt=4.781e-06) : 0.80434 s (5.53 ms, 0 us, 704 us, 790477 us, 5.35 ms)
+[it= 830] hydro_fvm compute time t=3.9733e-03 (Dt=4.781e-06) : 0.79583 s (4.23 ms, 0 us, 79 us, 785597 us, 4.04 ms)
 [rank 0] iteration #831 - starting launcher [0][0] ...
 [rank 0] done
-[it= 831] hydro_fvm compute time t=3.9781e-03 (Dt=4.781e-06) : 0.80434 s (5.54 ms, 0 us, 698 us, 790460 us, 5.36 ms)
+[it= 831] hydro_fvm compute time t=3.9781e-03 (Dt=4.781e-06) : 0.79562 s (4.18 ms, 0 us, 79 us, 785463 us, 4.04 ms)
 [rank 0] iteration #832 - starting launcher [0][0] ...
 [rank 0] done
-[it= 832] hydro_fvm compute time t=3.9829e-03 (Dt=4.781e-06) : 0.80399 s (5.53 ms, 0 us, 672 us, 790153 us, 5.35 ms)
+[it= 832] hydro_fvm compute time t=3.9829e-03 (Dt=4.781e-06) : 0.79560 s (4.24 ms, 0 us, 78 us, 785312 us, 4.06 ms)
 [rank 0] iteration #833 - starting launcher [0][0] ...
 [rank 0] done
-[it= 833] hydro_fvm compute time t=3.9877e-03 (Dt=4.781e-06) : 0.80457 s (5.55 ms, 0 us, 699 us, 790681 us, 5.37 ms)
+[it= 833] hydro_fvm compute time t=3.9877e-03 (Dt=4.781e-06) : 0.79576 s (4.19 ms, 0 us, 78 us, 785584 us, 4.03 ms)
 [rank 0] iteration #834 - starting launcher [0][0] ...
 [rank 0] done
-[it= 834] hydro_fvm compute time t=3.9925e-03 (Dt=4.781e-06) : 0.80452 s (5.52 ms, 0 us, 704 us, 790659 us, 5.35 ms)
+[it= 834] hydro_fvm compute time t=3.9925e-03 (Dt=4.781e-06) : 0.79546 s (4.20 ms, 0 us, 78 us, 785258 us, 4.04 ms)
 [rank 0] iteration #835 - starting launcher [0][0] ...
 [rank 0] done
-[it= 835] hydro_fvm compute time t=3.9972e-03 (Dt=4.781e-06) : 0.80344 s (5.52 ms, 0 us, 674 us, 789608 us, 5.37 ms)
+[it= 835] hydro_fvm compute time t=3.9972e-03 (Dt=4.781e-06) : 0.79589 s (4.23 ms, 0 us, 79 us, 785628 us, 4.06 ms)
 [rank 0] iteration #836 - starting launcher [0][0] ...
 [rank 0] done
-[it= 836] hydro_fvm compute time t=4.0020e-03 (Dt=4.781e-06) : 0.80387 s (5.47 ms, 0 us, 690 us, 790074 us, 5.35 ms)
+[it= 836] hydro_fvm compute time t=4.0020e-03 (Dt=4.781e-06) : 0.79555 s (4.26 ms, 0 us, 78 us, 785322 us, 4.04 ms)
 [rank 0] iteration #837 - starting launcher [0][0] ...
 [rank 0] done
-[it= 837] hydro_fvm compute time t=4.0068e-03 (Dt=4.781e-06) : 0.80454 s (5.50 ms, 0 us, 701 us, 790702 us, 5.36 ms)
+[it= 837] hydro_fvm compute time t=4.0068e-03 (Dt=4.781e-06) : 0.79681 s (4.30 ms, 0 us, 79 us, 786454 us, 4.04 ms)
 [rank 0] iteration #838 - starting launcher [0][0] ...
 [rank 0] done
-[it= 838] hydro_fvm compute time t=4.0116e-03 (Dt=4.781e-06) : 0.80394 s (5.52 ms, 0 us, 702 us, 790068 us, 5.37 ms)
+[it= 838] hydro_fvm compute time t=4.0116e-03 (Dt=4.781e-06) : 0.79655 s (4.18 ms, 0 us, 78 us, 786400 us, 4.03 ms)
 [rank 0] iteration #839 - starting launcher [0][0] ...
 [rank 0] done
-[it= 839] hydro_fvm compute time t=4.0164e-03 (Dt=4.781e-06) : 0.80431 s (5.55 ms, 0 us, 674 us, 790454 us, 5.35 ms)
+[it= 839] hydro_fvm compute time t=4.0164e-03 (Dt=4.781e-06) : 0.79563 s (4.09 ms, 0 us, 77 us, 785532 us, 4.03 ms)
 [rank 0] iteration #840 - starting launcher [0][0] ...
 [rank 0] done
-[it= 840] hydro_fvm compute time t=4.0211e-03 (Dt=4.781e-06) : 0.80445 s (5.53 ms, 0 us, 665 us, 790619 us, 5.36 ms)
+[it= 840] hydro_fvm compute time t=4.0211e-03 (Dt=4.781e-06) : 0.79543 s (4.07 ms, 0 us, 78 us, 785269 us, 4.08 ms)
 [rank 0] iteration #841 - starting launcher [0][0] ...
 [rank 0] done
-[it= 841] hydro_fvm compute time t=4.0259e-03 (Dt=4.781e-06) : 0.80459 s (5.52 ms, 0 us, 703 us, 790714 us, 5.38 ms)
+[it= 841] hydro_fvm compute time t=4.0259e-03 (Dt=4.781e-06) : 0.79579 s (4.05 ms, 0 us, 78 us, 785750 us, 4.02 ms)
 [rank 0] iteration #842 - starting launcher [0][0] ...
 [rank 0] done
-[it= 842] hydro_fvm compute time t=4.0307e-03 (Dt=4.781e-06) : 0.80384 s (5.50 ms, 0 us, 687 us, 790014 us, 5.36 ms)
+[it= 842] hydro_fvm compute time t=4.0307e-03 (Dt=4.781e-06) : 0.79679 s (4.06 ms, 0 us, 78 us, 786755 us, 4.01 ms)
 [rank 0] iteration #843 - starting launcher [0][0] ...
 [rank 0] done
-[it= 843] hydro_fvm compute time t=4.0355e-03 (Dt=4.781e-06) : 0.80429 s (5.53 ms, 0 us, 695 us, 790371 us, 5.39 ms)
+[it= 843] hydro_fvm compute time t=4.0355e-03 (Dt=4.781e-06) : 0.79576 s (4.07 ms, 0 us, 78 us, 785698 us, 4.03 ms)
 [rank 0] iteration #844 - starting launcher [0][0] ...
 [rank 0] done
-[it= 844] hydro_fvm compute time t=4.0403e-03 (Dt=4.781e-06) : 0.80389 s (5.57 ms, 0 us, 702 us, 789980 us, 5.36 ms)
+[it= 844] hydro_fvm compute time t=4.0403e-03 (Dt=4.781e-06) : 0.79533 s (4.08 ms, 0 us, 78 us, 785275 us, 4.02 ms)
 [rank 0] iteration #845 - starting launcher [0][0] ...
 [rank 0] done
-[it= 845] hydro_fvm compute time t=4.0450e-03 (Dt=4.781e-06) : 0.80421 s (5.51 ms, 0 us, 693 us, 790361 us, 5.36 ms)
+[it= 845] hydro_fvm compute time t=4.0450e-03 (Dt=4.781e-06) : 0.79559 s (4.05 ms, 0 us, 77 us, 785554 us, 4.02 ms)
 [rank 0] iteration #846 - starting launcher [0][0] ...
 [rank 0] done
-[it= 846] hydro_fvm compute time t=4.0498e-03 (Dt=4.781e-06) : 0.80410 s (5.49 ms, 0 us, 698 us, 790282 us, 5.35 ms)
+[it= 846] hydro_fvm compute time t=4.0498e-03 (Dt=4.781e-06) : 0.79631 s (4.09 ms, 0 us, 78 us, 786239 us, 4.03 ms)
 [rank 0] iteration #847 - starting launcher [0][0] ...
 [rank 0] done
-[it= 847] hydro_fvm compute time t=4.0546e-03 (Dt=4.781e-06) : 0.80401 s (5.50 ms, 0 us, 698 us, 790186 us, 5.34 ms)
+[it= 847] hydro_fvm compute time t=4.0546e-03 (Dt=4.781e-06) : 0.79548 s (4.02 ms, 0 us, 77 us, 785461 us, 4.04 ms)
 [rank 0] iteration #848 - starting launcher [0][0] ...
 [rank 0] done
-[it= 848] hydro_fvm compute time t=4.0594e-03 (Dt=4.780e-06) : 0.80371 s (5.48 ms, 0 us, 707 us, 789831 us, 5.38 ms)
+[it= 848] hydro_fvm compute time t=4.0594e-03 (Dt=4.780e-06) : 0.79511 s (4.06 ms, 0 us, 78 us, 785043 us, 4.03 ms)
 [rank 0] iteration #849 - starting launcher [0][0] ...
 [rank 0] done
-[it= 849] hydro_fvm compute time t=4.0642e-03 (Dt=4.780e-06) : 0.80415 s (5.54 ms, 0 us, 692 us, 789948 us, 5.57 ms)
+[it= 849] hydro_fvm compute time t=4.0642e-03 (Dt=4.780e-06) : 0.79552 s (4.07 ms, 0 us, 77 us, 785477 us, 4.01 ms)
 [rank 0] iteration #850 - starting launcher [0][0] ...
 [rank 0] done
-[it= 850] hydro_fvm compute time t=4.0690e-03 (Dt=4.780e-06) : 0.80392 s (5.47 ms, 0 us, 702 us, 790104 us, 5.36 ms)
+[it= 850] hydro_fvm compute time t=4.0690e-03 (Dt=4.780e-06) : 0.79511 s (4.05 ms, 0 us, 77 us, 785077 us, 4.02 ms)
 [rank 0] iteration #851 - starting launcher [0][0] ...
 [rank 0] done
-[it= 851] hydro_fvm compute time t=4.0737e-03 (Dt=4.780e-06) : 0.80396 s (5.53 ms, 0 us, 703 us, 790097 us, 5.35 ms)
+[it= 851] hydro_fvm compute time t=4.0737e-03 (Dt=4.780e-06) : 0.79575 s (4.09 ms, 0 us, 79 us, 785653 us, 4.03 ms)
 [rank 0] iteration #852 - starting launcher [0][0] ...
 [rank 0] done
-[it= 852] hydro_fvm compute time t=4.0785e-03 (Dt=4.780e-06) : 0.80402 s (5.51 ms, 0 us, 700 us, 790167 us, 5.37 ms)
+[it= 852] hydro_fvm compute time t=4.0785e-03 (Dt=4.780e-06) : 0.79552 s (4.06 ms, 0 us, 76 us, 785470 us, 4.02 ms)
 [rank 0] iteration #853 - starting launcher [0][0] ...
 [rank 0] done
-[it= 853] hydro_fvm compute time t=4.0833e-03 (Dt=4.780e-06) : 0.80463 s (5.51 ms, 0 us, 700 us, 790407 us, 5.48 ms)
+[it= 853] hydro_fvm compute time t=4.0833e-03 (Dt=4.780e-06) : 0.79555 s (4.07 ms, 0 us, 77 us, 785495 us, 4.03 ms)
 [rank 0] iteration #854 - starting launcher [0][0] ...
 [rank 0] done
-[it= 854] hydro_fvm compute time t=4.0881e-03 (Dt=4.780e-06) : 0.80393 s (5.60 ms, 0 us, 691 us, 789870 us, 5.35 ms)
+[it= 854] hydro_fvm compute time t=4.0881e-03 (Dt=4.780e-06) : 0.79529 s (4.06 ms, 0 us, 78 us, 785172 us, 4.03 ms)
 [rank 0] iteration #855 - starting launcher [0][0] ...
 [rank 0] done
-[it= 855] hydro_fvm compute time t=4.0929e-03 (Dt=4.780e-06) : 0.80449 s (5.52 ms, 0 us, 701 us, 790574 us, 5.38 ms)
+[it= 855] hydro_fvm compute time t=4.0929e-03 (Dt=4.780e-06) : 0.79547 s (4.09 ms, 0 us, 79 us, 785418 us, 4.00 ms)
 [rank 0] iteration #856 - starting launcher [0][0] ...
 [rank 0] done
-[it= 856] hydro_fvm compute time t=4.0976e-03 (Dt=4.780e-06) : 0.80412 s (5.54 ms, 0 us, 693 us, 790230 us, 5.34 ms)
+[it= 856] hydro_fvm compute time t=4.0976e-03 (Dt=4.780e-06) : 0.79529 s (4.08 ms, 0 us, 82 us, 785221 us, 4.02 ms)
 [rank 0] iteration #857 - starting launcher [0][0] ...
 [rank 0] done
-[it= 857] hydro_fvm compute time t=4.1024e-03 (Dt=4.780e-06) : 0.80456 s (5.52 ms, 0 us, 705 us, 790679 us, 5.37 ms)
+[it= 857] hydro_fvm compute time t=4.1024e-03 (Dt=4.780e-06) : 0.79575 s (4.05 ms, 0 us, 78 us, 785705 us, 4.03 ms)
 [rank 0] iteration #858 - starting launcher [0][0] ...
 [rank 0] done
-[it= 858] hydro_fvm compute time t=4.1072e-03 (Dt=4.780e-06) : 0.80431 s (5.54 ms, 0 us, 662 us, 790431 us, 5.38 ms)
+[it= 858] hydro_fvm compute time t=4.1072e-03 (Dt=4.780e-06) : 0.79536 s (4.05 ms, 0 us, 81 us, 785323 us, 4.02 ms)
 [rank 0] iteration #859 - starting launcher [0][0] ...
 [rank 0] done
-[it= 859] hydro_fvm compute time t=4.1120e-03 (Dt=4.780e-06) : 0.80423 s (5.54 ms, 0 us, 678 us, 790364 us, 5.38 ms)
+[it= 859] hydro_fvm compute time t=4.1120e-03 (Dt=4.780e-06) : 0.79564 s (4.06 ms, 0 us, 78 us, 785583 us, 4.03 ms)
 [rank 0] iteration #860 - starting launcher [0][0] ...
 [rank 0] done
-[it= 860] hydro_fvm compute time t=4.1168e-03 (Dt=4.780e-06) : 0.80419 s (5.50 ms, 0 us, 689 us, 790365 us, 5.36 ms)
+[it= 860] hydro_fvm compute time t=4.1168e-03 (Dt=4.780e-06) : 0.79577 s (4.07 ms, 0 us, 81 us, 785612 us, 4.07 ms)
 [rank 0] iteration #861 - starting launcher [0][0] ...
 [rank 0] done
-[it= 861] hydro_fvm compute time t=4.1215e-03 (Dt=4.780e-06) : 0.80391 s (5.51 ms, 0 us, 701 us, 790060 us, 5.36 ms)
+[it= 861] hydro_fvm compute time t=4.1215e-03 (Dt=4.780e-06) : 0.79558 s (4.12 ms, 0 us, 78 us, 785481 us, 4.05 ms)
 [rank 0] iteration #862 - starting launcher [0][0] ...
 [rank 0] done
-[it= 862] hydro_fvm compute time t=4.1263e-03 (Dt=4.780e-06) : 0.80407 s (5.51 ms, 0 us, 681 us, 790250 us, 5.35 ms)
+[it= 862] hydro_fvm compute time t=4.1263e-03 (Dt=4.780e-06) : 0.79549 s (4.20 ms, 0 us, 78 us, 785278 us, 4.06 ms)
 [rank 0] iteration #863 - starting launcher [0][0] ...
 [rank 0] done
-[it= 863] hydro_fvm compute time t=4.1311e-03 (Dt=4.780e-06) : 0.80436 s (5.51 ms, 0 us, 708 us, 790490 us, 5.37 ms)
+[it= 863] hydro_fvm compute time t=4.1311e-03 (Dt=4.780e-06) : 0.79596 s (4.20 ms, 0 us, 86 us, 785719 us, 4.04 ms)
 [rank 0] iteration #864 - starting launcher [0][0] ...
 [rank 0] done
-[it= 864] hydro_fvm compute time t=4.1359e-03 (Dt=4.780e-06) : 0.80407 s (5.51 ms, 0 us, 703 us, 790235 us, 5.35 ms)
+[it= 864] hydro_fvm compute time t=4.1359e-03 (Dt=4.780e-06) : 0.79567 s (4.35 ms, 0 us, 81 us, 785295 us, 4.05 ms)
 [rank 0] iteration #865 - starting launcher [0][0] ...
 [rank 0] done
-[it= 865] hydro_fvm compute time t=4.1407e-03 (Dt=4.780e-06) : 0.80451 s (5.52 ms, 0 us, 686 us, 790673 us, 5.36 ms)
+[it= 865] hydro_fvm compute time t=4.1407e-03 (Dt=4.780e-06) : 0.79562 s (4.21 ms, 0 us, 80 us, 785404 us, 4.03 ms)
 [rank 0] iteration #866 - starting launcher [0][0] ...
 [rank 0] done
-[it= 866] hydro_fvm compute time t=4.1454e-03 (Dt=4.780e-06) : 0.80399 s (5.53 ms, 0 us, 684 us, 790118 us, 5.37 ms)
+[it= 866] hydro_fvm compute time t=4.1454e-03 (Dt=4.780e-06) : 0.79539 s (4.21 ms, 0 us, 80 us, 785169 us, 4.04 ms)
 [rank 0] iteration #867 - starting launcher [0][0] ...
 [rank 0] done
-[it= 867] hydro_fvm compute time t=4.1502e-03 (Dt=4.780e-06) : 0.80427 s (5.51 ms, 0 us, 685 us, 790436 us, 5.37 ms)
+[it= 867] hydro_fvm compute time t=4.1502e-03 (Dt=4.780e-06) : 0.79591 s (4.22 ms, 0 us, 81 us, 785656 us, 4.04 ms)
 [rank 0] iteration #868 - starting launcher [0][0] ...
 [rank 0] done
-[it= 868] hydro_fvm compute time t=4.1550e-03 (Dt=4.780e-06) : 0.80384 s (5.52 ms, 0 us, 683 us, 789984 us, 5.37 ms)
+[it= 868] hydro_fvm compute time t=4.1550e-03 (Dt=4.780e-06) : 0.79538 s (4.23 ms, 0 us, 80 us, 785123 us, 4.04 ms)
 [rank 0] iteration #869 - starting launcher [0][0] ...
 [rank 0] done
-[it= 869] hydro_fvm compute time t=4.1598e-03 (Dt=4.780e-06) : 0.80448 s (5.53 ms, 0 us, 696 us, 790621 us, 5.37 ms)
+[it= 869] hydro_fvm compute time t=4.1598e-03 (Dt=4.780e-06) : 0.79568 s (4.22 ms, 0 us, 81 us, 785444 us, 4.04 ms)
 [rank 0] iteration #870 - starting launcher [0][0] ...
 [rank 0] done
-[it= 870] hydro_fvm compute time t=4.1646e-03 (Dt=4.780e-06) : 0.80436 s (5.55 ms, 0 us, 686 us, 790490 us, 5.35 ms)
+[it= 870] hydro_fvm compute time t=4.1646e-03 (Dt=4.780e-06) : 0.79557 s (4.20 ms, 0 us, 80 us, 785334 us, 4.06 ms)
 [rank 0] iteration #871 - starting launcher [0][0] ...
 [rank 0] done
-[it= 871] hydro_fvm compute time t=4.1693e-03 (Dt=4.780e-06) : 0.80431 s (5.53 ms, 0 us, 707 us, 790422 us, 5.38 ms)
+[it= 871] hydro_fvm compute time t=4.1693e-03 (Dt=4.780e-06) : 0.79564 s (4.19 ms, 0 us, 81 us, 785414 us, 4.06 ms)
 [rank 0] iteration #872 - starting launcher [0][0] ...
 [rank 0] done
-[it= 872] hydro_fvm compute time t=4.1741e-03 (Dt=4.780e-06) : 0.80381 s (5.51 ms, 0 us, 671 us, 789985 us, 5.36 ms)
+[it= 872] hydro_fvm compute time t=4.1741e-03 (Dt=4.780e-06) : 0.79665 s (4.24 ms, 0 us, 79 us, 786431 us, 4.02 ms)
 [rank 0] iteration #873 - starting launcher [0][0] ...
 [rank 0] done
-[it= 873] hydro_fvm compute time t=4.1789e-03 (Dt=4.780e-06) : 0.80407 s (5.52 ms, 0 us, 704 us, 790206 us, 5.37 ms)
+[it= 873] hydro_fvm compute time t=4.1789e-03 (Dt=4.780e-06) : 0.79566 s (4.21 ms, 0 us, 78 us, 785456 us, 4.07 ms)
 [rank 0] iteration #874 - starting launcher [0][0] ...
 [rank 0] done
-[it= 874] hydro_fvm compute time t=4.1837e-03 (Dt=4.780e-06) : 0.80408 s (5.54 ms, 0 us, 700 us, 790220 us, 5.34 ms)
+[it= 874] hydro_fvm compute time t=4.1837e-03 (Dt=4.780e-06) : 0.79621 s (4.21 ms, 0 us, 79 us, 786033 us, 4.03 ms)
 [rank 0] iteration #875 - starting launcher [0][0] ...
 [rank 0] done
-[it= 875] hydro_fvm compute time t=4.1885e-03 (Dt=4.779e-06) : 0.80436 s (5.49 ms, 0 us, 690 us, 790522 us, 5.38 ms)
+[it= 875] hydro_fvm compute time t=4.1885e-03 (Dt=4.779e-06) : 0.79613 s (4.22 ms, 0 us, 79 us, 785862 us, 4.06 ms)
 [rank 0] iteration #876 - starting launcher [0][0] ...
 [rank 0] done
-[it= 876] hydro_fvm compute time t=4.1932e-03 (Dt=4.779e-06) : 0.80439 s (5.52 ms, 0 us, 700 us, 790561 us, 5.34 ms)
+[it= 876] hydro_fvm compute time t=4.1932e-03 (Dt=4.779e-06) : 0.79532 s (4.20 ms, 0 us, 78 us, 785131 us, 4.05 ms)
 [rank 0] iteration #877 - starting launcher [0][0] ...
 [rank 0] done
-[it= 877] hydro_fvm compute time t=4.1980e-03 (Dt=4.779e-06) : 0.80436 s (5.50 ms, 0 us, 650 us, 790574 us, 5.37 ms)
+[it= 877] hydro_fvm compute time t=4.1980e-03 (Dt=4.779e-06) : 0.79566 s (4.22 ms, 0 us, 78 us, 785445 us, 4.03 ms)
 [rank 0] iteration #878 - starting launcher [0][0] ...
 [rank 0] done
-[it= 878] hydro_fvm compute time t=4.2028e-03 (Dt=4.779e-06) : 0.80451 s (5.49 ms, 0 us, 698 us, 790673 us, 5.38 ms)
+[it= 878] hydro_fvm compute time t=4.2028e-03 (Dt=4.779e-06) : 0.79551 s (4.20 ms, 0 us, 78 us, 785302 us, 4.04 ms)
 [rank 0] iteration #879 - starting launcher [0][0] ...
 [rank 0] done
-[it= 879] hydro_fvm compute time t=4.2076e-03 (Dt=4.779e-06) : 0.80422 s (5.47 ms, 0 us, 710 us, 790382 us, 5.38 ms)
+[it= 879] hydro_fvm compute time t=4.2076e-03 (Dt=4.779e-06) : 0.79569 s (4.22 ms, 0 us, 78 us, 785459 us, 4.04 ms)
 [rank 0] iteration #880 - starting launcher [0][0] ...
 [rank 0] done
-[it= 880] hydro_fvm compute time t=4.2123e-03 (Dt=4.779e-06) : 0.80403 s (5.52 ms, 0 us, 710 us, 790160 us, 5.36 ms)
+[it= 880] hydro_fvm compute time t=4.2123e-03 (Dt=4.779e-06) : 0.79544 s (4.21 ms, 0 us, 80 us, 785232 us, 4.03 ms)
 [rank 0] iteration #881 - starting launcher [0][0] ...
 [rank 0] done
-[it= 881] hydro_fvm compute time t=4.2171e-03 (Dt=4.779e-06) : 0.80424 s (5.53 ms, 0 us, 697 us, 790378 us, 5.36 ms)
+[it= 881] hydro_fvm compute time t=4.2171e-03 (Dt=4.779e-06) : 0.79582 s (4.20 ms, 0 us, 80 us, 785627 us, 4.03 ms)
 [rank 0] iteration #882 - starting launcher [0][0] ...
 [rank 0] done
-[it= 882] hydro_fvm compute time t=4.2219e-03 (Dt=4.779e-06) : 0.80411 s (5.54 ms, 0 us, 704 us, 790237 us, 5.35 ms)
+[it= 882] hydro_fvm compute time t=4.2219e-03 (Dt=4.779e-06) : 0.79554 s (4.23 ms, 0 us, 79 us, 785288 us, 4.04 ms)
 [rank 0] iteration #883 - starting launcher [0][0] ...
 [rank 0] done
-[it= 883] hydro_fvm compute time t=4.2267e-03 (Dt=4.779e-06) : 0.80442 s (5.52 ms, 0 us, 700 us, 790538 us, 5.39 ms)
+[it= 883] hydro_fvm compute time t=4.2267e-03 (Dt=4.779e-06) : 0.79559 s (4.20 ms, 0 us, 79 us, 785393 us, 4.03 ms)
 [rank 0] iteration #884 - starting launcher [0][0] ...
 [rank 0] done
-[it= 884] hydro_fvm compute time t=4.2315e-03 (Dt=4.779e-06) : 0.80381 s (5.54 ms, 0 us, 670 us, 789966 us, 5.35 ms)
+[it= 884] hydro_fvm compute time t=4.2315e-03 (Dt=4.779e-06) : 0.79562 s (4.33 ms, 0 us, 82 us, 785302 us, 4.05 ms)
 [rank 0] iteration #885 - starting launcher [0][0] ...
 [rank 0] done
-[it= 885] hydro_fvm compute time t=4.2362e-03 (Dt=4.779e-06) : 0.80416 s (5.48 ms, 0 us, 701 us, 790343 us, 5.37 ms)
+[it= 885] hydro_fvm compute time t=4.2362e-03 (Dt=4.779e-06) : 0.79556 s (4.20 ms, 0 us, 79 us, 785371 us, 4.06 ms)
 [rank 0] iteration #886 - starting launcher [0][0] ...
 [rank 0] done
-[it= 886] hydro_fvm compute time t=4.2410e-03 (Dt=4.779e-06) : 0.80439 s (5.52 ms, 0 us, 679 us, 790554 us, 5.35 ms)
+[it= 886] hydro_fvm compute time t=4.2410e-03 (Dt=4.779e-06) : 0.79581 s (4.16 ms, 0 us, 78 us, 785624 us, 4.04 ms)
 [rank 0] iteration #887 - starting launcher [0][0] ...
 [rank 0] done
-[it= 887] hydro_fvm compute time t=4.2458e-03 (Dt=4.779e-06) : 0.80458 s (5.52 ms, 0 us, 696 us, 790705 us, 5.38 ms)
+[it= 887] hydro_fvm compute time t=4.2458e-03 (Dt=4.779e-06) : 0.79589 s (4.19 ms, 0 us, 82 us, 785688 us, 4.05 ms)
 [rank 0] iteration #888 - starting launcher [0][0] ...
 [rank 0] done
-[it= 888] hydro_fvm compute time t=4.2506e-03 (Dt=4.779e-06) : 0.80404 s (5.54 ms, 0 us, 689 us, 790164 us, 5.36 ms)
+[it= 888] hydro_fvm compute time t=4.2506e-03 (Dt=4.779e-06) : 0.79542 s (4.21 ms, 0 us, 79 us, 785212 us, 4.04 ms)
 [rank 0] iteration #889 - starting launcher [0][0] ...
 [rank 0] done
-[it= 889] hydro_fvm compute time t=4.2554e-03 (Dt=4.779e-06) : 0.80429 s (5.52 ms, 0 us, 685 us, 790387 us, 5.38 ms)
+[it= 889] hydro_fvm compute time t=4.2554e-03 (Dt=4.779e-06) : 0.79714 s (4.33 ms, 0 us, 77 us, 786813 us, 4.04 ms)
 [rank 0] iteration #890 - starting launcher [0][0] ...
 [rank 0] done
-[it= 890] hydro_fvm compute time t=4.2601e-03 (Dt=4.779e-06) : 0.80434 s (5.55 ms, 0 us, 669 us, 790477 us, 5.37 ms)
+[it= 890] hydro_fvm compute time t=4.2601e-03 (Dt=4.779e-06) : 0.79532 s (4.20 ms, 0 us, 79 us, 785135 us, 4.02 ms)
 [rank 0] iteration #891 - starting launcher [0][0] ...
 [rank 0] done
-[it= 891] hydro_fvm compute time t=4.2649e-03 (Dt=4.779e-06) : 0.80410 s (5.50 ms, 0 us, 702 us, 790273 us, 5.35 ms)
+[it= 891] hydro_fvm compute time t=4.2649e-03 (Dt=4.779e-06) : 0.79581 s (4.28 ms, 0 us, 78 us, 785530 us, 4.04 ms)
 [rank 0] iteration #892 - starting launcher [0][0] ...
 [rank 0] done
-[it= 892] hydro_fvm compute time t=4.2697e-03 (Dt=4.779e-06) : 0.80382 s (5.49 ms, 0 us, 699 us, 789987 us, 5.35 ms)
+[it= 892] hydro_fvm compute time t=4.2697e-03 (Dt=4.779e-06) : 0.79834 s (4.20 ms, 0 us, 79 us, 788117 us, 4.05 ms)
 [rank 0] iteration #893 - starting launcher [0][0] ...
 [rank 0] done
-[it= 893] hydro_fvm compute time t=4.2745e-03 (Dt=4.779e-06) : 0.80396 s (5.51 ms, 0 us, 702 us, 790111 us, 5.36 ms)
+[it= 893] hydro_fvm compute time t=4.2745e-03 (Dt=4.779e-06) : 0.79559 s (4.22 ms, 0 us, 80 us, 785371 us, 4.03 ms)
 [rank 0] iteration #894 - starting launcher [0][0] ...
 [rank 0] done
-[it= 894] hydro_fvm compute time t=4.2793e-03 (Dt=4.779e-06) : 0.80417 s (5.51 ms, 0 us, 699 us, 790263 us, 5.39 ms)
+[it= 894] hydro_fvm compute time t=4.2793e-03 (Dt=4.779e-06) : 0.79537 s (4.22 ms, 0 us, 79 us, 785154 us, 4.04 ms)
 [rank 0] iteration #895 - starting launcher [0][0] ...
 [rank 0] done
-[it= 895] hydro_fvm compute time t=4.2840e-03 (Dt=4.779e-06) : 0.80421 s (5.52 ms, 0 us, 693 us, 790358 us, 5.36 ms)
+[it= 895] hydro_fvm compute time t=4.2840e-03 (Dt=4.779e-06) : 0.79578 s (4.24 ms, 0 us, 79 us, 785553 us, 4.02 ms)
 [rank 0] iteration #896 - starting launcher [0][0] ...
 [rank 0] done
-[it= 896] hydro_fvm compute time t=4.2888e-03 (Dt=4.779e-06) : 0.80385 s (5.52 ms, 0 us, 709 us, 790013 us, 5.33 ms)
+[it= 896] hydro_fvm compute time t=4.2888e-03 (Dt=4.779e-06) : 0.79543 s (4.21 ms, 0 us, 78 us, 785254 us, 4.04 ms)
 [rank 0] iteration #897 - starting launcher [0][0] ...
 [rank 0] done
-[it= 897] hydro_fvm compute time t=4.2936e-03 (Dt=4.779e-06) : 0.80384 s (5.48 ms, 0 us, 692 us, 790017 us, 5.36 ms)
+[it= 897] hydro_fvm compute time t=4.2936e-03 (Dt=4.779e-06) : 0.79561 s (4.20 ms, 0 us, 78 us, 785417 us, 4.06 ms)
 [rank 0] iteration #898 - starting launcher [0][0] ...
 [rank 0] done
-[it= 898] hydro_fvm compute time t=4.2984e-03 (Dt=4.779e-06) : 0.80438 s (5.48 ms, 0 us, 698 us, 790569 us, 5.36 ms)
+[it= 898] hydro_fvm compute time t=4.2984e-03 (Dt=4.779e-06) : 0.79551 s (4.22 ms, 0 us, 80 us, 785319 us, 4.04 ms)
 [rank 0] iteration #899 - starting launcher [0][0] ...
 [rank 0] done
-[it= 899] hydro_fvm compute time t=4.3031e-03 (Dt=4.779e-06) : 0.80412 s (5.51 ms, 0 us, 684 us, 790301 us, 5.38 ms)
+[it= 899] hydro_fvm compute time t=4.3031e-03 (Dt=4.779e-06) : 0.79556 s (4.21 ms, 0 us, 79 us, 785327 us, 4.06 ms)
 [rank 0] iteration #900 - starting launcher [0][0] ...
 [rank 0] done
-[it= 900] hydro_fvm compute time t=4.3079e-03 (Dt=4.779e-06) : 0.80437 s (5.49 ms, 0 us, 698 us, 790561 us, 5.35 ms)
+[it= 900] hydro_fvm compute time t=4.3079e-03 (Dt=4.779e-06) : 0.79554 s (4.23 ms, 0 us, 78 us, 785308 us, 4.04 ms)
 [rank 0] iteration #901 - starting launcher [0][0] ...
 [rank 0] done
-[it= 901] hydro_fvm compute time t=4.3127e-03 (Dt=4.779e-06) : 0.80396 s (5.50 ms, 0 us, 687 us, 790157 us, 5.34 ms)
+[it= 901] hydro_fvm compute time t=4.3127e-03 (Dt=4.779e-06) : 0.79559 s (4.26 ms, 0 us, 79 us, 785324 us, 4.05 ms)
 [rank 0] iteration #902 - starting launcher [0][0] ...
 [rank 0] done
-[it= 902] hydro_fvm compute time t=4.3175e-03 (Dt=4.778e-06) : 0.80395 s (5.53 ms, 0 us, 690 us, 790089 us, 5.36 ms)
+[it= 902] hydro_fvm compute time t=4.3175e-03 (Dt=4.778e-06) : 0.79614 s (4.19 ms, 0 us, 82 us, 785962 us, 4.04 ms)
 [rank 0] iteration #903 - starting launcher [0][0] ...
 [rank 0] done
-[it= 903] hydro_fvm compute time t=4.3223e-03 (Dt=4.778e-06) : 0.80453 s (5.51 ms, 0 us, 687 us, 790689 us, 5.36 ms)
+[it= 903] hydro_fvm compute time t=4.3223e-03 (Dt=4.778e-06) : 0.79573 s (4.20 ms, 0 us, 78 us, 785541 us, 4.03 ms)
 [rank 0] iteration #904 - starting launcher [0][0] ...
 [rank 0] done
-[it= 904] hydro_fvm compute time t=4.3270e-03 (Dt=4.778e-06) : 0.80398 s (5.51 ms, 0 us, 698 us, 790119 us, 5.37 ms)
+[it= 904] hydro_fvm compute time t=4.3270e-03 (Dt=4.778e-06) : 0.79533 s (4.21 ms, 0 us, 78 us, 785116 us, 4.04 ms)
 [rank 0] iteration #905 - starting launcher [0][0] ...
 [rank 0] done
-[it= 905] hydro_fvm compute time t=4.3318e-03 (Dt=4.778e-06) : 0.80457 s (5.55 ms, 0 us, 706 us, 790688 us, 5.35 ms)
+[it= 905] hydro_fvm compute time t=4.3318e-03 (Dt=4.778e-06) : 0.79596 s (4.41 ms, 0 us, 78 us, 785550 us, 4.04 ms)
 [rank 0] iteration #906 - starting launcher [0][0] ...
 [rank 0] done
-[it= 906] hydro_fvm compute time t=4.3366e-03 (Dt=4.778e-06) : 0.80411 s (5.50 ms, 0 us, 686 us, 790281 us, 5.35 ms)
+[it= 906] hydro_fvm compute time t=4.3366e-03 (Dt=4.778e-06) : 0.79563 s (4.19 ms, 0 us, 80 us, 785445 us, 4.04 ms)
 [rank 0] iteration #907 - starting launcher [0][0] ...
 [rank 0] done
-[it= 907] hydro_fvm compute time t=4.3414e-03 (Dt=4.778e-06) : 0.80420 s (5.50 ms, 0 us, 695 us, 790369 us, 5.35 ms)
+[it= 907] hydro_fvm compute time t=4.3414e-03 (Dt=4.778e-06) : 0.79572 s (4.21 ms, 0 us, 78 us, 785488 us, 4.06 ms)
 [rank 0] iteration #908 - starting launcher [0][0] ...
 [rank 0] done
-[it= 908] hydro_fvm compute time t=4.3462e-03 (Dt=4.778e-06) : 0.80437 s (5.49 ms, 0 us, 696 us, 790578 us, 5.35 ms)
+[it= 908] hydro_fvm compute time t=4.3462e-03 (Dt=4.778e-06) : 0.79582 s (4.20 ms, 0 us, 77 us, 785640 us, 4.05 ms)
 [rank 0] iteration #909 - starting launcher [0][0] ...
 [rank 0] done
-[it= 909] hydro_fvm compute time t=4.3509e-03 (Dt=4.778e-06) : 0.80446 s (5.51 ms, 0 us, 680 us, 790597 us, 5.38 ms)
+[it= 909] hydro_fvm compute time t=4.3509e-03 (Dt=4.778e-06) : 0.79560 s (4.23 ms, 0 us, 77 us, 785401 us, 4.04 ms)
 [rank 0] iteration #910 - starting launcher [0][0] ...
 [rank 0] done
-[it= 910] hydro_fvm compute time t=4.3557e-03 (Dt=4.778e-06) : 0.80443 s (5.54 ms, 0 us, 702 us, 790562 us, 5.34 ms)
+[it= 910] hydro_fvm compute time t=4.3557e-03 (Dt=4.778e-06) : 0.79579 s (4.22 ms, 0 us, 79 us, 785493 us, 4.05 ms)
 [rank 0] iteration #911 - starting launcher [0][0] ...
 [rank 0] done
-[it= 911] hydro_fvm compute time t=4.3605e-03 (Dt=4.778e-06) : 0.80447 s (5.50 ms, 0 us, 674 us, 790660 us, 5.37 ms)
+[it= 911] hydro_fvm compute time t=4.3605e-03 (Dt=4.778e-06) : 0.79581 s (4.28 ms, 0 us, 78 us, 785561 us, 4.03 ms)
 [rank 0] iteration #912 - starting launcher [0][0] ...
 [rank 0] done
-[it= 912] hydro_fvm compute time t=4.3653e-03 (Dt=4.778e-06) : 0.80441 s (5.49 ms, 0 us, 679 us, 790266 us, 5.58 ms)
+[it= 912] hydro_fvm compute time t=4.3653e-03 (Dt=4.778e-06) : 0.79542 s (4.21 ms, 0 us, 77 us, 785219 us, 4.02 ms)
 [rank 0] iteration #913 - starting launcher [0][0] ...
 [rank 0] done
-[it= 913] hydro_fvm compute time t=4.3700e-03 (Dt=4.778e-06) : 0.80398 s (5.50 ms, 0 us, 702 us, 790103 us, 5.38 ms)
+[it= 913] hydro_fvm compute time t=4.3700e-03 (Dt=4.778e-06) : 0.79565 s (4.23 ms, 0 us, 80 us, 785432 us, 4.02 ms)
 [rank 0] iteration #914 - starting launcher [0][0] ...
 [rank 0] done
-[it= 914] hydro_fvm compute time t=4.3748e-03 (Dt=4.778e-06) : 0.80420 s (5.53 ms, 0 us, 676 us, 790344 us, 5.36 ms)
+[it= 914] hydro_fvm compute time t=4.3748e-03 (Dt=4.778e-06) : 0.79550 s (4.20 ms, 0 us, 78 us, 785312 us, 4.02 ms)
 [rank 0] iteration #915 - starting launcher [0][0] ...
 [rank 0] done
-[it= 915] hydro_fvm compute time t=4.3796e-03 (Dt=4.778e-06) : 0.80459 s (5.53 ms, 0 us, 696 us, 790724 us, 5.36 ms)
+[it= 915] hydro_fvm compute time t=4.3796e-03 (Dt=4.778e-06) : 0.79557 s (4.21 ms, 0 us, 78 us, 785387 us, 4.01 ms)
 [rank 0] iteration #916 - starting launcher [0][0] ...
 [rank 0] done
-[it= 916] hydro_fvm compute time t=4.3844e-03 (Dt=4.778e-06) : 0.80425 s (5.49 ms, 0 us, 705 us, 790402 us, 5.37 ms)
+[it= 916] hydro_fvm compute time t=4.3844e-03 (Dt=4.778e-06) : 0.79702 s (4.17 ms, 0 us, 80 us, 786843 us, 4.03 ms)
 [rank 0] iteration #917 - starting launcher [0][0] ...
 [rank 0] done
-[it= 917] hydro_fvm compute time t=4.3892e-03 (Dt=4.778e-06) : 0.80427 s (5.51 ms, 0 us, 703 us, 790431 us, 5.36 ms)
+[it= 917] hydro_fvm compute time t=4.3892e-03 (Dt=4.778e-06) : 0.79594 s (4.20 ms, 0 us, 78 us, 785680 us, 4.07 ms)
 [rank 0] iteration #918 - starting launcher [0][0] ...
 [rank 0] done
-[it= 918] hydro_fvm compute time t=4.3939e-03 (Dt=4.778e-06) : 0.80390 s (5.50 ms, 0 us, 700 us, 790083 us, 5.35 ms)
+[it= 918] hydro_fvm compute time t=4.3939e-03 (Dt=4.778e-06) : 0.79554 s (4.20 ms, 0 us, 81 us, 785360 us, 4.02 ms)
 [rank 0] iteration #919 - starting launcher [0][0] ...
 [rank 0] done
-[it= 919] hydro_fvm compute time t=4.3987e-03 (Dt=4.778e-06) : 0.80434 s (5.52 ms, 0 us, 692 us, 790492 us, 5.36 ms)
+[it= 919] hydro_fvm compute time t=4.3987e-03 (Dt=4.778e-06) : 0.79564 s (4.21 ms, 0 us, 77 us, 785440 us, 4.03 ms)
 [rank 0] iteration #920 - starting launcher [0][0] ...
 [rank 0] done
-[it= 920] hydro_fvm compute time t=4.4035e-03 (Dt=4.778e-06) : 0.80407 s (5.50 ms, 0 us, 702 us, 790224 us, 5.37 ms)
+[it= 920] hydro_fvm compute time t=4.4035e-03 (Dt=4.778e-06) : 0.79615 s (4.22 ms, 0 us, 78 us, 785955 us, 4.02 ms)
 [rank 0] iteration #921 - starting launcher [0][0] ...
 [rank 0] done
-[it= 921] hydro_fvm compute time t=4.4083e-03 (Dt=4.778e-06) : 0.80395 s (5.49 ms, 0 us, 701 us, 790130 us, 5.35 ms)
+[it= 921] hydro_fvm compute time t=4.4083e-03 (Dt=4.778e-06) : 0.79568 s (4.17 ms, 0 us, 81 us, 785524 us, 4.02 ms)
 [rank 0] iteration #922 - starting launcher [0][0] ...
 [rank 0] done
-[it= 922] hydro_fvm compute time t=4.4130e-03 (Dt=4.778e-06) : 0.80421 s (5.53 ms, 0 us, 699 us, 790345 us, 5.36 ms)
+[it= 922] hydro_fvm compute time t=4.4130e-03 (Dt=4.778e-06) : 0.79552 s (4.23 ms, 0 us, 79 us, 785304 us, 4.02 ms)
 [rank 0] iteration #923 - starting launcher [0][0] ...
 [rank 0] done
-[it= 923] hydro_fvm compute time t=4.4178e-03 (Dt=4.778e-06) : 0.80394 s (5.50 ms, 0 us, 698 us, 790112 us, 5.34 ms)
+[it= 923] hydro_fvm compute time t=4.4178e-03 (Dt=4.778e-06) : 0.79586 s (4.17 ms, 0 us, 78 us, 785704 us, 4.01 ms)
 [rank 0] iteration #924 - starting launcher [0][0] ...
 [rank 0] done
-[it= 924] hydro_fvm compute time t=4.4226e-03 (Dt=4.778e-06) : 0.80338 s (5.51 ms, 0 us, 688 us, 789542 us, 5.36 ms)
+[it= 924] hydro_fvm compute time t=4.4226e-03 (Dt=4.778e-06) : 0.79853 s (4.13 ms, 0 us, 80 us, 788408 us, 4.03 ms)
 [rank 0] iteration #925 - starting launcher [0][0] ...
 [rank 0] done
-[it= 925] hydro_fvm compute time t=4.4274e-03 (Dt=4.778e-06) : 0.80423 s (5.49 ms, 0 us, 690 us, 790425 us, 5.34 ms)
+[it= 925] hydro_fvm compute time t=4.4274e-03 (Dt=4.778e-06) : 0.79523 s (4.05 ms, 0 us, 79 us, 785188 us, 4.03 ms)
 [rank 0] iteration #926 - starting launcher [0][0] ...
 [rank 0] done
-[it= 926] hydro_fvm compute time t=4.4322e-03 (Dt=4.778e-06) : 0.80385 s (5.51 ms, 0 us, 708 us, 789990 us, 5.36 ms)
+[it= 926] hydro_fvm compute time t=4.4322e-03 (Dt=4.778e-06) : 0.79542 s (4.05 ms, 0 us, 79 us, 785407 us, 4.03 ms)
 [rank 0] iteration #927 - starting launcher [0][0] ...
 [rank 0] done
-[it= 927] hydro_fvm compute time t=4.4369e-03 (Dt=4.778e-06) : 0.80418 s (5.50 ms, 0 us, 701 us, 790356 us, 5.35 ms)
+[it= 927] hydro_fvm compute time t=4.4369e-03 (Dt=4.778e-06) : 0.79560 s (4.09 ms, 0 us, 78 us, 785539 us, 4.01 ms)
 [rank 0] iteration #928 - starting launcher [0][0] ...
 [rank 0] done
-[it= 928] hydro_fvm compute time t=4.4417e-03 (Dt=4.778e-06) : 0.80454 s (5.50 ms, 0 us, 687 us, 790357 us, 5.46 ms)
+[it= 928] hydro_fvm compute time t=4.4417e-03 (Dt=4.778e-06) : 0.79503 s (4.07 ms, 0 us, 77 us, 784985 us, 4.01 ms)
 [rank 0] iteration #929 - starting launcher [0][0] ...
 [rank 0] done
-[it= 929] hydro_fvm compute time t=4.4465e-03 (Dt=4.777e-06) : 0.80451 s (5.62 ms, 0 us, 702 us, 790393 us, 5.38 ms)
+[it= 929] hydro_fvm compute time t=4.4465e-03 (Dt=4.777e-06) : 0.79591 s (4.08 ms, 0 us, 79 us, 785853 us, 4.01 ms)
 [rank 0] iteration #930 - starting launcher [0][0] ...
 [rank 0] done
-[it= 930] hydro_fvm compute time t=4.4513e-03 (Dt=4.777e-06) : 0.80379 s (5.58 ms, 0 us, 708 us, 789816 us, 5.38 ms)
+[it= 930] hydro_fvm compute time t=4.4513e-03 (Dt=4.777e-06) : 0.79542 s (4.07 ms, 0 us, 78 us, 785390 us, 4.01 ms)
 [rank 0] iteration #931 - starting launcher [0][0] ...
 [rank 0] done
-[it= 931] hydro_fvm compute time t=4.4560e-03 (Dt=4.777e-06) : 0.80452 s (5.56 ms, 0 us, 703 us, 790576 us, 5.38 ms)
+[it= 931] hydro_fvm compute time t=4.4560e-03 (Dt=4.777e-06) : 0.79750 s (4.07 ms, 0 us, 78 us, 787461 us, 4.02 ms)
 [rank 0] iteration #932 - starting launcher [0][0] ...
 [rank 0] done
-[it= 932] hydro_fvm compute time t=4.4608e-03 (Dt=4.777e-06) : 0.80438 s (5.55 ms, 0 us, 701 us, 790466 us, 5.39 ms)
+[it= 932] hydro_fvm compute time t=4.4608e-03 (Dt=4.777e-06) : 0.79570 s (4.08 ms, 0 us, 79 us, 785637 us, 4.02 ms)
 [rank 0] iteration #933 - starting launcher [0][0] ...
 [rank 0] done
-[it= 933] hydro_fvm compute time t=4.4656e-03 (Dt=4.777e-06) : 0.80455 s (5.53 ms, 0 us, 697 us, 790650 us, 5.38 ms)
+[it= 933] hydro_fvm compute time t=4.4656e-03 (Dt=4.777e-06) : 0.79687 s (4.08 ms, 0 us, 78 us, 786807 us, 4.03 ms)
 [rank 0] iteration #934 - starting launcher [0][0] ...
 [rank 0] done
-[it= 934] hydro_fvm compute time t=4.4704e-03 (Dt=4.777e-06) : 0.80316 s (5.51 ms, 0 us, 706 us, 789274 us, 5.37 ms)
+[it= 934] hydro_fvm compute time t=4.4704e-03 (Dt=4.777e-06) : 0.79549 s (4.05 ms, 0 us, 77 us, 785457 us, 4.03 ms)
 [rank 0] iteration #935 - starting launcher [0][0] ...
 [rank 0] done
-[it= 935] hydro_fvm compute time t=4.4752e-03 (Dt=4.777e-06) : 0.80443 s (5.55 ms, 0 us, 708 us, 790494 us, 5.38 ms)
+[it= 935] hydro_fvm compute time t=4.4752e-03 (Dt=4.777e-06) : 0.79720 s (4.08 ms, 0 us, 79 us, 787147 us, 4.04 ms)
 [rank 0] iteration #936 - starting launcher [0][0] ...
 [rank 0] done
-[it= 936] hydro_fvm compute time t=4.4799e-03 (Dt=4.777e-06) : 0.80423 s (5.54 ms, 0 us, 689 us, 790343 us, 5.38 ms)
+[it= 936] hydro_fvm compute time t=4.4799e-03 (Dt=4.777e-06) : 0.79582 s (4.09 ms, 0 us, 81 us, 785756 us, 4.02 ms)
 [rank 0] iteration #937 - starting launcher [0][0] ...
 [rank 0] done
-[it= 937] hydro_fvm compute time t=4.4847e-03 (Dt=4.777e-06) : 0.80454 s (5.57 ms, 0 us, 700 us, 790611 us, 5.37 ms)
+[it= 937] hydro_fvm compute time t=4.4847e-03 (Dt=4.777e-06) : 0.79548 s (4.07 ms, 0 us, 77 us, 785315 us, 4.05 ms)
 [rank 0] iteration #938 - starting launcher [0][0] ...
 [rank 0] done
-[it= 938] hydro_fvm compute time t=4.4895e-03 (Dt=4.777e-06) : 0.80384 s (5.52 ms, 0 us, 707 us, 789951 us, 5.37 ms)
+[it= 938] hydro_fvm compute time t=4.4895e-03 (Dt=4.777e-06) : 0.79523 s (4.06 ms, 0 us, 86 us, 785175 us, 4.01 ms)
 [rank 0] iteration #939 - starting launcher [0][0] ...
 [rank 0] done
-[it= 939] hydro_fvm compute time t=4.4943e-03 (Dt=4.777e-06) : 0.80373 s (5.52 ms, 0 us, 677 us, 789859 us, 5.39 ms)
+[it= 939] hydro_fvm compute time t=4.4943e-03 (Dt=4.777e-06) : 0.79566 s (4.07 ms, 0 us, 85 us, 785511 us, 4.06 ms)
 [rank 0] iteration #940 - starting launcher [0][0] ...
 [rank 0] done
-[it= 940] hydro_fvm compute time t=4.4990e-03 (Dt=4.777e-06) : 0.80417 s (5.53 ms, 0 us, 700 us, 790289 us, 5.37 ms)
+[it= 940] hydro_fvm compute time t=4.4990e-03 (Dt=4.777e-06) : 0.79553 s (4.12 ms, 0 us, 80 us, 785423 us, 4.04 ms)
 [rank 0] iteration #941 - starting launcher [0][0] ...
 [rank 0] done
-[it= 941] hydro_fvm compute time t=4.5038e-03 (Dt=4.777e-06) : 0.80418 s (5.50 ms, 0 us, 676 us, 790363 us, 5.35 ms)
+[it= 941] hydro_fvm compute time t=4.5038e-03 (Dt=4.777e-06) : 0.79554 s (4.19 ms, 0 us, 79 us, 785326 us, 4.05 ms)
 [rank 0] iteration #942 - starting launcher [0][0] ...
 [rank 0] done
-[it= 942] hydro_fvm compute time t=4.5086e-03 (Dt=4.777e-06) : 0.80443 s (5.52 ms, 0 us, 691 us, 790583 us, 5.36 ms)
+[it= 942] hydro_fvm compute time t=4.5086e-03 (Dt=4.777e-06) : 0.79521 s (4.16 ms, 0 us, 80 us, 785045 us, 4.03 ms)
 [rank 0] iteration #943 - starting launcher [0][0] ...
 [rank 0] done
-[it= 943] hydro_fvm compute time t=4.5134e-03 (Dt=4.777e-06) : 0.80372 s (5.52 ms, 0 us, 688 us, 789870 us, 5.36 ms)
+[it= 943] hydro_fvm compute time t=4.5134e-03 (Dt=4.777e-06) : 0.79552 s (4.21 ms, 0 us, 82 us, 785318 us, 4.06 ms)
 [rank 0] iteration #944 - starting launcher [0][0] ...
 [rank 0] done
-[it= 944] hydro_fvm compute time t=4.5181e-03 (Dt=4.777e-06) : 0.80405 s (5.54 ms, 0 us, 706 us, 790152 us, 5.36 ms)
+[it= 944] hydro_fvm compute time t=4.5181e-03 (Dt=4.777e-06) : 0.79548 s (4.17 ms, 0 us, 81 us, 785267 us, 4.10 ms)
 [rank 0] iteration #945 - starting launcher [0][0] ...
 [rank 0] done
-[it= 945] hydro_fvm compute time t=4.5229e-03 (Dt=4.777e-06) : 0.80422 s (5.53 ms, 0 us, 703 us, 790326 us, 5.37 ms)
+[it= 945] hydro_fvm compute time t=4.5229e-03 (Dt=4.777e-06) : 0.79634 s (4.12 ms, 0 us, 80 us, 786219 us, 4.07 ms)
 [rank 0] iteration #946 - starting launcher [0][0] ...
 [rank 0] done
-[it= 946] hydro_fvm compute time t=4.5277e-03 (Dt=4.777e-06) : 0.80414 s (5.55 ms, 0 us, 700 us, 790236 us, 5.37 ms)
+[it= 946] hydro_fvm compute time t=4.5277e-03 (Dt=4.777e-06) : 0.79658 s (4.19 ms, 0 us, 81 us, 786361 us, 4.07 ms)
 [rank 0] iteration #947 - starting launcher [0][0] ...
 [rank 0] done
-[it= 947] hydro_fvm compute time t=4.5325e-03 (Dt=4.777e-06) : 0.80436 s (5.51 ms, 0 us, 687 us, 790502 us, 5.37 ms)
+[it= 947] hydro_fvm compute time t=4.5325e-03 (Dt=4.777e-06) : 0.79543 s (4.17 ms, 0 us, 80 us, 785284 us, 4.05 ms)
 [rank 0] iteration #948 - starting launcher [0][0] ...
 [rank 0] done
-[it= 948] hydro_fvm compute time t=4.5373e-03 (Dt=4.777e-06) : 0.80448 s (5.50 ms, 0 us, 680 us, 790627 us, 5.38 ms)
+[it= 948] hydro_fvm compute time t=4.5373e-03 (Dt=4.777e-06) : 0.79567 s (4.30 ms, 0 us, 80 us, 785351 us, 4.05 ms)
 [rank 0] iteration #949 - starting launcher [0][0] ...
 [rank 0] done
-[it= 949] hydro_fvm compute time t=4.5420e-03 (Dt=4.777e-06) : 0.80377 s (5.53 ms, 0 us, 700 us, 789891 us, 5.36 ms)
+[it= 949] hydro_fvm compute time t=4.5420e-03 (Dt=4.777e-06) : 0.79569 s (4.20 ms, 0 us, 81 us, 785501 us, 4.02 ms)
 [rank 0] iteration #950 - starting launcher [0][0] ...
 [rank 0] done
-[it= 950] hydro_fvm compute time t=4.5468e-03 (Dt=4.777e-06) : 0.80410 s (5.52 ms, 0 us, 674 us, 790200 us, 5.39 ms)
+[it= 950] hydro_fvm compute time t=4.5468e-03 (Dt=4.777e-06) : 0.79541 s (4.18 ms, 0 us, 80 us, 785229 us, 4.04 ms)
 [rank 0] iteration #951 - starting launcher [0][0] ...
 [rank 0] done
-[it= 951] hydro_fvm compute time t=4.5516e-03 (Dt=4.777e-06) : 0.80386 s (5.59 ms, 0 us, 709 us, 789922 us, 5.36 ms)
+[it= 951] hydro_fvm compute time t=4.5516e-03 (Dt=4.777e-06) : 0.79614 s (4.18 ms, 0 us, 79 us, 785948 us, 4.04 ms)
 [rank 0] iteration #952 - starting launcher [0][0] ...
 [rank 0] done
-[it= 952] hydro_fvm compute time t=4.5564e-03 (Dt=4.777e-06) : 0.80449 s (5.51 ms, 0 us, 701 us, 790629 us, 5.36 ms)
+[it= 952] hydro_fvm compute time t=4.5564e-03 (Dt=4.777e-06) : 0.79531 s (4.21 ms, 0 us, 79 us, 785124 us, 4.04 ms)
 [rank 0] iteration #953 - starting launcher [0][0] ...
 [rank 0] done
-[it= 953] hydro_fvm compute time t=4.5611e-03 (Dt=4.777e-06) : 0.80446 s (5.51 ms, 0 us, 705 us, 790581 us, 5.37 ms)
+[it= 953] hydro_fvm compute time t=4.5611e-03 (Dt=4.777e-06) : 0.79566 s (4.17 ms, 0 us, 79 us, 785484 us, 4.05 ms)
 [rank 0] iteration #954 - starting launcher [0][0] ...
 [rank 0] done
-[it= 954] hydro_fvm compute time t=4.5659e-03 (Dt=4.777e-06) : 0.80429 s (5.53 ms, 0 us, 688 us, 790419 us, 5.36 ms)
+[it= 954] hydro_fvm compute time t=4.5659e-03 (Dt=4.777e-06) : 0.79552 s (4.21 ms, 0 us, 79 us, 785311 us, 4.03 ms)
 [rank 0] iteration #955 - starting launcher [0][0] ...
 [rank 0] done
-[it= 955] hydro_fvm compute time t=4.5707e-03 (Dt=4.777e-06) : 0.80454 s (5.53 ms, 0 us, 705 us, 790582 us, 5.40 ms)
+[it= 955] hydro_fvm compute time t=4.5707e-03 (Dt=4.777e-06) : 0.79578 s (4.31 ms, 0 us, 78 us, 785493 us, 4.05 ms)
 [rank 0] iteration #956 - starting launcher [0][0] ...
 [rank 0] done
-[it= 956] hydro_fvm compute time t=4.5755e-03 (Dt=4.776e-06) : 0.80400 s (5.54 ms, 0 us, 701 us, 790148 us, 5.36 ms)
+[it= 956] hydro_fvm compute time t=4.5755e-03 (Dt=4.776e-06) : 0.79537 s (4.22 ms, 0 us, 79 us, 785175 us, 4.05 ms)
 [rank 0] iteration #957 - starting launcher [0][0] ...
 [rank 0] done
-[it= 957] hydro_fvm compute time t=4.5802e-03 (Dt=4.776e-06) : 0.80446 s (5.52 ms, 0 us, 703 us, 790597 us, 5.36 ms)
+[it= 957] hydro_fvm compute time t=4.5802e-03 (Dt=4.776e-06) : 0.79575 s (4.21 ms, 0 us, 79 us, 785515 us, 4.05 ms)
 [rank 0] iteration #958 - starting launcher [0][0] ...
 [rank 0] done
-[it= 958] hydro_fvm compute time t=4.5850e-03 (Dt=4.776e-06) : 0.80430 s (5.49 ms, 0 us, 702 us, 790456 us, 5.36 ms)
+[it= 958] hydro_fvm compute time t=4.5850e-03 (Dt=4.776e-06) : 0.79561 s (4.21 ms, 0 us, 79 us, 785387 us, 4.05 ms)
 [rank 0] iteration #959 - starting launcher [0][0] ...
 [rank 0] done
-[it= 959] hydro_fvm compute time t=4.5898e-03 (Dt=4.776e-06) : 0.80350 s (5.52 ms, 0 us, 706 us, 789620 us, 5.37 ms)
+[it= 959] hydro_fvm compute time t=4.5898e-03 (Dt=4.776e-06) : 0.79585 s (4.22 ms, 0 us, 78 us, 785549 us, 4.05 ms)
 [rank 0] iteration #960 - starting launcher [0][0] ...
 [rank 0] done
-[it= 960] hydro_fvm compute time t=4.5946e-03 (Dt=4.776e-06) : 0.80413 s (5.49 ms, 0 us, 697 us, 790264 us, 5.38 ms)
+[it= 960] hydro_fvm compute time t=4.5946e-03 (Dt=4.776e-06) : 0.79535 s (4.16 ms, 0 us, 79 us, 785235 us, 4.01 ms)
 [rank 0] iteration #961 - starting launcher [0][0] ...
 [rank 0] done
-[it= 961] hydro_fvm compute time t=4.5994e-03 (Dt=4.776e-06) : 0.80405 s (5.54 ms, 0 us, 696 us, 790159 us, 5.37 ms)
+[it= 961] hydro_fvm compute time t=4.5994e-03 (Dt=4.776e-06) : 0.79565 s (4.05 ms, 0 us, 77 us, 785613 us, 4.02 ms)
 [rank 0] iteration #962 - starting launcher [0][0] ...
 [rank 0] done
-[it= 962] hydro_fvm compute time t=4.6041e-03 (Dt=4.776e-06) : 0.80360 s (5.51 ms, 0 us, 686 us, 789745 us, 5.37 ms)
+[it= 962] hydro_fvm compute time t=4.6041e-03 (Dt=4.776e-06) : 0.79532 s (4.08 ms, 0 us, 78 us, 785242 us, 4.03 ms)
 [rank 0] iteration #963 - starting launcher [0][0] ...
 [rank 0] done
-[it= 963] hydro_fvm compute time t=4.6089e-03 (Dt=4.776e-06) : 0.80404 s (5.52 ms, 0 us, 705 us, 790199 us, 5.35 ms)
+[it= 963] hydro_fvm compute time t=4.6089e-03 (Dt=4.776e-06) : 0.79555 s (4.07 ms, 0 us, 80 us, 785405 us, 4.08 ms)
 [rank 0] iteration #964 - starting launcher [0][0] ...
 [rank 0] done
-[it= 964] hydro_fvm compute time t=4.6137e-03 (Dt=4.776e-06) : 0.80376 s (5.52 ms, 0 us, 702 us, 789899 us, 5.36 ms)
+[it= 964] hydro_fvm compute time t=4.6137e-03 (Dt=4.776e-06) : 0.79573 s (4.16 ms, 0 us, 78 us, 785565 us, 4.05 ms)
 [rank 0] iteration #965 - starting launcher [0][0] ...
 [rank 0] done
-[it= 965] hydro_fvm compute time t=4.6185e-03 (Dt=4.776e-06) : 0.80409 s (5.54 ms, 0 us, 697 us, 790152 us, 5.39 ms)
+[it= 965] hydro_fvm compute time t=4.6185e-03 (Dt=4.776e-06) : 0.79570 s (4.20 ms, 0 us, 78 us, 785467 us, 4.06 ms)
 [rank 0] iteration #966 - starting launcher [0][0] ...
 [rank 0] done
-[it= 966] hydro_fvm compute time t=4.6232e-03 (Dt=4.776e-06) : 0.80456 s (5.55 ms, 0 us, 695 us, 790677 us, 5.35 ms)
+[it= 966] hydro_fvm compute time t=4.6232e-03 (Dt=4.776e-06) : 0.79516 s (4.19 ms, 0 us, 78 us, 785003 us, 4.04 ms)
 [rank 0] iteration #967 - starting launcher [0][0] ...
 [rank 0] done
-[it= 967] hydro_fvm compute time t=4.6280e-03 (Dt=4.776e-06) : 0.80397 s (5.51 ms, 0 us, 700 us, 790130 us, 5.35 ms)
+[it= 967] hydro_fvm compute time t=4.6280e-03 (Dt=4.776e-06) : 0.79562 s (4.16 ms, 0 us, 79 us, 785457 us, 4.06 ms)
 [rank 0] iteration #968 - starting launcher [0][0] ...
 [rank 0] done
-[it= 968] hydro_fvm compute time t=4.6328e-03 (Dt=4.776e-06) : 0.80386 s (5.53 ms, 0 us, 702 us, 789981 us, 5.36 ms)
+[it= 968] hydro_fvm compute time t=4.6328e-03 (Dt=4.776e-06) : 0.79544 s (4.20 ms, 0 us, 80 us, 785225 us, 4.03 ms)
 [rank 0] iteration #969 - starting launcher [0][0] ...
 [rank 0] done
-[it= 969] hydro_fvm compute time t=4.6376e-03 (Dt=4.776e-06) : 0.80392 s (5.48 ms, 0 us, 697 us, 790083 us, 5.37 ms)
+[it= 969] hydro_fvm compute time t=4.6376e-03 (Dt=4.776e-06) : 0.79569 s (4.25 ms, 0 us, 81 us, 785461 us, 4.05 ms)
 [rank 0] iteration #970 - starting launcher [0][0] ...
 [rank 0] done
-[it= 970] hydro_fvm compute time t=4.6423e-03 (Dt=4.776e-06) : 0.80414 s (5.54 ms, 0 us, 710 us, 790225 us, 5.38 ms)
+[it= 970] hydro_fvm compute time t=4.6423e-03 (Dt=4.776e-06) : 0.79548 s (4.25 ms, 0 us, 82 us, 785224 us, 4.04 ms)
 [rank 0] iteration #971 - starting launcher [0][0] ...
 [rank 0] done
-[it= 971] hydro_fvm compute time t=4.6471e-03 (Dt=4.776e-06) : 0.80416 s (5.54 ms, 0 us, 699 us, 790270 us, 5.37 ms)
+[it= 971] hydro_fvm compute time t=4.6471e-03 (Dt=4.776e-06) : 0.79580 s (4.19 ms, 0 us, 79 us, 785584 us, 4.05 ms)
 [rank 0] iteration #972 - starting launcher [0][0] ...
 [rank 0] done
-[it= 972] hydro_fvm compute time t=4.6519e-03 (Dt=4.776e-06) : 0.80416 s (5.53 ms, 0 us, 700 us, 790305 us, 5.35 ms)
+[it= 972] hydro_fvm compute time t=4.6519e-03 (Dt=4.776e-06) : 0.79547 s (4.18 ms, 0 us, 79 us, 785297 us, 4.03 ms)
 [rank 0] iteration #973 - starting launcher [0][0] ...
 [rank 0] done
-[it= 973] hydro_fvm compute time t=4.6567e-03 (Dt=4.776e-06) : 0.80433 s (5.52 ms, 0 us, 704 us, 790460 us, 5.35 ms)
+[it= 973] hydro_fvm compute time t=4.6567e-03 (Dt=4.776e-06) : 0.79586 s (4.21 ms, 0 us, 79 us, 785567 us, 4.05 ms)
 [rank 0] iteration #974 - starting launcher [0][0] ...
 [rank 0] done
-[it= 974] hydro_fvm compute time t=4.6614e-03 (Dt=4.776e-06) : 0.80434 s (5.52 ms, 0 us, 666 us, 790494 us, 5.38 ms)
+[it= 974] hydro_fvm compute time t=4.6614e-03 (Dt=4.776e-06) : 0.79535 s (4.07 ms, 0 us, 79 us, 785309 us, 4.02 ms)
 [rank 0] iteration #975 - starting launcher [0][0] ...
 [rank 0] done
-[it= 975] hydro_fvm compute time t=4.6662e-03 (Dt=4.776e-06) : 0.80460 s (5.53 ms, 0 us, 689 us, 790727 us, 5.37 ms)
+[it= 975] hydro_fvm compute time t=4.6662e-03 (Dt=4.776e-06) : 0.79635 s (4.07 ms, 0 us, 79 us, 786266 us, 4.04 ms)
 [rank 0] iteration #976 - starting launcher [0][0] ...
 [rank 0] done
-[it= 976] hydro_fvm compute time t=4.6710e-03 (Dt=4.776e-06) : 0.80445 s (5.53 ms, 0 us, 689 us, 790595 us, 5.36 ms)
+[it= 976] hydro_fvm compute time t=4.6710e-03 (Dt=4.776e-06) : 0.79518 s (4.07 ms, 0 us, 77 us, 785100 us, 4.03 ms)
 [rank 0] iteration #977 - starting launcher [0][0] ...
 [rank 0] done
-[it= 977] hydro_fvm compute time t=4.6758e-03 (Dt=4.776e-06) : 0.80450 s (5.52 ms, 0 us, 701 us, 790569 us, 5.43 ms)
+[it= 977] hydro_fvm compute time t=4.6758e-03 (Dt=4.776e-06) : 0.79751 s (4.09 ms, 0 us, 78 us, 787435 us, 4.02 ms)
 [rank 0] iteration #978 - starting launcher [0][0] ...
 [rank 0] done
-[it= 978] hydro_fvm compute time t=4.6805e-03 (Dt=4.776e-06) : 0.80379 s (5.51 ms, 0 us, 692 us, 789946 us, 5.38 ms)
+[it= 978] hydro_fvm compute time t=4.6805e-03 (Dt=4.776e-06) : 0.79507 s (4.07 ms, 0 us, 82 us, 785000 us, 4.02 ms)
 [rank 0] iteration #979 - starting launcher [0][0] ...
 [rank 0] done
-[it= 979] hydro_fvm compute time t=4.6853e-03 (Dt=4.776e-06) : 0.80444 s (5.50 ms, 0 us, 706 us, 790584 us, 5.38 ms)
+[it= 979] hydro_fvm compute time t=4.6853e-03 (Dt=4.776e-06) : 0.79671 s (4.09 ms, 0 us, 79 us, 786613 us, 4.04 ms)
 [rank 0] iteration #980 - starting launcher [0][0] ...
 [rank 0] done
-[it= 980] hydro_fvm compute time t=4.6901e-03 (Dt=4.776e-06) : 0.80423 s (5.53 ms, 0 us, 707 us, 790351 us, 5.37 ms)
+[it= 980] hydro_fvm compute time t=4.6901e-03 (Dt=4.776e-06) : 0.79585 s (4.07 ms, 0 us, 77 us, 785812 us, 4.03 ms)
 [rank 0] iteration #981 - starting launcher [0][0] ...
 [rank 0] done
-[it= 981] hydro_fvm compute time t=4.6949e-03 (Dt=4.776e-06) : 0.80392 s (5.53 ms, 0 us, 702 us, 790058 us, 5.36 ms)
+[it= 981] hydro_fvm compute time t=4.6949e-03 (Dt=4.776e-06) : 0.79571 s (4.11 ms, 0 us, 79 us, 785629 us, 4.02 ms)
 [rank 0] iteration #982 - starting launcher [0][0] ...
 [rank 0] done
-[it= 982] hydro_fvm compute time t=4.6996e-03 (Dt=4.776e-06) : 0.80458 s (5.52 ms, 0 us, 690 us, 790695 us, 5.39 ms)
+[it= 982] hydro_fvm compute time t=4.6996e-03 (Dt=4.776e-06) : 0.79541 s (4.07 ms, 0 us, 78 us, 785361 us, 4.02 ms)
 [rank 0] iteration #983 - starting launcher [0][0] ...
 [rank 0] done
-[it= 983] hydro_fvm compute time t=4.7044e-03 (Dt=4.775e-06) : 0.80413 s (5.50 ms, 0 us, 690 us, 790282 us, 5.38 ms)
+[it= 983] hydro_fvm compute time t=4.7044e-03 (Dt=4.775e-06) : 0.79567 s (4.08 ms, 0 us, 79 us, 785613 us, 4.02 ms)
 [rank 0] iteration #984 - starting launcher [0][0] ...
 [rank 0] done
-[it= 984] hydro_fvm compute time t=4.7092e-03 (Dt=4.775e-06) : 0.80431 s (5.51 ms, 0 us, 685 us, 790446 us, 5.37 ms)
+[it= 984] hydro_fvm compute time t=4.7092e-03 (Dt=4.775e-06) : 0.79589 s (4.08 ms, 0 us, 78 us, 785813 us, 4.04 ms)
 [rank 0] iteration #985 - starting launcher [0][0] ...
 [rank 0] done
-[it= 985] hydro_fvm compute time t=4.7140e-03 (Dt=4.775e-06) : 0.80409 s (5.49 ms, 0 us, 700 us, 790194 us, 5.39 ms)
+[it= 985] hydro_fvm compute time t=4.7140e-03 (Dt=4.775e-06) : 0.79552 s (4.06 ms, 0 us, 77 us, 785483 us, 4.02 ms)
 [rank 0] iteration #986 - starting launcher [0][0] ...
 [rank 0] done
-[it= 986] hydro_fvm compute time t=4.7187e-03 (Dt=4.775e-06) : 0.80383 s (5.55 ms, 0 us, 701 us, 789934 us, 5.36 ms)
+[it= 986] hydro_fvm compute time t=4.7187e-03 (Dt=4.775e-06) : 0.79547 s (4.06 ms, 0 us, 78 us, 785331 us, 4.03 ms)
 [rank 0] iteration #987 - starting launcher [0][0] ...
 [rank 0] done
-[it= 987] hydro_fvm compute time t=4.7235e-03 (Dt=4.775e-06) : 0.80370 s (5.52 ms, 0 us, 684 us, 789854 us, 5.37 ms)
+[it= 987] hydro_fvm compute time t=4.7235e-03 (Dt=4.775e-06) : 0.79566 s (4.06 ms, 0 us, 79 us, 785606 us, 4.03 ms)
 [rank 0] iteration #988 - starting launcher [0][0] ...
 [rank 0] done
-[it= 988] hydro_fvm compute time t=4.7283e-03 (Dt=4.775e-06) : 0.80437 s (5.52 ms, 0 us, 698 us, 790497 us, 5.37 ms)
+[it= 988] hydro_fvm compute time t=4.7283e-03 (Dt=4.775e-06) : 0.79531 s (4.07 ms, 0 us, 81 us, 785160 us, 4.06 ms)
 [rank 0] iteration #989 - starting launcher [0][0] ...
 [rank 0] done
-[it= 989] hydro_fvm compute time t=4.7331e-03 (Dt=4.775e-06) : 0.80437 s (5.52 ms, 0 us, 695 us, 790521 us, 5.35 ms)
+[it= 989] hydro_fvm compute time t=4.7331e-03 (Dt=4.775e-06) : 0.79553 s (4.12 ms, 0 us, 77 us, 785436 us, 4.05 ms)
 [rank 0] iteration #990 - starting launcher [0][0] ...
 [rank 0] done
-[it= 990] hydro_fvm compute time t=4.7378e-03 (Dt=4.775e-06) : 0.80448 s (5.51 ms, 0 us, 690 us, 790625 us, 5.37 ms)
+[it= 990] hydro_fvm compute time t=4.7378e-03 (Dt=4.775e-06) : 0.79661 s (4.20 ms, 0 us, 79 us, 786416 us, 4.06 ms)
 [rank 0] iteration #991 - starting launcher [0][0] ...
 [rank 0] done
-[it= 991] hydro_fvm compute time t=4.7426e-03 (Dt=4.775e-06) : 0.80456 s (5.49 ms, 0 us, 700 us, 790719 us, 5.38 ms)
+[it= 991] hydro_fvm compute time t=4.7426e-03 (Dt=4.775e-06) : 0.79564 s (4.19 ms, 0 us, 78 us, 785456 us, 4.05 ms)
 [rank 0] iteration #992 - starting launcher [0][0] ...
 [rank 0] done
-[it= 992] hydro_fvm compute time t=4.7474e-03 (Dt=4.775e-06) : 0.80404 s (5.51 ms, 0 us, 695 us, 790161 us, 5.40 ms)
+[it= 992] hydro_fvm compute time t=4.7474e-03 (Dt=4.775e-06) : 0.79552 s (4.35 ms, 0 us, 77 us, 785112 us, 4.08 ms)
 [rank 0] iteration #993 - starting launcher [0][0] ...
 [rank 0] done
-[it= 993] hydro_fvm compute time t=4.7522e-03 (Dt=4.775e-06) : 0.80390 s (5.52 ms, 0 us, 685 us, 790024 us, 5.39 ms)
+[it= 993] hydro_fvm compute time t=4.7522e-03 (Dt=4.775e-06) : 0.79571 s (4.22 ms, 0 us, 79 us, 785473 us, 4.04 ms)
 [rank 0] iteration #994 - starting launcher [0][0] ...
 [rank 0] done
-[it= 994] hydro_fvm compute time t=4.7569e-03 (Dt=4.775e-06) : 0.80339 s (5.53 ms, 0 us, 694 us, 789499 us, 5.37 ms)
+[it= 994] hydro_fvm compute time t=4.7569e-03 (Dt=4.775e-06) : 0.79532 s (4.22 ms, 0 us, 80 us, 785120 us, 4.05 ms)
 [rank 0] iteration #995 - starting launcher [0][0] ...
 [rank 0] done
-[it= 995] hydro_fvm compute time t=4.7617e-03 (Dt=4.775e-06) : 0.80413 s (5.52 ms, 0 us, 704 us, 790237 us, 5.37 ms)
+[it= 995] hydro_fvm compute time t=4.7617e-03 (Dt=4.775e-06) : 0.79577 s (4.22 ms, 0 us, 79 us, 785515 us, 4.05 ms)
 [rank 0] iteration #996 - starting launcher [0][0] ...
 [rank 0] done
-[it= 996] hydro_fvm compute time t=4.7665e-03 (Dt=4.775e-06) : 0.80438 s (5.51 ms, 0 us, 684 us, 790550 us, 5.36 ms)
+[it= 996] hydro_fvm compute time t=4.7665e-03 (Dt=4.775e-06) : 0.79598 s (4.20 ms, 0 us, 77 us, 785770 us, 4.04 ms)
 [rank 0] iteration #997 - starting launcher [0][0] ...
 [rank 0] done
-[it= 997] hydro_fvm compute time t=4.7713e-03 (Dt=4.775e-06) : 0.80398 s (5.50 ms, 0 us, 712 us, 790112 us, 5.38 ms)
+[it= 997] hydro_fvm compute time t=4.7713e-03 (Dt=4.775e-06) : 0.79582 s (4.21 ms, 0 us, 78 us, 785612 us, 4.03 ms)
 [rank 0] iteration #998 - starting launcher [0][0] ...
 [rank 0] done
-[it= 998] hydro_fvm compute time t=4.7760e-03 (Dt=4.775e-06) : 0.80400 s (5.48 ms, 0 us, 705 us, 790157 us, 5.38 ms)
+[it= 998] hydro_fvm compute time t=4.7760e-03 (Dt=4.775e-06) : 0.79533 s (4.18 ms, 0 us, 79 us, 785136 us, 4.04 ms)
 [rank 0] iteration #999 - starting launcher [0][0] ...
 [rank 0] done
-[it= 999] hydro_fvm compute time t=4.7808e-03 (Dt=4.775e-06) : 0.80426 s (5.49 ms, 0 us, 695 us, 790421 us, 5.37 ms)
+[it= 999] hydro_fvm compute time t=4.7808e-03 (Dt=4.775e-06) : 0.79560 s (4.23 ms, 0 us, 77 us, 785404 us, 4.04 ms)
 [rank 0] iteration #1000 - starting launcher [0][0] ...
 [rank 0] done
-[it=1000] hydro_fvm compute time t=4.7856e-03 (Dt=4.775e-06) : 0.80400 s (5.52 ms, 0 us, 686 us, 790159 us, 5.36 ms)
+[it=1000] hydro_fvm compute time t=4.7856e-03 (Dt=4.775e-06) : 0.79571 s (4.19 ms, 0 us, 79 us, 785507 us, 4.04 ms)
 [rank 0] iteration #1001 - starting launcher [0][0] ...
 [rank 0] done
-[it=1001] hydro_fvm compute time t=4.7904e-03 (Dt=4.775e-06) : 0.80465 s (5.52 ms, 0 us, 704 us, 790780 us, 5.36 ms)
+[it=1001] hydro_fvm compute time t=4.7904e-03 (Dt=4.775e-06) : 0.79577 s (4.20 ms, 0 us, 79 us, 785569 us, 4.07 ms)
 [rank 0] iteration #1002 - starting launcher [0][0] ...
 [rank 0] done
-[it=1002] hydro_fvm compute time t=4.7951e-03 (Dt=4.775e-06) : 0.80434 s (5.51 ms, 0 us, 696 us, 790294 us, 5.52 ms)
+[it=1002] hydro_fvm compute time t=4.7951e-03 (Dt=4.775e-06) : 0.79562 s (4.24 ms, 0 us, 79 us, 785407 us, 4.04 ms)
 [rank 0] iteration #1003 - starting launcher [0][0] ...
 [rank 0] done
-[it=1003] hydro_fvm compute time t=4.7999e-03 (Dt=4.775e-06) : 0.80478 s (5.60 ms, 0 us, 706 us, 790731 us, 5.38 ms)
+[it=1003] hydro_fvm compute time t=4.7999e-03 (Dt=4.775e-06) : 0.79568 s (4.23 ms, 0 us, 78 us, 785421 us, 4.07 ms)
 [rank 0] iteration #1004 - starting launcher [0][0] ...
 [rank 0] done
-[it=1004] hydro_fvm compute time t=4.8047e-03 (Dt=4.775e-06) : 0.80451 s (5.52 ms, 0 us, 698 us, 790602 us, 5.37 ms)
+[it=1004] hydro_fvm compute time t=4.8047e-03 (Dt=4.775e-06) : 0.79544 s (4.35 ms, 0 us, 80 us, 785090 us, 4.07 ms)
 [rank 0] iteration #1005 - starting launcher [0][0] ...
 [rank 0] done
-[it=1005] hydro_fvm compute time t=4.8095e-03 (Dt=4.775e-06) : 0.80462 s (5.57 ms, 0 us, 674 us, 790715 us, 5.37 ms)
+[it=1005] hydro_fvm compute time t=4.8095e-03 (Dt=4.775e-06) : 0.79582 s (4.19 ms, 0 us, 78 us, 785622 us, 4.05 ms)
 [rank 0] iteration #1006 - starting launcher [0][0] ...
 [rank 0] done
-[it=1006] hydro_fvm compute time t=4.8142e-03 (Dt=4.775e-06) : 0.80389 s (5.51 ms, 0 us, 706 us, 789954 us, 5.40 ms)
+[it=1006] hydro_fvm compute time t=4.8142e-03 (Dt=4.775e-06) : 0.79565 s (4.17 ms, 0 us, 78 us, 785484 us, 4.03 ms)
 [rank 0] iteration #1007 - starting launcher [0][0] ...
 [rank 0] done
-[it=1007] hydro_fvm compute time t=4.8190e-03 (Dt=4.775e-06) : 0.80390 s (5.56 ms, 0 us, 703 us, 789981 us, 5.37 ms)
+[it=1007] hydro_fvm compute time t=4.8190e-03 (Dt=4.775e-06) : 0.79550 s (4.19 ms, 0 us, 80 us, 785304 us, 4.04 ms)
 [rank 0] iteration #1008 - starting launcher [0][0] ...
 [rank 0] done
-[it=1008] hydro_fvm compute time t=4.8238e-03 (Dt=4.775e-06) : 0.80445 s (5.51 ms, 0 us, 705 us, 790587 us, 5.36 ms)
+[it=1008] hydro_fvm compute time t=4.8238e-03 (Dt=4.775e-06) : 0.79524 s (4.19 ms, 0 us, 79 us, 785057 us, 4.06 ms)
 [rank 0] iteration #1009 - starting launcher [0][0] ...
 [rank 0] done
-[it=1009] hydro_fvm compute time t=4.8286e-03 (Dt=4.774e-06) : 0.80386 s (5.52 ms, 0 us, 684 us, 790007 us, 5.37 ms)
+[it=1009] hydro_fvm compute time t=4.8286e-03 (Dt=4.774e-06) : 0.79565 s (4.20 ms, 0 us, 78 us, 785451 us, 4.08 ms)
 [rank 0] iteration #1010 - starting launcher [0][0] ...
 [rank 0] done
-[it=1010] hydro_fvm compute time t=4.8333e-03 (Dt=4.774e-06) : 0.80359 s (5.49 ms, 0 us, 704 us, 789751 us, 5.35 ms)
+[it=1010] hydro_fvm compute time t=4.8333e-03 (Dt=4.774e-06) : 0.79526 s (4.15 ms, 0 us, 79 us, 785087 us, 4.04 ms)
 [rank 0] iteration #1011 - starting launcher [0][0] ...
 [rank 0] done
-[it=1011] hydro_fvm compute time t=4.8381e-03 (Dt=4.774e-06) : 0.80319 s (5.53 ms, 0 us, 698 us, 789261 us, 5.39 ms)
+[it=1011] hydro_fvm compute time t=4.8381e-03 (Dt=4.774e-06) : 0.79577 s (4.20 ms, 0 us, 77 us, 785564 us, 4.04 ms)
 [rank 0] iteration #1012 - starting launcher [0][0] ...
 [rank 0] done
-[it=1012] hydro_fvm compute time t=4.8429e-03 (Dt=4.774e-06) : 0.80412 s (5.52 ms, 0 us, 706 us, 790262 us, 5.35 ms)
+[it=1012] hydro_fvm compute time t=4.8429e-03 (Dt=4.774e-06) : 0.79555 s (4.20 ms, 0 us, 79 us, 785380 us, 4.04 ms)
 [rank 0] iteration #1013 - starting launcher [0][0] ...
 [rank 0] done
-[it=1013] hydro_fvm compute time t=4.8477e-03 (Dt=4.774e-06) : 0.80390 s (5.50 ms, 0 us, 684 us, 790088 us, 5.35 ms)
+[it=1013] hydro_fvm compute time t=4.8477e-03 (Dt=4.774e-06) : 0.79579 s (4.22 ms, 0 us, 79 us, 785483 us, 4.07 ms)
 [rank 0] iteration #1014 - starting launcher [0][0] ...
 [rank 0] done
-[it=1014] hydro_fvm compute time t=4.8524e-03 (Dt=4.774e-06) : 0.80394 s (5.52 ms, 0 us, 677 us, 790077 us, 5.38 ms)
+[it=1014] hydro_fvm compute time t=4.8524e-03 (Dt=4.774e-06) : 0.79537 s (4.20 ms, 0 us, 89 us, 785113 us, 4.06 ms)
 [rank 0] iteration #1015 - starting launcher [0][0] ...
 [rank 0] done
-[it=1015] hydro_fvm compute time t=4.8572e-03 (Dt=4.774e-06) : 0.80446 s (5.49 ms, 0 us, 701 us, 790606 us, 5.37 ms)
+[it=1015] hydro_fvm compute time t=4.8572e-03 (Dt=4.774e-06) : 0.79578 s (4.17 ms, 0 us, 83 us, 785574 us, 4.04 ms)
 [rank 0] iteration #1016 - starting launcher [0][0] ...
 [rank 0] done
-[it=1016] hydro_fvm compute time t=4.8620e-03 (Dt=4.774e-06) : 0.80330 s (5.53 ms, 0 us, 693 us, 789387 us, 5.39 ms)
+[it=1016] hydro_fvm compute time t=4.8620e-03 (Dt=4.774e-06) : 0.79554 s (4.20 ms, 0 us, 82 us, 785330 us, 4.04 ms)
 [rank 0] iteration #1017 - starting launcher [0][0] ...
 [rank 0] done
-[it=1017] hydro_fvm compute time t=4.8668e-03 (Dt=4.774e-06) : 0.80433 s (5.56 ms, 0 us, 679 us, 790468 us, 5.35 ms)
+[it=1017] hydro_fvm compute time t=4.8668e-03 (Dt=4.774e-06) : 0.79884 s (4.19 ms, 0 us, 81 us, 788631 us, 4.04 ms)
 [rank 0] iteration #1018 - starting launcher [0][0] ...
 [rank 0] done
-[it=1018] hydro_fvm compute time t=4.8715e-03 (Dt=4.774e-06) : 0.80315 s (5.52 ms, 0 us, 695 us, 789305 us, 5.34 ms)
+[it=1018] hydro_fvm compute time t=4.8715e-03 (Dt=4.774e-06) : 0.79642 s (4.18 ms, 0 us, 82 us, 786177 us, 4.10 ms)
 [rank 0] iteration #1019 - starting launcher [0][0] ...
 [rank 0] done
-[it=1019] hydro_fvm compute time t=4.8763e-03 (Dt=4.774e-06) : 0.80457 s (5.51 ms, 0 us, 700 us, 790735 us, 5.35 ms)
+[it=1019] hydro_fvm compute time t=4.8763e-03 (Dt=4.774e-06) : 0.79583 s (4.19 ms, 0 us, 82 us, 785629 us, 4.04 ms)
 [rank 0] iteration #1020 - starting launcher [0][0] ...
 [rank 0] done
-[it=1020] hydro_fvm compute time t=4.8811e-03 (Dt=4.774e-06) : 0.80390 s (5.48 ms, 0 us, 703 us, 790084 us, 5.36 ms)
+[it=1020] hydro_fvm compute time t=4.8811e-03 (Dt=4.774e-06) : 0.79673 s (4.20 ms, 0 us, 81 us, 786535 us, 4.04 ms)
 [rank 0] iteration #1021 - starting launcher [0][0] ...
 [rank 0] done
-[it=1021] hydro_fvm compute time t=4.8859e-03 (Dt=4.774e-06) : 0.80457 s (5.52 ms, 0 us, 703 us, 790669 us, 5.39 ms)
+[it=1021] hydro_fvm compute time t=4.8859e-03 (Dt=4.774e-06) : 0.79584 s (4.34 ms, 0 us, 80 us, 785494 us, 4.04 ms)
 [rank 0] iteration #1022 - starting launcher [0][0] ...
 [rank 0] done
-[it=1022] hydro_fvm compute time t=4.8906e-03 (Dt=4.774e-06) : 0.80319 s (5.57 ms, 0 us, 706 us, 789299 us, 5.35 ms)
+[it=1022] hydro_fvm compute time t=4.8906e-03 (Dt=4.774e-06) : 0.79537 s (4.17 ms, 0 us, 80 us, 785181 us, 4.05 ms)
 [rank 0] iteration #1023 - starting launcher [0][0] ...
 [rank 0] done
-[it=1023] hydro_fvm compute time t=4.8954e-03 (Dt=4.774e-06) : 0.80439 s (5.51 ms, 0 us, 704 us, 790541 us, 5.35 ms)
+[it=1023] hydro_fvm compute time t=4.8954e-03 (Dt=4.774e-06) : 0.79589 s (4.19 ms, 0 us, 80 us, 785683 us, 4.05 ms)
 [rank 0] iteration #1024 - starting launcher [0][0] ...
 [rank 0] done
-[it=1024] hydro_fvm compute time t=4.9002e-03 (Dt=4.774e-06) : 0.80435 s (5.52 ms, 0 us, 704 us, 790487 us, 5.36 ms)
+[it=1024] hydro_fvm compute time t=4.9002e-03 (Dt=4.774e-06) : 0.79591 s (4.20 ms, 0 us, 82 us, 785723 us, 4.05 ms)
 [rank 0] iteration #1025 - starting launcher [0][0] ...
 [rank 0] done
-[it=1025] hydro_fvm compute time t=4.9050e-03 (Dt=4.774e-06) : 0.80443 s (5.52 ms, 0 us, 689 us, 790575 us, 5.36 ms)
+[it=1025] hydro_fvm compute time t=4.9050e-03 (Dt=4.774e-06) : 0.79562 s (4.20 ms, 0 us, 81 us, 785435 us, 4.05 ms)
 [rank 0] iteration #1026 - starting launcher [0][0] ...
 [rank 0] done
-[it=1026] hydro_fvm compute time t=4.9097e-03 (Dt=4.774e-06) : 0.80414 s (5.52 ms, 0 us, 703 us, 790286 us, 5.35 ms)
+[it=1026] hydro_fvm compute time t=4.9097e-03 (Dt=4.774e-06) : 0.79570 s (4.20 ms, 0 us, 80 us, 785456 us, 4.08 ms)
 [rank 0] iteration #1027 - starting launcher [0][0] ...
 [rank 0] done
-[it=1027] hydro_fvm compute time t=4.9145e-03 (Dt=4.774e-06) : 0.80446 s (5.57 ms, 0 us, 703 us, 790566 us, 5.35 ms)
+[it=1027] hydro_fvm compute time t=4.9145e-03 (Dt=4.774e-06) : 0.79732 s (4.23 ms, 0 us, 80 us, 787052 us, 4.07 ms)
 [rank 0] iteration #1028 - starting launcher [0][0] ...
 [rank 0] done
-[it=1028] hydro_fvm compute time t=4.9193e-03 (Dt=4.774e-06) : 0.80447 s (5.57 ms, 0 us, 694 us, 790546 us, 5.37 ms)
+[it=1028] hydro_fvm compute time t=4.9193e-03 (Dt=4.774e-06) : 0.79558 s (4.31 ms, 0 us, 80 us, 785247 us, 4.06 ms)
 [rank 0] iteration #1029 - starting launcher [0][0] ...
 [rank 0] done
-[it=1029] hydro_fvm compute time t=4.9241e-03 (Dt=4.774e-06) : 0.80454 s (5.51 ms, 0 us, 701 us, 790692 us, 5.36 ms)
+[it=1029] hydro_fvm compute time t=4.9241e-03 (Dt=4.774e-06) : 0.79575 s (4.22 ms, 0 us, 78 us, 785541 us, 4.03 ms)
 [rank 0] iteration #1030 - starting launcher [0][0] ...
 [rank 0] done
-[it=1030] hydro_fvm compute time t=4.9288e-03 (Dt=4.774e-06) : 0.80361 s (5.51 ms, 0 us, 677 us, 789758 us, 5.37 ms)
+[it=1030] hydro_fvm compute time t=4.9288e-03 (Dt=4.774e-06) : 0.79548 s (4.20 ms, 0 us, 79 us, 785269 us, 4.04 ms)
 [rank 0] iteration #1031 - starting launcher [0][0] ...
 [rank 0] done
-[it=1031] hydro_fvm compute time t=4.9336e-03 (Dt=4.774e-06) : 0.80394 s (5.50 ms, 0 us, 699 us, 790082 us, 5.38 ms)
+[it=1031] hydro_fvm compute time t=4.9336e-03 (Dt=4.774e-06) : 0.79575 s (4.21 ms, 0 us, 80 us, 785486 us, 4.06 ms)
 [rank 0] iteration #1032 - starting launcher [0][0] ...
 [rank 0] done
-[it=1032] hydro_fvm compute time t=4.9384e-03 (Dt=4.774e-06) : 0.80380 s (5.53 ms, 0 us, 688 us, 789965 us, 5.35 ms)
+[it=1032] hydro_fvm compute time t=4.9384e-03 (Dt=4.774e-06) : 0.79564 s (4.26 ms, 0 us, 80 us, 785371 us, 4.04 ms)
 [rank 0] iteration #1033 - starting launcher [0][0] ...
 [rank 0] done
-[it=1033] hydro_fvm compute time t=4.9431e-03 (Dt=4.774e-06) : 0.80405 s (5.51 ms, 0 us, 702 us, 790235 us, 5.37 ms)
+[it=1033] hydro_fvm compute time t=4.9431e-03 (Dt=4.774e-06) : 0.79580 s (4.19 ms, 0 us, 79 us, 785632 us, 4.02 ms)
 [rank 0] iteration #1034 - starting launcher [0][0] ...
 [rank 0] done
-[it=1034] hydro_fvm compute time t=4.9479e-03 (Dt=4.774e-06) : 0.80443 s (5.52 ms, 0 us, 687 us, 790604 us, 5.34 ms)
+[it=1034] hydro_fvm compute time t=4.9479e-03 (Dt=4.774e-06) : 0.79539 s (4.22 ms, 0 us, 84 us, 785151 us, 4.04 ms)
 [rank 0] iteration #1035 - starting launcher [0][0] ...
 [rank 0] done
-[it=1035] hydro_fvm compute time t=4.9527e-03 (Dt=4.773e-06) : 0.80408 s (5.51 ms, 0 us, 696 us, 790243 us, 5.35 ms)
+[it=1035] hydro_fvm compute time t=4.9527e-03 (Dt=4.773e-06) : 0.79557 s (4.21 ms, 0 us, 80 us, 785342 us, 4.06 ms)
 [rank 0] iteration #1036 - starting launcher [0][0] ...
 [rank 0] done
-[it=1036] hydro_fvm compute time t=4.9575e-03 (Dt=4.773e-06) : 0.80437 s (5.53 ms, 0 us, 701 us, 790507 us, 5.37 ms)
+[it=1036] hydro_fvm compute time t=4.9575e-03 (Dt=4.773e-06) : 0.79548 s (4.33 ms, 0 us, 79 us, 785170 us, 4.05 ms)
 [rank 0] iteration #1037 - starting launcher [0][0] ...
 [rank 0] done
-[it=1037] hydro_fvm compute time t=4.9622e-03 (Dt=4.773e-06) : 0.80438 s (5.54 ms, 0 us, 701 us, 790500 us, 5.35 ms)
+[it=1037] hydro_fvm compute time t=4.9622e-03 (Dt=4.773e-06) : 0.79569 s (4.19 ms, 0 us, 80 us, 785513 us, 4.04 ms)
 [rank 0] iteration #1038 - starting launcher [0][0] ...
 [rank 0] done
-[it=1038] hydro_fvm compute time t=4.9670e-03 (Dt=4.773e-06) : 0.80396 s (5.55 ms, 0 us, 711 us, 790053 us, 5.36 ms)
+[it=1038] hydro_fvm compute time t=4.9670e-03 (Dt=4.773e-06) : 0.79571 s (4.17 ms, 0 us, 79 us, 785514 us, 4.07 ms)
 [rank 0] iteration #1039 - starting launcher [0][0] ...
 [rank 0] done
-[it=1039] hydro_fvm compute time t=4.9718e-03 (Dt=4.773e-06) : 0.80429 s (5.50 ms, 0 us, 697 us, 790445 us, 5.37 ms)
+[it=1039] hydro_fvm compute time t=4.9718e-03 (Dt=4.773e-06) : 0.79583 s (4.20 ms, 0 us, 80 us, 785633 us, 4.04 ms)
 [rank 0] iteration #1040 - starting launcher [0][0] ...
 [rank 0] done
-[it=1040] hydro_fvm compute time t=4.9766e-03 (Dt=4.773e-06) : 0.80439 s (5.51 ms, 0 us, 703 us, 790553 us, 5.35 ms)
+[it=1040] hydro_fvm compute time t=4.9766e-03 (Dt=4.773e-06) : 0.79537 s (4.19 ms, 0 us, 79 us, 785184 us, 4.04 ms)
 [rank 0] iteration #1041 - starting launcher [0][0] ...
 [rank 0] done
-[it=1041] hydro_fvm compute time t=4.9813e-03 (Dt=4.773e-06) : 0.80415 s (5.50 ms, 0 us, 699 us, 790325 us, 5.35 ms)
+[it=1041] hydro_fvm compute time t=4.9813e-03 (Dt=4.773e-06) : 0.79585 s (4.30 ms, 0 us, 81 us, 785565 us, 4.07 ms)
 [rank 0] iteration #1042 - starting launcher [0][0] ...
 [rank 0] done
-[it=1042] hydro_fvm compute time t=4.9861e-03 (Dt=4.773e-06) : 0.80385 s (5.53 ms, 0 us, 701 us, 789991 us, 5.35 ms)
+[it=1042] hydro_fvm compute time t=4.9861e-03 (Dt=4.773e-06) : 0.79534 s (4.22 ms, 0 us, 79 us, 785121 us, 4.04 ms)
 [rank 0] iteration #1043 - starting launcher [0][0] ...
 [rank 0] done
-[it=1043] hydro_fvm compute time t=4.9909e-03 (Dt=4.773e-06) : 0.80454 s (5.54 ms, 0 us, 698 us, 790658 us, 5.35 ms)
+[it=1043] hydro_fvm compute time t=4.9909e-03 (Dt=4.773e-06) : 0.79570 s (4.22 ms, 0 us, 77 us, 785494 us, 4.03 ms)
 [rank 0] iteration #1044 - starting launcher [0][0] ...
 [rank 0] done
-[it=1044] hydro_fvm compute time t=4.9957e-03 (Dt=4.773e-06) : 0.80403 s (5.51 ms, 0 us, 666 us, 790205 us, 5.37 ms)
+[it=1044] hydro_fvm compute time t=4.9957e-03 (Dt=4.773e-06) : 0.79550 s (4.20 ms, 0 us, 81 us, 785315 us, 4.03 ms)
 [rank 0] iteration #1045 - starting launcher [0][0] ...
 [rank 0] done
-[it=1045] hydro_fvm compute time t=5.0004e-03 (Dt=4.773e-06) : 0.80365 s (5.51 ms, 0 us, 691 us, 789816 us, 5.36 ms)
+[it=1045] hydro_fvm compute time t=5.0004e-03 (Dt=4.773e-06) : 0.79568 s (4.21 ms, 0 us, 79 us, 785466 us, 4.04 ms)
 [rank 0] iteration #1046 - starting launcher [0][0] ...
 [rank 0] done
-[it=1046] hydro_fvm compute time t=5.0052e-03 (Dt=4.773e-06) : 0.80358 s (5.49 ms, 0 us, 700 us, 789761 us, 5.34 ms)
+[it=1046] hydro_fvm compute time t=5.0052e-03 (Dt=4.773e-06) : 0.79546 s (4.29 ms, 0 us, 79 us, 785164 us, 4.05 ms)
 [rank 0] iteration #1047 - starting launcher [0][0] ...
 [rank 0] done
-[it=1047] hydro_fvm compute time t=5.0100e-03 (Dt=4.773e-06) : 0.80449 s (5.54 ms, 0 us, 705 us, 790622 us, 5.35 ms)
+[it=1047] hydro_fvm compute time t=5.0100e-03 (Dt=4.773e-06) : 0.79582 s (4.20 ms, 0 us, 79 us, 785631 us, 4.06 ms)
 [rank 0] iteration #1048 - starting launcher [0][0] ...
 [rank 0] done
-[it=1048] hydro_fvm compute time t=5.0147e-03 (Dt=4.773e-06) : 0.80400 s (5.50 ms, 0 us, 693 us, 790156 us, 5.37 ms)
+[it=1048] hydro_fvm compute time t=5.0147e-03 (Dt=4.773e-06) : 0.79564 s (4.21 ms, 0 us, 80 us, 785388 us, 4.09 ms)
 [rank 0] iteration #1049 - starting launcher [0][0] ...
 [rank 0] done
-[it=1049] hydro_fvm compute time t=5.0195e-03 (Dt=4.773e-06) : 0.80454 s (5.49 ms, 0 us, 704 us, 790725 us, 5.34 ms)
+[it=1049] hydro_fvm compute time t=5.0195e-03 (Dt=4.773e-06) : 0.79561 s (4.20 ms, 0 us, 81 us, 785392 us, 4.05 ms)
 [rank 0] iteration #1050 - starting launcher [0][0] ...
 [rank 0] done
-[it=1050] hydro_fvm compute time t=5.0243e-03 (Dt=4.773e-06) : 0.80392 s (5.51 ms, 0 us, 619 us, 790154 us, 5.36 ms)
+[it=1050] hydro_fvm compute time t=5.0243e-03 (Dt=4.773e-06) : 0.79569 s (4.27 ms, 0 us, 80 us, 785414 us, 4.05 ms)
 [rank 0] iteration #1051 - starting launcher [0][0] ...
 [rank 0] done
-[it=1051] hydro_fvm compute time t=5.0291e-03 (Dt=4.773e-06) : 0.80460 s (5.53 ms, 0 us, 687 us, 790737 us, 5.37 ms)
+[it=1051] hydro_fvm compute time t=5.0291e-03 (Dt=4.773e-06) : 0.79668 s (4.22 ms, 0 us, 79 us, 786476 us, 4.03 ms)
 [rank 0] iteration #1052 - starting launcher [0][0] ...
 [rank 0] done
-[it=1052] hydro_fvm compute time t=5.0338e-03 (Dt=4.773e-06) : 0.80409 s (5.52 ms, 0 us, 701 us, 790257 us, 5.34 ms)
+[it=1052] hydro_fvm compute time t=5.0338e-03 (Dt=4.773e-06) : 0.79621 s (4.21 ms, 0 us, 80 us, 785997 us, 4.04 ms)
 [rank 0] iteration #1053 - starting launcher [0][0] ...
 [rank 0] done
-[it=1053] hydro_fvm compute time t=5.0386e-03 (Dt=4.773e-06) : 0.80403 s (5.51 ms, 0 us, 670 us, 790216 us, 5.36 ms)
+[it=1053] hydro_fvm compute time t=5.0386e-03 (Dt=4.773e-06) : 0.79565 s (4.19 ms, 0 us, 79 us, 785493 us, 4.04 ms)
 [rank 0] iteration #1054 - starting launcher [0][0] ...
 [rank 0] done
-[it=1054] hydro_fvm compute time t=5.0434e-03 (Dt=4.773e-06) : 0.80387 s (5.51 ms, 0 us, 706 us, 790023 us, 5.35 ms)
+[it=1054] hydro_fvm compute time t=5.0434e-03 (Dt=4.773e-06) : 0.79874 s (4.22 ms, 0 us, 78 us, 788526 us, 4.04 ms)
 [rank 0] iteration #1055 - starting launcher [0][0] ...
 [rank 0] done
-[it=1055] hydro_fvm compute time t=5.0482e-03 (Dt=4.773e-06) : 0.80434 s (5.52 ms, 0 us, 706 us, 790469 us, 5.37 ms)
+[it=1055] hydro_fvm compute time t=5.0482e-03 (Dt=4.773e-06) : 0.79619 s (4.22 ms, 0 us, 78 us, 785947 us, 4.05 ms)
 [rank 0] iteration #1056 - starting launcher [0][0] ...
 [rank 0] done
-[it=1056] hydro_fvm compute time t=5.0529e-03 (Dt=4.773e-06) : 0.80452 s (5.51 ms, 0 us, 701 us, 790685 us, 5.35 ms)
+[it=1056] hydro_fvm compute time t=5.0529e-03 (Dt=4.773e-06) : 0.79544 s (4.27 ms, 0 us, 81 us, 785166 us, 4.04 ms)
 [rank 0] iteration #1057 - starting launcher [0][0] ...
 [rank 0] done
-[it=1057] hydro_fvm compute time t=5.0577e-03 (Dt=4.773e-06) : 0.80355 s (5.51 ms, 0 us, 704 us, 789713 us, 5.35 ms)
+[it=1057] hydro_fvm compute time t=5.0577e-03 (Dt=4.773e-06) : 0.79576 s (4.21 ms, 0 us, 79 us, 785562 us, 4.05 ms)
 [rank 0] iteration #1058 - starting launcher [0][0] ...
 [rank 0] done
-[it=1058] hydro_fvm compute time t=5.0625e-03 (Dt=4.773e-06) : 0.80439 s (5.53 ms, 0 us, 709 us, 790502 us, 5.37 ms)
+[it=1058] hydro_fvm compute time t=5.0625e-03 (Dt=4.773e-06) : 0.79628 s (4.22 ms, 0 us, 79 us, 786076 us, 4.03 ms)
 [rank 0] iteration #1059 - starting launcher [0][0] ...
 [rank 0] done
-[it=1059] hydro_fvm compute time t=5.0672e-03 (Dt=4.773e-06) : 0.80431 s (5.49 ms, 0 us, 707 us, 790461 us, 5.37 ms)
+[it=1059] hydro_fvm compute time t=5.0672e-03 (Dt=4.773e-06) : 0.79565 s (4.22 ms, 0 us, 79 us, 785456 us, 4.03 ms)
 [rank 0] iteration #1060 - starting launcher [0][0] ...
 [rank 0] done
-[it=1060] hydro_fvm compute time t=5.0720e-03 (Dt=4.773e-06) : 0.80426 s (5.52 ms, 0 us, 705 us, 790415 us, 5.36 ms)
+[it=1060] hydro_fvm compute time t=5.0720e-03 (Dt=4.773e-06) : 0.79548 s (4.21 ms, 0 us, 82 us, 785284 us, 4.06 ms)
 [rank 0] iteration #1061 - starting launcher [0][0] ...
 [rank 0] done
-[it=1061] hydro_fvm compute time t=5.0768e-03 (Dt=4.772e-06) : 0.80413 s (5.51 ms, 0 us, 692 us, 790319 us, 5.37 ms)
+[it=1061] hydro_fvm compute time t=5.0768e-03 (Dt=4.772e-06) : 0.79576 s (4.20 ms, 0 us, 80 us, 785570 us, 4.06 ms)
 [rank 0] iteration #1062 - starting launcher [0][0] ...
 [rank 0] done
-[it=1062] hydro_fvm compute time t=5.0816e-03 (Dt=4.772e-06) : 0.80455 s (5.52 ms, 0 us, 699 us, 790706 us, 5.35 ms)
+[it=1062] hydro_fvm compute time t=5.0816e-03 (Dt=4.772e-06) : 0.79731 s (4.25 ms, 0 us, 78 us, 787095 us, 4.05 ms)
 [rank 0] iteration #1063 - starting launcher [0][0] ...
 [rank 0] done
-[it=1063] hydro_fvm compute time t=5.0863e-03 (Dt=4.772e-06) : 0.80362 s (5.54 ms, 0 us, 674 us, 789773 us, 5.36 ms)
+[it=1063] hydro_fvm compute time t=5.0863e-03 (Dt=4.772e-06) : 0.79567 s (4.21 ms, 0 us, 78 us, 785460 us, 4.03 ms)
 [rank 0] iteration #1064 - starting launcher [0][0] ...
 [rank 0] done
-[it=1064] hydro_fvm compute time t=5.0911e-03 (Dt=4.772e-06) : 0.80384 s (5.51 ms, 0 us, 703 us, 789986 us, 5.37 ms)
+[it=1064] hydro_fvm compute time t=5.0911e-03 (Dt=4.772e-06) : 0.79518 s (4.20 ms, 0 us, 78 us, 784987 us, 4.03 ms)
 [rank 0] iteration #1065 - starting launcher [0][0] ...
 [rank 0] done
-[it=1065] hydro_fvm compute time t=5.0959e-03 (Dt=4.772e-06) : 0.80444 s (5.55 ms, 0 us, 670 us, 790603 us, 5.34 ms)
+[it=1065] hydro_fvm compute time t=5.0959e-03 (Dt=4.772e-06) : 0.79624 s (4.20 ms, 0 us, 78 us, 786029 us, 4.04 ms)
 [rank 0] iteration #1066 - starting launcher [0][0] ...
 [rank 0] done
-[it=1066] hydro_fvm compute time t=5.1007e-03 (Dt=4.772e-06) : 0.80448 s (5.57 ms, 0 us, 679 us, 790612 us, 5.34 ms)
+[it=1066] hydro_fvm compute time t=5.1007e-03 (Dt=4.772e-06) : 0.79716 s (4.22 ms, 0 us, 79 us, 786883 us, 4.04 ms)
 [rank 0] iteration #1067 - starting launcher [0][0] ...
 [rank 0] done
-[it=1067] hydro_fvm compute time t=5.1054e-03 (Dt=4.772e-06) : 0.80483 s (5.52 ms, 0 us, 697 us, 790615 us, 5.60 ms)
+[it=1067] hydro_fvm compute time t=5.1054e-03 (Dt=4.772e-06) : 0.79576 s (4.27 ms, 0 us, 77 us, 785529 us, 4.03 ms)
 [rank 0] iteration #1068 - starting launcher [0][0] ...
 [rank 0] done
-[it=1068] hydro_fvm compute time t=5.1102e-03 (Dt=4.772e-06) : 0.80402 s (5.57 ms, 0 us, 693 us, 790130 us, 5.35 ms)
+[it=1068] hydro_fvm compute time t=5.1102e-03 (Dt=4.772e-06) : 0.79551 s (4.26 ms, 0 us, 79 us, 785240 us, 4.04 ms)
 [rank 0] iteration #1069 - starting launcher [0][0] ...
 [rank 0] done
-[it=1069] hydro_fvm compute time t=5.1150e-03 (Dt=4.772e-06) : 0.80433 s (5.52 ms, 0 us, 684 us, 790485 us, 5.37 ms)
+[it=1069] hydro_fvm compute time t=5.1150e-03 (Dt=4.772e-06) : 0.79567 s (4.24 ms, 0 us, 78 us, 785425 us, 4.04 ms)
 [rank 0] iteration #1070 - starting launcher [0][0] ...
 [rank 0] done
-[it=1070] hydro_fvm compute time t=5.1197e-03 (Dt=4.772e-06) : 0.80344 s (5.50 ms, 0 us, 680 us, 789620 us, 5.37 ms)
+[it=1070] hydro_fvm compute time t=5.1197e-03 (Dt=4.772e-06) : 0.79549 s (4.19 ms, 0 us, 79 us, 785304 us, 4.04 ms)
 [rank 0] iteration #1071 - starting launcher [0][0] ...
 [rank 0] done
-[it=1071] hydro_fvm compute time t=5.1245e-03 (Dt=4.772e-06) : 0.80449 s (5.50 ms, 0 us, 708 us, 790633 us, 5.38 ms)
+[it=1071] hydro_fvm compute time t=5.1245e-03 (Dt=4.772e-06) : 0.79569 s (4.06 ms, 0 us, 80 us, 785646 us, 4.02 ms)
 [rank 0] iteration #1072 - starting launcher [0][0] ...
 [rank 0] done
-[it=1072] hydro_fvm compute time t=5.1293e-03 (Dt=4.772e-06) : 0.80411 s (5.55 ms, 0 us, 697 us, 790182 us, 5.39 ms)
+[it=1072] hydro_fvm compute time t=5.1293e-03 (Dt=4.772e-06) : 0.79623 s (4.02 ms, 0 us, 81 us, 786242 us, 4.03 ms)
 [rank 0] iteration #1073 - starting launcher [0][0] ...
 [rank 0] done
-[it=1073] hydro_fvm compute time t=5.1341e-03 (Dt=4.772e-06) : 0.80434 s (5.62 ms, 0 us, 699 us, 790361 us, 5.37 ms)
+[it=1073] hydro_fvm compute time t=5.1341e-03 (Dt=4.772e-06) : 0.79556 s (4.06 ms, 0 us, 78 us, 785508 us, 4.03 ms)
 [rank 0] iteration #1074 - starting launcher [0][0] ...
 [rank 0] done
-[it=1074] hydro_fvm compute time t=5.1388e-03 (Dt=4.772e-06) : 0.80374 s (5.53 ms, 0 us, 684 us, 789870 us, 5.38 ms)
+[it=1074] hydro_fvm compute time t=5.1388e-03 (Dt=4.772e-06) : 0.79523 s (4.07 ms, 0 us, 78 us, 785172 us, 4.03 ms)
 [rank 0] iteration #1075 - starting launcher [0][0] ...
 [rank 0] done
-[it=1075] hydro_fvm compute time t=5.1436e-03 (Dt=4.772e-06) : 0.80372 s (5.49 ms, 0 us, 695 us, 789893 us, 5.36 ms)
+[it=1075] hydro_fvm compute time t=5.1436e-03 (Dt=4.772e-06) : 0.79565 s (4.07 ms, 0 us, 81 us, 785584 us, 4.03 ms)
 [rank 0] iteration #1076 - starting launcher [0][0] ...
 [rank 0] done
-[it=1076] hydro_fvm compute time t=5.1484e-03 (Dt=4.772e-06) : 0.80411 s (5.53 ms, 0 us, 698 us, 790214 us, 5.40 ms)
+[it=1076] hydro_fvm compute time t=5.1484e-03 (Dt=4.772e-06) : 0.79738 s (4.08 ms, 0 us, 80 us, 787297 us, 4.04 ms)
 [rank 0] iteration #1077 - starting launcher [0][0] ...
 [rank 0] done
-[it=1077] hydro_fvm compute time t=5.1531e-03 (Dt=4.772e-06) : 0.80457 s (5.54 ms, 0 us, 694 us, 790315 us, 5.49 ms)
+[it=1077] hydro_fvm compute time t=5.1531e-03 (Dt=4.772e-06) : 0.79547 s (4.07 ms, 0 us, 82 us, 785430 us, 4.02 ms)
 [rank 0] iteration #1078 - starting launcher [0][0] ...
 [rank 0] done
-[it=1078] hydro_fvm compute time t=5.1579e-03 (Dt=4.772e-06) : 0.80452 s (5.60 ms, 0 us, 655 us, 790494 us, 5.38 ms)
+[it=1078] hydro_fvm compute time t=5.1579e-03 (Dt=4.772e-06) : 0.79525 s (4.08 ms, 0 us, 79 us, 785101 us, 4.04 ms)
 [rank 0] iteration #1079 - starting launcher [0][0] ...
 [rank 0] done
-[it=1079] hydro_fvm compute time t=5.1627e-03 (Dt=4.772e-06) : 0.80411 s (5.51 ms, 0 us, 709 us, 790216 us, 5.37 ms)
+[it=1079] hydro_fvm compute time t=5.1627e-03 (Dt=4.772e-06) : 0.79555 s (4.08 ms, 0 us, 77 us, 785483 us, 4.03 ms)
 [rank 0] iteration #1080 - starting launcher [0][0] ...
 [rank 0] done
-[it=1080] hydro_fvm compute time t=5.1675e-03 (Dt=4.772e-06) : 0.80420 s (5.50 ms, 0 us, 689 us, 790347 us, 5.37 ms)
+[it=1080] hydro_fvm compute time t=5.1675e-03 (Dt=4.772e-06) : 0.79594 s (4.05 ms, 0 us, 78 us, 785895 us, 4.03 ms)
 [rank 0] iteration #1081 - starting launcher [0][0] ...
 [rank 0] done
-[it=1081] hydro_fvm compute time t=5.1722e-03 (Dt=4.772e-06) : 0.80415 s (5.51 ms, 0 us, 703 us, 790311 us, 5.36 ms)
+[it=1081] hydro_fvm compute time t=5.1722e-03 (Dt=4.772e-06) : 0.79545 s (4.06 ms, 0 us, 80 us, 785394 us, 4.02 ms)
 [rank 0] iteration #1082 - starting launcher [0][0] ...
 [rank 0] done
-[it=1082] hydro_fvm compute time t=5.1770e-03 (Dt=4.772e-06) : 0.80427 s (5.53 ms, 0 us, 649 us, 790401 us, 5.38 ms)
+[it=1082] hydro_fvm compute time t=5.1770e-03 (Dt=4.772e-06) : 0.79525 s (4.04 ms, 0 us, 78 us, 785242 us, 4.02 ms)
 [rank 0] iteration #1083 - starting launcher [0][0] ...
 [rank 0] done
-[it=1083] hydro_fvm compute time t=5.1818e-03 (Dt=4.772e-06) : 0.80414 s (5.56 ms, 0 us, 699 us, 790244 us, 5.37 ms)
+[it=1083] hydro_fvm compute time t=5.1818e-03 (Dt=4.772e-06) : 0.79548 s (4.07 ms, 0 us, 83 us, 785426 us, 4.02 ms)
 [rank 0] iteration #1084 - starting launcher [0][0] ...
 [rank 0] done
-[it=1084] hydro_fvm compute time t=5.1866e-03 (Dt=4.772e-06) : 0.80455 s (5.50 ms, 0 us, 707 us, 790671 us, 5.38 ms)
+[it=1084] hydro_fvm compute time t=5.1866e-03 (Dt=4.772e-06) : 0.79534 s (4.07 ms, 0 us, 78 us, 785211 us, 4.08 ms)
 [rank 0] iteration #1085 - starting launcher [0][0] ...
 [rank 0] done
-[it=1085] hydro_fvm compute time t=5.1913e-03 (Dt=4.772e-06) : 0.80443 s (5.49 ms, 0 us, 698 us, 790598 us, 5.37 ms)
+[it=1085] hydro_fvm compute time t=5.1913e-03 (Dt=4.772e-06) : 0.79541 s (4.14 ms, 0 us, 76 us, 785306 us, 4.05 ms)
 [rank 0] iteration #1086 - starting launcher [0][0] ...
 [rank 0] done
-[it=1086] hydro_fvm compute time t=5.1961e-03 (Dt=4.772e-06) : 0.80407 s (5.50 ms, 0 us, 692 us, 790220 us, 5.37 ms)
+[it=1086] hydro_fvm compute time t=5.1961e-03 (Dt=4.772e-06) : 0.79628 s (4.17 ms, 0 us, 79 us, 786068 us, 4.07 ms)
 [rank 0] iteration #1087 - starting launcher [0][0] ...
 [rank 0] done
-[it=1087] hydro_fvm compute time t=5.2009e-03 (Dt=4.771e-06) : 0.80415 s (5.50 ms, 0 us, 693 us, 790325 us, 5.36 ms)
+[it=1087] hydro_fvm compute time t=5.2009e-03 (Dt=4.771e-06) : 0.79565 s (4.14 ms, 0 us, 79 us, 785496 us, 4.04 ms)
 [rank 0] iteration #1088 - starting launcher [0][0] ...
 [rank 0] done
-[it=1088] hydro_fvm compute time t=5.2056e-03 (Dt=4.771e-06) : 0.80415 s (5.49 ms, 0 us, 700 us, 790321 us, 5.35 ms)
+[it=1088] hydro_fvm compute time t=5.2056e-03 (Dt=4.771e-06) : 0.79555 s (4.19 ms, 0 us, 79 us, 785329 us, 4.06 ms)
 [rank 0] iteration #1089 - starting launcher [0][0] ...
 [rank 0] done
-[it=1089] hydro_fvm compute time t=5.2104e-03 (Dt=4.771e-06) : 0.80457 s (5.53 ms, 0 us, 688 us, 790707 us, 5.37 ms)
+[it=1089] hydro_fvm compute time t=5.2104e-03 (Dt=4.771e-06) : 0.79648 s (4.21 ms, 0 us, 86 us, 786234 us, 4.05 ms)
 [rank 0] iteration #1090 - starting launcher [0][0] ...
 [rank 0] done
-[it=1090] hydro_fvm compute time t=5.2152e-03 (Dt=4.771e-06) : 0.80370 s (5.52 ms, 0 us, 703 us, 789848 us, 5.35 ms)
+[it=1090] hydro_fvm compute time t=5.2152e-03 (Dt=4.771e-06) : 0.79547 s (4.18 ms, 0 us, 82 us, 785261 us, 4.04 ms)
 [rank 0] iteration #1091 - starting launcher [0][0] ...
 [rank 0] done
-[it=1091] hydro_fvm compute time t=5.2200e-03 (Dt=4.771e-06) : 0.80349 s (5.52 ms, 0 us, 661 us, 789658 us, 5.37 ms)
+[it=1091] hydro_fvm compute time t=5.2200e-03 (Dt=4.771e-06) : 0.79560 s (4.19 ms, 0 us, 81 us, 785384 us, 4.05 ms)
 [rank 0] iteration #1092 - starting launcher [0][0] ...
 [rank 0] done
-[it=1092] hydro_fvm compute time t=5.2247e-03 (Dt=4.771e-06) : 0.80402 s (5.48 ms, 0 us, 684 us, 790229 us, 5.35 ms)
+[it=1092] hydro_fvm compute time t=5.2247e-03 (Dt=4.771e-06) : 0.79619 s (4.23 ms, 0 us, 81 us, 785955 us, 4.04 ms)
 [rank 0] iteration #1093 - starting launcher [0][0] ...
 [rank 0] done
-[it=1093] hydro_fvm compute time t=5.2295e-03 (Dt=4.771e-06) : 0.80419 s (5.51 ms, 0 us, 701 us, 790373 us, 5.34 ms)
+[it=1093] hydro_fvm compute time t=5.2295e-03 (Dt=4.771e-06) : 0.79562 s (4.19 ms, 0 us, 79 us, 785405 us, 4.06 ms)
 [rank 0] iteration #1094 - starting launcher [0][0] ...
 [rank 0] done
-[it=1094] hydro_fvm compute time t=5.2343e-03 (Dt=4.771e-06) : 0.80412 s (5.54 ms, 0 us, 684 us, 790262 us, 5.36 ms)
+[it=1094] hydro_fvm compute time t=5.2343e-03 (Dt=4.771e-06) : 0.79543 s (4.17 ms, 0 us, 81 us, 785216 us, 4.05 ms)
 [rank 0] iteration #1095 - starting launcher [0][0] ...
 [rank 0] done
-[it=1095] hydro_fvm compute time t=5.2390e-03 (Dt=4.771e-06) : 0.80450 s (5.51 ms, 0 us, 709 us, 790650 us, 5.35 ms)
+[it=1095] hydro_fvm compute time t=5.2390e-03 (Dt=4.771e-06) : 0.79618 s (4.21 ms, 0 us, 81 us, 785974 us, 4.05 ms)
 [rank 0] iteration #1096 - starting launcher [0][0] ...
 [rank 0] done
-[it=1096] hydro_fvm compute time t=5.2438e-03 (Dt=4.771e-06) : 0.80409 s (5.51 ms, 0 us, 692 us, 790268 us, 5.35 ms)
+[it=1096] hydro_fvm compute time t=5.2438e-03 (Dt=4.771e-06) : 0.79552 s (4.19 ms, 0 us, 79 us, 785354 us, 4.04 ms)
 [rank 0] iteration #1097 - starting launcher [0][0] ...
 [rank 0] done
-[it=1097] hydro_fvm compute time t=5.2486e-03 (Dt=4.771e-06) : 0.80429 s (5.50 ms, 0 us, 676 us, 790456 us, 5.38 ms)
+[it=1097] hydro_fvm compute time t=5.2486e-03 (Dt=4.771e-06) : 0.79569 s (4.17 ms, 0 us, 79 us, 785511 us, 4.04 ms)
 [rank 0] iteration #1098 - starting launcher [0][0] ...
 [rank 0] done
-[it=1098] hydro_fvm compute time t=5.2533e-03 (Dt=4.771e-06) : 0.80382 s (5.55 ms, 0 us, 676 us, 789967 us, 5.36 ms)
+[it=1098] hydro_fvm compute time t=5.2533e-03 (Dt=4.771e-06) : 0.79545 s (4.19 ms, 0 us, 80 us, 785268 us, 4.03 ms)
 [rank 0] iteration #1099 - starting launcher [0][0] ...
 [rank 0] done
-[it=1099] hydro_fvm compute time t=5.2581e-03 (Dt=4.771e-06) : 0.80429 s (5.53 ms, 0 us, 698 us, 790432 us, 5.35 ms)
+[it=1099] hydro_fvm compute time t=5.2581e-03 (Dt=4.771e-06) : 0.79564 s (4.18 ms, 0 us, 80 us, 785470 us, 4.02 ms)
 [rank 0] iteration #1100 - starting launcher [0][0] ...
 [rank 0] done
-[it=1100] hydro_fvm compute time t=5.2629e-03 (Dt=4.771e-06) : 0.80432 s (5.50 ms, 0 us, 690 us, 790497 us, 5.36 ms)
+[it=1100] hydro_fvm compute time t=5.2629e-03 (Dt=4.771e-06) : 0.79627 s (4.18 ms, 0 us, 85 us, 786092 us, 4.02 ms)
 [rank 0] iteration #1101 - starting launcher [0][0] ...
 [rank 0] done
-[it=1101] hydro_fvm compute time t=5.2677e-03 (Dt=4.771e-06) : 0.80415 s (5.50 ms, 0 us, 694 us, 790321 us, 5.35 ms)
+[it=1101] hydro_fvm compute time t=5.2677e-03 (Dt=4.771e-06) : 0.79571 s (4.35 ms, 0 us, 79 us, 785343 us, 4.08 ms)
 [rank 0] iteration #1102 - starting launcher [0][0] ...
 [rank 0] done
-[it=1102] hydro_fvm compute time t=5.2724e-03 (Dt=4.771e-06) : 0.80413 s (5.50 ms, 0 us, 689 us, 790280 us, 5.38 ms)
+[it=1102] hydro_fvm compute time t=5.2724e-03 (Dt=4.771e-06) : 0.79573 s (4.16 ms, 0 us, 82 us, 785574 us, 4.04 ms)
 [rank 0] iteration #1103 - starting launcher [0][0] ...
 [rank 0] done
-[it=1103] hydro_fvm compute time t=5.2772e-03 (Dt=4.771e-06) : 0.80332 s (5.52 ms, 0 us, 707 us, 789477 us, 5.34 ms)
+[it=1103] hydro_fvm compute time t=5.2772e-03 (Dt=4.771e-06) : 0.79564 s (4.20 ms, 0 us, 79 us, 785434 us, 4.04 ms)
 [rank 0] iteration #1104 - starting launcher [0][0] ...
 [rank 0] done
-[it=1104] hydro_fvm compute time t=5.2820e-03 (Dt=4.771e-06) : 0.80363 s (5.50 ms, 0 us, 709 us, 789815 us, 5.33 ms)
+[it=1104] hydro_fvm compute time t=5.2820e-03 (Dt=4.771e-06) : 0.79561 s (4.20 ms, 0 us, 79 us, 785411 us, 4.04 ms)
 [rank 0] iteration #1105 - starting launcher [0][0] ...
 [rank 0] done
-[it=1105] hydro_fvm compute time t=5.2867e-03 (Dt=4.771e-06) : 0.80441 s (5.48 ms, 0 us, 675 us, 790632 us, 5.35 ms)
+[it=1105] hydro_fvm compute time t=5.2867e-03 (Dt=4.771e-06) : 0.79576 s (4.32 ms, 0 us, 83 us, 785425 us, 4.05 ms)
 [rank 0] iteration #1106 - starting launcher [0][0] ...
 [rank 0] done
-[it=1106] hydro_fvm compute time t=5.2915e-03 (Dt=4.771e-06) : 0.80403 s (5.50 ms, 0 us, 699 us, 790191 us, 5.35 ms)
+[it=1106] hydro_fvm compute time t=5.2915e-03 (Dt=4.771e-06) : 0.79559 s (4.21 ms, 0 us, 80 us, 785352 us, 4.05 ms)
 [rank 0] iteration #1107 - starting launcher [0][0] ...
 [rank 0] done
-[it=1107] hydro_fvm compute time t=5.2963e-03 (Dt=4.771e-06) : 0.80460 s (5.52 ms, 0 us, 701 us, 790732 us, 5.37 ms)
+[it=1107] hydro_fvm compute time t=5.2963e-03 (Dt=4.771e-06) : 0.79567 s (4.27 ms, 0 us, 80 us, 785433 us, 4.02 ms)
 [rank 0] iteration #1108 - starting launcher [0][0] ...
 [rank 0] done
-[it=1108] hydro_fvm compute time t=5.3011e-03 (Dt=4.771e-06) : 0.80412 s (5.51 ms, 0 us, 699 us, 790282 us, 5.35 ms)
+[it=1108] hydro_fvm compute time t=5.3011e-03 (Dt=4.771e-06) : 0.79562 s (4.19 ms, 0 us, 79 us, 785429 us, 4.02 ms)
 [rank 0] iteration #1109 - starting launcher [0][0] ...
 [rank 0] done
-[it=1109] hydro_fvm compute time t=5.3058e-03 (Dt=4.771e-06) : 0.80407 s (5.49 ms, 0 us, 708 us, 790219 us, 5.36 ms)
+[it=1109] hydro_fvm compute time t=5.3058e-03 (Dt=4.771e-06) : 0.79583 s (4.26 ms, 0 us, 79 us, 785584 us, 4.03 ms)
 [rank 0] iteration #1110 - starting launcher [0][0] ...
 [rank 0] done
-[it=1110] hydro_fvm compute time t=5.3106e-03 (Dt=4.771e-06) : 0.80412 s (5.51 ms, 0 us, 689 us, 790295 us, 5.35 ms)
+[it=1110] hydro_fvm compute time t=5.3106e-03 (Dt=4.771e-06) : 0.79641 s (4.22 ms, 0 us, 79 us, 786153 us, 4.05 ms)
 [rank 0] iteration #1111 - starting launcher [0][0] ...
 [rank 0] done
-[it=1111] hydro_fvm compute time t=5.3154e-03 (Dt=4.771e-06) : 0.80383 s (5.51 ms, 0 us, 670 us, 789980 us, 5.37 ms)
+[it=1111] hydro_fvm compute time t=5.3154e-03 (Dt=4.771e-06) : 0.79590 s (4.25 ms, 0 us, 79 us, 785659 us, 4.03 ms)
 [rank 0] iteration #1112 - starting launcher [0][0] ...
 [rank 0] done
-[it=1112] hydro_fvm compute time t=5.3201e-03 (Dt=4.770e-06) : 0.80449 s (5.56 ms, 0 us, 686 us, 790594 us, 5.36 ms)
+[it=1112] hydro_fvm compute time t=5.3201e-03 (Dt=4.770e-06) : 0.79612 s (4.07 ms, 0 us, 79 us, 786084 us, 4.01 ms)
 [rank 0] iteration #1113 - starting launcher [0][0] ...
 [rank 0] done
-[it=1113] hydro_fvm compute time t=5.3249e-03 (Dt=4.770e-06) : 0.80410 s (5.52 ms, 0 us, 704 us, 790258 us, 5.35 ms)
+[it=1113] hydro_fvm compute time t=5.3249e-03 (Dt=4.770e-06) : 0.79563 s (4.07 ms, 0 us, 78 us, 785491 us, 4.05 ms)
 [rank 0] iteration #1114 - starting launcher [0][0] ...
 [rank 0] done
-[it=1114] hydro_fvm compute time t=5.3297e-03 (Dt=4.770e-06) : 0.80409 s (5.50 ms, 0 us, 689 us, 790298 us, 5.33 ms)
+[it=1114] hydro_fvm compute time t=5.3297e-03 (Dt=4.770e-06) : 0.79525 s (4.12 ms, 0 us, 78 us, 785118 us, 4.04 ms)
 [rank 0] iteration #1115 - starting launcher [0][0] ...
 [rank 0] done
-[it=1115] hydro_fvm compute time t=5.3345e-03 (Dt=4.770e-06) : 0.80402 s (5.50 ms, 0 us, 689 us, 790193 us, 5.36 ms)
+[it=1115] hydro_fvm compute time t=5.3345e-03 (Dt=4.770e-06) : 0.79575 s (4.19 ms, 0 us, 79 us, 785539 us, 4.04 ms)
 [rank 0] iteration #1116 - starting launcher [0][0] ...
 [rank 0] done
-[it=1116] hydro_fvm compute time t=5.3392e-03 (Dt=4.770e-06) : 0.80354 s (5.50 ms, 0 us, 686 us, 789709 us, 5.36 ms)
+[it=1116] hydro_fvm compute time t=5.3392e-03 (Dt=4.770e-06) : 0.79597 s (4.31 ms, 0 us, 78 us, 785659 us, 4.05 ms)
 [rank 0] iteration #1117 - starting launcher [0][0] ...
 [rank 0] done
-[it=1117] hydro_fvm compute time t=5.3440e-03 (Dt=4.770e-06) : 0.80450 s (5.52 ms, 0 us, 680 us, 790661 us, 5.34 ms)
+[it=1117] hydro_fvm compute time t=5.3440e-03 (Dt=4.770e-06) : 0.79612 s (4.21 ms, 0 us, 80 us, 785898 us, 4.04 ms)
 [rank 0] iteration #1118 - starting launcher [0][0] ...
 [rank 0] done
-[it=1118] hydro_fvm compute time t=5.3488e-03 (Dt=4.770e-06) : 0.80379 s (5.50 ms, 0 us, 686 us, 789980 us, 5.36 ms)
+[it=1118] hydro_fvm compute time t=5.3488e-03 (Dt=4.770e-06) : 0.79550 s (4.21 ms, 0 us, 78 us, 785318 us, 4.03 ms)
 [rank 0] iteration #1119 - starting launcher [0][0] ...
 [rank 0] done
-[it=1119] hydro_fvm compute time t=5.3535e-03 (Dt=4.770e-06) : 0.80459 s (5.49 ms, 0 us, 704 us, 790763 us, 5.36 ms)
+[it=1119] hydro_fvm compute time t=5.3535e-03 (Dt=4.770e-06) : 0.79571 s (4.21 ms, 0 us, 81 us, 785539 us, 4.04 ms)
 [rank 0] iteration #1120 - starting launcher [0][0] ...
 [rank 0] done
-[it=1120] hydro_fvm compute time t=5.3583e-03 (Dt=4.770e-06) : 0.80422 s (5.50 ms, 0 us, 691 us, 790378 us, 5.37 ms)
+[it=1120] hydro_fvm compute time t=5.3583e-03 (Dt=4.770e-06) : 0.79557 s (4.25 ms, 0 us, 79 us, 785338 us, 4.05 ms)
 [rank 0] iteration #1121 - starting launcher [0][0] ...
 [rank 0] done
-[it=1121] hydro_fvm compute time t=5.3631e-03 (Dt=4.770e-06) : 0.80450 s (5.50 ms, 0 us, 676 us, 790678 us, 5.36 ms)
+[it=1121] hydro_fvm compute time t=5.3631e-03 (Dt=4.770e-06) : 0.79627 s (4.21 ms, 0 us, 79 us, 786053 us, 4.05 ms)
 [rank 0] iteration #1122 - starting launcher [0][0] ...
 [rank 0] done
-[it=1122] hydro_fvm compute time t=5.3678e-03 (Dt=4.770e-06) : 0.80389 s (5.48 ms, 0 us, 681 us, 790076 us, 5.36 ms)
+[it=1122] hydro_fvm compute time t=5.3678e-03 (Dt=4.770e-06) : 0.79549 s (4.26 ms, 0 us, 78 us, 785232 us, 4.04 ms)
 [rank 0] iteration #1123 - starting launcher [0][0] ...
 [rank 0] done
-[it=1123] hydro_fvm compute time t=5.3726e-03 (Dt=4.770e-06) : 0.80397 s (5.49 ms, 0 us, 698 us, 790114 us, 5.39 ms)
+[it=1123] hydro_fvm compute time t=5.3726e-03 (Dt=4.770e-06) : 0.79565 s (4.21 ms, 0 us, 78 us, 785447 us, 4.04 ms)
 [rank 0] iteration #1124 - starting launcher [0][0] ...
 [rank 0] done
-[it=1124] hydro_fvm compute time t=5.3774e-03 (Dt=4.770e-06) : 0.80394 s (5.52 ms, 0 us, 699 us, 790081 us, 5.36 ms)
+[it=1124] hydro_fvm compute time t=5.3774e-03 (Dt=4.770e-06) : 0.79553 s (4.22 ms, 0 us, 79 us, 785296 us, 4.05 ms)
 [rank 0] iteration #1125 - starting launcher [0][0] ...
 [rank 0] done
-[it=1125] hydro_fvm compute time t=5.3822e-03 (Dt=4.770e-06) : 0.80445 s (5.54 ms, 0 us, 699 us, 790568 us, 5.35 ms)
+[it=1125] hydro_fvm compute time t=5.3822e-03 (Dt=4.770e-06) : 0.79582 s (4.24 ms, 0 us, 80 us, 785574 us, 4.04 ms)
 [rank 0] iteration #1126 - starting launcher [0][0] ...
 [rank 0] done
-[it=1126] hydro_fvm compute time t=5.3869e-03 (Dt=4.770e-06) : 0.80432 s (5.52 ms, 0 us, 692 us, 790485 us, 5.35 ms)
+[it=1126] hydro_fvm compute time t=5.3869e-03 (Dt=4.770e-06) : 0.79553 s (4.23 ms, 0 us, 78 us, 785330 us, 4.02 ms)
 [rank 0] iteration #1127 - starting launcher [0][0] ...
 [rank 0] done
-[it=1127] hydro_fvm compute time t=5.3917e-03 (Dt=4.770e-06) : 0.80405 s (5.50 ms, 0 us, 677 us, 790218 us, 5.36 ms)
+[it=1127] hydro_fvm compute time t=5.3917e-03 (Dt=4.770e-06) : 0.79571 s (4.20 ms, 0 us, 80 us, 785502 us, 4.04 ms)
 [rank 0] iteration #1128 - starting launcher [0][0] ...
 [rank 0] done
-[it=1128] hydro_fvm compute time t=5.3965e-03 (Dt=4.770e-06) : 0.80441 s (5.52 ms, 0 us, 673 us, 790522 us, 5.39 ms)
+[it=1128] hydro_fvm compute time t=5.3965e-03 (Dt=4.770e-06) : 0.79553 s (4.22 ms, 0 us, 78 us, 785305 us, 4.05 ms)
 [rank 0] iteration #1129 - starting launcher [0][0] ...
 [rank 0] done
-[it=1129] hydro_fvm compute time t=5.4012e-03 (Dt=4.770e-06) : 0.80459 s (5.51 ms, 0 us, 699 us, 790732 us, 5.37 ms)
+[it=1129] hydro_fvm compute time t=5.4012e-03 (Dt=4.770e-06) : 0.79559 s (4.19 ms, 0 us, 79 us, 785401 us, 4.04 ms)
 [rank 0] iteration #1130 - starting launcher [0][0] ...
 [rank 0] done
-[it=1130] hydro_fvm compute time t=5.4060e-03 (Dt=4.770e-06) : 0.80452 s (5.53 ms, 0 us, 701 us, 790664 us, 5.35 ms)
+[it=1130] hydro_fvm compute time t=5.4060e-03 (Dt=4.770e-06) : 0.79545 s (4.21 ms, 0 us, 79 us, 785257 us, 4.05 ms)
 [rank 0] iteration #1131 - starting launcher [0][0] ...
 [rank 0] done
-[it=1131] hydro_fvm compute time t=5.4108e-03 (Dt=4.770e-06) : 0.80435 s (5.50 ms, 0 us, 704 us, 790519 us, 5.35 ms)
+[it=1131] hydro_fvm compute time t=5.4108e-03 (Dt=4.770e-06) : 0.79558 s (4.19 ms, 0 us, 78 us, 785420 us, 4.03 ms)
 [rank 0] iteration #1132 - starting launcher [0][0] ...
 [rank 0] done
-[it=1132] hydro_fvm compute time t=5.4155e-03 (Dt=4.770e-06) : 0.80372 s (5.51 ms, 0 us, 697 us, 789887 us, 5.35 ms)
+[it=1132] hydro_fvm compute time t=5.4155e-03 (Dt=4.770e-06) : 0.79535 s (4.21 ms, 0 us, 78 us, 785118 us, 4.06 ms)
 [rank 0] iteration #1133 - starting launcher [0][0] ...
 [rank 0] done
-[it=1133] hydro_fvm compute time t=5.4203e-03 (Dt=4.770e-06) : 0.80455 s (5.48 ms, 0 us, 702 us, 790676 us, 5.38 ms)
+[it=1133] hydro_fvm compute time t=5.4203e-03 (Dt=4.770e-06) : 0.79590 s (4.19 ms, 0 us, 80 us, 785706 us, 4.03 ms)
 [rank 0] iteration #1134 - starting launcher [0][0] ...
 [rank 0] done
-[it=1134] hydro_fvm compute time t=5.4251e-03 (Dt=4.770e-06) : 0.80389 s (5.54 ms, 0 us, 684 us, 790001 us, 5.38 ms)
+[it=1134] hydro_fvm compute time t=5.4251e-03 (Dt=4.770e-06) : 0.79550 s (4.30 ms, 0 us, 80 us, 785206 us, 4.04 ms)
 [rank 0] iteration #1135 - starting launcher [0][0] ...
 [rank 0] done
-[it=1135] hydro_fvm compute time t=5.4299e-03 (Dt=4.770e-06) : 0.80301 s (5.52 ms, 0 us, 692 us, 789152 us, 5.37 ms)
+[it=1135] hydro_fvm compute time t=5.4299e-03 (Dt=4.770e-06) : 0.79581 s (4.19 ms, 0 us, 78 us, 785629 us, 4.03 ms)
 [rank 0] iteration #1136 - starting launcher [0][0] ...
 [rank 0] done
-[it=1136] hydro_fvm compute time t=5.4346e-03 (Dt=4.770e-06) : 0.80426 s (5.49 ms, 0 us, 665 us, 790457 us, 5.36 ms)
+[it=1136] hydro_fvm compute time t=5.4346e-03 (Dt=4.770e-06) : 0.79536 s (4.19 ms, 0 us, 79 us, 785172 us, 4.03 ms)
 [rank 0] iteration #1137 - starting launcher [0][0] ...
 [rank 0] done
-[it=1137] hydro_fvm compute time t=5.4394e-03 (Dt=4.769e-06) : 0.80443 s (5.49 ms, 0 us, 705 us, 790578 us, 5.37 ms)
+[it=1137] hydro_fvm compute time t=5.4394e-03 (Dt=4.769e-06) : 0.79556 s (4.21 ms, 0 us, 79 us, 785347 us, 4.03 ms)
 [rank 0] iteration #1138 - starting launcher [0][0] ...
 [rank 0] done
-[it=1138] hydro_fvm compute time t=5.4442e-03 (Dt=4.769e-06) : 0.80432 s (5.52 ms, 0 us, 705 us, 790446 us, 5.37 ms)
+[it=1138] hydro_fvm compute time t=5.4442e-03 (Dt=4.769e-06) : 0.79544 s (4.17 ms, 0 us, 78 us, 785272 us, 4.04 ms)
 [rank 0] iteration #1139 - starting launcher [0][0] ...
 [rank 0] done
-[it=1139] hydro_fvm compute time t=5.4489e-03 (Dt=4.769e-06) : 0.80428 s (5.54 ms, 0 us, 701 us, 790381 us, 5.37 ms)
+[it=1139] hydro_fvm compute time t=5.4489e-03 (Dt=4.769e-06) : 0.79573 s (4.19 ms, 0 us, 78 us, 785563 us, 4.02 ms)
 [rank 0] iteration #1140 - starting launcher [0][0] ...
 [rank 0] done
-[it=1140] hydro_fvm compute time t=5.4537e-03 (Dt=4.769e-06) : 0.80398 s (5.47 ms, 0 us, 672 us, 790191 us, 5.37 ms)
+[it=1140] hydro_fvm compute time t=5.4537e-03 (Dt=4.769e-06) : 0.79563 s (4.19 ms, 0 us, 79 us, 785339 us, 4.09 ms)
 [rank 0] iteration #1141 - starting launcher [0][0] ...
 [rank 0] done
-[it=1141] hydro_fvm compute time t=5.4585e-03 (Dt=4.769e-06) : 0.80415 s (5.48 ms, 0 us, 702 us, 790335 us, 5.35 ms)
+[it=1141] hydro_fvm compute time t=5.4585e-03 (Dt=4.769e-06) : 0.79610 s (4.12 ms, 0 us, 81 us, 786009 us, 4.04 ms)
 [rank 0] iteration #1142 - starting launcher [0][0] ...
 [rank 0] done
-[it=1142] hydro_fvm compute time t=5.4632e-03 (Dt=4.769e-06) : 0.80415 s (5.53 ms, 0 us, 688 us, 790292 us, 5.36 ms)
+[it=1142] hydro_fvm compute time t=5.4632e-03 (Dt=4.769e-06) : 0.79535 s (4.14 ms, 0 us, 79 us, 785243 us, 4.04 ms)
 [rank 0] iteration #1143 - starting launcher [0][0] ...
 [rank 0] done
-[it=1143] hydro_fvm compute time t=5.4680e-03 (Dt=4.769e-06) : 0.80458 s (5.53 ms, 0 us, 684 us, 790732 us, 5.35 ms)
+[it=1143] hydro_fvm compute time t=5.4680e-03 (Dt=4.769e-06) : 0.79562 s (4.20 ms, 0 us, 79 us, 785393 us, 4.06 ms)
 [rank 0] iteration #1144 - starting launcher [0][0] ...
 [rank 0] done
-[it=1144] hydro_fvm compute time t=5.4728e-03 (Dt=4.769e-06) : 0.80443 s (5.51 ms, 0 us, 698 us, 790602 us, 5.35 ms)
+[it=1144] hydro_fvm compute time t=5.4728e-03 (Dt=4.769e-06) : 0.79580 s (4.18 ms, 0 us, 79 us, 785557 us, 4.04 ms)
 [rank 0] iteration #1145 - starting launcher [0][0] ...
 [rank 0] done
-[it=1145] hydro_fvm compute time t=5.4775e-03 (Dt=4.769e-06) : 0.80417 s (5.53 ms, 0 us, 694 us, 790309 us, 5.36 ms)
+[it=1145] hydro_fvm compute time t=5.4775e-03 (Dt=4.769e-06) : 0.79551 s (4.06 ms, 0 us, 78 us, 785471 us, 4.03 ms)
 [rank 0] iteration #1146 - starting launcher [0][0] ...
 [rank 0] done
-[it=1146] hydro_fvm compute time t=5.4823e-03 (Dt=4.769e-06) : 0.80375 s (5.51 ms, 0 us, 680 us, 789942 us, 5.35 ms)
+[it=1146] hydro_fvm compute time t=5.4823e-03 (Dt=4.769e-06) : 0.79531 s (4.09 ms, 0 us, 78 us, 785244 us, 4.01 ms)
 [rank 0] iteration #1147 - starting launcher [0][0] ...
 [rank 0] done
-[it=1147] hydro_fvm compute time t=5.4871e-03 (Dt=4.769e-06) : 0.80425 s (5.51 ms, 0 us, 690 us, 790416 us, 5.35 ms)
+[it=1147] hydro_fvm compute time t=5.4871e-03 (Dt=4.769e-06) : 0.79541 s (4.08 ms, 0 us, 80 us, 785322 us, 4.04 ms)
 [rank 0] iteration #1148 - starting launcher [0][0] ...
 [rank 0] done
-[it=1148] hydro_fvm compute time t=5.4919e-03 (Dt=4.769e-06) : 0.80413 s (5.51 ms, 0 us, 689 us, 790263 us, 5.38 ms)
+[it=1148] hydro_fvm compute time t=5.4919e-03 (Dt=4.769e-06) : 0.79663 s (4.13 ms, 0 us, 78 us, 786524 us, 4.02 ms)
 [rank 0] iteration #1149 - starting launcher [0][0] ...
 [rank 0] done
-[it=1149] hydro_fvm compute time t=5.4966e-03 (Dt=4.769e-06) : 0.80440 s (5.53 ms, 0 us, 679 us, 790557 us, 5.35 ms)
+[it=1149] hydro_fvm compute time t=5.4966e-03 (Dt=4.769e-06) : 0.79535 s (4.08 ms, 0 us, 78 us, 785296 us, 4.02 ms)
 [rank 0] iteration #1150 - starting launcher [0][0] ...
 [rank 0] done
-[it=1150] hydro_fvm compute time t=5.5014e-03 (Dt=4.769e-06) : 0.80443 s (5.49 ms, 0 us, 698 us, 790623 us, 5.34 ms)
+[it=1150] hydro_fvm compute time t=5.5014e-03 (Dt=4.769e-06) : 0.79511 s (4.07 ms, 0 us, 79 us, 785049 us, 4.02 ms)
 [rank 0] iteration #1151 - starting launcher [0][0] ...
 [rank 0] done
-[it=1151] hydro_fvm compute time t=5.5062e-03 (Dt=4.769e-06) : 0.80375 s (5.51 ms, 0 us, 691 us, 789911 us, 5.36 ms)
+[it=1151] hydro_fvm compute time t=5.5062e-03 (Dt=4.769e-06) : 0.79540 s (4.05 ms, 0 us, 78 us, 785368 us, 4.02 ms)
 [rank 0] iteration #1152 - starting launcher [0][0] ...
 [rank 0] done
-[it=1152] hydro_fvm compute time t=5.5109e-03 (Dt=4.769e-06) : 0.80452 s (5.52 ms, 0 us, 695 us, 790309 us, 5.46 ms)
+[it=1152] hydro_fvm compute time t=5.5109e-03 (Dt=4.769e-06) : 0.79704 s (4.07 ms, 0 us, 78 us, 786887 us, 4.07 ms)
 [rank 0] iteration #1153 - starting launcher [0][0] ...
 [rank 0] done
-[it=1153] hydro_fvm compute time t=5.5157e-03 (Dt=4.769e-06) : 0.80456 s (5.61 ms, 0 us, 698 us, 790378 us, 5.40 ms)
+[it=1153] hydro_fvm compute time t=5.5157e-03 (Dt=4.769e-06) : 0.79563 s (4.12 ms, 0 us, 76 us, 785541 us, 4.04 ms)
 [rank 0] iteration #1154 - starting launcher [0][0] ...
 [rank 0] done
-[it=1154] hydro_fvm compute time t=5.5205e-03 (Dt=4.769e-06) : 0.80430 s (5.58 ms, 0 us, 694 us, 790343 us, 5.37 ms)
+[it=1154] hydro_fvm compute time t=5.5205e-03 (Dt=4.769e-06) : 0.79549 s (4.21 ms, 0 us, 78 us, 785300 us, 4.05 ms)
 [rank 0] iteration #1155 - starting launcher [0][0] ...
 [rank 0] done
-[it=1155] hydro_fvm compute time t=5.5252e-03 (Dt=4.769e-06) : 0.80406 s (5.52 ms, 0 us, 679 us, 790180 us, 5.37 ms)
+[it=1155] hydro_fvm compute time t=5.5252e-03 (Dt=4.769e-06) : 0.79552 s (4.22 ms, 0 us, 78 us, 785333 us, 4.04 ms)
 [rank 0] iteration #1156 - starting launcher [0][0] ...
 [rank 0] done
-[it=1156] hydro_fvm compute time t=5.5300e-03 (Dt=4.769e-06) : 0.80438 s (5.57 ms, 0 us, 701 us, 790448 us, 5.37 ms)
+[it=1156] hydro_fvm compute time t=5.5300e-03 (Dt=4.769e-06) : 0.79559 s (4.19 ms, 0 us, 79 us, 785390 us, 4.04 ms)
 [rank 0] iteration #1157 - starting launcher [0][0] ...
 [rank 0] done
-[it=1157] hydro_fvm compute time t=5.5348e-03 (Dt=4.769e-06) : 0.80387 s (5.50 ms, 0 us, 689 us, 790020 us, 5.36 ms)
+[it=1157] hydro_fvm compute time t=5.5348e-03 (Dt=4.769e-06) : 0.79674 s (4.19 ms, 0 us, 79 us, 786536 us, 4.04 ms)
 [rank 0] iteration #1158 - starting launcher [0][0] ...
 [rank 0] done
-[it=1158] hydro_fvm compute time t=5.5395e-03 (Dt=4.769e-06) : 0.80445 s (5.52 ms, 0 us, 698 us, 790598 us, 5.37 ms)
+[it=1158] hydro_fvm compute time t=5.5395e-03 (Dt=4.769e-06) : 0.79580 s (4.33 ms, 0 us, 79 us, 785447 us, 4.05 ms)
 [rank 0] iteration #1159 - starting launcher [0][0] ...
 [rank 0] done
-[it=1159] hydro_fvm compute time t=5.5443e-03 (Dt=4.769e-06) : 0.80470 s (5.56 ms, 0 us, 709 us, 790773 us, 5.37 ms)
+[it=1159] hydro_fvm compute time t=5.5443e-03 (Dt=4.769e-06) : 0.79576 s (4.22 ms, 0 us, 78 us, 785534 us, 4.04 ms)
 [rank 0] iteration #1160 - starting launcher [0][0] ...
 [rank 0] done
-[it=1160] hydro_fvm compute time t=5.5491e-03 (Dt=4.769e-06) : 0.80432 s (5.53 ms, 0 us, 697 us, 790435 us, 5.37 ms)
+[it=1160] hydro_fvm compute time t=5.5491e-03 (Dt=4.769e-06) : 0.79604 s (4.21 ms, 0 us, 78 us, 785837 us, 4.03 ms)
 [rank 0] iteration #1161 - starting launcher [0][0] ...
 [rank 0] done
-[it=1161] hydro_fvm compute time t=5.5538e-03 (Dt=4.769e-06) : 0.80428 s (5.54 ms, 0 us, 660 us, 790439 us, 5.36 ms)
+[it=1161] hydro_fvm compute time t=5.5538e-03 (Dt=4.769e-06) : 0.79561 s (4.22 ms, 0 us, 78 us, 785397 us, 4.04 ms)
 [rank 0] iteration #1162 - starting launcher [0][0] ...
 [rank 0] done
-[it=1162] hydro_fvm compute time t=5.5586e-03 (Dt=4.768e-06) : 0.80344 s (5.53 ms, 0 us, 703 us, 789556 us, 5.37 ms)
+[it=1162] hydro_fvm compute time t=5.5586e-03 (Dt=4.768e-06) : 0.79553 s (4.21 ms, 0 us, 77 us, 785317 us, 4.03 ms)
 [rank 0] iteration #1163 - starting launcher [0][0] ...
 [rank 0] done
-[it=1163] hydro_fvm compute time t=5.5634e-03 (Dt=4.768e-06) : 0.80403 s (5.49 ms, 0 us, 678 us, 790196 us, 5.37 ms)
+[it=1163] hydro_fvm compute time t=5.5634e-03 (Dt=4.768e-06) : 0.79571 s (4.36 ms, 0 us, 80 us, 785350 us, 4.03 ms)
 [rank 0] iteration #1164 - starting launcher [0][0] ...
 [rank 0] done
-[it=1164] hydro_fvm compute time t=5.5682e-03 (Dt=4.768e-06) : 0.80405 s (5.50 ms, 0 us, 699 us, 790224 us, 5.35 ms)
+[it=1164] hydro_fvm compute time t=5.5682e-03 (Dt=4.768e-06) : 0.79538 s (4.18 ms, 0 us, 79 us, 785155 us, 4.07 ms)
 [rank 0] iteration #1165 - starting launcher [0][0] ...
 [rank 0] done
-[it=1165] hydro_fvm compute time t=5.5729e-03 (Dt=4.768e-06) : 0.80447 s (5.51 ms, 0 us, 672 us, 790649 us, 5.36 ms)
+[it=1165] hydro_fvm compute time t=5.5729e-03 (Dt=4.768e-06) : 0.79575 s (4.17 ms, 0 us, 86 us, 785602 us, 4.04 ms)
 [rank 0] iteration #1166 - starting launcher [0][0] ...
 [rank 0] done
-[it=1166] hydro_fvm compute time t=5.5777e-03 (Dt=4.768e-06) : 0.80427 s (5.53 ms, 0 us, 695 us, 790422 us, 5.34 ms)
+[it=1166] hydro_fvm compute time t=5.5777e-03 (Dt=4.768e-06) : 0.79570 s (4.21 ms, 0 us, 81 us, 785451 us, 4.05 ms)
 [rank 0] iteration #1167 - starting launcher [0][0] ...
 [rank 0] done
-[it=1167] hydro_fvm compute time t=5.5825e-03 (Dt=4.768e-06) : 0.80408 s (5.50 ms, 0 us, 696 us, 790219 us, 5.39 ms)
+[it=1167] hydro_fvm compute time t=5.5825e-03 (Dt=4.768e-06) : 0.79576 s (4.19 ms, 0 us, 82 us, 785562 us, 4.03 ms)
 [rank 0] iteration #1168 - starting launcher [0][0] ...
 [rank 0] done
-[it=1168] hydro_fvm compute time t=5.5872e-03 (Dt=4.768e-06) : 0.80458 s (5.57 ms, 0 us, 702 us, 790650 us, 5.36 ms)
+[it=1168] hydro_fvm compute time t=5.5872e-03 (Dt=4.768e-06) : 0.79550 s (4.20 ms, 0 us, 80 us, 785287 us, 4.04 ms)
 [rank 0] iteration #1169 - starting launcher [0][0] ...
 [rank 0] done
-[it=1169] hydro_fvm compute time t=5.5920e-03 (Dt=4.768e-06) : 0.80369 s (5.52 ms, 0 us, 673 us, 789876 us, 5.34 ms)
+[it=1169] hydro_fvm compute time t=5.5920e-03 (Dt=4.768e-06) : 0.79583 s (4.17 ms, 0 us, 81 us, 785539 us, 4.10 ms)
 [rank 0] iteration #1170 - starting launcher [0][0] ...
 [rank 0] done
-[it=1170] hydro_fvm compute time t=5.5968e-03 (Dt=4.768e-06) : 0.80394 s (5.53 ms, 0 us, 698 us, 790057 us, 5.37 ms)
+[it=1170] hydro_fvm compute time t=5.5968e-03 (Dt=4.768e-06) : 0.79564 s (4.11 ms, 0 us, 81 us, 785519 us, 4.04 ms)
 [rank 0] iteration #1171 - starting launcher [0][0] ...
 [rank 0] done
-[it=1171] hydro_fvm compute time t=5.6015e-03 (Dt=4.768e-06) : 0.80422 s (5.52 ms, 0 us, 706 us, 790348 us, 5.36 ms)
+[it=1171] hydro_fvm compute time t=5.6015e-03 (Dt=4.768e-06) : 0.79563 s (4.20 ms, 0 us, 80 us, 785421 us, 4.05 ms)
 [rank 0] iteration #1172 - starting launcher [0][0] ...
 [rank 0] done
-[it=1172] hydro_fvm compute time t=5.6063e-03 (Dt=4.768e-06) : 0.80380 s (5.52 ms, 0 us, 692 us, 789956 us, 5.35 ms)
+[it=1172] hydro_fvm compute time t=5.6063e-03 (Dt=4.768e-06) : 0.79555 s (4.20 ms, 0 us, 80 us, 785350 us, 4.04 ms)
 [rank 0] iteration #1173 - starting launcher [0][0] ...
 [rank 0] done
-[it=1173] hydro_fvm compute time t=5.6111e-03 (Dt=4.768e-06) : 0.80425 s (5.51 ms, 0 us, 702 us, 790384 us, 5.37 ms)
+[it=1173] hydro_fvm compute time t=5.6111e-03 (Dt=4.768e-06) : 0.79733 s (4.32 ms, 0 us, 81 us, 786998 us, 4.05 ms)
 [rank 0] iteration #1174 - starting launcher [0][0] ...
 [rank 0] done
-[it=1174] hydro_fvm compute time t=5.6158e-03 (Dt=4.768e-06) : 0.80401 s (5.54 ms, 0 us, 703 us, 790151 us, 5.35 ms)
+[it=1174] hydro_fvm compute time t=5.6158e-03 (Dt=4.768e-06) : 0.79554 s (4.18 ms, 0 us, 79 us, 785337 us, 4.06 ms)
 [rank 0] iteration #1175 - starting launcher [0][0] ...
 [rank 0] done
-[it=1175] hydro_fvm compute time t=5.6206e-03 (Dt=4.768e-06) : 0.80426 s (5.51 ms, 0 us, 667 us, 790422 us, 5.37 ms)
+[it=1175] hydro_fvm compute time t=5.6206e-03 (Dt=4.768e-06) : 0.79600 s (4.20 ms, 0 us, 80 us, 785785 us, 4.04 ms)
 [rank 0] iteration #1176 - starting launcher [0][0] ...
 [rank 0] done
-[it=1176] hydro_fvm compute time t=5.6254e-03 (Dt=4.768e-06) : 0.80415 s (5.53 ms, 0 us, 700 us, 790267 us, 5.37 ms)
+[it=1176] hydro_fvm compute time t=5.6254e-03 (Dt=4.768e-06) : 0.79547 s (4.21 ms, 0 us, 79 us, 785301 us, 4.03 ms)
 [rank 0] iteration #1177 - starting launcher [0][0] ...
 [rank 0] done
-[it=1177] hydro_fvm compute time t=5.6301e-03 (Dt=4.768e-06) : 0.80403 s (5.51 ms, 0 us, 701 us, 790180 us, 5.36 ms)
+[it=1177] hydro_fvm compute time t=5.6301e-03 (Dt=4.768e-06) : 0.79563 s (4.18 ms, 0 us, 78 us, 785468 us, 4.05 ms)
 [rank 0] iteration #1178 - starting launcher [0][0] ...
 [rank 0] done
-[it=1178] hydro_fvm compute time t=5.6349e-03 (Dt=4.768e-06) : 0.80427 s (5.51 ms, 0 us, 697 us, 790393 us, 5.38 ms)
+[it=1178] hydro_fvm compute time t=5.6349e-03 (Dt=4.768e-06) : 0.79586 s (4.20 ms, 0 us, 78 us, 785633 us, 4.06 ms)
 [rank 0] iteration #1179 - starting launcher [0][0] ...
 [rank 0] done
-[it=1179] hydro_fvm compute time t=5.6397e-03 (Dt=4.768e-06) : 0.80435 s (5.53 ms, 0 us, 677 us, 790520 us, 5.35 ms)
+[it=1179] hydro_fvm compute time t=5.6397e-03 (Dt=4.768e-06) : 0.79560 s (4.18 ms, 0 us, 79 us, 785429 us, 4.03 ms)
 [rank 0] iteration #1180 - starting launcher [0][0] ...
 [rank 0] done
-[it=1180] hydro_fvm compute time t=5.6444e-03 (Dt=4.768e-06) : 0.80378 s (5.56 ms, 0 us, 688 us, 789862 us, 5.38 ms)
+[it=1180] hydro_fvm compute time t=5.6444e-03 (Dt=4.768e-06) : 0.79540 s (4.20 ms, 0 us, 79 us, 785191 us, 4.04 ms)
 [rank 0] iteration #1181 - starting launcher [0][0] ...
 [rank 0] done
-[it=1181] hydro_fvm compute time t=5.6492e-03 (Dt=4.768e-06) : 0.80397 s (5.52 ms, 0 us, 695 us, 790122 us, 5.36 ms)
+[it=1181] hydro_fvm compute time t=5.6492e-03 (Dt=4.768e-06) : 0.79581 s (4.26 ms, 0 us, 79 us, 785541 us, 4.04 ms)
 [rank 0] iteration #1182 - starting launcher [0][0] ...
 [rank 0] done
-[it=1182] hydro_fvm compute time t=5.6540e-03 (Dt=4.768e-06) : 0.80359 s (5.52 ms, 0 us, 687 us, 789766 us, 5.37 ms)
+[it=1182] hydro_fvm compute time t=5.6540e-03 (Dt=4.768e-06) : 0.79582 s (4.19 ms, 0 us, 80 us, 785569 us, 4.05 ms)
 [rank 0] iteration #1183 - starting launcher [0][0] ...
 [rank 0] done
-[it=1183] hydro_fvm compute time t=5.6587e-03 (Dt=4.768e-06) : 0.80422 s (5.50 ms, 0 us, 687 us, 790403 us, 5.36 ms)
+[it=1183] hydro_fvm compute time t=5.6587e-03 (Dt=4.768e-06) : 0.79591 s (4.09 ms, 0 us, 78 us, 785853 us, 4.03 ms)
 [rank 0] iteration #1184 - starting launcher [0][0] ...
 [rank 0] done
-[it=1184] hydro_fvm compute time t=5.6635e-03 (Dt=4.768e-06) : 0.80328 s (5.57 ms, 0 us, 683 us, 789329 us, 5.40 ms)
+[it=1184] hydro_fvm compute time t=5.6635e-03 (Dt=4.768e-06) : 0.79533 s (4.03 ms, 0 us, 77 us, 785205 us, 4.07 ms)
 [rank 0] iteration #1185 - starting launcher [0][0] ...
 [rank 0] done
-[it=1185] hydro_fvm compute time t=5.6683e-03 (Dt=4.768e-06) : 0.80427 s (5.54 ms, 0 us, 695 us, 790381 us, 5.38 ms)
+[it=1185] hydro_fvm compute time t=5.6683e-03 (Dt=4.768e-06) : 0.79564 s (4.12 ms, 0 us, 79 us, 785516 us, 4.05 ms)
 [rank 0] iteration #1186 - starting launcher [0][0] ...
 [rank 0] done
-[it=1186] hydro_fvm compute time t=5.6730e-03 (Dt=4.768e-06) : 0.80451 s (5.52 ms, 0 us, 694 us, 790644 us, 5.37 ms)
+[it=1186] hydro_fvm compute time t=5.6730e-03 (Dt=4.768e-06) : 0.79551 s (4.20 ms, 0 us, 78 us, 785298 us, 4.06 ms)
 [rank 0] iteration #1187 - starting launcher [0][0] ...
 [rank 0] done
-[it=1187] hydro_fvm compute time t=5.6778e-03 (Dt=4.767e-06) : 0.80434 s (5.53 ms, 0 us, 695 us, 790484 us, 5.36 ms)
+[it=1187] hydro_fvm compute time t=5.6778e-03 (Dt=4.767e-06) : 0.79779 s (4.38 ms, 0 us, 79 us, 787431 us, 4.05 ms)
 [rank 0] iteration #1188 - starting launcher [0][0] ...
 [rank 0] done
-[it=1188] hydro_fvm compute time t=5.6826e-03 (Dt=4.767e-06) : 0.80384 s (5.53 ms, 0 us, 700 us, 789977 us, 5.35 ms)
+[it=1188] hydro_fvm compute time t=5.6826e-03 (Dt=4.767e-06) : 0.79573 s (4.24 ms, 0 us, 77 us, 785452 us, 4.05 ms)
 [rank 0] iteration #1189 - starting launcher [0][0] ...
 [rank 0] done
-[it=1189] hydro_fvm compute time t=5.6874e-03 (Dt=4.767e-06) : 0.80427 s (5.52 ms, 0 us, 699 us, 790373 us, 5.38 ms)
+[it=1189] hydro_fvm compute time t=5.6874e-03 (Dt=4.767e-06) : 0.79569 s (4.25 ms, 0 us, 78 us, 785458 us, 4.03 ms)
 [rank 0] iteration #1190 - starting launcher [0][0] ...
 [rank 0] done
-[it=1190] hydro_fvm compute time t=5.6921e-03 (Dt=4.767e-06) : 0.80432 s (5.57 ms, 0 us, 684 us, 790413 us, 5.37 ms)
+[it=1190] hydro_fvm compute time t=5.6921e-03 (Dt=4.767e-06) : 0.79553 s (4.22 ms, 0 us, 79 us, 785319 us, 4.02 ms)
 [rank 0] iteration #1191 - starting launcher [0][0] ...
 [rank 0] done
-[it=1191] hydro_fvm compute time t=5.6969e-03 (Dt=4.767e-06) : 0.80392 s (5.54 ms, 0 us, 693 us, 790037 us, 5.37 ms)
+[it=1191] hydro_fvm compute time t=5.6969e-03 (Dt=4.767e-06) : 0.79766 s (4.18 ms, 0 us, 79 us, 787490 us, 4.00 ms)
 [rank 0] iteration #1192 - starting launcher [0][0] ...
 [rank 0] done
-[it=1192] hydro_fvm compute time t=5.7017e-03 (Dt=4.767e-06) : 0.80398 s (5.49 ms, 0 us, 685 us, 790154 us, 5.36 ms)
+[it=1192] hydro_fvm compute time t=5.7017e-03 (Dt=4.767e-06) : 0.79544 s (4.20 ms, 0 us, 78 us, 785249 us, 4.02 ms)
 [rank 0] iteration #1193 - starting launcher [0][0] ...
 [rank 0] done
-[it=1193] hydro_fvm compute time t=5.7064e-03 (Dt=4.767e-06) : 0.80451 s (5.49 ms, 0 us, 700 us, 790671 us, 5.36 ms)
+[it=1193] hydro_fvm compute time t=5.7064e-03 (Dt=4.767e-06) : 0.79558 s (4.22 ms, 0 us, 79 us, 785389 us, 4.00 ms)
 [rank 0] iteration #1194 - starting launcher [0][0] ...
 [rank 0] done
-[it=1194] hydro_fvm compute time t=5.7112e-03 (Dt=4.767e-06) : 0.80396 s (5.50 ms, 0 us, 676 us, 790145 us, 5.36 ms)
+[it=1194] hydro_fvm compute time t=5.7112e-03 (Dt=4.767e-06) : 0.79576 s (4.20 ms, 0 us, 79 us, 785481 us, 4.06 ms)
 [rank 0] iteration #1195 - starting launcher [0][0] ...
 [rank 0] done
-[it=1195] hydro_fvm compute time t=5.7160e-03 (Dt=4.767e-06) : 0.80414 s (5.53 ms, 0 us, 700 us, 790246 us, 5.39 ms)
+[it=1195] hydro_fvm compute time t=5.7160e-03 (Dt=4.767e-06) : 0.79632 s (4.20 ms, 0 us, 78 us, 786130 us, 4.04 ms)
 [rank 0] iteration #1196 - starting launcher [0][0] ...
 [rank 0] done
-[it=1196] hydro_fvm compute time t=5.7207e-03 (Dt=4.767e-06) : 0.80439 s (5.52 ms, 0 us, 691 us, 790509 us, 5.37 ms)
+[it=1196] hydro_fvm compute time t=5.7207e-03 (Dt=4.767e-06) : 0.79557 s (4.22 ms, 0 us, 78 us, 785344 us, 4.04 ms)
 [rank 0] iteration #1197 - starting launcher [0][0] ...
 [rank 0] done
-[it=1197] hydro_fvm compute time t=5.7255e-03 (Dt=4.767e-06) : 0.80442 s (5.49 ms, 0 us, 684 us, 790591 us, 5.37 ms)
+[it=1197] hydro_fvm compute time t=5.7255e-03 (Dt=4.767e-06) : 0.79580 s (4.22 ms, 0 us, 79 us, 785570 us, 4.02 ms)
 [rank 0] iteration #1198 - starting launcher [0][0] ...
 [rank 0] done
-[it=1198] hydro_fvm compute time t=5.7303e-03 (Dt=4.767e-06) : 0.80375 s (5.52 ms, 0 us, 684 us, 789912 us, 5.35 ms)
+[it=1198] hydro_fvm compute time t=5.7303e-03 (Dt=4.767e-06) : 0.79569 s (4.20 ms, 0 us, 77 us, 785482 us, 4.06 ms)
 [rank 0] iteration #1199 - starting launcher [0][0] ...
 [rank 0] done
-[it=1199] hydro_fvm compute time t=5.7350e-03 (Dt=4.767e-06) : 0.80453 s (5.51 ms, 0 us, 707 us, 790672 us, 5.38 ms)
+[it=1199] hydro_fvm compute time t=5.7350e-03 (Dt=4.767e-06) : 0.79612 s (4.21 ms, 0 us, 78 us, 785925 us, 4.04 ms)
 [rank 0] iteration #1200 - starting launcher [0][0] ...
 [rank 0] done
-[it=1200] hydro_fvm compute time t=5.7398e-03 (Dt=4.767e-06) : 0.80433 s (5.57 ms, 0 us, 703 us, 790395 us, 5.37 ms)
+[it=1200] hydro_fvm compute time t=5.7398e-03 (Dt=4.767e-06) : 0.79556 s (4.21 ms, 0 us, 78 us, 785358 us, 4.05 ms)
 [rank 0] iteration #1201 - starting launcher [0][0] ...
 [rank 0] done
-[it=1201] hydro_fvm compute time t=5.7446e-03 (Dt=4.767e-06) : 0.80444 s (5.54 ms, 0 us, 706 us, 790561 us, 5.36 ms)
+[it=1201] hydro_fvm compute time t=5.7446e-03 (Dt=4.767e-06) : 0.79578 s (4.18 ms, 0 us, 77 us, 785599 us, 4.06 ms)
 [rank 0] iteration #1202 - starting launcher [0][0] ...
 [rank 0] done
-[it=1202] hydro_fvm compute time t=5.7493e-03 (Dt=4.767e-06) : 0.80443 s (5.55 ms, 0 us, 674 us, 790569 us, 5.36 ms)
+[it=1202] hydro_fvm compute time t=5.7493e-03 (Dt=4.767e-06) : 0.79565 s (4.21 ms, 0 us, 79 us, 785418 us, 4.05 ms)
 [rank 0] iteration #1203 - starting launcher [0][0] ...
 [rank 0] done
-[it=1203] hydro_fvm compute time t=5.7541e-03 (Dt=4.767e-06) : 0.80407 s (5.49 ms, 0 us, 699 us, 790240 us, 5.36 ms)
+[it=1203] hydro_fvm compute time t=5.7541e-03 (Dt=4.767e-06) : 0.79597 s (4.22 ms, 0 us, 79 us, 785744 us, 4.04 ms)
 [rank 0] iteration #1204 - starting launcher [0][0] ...
 [rank 0] done
-[it=1204] hydro_fvm compute time t=5.7589e-03 (Dt=4.767e-06) : 0.80439 s (5.53 ms, 0 us, 708 us, 790476 us, 5.36 ms)
+[it=1204] hydro_fvm compute time t=5.7589e-03 (Dt=4.767e-06) : 0.79556 s (4.22 ms, 0 us, 79 us, 785317 us, 4.06 ms)
 [rank 0] iteration #1205 - starting launcher [0][0] ...
 [rank 0] done
-[it=1205] hydro_fvm compute time t=5.7636e-03 (Dt=4.767e-06) : 0.80428 s (5.56 ms, 0 us, 684 us, 790387 us, 5.37 ms)
+[it=1205] hydro_fvm compute time t=5.7636e-03 (Dt=4.767e-06) : 0.79577 s (4.18 ms, 0 us, 77 us, 785588 us, 4.03 ms)
 [rank 0] iteration #1206 - starting launcher [0][0] ...
 [rank 0] done
-[it=1206] hydro_fvm compute time t=5.7684e-03 (Dt=4.767e-06) : 0.80444 s (5.49 ms, 0 us, 691 us, 790597 us, 5.36 ms)
+[it=1206] hydro_fvm compute time t=5.7684e-03 (Dt=4.767e-06) : 0.79690 s (4.23 ms, 0 us, 78 us, 786658 us, 4.04 ms)
 [rank 0] iteration #1207 - starting launcher [0][0] ...
 [rank 0] done
-[it=1207] hydro_fvm compute time t=5.7732e-03 (Dt=4.767e-06) : 0.80435 s (5.52 ms, 0 us, 697 us, 790487 us, 5.37 ms)
+[it=1207] hydro_fvm compute time t=5.7732e-03 (Dt=4.767e-06) : 0.79596 s (4.22 ms, 0 us, 78 us, 785745 us, 4.02 ms)
 [rank 0] iteration #1208 - starting launcher [0][0] ...
 [rank 0] done
-[it=1208] hydro_fvm compute time t=5.7779e-03 (Dt=4.767e-06) : 0.80349 s (5.50 ms, 0 us, 683 us, 789672 us, 5.36 ms)
+[it=1208] hydro_fvm compute time t=5.7779e-03 (Dt=4.767e-06) : 0.79629 s (4.21 ms, 0 us, 79 us, 786092 us, 4.04 ms)
 [rank 0] iteration #1209 - starting launcher [0][0] ...
 [rank 0] done
-[it=1209] hydro_fvm compute time t=5.7827e-03 (Dt=4.767e-06) : 0.80426 s (5.49 ms, 0 us, 683 us, 790406 us, 5.38 ms)
+[it=1209] hydro_fvm compute time t=5.7827e-03 (Dt=4.767e-06) : 0.79582 s (4.27 ms, 0 us, 84 us, 785547 us, 4.03 ms)
 [rank 0] iteration #1210 - starting launcher [0][0] ...
 [rank 0] done
-[it=1210] hydro_fvm compute time t=5.7875e-03 (Dt=4.767e-06) : 0.80406 s (5.53 ms, 0 us, 705 us, 790186 us, 5.35 ms)
+[it=1210] hydro_fvm compute time t=5.7875e-03 (Dt=4.767e-06) : 0.79565 s (4.19 ms, 0 us, 78 us, 785446 us, 4.04 ms)
 [rank 0] iteration #1211 - starting launcher [0][0] ...
 [rank 0] done
-[it=1211] hydro_fvm compute time t=5.7922e-03 (Dt=4.767e-06) : 0.80417 s (5.52 ms, 0 us, 688 us, 790324 us, 5.37 ms)
+[it=1211] hydro_fvm compute time t=5.7922e-03 (Dt=4.767e-06) : 0.79564 s (4.18 ms, 0 us, 77 us, 785466 us, 4.07 ms)
 [rank 0] iteration #1212 - starting launcher [0][0] ...
 [rank 0] done
-[it=1212] hydro_fvm compute time t=5.7970e-03 (Dt=4.766e-06) : 0.80401 s (5.52 ms, 0 us, 686 us, 790157 us, 5.36 ms)
+[it=1212] hydro_fvm compute time t=5.7970e-03 (Dt=4.766e-06) : 0.79535 s (4.18 ms, 0 us, 79 us, 785189 us, 4.04 ms)
 [rank 0] iteration #1213 - starting launcher [0][0] ...
 [rank 0] done
-[it=1213] hydro_fvm compute time t=5.8018e-03 (Dt=4.766e-06) : 0.80463 s (5.51 ms, 0 us, 689 us, 790768 us, 5.39 ms)
+[it=1213] hydro_fvm compute time t=5.8018e-03 (Dt=4.766e-06) : 0.79567 s (4.22 ms, 0 us, 79 us, 785492 us, 4.03 ms)
 [rank 0] iteration #1214 - starting launcher [0][0] ...
 [rank 0] done
-[it=1214] hydro_fvm compute time t=5.8065e-03 (Dt=4.766e-06) : 0.80417 s (5.51 ms, 0 us, 710 us, 790333 us, 5.34 ms)
+[it=1214] hydro_fvm compute time t=5.8065e-03 (Dt=4.766e-06) : 0.79554 s (4.17 ms, 0 us, 79 us, 785402 us, 4.05 ms)
 [rank 0] iteration #1215 - starting launcher [0][0] ...
 [rank 0] done
-[it=1215] hydro_fvm compute time t=5.8113e-03 (Dt=4.766e-06) : 0.80408 s (5.52 ms, 0 us, 664 us, 790264 us, 5.35 ms)
+[it=1215] hydro_fvm compute time t=5.8113e-03 (Dt=4.766e-06) : 0.79562 s (4.20 ms, 0 us, 77 us, 785414 us, 4.06 ms)
 [rank 0] iteration #1216 - starting launcher [0][0] ...
 [rank 0] done
-[it=1216] hydro_fvm compute time t=5.8161e-03 (Dt=4.766e-06) : 0.80417 s (5.50 ms, 0 us, 652 us, 790384 us, 5.35 ms)
+[it=1216] hydro_fvm compute time t=5.8161e-03 (Dt=4.766e-06) : 0.79623 s (4.18 ms, 0 us, 78 us, 786040 us, 4.05 ms)
 [rank 0] iteration #1217 - starting launcher [0][0] ...
 [rank 0] done
-[it=1217] hydro_fvm compute time t=5.8208e-03 (Dt=4.766e-06) : 0.80434 s (5.52 ms, 0 us, 682 us, 790484 us, 5.37 ms)
+[it=1217] hydro_fvm compute time t=5.8208e-03 (Dt=4.766e-06) : 0.79593 s (4.26 ms, 0 us, 79 us, 785623 us, 4.04 ms)
 [rank 0] iteration #1218 - starting launcher [0][0] ...
 [rank 0] done
-[it=1218] hydro_fvm compute time t=5.8256e-03 (Dt=4.766e-06) : 0.80403 s (5.47 ms, 0 us, 703 us, 790212 us, 5.35 ms)
+[it=1218] hydro_fvm compute time t=5.8256e-03 (Dt=4.766e-06) : 0.79530 s (4.22 ms, 0 us, 79 us, 785066 us, 4.04 ms)
 [rank 0] iteration #1219 - starting launcher [0][0] ...
 [rank 0] done
-[it=1219] hydro_fvm compute time t=5.8304e-03 (Dt=4.766e-06) : 0.80388 s (5.49 ms, 0 us, 699 us, 790042 us, 5.37 ms)
+[it=1219] hydro_fvm compute time t=5.8304e-03 (Dt=4.766e-06) : 0.79550 s (4.28 ms, 0 us, 78 us, 785244 us, 4.04 ms)
 [rank 0] iteration #1220 - starting launcher [0][0] ...
 [rank 0] done
-[it=1220] hydro_fvm compute time t=5.8351e-03 (Dt=4.766e-06) : 0.80447 s (5.52 ms, 0 us, 710 us, 790611 us, 5.36 ms)
+[it=1220] hydro_fvm compute time t=5.8351e-03 (Dt=4.766e-06) : 0.79539 s (4.18 ms, 0 us, 79 us, 785211 us, 4.03 ms)
 [rank 0] iteration #1221 - starting launcher [0][0] ...
 [rank 0] done
-[it=1221] hydro_fvm compute time t=5.8399e-03 (Dt=4.766e-06) : 0.80409 s (5.54 ms, 0 us, 667 us, 790244 us, 5.35 ms)
+[it=1221] hydro_fvm compute time t=5.8399e-03 (Dt=4.766e-06) : 0.79563 s (4.18 ms, 0 us, 79 us, 785454 us, 4.03 ms)
 [rank 0] iteration #1222 - starting launcher [0][0] ...
 [rank 0] done
-[it=1222] hydro_fvm compute time t=5.8447e-03 (Dt=4.766e-06) : 0.80420 s (5.53 ms, 0 us, 692 us, 790328 us, 5.37 ms)
+[it=1222] hydro_fvm compute time t=5.8447e-03 (Dt=4.766e-06) : 0.79548 s (4.19 ms, 0 us, 78 us, 785280 us, 4.04 ms)
 [rank 0] iteration #1223 - starting launcher [0][0] ...
 [rank 0] done
-[it=1223] hydro_fvm compute time t=5.8494e-03 (Dt=4.766e-06) : 0.80376 s (5.54 ms, 0 us, 701 us, 789891 us, 5.37 ms)
+[it=1223] hydro_fvm compute time t=5.8494e-03 (Dt=4.766e-06) : 0.79569 s (4.19 ms, 0 us, 79 us, 785502 us, 4.06 ms)
 [rank 0] iteration #1224 - starting launcher [0][0] ...
 [rank 0] done
-[it=1224] hydro_fvm compute time t=5.8542e-03 (Dt=4.766e-06) : 0.80417 s (5.54 ms, 0 us, 699 us, 790293 us, 5.35 ms)
+[it=1224] hydro_fvm compute time t=5.8542e-03 (Dt=4.766e-06) : 0.79555 s (4.14 ms, 0 us, 79 us, 785443 us, 4.05 ms)
 [rank 0] iteration #1225 - starting launcher [0][0] ...
 [rank 0] done
-[it=1225] hydro_fvm compute time t=5.8590e-03 (Dt=4.766e-06) : 0.80413 s (5.52 ms, 0 us, 702 us, 790274 us, 5.36 ms)
+[it=1225] hydro_fvm compute time t=5.8590e-03 (Dt=4.766e-06) : 0.79596 s (4.17 ms, 0 us, 79 us, 785772 us, 4.06 ms)
 [rank 0] iteration #1226 - starting launcher [0][0] ...
 [rank 0] done
-[it=1226] hydro_fvm compute time t=5.8637e-03 (Dt=4.766e-06) : 0.80425 s (5.50 ms, 0 us, 690 us, 790098 us, 5.46 ms)
+[it=1226] hydro_fvm compute time t=5.8637e-03 (Dt=4.766e-06) : 0.79536 s (4.17 ms, 0 us, 77 us, 785194 us, 4.04 ms)
 [rank 0] iteration #1227 - starting launcher [0][0] ...
 [rank 0] done
-[it=1227] hydro_fvm compute time t=5.8685e-03 (Dt=4.766e-06) : 0.80474 s (5.57 ms, 0 us, 687 us, 790706 us, 5.39 ms)
+[it=1227] hydro_fvm compute time t=5.8685e-03 (Dt=4.766e-06) : 0.79597 s (4.20 ms, 0 us, 78 us, 785763 us, 4.05 ms)
 [rank 0] iteration #1228 - starting launcher [0][0] ...
 [rank 0] done
-[it=1228] hydro_fvm compute time t=5.8732e-03 (Dt=4.766e-06) : 0.80427 s (5.54 ms, 0 us, 689 us, 790344 us, 5.40 ms)
+[it=1228] hydro_fvm compute time t=5.8732e-03 (Dt=4.766e-06) : 0.79633 s (4.17 ms, 0 us, 79 us, 786177 us, 4.03 ms)
 [rank 0] iteration #1229 - starting launcher [0][0] ...
 [rank 0] done
-[it=1229] hydro_fvm compute time t=5.8780e-03 (Dt=4.766e-06) : 0.80432 s (5.54 ms, 0 us, 706 us, 790411 us, 5.37 ms)
+[it=1229] hydro_fvm compute time t=5.8780e-03 (Dt=4.766e-06) : 0.79570 s (4.22 ms, 0 us, 78 us, 785513 us, 4.04 ms)
 [rank 0] iteration #1230 - starting launcher [0][0] ...
 [rank 0] done
-[it=1230] hydro_fvm compute time t=5.8828e-03 (Dt=4.766e-06) : 0.80443 s (5.55 ms, 0 us, 683 us, 790548 us, 5.37 ms)
+[it=1230] hydro_fvm compute time t=5.8828e-03 (Dt=4.766e-06) : 0.79620 s (4.20 ms, 0 us, 77 us, 786012 us, 4.04 ms)
 [rank 0] iteration #1231 - starting launcher [0][0] ...
 [rank 0] done
-[it=1231] hydro_fvm compute time t=5.8875e-03 (Dt=4.766e-06) : 0.80451 s (5.53 ms, 0 us, 700 us, 790608 us, 5.38 ms)
+[it=1231] hydro_fvm compute time t=5.8875e-03 (Dt=4.766e-06) : 0.79570 s (4.20 ms, 0 us, 77 us, 785498 us, 4.04 ms)
 [rank 0] iteration #1232 - starting launcher [0][0] ...
 [rank 0] done
-[it=1232] hydro_fvm compute time t=5.8923e-03 (Dt=4.766e-06) : 0.80416 s (5.53 ms, 0 us, 695 us, 790284 us, 5.37 ms)
+[it=1232] hydro_fvm compute time t=5.8923e-03 (Dt=4.766e-06) : 0.79534 s (4.19 ms, 0 us, 77 us, 785142 us, 4.04 ms)
 [rank 0] iteration #1233 - starting launcher [0][0] ...
 [rank 0] done
-[it=1233] hydro_fvm compute time t=5.8971e-03 (Dt=4.766e-06) : 0.80429 s (5.53 ms, 0 us, 688 us, 790418 us, 5.37 ms)
+[it=1233] hydro_fvm compute time t=5.8971e-03 (Dt=4.766e-06) : 0.79560 s (4.18 ms, 0 us, 78 us, 785422 us, 4.04 ms)
 [rank 0] iteration #1234 - starting launcher [0][0] ...
 [rank 0] done
-[it=1234] hydro_fvm compute time t=5.9018e-03 (Dt=4.766e-06) : 0.80398 s (5.54 ms, 0 us, 691 us, 790077 us, 5.38 ms)
+[it=1234] hydro_fvm compute time t=5.9018e-03 (Dt=4.766e-06) : 0.79680 s (4.15 ms, 0 us, 79 us, 786692 us, 4.04 ms)
 [rank 0] iteration #1235 - starting launcher [0][0] ...
 [rank 0] done
-[it=1235] hydro_fvm compute time t=5.9066e-03 (Dt=4.766e-06) : 0.80422 s (5.53 ms, 0 us, 687 us, 790346 us, 5.38 ms)
+[it=1235] hydro_fvm compute time t=5.9066e-03 (Dt=4.766e-06) : 0.79568 s (4.17 ms, 0 us, 77 us, 785535 us, 4.05 ms)
 [rank 0] iteration #1236 - starting launcher [0][0] ...
 [rank 0] done
-[it=1236] hydro_fvm compute time t=5.9114e-03 (Dt=4.766e-06) : 0.80412 s (5.50 ms, 0 us, 689 us, 790238 us, 5.39 ms)
+[it=1236] hydro_fvm compute time t=5.9114e-03 (Dt=4.766e-06) : 0.79552 s (4.18 ms, 0 us, 79 us, 785371 us, 4.04 ms)
 [rank 0] iteration #1237 - starting launcher [0][0] ...
 [rank 0] done
-[it=1237] hydro_fvm compute time t=5.9161e-03 (Dt=4.765e-06) : 0.80420 s (5.51 ms, 0 us, 691 us, 790333 us, 5.38 ms)
+[it=1237] hydro_fvm compute time t=5.9161e-03 (Dt=4.765e-06) : 0.79581 s (4.32 ms, 0 us, 78 us, 785479 us, 4.05 ms)
 [rank 0] iteration #1238 - starting launcher [0][0] ...
 [rank 0] done
-[it=1238] hydro_fvm compute time t=5.9209e-03 (Dt=4.765e-06) : 0.80397 s (5.54 ms, 0 us, 680 us, 790102 us, 5.37 ms)
+[it=1238] hydro_fvm compute time t=5.9209e-03 (Dt=4.765e-06) : 0.79550 s (4.13 ms, 0 us, 78 us, 785375 us, 4.06 ms)
 [rank 0] iteration #1239 - starting launcher [0][0] ...
 [rank 0] done
-[it=1239] hydro_fvm compute time t=5.9257e-03 (Dt=4.765e-06) : 0.80442 s (5.51 ms, 0 us, 671 us, 790597 us, 5.36 ms)
+[it=1239] hydro_fvm compute time t=5.9257e-03 (Dt=4.765e-06) : 0.79573 s (4.36 ms, 0 us, 79 us, 785345 us, 4.04 ms)
 [rank 0] iteration #1240 - starting launcher [0][0] ...
 [rank 0] done
-[it=1240] hydro_fvm compute time t=5.9304e-03 (Dt=4.765e-06) : 0.80452 s (5.54 ms, 0 us, 698 us, 790631 us, 5.38 ms)
+[it=1240] hydro_fvm compute time t=5.9304e-03 (Dt=4.765e-06) : 0.79560 s (4.22 ms, 0 us, 84 us, 785344 us, 4.05 ms)
 [rank 0] iteration #1241 - starting launcher [0][0] ...
 [rank 0] done
-[it=1241] hydro_fvm compute time t=5.9352e-03 (Dt=4.765e-06) : 0.80448 s (5.55 ms, 0 us, 665 us, 790630 us, 5.36 ms)
+[it=1241] hydro_fvm compute time t=5.9352e-03 (Dt=4.765e-06) : 0.79664 s (4.22 ms, 0 us, 84 us, 786406 us, 4.04 ms)
 [rank 0] iteration #1242 - starting launcher [0][0] ...
 [rank 0] done
-[it=1242] hydro_fvm compute time t=5.9400e-03 (Dt=4.765e-06) : 0.80386 s (5.53 ms, 0 us, 682 us, 789992 us, 5.37 ms)
+[it=1242] hydro_fvm compute time t=5.9400e-03 (Dt=4.765e-06) : 0.79579 s (4.20 ms, 0 us, 79 us, 785583 us, 4.02 ms)
 [rank 0] iteration #1243 - starting launcher [0][0] ...
 [rank 0] done
-[it=1243] hydro_fvm compute time t=5.9447e-03 (Dt=4.765e-06) : 0.80454 s (5.53 ms, 0 us, 672 us, 790676 us, 5.37 ms)
+[it=1243] hydro_fvm compute time t=5.9447e-03 (Dt=4.765e-06) : 0.79562 s (4.18 ms, 0 us, 79 us, 785445 us, 4.05 ms)
 [rank 0] iteration #1244 - starting launcher [0][0] ...
 [rank 0] done
-[it=1244] hydro_fvm compute time t=5.9495e-03 (Dt=4.765e-06) : 0.80450 s (5.52 ms, 0 us, 690 us, 790624 us, 5.38 ms)
+[it=1244] hydro_fvm compute time t=5.9495e-03 (Dt=4.765e-06) : 0.79537 s (4.20 ms, 0 us, 82 us, 785169 us, 4.03 ms)
 [rank 0] iteration #1245 - starting launcher [0][0] ...
 [rank 0] done
-[it=1245] hydro_fvm compute time t=5.9543e-03 (Dt=4.765e-06) : 0.80430 s (5.53 ms, 0 us, 688 us, 790364 us, 5.40 ms)
+[it=1245] hydro_fvm compute time t=5.9543e-03 (Dt=4.765e-06) : 0.79565 s (4.21 ms, 0 us, 80 us, 785427 us, 4.05 ms)
 [rank 0] iteration #1246 - starting launcher [0][0] ...
 [rank 0] done
-[it=1246] hydro_fvm compute time t=5.9590e-03 (Dt=4.765e-06) : 0.80417 s (5.50 ms, 0 us, 699 us, 790338 us, 5.35 ms)
+[it=1246] hydro_fvm compute time t=5.9590e-03 (Dt=4.765e-06) : 0.79558 s (4.19 ms, 0 us, 80 us, 785411 us, 4.05 ms)
 [rank 0] iteration #1247 - starting launcher [0][0] ...
 [rank 0] done
-[it=1247] hydro_fvm compute time t=5.9638e-03 (Dt=4.765e-06) : 0.80387 s (5.51 ms, 0 us, 702 us, 789991 us, 5.38 ms)
+[it=1247] hydro_fvm compute time t=5.9638e-03 (Dt=4.765e-06) : 0.79564 s (4.21 ms, 0 us, 79 us, 785449 us, 4.04 ms)
 [rank 0] iteration #1248 - starting launcher [0][0] ...
 [rank 0] done
-[it=1248] hydro_fvm compute time t=5.9686e-03 (Dt=4.765e-06) : 0.80389 s (5.49 ms, 0 us, 701 us, 790058 us, 5.36 ms)
+[it=1248] hydro_fvm compute time t=5.9686e-03 (Dt=4.765e-06) : 0.79558 s (4.15 ms, 0 us, 78 us, 785446 us, 4.05 ms)
 [rank 0] iteration #1249 - starting launcher [0][0] ...
 [rank 0] done
-[it=1249] hydro_fvm compute time t=5.9733e-03 (Dt=4.765e-06) : 0.80450 s (5.50 ms, 0 us, 698 us, 790652 us, 5.37 ms)
+[it=1249] hydro_fvm compute time t=5.9733e-03 (Dt=4.765e-06) : 0.79576 s (4.21 ms, 0 us, 78 us, 785518 us, 4.06 ms)
 [rank 0] iteration #1250 - starting launcher [0][0] ...
 [rank 0] done
-[it=1250] hydro_fvm compute time t=5.9781e-03 (Dt=4.765e-06) : 0.80398 s (5.48 ms, 0 us, 685 us, 790182 us, 5.35 ms)
+[it=1250] hydro_fvm compute time t=5.9781e-03 (Dt=4.765e-06) : 0.79564 s (4.21 ms, 0 us, 79 us, 785410 us, 4.05 ms)
 [rank 0] iteration #1251 - starting launcher [0][0] ...
 [rank 0] done
-[it=1251] hydro_fvm compute time t=5.9829e-03 (Dt=4.765e-06) : 0.80449 s (5.49 ms, 0 us, 648 us, 790710 us, 5.34 ms)
+[it=1251] hydro_fvm compute time t=5.9829e-03 (Dt=4.765e-06) : 0.79558 s (4.19 ms, 0 us, 80 us, 785392 us, 4.03 ms)
 [rank 0] iteration #1252 - starting launcher [0][0] ...
 [rank 0] done
-[it=1252] hydro_fvm compute time t=5.9876e-03 (Dt=4.765e-06) : 0.80296 s (5.50 ms, 0 us, 704 us, 789127 us, 5.36 ms)
+[it=1252] hydro_fvm compute time t=5.9876e-03 (Dt=4.765e-06) : 0.79687 s (4.21 ms, 0 us, 79 us, 786665 us, 4.04 ms)
 [rank 0] iteration #1253 - starting launcher [0][0] ...
 [rank 0] done
-[it=1253] hydro_fvm compute time t=5.9924e-03 (Dt=4.765e-06) : 0.80386 s (5.51 ms, 0 us, 686 us, 790021 us, 5.36 ms)
+[it=1253] hydro_fvm compute time t=5.9924e-03 (Dt=4.765e-06) : 0.79568 s (4.21 ms, 0 us, 79 us, 785474 us, 4.04 ms)
 [rank 0] iteration #1254 - starting launcher [0][0] ...
 [rank 0] done
-[it=1254] hydro_fvm compute time t=5.9971e-03 (Dt=4.765e-06) : 0.80408 s (5.51 ms, 0 us, 662 us, 790266 us, 5.36 ms)
+[it=1254] hydro_fvm compute time t=5.9971e-03 (Dt=4.765e-06) : 0.79601 s (4.20 ms, 0 us, 80 us, 785804 us, 4.04 ms)
 [rank 0] iteration #1255 - starting launcher [0][0] ...
 [rank 0] done
-[it=1255] hydro_fvm compute time t=6.0019e-03 (Dt=4.765e-06) : 0.80460 s (5.52 ms, 0 us, 693 us, 790702 us, 5.39 ms)
+[it=1255] hydro_fvm compute time t=6.0019e-03 (Dt=4.765e-06) : 0.79613 s (4.21 ms, 0 us, 79 us, 785914 us, 4.04 ms)
 [rank 0] iteration #1256 - starting launcher [0][0] ...
 [rank 0] done
-[it=1256] hydro_fvm compute time t=6.0067e-03 (Dt=4.765e-06) : 0.80422 s (5.52 ms, 0 us, 703 us, 790359 us, 5.35 ms)
+[it=1256] hydro_fvm compute time t=6.0067e-03 (Dt=4.765e-06) : 0.79560 s (4.30 ms, 0 us, 80 us, 785283 us, 4.05 ms)
 [rank 0] iteration #1257 - starting launcher [0][0] ...
 [rank 0] done
-[it=1257] hydro_fvm compute time t=6.0114e-03 (Dt=4.765e-06) : 0.80445 s (5.53 ms, 0 us, 690 us, 790592 us, 5.36 ms)
+[it=1257] hydro_fvm compute time t=6.0114e-03 (Dt=4.765e-06) : 0.79573 s (4.14 ms, 0 us, 79 us, 785578 us, 4.06 ms)
 [rank 0] iteration #1258 - starting launcher [0][0] ...
 [rank 0] done
-[it=1258] hydro_fvm compute time t=6.0162e-03 (Dt=4.765e-06) : 0.80381 s (5.50 ms, 0 us, 704 us, 789956 us, 5.38 ms)
+[it=1258] hydro_fvm compute time t=6.0162e-03 (Dt=4.765e-06) : 0.79567 s (4.21 ms, 0 us, 79 us, 785466 us, 4.06 ms)
 [rank 0] iteration #1259 - starting launcher [0][0] ...
 [rank 0] done
-[it=1259] hydro_fvm compute time t=6.0210e-03 (Dt=4.765e-06) : 0.80406 s (5.50 ms, 0 us, 688 us, 790236 us, 5.35 ms)
+[it=1259] hydro_fvm compute time t=6.0210e-03 (Dt=4.765e-06) : 0.79564 s (4.19 ms, 0 us, 79 us, 785461 us, 4.05 ms)
 [rank 0] iteration #1260 - starting launcher [0][0] ...
 [rank 0] done
-[it=1260] hydro_fvm compute time t=6.0257e-03 (Dt=4.765e-06) : 0.80391 s (5.49 ms, 0 us, 700 us, 790013 us, 5.39 ms)
+[it=1260] hydro_fvm compute time t=6.0257e-03 (Dt=4.765e-06) : 0.79539 s (4.18 ms, 0 us, 77 us, 785183 us, 4.06 ms)
 [rank 0] iteration #1261 - starting launcher [0][0] ...
 [rank 0] done
-[it=1261] hydro_fvm compute time t=6.0305e-03 (Dt=4.764e-06) : 0.80416 s (5.53 ms, 0 us, 676 us, 790285 us, 5.35 ms)
+[it=1261] hydro_fvm compute time t=6.0305e-03 (Dt=4.764e-06) : 0.79557 s (4.20 ms, 0 us, 78 us, 785377 us, 4.03 ms)
 [rank 0] iteration #1262 - starting launcher [0][0] ...
 [rank 0] done
-[it=1262] hydro_fvm compute time t=6.0353e-03 (Dt=4.764e-06) : 0.80422 s (5.53 ms, 0 us, 692 us, 790356 us, 5.36 ms)
+[it=1262] hydro_fvm compute time t=6.0353e-03 (Dt=4.764e-06) : 0.79545 s (4.20 ms, 0 us, 79 us, 785274 us, 4.02 ms)
 [rank 0] iteration #1263 - starting launcher [0][0] ...
 [rank 0] done
-[it=1263] hydro_fvm compute time t=6.0400e-03 (Dt=4.764e-06) : 0.80432 s (5.50 ms, 0 us, 703 us, 790502 us, 5.36 ms)
+[it=1263] hydro_fvm compute time t=6.0400e-03 (Dt=4.764e-06) : 0.79549 s (4.21 ms, 0 us, 79 us, 785274 us, 4.03 ms)
 [rank 0] iteration #1264 - starting launcher [0][0] ...
 [rank 0] done
-[it=1264] hydro_fvm compute time t=6.0448e-03 (Dt=4.764e-06) : 0.80436 s (5.51 ms, 0 us, 692 us, 790526 us, 5.36 ms)
+[it=1264] hydro_fvm compute time t=6.0448e-03 (Dt=4.764e-06) : 0.79532 s (4.17 ms, 0 us, 78 us, 785138 us, 4.04 ms)
 [rank 0] iteration #1265 - starting launcher [0][0] ...
 [rank 0] done
-[it=1265] hydro_fvm compute time t=6.0496e-03 (Dt=4.764e-06) : 0.80451 s (5.51 ms, 0 us, 700 us, 790667 us, 5.35 ms)
+[it=1265] hydro_fvm compute time t=6.0496e-03 (Dt=4.764e-06) : 0.79565 s (4.19 ms, 0 us, 79 us, 785454 us, 4.04 ms)
 [rank 0] iteration #1266 - starting launcher [0][0] ...
 [rank 0] done
-[it=1266] hydro_fvm compute time t=6.0543e-03 (Dt=4.764e-06) : 0.80440 s (5.51 ms, 0 us, 647 us, 790653 us, 5.35 ms)
+[it=1266] hydro_fvm compute time t=6.0543e-03 (Dt=4.764e-06) : 0.79636 s (4.18 ms, 0 us, 79 us, 786190 us, 4.03 ms)
 [rank 0] iteration #1267 - starting launcher [0][0] ...
 [rank 0] done
-[it=1267] hydro_fvm compute time t=6.0591e-03 (Dt=4.764e-06) : 0.80458 s (5.53 ms, 0 us, 689 us, 790713 us, 5.37 ms)
+[it=1267] hydro_fvm compute time t=6.0591e-03 (Dt=4.764e-06) : 0.79574 s (4.19 ms, 0 us, 78 us, 785561 us, 4.06 ms)
 [rank 0] iteration #1268 - starting launcher [0][0] ...
 [rank 0] done
-[it=1268] hydro_fvm compute time t=6.0639e-03 (Dt=4.764e-06) : 0.80380 s (5.49 ms, 0 us, 685 us, 789976 us, 5.35 ms)
+[it=1268] hydro_fvm compute time t=6.0639e-03 (Dt=4.764e-06) : 0.79527 s (4.21 ms, 0 us, 78 us, 785065 us, 4.04 ms)
 [rank 0] iteration #1269 - starting launcher [0][0] ...
 [rank 0] done
-[it=1269] hydro_fvm compute time t=6.0686e-03 (Dt=4.764e-06) : 0.80426 s (5.51 ms, 0 us, 709 us, 790405 us, 5.36 ms)
+[it=1269] hydro_fvm compute time t=6.0686e-03 (Dt=4.764e-06) : 0.79563 s (4.20 ms, 0 us, 78 us, 785452 us, 4.04 ms)
 [rank 0] iteration #1270 - starting launcher [0][0] ...
 [rank 0] done
-[it=1270] hydro_fvm compute time t=6.0734e-03 (Dt=4.764e-06) : 0.80418 s (5.51 ms, 0 us, 692 us, 790350 us, 5.35 ms)
+[it=1270] hydro_fvm compute time t=6.0734e-03 (Dt=4.764e-06) : 0.79537 s (4.18 ms, 0 us, 80 us, 785214 us, 4.05 ms)
 [rank 0] iteration #1271 - starting launcher [0][0] ...
 [rank 0] done
-[it=1271] hydro_fvm compute time t=6.0781e-03 (Dt=4.764e-06) : 0.80333 s (5.50 ms, 0 us, 681 us, 789521 us, 5.35 ms)
+[it=1271] hydro_fvm compute time t=6.0781e-03 (Dt=4.764e-06) : 0.79620 s (4.21 ms, 0 us, 78 us, 785980 us, 4.04 ms)
 [rank 0] iteration #1272 - starting launcher [0][0] ...
 [rank 0] done
-[it=1272] hydro_fvm compute time t=6.0829e-03 (Dt=4.764e-06) : 0.80424 s (5.44 ms, 0 us, 696 us, 790469 us, 5.36 ms)
+[it=1272] hydro_fvm compute time t=6.0829e-03 (Dt=4.764e-06) : 0.79555 s (4.19 ms, 0 us, 77 us, 785334 us, 4.06 ms)
 [rank 0] iteration #1273 - starting launcher [0][0] ...
 [rank 0] done
-[it=1273] hydro_fvm compute time t=6.0877e-03 (Dt=4.764e-06) : 0.80426 s (5.52 ms, 0 us, 672 us, 790450 us, 5.34 ms)
+[it=1273] hydro_fvm compute time t=6.0877e-03 (Dt=4.764e-06) : 0.79544 s (4.17 ms, 0 us, 77 us, 785269 us, 4.03 ms)
 [rank 0] iteration #1274 - starting launcher [0][0] ...
 [rank 0] done
-[it=1274] hydro_fvm compute time t=6.0924e-03 (Dt=4.764e-06) : 0.80440 s (5.50 ms, 0 us, 681 us, 790585 us, 5.36 ms)
+[it=1274] hydro_fvm compute time t=6.0924e-03 (Dt=4.764e-06) : 0.79547 s (4.18 ms, 0 us, 78 us, 785293 us, 4.04 ms)
 [rank 0] iteration #1275 - starting launcher [0][0] ...
 [rank 0] done
-[it=1275] hydro_fvm compute time t=6.0972e-03 (Dt=4.764e-06) : 0.80425 s (5.49 ms, 0 us, 689 us, 790451 us, 5.35 ms)
+[it=1275] hydro_fvm compute time t=6.0972e-03 (Dt=4.764e-06) : 0.79566 s (4.19 ms, 0 us, 79 us, 785477 us, 4.04 ms)
 [rank 0] iteration #1276 - starting launcher [0][0] ...
 [rank 0] done
-[it=1276] hydro_fvm compute time t=6.1020e-03 (Dt=4.764e-06) : 0.80379 s (5.54 ms, 0 us, 706 us, 789922 us, 5.33 ms)
+[it=1276] hydro_fvm compute time t=6.1020e-03 (Dt=4.764e-06) : 0.79532 s (4.16 ms, 0 us, 78 us, 785115 us, 4.10 ms)
 [rank 0] iteration #1277 - starting launcher [0][0] ...
 [rank 0] done
-[it=1277] hydro_fvm compute time t=6.1067e-03 (Dt=4.764e-06) : 0.80422 s (5.48 ms, 0 us, 703 us, 790386 us, 5.37 ms)
+[it=1277] hydro_fvm compute time t=6.1067e-03 (Dt=4.764e-06) : 0.79587 s (4.16 ms, 0 us, 79 us, 785689 us, 4.05 ms)
 [rank 0] iteration #1278 - starting launcher [0][0] ...
 [rank 0] done
-[it=1278] hydro_fvm compute time t=6.1115e-03 (Dt=4.764e-06) : 0.80431 s (5.54 ms, 0 us, 707 us, 790421 us, 5.37 ms)
+[it=1278] hydro_fvm compute time t=6.1115e-03 (Dt=4.764e-06) : 0.79542 s (4.18 ms, 0 us, 79 us, 785244 us, 4.04 ms)
 [rank 0] iteration #1279 - starting launcher [0][0] ...
 [rank 0] done
-[it=1279] hydro_fvm compute time t=6.1163e-03 (Dt=4.764e-06) : 0.80406 s (5.51 ms, 0 us, 671 us, 790251 us, 5.35 ms)
+[it=1279] hydro_fvm compute time t=6.1163e-03 (Dt=4.764e-06) : 0.79575 s (4.19 ms, 0 us, 78 us, 785553 us, 4.05 ms)
 [rank 0] iteration #1280 - starting launcher [0][0] ...
 [rank 0] done
-[it=1280] hydro_fvm compute time t=6.1210e-03 (Dt=4.764e-06) : 0.80392 s (5.51 ms, 0 us, 675 us, 790115 us, 5.35 ms)
+[it=1280] hydro_fvm compute time t=6.1210e-03 (Dt=4.764e-06) : 0.79559 s (4.30 ms, 0 us, 77 us, 785312 us, 4.06 ms)
 [rank 0] iteration #1281 - starting launcher [0][0] ...
 [rank 0] done
-[it=1281] hydro_fvm compute time t=6.1258e-03 (Dt=4.764e-06) : 0.80352 s (5.52 ms, 0 us, 706 us, 789660 us, 5.35 ms)
+[it=1281] hydro_fvm compute time t=6.1258e-03 (Dt=4.764e-06) : 0.79561 s (4.21 ms, 0 us, 78 us, 785401 us, 4.05 ms)
 [rank 0] iteration #1282 - starting launcher [0][0] ...
 [rank 0] done
-[it=1282] hydro_fvm compute time t=6.1305e-03 (Dt=4.764e-06) : 0.80424 s (5.51 ms, 0 us, 688 us, 790428 us, 5.34 ms)
+[it=1282] hydro_fvm compute time t=6.1305e-03 (Dt=4.764e-06) : 0.79560 s (4.20 ms, 0 us, 80 us, 785426 us, 4.05 ms)
 [rank 0] iteration #1283 - starting launcher [0][0] ...
 [rank 0] done
-[it=1283] hydro_fvm compute time t=6.1353e-03 (Dt=4.764e-06) : 0.80414 s (5.51 ms, 0 us, 686 us, 790334 us, 5.33 ms)
+[it=1283] hydro_fvm compute time t=6.1353e-03 (Dt=4.764e-06) : 0.79577 s (4.18 ms, 0 us, 80 us, 785573 us, 4.04 ms)
 [rank 0] iteration #1284 - starting launcher [0][0] ...
 [rank 0] done
-[it=1284] hydro_fvm compute time t=6.1401e-03 (Dt=4.764e-06) : 0.80408 s (5.51 ms, 0 us, 666 us, 790279 us, 5.34 ms)
+[it=1284] hydro_fvm compute time t=6.1401e-03 (Dt=4.764e-06) : 0.79559 s (4.19 ms, 0 us, 78 us, 785399 us, 4.03 ms)
 [rank 0] iteration #1285 - starting launcher [0][0] ...
 [rank 0] done
-[it=1285] hydro_fvm compute time t=6.1448e-03 (Dt=4.764e-06) : 0.80445 s (5.51 ms, 0 us, 708 us, 790609 us, 5.34 ms)
+[it=1285] hydro_fvm compute time t=6.1448e-03 (Dt=4.764e-06) : 0.79582 s (4.20 ms, 0 us, 77 us, 785565 us, 4.05 ms)
 [rank 0] iteration #1286 - starting launcher [0][0] ...
 [rank 0] done
-[it=1286] hydro_fvm compute time t=6.1496e-03 (Dt=4.763e-06) : 0.80375 s (5.49 ms, 0 us, 696 us, 789934 us, 5.35 ms)
+[it=1286] hydro_fvm compute time t=6.1496e-03 (Dt=4.763e-06) : 0.79534 s (4.08 ms, 0 us, 79 us, 785296 us, 4.02 ms)
 [rank 0] iteration #1287 - starting launcher [0][0] ...
 [rank 0] done
-[it=1287] hydro_fvm compute time t=6.1544e-03 (Dt=4.763e-06) : 0.80446 s (5.49 ms, 0 us, 699 us, 790646 us, 5.36 ms)
+[it=1287] hydro_fvm compute time t=6.1544e-03 (Dt=4.763e-06) : 0.79558 s (4.07 ms, 0 us, 78 us, 785528 us, 4.02 ms)
 [rank 0] iteration #1288 - starting launcher [0][0] ...
 [rank 0] done
-[it=1288] hydro_fvm compute time t=6.1591e-03 (Dt=4.763e-06) : 0.80396 s (5.52 ms, 0 us, 693 us, 790116 us, 5.34 ms)
+[it=1288] hydro_fvm compute time t=6.1591e-03 (Dt=4.763e-06) : 0.79529 s (4.04 ms, 0 us, 79 us, 785262 us, 4.03 ms)
 [rank 0] iteration #1289 - starting launcher [0][0] ...
 [rank 0] done
-[it=1289] hydro_fvm compute time t=6.1639e-03 (Dt=4.763e-06) : 0.80412 s (5.51 ms, 0 us, 697 us, 790289 us, 5.35 ms)
+[it=1289] hydro_fvm compute time t=6.1639e-03 (Dt=4.763e-06) : 0.79562 s (4.08 ms, 0 us, 78 us, 785539 us, 4.02 ms)
 [rank 0] iteration #1290 - starting launcher [0][0] ...
 [rank 0] done
-[it=1290] hydro_fvm compute time t=6.1687e-03 (Dt=4.763e-06) : 0.80396 s (5.52 ms, 0 us, 702 us, 790116 us, 5.35 ms)
+[it=1290] hydro_fvm compute time t=6.1687e-03 (Dt=4.763e-06) : 0.79552 s (4.07 ms, 0 us, 78 us, 785465 us, 4.04 ms)
 [rank 0] iteration #1291 - starting launcher [0][0] ...
 [rank 0] done
-[it=1291] hydro_fvm compute time t=6.1734e-03 (Dt=4.763e-06) : 0.80369 s (5.56 ms, 0 us, 688 us, 789827 us, 5.34 ms)
+[it=1291] hydro_fvm compute time t=6.1734e-03 (Dt=4.763e-06) : 0.79544 s (4.08 ms, 0 us, 77 us, 785366 us, 4.04 ms)
 [rank 0] iteration #1292 - starting launcher [0][0] ...
 [rank 0] done
-[it=1292] hydro_fvm compute time t=6.1782e-03 (Dt=4.763e-06) : 0.80431 s (5.48 ms, 0 us, 699 us, 790504 us, 5.35 ms)
+[it=1292] hydro_fvm compute time t=6.1782e-03 (Dt=4.763e-06) : 0.79531 s (4.08 ms, 0 us, 78 us, 785229 us, 4.04 ms)
 [rank 0] iteration #1293 - starting launcher [0][0] ...
 [rank 0] done
-[it=1293] hydro_fvm compute time t=6.1829e-03 (Dt=4.763e-06) : 0.80439 s (5.52 ms, 0 us, 709 us, 790506 us, 5.37 ms)
+[it=1293] hydro_fvm compute time t=6.1829e-03 (Dt=4.763e-06) : 0.79546 s (4.06 ms, 0 us, 79 us, 785420 us, 4.03 ms)
 [rank 0] iteration #1294 - starting launcher [0][0] ...
 [rank 0] done
-[it=1294] hydro_fvm compute time t=6.1877e-03 (Dt=4.763e-06) : 0.80328 s (5.48 ms, 0 us, 703 us, 789482 us, 5.34 ms)
+[it=1294] hydro_fvm compute time t=6.1877e-03 (Dt=4.763e-06) : 0.79736 s (4.07 ms, 0 us, 79 us, 787297 us, 4.02 ms)
 [rank 0] iteration #1295 - starting launcher [0][0] ...
 [rank 0] done
-[it=1295] hydro_fvm compute time t=6.1925e-03 (Dt=4.763e-06) : 0.80343 s (5.50 ms, 0 us, 682 us, 789609 us, 5.36 ms)
+[it=1295] hydro_fvm compute time t=6.1925e-03 (Dt=4.763e-06) : 0.79537 s (4.06 ms, 0 us, 78 us, 785330 us, 4.02 ms)
 [rank 0] iteration #1296 - starting launcher [0][0] ...
 [rank 0] done
-[it=1296] hydro_fvm compute time t=6.1972e-03 (Dt=4.763e-06) : 0.80413 s (5.50 ms, 0 us, 697 us, 790312 us, 5.35 ms)
+[it=1296] hydro_fvm compute time t=6.1972e-03 (Dt=4.763e-06) : 0.79534 s (4.06 ms, 0 us, 78 us, 785199 us, 4.13 ms)
 [rank 0] iteration #1297 - starting launcher [0][0] ...
 [rank 0] done
-[it=1297] hydro_fvm compute time t=6.2020e-03 (Dt=4.763e-06) : 0.80434 s (5.53 ms, 0 us, 700 us, 790484 us, 5.34 ms)
+[it=1297] hydro_fvm compute time t=6.2020e-03 (Dt=4.763e-06) : 0.79543 s (4.07 ms, 0 us, 79 us, 785341 us, 4.05 ms)
 [rank 0] iteration #1298 - starting launcher [0][0] ...
 [rank 0] done
-[it=1298] hydro_fvm compute time t=6.2068e-03 (Dt=4.763e-06) : 0.80414 s (5.50 ms, 0 us, 692 us, 790336 us, 5.34 ms)
+[it=1298] hydro_fvm compute time t=6.2068e-03 (Dt=4.763e-06) : 0.79545 s (4.06 ms, 0 us, 79 us, 785395 us, 4.03 ms)
 [rank 0] iteration #1299 - starting launcher [0][0] ...
 [rank 0] done
-[it=1299] hydro_fvm compute time t=6.2115e-03 (Dt=4.763e-06) : 0.80458 s (5.47 ms, 0 us, 694 us, 790785 us, 5.35 ms)
+[it=1299] hydro_fvm compute time t=6.2115e-03 (Dt=4.763e-06) : 0.79551 s (4.07 ms, 0 us, 78 us, 785464 us, 4.02 ms)
 [rank 0] iteration #1300 - starting launcher [0][0] ...
 [rank 0] done
-[it=1300] hydro_fvm compute time t=6.2163e-03 (Dt=4.763e-06) : 0.80398 s (5.49 ms, 0 us, 685 us, 790176 us, 5.34 ms)
+[it=1300] hydro_fvm compute time t=6.2163e-03 (Dt=4.763e-06) : 0.79536 s (4.07 ms, 0 us, 77 us, 785314 us, 4.02 ms)
 [rank 0] iteration #1301 - starting launcher [0][0] ...
 [rank 0] done
-[it=1301] hydro_fvm compute time t=6.2210e-03 (Dt=4.763e-06) : 0.80397 s (5.50 ms, 0 us, 676 us, 789878 us, 5.45 ms)
+[it=1301] hydro_fvm compute time t=6.2210e-03 (Dt=4.763e-06) : 0.79548 s (4.07 ms, 0 us, 78 us, 785446 us, 4.01 ms)
 [rank 0] iteration #1302 - starting launcher [0][0] ...
 [rank 0] done
-[it=1302] hydro_fvm compute time t=6.2258e-03 (Dt=4.763e-06) : 0.80442 s (5.57 ms, 0 us, 693 us, 790401 us, 5.38 ms)
+[it=1302] hydro_fvm compute time t=6.2258e-03 (Dt=4.763e-06) : 0.79524 s (4.05 ms, 0 us, 78 us, 785215 us, 4.01 ms)
 [rank 0] iteration #1303 - starting launcher [0][0] ...
 [rank 0] done
-[it=1303] hydro_fvm compute time t=6.2306e-03 (Dt=4.763e-06) : 0.80447 s (5.51 ms, 0 us, 709 us, 790609 us, 5.37 ms)
+[it=1303] hydro_fvm compute time t=6.2306e-03 (Dt=4.763e-06) : 0.79560 s (4.09 ms, 0 us, 78 us, 785540 us, 4.01 ms)
 [rank 0] iteration #1304 - starting launcher [0][0] ...
 [rank 0] done
-[it=1304] hydro_fvm compute time t=6.2353e-03 (Dt=4.763e-06) : 0.80453 s (5.53 ms, 0 us, 707 us, 790648 us, 5.35 ms)
+[it=1304] hydro_fvm compute time t=6.2353e-03 (Dt=4.763e-06) : 0.79539 s (4.07 ms, 0 us, 83 us, 785358 us, 4.01 ms)
 [rank 0] iteration #1305 - starting launcher [0][0] ...
 [rank 0] done
-[it=1305] hydro_fvm compute time t=6.2401e-03 (Dt=4.763e-06) : 0.80447 s (5.50 ms, 0 us, 698 us, 790626 us, 5.36 ms)
+[it=1305] hydro_fvm compute time t=6.2401e-03 (Dt=4.763e-06) : 0.79540 s (4.07 ms, 0 us, 77 us, 785355 us, 4.02 ms)
 [rank 0] iteration #1306 - starting launcher [0][0] ...
 [rank 0] done
-[it=1306] hydro_fvm compute time t=6.2449e-03 (Dt=4.763e-06) : 0.80389 s (5.53 ms, 0 us, 699 us, 790036 us, 5.35 ms)
+[it=1306] hydro_fvm compute time t=6.2449e-03 (Dt=4.763e-06) : 0.79520 s (4.06 ms, 0 us, 79 us, 785157 us, 4.03 ms)
 [rank 0] iteration #1307 - starting launcher [0][0] ...
 [rank 0] done
-[it=1307] hydro_fvm compute time t=6.2496e-03 (Dt=4.763e-06) : 0.80380 s (5.55 ms, 0 us, 661 us, 789921 us, 5.38 ms)
+[it=1307] hydro_fvm compute time t=6.2496e-03 (Dt=4.763e-06) : 0.79700 s (4.08 ms, 0 us, 82 us, 786927 us, 4.04 ms)
 [rank 0] iteration #1308 - starting launcher [0][0] ...
 [rank 0] done
-[it=1308] hydro_fvm compute time t=6.2544e-03 (Dt=4.763e-06) : 0.80431 s (5.49 ms, 0 us, 700 us, 790461 us, 5.37 ms)
+[it=1308] hydro_fvm compute time t=6.2544e-03 (Dt=4.763e-06) : 0.79536 s (4.08 ms, 0 us, 83 us, 785307 us, 4.02 ms)
 [rank 0] iteration #1309 - starting launcher [0][0] ...
 [rank 0] done
-[it=1309] hydro_fvm compute time t=6.2592e-03 (Dt=4.763e-06) : 0.80446 s (5.52 ms, 0 us, 707 us, 790533 us, 5.39 ms)
+[it=1309] hydro_fvm compute time t=6.2592e-03 (Dt=4.763e-06) : 0.79567 s (4.08 ms, 0 us, 77 us, 785607 us, 4.02 ms)
 [rank 0] iteration #1310 - starting launcher [0][0] ...
 [rank 0] done
-[it=1310] hydro_fvm compute time t=6.2639e-03 (Dt=4.762e-06) : 0.80443 s (5.49 ms, 0 us, 698 us, 790582 us, 5.37 ms)
+[it=1310] hydro_fvm compute time t=6.2639e-03 (Dt=4.762e-06) : 0.79536 s (4.07 ms, 0 us, 77 us, 785308 us, 4.02 ms)
 [rank 0] iteration #1311 - starting launcher [0][0] ...
 [rank 0] done
-[it=1311] hydro_fvm compute time t=6.2687e-03 (Dt=4.762e-06) : 0.80454 s (5.53 ms, 0 us, 701 us, 790621 us, 5.39 ms)
+[it=1311] hydro_fvm compute time t=6.2687e-03 (Dt=4.762e-06) : 0.79682 s (4.04 ms, 0 us, 77 us, 786697 us, 4.07 ms)
 [rank 0] iteration #1312 - starting launcher [0][0] ...
 [rank 0] done
-[it=1312] hydro_fvm compute time t=6.2734e-03 (Dt=4.762e-06) : 0.80454 s (5.54 ms, 0 us, 699 us, 790645 us, 5.38 ms)
+[it=1312] hydro_fvm compute time t=6.2734e-03 (Dt=4.762e-06) : 0.79538 s (4.11 ms, 0 us, 77 us, 785297 us, 4.02 ms)
 [rank 0] iteration #1313 - starting launcher [0][0] ...
 [rank 0] done
-[it=1313] hydro_fvm compute time t=6.2782e-03 (Dt=4.762e-06) : 0.80453 s (5.51 ms, 0 us, 699 us, 790668 us, 5.38 ms)
+[it=1313] hydro_fvm compute time t=6.2782e-03 (Dt=4.762e-06) : 0.79563 s (4.21 ms, 0 us, 77 us, 785428 us, 4.04 ms)
 [rank 0] iteration #1314 - starting launcher [0][0] ...
 [rank 0] done
-[it=1314] hydro_fvm compute time t=6.2830e-03 (Dt=4.762e-06) : 0.80391 s (5.49 ms, 0 us, 689 us, 790097 us, 5.36 ms)
+[it=1314] hydro_fvm compute time t=6.2830e-03 (Dt=4.762e-06) : 0.79721 s (4.24 ms, 0 us, 79 us, 786988 us, 4.05 ms)
 [rank 0] iteration #1315 - starting launcher [0][0] ...
 [rank 0] done
-[it=1315] hydro_fvm compute time t=6.2877e-03 (Dt=4.762e-06) : 0.80455 s (5.51 ms, 0 us, 706 us, 790691 us, 5.36 ms)
+[it=1315] hydro_fvm compute time t=6.2877e-03 (Dt=4.762e-06) : 0.79609 s (4.37 ms, 0 us, 78 us, 785702 us, 4.07 ms)
 [rank 0] iteration #1316 - starting launcher [0][0] ...
 [rank 0] done
-[it=1316] hydro_fvm compute time t=6.2925e-03 (Dt=4.762e-06) : 0.80449 s (5.52 ms, 0 us, 699 us, 790564 us, 5.39 ms)
+[it=1316] hydro_fvm compute time t=6.2925e-03 (Dt=4.762e-06) : 0.79542 s (4.20 ms, 0 us, 84 us, 785245 us, 4.05 ms)
 [rank 0] iteration #1317 - starting launcher [0][0] ...
 [rank 0] done
-[it=1317] hydro_fvm compute time t=6.2972e-03 (Dt=4.762e-06) : 0.80434 s (5.54 ms, 0 us, 682 us, 790511 us, 5.35 ms)
+[it=1317] hydro_fvm compute time t=6.2972e-03 (Dt=4.762e-06) : 0.79579 s (4.34 ms, 0 us, 83 us, 785458 us, 4.07 ms)
 [rank 0] iteration #1318 - starting launcher [0][0] ...
 [rank 0] done
-[it=1318] hydro_fvm compute time t=6.3020e-03 (Dt=4.762e-06) : 0.80383 s (5.51 ms, 0 us, 692 us, 789988 us, 5.35 ms)
+[it=1318] hydro_fvm compute time t=6.3020e-03 (Dt=4.762e-06) : 0.79558 s (4.22 ms, 0 us, 80 us, 785357 us, 4.04 ms)
 [rank 0] iteration #1319 - starting launcher [0][0] ...
 [rank 0] done
-[it=1319] hydro_fvm compute time t=6.3068e-03 (Dt=4.762e-06) : 0.80465 s (5.55 ms, 0 us, 706 us, 790766 us, 5.35 ms)
+[it=1319] hydro_fvm compute time t=6.3068e-03 (Dt=4.762e-06) : 0.79557 s (4.21 ms, 0 us, 80 us, 785374 us, 4.03 ms)
 [rank 0] iteration #1320 - starting launcher [0][0] ...
 [rank 0] done
-[it=1320] hydro_fvm compute time t=6.3115e-03 (Dt=4.762e-06) : 0.80411 s (5.52 ms, 0 us, 703 us, 790248 us, 5.36 ms)
+[it=1320] hydro_fvm compute time t=6.3115e-03 (Dt=4.762e-06) : 0.79545 s (4.22 ms, 0 us, 83 us, 785224 us, 4.03 ms)
 [rank 0] iteration #1321 - starting launcher [0][0] ...
 [rank 0] done
-[it=1321] hydro_fvm compute time t=6.3163e-03 (Dt=4.762e-06) : 0.80414 s (5.50 ms, 0 us, 693 us, 790246 us, 5.39 ms)
+[it=1321] hydro_fvm compute time t=6.3163e-03 (Dt=4.762e-06) : 0.79568 s (4.21 ms, 0 us, 79 us, 785462 us, 4.04 ms)
 [rank 0] iteration #1322 - starting launcher [0][0] ...
 [rank 0] done
-[it=1322] hydro_fvm compute time t=6.3211e-03 (Dt=4.762e-06) : 0.80379 s (5.53 ms, 0 us, 693 us, 789947 us, 5.36 ms)
+[it=1322] hydro_fvm compute time t=6.3211e-03 (Dt=4.762e-06) : 0.79542 s (4.21 ms, 0 us, 79 us, 785229 us, 4.05 ms)
 [rank 0] iteration #1323 - starting launcher [0][0] ...
 [rank 0] done
-[it=1323] hydro_fvm compute time t=6.3258e-03 (Dt=4.762e-06) : 0.80432 s (5.52 ms, 0 us, 692 us, 790475 us, 5.35 ms)
+[it=1323] hydro_fvm compute time t=6.3258e-03 (Dt=4.762e-06) : 0.79557 s (4.21 ms, 0 us, 80 us, 785353 us, 4.04 ms)
 [rank 0] iteration #1324 - starting launcher [0][0] ...
 [rank 0] done
-[it=1324] hydro_fvm compute time t=6.3306e-03 (Dt=4.762e-06) : 0.80382 s (5.51 ms, 0 us, 698 us, 789956 us, 5.37 ms)
+[it=1324] hydro_fvm compute time t=6.3306e-03 (Dt=4.762e-06) : 0.79561 s (4.19 ms, 0 us, 79 us, 785419 us, 4.04 ms)
 [rank 0] iteration #1325 - starting launcher [0][0] ...
 [rank 0] done
-[it=1325] hydro_fvm compute time t=6.3353e-03 (Dt=4.762e-06) : 0.80407 s (5.49 ms, 0 us, 697 us, 790221 us, 5.37 ms)
+[it=1325] hydro_fvm compute time t=6.3353e-03 (Dt=4.762e-06) : 0.79574 s (4.21 ms, 0 us, 79 us, 785529 us, 4.04 ms)
 [rank 0] iteration #1326 - starting launcher [0][0] ...
 [rank 0] done
-[it=1326] hydro_fvm compute time t=6.3401e-03 (Dt=4.762e-06) : 0.80396 s (5.51 ms, 0 us, 701 us, 790111 us, 5.36 ms)
+[it=1326] hydro_fvm compute time t=6.3401e-03 (Dt=4.762e-06) : 0.79541 s (4.20 ms, 0 us, 79 us, 785211 us, 4.06 ms)
 [rank 0] iteration #1327 - starting launcher [0][0] ...
 [rank 0] done
-[it=1327] hydro_fvm compute time t=6.3449e-03 (Dt=4.762e-06) : 0.80447 s (5.52 ms, 0 us, 678 us, 790654 us, 5.35 ms)
+[it=1327] hydro_fvm compute time t=6.3449e-03 (Dt=4.762e-06) : 0.79597 s (4.22 ms, 0 us, 78 us, 785779 us, 4.05 ms)
 [rank 0] iteration #1328 - starting launcher [0][0] ...
 [rank 0] done
-[it=1328] hydro_fvm compute time t=6.3496e-03 (Dt=4.762e-06) : 0.80440 s (5.52 ms, 0 us, 699 us, 790553 us, 5.35 ms)
+[it=1328] hydro_fvm compute time t=6.3496e-03 (Dt=4.762e-06) : 0.79612 s (4.21 ms, 0 us, 79 us, 785898 us, 4.06 ms)
 [rank 0] iteration #1329 - starting launcher [0][0] ...
 [rank 0] done
-[it=1329] hydro_fvm compute time t=6.3544e-03 (Dt=4.762e-06) : 0.80441 s (5.45 ms, 0 us, 699 us, 790636 us, 5.35 ms)
+[it=1329] hydro_fvm compute time t=6.3544e-03 (Dt=4.762e-06) : 0.79575 s (4.20 ms, 0 us, 82 us, 785556 us, 4.03 ms)
 [rank 0] iteration #1330 - starting launcher [0][0] ...
 [rank 0] done
-[it=1330] hydro_fvm compute time t=6.3592e-03 (Dt=4.762e-06) : 0.80377 s (5.48 ms, 0 us, 676 us, 789979 us, 5.35 ms)
+[it=1330] hydro_fvm compute time t=6.3592e-03 (Dt=4.762e-06) : 0.79544 s (4.22 ms, 0 us, 78 us, 785237 us, 4.03 ms)
 [rank 0] iteration #1331 - starting launcher [0][0] ...
 [rank 0] done
-[it=1331] hydro_fvm compute time t=6.3639e-03 (Dt=4.762e-06) : 0.80471 s (5.51 ms, 0 us, 683 us, 790547 us, 5.58 ms)
+[it=1331] hydro_fvm compute time t=6.3639e-03 (Dt=4.762e-06) : 0.79568 s (4.19 ms, 0 us, 78 us, 785490 us, 4.04 ms)
 [rank 0] iteration #1332 - starting launcher [0][0] ...
 [rank 0] done
-[it=1332] hydro_fvm compute time t=6.3687e-03 (Dt=4.762e-06) : 0.80411 s (5.51 ms, 0 us, 677 us, 790292 us, 5.35 ms)
+[it=1332] hydro_fvm compute time t=6.3687e-03 (Dt=4.762e-06) : 0.79540 s (4.23 ms, 0 us, 78 us, 785189 us, 4.06 ms)
 [rank 0] iteration #1333 - starting launcher [0][0] ...
 [rank 0] done
-[it=1333] hydro_fvm compute time t=6.3734e-03 (Dt=4.762e-06) : 0.80437 s (5.49 ms, 0 us, 686 us, 790554 us, 5.36 ms)
+[it=1333] hydro_fvm compute time t=6.3734e-03 (Dt=4.762e-06) : 0.79567 s (4.23 ms, 0 us, 80 us, 785450 us, 4.03 ms)
 [rank 0] iteration #1334 - starting launcher [0][0] ...
 [rank 0] done
-[it=1334] hydro_fvm compute time t=6.3782e-03 (Dt=4.762e-06) : 0.80371 s (5.53 ms, 0 us, 699 us, 789833 us, 5.37 ms)
+[it=1334] hydro_fvm compute time t=6.3782e-03 (Dt=4.762e-06) : 0.79539 s (4.22 ms, 0 us, 80 us, 785157 us, 4.05 ms)
 [rank 0] iteration #1335 - starting launcher [0][0] ...
 [rank 0] done
-[it=1335] hydro_fvm compute time t=6.3830e-03 (Dt=4.761e-06) : 0.80366 s (5.50 ms, 0 us, 671 us, 789845 us, 5.36 ms)
+[it=1335] hydro_fvm compute time t=6.3830e-03 (Dt=4.761e-06) : 0.79587 s (4.21 ms, 0 us, 80 us, 785658 us, 4.04 ms)
 [rank 0] iteration #1336 - starting launcher [0][0] ...
 [rank 0] done
-[it=1336] hydro_fvm compute time t=6.3877e-03 (Dt=4.761e-06) : 0.80391 s (5.50 ms, 0 us, 703 us, 790087 us, 5.35 ms)
+[it=1336] hydro_fvm compute time t=6.3877e-03 (Dt=4.761e-06) : 0.79577 s (4.23 ms, 0 us, 79 us, 785540 us, 4.04 ms)
 [rank 0] iteration #1337 - starting launcher [0][0] ...
 [rank 0] done
-[it=1337] hydro_fvm compute time t=6.3925e-03 (Dt=4.761e-06) : 0.80408 s (5.56 ms, 0 us, 653 us, 790237 us, 5.35 ms)
+[it=1337] hydro_fvm compute time t=6.3925e-03 (Dt=4.761e-06) : 0.79553 s (4.23 ms, 0 us, 82 us, 785346 us, 4.03 ms)
 [rank 0] iteration #1338 - starting launcher [0][0] ...
 [rank 0] done
-[it=1338] hydro_fvm compute time t=6.3972e-03 (Dt=4.761e-06) : 0.80370 s (5.55 ms, 0 us, 684 us, 789827 us, 5.35 ms)
+[it=1338] hydro_fvm compute time t=6.3972e-03 (Dt=4.761e-06) : 0.79549 s (4.21 ms, 0 us, 80 us, 785317 us, 4.03 ms)
 [rank 0] iteration #1339 - starting launcher [0][0] ...
 [rank 0] done
-[it=1339] hydro_fvm compute time t=6.4020e-03 (Dt=4.761e-06) : 0.80411 s (5.52 ms, 0 us, 700 us, 790258 us, 5.36 ms)
+[it=1339] hydro_fvm compute time t=6.4020e-03 (Dt=4.761e-06) : 0.79581 s (4.21 ms, 0 us, 84 us, 785561 us, 4.06 ms)
 [rank 0] iteration #1340 - starting launcher [0][0] ...
 [rank 0] done
-[it=1340] hydro_fvm compute time t=6.4068e-03 (Dt=4.761e-06) : 0.80425 s (5.50 ms, 0 us, 695 us, 790444 us, 5.35 ms)
+[it=1340] hydro_fvm compute time t=6.4068e-03 (Dt=4.761e-06) : 0.79618 s (4.20 ms, 0 us, 79 us, 785973 us, 4.05 ms)
 [rank 0] iteration #1341 - starting launcher [0][0] ...
 [rank 0] done
-[it=1341] hydro_fvm compute time t=6.4115e-03 (Dt=4.761e-06) : 0.80360 s (5.49 ms, 0 us, 695 us, 789770 us, 5.37 ms)
+[it=1341] hydro_fvm compute time t=6.4115e-03 (Dt=4.761e-06) : 0.79587 s (4.29 ms, 0 us, 83 us, 785571 us, 4.08 ms)
 [rank 0] iteration #1342 - starting launcher [0][0] ...
 [rank 0] done
-[it=1342] hydro_fvm compute time t=6.4163e-03 (Dt=4.761e-06) : 0.80405 s (5.52 ms, 0 us, 702 us, 790200 us, 5.37 ms)
+[it=1342] hydro_fvm compute time t=6.4163e-03 (Dt=4.761e-06) : 0.79578 s (4.20 ms, 0 us, 77 us, 785588 us, 4.05 ms)
 [rank 0] iteration #1343 - starting launcher [0][0] ...
 [rank 0] done
-[it=1343] hydro_fvm compute time t=6.4211e-03 (Dt=4.761e-06) : 0.80443 s (5.51 ms, 0 us, 646 us, 790622 us, 5.37 ms)
+[it=1343] hydro_fvm compute time t=6.4211e-03 (Dt=4.761e-06) : 0.79601 s (4.28 ms, 0 us, 79 us, 785739 us, 4.02 ms)
 [rank 0] iteration #1344 - starting launcher [0][0] ...
 [rank 0] done
-[it=1344] hydro_fvm compute time t=6.4258e-03 (Dt=4.761e-06) : 0.80390 s (5.51 ms, 0 us, 689 us, 790068 us, 5.35 ms)
+[it=1344] hydro_fvm compute time t=6.4258e-03 (Dt=4.761e-06) : 0.79548 s (4.21 ms, 0 us, 77 us, 785281 us, 4.04 ms)
 [rank 0] iteration #1345 - starting launcher [0][0] ...
 [rank 0] done
-[it=1345] hydro_fvm compute time t=6.4306e-03 (Dt=4.761e-06) : 0.80448 s (5.52 ms, 0 us, 689 us, 790638 us, 5.37 ms)
+[it=1345] hydro_fvm compute time t=6.4306e-03 (Dt=4.761e-06) : 0.79668 s (4.17 ms, 0 us, 79 us, 786502 us, 4.04 ms)
 [rank 0] iteration #1346 - starting launcher [0][0] ...
 [rank 0] done
-[it=1346] hydro_fvm compute time t=6.4353e-03 (Dt=4.761e-06) : 0.80427 s (5.51 ms, 0 us, 699 us, 790420 us, 5.35 ms)
+[it=1346] hydro_fvm compute time t=6.4353e-03 (Dt=4.761e-06) : 0.79549 s (4.23 ms, 0 us, 78 us, 785259 us, 4.04 ms)
 [rank 0] iteration #1347 - starting launcher [0][0] ...
 [rank 0] done
-[it=1347] hydro_fvm compute time t=6.4401e-03 (Dt=4.761e-06) : 0.80419 s (5.52 ms, 0 us, 688 us, 790352 us, 5.35 ms)
+[it=1347] hydro_fvm compute time t=6.4401e-03 (Dt=4.761e-06) : 0.79558 s (4.19 ms, 0 us, 79 us, 785387 us, 4.05 ms)
 [rank 0] iteration #1348 - starting launcher [0][0] ...
 [rank 0] done
-[it=1348] hydro_fvm compute time t=6.4449e-03 (Dt=4.761e-06) : 0.80446 s (5.50 ms, 0 us, 691 us, 790551 us, 5.39 ms)
+[it=1348] hydro_fvm compute time t=6.4449e-03 (Dt=4.761e-06) : 0.79647 s (4.20 ms, 0 us, 78 us, 786272 us, 4.05 ms)
 [rank 0] iteration #1349 - starting launcher [0][0] ...
 [rank 0] done
-[it=1349] hydro_fvm compute time t=6.4496e-03 (Dt=4.761e-06) : 0.80369 s (5.52 ms, 0 us, 657 us, 789864 us, 5.37 ms)
+[it=1349] hydro_fvm compute time t=6.4496e-03 (Dt=4.761e-06) : 0.79555 s (4.18 ms, 0 us, 79 us, 785403 us, 4.05 ms)
 [rank 0] iteration #1350 - starting launcher [0][0] ...
 [rank 0] done
-[it=1350] hydro_fvm compute time t=6.4544e-03 (Dt=4.761e-06) : 0.80424 s (5.51 ms, 0 us, 702 us, 790403 us, 5.35 ms)
+[it=1350] hydro_fvm compute time t=6.4544e-03 (Dt=4.761e-06) : 0.79563 s (4.18 ms, 0 us, 81 us, 785477 us, 4.04 ms)
 [rank 0] iteration #1351 - starting launcher [0][0] ...
 [rank 0] done
-[it=1351] hydro_fvm compute time t=6.4591e-03 (Dt=4.761e-06) : 0.80422 s (5.54 ms, 0 us, 676 us, 790380 us, 5.35 ms)
+[it=1351] hydro_fvm compute time t=6.4591e-03 (Dt=4.761e-06) : 0.79573 s (4.18 ms, 0 us, 79 us, 785535 us, 4.06 ms)
 [rank 0] iteration #1352 - starting launcher [0][0] ...
 [rank 0] done
-[it=1352] hydro_fvm compute time t=6.4639e-03 (Dt=4.761e-06) : 0.80418 s (5.54 ms, 0 us, 659 us, 790343 us, 5.36 ms)
+[it=1352] hydro_fvm compute time t=6.4639e-03 (Dt=4.761e-06) : 0.79566 s (4.19 ms, 0 us, 78 us, 785442 us, 4.05 ms)
 [rank 0] iteration #1353 - starting launcher [0][0] ...
 [rank 0] done
-[it=1353] hydro_fvm compute time t=6.4687e-03 (Dt=4.761e-06) : 0.80442 s (5.52 ms, 0 us, 680 us, 790564 us, 5.36 ms)
+[it=1353] hydro_fvm compute time t=6.4687e-03 (Dt=4.761e-06) : 0.79581 s (4.18 ms, 0 us, 83 us, 785557 us, 4.06 ms)
 [rank 0] iteration #1354 - starting launcher [0][0] ...
 [rank 0] done
-[it=1354] hydro_fvm compute time t=6.4734e-03 (Dt=4.761e-06) : 0.80447 s (5.51 ms, 0 us, 702 us, 790617 us, 5.36 ms)
+[it=1354] hydro_fvm compute time t=6.4734e-03 (Dt=4.761e-06) : 0.79542 s (4.08 ms, 0 us, 78 us, 785382 us, 4.02 ms)
 [rank 0] iteration #1355 - starting launcher [0][0] ...
 [rank 0] done
-[it=1355] hydro_fvm compute time t=6.4782e-03 (Dt=4.761e-06) : 0.80363 s (5.52 ms, 0 us, 688 us, 789749 us, 5.37 ms)
+[it=1355] hydro_fvm compute time t=6.4782e-03 (Dt=4.761e-06) : 0.79561 s (4.06 ms, 0 us, 77 us, 785546 us, 4.03 ms)
 [rank 0] iteration #1356 - starting launcher [0][0] ...
 [rank 0] done
-[it=1356] hydro_fvm compute time t=6.4829e-03 (Dt=4.761e-06) : 0.80367 s (5.54 ms, 0 us, 707 us, 789780 us, 5.36 ms)
+[it=1356] hydro_fvm compute time t=6.4829e-03 (Dt=4.761e-06) : 0.79574 s (4.07 ms, 0 us, 77 us, 785690 us, 4.02 ms)
 [rank 0] iteration #1357 - starting launcher [0][0] ...
 [rank 0] done
-[it=1357] hydro_fvm compute time t=6.4877e-03 (Dt=4.761e-06) : 0.80416 s (5.51 ms, 0 us, 680 us, 790319 us, 5.38 ms)
+[it=1357] hydro_fvm compute time t=6.4877e-03 (Dt=4.761e-06) : 0.79551 s (4.07 ms, 0 us, 78 us, 785458 us, 4.01 ms)
 [rank 0] iteration #1358 - starting launcher [0][0] ...
 [rank 0] done
-[it=1358] hydro_fvm compute time t=6.4925e-03 (Dt=4.761e-06) : 0.80422 s (5.52 ms, 0 us, 702 us, 790351 us, 5.36 ms)
+[it=1358] hydro_fvm compute time t=6.4925e-03 (Dt=4.761e-06) : 0.79587 s (4.08 ms, 0 us, 77 us, 785806 us, 4.03 ms)
 [rank 0] iteration #1359 - starting launcher [0][0] ...
 [rank 0] done
-[it=1359] hydro_fvm compute time t=6.4972e-03 (Dt=4.760e-06) : 0.80411 s (5.52 ms, 0 us, 686 us, 790288 us, 5.36 ms)
+[it=1359] hydro_fvm compute time t=6.4972e-03 (Dt=4.760e-06) : 0.79567 s (4.09 ms, 0 us, 82 us, 785512 us, 4.04 ms)
 [rank 0] iteration #1360 - starting launcher [0][0] ...
 [rank 0] done
-[it=1360] hydro_fvm compute time t=6.5020e-03 (Dt=4.760e-06) : 0.80388 s (5.52 ms, 0 us, 707 us, 790017 us, 5.35 ms)
+[it=1360] hydro_fvm compute time t=6.5020e-03 (Dt=4.760e-06) : 0.79617 s (4.07 ms, 0 us, 79 us, 786092 us, 4.04 ms)
 [rank 0] iteration #1361 - starting launcher [0][0] ...
 [rank 0] done
-[it=1361] hydro_fvm compute time t=6.5067e-03 (Dt=4.760e-06) : 0.80446 s (5.49 ms, 0 us, 694 us, 790638 us, 5.35 ms)
+[it=1361] hydro_fvm compute time t=6.5067e-03 (Dt=4.760e-06) : 0.79639 s (4.08 ms, 0 us, 78 us, 786328 us, 4.02 ms)
 [rank 0] iteration #1362 - starting launcher [0][0] ...
 [rank 0] done
-[it=1362] hydro_fvm compute time t=6.5115e-03 (Dt=4.760e-06) : 0.80387 s (5.49 ms, 0 us, 702 us, 790028 us, 5.38 ms)
+[it=1362] hydro_fvm compute time t=6.5115e-03 (Dt=4.760e-06) : 0.79525 s (4.07 ms, 0 us, 78 us, 785194 us, 4.03 ms)
 [rank 0] iteration #1363 - starting launcher [0][0] ...
 [rank 0] done
-[it=1363] hydro_fvm compute time t=6.5163e-03 (Dt=4.760e-06) : 0.80415 s (5.55 ms, 0 us, 671 us, 790283 us, 5.36 ms)
+[it=1363] hydro_fvm compute time t=6.5163e-03 (Dt=4.760e-06) : 0.79546 s (4.07 ms, 0 us, 77 us, 785423 us, 4.01 ms)
 [rank 0] iteration #1364 - starting launcher [0][0] ...
 [rank 0] done
-[it=1364] hydro_fvm compute time t=6.5210e-03 (Dt=4.760e-06) : 0.80431 s (5.52 ms, 0 us, 696 us, 790480 us, 5.35 ms)
+[it=1364] hydro_fvm compute time t=6.5210e-03 (Dt=4.760e-06) : 0.79544 s (4.07 ms, 0 us, 78 us, 785368 us, 4.03 ms)
 [rank 0] iteration #1365 - starting launcher [0][0] ...
 [rank 0] done
-[it=1365] hydro_fvm compute time t=6.5258e-03 (Dt=4.760e-06) : 0.80430 s (5.50 ms, 0 us, 706 us, 790465 us, 5.35 ms)
+[it=1365] hydro_fvm compute time t=6.5258e-03 (Dt=4.760e-06) : 0.79565 s (4.08 ms, 0 us, 79 us, 785582 us, 4.03 ms)
 [rank 0] iteration #1366 - starting launcher [0][0] ...
 [rank 0] done
-[it=1366] hydro_fvm compute time t=6.5305e-03 (Dt=4.760e-06) : 0.80432 s (5.55 ms, 0 us, 664 us, 790468 us, 5.36 ms)
+[it=1366] hydro_fvm compute time t=6.5305e-03 (Dt=4.760e-06) : 0.79638 s (4.12 ms, 0 us, 79 us, 786276 us, 4.02 ms)
 [rank 0] iteration #1367 - starting launcher [0][0] ...
 [rank 0] done
-[it=1367] hydro_fvm compute time t=6.5353e-03 (Dt=4.760e-06) : 0.80433 s (5.54 ms, 0 us, 647 us, 790450 us, 5.38 ms)
+[it=1367] hydro_fvm compute time t=6.5353e-03 (Dt=4.760e-06) : 0.79563 s (4.22 ms, 0 us, 77 us, 785418 us, 4.04 ms)
 [rank 0] iteration #1368 - starting launcher [0][0] ...
 [rank 0] done
-[it=1368] hydro_fvm compute time t=6.5401e-03 (Dt=4.760e-06) : 0.80421 s (5.55 ms, 0 us, 700 us, 790336 us, 5.35 ms)
+[it=1368] hydro_fvm compute time t=6.5401e-03 (Dt=4.760e-06) : 0.79557 s (4.19 ms, 0 us, 77 us, 785300 us, 4.06 ms)
 [rank 0] iteration #1369 - starting launcher [0][0] ...
 [rank 0] done
-[it=1369] hydro_fvm compute time t=6.5448e-03 (Dt=4.760e-06) : 0.80447 s (5.52 ms, 0 us, 708 us, 790616 us, 5.36 ms)
+[it=1369] hydro_fvm compute time t=6.5448e-03 (Dt=4.760e-06) : 0.79565 s (4.21 ms, 0 us, 76 us, 785467 us, 4.04 ms)
 [rank 0] iteration #1370 - starting launcher [0][0] ...
 [rank 0] done
-[it=1370] hydro_fvm compute time t=6.5496e-03 (Dt=4.760e-06) : 0.80395 s (5.53 ms, 0 us, 695 us, 790098 us, 5.36 ms)
+[it=1370] hydro_fvm compute time t=6.5496e-03 (Dt=4.760e-06) : 0.79540 s (4.24 ms, 0 us, 79 us, 785135 us, 4.04 ms)
 [rank 0] iteration #1371 - starting launcher [0][0] ...
 [rank 0] done
-[it=1371] hydro_fvm compute time t=6.5544e-03 (Dt=4.760e-06) : 0.80446 s (5.52 ms, 0 us, 690 us, 790640 us, 5.34 ms)
+[it=1371] hydro_fvm compute time t=6.5544e-03 (Dt=4.760e-06) : 0.79626 s (4.22 ms, 0 us, 78 us, 786028 us, 4.04 ms)
 [rank 0] iteration #1372 - starting launcher [0][0] ...
 [rank 0] done
-[it=1372] hydro_fvm compute time t=6.5591e-03 (Dt=4.760e-06) : 0.80450 s (5.50 ms, 0 us, 698 us, 790595 us, 5.39 ms)
+[it=1372] hydro_fvm compute time t=6.5591e-03 (Dt=4.760e-06) : 0.79543 s (4.21 ms, 0 us, 78 us, 785239 us, 4.04 ms)
 [rank 0] iteration #1373 - starting launcher [0][0] ...
 [rank 0] done
-[it=1373] hydro_fvm compute time t=6.5639e-03 (Dt=4.760e-06) : 0.80398 s (5.58 ms, 0 us, 664 us, 790091 us, 5.37 ms)
+[it=1373] hydro_fvm compute time t=6.5639e-03 (Dt=4.760e-06) : 0.79574 s (4.21 ms, 0 us, 78 us, 785532 us, 4.05 ms)
 [rank 0] iteration #1374 - starting launcher [0][0] ...
 [rank 0] done
-[it=1374] hydro_fvm compute time t=6.5686e-03 (Dt=4.760e-06) : 0.80432 s (5.53 ms, 0 us, 703 us, 790460 us, 5.34 ms)
+[it=1374] hydro_fvm compute time t=6.5686e-03 (Dt=4.760e-06) : 0.79554 s (4.19 ms, 0 us, 77 us, 785334 us, 4.06 ms)
 [rank 0] iteration #1375 - starting launcher [0][0] ...
 [rank 0] done
-[it=1375] hydro_fvm compute time t=6.5734e-03 (Dt=4.760e-06) : 0.80419 s (5.50 ms, 0 us, 691 us, 790383 us, 5.34 ms)
+[it=1375] hydro_fvm compute time t=6.5734e-03 (Dt=4.760e-06) : 0.79581 s (4.22 ms, 0 us, 78 us, 785565 us, 4.05 ms)
 [rank 0] iteration #1376 - starting launcher [0][0] ...
 [rank 0] done
-[it=1376] hydro_fvm compute time t=6.5781e-03 (Dt=4.760e-06) : 0.80429 s (5.51 ms, 0 us, 697 us, 790081 us, 5.46 ms)
+[it=1376] hydro_fvm compute time t=6.5781e-03 (Dt=4.760e-06) : 0.79544 s (4.22 ms, 0 us, 77 us, 785227 us, 4.03 ms)
 [rank 0] iteration #1377 - starting launcher [0][0] ...
 [rank 0] done
-[it=1377] hydro_fvm compute time t=6.5829e-03 (Dt=4.760e-06) : 0.80459 s (5.59 ms, 0 us, 702 us, 790474 us, 5.41 ms)
+[it=1377] hydro_fvm compute time t=6.5829e-03 (Dt=4.760e-06) : 0.79561 s (4.22 ms, 0 us, 78 us, 785380 us, 4.05 ms)
 [rank 0] iteration #1378 - starting launcher [0][0] ...
 [rank 0] done
-[it=1378] hydro_fvm compute time t=6.5877e-03 (Dt=4.760e-06) : 0.80420 s (5.54 ms, 0 us, 694 us, 790310 us, 5.36 ms)
+[it=1378] hydro_fvm compute time t=6.5877e-03 (Dt=4.760e-06) : 0.79564 s (4.30 ms, 0 us, 77 us, 785332 us, 4.05 ms)
 [rank 0] iteration #1379 - starting launcher [0][0] ...
 [rank 0] done
-[it=1379] hydro_fvm compute time t=6.5924e-03 (Dt=4.760e-06) : 0.80429 s (5.51 ms, 0 us, 692 us, 790401 us, 5.39 ms)
+[it=1379] hydro_fvm compute time t=6.5924e-03 (Dt=4.760e-06) : 0.79569 s (4.18 ms, 0 us, 79 us, 785531 us, 4.05 ms)
 [rank 0] iteration #1380 - starting launcher [0][0] ...
 [rank 0] done
-[it=1380] hydro_fvm compute time t=6.5972e-03 (Dt=4.760e-06) : 0.80445 s (5.58 ms, 0 us, 695 us, 790523 us, 5.37 ms)
+[it=1380] hydro_fvm compute time t=6.5972e-03 (Dt=4.760e-06) : 0.79579 s (4.19 ms, 0 us, 78 us, 785624 us, 4.05 ms)
 [rank 0] iteration #1381 - starting launcher [0][0] ...
 [rank 0] done
-[it=1381] hydro_fvm compute time t=6.6019e-03 (Dt=4.760e-06) : 0.80396 s (5.50 ms, 0 us, 690 us, 790099 us, 5.38 ms)
+[it=1381] hydro_fvm compute time t=6.6019e-03 (Dt=4.760e-06) : 0.79555 s (4.19 ms, 0 us, 78 us, 785336 us, 4.04 ms)
 [rank 0] iteration #1382 - starting launcher [0][0] ...
 [rank 0] done
-[it=1382] hydro_fvm compute time t=6.6067e-03 (Dt=4.760e-06) : 0.80456 s (5.54 ms, 0 us, 687 us, 790633 us, 5.38 ms)
+[it=1382] hydro_fvm compute time t=6.6067e-03 (Dt=4.760e-06) : 0.79536 s (4.17 ms, 0 us, 78 us, 785167 us, 4.06 ms)
 [rank 0] iteration #1383 - starting launcher [0][0] ...
 [rank 0] done
-[it=1383] hydro_fvm compute time t=6.6115e-03 (Dt=4.759e-06) : 0.80455 s (5.58 ms, 0 us, 705 us, 790637 us, 5.35 ms)
+[it=1383] hydro_fvm compute time t=6.6115e-03 (Dt=4.759e-06) : 0.79732 s (4.17 ms, 0 us, 79 us, 787142 us, 4.04 ms)
 [rank 0] iteration #1384 - starting launcher [0][0] ...
 [rank 0] done
-[it=1384] hydro_fvm compute time t=6.6162e-03 (Dt=4.759e-06) : 0.80412 s (5.49 ms, 0 us, 701 us, 790173 us, 5.41 ms)
+[it=1384] hydro_fvm compute time t=6.6162e-03 (Dt=4.759e-06) : 0.79541 s (4.19 ms, 0 us, 78 us, 785253 us, 4.04 ms)
 [rank 0] iteration #1385 - starting launcher [0][0] ...
 [rank 0] done
-[it=1385] hydro_fvm compute time t=6.6210e-03 (Dt=4.759e-06) : 0.80403 s (5.42 ms, 0 us, 701 us, 790211 us, 5.40 ms)
+[it=1385] hydro_fvm compute time t=6.6210e-03 (Dt=4.759e-06) : 0.79571 s (4.33 ms, 0 us, 77 us, 785372 us, 4.05 ms)
 [rank 0] iteration #1386 - starting launcher [0][0] ...
 [rank 0] done
-[it=1386] hydro_fvm compute time t=6.6257e-03 (Dt=4.759e-06) : 0.80449 s (5.47 ms, 0 us, 688 us, 790622 us, 5.41 ms)
+[it=1386] hydro_fvm compute time t=6.6257e-03 (Dt=4.759e-06) : 0.79658 s (4.15 ms, 0 us, 82 us, 786389 us, 4.06 ms)
 [rank 0] iteration #1387 - starting launcher [0][0] ...
 [rank 0] done
-[it=1387] hydro_fvm compute time t=6.6305e-03 (Dt=4.759e-06) : 0.80407 s (5.47 ms, 0 us, 674 us, 790240 us, 5.40 ms)
+[it=1387] hydro_fvm compute time t=6.6305e-03 (Dt=4.759e-06) : 0.79575 s (4.22 ms, 0 us, 78 us, 785537 us, 4.03 ms)
 [rank 0] iteration #1388 - starting launcher [0][0] ...
 [rank 0] done
-[it=1388] hydro_fvm compute time t=6.6353e-03 (Dt=4.759e-06) : 0.80420 s (5.42 ms, 0 us, 692 us, 790421 us, 5.38 ms)
+[it=1388] hydro_fvm compute time t=6.6353e-03 (Dt=4.759e-06) : 0.79531 s (4.20 ms, 0 us, 78 us, 785114 us, 4.04 ms)
 [rank 0] iteration #1389 - starting launcher [0][0] ...
 [rank 0] done
-[it=1389] hydro_fvm compute time t=6.6400e-03 (Dt=4.759e-06) : 0.80422 s (5.43 ms, 0 us, 701 us, 790403 us, 5.39 ms)
+[it=1389] hydro_fvm compute time t=6.6400e-03 (Dt=4.759e-06) : 0.79568 s (4.22 ms, 0 us, 79 us, 785478 us, 4.03 ms)
 [rank 0] iteration #1390 - starting launcher [0][0] ...
 [rank 0] done
-[it=1390] hydro_fvm compute time t=6.6448e-03 (Dt=4.759e-06) : 0.80423 s (5.49 ms, 0 us, 703 us, 790323 us, 5.42 ms)
+[it=1390] hydro_fvm compute time t=6.6448e-03 (Dt=4.759e-06) : 0.79954 s (4.20 ms, 0 us, 78 us, 789114 us, 4.14 ms)
 [rank 0] iteration #1391 - starting launcher [0][0] ...
 [rank 0] done
-[it=1391] hydro_fvm compute time t=6.6495e-03 (Dt=4.759e-06) : 0.80409 s (5.47 ms, 0 us, 693 us, 790217 us, 5.41 ms)
+[it=1391] hydro_fvm compute time t=6.6495e-03 (Dt=4.759e-06) : 0.79571 s (4.22 ms, 0 us, 96 us, 785395 us, 4.08 ms)
 [rank 0] iteration #1392 - starting launcher [0][0] ...
 [rank 0] done
-[it=1392] hydro_fvm compute time t=6.6543e-03 (Dt=4.759e-06) : 0.80437 s (5.46 ms, 0 us, 708 us, 790493 us, 5.40 ms)
+[it=1392] hydro_fvm compute time t=6.6543e-03 (Dt=4.759e-06) : 0.79579 s (4.22 ms, 0 us, 88 us, 785573 us, 4.03 ms)
 [rank 0] iteration #1393 - starting launcher [0][0] ...
 [rank 0] done
-[it=1393] hydro_fvm compute time t=6.6591e-03 (Dt=4.759e-06) : 0.80450 s (5.45 ms, 0 us, 688 us, 790680 us, 5.39 ms)
+[it=1393] hydro_fvm compute time t=6.6591e-03 (Dt=4.759e-06) : 0.79571 s (4.26 ms, 0 us, 85 us, 785456 us, 4.03 ms)
 [rank 0] iteration #1394 - starting launcher [0][0] ...
 [rank 0] done
-[it=1394] hydro_fvm compute time t=6.6638e-03 (Dt=4.759e-06) : 0.80350 s (5.46 ms, 0 us, 653 us, 789708 us, 5.39 ms)
+[it=1394] hydro_fvm compute time t=6.6638e-03 (Dt=4.759e-06) : 0.79552 s (4.21 ms, 0 us, 84 us, 785320 us, 4.02 ms)
 [rank 0] iteration #1395 - starting launcher [0][0] ...
 [rank 0] done
-[it=1395] hydro_fvm compute time t=6.6686e-03 (Dt=4.759e-06) : 0.80451 s (5.45 ms, 0 us, 694 us, 790663 us, 5.40 ms)
+[it=1395] hydro_fvm compute time t=6.6686e-03 (Dt=4.759e-06) : 0.79561 s (4.21 ms, 0 us, 83 us, 785389 us, 4.04 ms)
 [rank 0] iteration #1396 - starting launcher [0][0] ...
 [rank 0] done
-[it=1396] hydro_fvm compute time t=6.6733e-03 (Dt=4.759e-06) : 0.80428 s (5.46 ms, 0 us, 681 us, 790443 us, 5.41 ms)
+[it=1396] hydro_fvm compute time t=6.6733e-03 (Dt=4.759e-06) : 0.79524 s (4.20 ms, 0 us, 84 us, 785042 us, 4.05 ms)
 [rank 0] iteration #1397 - starting launcher [0][0] ...
 [rank 0] done
-[it=1397] hydro_fvm compute time t=6.6781e-03 (Dt=4.759e-06) : 0.80451 s (5.46 ms, 0 us, 688 us, 790665 us, 5.39 ms)
+[it=1397] hydro_fvm compute time t=6.6781e-03 (Dt=4.759e-06) : 0.79579 s (4.23 ms, 0 us, 83 us, 785592 us, 4.04 ms)
 [rank 0] iteration #1398 - starting launcher [0][0] ...
 [rank 0] done
-[it=1398] hydro_fvm compute time t=6.6829e-03 (Dt=4.759e-06) : 0.80445 s (5.46 ms, 0 us, 683 us, 790591 us, 5.43 ms)
+[it=1398] hydro_fvm compute time t=6.6829e-03 (Dt=4.759e-06) : 0.79570 s (4.36 ms, 0 us, 82 us, 785308 us, 4.05 ms)
 [rank 0] iteration #1399 - starting launcher [0][0] ...
 [rank 0] done
-[it=1399] hydro_fvm compute time t=6.6876e-03 (Dt=4.759e-06) : 0.80423 s (5.48 ms, 0 us, 693 us, 790362 us, 5.41 ms)
+[it=1399] hydro_fvm compute time t=6.6876e-03 (Dt=4.759e-06) : 0.79563 s (4.20 ms, 0 us, 85 us, 785423 us, 4.04 ms)
 [rank 0] iteration #1400 - starting launcher [0][0] ...
 [rank 0] done
-[it=1400] hydro_fvm compute time t=6.6924e-03 (Dt=4.759e-06) : 0.80384 s (5.45 ms, 0 us, 705 us, 789980 us, 5.39 ms)
+[it=1400] hydro_fvm compute time t=6.6924e-03 (Dt=4.759e-06) : 0.79543 s (4.21 ms, 0 us, 82 us, 785213 us, 4.03 ms)
 [rank 0] iteration #1401 - starting launcher [0][0] ...
 [rank 0] done
-[it=1401] hydro_fvm compute time t=6.6971e-03 (Dt=4.759e-06) : 0.80382 s (5.46 ms, 0 us, 705 us, 789961 us, 5.40 ms)
+[it=1401] hydro_fvm compute time t=6.6971e-03 (Dt=4.759e-06) : 0.79554 s (4.16 ms, 0 us, 83 us, 785409 us, 4.04 ms)
 [rank 0] iteration #1402 - starting launcher [0][0] ...
 [rank 0] done
-[it=1402] hydro_fvm compute time t=6.7019e-03 (Dt=4.759e-06) : 0.80393 s (5.48 ms, 0 us, 654 us, 790105 us, 5.40 ms)
+[it=1402] hydro_fvm compute time t=6.7019e-03 (Dt=4.759e-06) : 0.79544 s (4.19 ms, 0 us, 82 us, 785243 us, 4.03 ms)
 [rank 0] iteration #1403 - starting launcher [0][0] ...
 [rank 0] done
-[it=1403] hydro_fvm compute time t=6.7066e-03 (Dt=4.759e-06) : 0.80422 s (5.46 ms, 0 us, 675 us, 790395 us, 5.39 ms)
+[it=1403] hydro_fvm compute time t=6.7066e-03 (Dt=4.759e-06) : 0.79554 s (4.16 ms, 0 us, 82 us, 785363 us, 4.04 ms)
 [rank 0] iteration #1404 - starting launcher [0][0] ...
 [rank 0] done
-[it=1404] hydro_fvm compute time t=6.7114e-03 (Dt=4.759e-06) : 0.80408 s (5.46 ms, 0 us, 676 us, 790265 us, 5.39 ms)
+[it=1404] hydro_fvm compute time t=6.7114e-03 (Dt=4.759e-06) : 0.79542 s (4.21 ms, 0 us, 81 us, 785214 us, 4.04 ms)
 [rank 0] iteration #1405 - starting launcher [0][0] ...
 [rank 0] done
-[it=1405] hydro_fvm compute time t=6.7162e-03 (Dt=4.759e-06) : 0.80417 s (5.45 ms, 0 us, 673 us, 790349 us, 5.40 ms)
+[it=1405] hydro_fvm compute time t=6.7162e-03 (Dt=4.759e-06) : 0.79596 s (4.25 ms, 0 us, 81 us, 785706 us, 4.03 ms)
 [rank 0] iteration #1406 - starting launcher [0][0] ...
 [rank 0] done
-[it=1406] hydro_fvm compute time t=6.7209e-03 (Dt=4.759e-06) : 0.80375 s (5.43 ms, 0 us, 693 us, 789938 us, 5.40 ms)
+[it=1406] hydro_fvm compute time t=6.7209e-03 (Dt=4.759e-06) : 0.79568 s (4.23 ms, 0 us, 85 us, 785473 us, 4.05 ms)
 [rank 0] iteration #1407 - starting launcher [0][0] ...
 [rank 0] done
-[it=1407] hydro_fvm compute time t=6.7257e-03 (Dt=4.759e-06) : 0.80450 s (5.47 ms, 0 us, 672 us, 790679 us, 5.38 ms)
+[it=1407] hydro_fvm compute time t=6.7257e-03 (Dt=4.759e-06) : 0.79572 s (4.22 ms, 0 us, 81 us, 785501 us, 4.06 ms)
 [rank 0] iteration #1408 - starting launcher [0][0] ...
 [rank 0] done
-[it=1408] hydro_fvm compute time t=6.7304e-03 (Dt=4.758e-06) : 0.80398 s (5.45 ms, 0 us, 692 us, 790172 us, 5.38 ms)
+[it=1408] hydro_fvm compute time t=6.7304e-03 (Dt=4.758e-06) : 0.79559 s (4.23 ms, 0 us, 82 us, 785368 us, 4.06 ms)
 [rank 0] iteration #1409 - starting launcher [0][0] ...
 [rank 0] done
-[it=1409] hydro_fvm compute time t=6.7352e-03 (Dt=4.758e-06) : 0.80408 s (5.44 ms, 0 us, 710 us, 790262 us, 5.39 ms)
+[it=1409] hydro_fvm compute time t=6.7352e-03 (Dt=4.758e-06) : 0.79565 s (4.20 ms, 0 us, 85 us, 785410 us, 4.06 ms)
 [rank 0] iteration #1410 - starting launcher [0][0] ...
 [rank 0] done
-[it=1410] hydro_fvm compute time t=6.7400e-03 (Dt=4.758e-06) : 0.80407 s (5.45 ms, 0 us, 690 us, 790234 us, 5.41 ms)
+[it=1410] hydro_fvm compute time t=6.7400e-03 (Dt=4.758e-06) : 0.79557 s (4.21 ms, 0 us, 82 us, 785396 us, 4.04 ms)
 [rank 0] iteration #1411 - starting launcher [0][0] ...
 [rank 0] done
-[it=1411] hydro_fvm compute time t=6.7447e-03 (Dt=4.758e-06) : 0.80431 s (5.46 ms, 0 us, 701 us, 790468 us, 5.38 ms)
+[it=1411] hydro_fvm compute time t=6.7447e-03 (Dt=4.758e-06) : 0.79562 s (4.19 ms, 0 us, 82 us, 785465 us, 4.03 ms)
 [rank 0] iteration #1412 - starting launcher [0][0] ...
 [rank 0] done
-[it=1412] hydro_fvm compute time t=6.7495e-03 (Dt=4.758e-06) : 0.80405 s (5.46 ms, 0 us, 699 us, 790179 us, 5.40 ms)
+[it=1412] hydro_fvm compute time t=6.7495e-03 (Dt=4.758e-06) : 0.79573 s (4.25 ms, 0 us, 80 us, 785468 us, 4.04 ms)
 [rank 0] iteration #1413 - starting launcher [0][0] ...
 [rank 0] done
-[it=1413] hydro_fvm compute time t=6.7542e-03 (Dt=4.758e-06) : 0.80409 s (5.46 ms, 0 us, 679 us, 790256 us, 5.40 ms)
+[it=1413] hydro_fvm compute time t=6.7542e-03 (Dt=4.758e-06) : 0.79614 s (4.31 ms, 0 us, 80 us, 785823 us, 4.04 ms)
 [rank 0] iteration #1414 - starting launcher [0][0] ...
 [rank 0] done
-[it=1414] hydro_fvm compute time t=6.7590e-03 (Dt=4.758e-06) : 0.80402 s (5.48 ms, 0 us, 674 us, 790156 us, 5.41 ms)
+[it=1414] hydro_fvm compute time t=6.7590e-03 (Dt=4.758e-06) : 0.79555 s (4.18 ms, 0 us, 80 us, 785368 us, 4.04 ms)
 [rank 0] iteration #1415 - starting launcher [0][0] ...
 [rank 0] done
-[it=1415] hydro_fvm compute time t=6.7638e-03 (Dt=4.758e-06) : 0.80435 s (5.45 ms, 0 us, 697 us, 790510 us, 5.37 ms)
+[it=1415] hydro_fvm compute time t=6.7638e-03 (Dt=4.758e-06) : 0.79558 s (4.22 ms, 0 us, 80 us, 785374 us, 4.04 ms)
 [rank 0] iteration #1416 - starting launcher [0][0] ...
 [rank 0] done
-[it=1416] hydro_fvm compute time t=6.7685e-03 (Dt=4.758e-06) : 0.80454 s (5.45 ms, 0 us, 702 us, 790686 us, 5.40 ms)
+[it=1416] hydro_fvm compute time t=6.7685e-03 (Dt=4.758e-06) : 0.79551 s (4.18 ms, 0 us, 80 us, 785368 us, 4.04 ms)
 [rank 0] iteration #1417 - starting launcher [0][0] ...
 [rank 0] done
-[it=1417] hydro_fvm compute time t=6.7733e-03 (Dt=4.758e-06) : 0.80420 s (5.45 ms, 0 us, 686 us, 790370 us, 5.39 ms)
+[it=1417] hydro_fvm compute time t=6.7733e-03 (Dt=4.758e-06) : 0.79574 s (4.20 ms, 0 us, 78 us, 785541 us, 4.04 ms)
 [rank 0] iteration #1418 - starting launcher [0][0] ...
 [rank 0] done
-[it=1418] hydro_fvm compute time t=6.7780e-03 (Dt=4.758e-06) : 0.80416 s (5.44 ms, 0 us, 701 us, 790280 us, 5.42 ms)
+[it=1418] hydro_fvm compute time t=6.7780e-03 (Dt=4.758e-06) : 0.79740 s (4.17 ms, 0 us, 79 us, 787233 us, 4.03 ms)
 [rank 0] iteration #1419 - starting launcher [0][0] ...
 [rank 0] done
-[it=1419] hydro_fvm compute time t=6.7828e-03 (Dt=4.758e-06) : 0.80444 s (5.47 ms, 0 us, 664 us, 790619 us, 5.40 ms)
+[it=1419] hydro_fvm compute time t=6.7828e-03 (Dt=4.758e-06) : 0.79551 s (4.18 ms, 0 us, 80 us, 785337 us, 4.07 ms)
 [rank 0] iteration #1420 - starting launcher [0][0] ...
 [rank 0] done
-[it=1420] hydro_fvm compute time t=6.7875e-03 (Dt=4.758e-06) : 0.80395 s (5.43 ms, 0 us, 675 us, 790167 us, 5.38 ms)
+[it=1420] hydro_fvm compute time t=6.7875e-03 (Dt=4.758e-06) : 0.79547 s (4.18 ms, 0 us, 81 us, 785301 us, 4.06 ms)
 [rank 0] iteration #1421 - starting launcher [0][0] ...
 [rank 0] done
-[it=1421] hydro_fvm compute time t=6.7923e-03 (Dt=4.758e-06) : 0.80420 s (5.45 ms, 0 us, 700 us, 790376 us, 5.38 ms)
+[it=1421] hydro_fvm compute time t=6.7923e-03 (Dt=4.758e-06) : 0.79555 s (4.19 ms, 0 us, 82 us, 785347 us, 4.06 ms)
 [rank 0] iteration #1422 - starting launcher [0][0] ...
 [rank 0] done
-[it=1422] hydro_fvm compute time t=6.7971e-03 (Dt=4.758e-06) : 0.80355 s (5.46 ms, 0 us, 685 us, 789721 us, 5.38 ms)
+[it=1422] hydro_fvm compute time t=6.7971e-03 (Dt=4.758e-06) : 0.79581 s (4.18 ms, 0 us, 79 us, 785619 us, 4.05 ms)
 [rank 0] iteration #1423 - starting launcher [0][0] ...
 [rank 0] done
-[it=1423] hydro_fvm compute time t=6.8018e-03 (Dt=4.758e-06) : 0.80465 s (5.45 ms, 0 us, 688 us, 790759 us, 5.43 ms)
+[it=1423] hydro_fvm compute time t=6.8018e-03 (Dt=4.758e-06) : 0.79565 s (4.20 ms, 0 us, 82 us, 785443 us, 4.05 ms)
 [rank 0] iteration #1424 - starting launcher [0][0] ...
 [rank 0] done
-[it=1424] hydro_fvm compute time t=6.8066e-03 (Dt=4.758e-06) : 0.80390 s (5.47 ms, 0 us, 685 us, 790049 us, 5.40 ms)
+[it=1424] hydro_fvm compute time t=6.8066e-03 (Dt=4.758e-06) : 0.79551 s (4.14 ms, 0 us, 81 us, 785397 us, 4.05 ms)
 [rank 0] iteration #1425 - starting launcher [0][0] ...
 [rank 0] done
-[it=1425] hydro_fvm compute time t=6.8113e-03 (Dt=4.758e-06) : 0.80407 s (5.43 ms, 0 us, 710 us, 790238 us, 5.39 ms)
+[it=1425] hydro_fvm compute time t=6.8113e-03 (Dt=4.758e-06) : 0.79562 s (4.15 ms, 0 us, 81 us, 785488 us, 4.01 ms)
 [rank 0] iteration #1426 - starting launcher [0][0] ...
 [rank 0] done
-[it=1426] hydro_fvm compute time t=6.8161e-03 (Dt=4.758e-06) : 0.80377 s (5.46 ms, 0 us, 674 us, 789959 us, 5.38 ms)
+[it=1426] hydro_fvm compute time t=6.8161e-03 (Dt=4.758e-06) : 0.79557 s (4.18 ms, 0 us, 79 us, 785400 us, 4.02 ms)
 [rank 0] iteration #1427 - starting launcher [0][0] ...
 [rank 0] done
-[it=1427] hydro_fvm compute time t=6.8208e-03 (Dt=4.758e-06) : 0.80433 s (5.46 ms, 0 us, 685 us, 790523 us, 5.38 ms)
+[it=1427] hydro_fvm compute time t=6.8208e-03 (Dt=4.758e-06) : 0.79689 s (4.17 ms, 0 us, 79 us, 786720 us, 4.04 ms)
 [rank 0] iteration #1428 - starting launcher [0][0] ...
 [rank 0] done
-[it=1428] hydro_fvm compute time t=6.8256e-03 (Dt=4.758e-06) : 0.80438 s (5.44 ms, 0 us, 701 us, 790534 us, 5.41 ms)
+[it=1428] hydro_fvm compute time t=6.8256e-03 (Dt=4.758e-06) : 0.79557 s (4.17 ms, 0 us, 81 us, 785383 us, 4.05 ms)
 [rank 0] iteration #1429 - starting launcher [0][0] ...
 [rank 0] done
-[it=1429] hydro_fvm compute time t=6.8304e-03 (Dt=4.758e-06) : 0.80391 s (5.46 ms, 0 us, 672 us, 790105 us, 5.37 ms)
+[it=1429] hydro_fvm compute time t=6.8304e-03 (Dt=4.758e-06) : 0.79565 s (4.16 ms, 0 us, 79 us, 785470 us, 4.05 ms)
 [rank 0] iteration #1430 - starting launcher [0][0] ...
 [rank 0] done
-[it=1430] hydro_fvm compute time t=6.8351e-03 (Dt=4.758e-06) : 0.80450 s (5.44 ms, 0 us, 702 us, 790689 us, 5.38 ms)
+[it=1430] hydro_fvm compute time t=6.8351e-03 (Dt=4.758e-06) : 0.79539 s (4.36 ms, 0 us, 81 us, 785043 us, 4.05 ms)
 [rank 0] iteration #1431 - starting launcher [0][0] ...
 [rank 0] done
-[it=1431] hydro_fvm compute time t=6.8399e-03 (Dt=4.758e-06) : 0.80443 s (5.43 ms, 0 us, 704 us, 790594 us, 5.41 ms)
+[it=1431] hydro_fvm compute time t=6.8399e-03 (Dt=4.758e-06) : 0.79577 s (4.26 ms, 0 us, 78 us, 785541 us, 4.04 ms)
 [rank 0] iteration #1432 - starting launcher [0][0] ...
 [rank 0] done
-[it=1432] hydro_fvm compute time t=6.8446e-03 (Dt=4.757e-06) : 0.80409 s (5.43 ms, 0 us, 701 us, 790285 us, 5.39 ms)
+[it=1432] hydro_fvm compute time t=6.8446e-03 (Dt=4.757e-06) : 0.79546 s (4.22 ms, 0 us, 80 us, 785276 us, 4.04 ms)
 [rank 0] iteration #1433 - starting launcher [0][0] ...
 [rank 0] done
-[it=1433] hydro_fvm compute time t=6.8494e-03 (Dt=4.757e-06) : 0.80436 s (5.44 ms, 0 us, 667 us, 790540 us, 5.39 ms)
+[it=1433] hydro_fvm compute time t=6.8494e-03 (Dt=4.757e-06) : 0.79724 s (4.19 ms, 0 us, 87 us, 787046 us, 4.06 ms)
 [rank 0] iteration #1434 - starting launcher [0][0] ...
 [rank 0] done
-[it=1434] hydro_fvm compute time t=6.8541e-03 (Dt=4.757e-06) : 0.80438 s (5.47 ms, 0 us, 688 us, 790558 us, 5.38 ms)
+[it=1434] hydro_fvm compute time t=6.8541e-03 (Dt=4.757e-06) : 0.79535 s (4.20 ms, 0 us, 80 us, 785185 us, 4.05 ms)
 [rank 0] iteration #1435 - starting launcher [0][0] ...
 [rank 0] done
-[it=1435] hydro_fvm compute time t=6.8589e-03 (Dt=4.757e-06) : 0.80426 s (5.44 ms, 0 us, 700 us, 790448 us, 5.38 ms)
+[it=1435] hydro_fvm compute time t=6.8589e-03 (Dt=4.757e-06) : 0.79582 s (4.21 ms, 0 us, 81 us, 785614 us, 4.04 ms)
 [rank 0] iteration #1436 - starting launcher [0][0] ...
 [rank 0] done
-[it=1436] hydro_fvm compute time t=6.8637e-03 (Dt=4.757e-06) : 0.80419 s (5.45 ms, 0 us, 647 us, 790420 us, 5.38 ms)
+[it=1436] hydro_fvm compute time t=6.8637e-03 (Dt=4.757e-06) : 0.79562 s (4.20 ms, 0 us, 79 us, 785410 us, 4.06 ms)
 [rank 0] iteration #1437 - starting launcher [0][0] ...
 [rank 0] done
-[it=1437] hydro_fvm compute time t=6.8684e-03 (Dt=4.757e-06) : 0.80391 s (5.45 ms, 0 us, 705 us, 790091 us, 5.38 ms)
+[it=1437] hydro_fvm compute time t=6.8684e-03 (Dt=4.757e-06) : 0.79575 s (4.20 ms, 0 us, 81 us, 785547 us, 4.05 ms)
 [rank 0] iteration #1438 - starting launcher [0][0] ...
 [rank 0] done
-[it=1438] hydro_fvm compute time t=6.8732e-03 (Dt=4.757e-06) : 0.80424 s (5.42 ms, 0 us, 695 us, 790353 us, 5.43 ms)
+[it=1438] hydro_fvm compute time t=6.8732e-03 (Dt=4.757e-06) : 0.79549 s (4.21 ms, 0 us, 80 us, 785294 us, 4.02 ms)
 [rank 0] iteration #1439 - starting launcher [0][0] ...
 [rank 0] done
-[it=1439] hydro_fvm compute time t=6.8779e-03 (Dt=4.757e-06) : 0.80390 s (5.49 ms, 0 us, 698 us, 790062 us, 5.37 ms)
+[it=1439] hydro_fvm compute time t=6.8779e-03 (Dt=4.757e-06) : 0.79557 s (4.25 ms, 0 us, 79 us, 785314 us, 4.06 ms)
 [rank 0] iteration #1440 - starting launcher [0][0] ...
 [rank 0] done
-[it=1440] hydro_fvm compute time t=6.8827e-03 (Dt=4.757e-06) : 0.80417 s (5.44 ms, 0 us, 691 us, 790358 us, 5.39 ms)
+[it=1440] hydro_fvm compute time t=6.8827e-03 (Dt=4.757e-06) : 0.79544 s (4.22 ms, 0 us, 80 us, 785230 us, 4.04 ms)
 [rank 0] iteration #1441 - starting launcher [0][0] ...
 [rank 0] done
-[it=1441] hydro_fvm compute time t=6.8874e-03 (Dt=4.757e-06) : 0.80421 s (5.45 ms, 0 us, 697 us, 790400 us, 5.38 ms)
+[it=1441] hydro_fvm compute time t=6.8874e-03 (Dt=4.757e-06) : 0.79574 s (4.22 ms, 0 us, 80 us, 785535 us, 4.04 ms)
 [rank 0] iteration #1442 - starting launcher [0][0] ...
 [rank 0] done
-[it=1442] hydro_fvm compute time t=6.8922e-03 (Dt=4.757e-06) : 0.80362 s (5.43 ms, 0 us, 709 us, 789804 us, 5.38 ms)
+[it=1442] hydro_fvm compute time t=6.8922e-03 (Dt=4.757e-06) : 0.79536 s (4.18 ms, 0 us, 79 us, 785207 us, 4.05 ms)
 [rank 0] iteration #1443 - starting launcher [0][0] ...
 [rank 0] done
-[it=1443] hydro_fvm compute time t=6.8970e-03 (Dt=4.757e-06) : 0.80413 s (5.44 ms, 0 us, 698 us, 790309 us, 5.39 ms)
+[it=1443] hydro_fvm compute time t=6.8970e-03 (Dt=4.757e-06) : 0.79588 s (4.18 ms, 0 us, 78 us, 785674 us, 4.04 ms)
 [rank 0] iteration #1444 - starting launcher [0][0] ...
 [rank 0] done
-[it=1444] hydro_fvm compute time t=6.9017e-03 (Dt=4.757e-06) : 0.80410 s (5.44 ms, 0 us, 684 us, 790301 us, 5.39 ms)
+[it=1444] hydro_fvm compute time t=6.9017e-03 (Dt=4.757e-06) : 0.79543 s (4.18 ms, 0 us, 78 us, 785278 us, 4.03 ms)
 [rank 0] iteration #1445 - starting launcher [0][0] ...
 [rank 0] done
-[it=1445] hydro_fvm compute time t=6.9065e-03 (Dt=4.757e-06) : 0.80451 s (5.43 ms, 0 us, 702 us, 790701 us, 5.39 ms)
+[it=1445] hydro_fvm compute time t=6.9065e-03 (Dt=4.757e-06) : 0.79550 s (4.08 ms, 0 us, 80 us, 785436 us, 4.03 ms)
 [rank 0] iteration #1446 - starting launcher [0][0] ...
 [rank 0] done
-[it=1446] hydro_fvm compute time t=6.9112e-03 (Dt=4.757e-06) : 0.80421 s (5.45 ms, 0 us, 706 us, 790380 us, 5.37 ms)
+[it=1446] hydro_fvm compute time t=6.9112e-03 (Dt=4.757e-06) : 0.79535 s (4.06 ms, 0 us, 81 us, 785298 us, 4.02 ms)
 [rank 0] iteration #1447 - starting launcher [0][0] ...
 [rank 0] done
-[it=1447] hydro_fvm compute time t=6.9160e-03 (Dt=4.757e-06) : 0.80366 s (5.44 ms, 0 us, 700 us, 789822 us, 5.40 ms)
+[it=1447] hydro_fvm compute time t=6.9160e-03 (Dt=4.757e-06) : 0.79557 s (4.07 ms, 0 us, 80 us, 785523 us, 4.01 ms)
 [rank 0] iteration #1448 - starting launcher [0][0] ...
 [rank 0] done
-[it=1448] hydro_fvm compute time t=6.9207e-03 (Dt=4.757e-06) : 0.80404 s (5.45 ms, 0 us, 690 us, 790224 us, 5.38 ms)
+[it=1448] hydro_fvm compute time t=6.9207e-03 (Dt=4.757e-06) : 0.79532 s (4.04 ms, 0 us, 79 us, 785288 us, 4.01 ms)
 [rank 0] iteration #1449 - starting launcher [0][0] ...
 [rank 0] done
-[it=1449] hydro_fvm compute time t=6.9255e-03 (Dt=4.757e-06) : 0.80443 s (5.43 ms, 0 us, 673 us, 790661 us, 5.38 ms)
+[it=1449] hydro_fvm compute time t=6.9255e-03 (Dt=4.757e-06) : 0.79570 s (4.06 ms, 0 us, 80 us, 785652 us, 4.02 ms)
 [rank 0] iteration #1450 - starting launcher [0][0] ...
 [rank 0] done
-[it=1450] hydro_fvm compute time t=6.9303e-03 (Dt=4.757e-06) : 0.80431 s (5.44 ms, 0 us, 704 us, 790154 us, 5.50 ms)
+[it=1450] hydro_fvm compute time t=6.9303e-03 (Dt=4.757e-06) : 0.79540 s (4.06 ms, 0 us, 79 us, 785351 us, 4.01 ms)
 [rank 0] iteration #1451 - starting launcher [0][0] ...
 [rank 0] done
-[it=1451] hydro_fvm compute time t=6.9350e-03 (Dt=4.757e-06) : 0.80405 s (5.54 ms, 0 us, 701 us, 789957 us, 5.43 ms)
+[it=1451] hydro_fvm compute time t=6.9350e-03 (Dt=4.757e-06) : 0.79567 s (4.07 ms, 0 us, 79 us, 785613 us, 4.02 ms)
 [rank 0] iteration #1452 - starting launcher [0][0] ...
 [rank 0] done
-[it=1452] hydro_fvm compute time t=6.9398e-03 (Dt=4.757e-06) : 0.80372 s (5.46 ms, 0 us, 707 us, 789830 us, 5.39 ms)
+[it=1452] hydro_fvm compute time t=6.9398e-03 (Dt=4.757e-06) : 0.79550 s (4.17 ms, 0 us, 79 us, 785340 us, 4.02 ms)
 [rank 0] iteration #1453 - starting launcher [0][0] ...
 [rank 0] done
-[it=1453] hydro_fvm compute time t=6.9445e-03 (Dt=4.757e-06) : 0.80417 s (5.44 ms, 0 us, 687 us, 790346 us, 5.38 ms)
+[it=1453] hydro_fvm compute time t=6.9445e-03 (Dt=4.757e-06) : 0.79580 s (4.07 ms, 0 us, 79 us, 785723 us, 4.03 ms)
 [rank 0] iteration #1454 - starting launcher [0][0] ...
 [rank 0] done
-[it=1454] hydro_fvm compute time t=6.9493e-03 (Dt=4.757e-06) : 0.80396 s (5.45 ms, 0 us, 711 us, 790099 us, 5.40 ms)
+[it=1454] hydro_fvm compute time t=6.9493e-03 (Dt=4.757e-06) : 0.79544 s (4.07 ms, 0 us, 78 us, 785379 us, 4.03 ms)
 [rank 0] iteration #1455 - starting launcher [0][0] ...
 [rank 0] done
-[it=1455] hydro_fvm compute time t=6.9540e-03 (Dt=4.756e-06) : 0.80423 s (5.44 ms, 0 us, 707 us, 790392 us, 5.40 ms)
+[it=1455] hydro_fvm compute time t=6.9540e-03 (Dt=4.756e-06) : 0.79578 s (4.06 ms, 0 us, 79 us, 785714 us, 4.04 ms)
 [rank 0] iteration #1456 - starting launcher [0][0] ...
 [rank 0] done
-[it=1456] hydro_fvm compute time t=6.9588e-03 (Dt=4.756e-06) : 0.80405 s (5.41 ms, 0 us, 663 us, 790260 us, 5.40 ms)
+[it=1456] hydro_fvm compute time t=6.9588e-03 (Dt=4.756e-06) : 0.79522 s (4.07 ms, 0 us, 79 us, 785161 us, 4.02 ms)
 [rank 0] iteration #1457 - starting launcher [0][0] ...
 [rank 0] done
-[it=1457] hydro_fvm compute time t=6.9636e-03 (Dt=4.756e-06) : 0.80411 s (5.49 ms, 0 us, 702 us, 790230 us, 5.39 ms)
+[it=1457] hydro_fvm compute time t=6.9636e-03 (Dt=4.756e-06) : 0.79557 s (4.08 ms, 0 us, 79 us, 785504 us, 4.02 ms)
 [rank 0] iteration #1458 - starting launcher [0][0] ...
 [rank 0] done
-[it=1458] hydro_fvm compute time t=6.9683e-03 (Dt=4.756e-06) : 0.80445 s (5.46 ms, 0 us, 691 us, 790603 us, 5.40 ms)
+[it=1458] hydro_fvm compute time t=6.9683e-03 (Dt=4.756e-06) : 0.79520 s (4.08 ms, 0 us, 79 us, 785141 us, 4.02 ms)
 [rank 0] iteration #1459 - starting launcher [0][0] ...
 [rank 0] done
-[it=1459] hydro_fvm compute time t=6.9731e-03 (Dt=4.756e-06) : 0.80420 s (5.48 ms, 0 us, 687 us, 790324 us, 5.40 ms)
+[it=1459] hydro_fvm compute time t=6.9731e-03 (Dt=4.756e-06) : 0.79552 s (4.07 ms, 0 us, 78 us, 785464 us, 4.02 ms)
 [rank 0] iteration #1460 - starting launcher [0][0] ...
 [rank 0] done
-[it=1460] hydro_fvm compute time t=6.9778e-03 (Dt=4.756e-06) : 0.80451 s (5.49 ms, 0 us, 690 us, 790577 us, 5.42 ms)
+[it=1460] hydro_fvm compute time t=6.9778e-03 (Dt=4.756e-06) : 0.79524 s (4.07 ms, 0 us, 79 us, 785197 us, 4.01 ms)
 [rank 0] iteration #1461 - starting launcher [0][0] ...
 [rank 0] done
-[it=1461] hydro_fvm compute time t=6.9826e-03 (Dt=4.756e-06) : 0.80423 s (5.50 ms, 0 us, 687 us, 790348 us, 5.39 ms)
+[it=1461] hydro_fvm compute time t=6.9826e-03 (Dt=4.756e-06) : 0.79572 s (4.07 ms, 0 us, 80 us, 785664 us, 4.02 ms)
 [rank 0] iteration #1462 - starting launcher [0][0] ...
 [rank 0] done
-[it=1462] hydro_fvm compute time t=6.9873e-03 (Dt=4.756e-06) : 0.80404 s (5.48 ms, 0 us, 695 us, 790176 us, 5.39 ms)
+[it=1462] hydro_fvm compute time t=6.9873e-03 (Dt=4.756e-06) : 0.79544 s (4.03 ms, 0 us, 79 us, 785448 us, 4.04 ms)
 [rank 0] iteration #1463 - starting launcher [0][0] ...
 [rank 0] done
-[it=1463] hydro_fvm compute time t=6.9921e-03 (Dt=4.756e-06) : 0.80431 s (5.47 ms, 0 us, 701 us, 790436 us, 5.40 ms)
+[it=1463] hydro_fvm compute time t=6.9921e-03 (Dt=4.756e-06) : 0.79555 s (4.10 ms, 0 us, 78 us, 785374 us, 4.07 ms)
 [rank 0] iteration #1464 - starting launcher [0][0] ...
 [rank 0] done
-[it=1464] hydro_fvm compute time t=6.9969e-03 (Dt=4.756e-06) : 0.80393 s (5.45 ms, 0 us, 703 us, 790066 us, 5.41 ms)
+[it=1464] hydro_fvm compute time t=6.9969e-03 (Dt=4.756e-06) : 0.79761 s (4.13 ms, 0 us, 80 us, 787492 us, 4.06 ms)
 [rank 0] iteration #1465 - starting launcher [0][0] ...
 [rank 0] done
-[it=1465] hydro_fvm compute time t=7.0016e-03 (Dt=4.756e-06) : 0.80406 s (5.45 ms, 0 us, 683 us, 790226 us, 5.44 ms)
+[it=1465] hydro_fvm compute time t=7.0016e-03 (Dt=4.756e-06) : 0.79596 s (4.34 ms, 0 us, 83 us, 785576 us, 4.07 ms)
 [rank 0] iteration #1466 - starting launcher [0][0] ...
 [rank 0] done
-[it=1466] hydro_fvm compute time t=7.0064e-03 (Dt=4.756e-06) : 0.80429 s (5.47 ms, 0 us, 689 us, 790420 us, 5.40 ms)
+[it=1466] hydro_fvm compute time t=7.0064e-03 (Dt=4.756e-06) : 0.79552 s (4.21 ms, 0 us, 86 us, 785292 us, 4.06 ms)
 [rank 0] iteration #1467 - starting launcher [0][0] ...
 [rank 0] done
-[it=1467] hydro_fvm compute time t=7.0111e-03 (Dt=4.756e-06) : 0.80423 s (5.47 ms, 0 us, 674 us, 790382 us, 5.40 ms)
+[it=1467] hydro_fvm compute time t=7.0111e-03 (Dt=4.756e-06) : 0.79567 s (4.22 ms, 0 us, 83 us, 785416 us, 4.05 ms)
 [rank 0] iteration #1468 - starting launcher [0][0] ...
 [rank 0] done
-[it=1468] hydro_fvm compute time t=7.0159e-03 (Dt=4.756e-06) : 0.80445 s (5.46 ms, 0 us, 696 us, 790593 us, 5.39 ms)
+[it=1468] hydro_fvm compute time t=7.0159e-03 (Dt=4.756e-06) : 0.79530 s (4.19 ms, 0 us, 81 us, 785097 us, 4.03 ms)
 [rank 0] iteration #1469 - starting launcher [0][0] ...
 [rank 0] done
-[it=1469] hydro_fvm compute time t=7.0206e-03 (Dt=4.756e-06) : 0.80415 s (5.44 ms, 0 us, 704 us, 790324 us, 5.39 ms)
+[it=1469] hydro_fvm compute time t=7.0206e-03 (Dt=4.756e-06) : 0.79656 s (4.22 ms, 0 us, 80 us, 786344 us, 4.03 ms)
 [rank 0] iteration #1470 - starting launcher [0][0] ...
 [rank 0] done
-[it=1470] hydro_fvm compute time t=7.0254e-03 (Dt=4.756e-06) : 0.80430 s (5.47 ms, 0 us, 689 us, 790440 us, 5.40 ms)
+[it=1470] hydro_fvm compute time t=7.0254e-03 (Dt=4.756e-06) : 0.79567 s (4.22 ms, 0 us, 83 us, 785430 us, 4.05 ms)
 [rank 0] iteration #1471 - starting launcher [0][0] ...
 [rank 0] done
-[it=1471] hydro_fvm compute time t=7.0301e-03 (Dt=4.756e-06) : 0.80445 s (5.46 ms, 0 us, 687 us, 790596 us, 5.40 ms)
+[it=1471] hydro_fvm compute time t=7.0301e-03 (Dt=4.756e-06) : 0.79580 s (4.21 ms, 0 us, 82 us, 785583 us, 4.03 ms)
 [rank 0] iteration #1472 - starting launcher [0][0] ...
 [rank 0] done
-[it=1472] hydro_fvm compute time t=7.0349e-03 (Dt=4.756e-06) : 0.80394 s (5.45 ms, 0 us, 704 us, 790088 us, 5.39 ms)
+[it=1472] hydro_fvm compute time t=7.0349e-03 (Dt=4.756e-06) : 0.79555 s (4.21 ms, 0 us, 79 us, 785318 us, 4.05 ms)
 [rank 0] iteration #1473 - starting launcher [0][0] ...
 [rank 0] done
-[it=1473] hydro_fvm compute time t=7.0397e-03 (Dt=4.756e-06) : 0.80450 s (5.43 ms, 0 us, 703 us, 790650 us, 5.40 ms)
+[it=1473] hydro_fvm compute time t=7.0397e-03 (Dt=4.756e-06) : 0.79562 s (4.23 ms, 0 us, 83 us, 785418 us, 4.05 ms)
 [rank 0] iteration #1474 - starting launcher [0][0] ...
 [rank 0] done
-[it=1474] hydro_fvm compute time t=7.0444e-03 (Dt=4.756e-06) : 0.80460 s (5.51 ms, 0 us, 696 us, 790658 us, 5.42 ms)
+[it=1474] hydro_fvm compute time t=7.0444e-03 (Dt=4.756e-06) : 0.79554 s (4.23 ms, 0 us, 80 us, 785308 us, 4.04 ms)
 [rank 0] iteration #1475 - starting launcher [0][0] ...
 [rank 0] done
-[it=1475] hydro_fvm compute time t=7.0492e-03 (Dt=4.756e-06) : 0.80336 s (5.49 ms, 0 us, 707 us, 789459 us, 5.40 ms)
+[it=1475] hydro_fvm compute time t=7.0492e-03 (Dt=4.756e-06) : 0.79577 s (4.19 ms, 0 us, 82 us, 785558 us, 4.06 ms)
 [rank 0] iteration #1476 - starting launcher [0][0] ...
 [rank 0] done
-[it=1476] hydro_fvm compute time t=7.0539e-03 (Dt=4.756e-06) : 0.80448 s (5.46 ms, 0 us, 702 us, 790626 us, 5.39 ms)
+[it=1476] hydro_fvm compute time t=7.0539e-03 (Dt=4.756e-06) : 0.79554 s (4.23 ms, 0 us, 82 us, 785307 us, 4.06 ms)
 [rank 0] iteration #1477 - starting launcher [0][0] ...
 [rank 0] done
-[it=1477] hydro_fvm compute time t=7.0587e-03 (Dt=4.756e-06) : 0.80446 s (5.46 ms, 0 us, 708 us, 790610 us, 5.40 ms)
+[it=1477] hydro_fvm compute time t=7.0587e-03 (Dt=4.756e-06) : 0.79555 s (4.17 ms, 0 us, 80 us, 785420 us, 4.04 ms)
 [rank 0] iteration #1478 - starting launcher [0][0] ...
 [rank 0] done
-[it=1478] hydro_fvm compute time t=7.0634e-03 (Dt=4.755e-06) : 0.80439 s (5.46 ms, 0 us, 662 us, 790563 us, 5.41 ms)
+[it=1478] hydro_fvm compute time t=7.0634e-03 (Dt=4.755e-06) : 0.79552 s (4.19 ms, 0 us, 80 us, 785323 us, 4.08 ms)
 [rank 0] iteration #1479 - starting launcher [0][0] ...
 [rank 0] done
-[it=1479] hydro_fvm compute time t=7.0682e-03 (Dt=4.755e-06) : 0.80434 s (5.46 ms, 0 us, 686 us, 790478 us, 5.43 ms)
+[it=1479] hydro_fvm compute time t=7.0682e-03 (Dt=4.755e-06) : 0.79681 s (4.21 ms, 0 us, 78 us, 786595 us, 4.05 ms)
 [rank 0] iteration #1480 - starting launcher [0][0] ...
 [rank 0] done
-[it=1480] hydro_fvm compute time t=7.0729e-03 (Dt=4.755e-06) : 0.80361 s (5.49 ms, 0 us, 672 us, 789757 us, 5.40 ms)
+[it=1480] hydro_fvm compute time t=7.0729e-03 (Dt=4.755e-06) : 0.79542 s (4.21 ms, 0 us, 78 us, 785194 us, 4.05 ms)
 [rank 0] iteration #1481 - starting launcher [0][0] ...
 [rank 0] done
-[it=1481] hydro_fvm compute time t=7.0777e-03 (Dt=4.755e-06) : 0.80450 s (5.44 ms, 0 us, 702 us, 790691 us, 5.38 ms)
+[it=1481] hydro_fvm compute time t=7.0777e-03 (Dt=4.755e-06) : 0.79628 s (4.19 ms, 0 us, 80 us, 786070 us, 4.05 ms)
 [rank 0] iteration #1482 - starting launcher [0][0] ...
 [rank 0] done
-[it=1482] hydro_fvm compute time t=7.0825e-03 (Dt=4.755e-06) : 0.80443 s (5.45 ms, 0 us, 684 us, 790608 us, 5.39 ms)
+[it=1482] hydro_fvm compute time t=7.0825e-03 (Dt=4.755e-06) : 0.79543 s (4.23 ms, 0 us, 80 us, 785190 us, 4.04 ms)
 [rank 0] iteration #1483 - starting launcher [0][0] ...
 [rank 0] done
-[it=1483] hydro_fvm compute time t=7.0872e-03 (Dt=4.755e-06) : 0.80455 s (5.45 ms, 0 us, 705 us, 790712 us, 5.39 ms)
+[it=1483] hydro_fvm compute time t=7.0872e-03 (Dt=4.755e-06) : 0.79585 s (4.32 ms, 0 us, 79 us, 785542 us, 4.04 ms)
 [rank 0] iteration #1484 - starting launcher [0][0] ...
 [rank 0] done
-[it=1484] hydro_fvm compute time t=7.0920e-03 (Dt=4.755e-06) : 0.80384 s (5.43 ms, 0 us, 704 us, 789957 us, 5.42 ms)
+[it=1484] hydro_fvm compute time t=7.0920e-03 (Dt=4.755e-06) : 0.79555 s (4.19 ms, 0 us, 81 us, 785351 us, 4.04 ms)
 [rank 0] iteration #1485 - starting launcher [0][0] ...
 [rank 0] done
-[it=1485] hydro_fvm compute time t=7.0967e-03 (Dt=4.755e-06) : 0.80442 s (5.49 ms, 0 us, 703 us, 790530 us, 5.40 ms)
+[it=1485] hydro_fvm compute time t=7.0967e-03 (Dt=4.755e-06) : 0.79573 s (4.18 ms, 0 us, 83 us, 785554 us, 4.02 ms)
 [rank 0] iteration #1486 - starting launcher [0][0] ...
 [rank 0] done
-[it=1486] hydro_fvm compute time t=7.1015e-03 (Dt=4.755e-06) : 0.80435 s (5.45 ms, 0 us, 704 us, 790487 us, 5.41 ms)
+[it=1486] hydro_fvm compute time t=7.1015e-03 (Dt=4.755e-06) : 0.79546 s (4.20 ms, 0 us, 78 us, 785275 us, 4.03 ms)
 [rank 0] iteration #1487 - starting launcher [0][0] ...
 [rank 0] done
-[it=1487] hydro_fvm compute time t=7.1062e-03 (Dt=4.755e-06) : 0.80439 s (5.44 ms, 0 us, 706 us, 790550 us, 5.42 ms)
+[it=1487] hydro_fvm compute time t=7.1062e-03 (Dt=4.755e-06) : 0.79557 s (4.19 ms, 0 us, 80 us, 785400 us, 4.03 ms)
 [rank 0] iteration #1488 - starting launcher [0][0] ...
 [rank 0] done
-[it=1488] hydro_fvm compute time t=7.1110e-03 (Dt=4.755e-06) : 0.80441 s (5.48 ms, 0 us, 678 us, 790542 us, 5.40 ms)
+[it=1488] hydro_fvm compute time t=7.1110e-03 (Dt=4.755e-06) : 0.79541 s (4.19 ms, 0 us, 79 us, 785264 us, 4.03 ms)
 [rank 0] iteration #1489 - starting launcher [0][0] ...
 [rank 0] done
-[it=1489] hydro_fvm compute time t=7.1157e-03 (Dt=4.755e-06) : 0.80481 s (5.46 ms, 0 us, 701 us, 790044 us, 5.61 ms)
+[it=1489] hydro_fvm compute time t=7.1157e-03 (Dt=4.755e-06) : 0.79671 s (4.17 ms, 0 us, 78 us, 786561 us, 4.04 ms)
 [rank 0] iteration #1490 - starting launcher [0][0] ...
 [rank 0] done
-[it=1490] hydro_fvm compute time t=7.1205e-03 (Dt=4.755e-06) : 0.80508 s (5.61 ms, 0 us, 682 us, 790642 us, 5.43 ms)
+[it=1490] hydro_fvm compute time t=7.1205e-03 (Dt=4.755e-06) : 0.79545 s (4.21 ms, 0 us, 79 us, 785220 us, 4.06 ms)
 [rank 0] iteration #1491 - starting launcher [0][0] ...
 [rank 0] done
-[it=1491] hydro_fvm compute time t=7.1252e-03 (Dt=4.755e-06) : 0.80442 s (5.47 ms, 0 us, 700 us, 790424 us, 5.42 ms)
+[it=1491] hydro_fvm compute time t=7.1252e-03 (Dt=4.755e-06) : 0.79577 s (4.20 ms, 0 us, 78 us, 785577 us, 4.04 ms)
 [rank 0] iteration #1492 - starting launcher [0][0] ...
 [rank 0] done
-[it=1492] hydro_fvm compute time t=7.1300e-03 (Dt=4.755e-06) : 0.80439 s (5.52 ms, 0 us, 695 us, 790429 us, 5.41 ms)
+[it=1492] hydro_fvm compute time t=7.1300e-03 (Dt=4.755e-06) : 0.79523 s (4.15 ms, 0 us, 78 us, 785018 us, 4.05 ms)
 [rank 0] iteration #1493 - starting launcher [0][0] ...
 [rank 0] done
-[it=1493] hydro_fvm compute time t=7.1348e-03 (Dt=4.755e-06) : 0.80425 s (5.45 ms, 0 us, 703 us, 790328 us, 5.43 ms)
+[it=1493] hydro_fvm compute time t=7.1348e-03 (Dt=4.755e-06) : 0.79542 s (4.06 ms, 0 us, 77 us, 785406 us, 4.01 ms)
 [rank 0] iteration #1494 - starting launcher [0][0] ...
 [rank 0] done
-[it=1494] hydro_fvm compute time t=7.1395e-03 (Dt=4.755e-06) : 0.80414 s (5.47 ms, 0 us, 698 us, 790244 us, 5.40 ms)
+[it=1494] hydro_fvm compute time t=7.1395e-03 (Dt=4.755e-06) : 0.79551 s (4.08 ms, 0 us, 78 us, 785451 us, 4.01 ms)
 [rank 0] iteration #1495 - starting launcher [0][0] ...
 [rank 0] done
-[it=1495] hydro_fvm compute time t=7.1443e-03 (Dt=4.755e-06) : 0.80419 s (5.49 ms, 0 us, 673 us, 790321 us, 5.40 ms)
+[it=1495] hydro_fvm compute time t=7.1443e-03 (Dt=4.755e-06) : 0.79554 s (4.06 ms, 0 us, 78 us, 785465 us, 4.05 ms)
 [rank 0] iteration #1496 - starting launcher [0][0] ...
 [rank 0] done
-[it=1496] hydro_fvm compute time t=7.1490e-03 (Dt=4.755e-06) : 0.80345 s (5.47 ms, 0 us, 707 us, 789553 us, 5.41 ms)
+[it=1496] hydro_fvm compute time t=7.1490e-03 (Dt=4.755e-06) : 0.79631 s (4.07 ms, 0 us, 79 us, 786248 us, 4.03 ms)
 [rank 0] iteration #1497 - starting launcher [0][0] ...
 [rank 0] done
-[it=1497] hydro_fvm compute time t=7.1538e-03 (Dt=4.755e-06) : 0.80434 s (5.47 ms, 0 us, 686 us, 790468 us, 5.41 ms)
+[it=1497] hydro_fvm compute time t=7.1538e-03 (Dt=4.755e-06) : 0.79543 s (4.07 ms, 0 us, 80 us, 785373 us, 4.02 ms)
 [rank 0] iteration #1498 - starting launcher [0][0] ...
 [rank 0] done
-[it=1498] hydro_fvm compute time t=7.1585e-03 (Dt=4.755e-06) : 0.80367 s (5.44 ms, 0 us, 699 us, 789790 us, 5.43 ms)
+[it=1498] hydro_fvm compute time t=7.1585e-03 (Dt=4.755e-06) : 0.79523 s (4.09 ms, 0 us, 79 us, 785161 us, 4.02 ms)
 [rank 0] iteration #1499 - starting launcher [0][0] ...
 [rank 0] done
-[it=1499] hydro_fvm compute time t=7.1633e-03 (Dt=4.755e-06) : 0.80434 s (5.44 ms, 0 us, 701 us, 790514 us, 5.39 ms)
+[it=1499] hydro_fvm compute time t=7.1633e-03 (Dt=4.755e-06) : 0.79574 s (4.08 ms, 0 us, 78 us, 785677 us, 4.02 ms)
 [rank 0] iteration #1500 - starting launcher [0][0] ...
 [rank 0] done
-[it=1500] hydro_fvm compute time t=7.1680e-03 (Dt=4.754e-06) : 0.80385 s (5.46 ms, 0 us, 700 us, 789998 us, 5.39 ms)
+[it=1500] hydro_fvm compute time t=7.1680e-03 (Dt=4.754e-06) : 0.79529 s (4.03 ms, 0 us, 79 us, 785272 us, 4.03 ms)
 [rank 0] iteration #1501 - starting launcher [0][0] ...
 [rank 0] done
-[it=1501] hydro_fvm compute time t=7.1728e-03 (Dt=4.754e-06) : 0.80465 s (5.49 ms, 0 us, 696 us, 790773 us, 5.40 ms)
+[it=1501] hydro_fvm compute time t=7.1728e-03 (Dt=4.754e-06) : 0.79549 s (4.07 ms, 0 us, 78 us, 785439 us, 4.02 ms)
 [rank 0] iteration #1502 - starting launcher [0][0] ...
 [rank 0] done
-[it=1502] hydro_fvm compute time t=7.1776e-03 (Dt=4.754e-06) : 0.80437 s (5.47 ms, 0 us, 662 us, 790535 us, 5.41 ms)
+[it=1502] hydro_fvm compute time t=7.1776e-03 (Dt=4.754e-06) : 0.79533 s (4.06 ms, 0 us, 79 us, 785289 us, 4.02 ms)
 [rank 0] iteration #1503 - starting launcher [0][0] ...
 [rank 0] done
-[it=1503] hydro_fvm compute time t=7.1823e-03 (Dt=4.754e-06) : 0.80379 s (5.45 ms, 0 us, 687 us, 789943 us, 5.41 ms)
+[it=1503] hydro_fvm compute time t=7.1823e-03 (Dt=4.754e-06) : 0.79558 s (4.08 ms, 0 us, 80 us, 785504 us, 4.01 ms)
 [rank 0] iteration #1504 - starting launcher [0][0] ...
 [rank 0] done
-[it=1504] hydro_fvm compute time t=7.1871e-03 (Dt=4.754e-06) : 0.80382 s (5.45 ms, 0 us, 662 us, 790012 us, 5.39 ms)
+[it=1504] hydro_fvm compute time t=7.1871e-03 (Dt=4.754e-06) : 0.79864 s (4.04 ms, 0 us, 79 us, 788608 us, 4.03 ms)
 [rank 0] iteration #1505 - starting launcher [0][0] ...
 [rank 0] done
-[it=1505] hydro_fvm compute time t=7.1918e-03 (Dt=4.754e-06) : 0.80418 s (5.47 ms, 0 us, 700 us, 790316 us, 5.39 ms)
+[it=1505] hydro_fvm compute time t=7.1918e-03 (Dt=4.754e-06) : 0.79552 s (4.06 ms, 0 us, 79 us, 785470 us, 4.02 ms)
 [rank 0] iteration #1506 - starting launcher [0][0] ...
 [rank 0] done
-[it=1506] hydro_fvm compute time t=7.1966e-03 (Dt=4.754e-06) : 0.80394 s (5.44 ms, 0 us, 652 us, 790138 us, 5.40 ms)
+[it=1506] hydro_fvm compute time t=7.1966e-03 (Dt=4.754e-06) : 0.79546 s (4.07 ms, 0 us, 78 us, 785402 us, 4.02 ms)
 [rank 0] iteration #1507 - starting launcher [0][0] ...
 [rank 0] done
-[it=1507] hydro_fvm compute time t=7.2013e-03 (Dt=4.754e-06) : 0.80394 s (5.46 ms, 0 us, 685 us, 790093 us, 5.40 ms)
+[it=1507] hydro_fvm compute time t=7.2013e-03 (Dt=4.754e-06) : 0.79589 s (4.09 ms, 0 us, 78 us, 785820 us, 4.01 ms)
 [rank 0] iteration #1508 - starting launcher [0][0] ...
 [rank 0] done
-[it=1508] hydro_fvm compute time t=7.2061e-03 (Dt=4.754e-06) : 0.80431 s (5.49 ms, 0 us, 648 us, 790486 us, 5.40 ms)
+[it=1508] hydro_fvm compute time t=7.2061e-03 (Dt=4.754e-06) : 0.79553 s (4.08 ms, 0 us, 78 us, 785480 us, 4.03 ms)
 [rank 0] iteration #1509 - starting launcher [0][0] ...
 [rank 0] done
-[it=1509] hydro_fvm compute time t=7.2108e-03 (Dt=4.754e-06) : 0.80451 s (5.45 ms, 0 us, 693 us, 790613 us, 5.43 ms)
+[it=1509] hydro_fvm compute time t=7.2108e-03 (Dt=4.754e-06) : 0.80010 s (4.08 ms, 0 us, 79 us, 790033 us, 4.03 ms)
 [rank 0] iteration #1510 - starting launcher [0][0] ...
 [rank 0] done
-[it=1510] hydro_fvm compute time t=7.2156e-03 (Dt=4.754e-06) : 0.80426 s (5.51 ms, 0 us, 700 us, 790353 us, 5.40 ms)
+[it=1510] hydro_fvm compute time t=7.2156e-03 (Dt=4.754e-06) : 0.79550 s (4.07 ms, 0 us, 80 us, 785441 us, 4.02 ms)
 [rank 0] iteration #1511 - starting launcher [0][0] ...
 [rank 0] done
-[it=1511] hydro_fvm compute time t=7.2203e-03 (Dt=4.754e-06) : 0.80392 s (5.46 ms, 0 us, 663 us, 790081 us, 5.41 ms)
+[it=1511] hydro_fvm compute time t=7.2203e-03 (Dt=4.754e-06) : 0.79558 s (4.07 ms, 0 us, 78 us, 785533 us, 4.02 ms)
 [rank 0] iteration #1512 - starting launcher [0][0] ...
 [rank 0] done
-[it=1512] hydro_fvm compute time t=7.2251e-03 (Dt=4.754e-06) : 0.80440 s (5.46 ms, 0 us, 686 us, 790539 us, 5.42 ms)
+[it=1512] hydro_fvm compute time t=7.2251e-03 (Dt=4.754e-06) : 0.79642 s (4.08 ms, 0 us, 78 us, 786350 us, 4.04 ms)
 [rank 0] iteration #1513 - starting launcher [0][0] ...
 [rank 0] done
-[it=1513] hydro_fvm compute time t=7.2298e-03 (Dt=4.754e-06) : 0.80449 s (5.46 ms, 0 us, 704 us, 790632 us, 5.39 ms)
+[it=1513] hydro_fvm compute time t=7.2298e-03 (Dt=4.754e-06) : 0.79602 s (4.06 ms, 0 us, 77 us, 785968 us, 4.03 ms)
 [rank 0] iteration #1514 - starting launcher [0][0] ...
 [rank 0] done
-[it=1514] hydro_fvm compute time t=7.2346e-03 (Dt=4.754e-06) : 0.80448 s (5.45 ms, 0 us, 706 us, 790616 us, 5.39 ms)
+[it=1514] hydro_fvm compute time t=7.2346e-03 (Dt=4.754e-06) : 0.79615 s (4.09 ms, 0 us, 80 us, 786101 us, 4.03 ms)
 [rank 0] iteration #1515 - starting launcher [0][0] ...
 [rank 0] done
-[it=1515] hydro_fvm compute time t=7.2394e-03 (Dt=4.754e-06) : 0.80420 s (5.46 ms, 0 us, 701 us, 790292 us, 5.43 ms)
+[it=1515] hydro_fvm compute time t=7.2394e-03 (Dt=4.754e-06) : 0.79577 s (4.08 ms, 0 us, 78 us, 785597 us, 4.08 ms)
 [rank 0] iteration #1516 - starting launcher [0][0] ...
 [rank 0] done
-[it=1516] hydro_fvm compute time t=7.2441e-03 (Dt=4.754e-06) : 0.80411 s (5.45 ms, 0 us, 705 us, 790269 us, 5.39 ms)
+[it=1516] hydro_fvm compute time t=7.2441e-03 (Dt=4.754e-06) : 0.79536 s (4.12 ms, 0 us, 78 us, 785268 us, 4.03 ms)
 [rank 0] iteration #1517 - starting launcher [0][0] ...
 [rank 0] done
-[it=1517] hydro_fvm compute time t=7.2489e-03 (Dt=4.754e-06) : 0.80438 s (5.44 ms, 0 us, 687 us, 790563 us, 5.40 ms)
+[it=1517] hydro_fvm compute time t=7.2489e-03 (Dt=4.754e-06) : 0.79592 s (4.17 ms, 0 us, 78 us, 785734 us, 4.04 ms)
 [rank 0] iteration #1518 - starting launcher [0][0] ...
 [rank 0] done
-[it=1518] hydro_fvm compute time t=7.2536e-03 (Dt=4.754e-06) : 0.80422 s (5.46 ms, 0 us, 643 us, 790434 us, 5.40 ms)
+[it=1518] hydro_fvm compute time t=7.2536e-03 (Dt=4.754e-06) : 0.79601 s (4.18 ms, 0 us, 78 us, 785833 us, 4.04 ms)
 [rank 0] iteration #1519 - starting launcher [0][0] ...
 [rank 0] done
-[it=1519] hydro_fvm compute time t=7.2584e-03 (Dt=4.754e-06) : 0.80397 s (5.46 ms, 0 us, 687 us, 790123 us, 5.40 ms)
+[it=1519] hydro_fvm compute time t=7.2584e-03 (Dt=4.754e-06) : 0.79568 s (4.12 ms, 0 us, 79 us, 785557 us, 4.04 ms)
 [rank 0] iteration #1520 - starting launcher [0][0] ...
 [rank 0] done
-[it=1520] hydro_fvm compute time t=7.2631e-03 (Dt=4.754e-06) : 0.80403 s (5.45 ms, 0 us, 692 us, 790204 us, 5.39 ms)
+[it=1520] hydro_fvm compute time t=7.2631e-03 (Dt=4.754e-06) : 0.79575 s (4.20 ms, 0 us, 80 us, 785523 us, 4.05 ms)
 [rank 0] iteration #1521 - starting launcher [0][0] ...
 [rank 0] done
-[it=1521] hydro_fvm compute time t=7.2679e-03 (Dt=4.754e-06) : 0.80374 s (5.46 ms, 0 us, 703 us, 789847 us, 5.43 ms)
+[it=1521] hydro_fvm compute time t=7.2679e-03 (Dt=4.754e-06) : 0.79564 s (4.25 ms, 0 us, 80 us, 785376 us, 4.04 ms)
 [rank 0] iteration #1522 - starting launcher [0][0] ...
 [rank 0] done
-[it=1522] hydro_fvm compute time t=7.2726e-03 (Dt=4.754e-06) : 0.80395 s (5.47 ms, 0 us, 683 us, 790109 us, 5.39 ms)
+[it=1522] hydro_fvm compute time t=7.2726e-03 (Dt=4.754e-06) : 0.79545 s (4.20 ms, 0 us, 80 us, 785232 us, 4.05 ms)
 [rank 0] iteration #1523 - starting launcher [0][0] ...
 [rank 0] done
-[it=1523] hydro_fvm compute time t=7.2774e-03 (Dt=4.753e-06) : 0.80411 s (5.45 ms, 0 us, 694 us, 790267 us, 5.39 ms)
+[it=1523] hydro_fvm compute time t=7.2774e-03 (Dt=4.753e-06) : 0.79589 s (4.19 ms, 0 us, 79 us, 785710 us, 4.06 ms)
 [rank 0] iteration #1524 - starting launcher [0][0] ...
 [rank 0] done
-[it=1524] hydro_fvm compute time t=7.2821e-03 (Dt=4.753e-06) : 0.80453 s (5.46 ms, 0 us, 696 us, 790685 us, 5.39 ms)
+[it=1524] hydro_fvm compute time t=7.2821e-03 (Dt=4.753e-06) : 0.79533 s (4.20 ms, 0 us, 80 us, 785149 us, 4.04 ms)
 [rank 0] iteration #1525 - starting launcher [0][0] ...
 [rank 0] done
-[it=1525] hydro_fvm compute time t=7.2869e-03 (Dt=4.753e-06) : 0.80417 s (5.46 ms, 0 us, 691 us, 790019 us, 5.48 ms)
+[it=1525] hydro_fvm compute time t=7.2869e-03 (Dt=4.753e-06) : 0.79594 s (4.30 ms, 0 us, 78 us, 785642 us, 4.05 ms)
 [rank 0] iteration #1526 - starting launcher [0][0] ...
 [rank 0] done
-[it=1526] hydro_fvm compute time t=7.2916e-03 (Dt=4.753e-06) : 0.80398 s (5.51 ms, 0 us, 701 us, 789991 us, 5.40 ms)
+[it=1526] hydro_fvm compute time t=7.2916e-03 (Dt=4.753e-06) : 0.79544 s (4.23 ms, 0 us, 79 us, 785193 us, 4.06 ms)
 [rank 0] iteration #1527 - starting launcher [0][0] ...
 [rank 0] done
-[it=1527] hydro_fvm compute time t=7.2964e-03 (Dt=4.753e-06) : 0.80420 s (5.46 ms, 0 us, 698 us, 790348 us, 5.40 ms)
+[it=1527] hydro_fvm compute time t=7.2964e-03 (Dt=4.753e-06) : 0.79580 s (4.33 ms, 0 us, 79 us, 785489 us, 4.05 ms)
 [rank 0] iteration #1528 - starting launcher [0][0] ...
 [rank 0] done
-[it=1528] hydro_fvm compute time t=7.3012e-03 (Dt=4.753e-06) : 0.80432 s (5.46 ms, 0 us, 679 us, 790488 us, 5.40 ms)
+[it=1528] hydro_fvm compute time t=7.3012e-03 (Dt=4.753e-06) : 0.79555 s (4.19 ms, 0 us, 78 us, 785354 us, 4.04 ms)
 [rank 0] iteration #1529 - starting launcher [0][0] ...
 [rank 0] done
-[it=1529] hydro_fvm compute time t=7.3059e-03 (Dt=4.753e-06) : 0.80443 s (5.45 ms, 0 us, 703 us, 790593 us, 5.39 ms)
+[it=1529] hydro_fvm compute time t=7.3059e-03 (Dt=4.753e-06) : 0.79574 s (4.23 ms, 0 us, 79 us, 785513 us, 4.04 ms)
 [rank 0] iteration #1530 - starting launcher [0][0] ...
 [rank 0] done
-[it=1530] hydro_fvm compute time t=7.3107e-03 (Dt=4.753e-06) : 0.80434 s (5.45 ms, 0 us, 701 us, 790435 us, 5.43 ms)
+[it=1530] hydro_fvm compute time t=7.3107e-03 (Dt=4.753e-06) : 0.79664 s (4.21 ms, 0 us, 78 us, 786429 us, 4.03 ms)
 [rank 0] iteration #1531 - starting launcher [0][0] ...
 [rank 0] done
-[it=1531] hydro_fvm compute time t=7.3154e-03 (Dt=4.753e-06) : 0.80451 s (5.49 ms, 0 us, 697 us, 790608 us, 5.40 ms)
+[it=1531] hydro_fvm compute time t=7.3154e-03 (Dt=4.753e-06) : 0.79584 s (4.18 ms, 0 us, 79 us, 785670 us, 4.03 ms)
 [rank 0] iteration #1532 - starting launcher [0][0] ...
 [rank 0] done
-[it=1532] hydro_fvm compute time t=7.3202e-03 (Dt=4.753e-06) : 0.80411 s (5.44 ms, 0 us, 707 us, 790254 us, 5.40 ms)
+[it=1532] hydro_fvm compute time t=7.3202e-03 (Dt=4.753e-06) : 0.79585 s (4.30 ms, 0 us, 79 us, 785539 us, 4.05 ms)
 [rank 0] iteration #1533 - starting launcher [0][0] ...
 [rank 0] done
-[it=1533] hydro_fvm compute time t=7.3249e-03 (Dt=4.753e-06) : 0.80452 s (5.46 ms, 0 us, 683 us, 790668 us, 5.41 ms)
+[it=1533] hydro_fvm compute time t=7.3249e-03 (Dt=4.753e-06) : 0.79619 s (4.18 ms, 0 us, 79 us, 786003 us, 4.05 ms)
 [rank 0] iteration #1534 - starting launcher [0][0] ...
 [rank 0] done
-[it=1534] hydro_fvm compute time t=7.3297e-03 (Dt=4.753e-06) : 0.80419 s (5.48 ms, 0 us, 700 us, 790297 us, 5.42 ms)
+[it=1534] hydro_fvm compute time t=7.3297e-03 (Dt=4.753e-06) : 0.79643 s (4.19 ms, 0 us, 83 us, 786233 us, 4.04 ms)
 [rank 0] iteration #1535 - starting launcher [0][0] ...
 [rank 0] done
-[it=1535] hydro_fvm compute time t=7.3344e-03 (Dt=4.753e-06) : 0.80402 s (5.44 ms, 0 us, 710 us, 790120 us, 5.41 ms)
+[it=1535] hydro_fvm compute time t=7.3344e-03 (Dt=4.753e-06) : 0.79588 s (4.21 ms, 0 us, 79 us, 785692 us, 4.05 ms)
 [rank 0] iteration #1536 - starting launcher [0][0] ...
 [rank 0] done
-[it=1536] hydro_fvm compute time t=7.3392e-03 (Dt=4.753e-06) : 0.80414 s (5.47 ms, 0 us, 704 us, 790262 us, 5.40 ms)
+[it=1536] hydro_fvm compute time t=7.3392e-03 (Dt=4.753e-06) : 0.79591 s (4.21 ms, 0 us, 79 us, 785734 us, 4.05 ms)
 [rank 0] iteration #1537 - starting launcher [0][0] ...
 [rank 0] done
-[it=1537] hydro_fvm compute time t=7.3439e-03 (Dt=4.753e-06) : 0.80455 s (5.41 ms, 0 us, 679 us, 790746 us, 5.39 ms)
+[it=1537] hydro_fvm compute time t=7.3439e-03 (Dt=4.753e-06) : 0.79564 s (4.20 ms, 0 us, 79 us, 785420 us, 4.05 ms)
 [rank 0] iteration #1538 - starting launcher [0][0] ...
 [rank 0] done
-[it=1538] hydro_fvm compute time t=7.3487e-03 (Dt=4.753e-06) : 0.80453 s (5.46 ms, 0 us, 702 us, 790673 us, 5.40 ms)
+[it=1538] hydro_fvm compute time t=7.3487e-03 (Dt=4.753e-06) : 0.79548 s (4.12 ms, 0 us, 77 us, 785356 us, 4.05 ms)
 [rank 0] iteration #1539 - starting launcher [0][0] ...
 [rank 0] done
-[it=1539] hydro_fvm compute time t=7.3534e-03 (Dt=4.753e-06) : 0.80402 s (5.47 ms, 0 us, 683 us, 790179 us, 5.39 ms)
+[it=1539] hydro_fvm compute time t=7.3534e-03 (Dt=4.753e-06) : 0.79581 s (4.20 ms, 0 us, 78 us, 785600 us, 4.06 ms)
 [rank 0] iteration #1540 - starting launcher [0][0] ...
 [rank 0] done
-[it=1540] hydro_fvm compute time t=7.3582e-03 (Dt=4.753e-06) : 0.80433 s (5.46 ms, 0 us, 701 us, 790387 us, 5.43 ms)
+[it=1540] hydro_fvm compute time t=7.3582e-03 (Dt=4.753e-06) : 0.79536 s (4.17 ms, 0 us, 77 us, 785211 us, 4.03 ms)
 [rank 0] iteration #1541 - starting launcher [0][0] ...
 [rank 0] done
-[it=1541] hydro_fvm compute time t=7.3629e-03 (Dt=4.753e-06) : 0.80430 s (5.48 ms, 0 us, 706 us, 790410 us, 5.40 ms)
+[it=1541] hydro_fvm compute time t=7.3629e-03 (Dt=4.753e-06) : 0.79605 s (4.19 ms, 0 us, 79 us, 785721 us, 4.07 ms)
 [rank 0] iteration #1542 - starting launcher [0][0] ...
 [rank 0] done
-[it=1542] hydro_fvm compute time t=7.3677e-03 (Dt=4.753e-06) : 0.80442 s (5.48 ms, 0 us, 683 us, 790574 us, 5.40 ms)
+[it=1542] hydro_fvm compute time t=7.3677e-03 (Dt=4.753e-06) : 0.79530 s (4.09 ms, 0 us, 90 us, 785214 us, 4.02 ms)
 [rank 0] iteration #1543 - starting launcher [0][0] ...
 [rank 0] done
-[it=1543] hydro_fvm compute time t=7.3724e-03 (Dt=4.753e-06) : 0.80448 s (5.46 ms, 0 us, 707 us, 790605 us, 5.41 ms)
+[it=1543] hydro_fvm compute time t=7.3724e-03 (Dt=4.753e-06) : 0.79561 s (4.08 ms, 0 us, 83 us, 785524 us, 4.02 ms)
 [rank 0] iteration #1544 - starting launcher [0][0] ...
 [rank 0] done
-[it=1544] hydro_fvm compute time t=7.3772e-03 (Dt=4.753e-06) : 0.80429 s (5.43 ms, 0 us, 695 us, 790457 us, 5.40 ms)
+[it=1544] hydro_fvm compute time t=7.3772e-03 (Dt=4.753e-06) : 0.79544 s (4.08 ms, 0 us, 81 us, 785378 us, 4.02 ms)
 [rank 0] iteration #1545 - starting launcher [0][0] ...
 [rank 0] done
-[it=1545] hydro_fvm compute time t=7.3820e-03 (Dt=4.753e-06) : 0.80454 s (5.44 ms, 0 us, 686 us, 790643 us, 5.44 ms)
+[it=1545] hydro_fvm compute time t=7.3820e-03 (Dt=4.753e-06) : 0.79575 s (4.08 ms, 0 us, 82 us, 785671 us, 4.02 ms)
 [rank 0] iteration #1546 - starting launcher [0][0] ...
 [rank 0] done
-[it=1546] hydro_fvm compute time t=7.3867e-03 (Dt=4.752e-06) : 0.80431 s (5.50 ms, 0 us, 698 us, 790421 us, 5.40 ms)
+[it=1546] hydro_fvm compute time t=7.3867e-03 (Dt=4.752e-06) : 0.79535 s (4.07 ms, 0 us, 81 us, 785270 us, 4.04 ms)
 [rank 0] iteration #1547 - starting launcher [0][0] ...
 [rank 0] done
-[it=1547] hydro_fvm compute time t=7.3915e-03 (Dt=4.752e-06) : 0.80364 s (5.45 ms, 0 us, 705 us, 789797 us, 5.39 ms)
+[it=1547] hydro_fvm compute time t=7.3915e-03 (Dt=4.752e-06) : 0.79560 s (4.06 ms, 0 us, 81 us, 785542 us, 4.03 ms)
 [rank 0] iteration #1548 - starting launcher [0][0] ...
 [rank 0] done
-[it=1548] hydro_fvm compute time t=7.3962e-03 (Dt=4.752e-06) : 0.80450 s (5.45 ms, 0 us, 702 us, 790639 us, 5.41 ms)
+[it=1548] hydro_fvm compute time t=7.3962e-03 (Dt=4.752e-06) : 0.79526 s (4.08 ms, 0 us, 80 us, 785197 us, 4.01 ms)
 [rank 0] iteration #1549 - starting launcher [0][0] ...
 [rank 0] done
-[it=1549] hydro_fvm compute time t=7.4010e-03 (Dt=4.752e-06) : 0.80440 s (5.45 ms, 0 us, 705 us, 790525 us, 5.44 ms)
+[it=1549] hydro_fvm compute time t=7.4010e-03 (Dt=4.752e-06) : 0.79525 s (4.08 ms, 0 us, 79 us, 785177 us, 4.02 ms)
 [rank 0] iteration #1550 - starting launcher [0][0] ...
 [rank 0] done
-[it=1550] hydro_fvm compute time t=7.4057e-03 (Dt=4.752e-06) : 0.80452 s (5.50 ms, 0 us, 684 us, 790654 us, 5.39 ms)
+[it=1550] hydro_fvm compute time t=7.4057e-03 (Dt=4.752e-06) : 0.79525 s (4.04 ms, 0 us, 80 us, 785230 us, 4.01 ms)
 [rank 0] iteration #1551 - starting launcher [0][0] ...
 [rank 0] done
-[it=1551] hydro_fvm compute time t=7.4105e-03 (Dt=4.752e-06) : 0.80417 s (5.47 ms, 0 us, 705 us, 790304 us, 5.40 ms)
+[it=1551] hydro_fvm compute time t=7.4105e-03 (Dt=4.752e-06) : 0.79556 s (4.08 ms, 0 us, 79 us, 785495 us, 4.02 ms)
 [rank 0] iteration #1552 - starting launcher [0][0] ...
 [rank 0] done
-[it=1552] hydro_fvm compute time t=7.4152e-03 (Dt=4.752e-06) : 0.80349 s (5.46 ms, 0 us, 706 us, 789609 us, 5.41 ms)
+[it=1552] hydro_fvm compute time t=7.4152e-03 (Dt=4.752e-06) : 0.79638 s (4.08 ms, 0 us, 83 us, 786309 us, 4.03 ms)
 [rank 0] iteration #1553 - starting launcher [0][0] ...
 [rank 0] done
-[it=1553] hydro_fvm compute time t=7.4200e-03 (Dt=4.752e-06) : 0.80415 s (5.44 ms, 0 us, 699 us, 790295 us, 5.41 ms)
+[it=1553] hydro_fvm compute time t=7.4200e-03 (Dt=4.752e-06) : 0.79571 s (4.05 ms, 0 us, 79 us, 785674 us, 4.02 ms)
 [rank 0] iteration #1554 - starting launcher [0][0] ...
 [rank 0] done
-[it=1554] hydro_fvm compute time t=7.4247e-03 (Dt=4.752e-06) : 0.80437 s (5.50 ms, 0 us, 687 us, 790485 us, 5.39 ms)
+[it=1554] hydro_fvm compute time t=7.4247e-03 (Dt=4.752e-06) : 0.79508 s (4.06 ms, 0 us, 80 us, 785047 us, 4.04 ms)
 [rank 0] iteration #1555 - starting launcher [0][0] ...
 [rank 0] done
-[it=1555] hydro_fvm compute time t=7.4295e-03 (Dt=4.752e-06) : 0.80384 s (5.45 ms, 0 us, 698 us, 789991 us, 5.39 ms)
+[it=1555] hydro_fvm compute time t=7.4295e-03 (Dt=4.752e-06) : 0.79559 s (4.03 ms, 0 us, 78 us, 785582 us, 4.02 ms)
 [rank 0] iteration #1556 - starting launcher [0][0] ...
 [rank 0] done
-[it=1556] hydro_fvm compute time t=7.4342e-03 (Dt=4.752e-06) : 0.80437 s (5.45 ms, 0 us, 691 us, 790539 us, 5.40 ms)
+[it=1556] hydro_fvm compute time t=7.4342e-03 (Dt=4.752e-06) : 0.79537 s (4.08 ms, 0 us, 81 us, 785291 us, 4.03 ms)
 [rank 0] iteration #1557 - starting launcher [0][0] ...
 [rank 0] done
-[it=1557] hydro_fvm compute time t=7.4390e-03 (Dt=4.752e-06) : 0.80402 s (5.44 ms, 0 us, 690 us, 790204 us, 5.39 ms)
+[it=1557] hydro_fvm compute time t=7.4390e-03 (Dt=4.752e-06) : 0.79537 s (4.03 ms, 0 us, 79 us, 785365 us, 4.01 ms)
 [rank 0] iteration #1558 - starting launcher [0][0] ...
 [rank 0] done
-[it=1558] hydro_fvm compute time t=7.4437e-03 (Dt=4.752e-06) : 0.80441 s (5.46 ms, 0 us, 679 us, 790580 us, 5.40 ms)
+[it=1558] hydro_fvm compute time t=7.4437e-03 (Dt=4.752e-06) : 0.79544 s (4.07 ms, 0 us, 80 us, 785375 us, 4.03 ms)
 [rank 0] iteration #1559 - starting launcher [0][0] ...
 [rank 0] done
-[it=1559] hydro_fvm compute time t=7.4485e-03 (Dt=4.752e-06) : 0.80371 s (5.47 ms, 0 us, 704 us, 789799 us, 5.42 ms)
+[it=1559] hydro_fvm compute time t=7.4485e-03 (Dt=4.752e-06) : 0.79542 s (4.09 ms, 0 us, 80 us, 785351 us, 4.02 ms)
 [rank 0] iteration #1560 - starting launcher [0][0] ...
 [rank 0] done
-[it=1560] hydro_fvm compute time t=7.4532e-03 (Dt=4.752e-06) : 0.80447 s (5.46 ms, 0 us, 704 us, 790619 us, 5.39 ms)
+[it=1560] hydro_fvm compute time t=7.4532e-03 (Dt=4.752e-06) : 0.79536 s (4.08 ms, 0 us, 79 us, 785290 us, 4.02 ms)
 [rank 0] iteration #1561 - starting launcher [0][0] ...
 [rank 0] done
-[it=1561] hydro_fvm compute time t=7.4580e-03 (Dt=4.752e-06) : 0.80403 s (5.45 ms, 0 us, 675 us, 790217 us, 5.39 ms)
+[it=1561] hydro_fvm compute time t=7.4580e-03 (Dt=4.752e-06) : 0.79562 s (4.17 ms, 0 us, 80 us, 785456 us, 4.02 ms)
 [rank 0] iteration #1562 - starting launcher [0][0] ...
 [rank 0] done
-[it=1562] hydro_fvm compute time t=7.4627e-03 (Dt=4.752e-06) : 0.80350 s (5.45 ms, 0 us, 706 us, 789627 us, 5.40 ms)
+[it=1562] hydro_fvm compute time t=7.4627e-03 (Dt=4.752e-06) : 0.79535 s (4.05 ms, 0 us, 80 us, 785298 us, 4.03 ms)
 [rank 0] iteration #1563 - starting launcher [0][0] ...
 [rank 0] done
-[it=1563] hydro_fvm compute time t=7.4675e-03 (Dt=4.752e-06) : 0.80405 s (5.47 ms, 0 us, 702 us, 790170 us, 5.40 ms)
+[it=1563] hydro_fvm compute time t=7.4675e-03 (Dt=4.752e-06) : 0.79655 s (4.08 ms, 0 us, 82 us, 786490 us, 4.02 ms)
 [rank 0] iteration #1564 - starting launcher [0][0] ...
 [rank 0] done
-[it=1564] hydro_fvm compute time t=7.4722e-03 (Dt=4.752e-06) : 0.80430 s (5.45 ms, 0 us, 703 us, 790440 us, 5.40 ms)
+[it=1564] hydro_fvm compute time t=7.4722e-03 (Dt=4.752e-06) : 0.79534 s (4.06 ms, 0 us, 79 us, 785284 us, 4.03 ms)
 [rank 0] iteration #1565 - starting launcher [0][0] ...
 [rank 0] done
-[it=1565] hydro_fvm compute time t=7.4770e-03 (Dt=4.752e-06) : 0.80433 s (5.41 ms, 0 us, 696 us, 790546 us, 5.40 ms)
+[it=1565] hydro_fvm compute time t=7.4770e-03 (Dt=4.752e-06) : 0.79733 s (4.02 ms, 0 us, 79 us, 787358 us, 4.00 ms)
 [rank 0] iteration #1566 - starting launcher [0][0] ...
 [rank 0] done
-[it=1566] hydro_fvm compute time t=7.4817e-03 (Dt=4.752e-06) : 0.80400 s (5.43 ms, 0 us, 701 us, 790192 us, 5.39 ms)
+[it=1566] hydro_fvm compute time t=7.4817e-03 (Dt=4.752e-06) : 0.79544 s (4.07 ms, 0 us, 80 us, 785313 us, 4.08 ms)
 [rank 0] iteration #1567 - starting launcher [0][0] ...
 [rank 0] done
-[it=1567] hydro_fvm compute time t=7.4865e-03 (Dt=4.752e-06) : 0.80414 s (5.45 ms, 0 us, 696 us, 790294 us, 5.40 ms)
+[it=1567] hydro_fvm compute time t=7.4865e-03 (Dt=4.752e-06) : 0.79575 s (4.12 ms, 0 us, 78 us, 785626 us, 4.04 ms)
 [rank 0] iteration #1568 - starting launcher [0][0] ...
 [rank 0] done
-[it=1568] hydro_fvm compute time t=7.4912e-03 (Dt=4.752e-06) : 0.80425 s (5.45 ms, 0 us, 698 us, 790399 us, 5.41 ms)
+[it=1568] hydro_fvm compute time t=7.4912e-03 (Dt=4.752e-06) : 0.79540 s (4.17 ms, 0 us, 80 us, 785215 us, 4.04 ms)
 [rank 0] iteration #1569 - starting launcher [0][0] ...
 [rank 0] done
-[it=1569] hydro_fvm compute time t=7.4960e-03 (Dt=4.751e-06) : 0.80459 s (5.46 ms, 0 us, 692 us, 790753 us, 5.39 ms)
+[it=1569] hydro_fvm compute time t=7.4960e-03 (Dt=4.751e-06) : 0.79574 s (4.18 ms, 0 us, 79 us, 785578 us, 4.04 ms)
 [rank 0] iteration #1570 - starting launcher [0][0] ...
 [rank 0] done
-[it=1570] hydro_fvm compute time t=7.5008e-03 (Dt=4.751e-06) : 0.80425 s (5.46 ms, 0 us, 676 us, 790420 us, 5.39 ms)
+[it=1570] hydro_fvm compute time t=7.5008e-03 (Dt=4.751e-06) : 0.79563 s (4.13 ms, 0 us, 80 us, 785524 us, 4.04 ms)
 [rank 0] iteration #1571 - starting launcher [0][0] ...
 [rank 0] done
-[it=1571] hydro_fvm compute time t=7.5055e-03 (Dt=4.751e-06) : 0.80405 s (5.46 ms, 0 us, 667 us, 790241 us, 5.38 ms)
+[it=1571] hydro_fvm compute time t=7.5055e-03 (Dt=4.751e-06) : 0.79567 s (4.20 ms, 0 us, 80 us, 785429 us, 4.05 ms)
 [rank 0] iteration #1572 - starting launcher [0][0] ...
 [rank 0] done
-[it=1572] hydro_fvm compute time t=7.5103e-03 (Dt=4.751e-06) : 0.80412 s (5.46 ms, 0 us, 697 us, 790266 us, 5.40 ms)
+[it=1572] hydro_fvm compute time t=7.5103e-03 (Dt=4.751e-06) : 0.79552 s (4.09 ms, 0 us, 80 us, 785449 us, 4.03 ms)
 [rank 0] iteration #1573 - starting launcher [0][0] ...
 [rank 0] done
-[it=1573] hydro_fvm compute time t=7.5150e-03 (Dt=4.751e-06) : 0.80401 s (5.45 ms, 0 us, 693 us, 790176 us, 5.39 ms)
+[it=1573] hydro_fvm compute time t=7.5150e-03 (Dt=4.751e-06) : 0.79748 s (4.08 ms, 0 us, 79 us, 787402 us, 4.02 ms)
 [rank 0] iteration #1574 - starting launcher [0][0] ...
 [rank 0] done
-[it=1574] hydro_fvm compute time t=7.5198e-03 (Dt=4.751e-06) : 0.80436 s (5.42 ms, 0 us, 695 us, 790544 us, 5.39 ms)
+[it=1574] hydro_fvm compute time t=7.5198e-03 (Dt=4.751e-06) : 0.79544 s (4.06 ms, 0 us, 78 us, 785380 us, 4.03 ms)
 [rank 0] iteration #1575 - starting launcher [0][0] ...
 [rank 0] done
-[it=1575] hydro_fvm compute time t=7.5245e-03 (Dt=4.751e-06) : 0.80431 s (5.44 ms, 0 us, 669 us, 790514 us, 5.39 ms)
+[it=1575] hydro_fvm compute time t=7.5245e-03 (Dt=4.751e-06) : 0.79571 s (4.09 ms, 0 us, 80 us, 785528 us, 4.06 ms)
 [rank 0] iteration #1576 - starting launcher [0][0] ...
 [rank 0] done
-[it=1576] hydro_fvm compute time t=7.5293e-03 (Dt=4.751e-06) : 0.80384 s (5.45 ms, 0 us, 652 us, 790079 us, 5.39 ms)
+[it=1576] hydro_fvm compute time t=7.5293e-03 (Dt=4.751e-06) : 0.79547 s (4.08 ms, 0 us, 79 us, 785407 us, 4.04 ms)
 [rank 0] iteration #1577 - starting launcher [0][0] ...
 [rank 0] done
-[it=1577] hydro_fvm compute time t=7.5340e-03 (Dt=4.751e-06) : 0.80410 s (5.44 ms, 0 us, 698 us, 790251 us, 5.40 ms)
+[it=1577] hydro_fvm compute time t=7.5340e-03 (Dt=4.751e-06) : 0.79570 s (4.16 ms, 0 us, 80 us, 785531 us, 4.03 ms)
 [rank 0] iteration #1578 - starting launcher [0][0] ...
 [rank 0] done
-[it=1578] hydro_fvm compute time t=7.5388e-03 (Dt=4.751e-06) : 0.80405 s (5.46 ms, 0 us, 699 us, 790193 us, 5.40 ms)
+[it=1578] hydro_fvm compute time t=7.5388e-03 (Dt=4.751e-06) : 0.79657 s (4.18 ms, 0 us, 80 us, 786373 us, 4.04 ms)
 [rank 0] iteration #1579 - starting launcher [0][0] ...
 [rank 0] done
-[it=1579] hydro_fvm compute time t=7.5435e-03 (Dt=4.751e-06) : 0.80443 s (5.45 ms, 0 us, 696 us, 790606 us, 5.39 ms)
+[it=1579] hydro_fvm compute time t=7.5435e-03 (Dt=4.751e-06) : 0.79571 s (4.21 ms, 0 us, 79 us, 785485 us, 4.04 ms)
 [rank 0] iteration #1580 - starting launcher [0][0] ...
 [rank 0] done
-[it=1580] hydro_fvm compute time t=7.5483e-03 (Dt=4.751e-06) : 0.80414 s (5.44 ms, 0 us, 703 us, 790302 us, 5.39 ms)
+[it=1580] hydro_fvm compute time t=7.5483e-03 (Dt=4.751e-06) : 0.79539 s (4.19 ms, 0 us, 79 us, 785182 us, 4.05 ms)
 [rank 0] iteration #1581 - starting launcher [0][0] ...
 [rank 0] done
-[it=1581] hydro_fvm compute time t=7.5530e-03 (Dt=4.751e-06) : 0.80430 s (5.43 ms, 0 us, 699 us, 790495 us, 5.39 ms)
+[it=1581] hydro_fvm compute time t=7.5530e-03 (Dt=4.751e-06) : 0.79555 s (4.19 ms, 0 us, 79 us, 785388 us, 4.04 ms)
 [rank 0] iteration #1582 - starting launcher [0][0] ...
 [rank 0] done
-[it=1582] hydro_fvm compute time t=7.5578e-03 (Dt=4.751e-06) : 0.80367 s (5.44 ms, 0 us, 701 us, 789846 us, 5.38 ms)
+[it=1582] hydro_fvm compute time t=7.5578e-03 (Dt=4.751e-06) : 0.79585 s (4.16 ms, 0 us, 79 us, 785710 us, 4.05 ms)
 [rank 0] iteration #1583 - starting launcher [0][0] ...
 [rank 0] done
-[it=1583] hydro_fvm compute time t=7.5625e-03 (Dt=4.751e-06) : 0.80385 s (5.42 ms, 0 us, 708 us, 790060 us, 5.38 ms)
+[it=1583] hydro_fvm compute time t=7.5625e-03 (Dt=4.751e-06) : 0.79574 s (4.19 ms, 0 us, 82 us, 785539 us, 4.05 ms)
 [rank 0] iteration #1584 - starting launcher [0][0] ...
 [rank 0] done
-[it=1584] hydro_fvm compute time t=7.5673e-03 (Dt=4.751e-06) : 0.80448 s (5.46 ms, 0 us, 700 us, 790640 us, 5.40 ms)
+[it=1584] hydro_fvm compute time t=7.5673e-03 (Dt=4.751e-06) : 0.79552 s (4.32 ms, 0 us, 80 us, 785206 us, 4.03 ms)
 [rank 0] iteration #1585 - starting launcher [0][0] ...
 [rank 0] done
-[it=1585] hydro_fvm compute time t=7.5720e-03 (Dt=4.751e-06) : 0.80418 s (5.45 ms, 0 us, 699 us, 790332 us, 5.40 ms)
+[it=1585] hydro_fvm compute time t=7.5720e-03 (Dt=4.751e-06) : 0.79658 s (4.20 ms, 0 us, 81 us, 786381 us, 4.03 ms)
 [rank 0] iteration #1586 - starting launcher [0][0] ...
 [rank 0] done
-[it=1586] hydro_fvm compute time t=7.5768e-03 (Dt=4.751e-06) : 0.80433 s (5.46 ms, 0 us, 699 us, 790480 us, 5.41 ms)
+[it=1586] hydro_fvm compute time t=7.5768e-03 (Dt=4.751e-06) : 0.79544 s (4.19 ms, 0 us, 79 us, 785237 us, 4.04 ms)
 [rank 0] iteration #1587 - starting launcher [0][0] ...
 [rank 0] done
-[it=1587] hydro_fvm compute time t=7.5815e-03 (Dt=4.751e-06) : 0.80420 s (5.49 ms, 0 us, 700 us, 790319 us, 5.39 ms)
+[it=1587] hydro_fvm compute time t=7.5815e-03 (Dt=4.751e-06) : 0.79581 s (4.20 ms, 0 us, 79 us, 785611 us, 4.04 ms)
 [rank 0] iteration #1588 - starting launcher [0][0] ...
 [rank 0] done
-[it=1588] hydro_fvm compute time t=7.5863e-03 (Dt=4.751e-06) : 0.80414 s (5.45 ms, 0 us, 679 us, 790323 us, 5.40 ms)
+[it=1588] hydro_fvm compute time t=7.5863e-03 (Dt=4.751e-06) : 0.79557 s (4.17 ms, 0 us, 78 us, 785387 us, 4.05 ms)
 [rank 0] iteration #1589 - starting launcher [0][0] ...
 [rank 0] done
-[it=1589] hydro_fvm compute time t=7.5910e-03 (Dt=4.751e-06) : 0.80435 s (5.45 ms, 0 us, 695 us, 790508 us, 5.40 ms)
+[it=1589] hydro_fvm compute time t=7.5910e-03 (Dt=4.751e-06) : 0.79583 s (4.35 ms, 0 us, 80 us, 785413 us, 4.06 ms)
 [rank 0] iteration #1590 - starting launcher [0][0] ...
 [rank 0] done
-[it=1590] hydro_fvm compute time t=7.5958e-03 (Dt=4.751e-06) : 0.80414 s (5.44 ms, 0 us, 659 us, 790348 us, 5.39 ms)
+[it=1590] hydro_fvm compute time t=7.5958e-03 (Dt=4.751e-06) : 0.79558 s (4.23 ms, 0 us, 80 us, 785379 us, 4.04 ms)
 [rank 0] iteration #1591 - starting launcher [0][0] ...
 [rank 0] done
-[it=1591] hydro_fvm compute time t=7.6005e-03 (Dt=4.751e-06) : 0.80437 s (5.45 ms, 0 us, 703 us, 790490 us, 5.41 ms)
+[it=1591] hydro_fvm compute time t=7.6005e-03 (Dt=4.751e-06) : 0.79569 s (4.20 ms, 0 us, 80 us, 785492 us, 4.03 ms)
 [rank 0] iteration #1592 - starting launcher [0][0] ...
 [rank 0] done
-[it=1592] hydro_fvm compute time t=7.6053e-03 (Dt=4.750e-06) : 0.80381 s (5.48 ms, 0 us, 686 us, 789970 us, 5.38 ms)
+[it=1592] hydro_fvm compute time t=7.6053e-03 (Dt=4.750e-06) : 0.79546 s (4.21 ms, 0 us, 80 us, 785277 us, 4.05 ms)
 [rank 0] iteration #1593 - starting launcher [0][0] ...
 [rank 0] done
-[it=1593] hydro_fvm compute time t=7.6100e-03 (Dt=4.750e-06) : 0.80429 s (5.42 ms, 0 us, 687 us, 790489 us, 5.40 ms)
+[it=1593] hydro_fvm compute time t=7.6100e-03 (Dt=4.750e-06) : 0.79580 s (4.20 ms, 0 us, 79 us, 785631 us, 4.04 ms)
 [rank 0] iteration #1594 - starting launcher [0][0] ...
 [rank 0] done
-[it=1594] hydro_fvm compute time t=7.6148e-03 (Dt=4.750e-06) : 0.80420 s (5.45 ms, 0 us, 686 us, 790364 us, 5.40 ms)
+[it=1594] hydro_fvm compute time t=7.6148e-03 (Dt=4.750e-06) : 0.79558 s (4.19 ms, 0 us, 78 us, 785404 us, 4.06 ms)
 [rank 0] iteration #1595 - starting launcher [0][0] ...
 [rank 0] done
-[it=1595] hydro_fvm compute time t=7.6195e-03 (Dt=4.750e-06) : 0.80391 s (5.45 ms, 0 us, 668 us, 790103 us, 5.39 ms)
+[it=1595] hydro_fvm compute time t=7.6195e-03 (Dt=4.750e-06) : 0.79575 s (4.20 ms, 0 us, 79 us, 785470 us, 4.05 ms)
 [rank 0] iteration #1596 - starting launcher [0][0] ...
 [rank 0] done
-[it=1596] hydro_fvm compute time t=7.6243e-03 (Dt=4.750e-06) : 0.80426 s (5.46 ms, 0 us, 697 us, 790391 us, 5.40 ms)
+[it=1596] hydro_fvm compute time t=7.6243e-03 (Dt=4.750e-06) : 0.79550 s (4.20 ms, 0 us, 79 us, 785340 us, 4.01 ms)
 [rank 0] iteration #1597 - starting launcher [0][0] ...
 [rank 0] done
-[it=1597] hydro_fvm compute time t=7.6290e-03 (Dt=4.750e-06) : 0.80441 s (5.48 ms, 0 us, 669 us, 790577 us, 5.38 ms)
+[it=1597] hydro_fvm compute time t=7.6290e-03 (Dt=4.750e-06) : 0.79562 s (4.07 ms, 0 us, 80 us, 785554 us, 4.03 ms)
 [rank 0] iteration #1598 - starting launcher [0][0] ...
 [rank 0] done
-[it=1598] hydro_fvm compute time t=7.6338e-03 (Dt=4.750e-06) : 0.80445 s (5.44 ms, 0 us, 707 us, 790594 us, 5.39 ms)
+[it=1598] hydro_fvm compute time t=7.6338e-03 (Dt=4.750e-06) : 0.79553 s (4.09 ms, 0 us, 77 us, 785356 us, 4.05 ms)
 [rank 0] iteration #1599 - starting launcher [0][0] ...
 [rank 0] done
-[it=1599] hydro_fvm compute time t=7.6385e-03 (Dt=4.750e-06) : 0.80479 s (5.43 ms, 0 us, 683 us, 790586 us, 5.53 ms)
+[it=1599] hydro_fvm compute time t=7.6385e-03 (Dt=4.750e-06) : 0.79596 s (4.14 ms, 0 us, 77 us, 785719 us, 4.11 ms)
 [rank 0] iteration #1600 - starting launcher [0][0] ...
 [rank 0] done
-[it=1600] hydro_fvm compute time t=7.6433e-03 (Dt=4.750e-06) : 0.80456 s (5.57 ms, 0 us, 698 us, 790539 us, 5.40 ms)
+[it=1600] hydro_fvm compute time t=7.6433e-03 (Dt=4.750e-06) : 0.79568 s (4.18 ms, 0 us, 82 us, 785482 us, 4.03 ms)
 [rank 0] iteration #1601 - starting launcher [0][0] ...
 [rank 0] done
-[it=1601] hydro_fvm compute time t=7.6480e-03 (Dt=4.750e-06) : 0.80377 s (5.45 ms, 0 us, 688 us, 789905 us, 5.42 ms)
+[it=1601] hydro_fvm compute time t=7.6480e-03 (Dt=4.750e-06) : 0.79635 s (4.17 ms, 0 us, 78 us, 786168 us, 4.05 ms)
 [rank 0] iteration #1602 - starting launcher [0][0] ...
 [rank 0] done
-[it=1602] hydro_fvm compute time t=7.6528e-03 (Dt=4.750e-06) : 0.80349 s (5.49 ms, 0 us, 699 us, 789620 us, 5.38 ms)
+[it=1602] hydro_fvm compute time t=7.6528e-03 (Dt=4.750e-06) : 0.79547 s (4.16 ms, 0 us, 80 us, 785282 us, 4.06 ms)
 [rank 0] iteration #1603 - starting launcher [0][0] ...
 [rank 0] done
-[it=1603] hydro_fvm compute time t=7.6575e-03 (Dt=4.750e-06) : 0.80377 s (5.44 ms, 0 us, 689 us, 789933 us, 5.40 ms)
+[it=1603] hydro_fvm compute time t=7.6575e-03 (Dt=4.750e-06) : 0.79569 s (4.18 ms, 0 us, 79 us, 785496 us, 4.04 ms)
 [rank 0] iteration #1604 - starting launcher [0][0] ...
 [rank 0] done
-[it=1604] hydro_fvm compute time t=7.6623e-03 (Dt=4.750e-06) : 0.80437 s (5.45 ms, 0 us, 687 us, 790516 us, 5.41 ms)
+[it=1604] hydro_fvm compute time t=7.6623e-03 (Dt=4.750e-06) : 0.79543 s (4.18 ms, 0 us, 79 us, 785265 us, 4.05 ms)
 [rank 0] iteration #1605 - starting launcher [0][0] ...
 [rank 0] done
-[it=1605] hydro_fvm compute time t=7.6670e-03 (Dt=4.750e-06) : 0.80435 s (5.47 ms, 0 us, 669 us, 790520 us, 5.39 ms)
+[it=1605] hydro_fvm compute time t=7.6670e-03 (Dt=4.750e-06) : 0.79564 s (4.19 ms, 0 us, 78 us, 785460 us, 4.05 ms)
 [rank 0] iteration #1606 - starting launcher [0][0] ...
 [rank 0] done
-[it=1606] hydro_fvm compute time t=7.6718e-03 (Dt=4.750e-06) : 0.80442 s (5.47 ms, 0 us, 700 us, 790501 us, 5.43 ms)
+[it=1606] hydro_fvm compute time t=7.6718e-03 (Dt=4.750e-06) : 0.79570 s (4.35 ms, 0 us, 80 us, 785319 us, 4.07 ms)
 [rank 0] iteration #1607 - starting launcher [0][0] ...
 [rank 0] done
-[it=1607] hydro_fvm compute time t=7.6765e-03 (Dt=4.750e-06) : 0.80382 s (5.49 ms, 0 us, 709 us, 789931 us, 5.40 ms)
+[it=1607] hydro_fvm compute time t=7.6765e-03 (Dt=4.750e-06) : 0.79576 s (4.21 ms, 0 us, 80 us, 785528 us, 4.06 ms)
 [rank 0] iteration #1608 - starting launcher [0][0] ...
 [rank 0] done
-[it=1608] hydro_fvm compute time t=7.6813e-03 (Dt=4.750e-06) : 0.80424 s (5.45 ms, 0 us, 686 us, 790418 us, 5.40 ms)
+[it=1608] hydro_fvm compute time t=7.6813e-03 (Dt=4.750e-06) : 0.79568 s (4.21 ms, 0 us, 79 us, 785464 us, 4.04 ms)
 [rank 0] iteration #1609 - starting launcher [0][0] ...
 [rank 0] done
-[it=1609] hydro_fvm compute time t=7.6860e-03 (Dt=4.750e-06) : 0.80432 s (5.48 ms, 0 us, 713 us, 790437 us, 5.39 ms)
+[it=1609] hydro_fvm compute time t=7.6860e-03 (Dt=4.750e-06) : 0.79555 s (4.20 ms, 0 us, 80 us, 785324 us, 4.06 ms)
 [rank 0] iteration #1610 - starting launcher [0][0] ...
 [rank 0] done
-[it=1610] hydro_fvm compute time t=7.6908e-03 (Dt=4.750e-06) : 0.80445 s (5.48 ms, 0 us, 680 us, 790602 us, 5.40 ms)
+[it=1610] hydro_fvm compute time t=7.6908e-03 (Dt=4.750e-06) : 0.79556 s (4.19 ms, 0 us, 81 us, 785348 us, 4.05 ms)
 [rank 0] iteration #1611 - starting launcher [0][0] ...
 [rank 0] done
-[it=1611] hydro_fvm compute time t=7.6955e-03 (Dt=4.750e-06) : 0.80450 s (5.47 ms, 0 us, 694 us, 790653 us, 5.38 ms)
+[it=1611] hydro_fvm compute time t=7.6955e-03 (Dt=4.750e-06) : 0.79797 s (4.22 ms, 0 us, 80 us, 787755 us, 4.04 ms)
 [rank 0] iteration #1612 - starting launcher [0][0] ...
 [rank 0] done
-[it=1612] hydro_fvm compute time t=7.7003e-03 (Dt=4.750e-06) : 0.80383 s (5.45 ms, 0 us, 696 us, 789984 us, 5.40 ms)
+[it=1612] hydro_fvm compute time t=7.7003e-03 (Dt=4.750e-06) : 0.79550 s (4.24 ms, 0 us, 78 us, 785279 us, 4.02 ms)
 [rank 0] iteration #1613 - starting launcher [0][0] ...
 [rank 0] done
-[it=1613] hydro_fvm compute time t=7.7050e-03 (Dt=4.750e-06) : 0.80428 s (5.47 ms, 0 us, 708 us, 790430 us, 5.38 ms)
+[it=1613] hydro_fvm compute time t=7.7050e-03 (Dt=4.750e-06) : 0.79583 s (4.20 ms, 0 us, 80 us, 785632 us, 4.04 ms)
 [rank 0] iteration #1614 - starting launcher [0][0] ...
 [rank 0] done
-[it=1614] hydro_fvm compute time t=7.7098e-03 (Dt=4.749e-06) : 0.80414 s (5.45 ms, 0 us, 664 us, 790317 us, 5.40 ms)
+[it=1614] hydro_fvm compute time t=7.7098e-03 (Dt=4.749e-06) : 0.79538 s (4.15 ms, 0 us, 80 us, 785221 us, 4.05 ms)
 [rank 0] iteration #1615 - starting launcher [0][0] ...
 [rank 0] done
-[it=1615] hydro_fvm compute time t=7.7145e-03 (Dt=4.749e-06) : 0.80425 s (5.46 ms, 0 us, 687 us, 790395 us, 5.41 ms)
+[it=1615] hydro_fvm compute time t=7.7145e-03 (Dt=4.749e-06) : 0.79581 s (4.24 ms, 0 us, 79 us, 785595 us, 4.05 ms)
 [rank 0] iteration #1616 - starting launcher [0][0] ...
 [rank 0] done
-[it=1616] hydro_fvm compute time t=7.7193e-03 (Dt=4.749e-06) : 0.80401 s (5.46 ms, 0 us, 679 us, 790166 us, 5.41 ms)
+[it=1616] hydro_fvm compute time t=7.7193e-03 (Dt=4.749e-06) : 0.79564 s (4.19 ms, 0 us, 79 us, 785432 us, 4.05 ms)
 [rank 0] iteration #1617 - starting launcher [0][0] ...
 [rank 0] done
-[it=1617] hydro_fvm compute time t=7.7240e-03 (Dt=4.749e-06) : 0.80451 s (5.45 ms, 0 us, 705 us, 790678 us, 5.39 ms)
+[it=1617] hydro_fvm compute time t=7.7240e-03 (Dt=4.749e-06) : 0.79631 s (4.21 ms, 0 us, 86 us, 786046 us, 4.04 ms)
 [rank 0] iteration #1618 - starting launcher [0][0] ...
 [rank 0] done
-[it=1618] hydro_fvm compute time t=7.7288e-03 (Dt=4.749e-06) : 0.80391 s (5.46 ms, 0 us, 694 us, 790058 us, 5.40 ms)
+[it=1618] hydro_fvm compute time t=7.7288e-03 (Dt=4.749e-06) : 0.79551 s (4.24 ms, 0 us, 80 us, 785277 us, 4.03 ms)
 [rank 0] iteration #1619 - starting launcher [0][0] ...
 [rank 0] done
-[it=1619] hydro_fvm compute time t=7.7335e-03 (Dt=4.749e-06) : 0.80395 s (5.46 ms, 0 us, 692 us, 790101 us, 5.40 ms)
+[it=1619] hydro_fvm compute time t=7.7335e-03 (Dt=4.749e-06) : 0.79596 s (4.24 ms, 0 us, 80 us, 785607 us, 4.08 ms)
 [rank 0] iteration #1620 - starting launcher [0][0] ...
 [rank 0] done
-[it=1620] hydro_fvm compute time t=7.7383e-03 (Dt=4.749e-06) : 0.80420 s (5.43 ms, 0 us, 686 us, 790408 us, 5.40 ms)
+[it=1620] hydro_fvm compute time t=7.7383e-03 (Dt=4.749e-06) : 0.79551 s (4.18 ms, 0 us, 79 us, 785350 us, 4.01 ms)
 [rank 0] iteration #1621 - starting launcher [0][0] ...
 [rank 0] done
-[it=1621] hydro_fvm compute time t=7.7430e-03 (Dt=4.749e-06) : 0.80435 s (5.46 ms, 0 us, 697 us, 790503 us, 5.40 ms)
+[it=1621] hydro_fvm compute time t=7.7430e-03 (Dt=4.749e-06) : 0.79665 s (4.06 ms, 0 us, 80 us, 786595 us, 4.02 ms)
 [rank 0] iteration #1622 - starting launcher [0][0] ...
 [rank 0] done
-[it=1622] hydro_fvm compute time t=7.7478e-03 (Dt=4.749e-06) : 0.80415 s (5.48 ms, 0 us, 694 us, 790323 us, 5.38 ms)
+[it=1622] hydro_fvm compute time t=7.7478e-03 (Dt=4.749e-06) : 0.79526 s (4.09 ms, 0 us, 81 us, 785190 us, 4.02 ms)
 [rank 0] iteration #1623 - starting launcher [0][0] ...
 [rank 0] done
-[it=1623] hydro_fvm compute time t=7.7525e-03 (Dt=4.749e-06) : 0.80438 s (5.43 ms, 0 us, 692 us, 790565 us, 5.39 ms)
+[it=1623] hydro_fvm compute time t=7.7525e-03 (Dt=4.749e-06) : 0.79563 s (4.09 ms, 0 us, 83 us, 785477 us, 4.04 ms)
 [rank 0] iteration #1624 - starting launcher [0][0] ...
 [rank 0] done
-[it=1624] hydro_fvm compute time t=7.7573e-03 (Dt=4.749e-06) : 0.80416 s (5.46 ms, 0 us, 711 us, 790303 us, 5.39 ms)
+[it=1624] hydro_fvm compute time t=7.7573e-03 (Dt=4.749e-06) : 0.79553 s (4.09 ms, 0 us, 80 us, 785464 us, 4.02 ms)
 [rank 0] iteration #1625 - starting launcher [0][0] ...
 [rank 0] done
-[it=1625] hydro_fvm compute time t=7.7620e-03 (Dt=4.749e-06) : 0.80415 s (5.46 ms, 0 us, 616 us, 790390 us, 5.39 ms)
+[it=1625] hydro_fvm compute time t=7.7620e-03 (Dt=4.749e-06) : 0.79569 s (4.07 ms, 0 us, 79 us, 785640 us, 4.02 ms)
 [rank 0] iteration #1626 - starting launcher [0][0] ...
 [rank 0] done
-[it=1626] hydro_fvm compute time t=7.7668e-03 (Dt=4.749e-06) : 0.80398 s (5.45 ms, 0 us, 690 us, 790154 us, 5.38 ms)
+[it=1626] hydro_fvm compute time t=7.7668e-03 (Dt=4.749e-06) : 0.79547 s (4.06 ms, 0 us, 79 us, 785425 us, 4.01 ms)
 [rank 0] iteration #1627 - starting launcher [0][0] ...
 [rank 0] done
-[it=1627] hydro_fvm compute time t=7.7715e-03 (Dt=4.749e-06) : 0.80412 s (5.45 ms, 0 us, 695 us, 790273 us, 5.40 ms)
+[it=1627] hydro_fvm compute time t=7.7715e-03 (Dt=4.749e-06) : 0.79554 s (4.04 ms, 0 us, 79 us, 785510 us, 4.03 ms)
 [rank 0] iteration #1628 - starting launcher [0][0] ...
 [rank 0] done
-[it=1628] hydro_fvm compute time t=7.7763e-03 (Dt=4.749e-06) : 0.80417 s (5.43 ms, 0 us, 704 us, 790357 us, 5.39 ms)
+[it=1628] hydro_fvm compute time t=7.7763e-03 (Dt=4.749e-06) : 0.79519 s (4.08 ms, 0 us, 79 us, 785095 us, 4.04 ms)
 [rank 0] iteration #1629 - starting launcher [0][0] ...
 [rank 0] done
-[it=1629] hydro_fvm compute time t=7.7810e-03 (Dt=4.749e-06) : 0.80438 s (5.47 ms, 0 us, 690 us, 790531 us, 5.41 ms)
+[it=1629] hydro_fvm compute time t=7.7810e-03 (Dt=4.749e-06) : 0.79539 s (4.08 ms, 0 us, 80 us, 785332 us, 4.02 ms)
 [rank 0] iteration #1630 - starting launcher [0][0] ...
 [rank 0] done
-[it=1630] hydro_fvm compute time t=7.7858e-03 (Dt=4.749e-06) : 0.80445 s (5.46 ms, 0 us, 701 us, 790590 us, 5.39 ms)
+[it=1630] hydro_fvm compute time t=7.7858e-03 (Dt=4.749e-06) : 0.79530 s (4.08 ms, 0 us, 79 us, 785230 us, 4.02 ms)
 [rank 0] iteration #1631 - starting launcher [0][0] ...
 [rank 0] done
-[it=1631] hydro_fvm compute time t=7.7905e-03 (Dt=4.749e-06) : 0.80424 s (5.46 ms, 0 us, 685 us, 790371 us, 5.40 ms)
+[it=1631] hydro_fvm compute time t=7.7905e-03 (Dt=4.749e-06) : 0.79547 s (4.08 ms, 0 us, 79 us, 785418 us, 4.02 ms)
 [rank 0] iteration #1632 - starting launcher [0][0] ...
 [rank 0] done
-[it=1632] hydro_fvm compute time t=7.7953e-03 (Dt=4.749e-06) : 0.80373 s (5.48 ms, 0 us, 690 us, 789866 us, 5.40 ms)
+[it=1632] hydro_fvm compute time t=7.7953e-03 (Dt=4.749e-06) : 0.79511 s (4.06 ms, 0 us, 79 us, 785075 us, 4.02 ms)
 [rank 0] iteration #1633 - starting launcher [0][0] ...
 [rank 0] done
-[it=1633] hydro_fvm compute time t=7.8000e-03 (Dt=4.749e-06) : 0.80353 s (5.46 ms, 0 us, 687 us, 789697 us, 5.40 ms)
+[it=1633] hydro_fvm compute time t=7.8000e-03 (Dt=4.749e-06) : 0.79540 s (4.06 ms, 0 us, 79 us, 785369 us, 4.01 ms)
 [rank 0] iteration #1634 - starting launcher [0][0] ...
 [rank 0] done
-[it=1634] hydro_fvm compute time t=7.8048e-03 (Dt=4.749e-06) : 0.80409 s (5.47 ms, 0 us, 692 us, 790251 us, 5.40 ms)
+[it=1634] hydro_fvm compute time t=7.8048e-03 (Dt=4.749e-06) : 0.79538 s (4.08 ms, 0 us, 78 us, 785320 us, 4.02 ms)
 [rank 0] iteration #1635 - starting launcher [0][0] ...
 [rank 0] done
-[it=1635] hydro_fvm compute time t=7.8095e-03 (Dt=4.749e-06) : 0.80455 s (5.49 ms, 0 us, 705 us, 790657 us, 5.40 ms)
+[it=1635] hydro_fvm compute time t=7.8095e-03 (Dt=4.749e-06) : 0.79555 s (4.06 ms, 0 us, 78 us, 785527 us, 4.00 ms)
 [rank 0] iteration #1636 - starting launcher [0][0] ...
 [rank 0] done
-[it=1636] hydro_fvm compute time t=7.8143e-03 (Dt=4.749e-06) : 0.80413 s (5.44 ms, 0 us, 699 us, 790295 us, 5.38 ms)
+[it=1636] hydro_fvm compute time t=7.8143e-03 (Dt=4.749e-06) : 0.79517 s (4.08 ms, 0 us, 80 us, 785093 us, 4.02 ms)
 [rank 0] iteration #1637 - starting launcher [0][0] ...
 [rank 0] done
-[it=1637] hydro_fvm compute time t=7.8190e-03 (Dt=4.748e-06) : 0.80433 s (5.45 ms, 0 us, 681 us, 790529 us, 5.38 ms)
+[it=1637] hydro_fvm compute time t=7.8190e-03 (Dt=4.748e-06) : 0.79614 s (4.06 ms, 0 us, 80 us, 786109 us, 4.01 ms)
 [rank 0] iteration #1638 - starting launcher [0][0] ...
 [rank 0] done
-[it=1638] hydro_fvm compute time t=7.8237e-03 (Dt=4.748e-06) : 0.80411 s (5.46 ms, 0 us, 703 us, 790261 us, 5.40 ms)
+[it=1638] hydro_fvm compute time t=7.8237e-03 (Dt=4.748e-06) : 0.79543 s (4.07 ms, 0 us, 84 us, 785388 us, 4.01 ms)
 [rank 0] iteration #1639 - starting launcher [0][0] ...
 [rank 0] done
-[it=1639] hydro_fvm compute time t=7.8285e-03 (Dt=4.748e-06) : 0.80432 s (5.45 ms, 0 us, 701 us, 790492 us, 5.38 ms)
+[it=1639] hydro_fvm compute time t=7.8285e-03 (Dt=4.748e-06) : 0.79540 s (4.07 ms, 0 us, 79 us, 785359 us, 4.01 ms)
 [rank 0] iteration #1640 - starting launcher [0][0] ...
 [rank 0] done
-[it=1640] hydro_fvm compute time t=7.8332e-03 (Dt=4.748e-06) : 0.80428 s (5.43 ms, 0 us, 701 us, 790445 us, 5.40 ms)
+[it=1640] hydro_fvm compute time t=7.8332e-03 (Dt=4.748e-06) : 0.79527 s (4.10 ms, 0 us, 78 us, 785211 us, 4.04 ms)
 [rank 0] iteration #1641 - starting launcher [0][0] ...
 [rank 0] done
-[it=1641] hydro_fvm compute time t=7.8380e-03 (Dt=4.748e-06) : 0.80401 s (5.46 ms, 0 us, 705 us, 790146 us, 5.41 ms)
+[it=1641] hydro_fvm compute time t=7.8380e-03 (Dt=4.748e-06) : 0.79574 s (4.07 ms, 0 us, 80 us, 785697 us, 4.01 ms)
 [rank 0] iteration #1642 - starting launcher [0][0] ...
 [rank 0] done
-[it=1642] hydro_fvm compute time t=7.8427e-03 (Dt=4.748e-06) : 0.80423 s (5.46 ms, 0 us, 707 us, 790356 us, 5.41 ms)
+[it=1642] hydro_fvm compute time t=7.8427e-03 (Dt=4.748e-06) : 0.79570 s (4.07 ms, 0 us, 78 us, 785648 us, 4.02 ms)
 [rank 0] iteration #1643 - starting launcher [0][0] ...
 [rank 0] done
-[it=1643] hydro_fvm compute time t=7.8475e-03 (Dt=4.748e-06) : 0.80414 s (5.45 ms, 0 us, 695 us, 790300 us, 5.40 ms)
+[it=1643] hydro_fvm compute time t=7.8475e-03 (Dt=4.748e-06) : 0.79802 s (4.07 ms, 0 us, 77 us, 787972 us, 4.02 ms)
 [rank 0] iteration #1644 - starting launcher [0][0] ...
 [rank 0] done
-[it=1644] hydro_fvm compute time t=7.8522e-03 (Dt=4.748e-06) : 0.80392 s (5.47 ms, 0 us, 700 us, 790000 us, 5.44 ms)
+[it=1644] hydro_fvm compute time t=7.8522e-03 (Dt=4.748e-06) : 0.79648 s (4.08 ms, 0 us, 78 us, 786419 us, 4.02 ms)
 [rank 0] iteration #1645 - starting launcher [0][0] ...
 [rank 0] done
-[it=1645] hydro_fvm compute time t=7.8570e-03 (Dt=4.748e-06) : 0.80461 s (5.50 ms, 0 us, 707 us, 790707 us, 5.40 ms)
+[it=1645] hydro_fvm compute time t=7.8570e-03 (Dt=4.748e-06) : 0.79567 s (4.06 ms, 0 us, 80 us, 785646 us, 4.01 ms)
 [rank 0] iteration #1646 - starting launcher [0][0] ...
 [rank 0] done
-[it=1646] hydro_fvm compute time t=7.8617e-03 (Dt=4.748e-06) : 0.80379 s (5.47 ms, 0 us, 661 us, 789970 us, 5.40 ms)
+[it=1646] hydro_fvm compute time t=7.8617e-03 (Dt=4.748e-06) : 0.79564 s (4.08 ms, 0 us, 78 us, 785496 us, 4.11 ms)
 [rank 0] iteration #1647 - starting launcher [0][0] ...
 [rank 0] done
-[it=1647] hydro_fvm compute time t=7.8665e-03 (Dt=4.748e-06) : 0.80390 s (5.44 ms, 0 us, 696 us, 789994 us, 5.44 ms)
+[it=1647] hydro_fvm compute time t=7.8665e-03 (Dt=4.748e-06) : 0.79587 s (4.08 ms, 0 us, 80 us, 785817 us, 4.02 ms)
 [rank 0] iteration #1648 - starting launcher [0][0] ...
 [rank 0] done
-[it=1648] hydro_fvm compute time t=7.8712e-03 (Dt=4.748e-06) : 0.80426 s (5.48 ms, 0 us, 644 us, 790428 us, 5.40 ms)
+[it=1648] hydro_fvm compute time t=7.8712e-03 (Dt=4.748e-06) : 0.79519 s (4.05 ms, 0 us, 79 us, 785157 us, 4.03 ms)
 [rank 0] iteration #1649 - starting launcher [0][0] ...
 [rank 0] done
-[it=1649] hydro_fvm compute time t=7.8760e-03 (Dt=4.748e-06) : 0.80424 s (5.46 ms, 0 us, 703 us, 790370 us, 5.41 ms)
+[it=1649] hydro_fvm compute time t=7.8760e-03 (Dt=4.748e-06) : 0.79579 s (4.07 ms, 0 us, 77 us, 785752 us, 4.02 ms)
 [rank 0] iteration #1650 - starting launcher [0][0] ...
 [rank 0] done
-[it=1650] hydro_fvm compute time t=7.8807e-03 (Dt=4.748e-06) : 0.80433 s (5.50 ms, 0 us, 696 us, 790425 us, 5.40 ms)
+[it=1650] hydro_fvm compute time t=7.8807e-03 (Dt=4.748e-06) : 0.79539 s (4.06 ms, 0 us, 77 us, 785357 us, 4.03 ms)
 [rank 0] iteration #1651 - starting launcher [0][0] ...
 [rank 0] done
-[it=1651] hydro_fvm compute time t=7.8855e-03 (Dt=4.748e-06) : 0.80387 s (5.46 ms, 0 us, 700 us, 790018 us, 5.40 ms)
+[it=1651] hydro_fvm compute time t=7.8855e-03 (Dt=4.748e-06) : 0.79561 s (4.08 ms, 0 us, 79 us, 785564 us, 4.01 ms)
 [rank 0] iteration #1652 - starting launcher [0][0] ...
 [rank 0] done
-[it=1652] hydro_fvm compute time t=7.8902e-03 (Dt=4.748e-06) : 0.80406 s (5.44 ms, 0 us, 689 us, 790207 us, 5.42 ms)
+[it=1652] hydro_fvm compute time t=7.8902e-03 (Dt=4.748e-06) : 0.79576 s (4.06 ms, 0 us, 78 us, 785620 us, 4.08 ms)
 [rank 0] iteration #1653 - starting launcher [0][0] ...
 [rank 0] done
-[it=1653] hydro_fvm compute time t=7.8950e-03 (Dt=4.748e-06) : 0.80459 s (5.48 ms, 0 us, 657 us, 790747 us, 5.40 ms)
+[it=1653] hydro_fvm compute time t=7.8950e-03 (Dt=4.748e-06) : 0.79555 s (4.13 ms, 0 us, 79 us, 785424 us, 4.05 ms)
 [rank 0] iteration #1654 - starting launcher [0][0] ...
 [rank 0] done
-[it=1654] hydro_fvm compute time t=7.8997e-03 (Dt=4.748e-06) : 0.80368 s (5.44 ms, 0 us, 687 us, 789887 us, 5.41 ms)
+[it=1654] hydro_fvm compute time t=7.8997e-03 (Dt=4.748e-06) : 0.79535 s (4.21 ms, 0 us, 78 us, 785134 us, 4.04 ms)
 [rank 0] iteration #1655 - starting launcher [0][0] ...
 [rank 0] done
-[it=1655] hydro_fvm compute time t=7.9045e-03 (Dt=4.748e-06) : 0.80453 s (5.44 ms, 0 us, 687 us, 790731 us, 5.39 ms)
+[it=1655] hydro_fvm compute time t=7.9045e-03 (Dt=4.748e-06) : 0.79583 s (4.19 ms, 0 us, 82 us, 785617 us, 4.05 ms)
 [rank 0] iteration #1656 - starting launcher [0][0] ...
 [rank 0] done
-[it=1656] hydro_fvm compute time t=7.9092e-03 (Dt=4.748e-06) : 0.80401 s (5.46 ms, 0 us, 701 us, 790145 us, 5.41 ms)
+[it=1656] hydro_fvm compute time t=7.9092e-03 (Dt=4.748e-06) : 0.79649 s (4.20 ms, 0 us, 78 us, 786284 us, 4.04 ms)
 [rank 0] iteration #1657 - starting launcher [0][0] ...
 [rank 0] done
-[it=1657] hydro_fvm compute time t=7.9140e-03 (Dt=4.748e-06) : 0.80421 s (5.48 ms, 0 us, 648 us, 790337 us, 5.42 ms)
+[it=1657] hydro_fvm compute time t=7.9140e-03 (Dt=4.748e-06) : 0.79567 s (4.19 ms, 0 us, 79 us, 785468 us, 4.03 ms)
 [rank 0] iteration #1658 - starting launcher [0][0] ...
 [rank 0] done
-[it=1658] hydro_fvm compute time t=7.9187e-03 (Dt=4.748e-06) : 0.80350 s (5.48 ms, 0 us, 690 us, 789619 us, 5.42 ms)
+[it=1658] hydro_fvm compute time t=7.9187e-03 (Dt=4.748e-06) : 0.79530 s (4.20 ms, 0 us, 82 us, 785100 us, 4.03 ms)
 [rank 0] iteration #1659 - starting launcher [0][0] ...
 [rank 0] done
-[it=1659] hydro_fvm compute time t=7.9235e-03 (Dt=4.748e-06) : 0.80350 s (5.48 ms, 0 us, 707 us, 789605 us, 5.41 ms)
+[it=1659] hydro_fvm compute time t=7.9235e-03 (Dt=4.748e-06) : 0.79575 s (4.19 ms, 0 us, 80 us, 785533 us, 4.05 ms)
 [rank 0] iteration #1660 - starting launcher [0][0] ...
 [rank 0] done
-[it=1660] hydro_fvm compute time t=7.9282e-03 (Dt=4.747e-06) : 0.80453 s (5.43 ms, 0 us, 696 us, 790711 us, 5.40 ms)
+[it=1660] hydro_fvm compute time t=7.9282e-03 (Dt=4.747e-06) : 0.79546 s (4.18 ms, 0 us, 82 us, 785279 us, 4.03 ms)
 [rank 0] iteration #1661 - starting launcher [0][0] ...
 [rank 0] done
-[it=1661] hydro_fvm compute time t=7.9330e-03 (Dt=4.747e-06) : 0.80386 s (5.49 ms, 0 us, 695 us, 789984 us, 5.41 ms)
+[it=1661] hydro_fvm compute time t=7.9330e-03 (Dt=4.747e-06) : 0.79647 s (4.19 ms, 0 us, 79 us, 786295 us, 4.06 ms)
 [rank 0] iteration #1662 - starting launcher [0][0] ...
 [rank 0] done
-[it=1662] hydro_fvm compute time t=7.9377e-03 (Dt=4.747e-06) : 0.80440 s (5.43 ms, 0 us, 693 us, 790531 us, 5.42 ms)
+[it=1662] hydro_fvm compute time t=7.9377e-03 (Dt=4.747e-06) : 0.79666 s (4.37 ms, 0 us, 81 us, 786301 us, 4.07 ms)
 [rank 0] iteration #1663 - starting launcher [0][0] ...
 [rank 0] done
-[it=1663] hydro_fvm compute time t=7.9424e-03 (Dt=4.747e-06) : 0.80390 s (5.48 ms, 0 us, 654 us, 790078 us, 5.39 ms)
+[it=1663] hydro_fvm compute time t=7.9424e-03 (Dt=4.747e-06) : 0.79567 s (4.23 ms, 0 us, 78 us, 785450 us, 4.06 ms)
 [rank 0] iteration #1664 - starting launcher [0][0] ...
 [rank 0] done
-[it=1664] hydro_fvm compute time t=7.9472e-03 (Dt=4.747e-06) : 0.80433 s (5.48 ms, 0 us, 681 us, 790460 us, 5.41 ms)
+[it=1664] hydro_fvm compute time t=7.9472e-03 (Dt=4.747e-06) : 0.79554 s (4.21 ms, 0 us, 79 us, 785338 us, 4.06 ms)
 [rank 0] iteration #1665 - starting launcher [0][0] ...
 [rank 0] done
-[it=1665] hydro_fvm compute time t=7.9519e-03 (Dt=4.747e-06) : 0.80431 s (5.46 ms, 0 us, 685 us, 790474 us, 5.40 ms)
+[it=1665] hydro_fvm compute time t=7.9519e-03 (Dt=4.747e-06) : 0.79565 s (4.21 ms, 0 us, 78 us, 785424 us, 4.05 ms)
 [rank 0] iteration #1666 - starting launcher [0][0] ...
 [rank 0] done
-[it=1666] hydro_fvm compute time t=7.9567e-03 (Dt=4.747e-06) : 0.80438 s (5.46 ms, 0 us, 704 us, 790516 us, 5.39 ms)
+[it=1666] hydro_fvm compute time t=7.9567e-03 (Dt=4.747e-06) : 0.79534 s (4.22 ms, 0 us, 79 us, 785138 us, 4.03 ms)
 [rank 0] iteration #1667 - starting launcher [0][0] ...
 [rank 0] done
-[it=1667] hydro_fvm compute time t=7.9614e-03 (Dt=4.747e-06) : 0.80409 s (5.45 ms, 0 us, 696 us, 790268 us, 5.37 ms)
+[it=1667] hydro_fvm compute time t=7.9614e-03 (Dt=4.747e-06) : 0.79704 s (4.22 ms, 0 us, 78 us, 786822 us, 4.05 ms)
 [rank 0] iteration #1668 - starting launcher [0][0] ...
 [rank 0] done
-[it=1668] hydro_fvm compute time t=7.9662e-03 (Dt=4.747e-06) : 0.80390 s (5.47 ms, 0 us, 665 us, 790091 us, 5.39 ms)
+[it=1668] hydro_fvm compute time t=7.9662e-03 (Dt=4.747e-06) : 0.79552 s (4.24 ms, 0 us, 78 us, 785297 us, 4.03 ms)
 [rank 0] iteration #1669 - starting launcher [0][0] ...
 [rank 0] done
-[it=1669] hydro_fvm compute time t=7.9709e-03 (Dt=4.747e-06) : 0.80386 s (5.46 ms, 0 us, 657 us, 790056 us, 5.39 ms)
+[it=1669] hydro_fvm compute time t=7.9709e-03 (Dt=4.747e-06) : 0.79628 s (4.22 ms, 0 us, 79 us, 785910 us, 4.11 ms)
 [rank 0] iteration #1670 - starting launcher [0][0] ...
 [rank 0] done
-[it=1670] hydro_fvm compute time t=7.9757e-03 (Dt=4.747e-06) : 0.80420 s (5.47 ms, 0 us, 685 us, 790342 us, 5.41 ms)
+[it=1670] hydro_fvm compute time t=7.9757e-03 (Dt=4.747e-06) : 0.79544 s (4.21 ms, 0 us, 78 us, 785274 us, 4.02 ms)
 [rank 0] iteration #1671 - starting launcher [0][0] ...
 [rank 0] done
-[it=1671] hydro_fvm compute time t=7.9804e-03 (Dt=4.747e-06) : 0.80412 s (5.43 ms, 0 us, 691 us, 790285 us, 5.41 ms)
+[it=1671] hydro_fvm compute time t=7.9804e-03 (Dt=4.747e-06) : 0.79576 s (4.23 ms, 0 us, 79 us, 785514 us, 4.04 ms)
 [rank 0] iteration #1672 - starting launcher [0][0] ...
 [rank 0] done
-[it=1672] hydro_fvm compute time t=7.9852e-03 (Dt=4.747e-06) : 0.80431 s (5.46 ms, 0 us, 688 us, 790471 us, 5.39 ms)
+[it=1672] hydro_fvm compute time t=7.9852e-03 (Dt=4.747e-06) : 0.79546 s (4.21 ms, 0 us, 79 us, 785270 us, 4.02 ms)
 [rank 0] iteration #1673 - starting launcher [0][0] ...
 [rank 0] done
-[it=1673] hydro_fvm compute time t=7.9899e-03 (Dt=4.747e-06) : 0.80370 s (5.44 ms, 0 us, 698 us, 789885 us, 5.39 ms)
+[it=1673] hydro_fvm compute time t=7.9899e-03 (Dt=4.747e-06) : 0.79573 s (4.24 ms, 0 us, 79 us, 785469 us, 4.04 ms)
 [rank 0] iteration #1674 - starting launcher [0][0] ...
 [rank 0] done
-[it=1674] hydro_fvm compute time t=7.9947e-03 (Dt=4.747e-06) : 0.80478 s (5.46 ms, 0 us, 703 us, 790584 us, 5.50 ms)
+[it=1674] hydro_fvm compute time t=7.9947e-03 (Dt=4.747e-06) : 0.79557 s (4.20 ms, 0 us, 77 us, 785378 us, 4.03 ms)
 [rank 0] iteration #1675 - starting launcher [0][0] ...
 [rank 0] done
-[it=1675] hydro_fvm compute time t=7.9994e-03 (Dt=4.747e-06) : 0.80459 s (5.52 ms, 0 us, 680 us, 790611 us, 5.39 ms)
+[it=1675] hydro_fvm compute time t=7.9994e-03 (Dt=4.747e-06) : 0.79560 s (4.10 ms, 0 us, 77 us, 785524 us, 4.02 ms)
 [rank 0] iteration #1676 - starting launcher [0][0] ...
 [rank 0] done
-[it=1676] hydro_fvm compute time t=8.0042e-03 (Dt=4.747e-06) : 0.80376 s (5.45 ms, 0 us, 700 us, 789889 us, 5.41 ms)
+[it=1676] hydro_fvm compute time t=8.0042e-03 (Dt=4.747e-06) : 0.79532 s (4.05 ms, 0 us, 79 us, 785177 us, 4.09 ms)
 [rank 0] iteration #1677 - starting launcher [0][0] ...
 [rank 0] done
-[it=1677] hydro_fvm compute time t=8.0089e-03 (Dt=4.747e-06) : 0.80424 s (5.47 ms, 0 us, 691 us, 790372 us, 5.41 ms)
+[it=1677] hydro_fvm compute time t=8.0089e-03 (Dt=4.747e-06) : 0.79565 s (4.13 ms, 0 us, 77 us, 785540 us, 4.03 ms)
 [rank 0] iteration #1678 - starting launcher [0][0] ...
 [rank 0] done
-[it=1678] hydro_fvm compute time t=8.0137e-03 (Dt=4.747e-06) : 0.80447 s (5.46 ms, 0 us, 702 us, 790597 us, 5.41 ms)
+[it=1678] hydro_fvm compute time t=8.0137e-03 (Dt=4.747e-06) : 0.79555 s (4.18 ms, 0 us, 78 us, 785353 us, 4.06 ms)
 [rank 0] iteration #1679 - starting launcher [0][0] ...
 [rank 0] done
-[it=1679] hydro_fvm compute time t=8.0184e-03 (Dt=4.747e-06) : 0.80432 s (5.42 ms, 0 us, 704 us, 790502 us, 5.39 ms)
+[it=1679] hydro_fvm compute time t=8.0184e-03 (Dt=4.747e-06) : 0.79684 s (4.19 ms, 0 us, 80 us, 786647 us, 4.04 ms)
 [rank 0] iteration #1680 - starting launcher [0][0] ...
 [rank 0] done
-[it=1680] hydro_fvm compute time t=8.0231e-03 (Dt=4.747e-06) : 0.80390 s (5.45 ms, 0 us, 695 us, 790051 us, 5.41 ms)
+[it=1680] hydro_fvm compute time t=8.0231e-03 (Dt=4.747e-06) : 0.79628 s (4.19 ms, 0 us, 79 us, 786099 us, 4.02 ms)
 [rank 0] iteration #1681 - starting launcher [0][0] ...
 [rank 0] done
-[it=1681] hydro_fvm compute time t=8.0279e-03 (Dt=4.747e-06) : 0.80458 s (5.45 ms, 0 us, 699 us, 790728 us, 5.40 ms)
+[it=1681] hydro_fvm compute time t=8.0279e-03 (Dt=4.747e-06) : 0.79569 s (4.19 ms, 0 us, 82 us, 785487 us, 4.05 ms)
 [rank 0] iteration #1682 - starting launcher [0][0] ...
 [rank 0] done
-[it=1682] hydro_fvm compute time t=8.0326e-03 (Dt=4.747e-06) : 0.80434 s (5.42 ms, 0 us, 704 us, 790490 us, 5.41 ms)
+[it=1682] hydro_fvm compute time t=8.0326e-03 (Dt=4.747e-06) : 0.79737 s (4.20 ms, 0 us, 77 us, 787161 us, 4.04 ms)
 [rank 0] iteration #1683 - starting launcher [0][0] ...
 [rank 0] done
-[it=1683] hydro_fvm compute time t=8.0374e-03 (Dt=4.746e-06) : 0.80427 s (5.48 ms, 0 us, 697 us, 790421 us, 5.38 ms)
+[it=1683] hydro_fvm compute time t=8.0374e-03 (Dt=4.746e-06) : 0.79564 s (4.19 ms, 0 us, 82 us, 785436 us, 4.04 ms)
 [rank 0] iteration #1684 - starting launcher [0][0] ...
 [rank 0] done
-[it=1684] hydro_fvm compute time t=8.0421e-03 (Dt=4.746e-06) : 0.80438 s (5.42 ms, 0 us, 683 us, 790582 us, 5.39 ms)
+[it=1684] hydro_fvm compute time t=8.0421e-03 (Dt=4.746e-06) : 0.79547 s (4.20 ms, 0 us, 78 us, 785256 us, 4.05 ms)
 [rank 0] iteration #1685 - starting launcher [0][0] ...
 [rank 0] done
-[it=1685] hydro_fvm compute time t=8.0469e-03 (Dt=4.746e-06) : 0.80420 s (5.45 ms, 0 us, 699 us, 790359 us, 5.38 ms)
+[it=1685] hydro_fvm compute time t=8.0469e-03 (Dt=4.746e-06) : 0.79577 s (4.17 ms, 0 us, 78 us, 785612 us, 4.04 ms)
 [rank 0] iteration #1686 - starting launcher [0][0] ...
 [rank 0] done
-[it=1686] hydro_fvm compute time t=8.0516e-03 (Dt=4.746e-06) : 0.80386 s (5.40 ms, 0 us, 655 us, 790110 us, 5.40 ms)
+[it=1686] hydro_fvm compute time t=8.0516e-03 (Dt=4.746e-06) : 0.79570 s (4.20 ms, 0 us, 78 us, 785520 us, 4.05 ms)
 [rank 0] iteration #1687 - starting launcher [0][0] ...
 [rank 0] done
-[it=1687] hydro_fvm compute time t=8.0564e-03 (Dt=4.746e-06) : 0.80361 s (5.42 ms, 0 us, 701 us, 789774 us, 5.42 ms)
+[it=1687] hydro_fvm compute time t=8.0564e-03 (Dt=4.746e-06) : 0.79556 s (4.16 ms, 0 us, 79 us, 785361 us, 4.06 ms)
 [rank 0] iteration #1688 - starting launcher [0][0] ...
 [rank 0] done
-[it=1688] hydro_fvm compute time t=8.0611e-03 (Dt=4.746e-06) : 0.80451 s (5.49 ms, 0 us, 705 us, 790661 us, 5.38 ms)
+[it=1688] hydro_fvm compute time t=8.0611e-03 (Dt=4.746e-06) : 0.79533 s (4.17 ms, 0 us, 81 us, 785132 us, 4.06 ms)
 [rank 0] iteration #1689 - starting launcher [0][0] ...
 [rank 0] done
-[it=1689] hydro_fvm compute time t=8.0659e-03 (Dt=4.746e-06) : 0.80452 s (5.45 ms, 0 us, 668 us, 790712 us, 5.39 ms)
+[it=1689] hydro_fvm compute time t=8.0659e-03 (Dt=4.746e-06) : 0.79555 s (4.21 ms, 0 us, 79 us, 785342 us, 4.04 ms)
 [rank 0] iteration #1690 - starting launcher [0][0] ...
 [rank 0] done
-[it=1690] hydro_fvm compute time t=8.0706e-03 (Dt=4.746e-06) : 0.80446 s (5.44 ms, 0 us, 697 us, 790636 us, 5.39 ms)
+[it=1690] hydro_fvm compute time t=8.0706e-03 (Dt=4.746e-06) : 0.79537 s (4.17 ms, 0 us, 78 us, 785200 us, 4.03 ms)
 [rank 0] iteration #1691 - starting launcher [0][0] ...
 [rank 0] done
-[it=1691] hydro_fvm compute time t=8.0754e-03 (Dt=4.746e-06) : 0.80447 s (5.46 ms, 0 us, 676 us, 790659 us, 5.38 ms)
+[it=1691] hydro_fvm compute time t=8.0754e-03 (Dt=4.746e-06) : 0.79584 s (4.20 ms, 0 us, 78 us, 785656 us, 4.02 ms)
 [rank 0] iteration #1692 - starting launcher [0][0] ...
 [rank 0] done
-[it=1692] hydro_fvm compute time t=8.0801e-03 (Dt=4.746e-06) : 0.80380 s (5.43 ms, 0 us, 698 us, 789981 us, 5.41 ms)
+[it=1692] hydro_fvm compute time t=8.0801e-03 (Dt=4.746e-06) : 0.79553 s (4.19 ms, 0 us, 77 us, 785288 us, 4.07 ms)
 [rank 0] iteration #1693 - starting launcher [0][0] ...
 [rank 0] done
-[it=1693] hydro_fvm compute time t=8.0848e-03 (Dt=4.746e-06) : 0.80378 s (5.44 ms, 0 us, 695 us, 789994 us, 5.37 ms)
+[it=1693] hydro_fvm compute time t=8.0848e-03 (Dt=4.746e-06) : 0.79584 s (4.32 ms, 0 us, 84 us, 785495 us, 4.04 ms)
 [rank 0] iteration #1694 - starting launcher [0][0] ...
 [rank 0] done
-[it=1694] hydro_fvm compute time t=8.0896e-03 (Dt=4.746e-06) : 0.80380 s (5.45 ms, 0 us, 692 us, 789965 us, 5.39 ms)
+[it=1694] hydro_fvm compute time t=8.0896e-03 (Dt=4.746e-06) : 0.79550 s (4.20 ms, 0 us, 82 us, 785279 us, 4.04 ms)
 [rank 0] iteration #1695 - starting launcher [0][0] ...
 [rank 0] done
-[it=1695] hydro_fvm compute time t=8.0943e-03 (Dt=4.746e-06) : 0.80366 s (5.45 ms, 0 us, 671 us, 789831 us, 5.39 ms)
+[it=1695] hydro_fvm compute time t=8.0943e-03 (Dt=4.746e-06) : 0.79565 s (4.16 ms, 0 us, 83 us, 785466 us, 4.05 ms)
 [rank 0] iteration #1696 - starting launcher [0][0] ...
 [rank 0] done
-[it=1696] hydro_fvm compute time t=8.0991e-03 (Dt=4.746e-06) : 0.80419 s (5.45 ms, 0 us, 698 us, 790350 us, 5.40 ms)
+[it=1696] hydro_fvm compute time t=8.0991e-03 (Dt=4.746e-06) : 0.79561 s (4.21 ms, 0 us, 79 us, 785412 us, 4.05 ms)
 [rank 0] iteration #1697 - starting launcher [0][0] ...
 [rank 0] done
-[it=1697] hydro_fvm compute time t=8.1038e-03 (Dt=4.746e-06) : 0.80416 s (5.47 ms, 0 us, 705 us, 790293 us, 5.39 ms)
+[it=1697] hydro_fvm compute time t=8.1038e-03 (Dt=4.746e-06) : 0.79553 s (4.19 ms, 0 us, 80 us, 785379 us, 4.04 ms)
 [rank 0] iteration #1698 - starting launcher [0][0] ...
 [rank 0] done
-[it=1698] hydro_fvm compute time t=8.1086e-03 (Dt=4.746e-06) : 0.80415 s (5.45 ms, 0 us, 694 us, 790325 us, 5.38 ms)
+[it=1698] hydro_fvm compute time t=8.1086e-03 (Dt=4.746e-06) : 0.79557 s (4.20 ms, 0 us, 80 us, 785379 us, 4.05 ms)
 [rank 0] iteration #1699 - starting launcher [0][0] ...
 [rank 0] done
-[it=1699] hydro_fvm compute time t=8.1133e-03 (Dt=4.746e-06) : 0.80437 s (5.48 ms, 0 us, 617 us, 790586 us, 5.39 ms)
+[it=1699] hydro_fvm compute time t=8.1133e-03 (Dt=4.746e-06) : 0.79568 s (4.19 ms, 0 us, 78 us, 785479 us, 4.05 ms)
 [rank 0] iteration #1700 - starting launcher [0][0] ...
 [rank 0] done
-[it=1700] hydro_fvm compute time t=8.1181e-03 (Dt=4.746e-06) : 0.80427 s (5.44 ms, 0 us, 697 us, 790452 us, 5.39 ms)
+[it=1700] hydro_fvm compute time t=8.1181e-03 (Dt=4.746e-06) : 0.79536 s (4.18 ms, 0 us, 79 us, 785186 us, 4.03 ms)
 [rank 0] iteration #1701 - starting launcher [0][0] ...
 [rank 0] done
-[it=1701] hydro_fvm compute time t=8.1228e-03 (Dt=4.746e-06) : 0.80424 s (5.45 ms, 0 us, 710 us, 790362 us, 5.42 ms)
+[it=1701] hydro_fvm compute time t=8.1228e-03 (Dt=4.746e-06) : 0.79558 s (4.17 ms, 0 us, 78 us, 785425 us, 4.02 ms)
 [rank 0] iteration #1702 - starting launcher [0][0] ...
 [rank 0] done
-[it=1702] hydro_fvm compute time t=8.1276e-03 (Dt=4.746e-06) : 0.80383 s (5.45 ms, 0 us, 694 us, 789988 us, 5.40 ms)
+[it=1702] hydro_fvm compute time t=8.1276e-03 (Dt=4.746e-06) : 0.79555 s (4.17 ms, 0 us, 78 us, 785411 us, 4.02 ms)
 [rank 0] iteration #1703 - starting launcher [0][0] ...
 [rank 0] done
-[it=1703] hydro_fvm compute time t=8.1323e-03 (Dt=4.746e-06) : 0.80370 s (5.47 ms, 0 us, 699 us, 789848 us, 5.39 ms)
+[it=1703] hydro_fvm compute time t=8.1323e-03 (Dt=4.746e-06) : 0.79600 s (4.20 ms, 0 us, 78 us, 785739 us, 4.05 ms)
 [rank 0] iteration #1704 - starting launcher [0][0] ...
 [rank 0] done
-[it=1704] hydro_fvm compute time t=8.1371e-03 (Dt=4.746e-06) : 0.80426 s (5.48 ms, 0 us, 696 us, 790387 us, 5.40 ms)
+[it=1704] hydro_fvm compute time t=8.1371e-03 (Dt=4.746e-06) : 0.79539 s (4.09 ms, 0 us, 77 us, 785348 us, 4.01 ms)
 [rank 0] iteration #1705 - starting launcher [0][0] ...
 [rank 0] done
-[it=1705] hydro_fvm compute time t=8.1418e-03 (Dt=4.745e-06) : 0.80440 s (5.44 ms, 0 us, 658 us, 790588 us, 5.43 ms)
+[it=1705] hydro_fvm compute time t=8.1418e-03 (Dt=4.745e-06) : 0.79551 s (4.08 ms, 0 us, 80 us, 785453 us, 4.00 ms)
 [rank 0] iteration #1706 - starting launcher [0][0] ...
 [rank 0] done
-[it=1706] hydro_fvm compute time t=8.1465e-03 (Dt=4.745e-06) : 0.80424 s (5.44 ms, 0 us, 699 us, 790347 us, 5.44 ms)
+[it=1706] hydro_fvm compute time t=8.1465e-03 (Dt=4.745e-06) : 0.79534 s (4.09 ms, 0 us, 78 us, 785242 us, 4.03 ms)
 [rank 0] iteration #1707 - starting launcher [0][0] ...
 [rank 0] done
-[it=1707] hydro_fvm compute time t=8.1513e-03 (Dt=4.745e-06) : 0.80433 s (5.47 ms, 0 us, 698 us, 790466 us, 5.40 ms)
+[it=1707] hydro_fvm compute time t=8.1513e-03 (Dt=4.745e-06) : 0.79709 s (4.09 ms, 0 us, 77 us, 787016 us, 4.03 ms)
 [rank 0] iteration #1708 - starting launcher [0][0] ...
 [rank 0] done
-[it=1708] hydro_fvm compute time t=8.1560e-03 (Dt=4.745e-06) : 0.80405 s (5.43 ms, 0 us, 655 us, 790330 us, 5.39 ms)
+[it=1708] hydro_fvm compute time t=8.1560e-03 (Dt=4.745e-06) : 0.79527 s (4.08 ms, 0 us, 78 us, 785192 us, 4.03 ms)
 [rank 0] iteration #1709 - starting launcher [0][0] ...
 [rank 0] done
-[it=1709] hydro_fvm compute time t=8.1608e-03 (Dt=4.745e-06) : 0.80458 s (5.47 ms, 0 us, 685 us, 790735 us, 5.40 ms)
+[it=1709] hydro_fvm compute time t=8.1608e-03 (Dt=4.745e-06) : 0.79693 s (4.05 ms, 0 us, 78 us, 786910 us, 4.04 ms)
 [rank 0] iteration #1710 - starting launcher [0][0] ...
 [rank 0] done
-[it=1710] hydro_fvm compute time t=8.1655e-03 (Dt=4.745e-06) : 0.80456 s (5.44 ms, 0 us, 702 us, 790723 us, 5.39 ms)
+[it=1710] hydro_fvm compute time t=8.1655e-03 (Dt=4.745e-06) : 0.79535 s (4.08 ms, 0 us, 80 us, 785289 us, 4.01 ms)
 [rank 0] iteration #1711 - starting launcher [0][0] ...
 [rank 0] done
-[it=1711] hydro_fvm compute time t=8.1703e-03 (Dt=4.745e-06) : 0.80458 s (5.48 ms, 0 us, 690 us, 790726 us, 5.39 ms)
+[it=1711] hydro_fvm compute time t=8.1703e-03 (Dt=4.745e-06) : 0.79543 s (4.07 ms, 0 us, 79 us, 785257 us, 4.08 ms)
 [rank 0] iteration #1712 - starting launcher [0][0] ...
 [rank 0] done
-[it=1712] hydro_fvm compute time t=8.1750e-03 (Dt=4.745e-06) : 0.80370 s (5.42 ms, 0 us, 705 us, 789876 us, 5.40 ms)
+[it=1712] hydro_fvm compute time t=8.1750e-03 (Dt=4.745e-06) : 0.79527 s (4.12 ms, 0 us, 78 us, 785155 us, 4.03 ms)
 [rank 0] iteration #1713 - starting launcher [0][0] ...
 [rank 0] done
-[it=1713] hydro_fvm compute time t=8.1798e-03 (Dt=4.745e-06) : 0.80442 s (5.47 ms, 0 us, 684 us, 790513 us, 5.43 ms)
+[it=1713] hydro_fvm compute time t=8.1798e-03 (Dt=4.745e-06) : 0.79600 s (4.21 ms, 0 us, 77 us, 785685 us, 4.04 ms)
 [rank 0] iteration #1714 - starting launcher [0][0] ...
 [rank 0] done
-[it=1714] hydro_fvm compute time t=8.1845e-03 (Dt=4.745e-06) : 0.80416 s (5.45 ms, 0 us, 677 us, 790334 us, 5.39 ms)
+[it=1714] hydro_fvm compute time t=8.1845e-03 (Dt=4.745e-06) : 0.79539 s (4.05 ms, 0 us, 77 us, 785366 us, 4.02 ms)
 [rank 0] iteration #1715 - starting launcher [0][0] ...
 [rank 0] done
-[it=1715] hydro_fvm compute time t=8.1892e-03 (Dt=4.745e-06) : 0.80425 s (5.44 ms, 0 us, 690 us, 790420 us, 5.40 ms)
+[it=1715] hydro_fvm compute time t=8.1892e-03 (Dt=4.745e-06) : 0.79556 s (4.09 ms, 0 us, 78 us, 785474 us, 4.01 ms)
 [rank 0] iteration #1716 - starting launcher [0][0] ...
 [rank 0] done
-[it=1716] hydro_fvm compute time t=8.1940e-03 (Dt=4.745e-06) : 0.80428 s (5.44 ms, 0 us, 693 us, 790470 us, 5.38 ms)
+[it=1716] hydro_fvm compute time t=8.1940e-03 (Dt=4.745e-06) : 0.79536 s (4.06 ms, 0 us, 78 us, 785302 us, 4.03 ms)
 [rank 0] iteration #1717 - starting launcher [0][0] ...
 [rank 0] done
-[it=1717] hydro_fvm compute time t=8.1987e-03 (Dt=4.745e-06) : 0.80389 s (5.46 ms, 0 us, 697 us, 790044 us, 5.40 ms)
+[it=1717] hydro_fvm compute time t=8.1987e-03 (Dt=4.745e-06) : 0.79574 s (4.07 ms, 0 us, 80 us, 785675 us, 4.02 ms)
 [rank 0] iteration #1718 - starting launcher [0][0] ...
 [rank 0] done
-[it=1718] hydro_fvm compute time t=8.2035e-03 (Dt=4.745e-06) : 0.80432 s (5.46 ms, 0 us, 699 us, 790462 us, 5.40 ms)
+[it=1718] hydro_fvm compute time t=8.2035e-03 (Dt=4.745e-06) : 0.79545 s (4.08 ms, 0 us, 78 us, 785296 us, 4.06 ms)
 [rank 0] iteration #1719 - starting launcher [0][0] ...
 [rank 0] done
-[it=1719] hydro_fvm compute time t=8.2082e-03 (Dt=4.745e-06) : 0.80388 s (5.49 ms, 0 us, 689 us, 790028 us, 5.37 ms)
+[it=1719] hydro_fvm compute time t=8.2082e-03 (Dt=4.745e-06) : 0.79573 s (4.14 ms, 0 us, 77 us, 785610 us, 4.06 ms)
 [rank 0] iteration #1720 - starting launcher [0][0] ...
 [rank 0] done
-[it=1720] hydro_fvm compute time t=8.2130e-03 (Dt=4.745e-06) : 0.80392 s (5.45 ms, 0 us, 708 us, 790088 us, 5.38 ms)
+[it=1720] hydro_fvm compute time t=8.2130e-03 (Dt=4.745e-06) : 0.79572 s (4.20 ms, 0 us, 78 us, 785518 us, 4.05 ms)
 [rank 0] iteration #1721 - starting launcher [0][0] ...
 [rank 0] done
-[it=1721] hydro_fvm compute time t=8.2177e-03 (Dt=4.745e-06) : 0.80438 s (5.46 ms, 0 us, 684 us, 790556 us, 5.39 ms)
+[it=1721] hydro_fvm compute time t=8.2177e-03 (Dt=4.745e-06) : 0.79573 s (4.19 ms, 0 us, 80 us, 785517 us, 4.05 ms)
 [rank 0] iteration #1722 - starting launcher [0][0] ...
 [rank 0] done
-[it=1722] hydro_fvm compute time t=8.2225e-03 (Dt=4.745e-06) : 0.80407 s (5.44 ms, 0 us, 697 us, 790244 us, 5.39 ms)
+[it=1722] hydro_fvm compute time t=8.2225e-03 (Dt=4.745e-06) : 0.79544 s (4.18 ms, 0 us, 81 us, 785270 us, 4.06 ms)
 [rank 0] iteration #1723 - starting launcher [0][0] ...
 [rank 0] done
-[it=1723] hydro_fvm compute time t=8.2272e-03 (Dt=4.745e-06) : 0.80422 s (5.43 ms, 0 us, 700 us, 790397 us, 5.40 ms)
+[it=1723] hydro_fvm compute time t=8.2272e-03 (Dt=4.745e-06) : 0.79572 s (4.37 ms, 0 us, 78 us, 785350 us, 4.03 ms)
 [rank 0] iteration #1724 - starting launcher [0][0] ...
 [rank 0] done
-[it=1724] hydro_fvm compute time t=8.2320e-03 (Dt=4.745e-06) : 0.80344 s (5.46 ms, 0 us, 689 us, 789609 us, 5.39 ms)
+[it=1724] hydro_fvm compute time t=8.2320e-03 (Dt=4.745e-06) : 0.79597 s (4.20 ms, 0 us, 79 us, 785772 us, 4.03 ms)
 [rank 0] iteration #1725 - starting launcher [0][0] ...
 [rank 0] done
-[it=1725] hydro_fvm compute time t=8.2367e-03 (Dt=4.745e-06) : 0.80444 s (5.46 ms, 0 us, 689 us, 790608 us, 5.39 ms)
+[it=1725] hydro_fvm compute time t=8.2367e-03 (Dt=4.745e-06) : 0.79569 s (4.22 ms, 0 us, 78 us, 785492 us, 4.02 ms)
 [rank 0] iteration #1726 - starting launcher [0][0] ...
 [rank 0] done
-[it=1726] hydro_fvm compute time t=8.2414e-03 (Dt=4.745e-06) : 0.80405 s (5.45 ms, 0 us, 667 us, 790228 us, 5.39 ms)
+[it=1726] hydro_fvm compute time t=8.2414e-03 (Dt=4.745e-06) : 0.79681 s (4.21 ms, 0 us, 78 us, 786581 us, 4.05 ms)
 [rank 0] iteration #1727 - starting launcher [0][0] ...
 [rank 0] done
-[it=1727] hydro_fvm compute time t=8.2462e-03 (Dt=4.745e-06) : 0.80395 s (5.48 ms, 0 us, 655 us, 790115 us, 5.40 ms)
+[it=1727] hydro_fvm compute time t=8.2462e-03 (Dt=4.745e-06) : 0.79566 s (4.20 ms, 0 us, 78 us, 785444 us, 4.05 ms)
 [rank 0] iteration #1728 - starting launcher [0][0] ...
 [rank 0] done
-[it=1728] hydro_fvm compute time t=8.2509e-03 (Dt=4.744e-06) : 0.80421 s (5.45 ms, 0 us, 686 us, 790396 us, 5.38 ms)
+[it=1728] hydro_fvm compute time t=8.2509e-03 (Dt=4.744e-06) : 0.79581 s (4.21 ms, 0 us, 78 us, 785598 us, 4.04 ms)
 [rank 0] iteration #1729 - starting launcher [0][0] ...
 [rank 0] done
-[it=1729] hydro_fvm compute time t=8.2557e-03 (Dt=4.744e-06) : 0.80441 s (5.47 ms, 0 us, 701 us, 790557 us, 5.39 ms)
+[it=1729] hydro_fvm compute time t=8.2557e-03 (Dt=4.744e-06) : 0.79561 s (4.20 ms, 0 us, 79 us, 785407 us, 4.05 ms)
 [rank 0] iteration #1730 - starting launcher [0][0] ...
 [rank 0] done
-[it=1730] hydro_fvm compute time t=8.2604e-03 (Dt=4.744e-06) : 0.80436 s (5.42 ms, 0 us, 688 us, 790561 us, 5.39 ms)
+[it=1730] hydro_fvm compute time t=8.2604e-03 (Dt=4.744e-06) : 0.79550 s (4.20 ms, 0 us, 78 us, 785219 us, 4.04 ms)
 [rank 0] iteration #1731 - starting launcher [0][0] ...
 [rank 0] done
-[it=1731] hydro_fvm compute time t=8.2652e-03 (Dt=4.744e-06) : 0.80401 s (5.48 ms, 0 us, 668 us, 790164 us, 5.40 ms)
+[it=1731] hydro_fvm compute time t=8.2652e-03 (Dt=4.744e-06) : 0.79576 s (4.33 ms, 0 us, 79 us, 785460 us, 4.05 ms)
 [rank 0] iteration #1732 - starting launcher [0][0] ...
 [rank 0] done
-[it=1732] hydro_fvm compute time t=8.2699e-03 (Dt=4.744e-06) : 0.80352 s (5.44 ms, 0 us, 687 us, 789742 us, 5.39 ms)
+[it=1732] hydro_fvm compute time t=8.2699e-03 (Dt=4.744e-06) : 0.79529 s (4.19 ms, 0 us, 79 us, 785129 us, 4.04 ms)
 [rank 0] iteration #1733 - starting launcher [0][0] ...
 [rank 0] done
-[it=1733] hydro_fvm compute time t=8.2747e-03 (Dt=4.744e-06) : 0.80380 s (5.43 ms, 0 us, 704 us, 789978 us, 5.40 ms)
+[it=1733] hydro_fvm compute time t=8.2747e-03 (Dt=4.744e-06) : 0.79574 s (4.19 ms, 0 us, 79 us, 785553 us, 4.04 ms)
 [rank 0] iteration #1734 - starting launcher [0][0] ...
 [rank 0] done
-[it=1734] hydro_fvm compute time t=8.2794e-03 (Dt=4.744e-06) : 0.80394 s (5.50 ms, 0 us, 702 us, 790029 us, 5.41 ms)
+[it=1734] hydro_fvm compute time t=8.2794e-03 (Dt=4.744e-06) : 0.79563 s (4.18 ms, 0 us, 77 us, 785442 us, 4.04 ms)
 [rank 0] iteration #1735 - starting launcher [0][0] ...
 [rank 0] done
-[it=1735] hydro_fvm compute time t=8.2841e-03 (Dt=4.744e-06) : 0.80424 s (5.45 ms, 0 us, 703 us, 790395 us, 5.40 ms)
+[it=1735] hydro_fvm compute time t=8.2841e-03 (Dt=4.744e-06) : 0.79580 s (4.18 ms, 0 us, 79 us, 785560 us, 4.05 ms)
 [rank 0] iteration #1736 - starting launcher [0][0] ...
 [rank 0] done
-[it=1736] hydro_fvm compute time t=8.2889e-03 (Dt=4.744e-06) : 0.80408 s (5.43 ms, 0 us, 706 us, 790277 us, 5.38 ms)
+[it=1736] hydro_fvm compute time t=8.2889e-03 (Dt=4.744e-06) : 0.79525 s (4.07 ms, 0 us, 78 us, 785225 us, 4.01 ms)
 [rank 0] iteration #1737 - starting launcher [0][0] ...
 [rank 0] done
-[it=1737] hydro_fvm compute time t=8.2936e-03 (Dt=4.744e-06) : 0.80446 s (5.43 ms, 0 us, 709 us, 790630 us, 5.40 ms)
+[it=1737] hydro_fvm compute time t=8.2936e-03 (Dt=4.744e-06) : 0.79622 s (4.07 ms, 0 us, 79 us, 786148 us, 4.03 ms)
 [rank 0] iteration #1738 - starting launcher [0][0] ...
 [rank 0] done
-[it=1738] hydro_fvm compute time t=8.2984e-03 (Dt=4.744e-06) : 0.80377 s (5.45 ms, 0 us, 648 us, 790047 us, 5.39 ms)
+[it=1738] hydro_fvm compute time t=8.2984e-03 (Dt=4.744e-06) : 0.79514 s (4.07 ms, 0 us, 80 us, 785080 us, 4.01 ms)
 [rank 0] iteration #1739 - starting launcher [0][0] ...
 [rank 0] done
-[it=1739] hydro_fvm compute time t=8.3031e-03 (Dt=4.744e-06) : 0.80438 s (5.51 ms, 0 us, 693 us, 790475 us, 5.40 ms)
+[it=1739] hydro_fvm compute time t=8.3031e-03 (Dt=4.744e-06) : 0.79683 s (4.06 ms, 0 us, 79 us, 786770 us, 4.03 ms)
 [rank 0] iteration #1740 - starting launcher [0][0] ...
 [rank 0] done
-[it=1740] hydro_fvm compute time t=8.3079e-03 (Dt=4.744e-06) : 0.80389 s (5.44 ms, 0 us, 701 us, 790045 us, 5.41 ms)
+[it=1740] hydro_fvm compute time t=8.3079e-03 (Dt=4.744e-06) : 0.79529 s (4.07 ms, 0 us, 81 us, 785220 us, 4.03 ms)
 [rank 0] iteration #1741 - starting launcher [0][0] ...
 [rank 0] done
-[it=1741] hydro_fvm compute time t=8.3126e-03 (Dt=4.744e-06) : 0.80367 s (5.45 ms, 0 us, 646 us, 789891 us, 5.38 ms)
+[it=1741] hydro_fvm compute time t=8.3126e-03 (Dt=4.744e-06) : 0.79550 s (4.05 ms, 0 us, 78 us, 785473 us, 4.02 ms)
 [rank 0] iteration #1742 - starting launcher [0][0] ...
 [rank 0] done
-[it=1742] hydro_fvm compute time t=8.3174e-03 (Dt=4.744e-06) : 0.80431 s (5.44 ms, 0 us, 655 us, 790529 us, 5.39 ms)
+[it=1742] hydro_fvm compute time t=8.3174e-03 (Dt=4.744e-06) : 0.79539 s (4.07 ms, 0 us, 77 us, 785322 us, 4.03 ms)
 [rank 0] iteration #1743 - starting launcher [0][0] ...
 [rank 0] done
-[it=1743] hydro_fvm compute time t=8.3221e-03 (Dt=4.744e-06) : 0.80403 s (5.49 ms, 0 us, 694 us, 790114 us, 5.40 ms)
+[it=1743] hydro_fvm compute time t=8.3221e-03 (Dt=4.744e-06) : 0.79532 s (4.06 ms, 0 us, 77 us, 785278 us, 4.02 ms)
 [rank 0] iteration #1744 - starting launcher [0][0] ...
 [rank 0] done
-[it=1744] hydro_fvm compute time t=8.3268e-03 (Dt=4.744e-06) : 0.80336 s (5.49 ms, 0 us, 692 us, 789526 us, 5.37 ms)
+[it=1744] hydro_fvm compute time t=8.3268e-03 (Dt=4.744e-06) : 0.79547 s (4.08 ms, 0 us, 78 us, 785407 us, 4.03 ms)
 [rank 0] iteration #1745 - starting launcher [0][0] ...
 [rank 0] done
-[it=1745] hydro_fvm compute time t=8.3316e-03 (Dt=4.744e-06) : 0.80401 s (5.44 ms, 0 us, 702 us, 790199 us, 5.38 ms)
+[it=1745] hydro_fvm compute time t=8.3316e-03 (Dt=4.744e-06) : 0.79566 s (4.09 ms, 0 us, 81 us, 785583 us, 4.03 ms)
 [rank 0] iteration #1746 - starting launcher [0][0] ...
 [rank 0] done
-[it=1746] hydro_fvm compute time t=8.3363e-03 (Dt=4.744e-06) : 0.80434 s (5.43 ms, 0 us, 689 us, 790533 us, 5.38 ms)
+[it=1746] hydro_fvm compute time t=8.3363e-03 (Dt=4.744e-06) : 0.79539 s (4.07 ms, 0 us, 78 us, 785340 us, 4.02 ms)
 [rank 0] iteration #1747 - starting launcher [0][0] ...
 [rank 0] done
-[it=1747] hydro_fvm compute time t=8.3411e-03 (Dt=4.744e-06) : 0.80384 s (5.46 ms, 0 us, 690 us, 790004 us, 5.39 ms)
+[it=1747] hydro_fvm compute time t=8.3411e-03 (Dt=4.744e-06) : 0.79554 s (4.08 ms, 0 us, 85 us, 785503 us, 4.04 ms)
 [rank 0] iteration #1748 - starting launcher [0][0] ...
 [rank 0] done
-[it=1748] hydro_fvm compute time t=8.3458e-03 (Dt=4.744e-06) : 0.80400 s (5.46 ms, 0 us, 695 us, 790161 us, 5.39 ms)
+[it=1748] hydro_fvm compute time t=8.3458e-03 (Dt=4.744e-06) : 0.79542 s (4.09 ms, 0 us, 78 us, 785345 us, 4.03 ms)
 [rank 0] iteration #1749 - starting launcher [0][0] ...
 [rank 0] done
-[it=1749] hydro_fvm compute time t=8.3506e-03 (Dt=4.744e-06) : 0.80476 s (5.44 ms, 0 us, 706 us, 790619 us, 5.48 ms)
+[it=1749] hydro_fvm compute time t=8.3506e-03 (Dt=4.744e-06) : 0.79544 s (4.06 ms, 0 us, 83 us, 785412 us, 4.04 ms)
 [rank 0] iteration #1750 - starting launcher [0][0] ...
 [rank 0] done
-[it=1750] hydro_fvm compute time t=8.3553e-03 (Dt=4.744e-06) : 0.80378 s (5.49 ms, 0 us, 684 us, 789834 us, 5.39 ms)
+[it=1750] hydro_fvm compute time t=8.3553e-03 (Dt=4.744e-06) : 0.79542 s (4.09 ms, 0 us, 79 us, 785339 us, 4.02 ms)
 [rank 0] iteration #1751 - starting launcher [0][0] ...
 [rank 0] done
-[it=1751] hydro_fvm compute time t=8.3600e-03 (Dt=4.743e-06) : 0.80450 s (5.48 ms, 0 us, 701 us, 790636 us, 5.38 ms)
+[it=1751] hydro_fvm compute time t=8.3600e-03 (Dt=4.743e-06) : 0.79662 s (4.07 ms, 0 us, 79 us, 786563 us, 4.02 ms)
 [rank 0] iteration #1752 - starting launcher [0][0] ...
 [rank 0] done
-[it=1752] hydro_fvm compute time t=8.3648e-03 (Dt=4.743e-06) : 0.80421 s (5.44 ms, 0 us, 706 us, 790362 us, 5.39 ms)
+[it=1752] hydro_fvm compute time t=8.3648e-03 (Dt=4.743e-06) : 0.79523 s (4.08 ms, 0 us, 78 us, 785181 us, 4.01 ms)
 [rank 0] iteration #1753 - starting launcher [0][0] ...
 [rank 0] done
-[it=1753] hydro_fvm compute time t=8.3695e-03 (Dt=4.743e-06) : 0.80365 s (5.43 ms, 0 us, 699 us, 789804 us, 5.40 ms)
+[it=1753] hydro_fvm compute time t=8.3695e-03 (Dt=4.743e-06) : 0.79694 s (4.08 ms, 0 us, 79 us, 786878 us, 4.02 ms)
 [rank 0] iteration #1754 - starting launcher [0][0] ...
 [rank 0] done
-[it=1754] hydro_fvm compute time t=8.3743e-03 (Dt=4.743e-06) : 0.80423 s (5.46 ms, 0 us, 701 us, 790386 us, 5.39 ms)
+[it=1754] hydro_fvm compute time t=8.3743e-03 (Dt=4.743e-06) : 0.79595 s (4.08 ms, 0 us, 77 us, 785883 us, 4.03 ms)
 [rank 0] iteration #1755 - starting launcher [0][0] ...
 [rank 0] done
-[it=1755] hydro_fvm compute time t=8.3790e-03 (Dt=4.743e-06) : 0.80448 s (5.43 ms, 0 us, 706 us, 790637 us, 5.40 ms)
+[it=1755] hydro_fvm compute time t=8.3790e-03 (Dt=4.743e-06) : 0.79529 s (4.07 ms, 0 us, 79 us, 785248 us, 4.02 ms)
 [rank 0] iteration #1756 - starting launcher [0][0] ...
 [rank 0] done
-[it=1756] hydro_fvm compute time t=8.3838e-03 (Dt=4.743e-06) : 0.80441 s (5.45 ms, 0 us, 701 us, 790558 us, 5.39 ms)
+[it=1756] hydro_fvm compute time t=8.3838e-03 (Dt=4.743e-06) : 0.79692 s (4.16 ms, 0 us, 77 us, 786756 us, 4.06 ms)
 [rank 0] iteration #1757 - starting launcher [0][0] ...
 [rank 0] done
-[it=1757] hydro_fvm compute time t=8.3885e-03 (Dt=4.743e-06) : 0.80431 s (5.45 ms, 0 us, 702 us, 790464 us, 5.40 ms)
+[it=1757] hydro_fvm compute time t=8.3885e-03 (Dt=4.743e-06) : 0.79543 s (4.08 ms, 0 us, 77 us, 785347 us, 4.02 ms)
 [rank 0] iteration #1758 - starting launcher [0][0] ...
 [rank 0] done
-[it=1758] hydro_fvm compute time t=8.3932e-03 (Dt=4.743e-06) : 0.80395 s (5.45 ms, 0 us, 682 us, 790122 us, 5.39 ms)
+[it=1758] hydro_fvm compute time t=8.3932e-03 (Dt=4.743e-06) : 0.79534 s (4.08 ms, 0 us, 85 us, 785265 us, 4.02 ms)
 [rank 0] iteration #1759 - starting launcher [0][0] ...
 [rank 0] done
-[it=1759] hydro_fvm compute time t=8.3980e-03 (Dt=4.743e-06) : 0.80445 s (5.45 ms, 0 us, 657 us, 790658 us, 5.39 ms)
+[it=1759] hydro_fvm compute time t=8.3980e-03 (Dt=4.743e-06) : 0.79706 s (4.07 ms, 0 us, 80 us, 786997 us, 4.02 ms)
 [rank 0] iteration #1760 - starting launcher [0][0] ...
 [rank 0] done
-[it=1760] hydro_fvm compute time t=8.4027e-03 (Dt=4.743e-06) : 0.80420 s (5.43 ms, 0 us, 679 us, 790383 us, 5.40 ms)
+[it=1760] hydro_fvm compute time t=8.4027e-03 (Dt=4.743e-06) : 0.79529 s (4.05 ms, 0 us, 81 us, 785251 us, 4.02 ms)
 [rank 0] iteration #1761 - starting launcher [0][0] ...
 [rank 0] done
-[it=1761] hydro_fvm compute time t=8.4075e-03 (Dt=4.743e-06) : 0.80456 s (5.49 ms, 0 us, 686 us, 790687 us, 5.40 ms)
+[it=1761] hydro_fvm compute time t=8.4075e-03 (Dt=4.743e-06) : 0.79644 s (4.08 ms, 0 us, 86 us, 786384 us, 4.01 ms)
 [rank 0] iteration #1762 - starting launcher [0][0] ...
 [rank 0] done
-[it=1762] hydro_fvm compute time t=8.4122e-03 (Dt=4.743e-06) : 0.80402 s (5.43 ms, 0 us, 701 us, 790179 us, 5.40 ms)
+[it=1762] hydro_fvm compute time t=8.4122e-03 (Dt=4.743e-06) : 0.79594 s (4.07 ms, 0 us, 79 us, 785888 us, 4.02 ms)
 [rank 0] iteration #1763 - starting launcher [0][0] ...
 [rank 0] done
-[it=1763] hydro_fvm compute time t=8.4170e-03 (Dt=4.743e-06) : 0.80453 s (5.46 ms, 0 us, 702 us, 790675 us, 5.40 ms)
+[it=1763] hydro_fvm compute time t=8.4170e-03 (Dt=4.743e-06) : 0.79555 s (4.06 ms, 0 us, 80 us, 785490 us, 4.04 ms)
 [rank 0] iteration #1764 - starting launcher [0][0] ...
 [rank 0] done
-[it=1764] hydro_fvm compute time t=8.4217e-03 (Dt=4.743e-06) : 0.80347 s (5.46 ms, 0 us, 668 us, 789604 us, 5.43 ms)
+[it=1764] hydro_fvm compute time t=8.4217e-03 (Dt=4.743e-06) : 0.79546 s (4.07 ms, 0 us, 79 us, 785412 us, 4.02 ms)
 [rank 0] iteration #1765 - starting launcher [0][0] ...
 [rank 0] done
-[it=1765] hydro_fvm compute time t=8.4264e-03 (Dt=4.743e-06) : 0.80426 s (5.49 ms, 0 us, 693 us, 790381 us, 5.39 ms)
+[it=1765] hydro_fvm compute time t=8.4264e-03 (Dt=4.743e-06) : 0.79555 s (4.08 ms, 0 us, 80 us, 785486 us, 4.01 ms)
 [rank 0] iteration #1766 - starting launcher [0][0] ...
 [rank 0] done
-[it=1766] hydro_fvm compute time t=8.4312e-03 (Dt=4.743e-06) : 0.80417 s (5.45 ms, 0 us, 707 us, 790305 us, 5.41 ms)
+[it=1766] hydro_fvm compute time t=8.4312e-03 (Dt=4.743e-06) : 0.79544 s (4.11 ms, 0 us, 80 us, 785369 us, 4.01 ms)
 [rank 0] iteration #1767 - starting launcher [0][0] ...
 [rank 0] done
-[it=1767] hydro_fvm compute time t=8.4359e-03 (Dt=4.743e-06) : 0.80409 s (5.45 ms, 0 us, 695 us, 790258 us, 5.40 ms)
+[it=1767] hydro_fvm compute time t=8.4359e-03 (Dt=4.743e-06) : 0.79562 s (4.09 ms, 0 us, 79 us, 785514 us, 4.04 ms)
 [rank 0] iteration #1768 - starting launcher [0][0] ...
 [rank 0] done
-[it=1768] hydro_fvm compute time t=8.4407e-03 (Dt=4.743e-06) : 0.80373 s (5.46 ms, 0 us, 697 us, 789892 us, 5.38 ms)
+[it=1768] hydro_fvm compute time t=8.4407e-03 (Dt=4.743e-06) : 0.79525 s (4.08 ms, 0 us, 89 us, 785174 us, 4.02 ms)
 [rank 0] iteration #1769 - starting launcher [0][0] ...
 [rank 0] done
-[it=1769] hydro_fvm compute time t=8.4454e-03 (Dt=4.743e-06) : 0.80395 s (5.44 ms, 0 us, 705 us, 790109 us, 5.41 ms)
+[it=1769] hydro_fvm compute time t=8.4454e-03 (Dt=4.743e-06) : 0.79547 s (4.06 ms, 0 us, 81 us, 785426 us, 4.02 ms)
 [rank 0] iteration #1770 - starting launcher [0][0] ...
 [rank 0] done
-[it=1770] hydro_fvm compute time t=8.4502e-03 (Dt=4.743e-06) : 0.80434 s (5.47 ms, 0 us, 705 us, 790477 us, 5.39 ms)
+[it=1770] hydro_fvm compute time t=8.4502e-03 (Dt=4.743e-06) : 0.79530 s (4.03 ms, 0 us, 81 us, 785283 us, 4.02 ms)
 [rank 0] iteration #1771 - starting launcher [0][0] ...
 [rank 0] done
-[it=1771] hydro_fvm compute time t=8.4549e-03 (Dt=4.743e-06) : 0.80414 s (5.45 ms, 0 us, 700 us, 790296 us, 5.39 ms)
+[it=1771] hydro_fvm compute time t=8.4549e-03 (Dt=4.743e-06) : 0.79542 s (4.07 ms, 0 us, 83 us, 785260 us, 4.07 ms)
 [rank 0] iteration #1772 - starting launcher [0][0] ...
 [rank 0] done
-[it=1772] hydro_fvm compute time t=8.4596e-03 (Dt=4.743e-06) : 0.80393 s (5.45 ms, 0 us, 705 us, 790064 us, 5.40 ms)
+[it=1772] hydro_fvm compute time t=8.4596e-03 (Dt=4.743e-06) : 0.79672 s (4.13 ms, 0 us, 79 us, 786592 us, 4.03 ms)
 [rank 0] iteration #1773 - starting launcher [0][0] ...
 [rank 0] done
-[it=1773] hydro_fvm compute time t=8.4644e-03 (Dt=4.742e-06) : 0.80444 s (5.45 ms, 0 us, 706 us, 790566 us, 5.41 ms)
+[it=1773] hydro_fvm compute time t=8.4644e-03 (Dt=4.742e-06) : 0.79567 s (4.19 ms, 0 us, 82 us, 785464 us, 4.05 ms)
 [rank 0] iteration #1774 - starting launcher [0][0] ...
 [rank 0] done
-[it=1774] hydro_fvm compute time t=8.4691e-03 (Dt=4.742e-06) : 0.80326 s (5.45 ms, 0 us, 698 us, 789367 us, 5.42 ms)
+[it=1774] hydro_fvm compute time t=8.4691e-03 (Dt=4.742e-06) : 0.79559 s (4.20 ms, 0 us, 81 us, 785380 us, 4.04 ms)
 [rank 0] iteration #1775 - starting launcher [0][0] ...
 [rank 0] done
-[it=1775] hydro_fvm compute time t=8.4739e-03 (Dt=4.742e-06) : 0.80425 s (5.47 ms, 0 us, 675 us, 790417 us, 5.40 ms)
+[it=1775] hydro_fvm compute time t=8.4739e-03 (Dt=4.742e-06) : 0.79553 s (4.19 ms, 0 us, 81 us, 785322 us, 4.07 ms)
 [rank 0] iteration #1776 - starting launcher [0][0] ...
 [rank 0] done
-[it=1776] hydro_fvm compute time t=8.4786e-03 (Dt=4.742e-06) : 0.80452 s (5.45 ms, 0 us, 699 us, 790675 us, 5.40 ms)
+[it=1776] hydro_fvm compute time t=8.4786e-03 (Dt=4.742e-06) : 0.79539 s (4.22 ms, 0 us, 84 us, 785145 us, 4.04 ms)
 [rank 0] iteration #1777 - starting launcher [0][0] ...
 [rank 0] done
-[it=1777] hydro_fvm compute time t=8.4834e-03 (Dt=4.742e-06) : 0.80440 s (5.44 ms, 0 us, 685 us, 790589 us, 5.38 ms)
+[it=1777] hydro_fvm compute time t=8.4834e-03 (Dt=4.742e-06) : 0.79570 s (4.19 ms, 0 us, 81 us, 785507 us, 4.08 ms)
 [rank 0] iteration #1778 - starting launcher [0][0] ...
 [rank 0] done
-[it=1778] hydro_fvm compute time t=8.4881e-03 (Dt=4.742e-06) : 0.80446 s (5.46 ms, 0 us, 682 us, 790613 us, 5.40 ms)
+[it=1778] hydro_fvm compute time t=8.4881e-03 (Dt=4.742e-06) : 0.79537 s (4.19 ms, 0 us, 79 us, 785201 us, 4.05 ms)
 [rank 0] iteration #1779 - starting launcher [0][0] ...
 [rank 0] done
-[it=1779] hydro_fvm compute time t=8.4928e-03 (Dt=4.742e-06) : 0.80390 s (5.46 ms, 0 us, 696 us, 790049 us, 5.40 ms)
+[it=1779] hydro_fvm compute time t=8.4928e-03 (Dt=4.742e-06) : 0.79585 s (4.26 ms, 0 us, 79 us, 785556 us, 4.06 ms)
 [rank 0] iteration #1780 - starting launcher [0][0] ...
 [rank 0] done
-[it=1780] hydro_fvm compute time t=8.4976e-03 (Dt=4.742e-06) : 0.80447 s (5.56 ms, 0 us, 697 us, 790520 us, 5.40 ms)
+[it=1780] hydro_fvm compute time t=8.4976e-03 (Dt=4.742e-06) : 0.79551 s (4.21 ms, 0 us, 79 us, 785237 us, 4.07 ms)
 [rank 0] iteration #1781 - starting launcher [0][0] ...
 [rank 0] done
-[it=1781] hydro_fvm compute time t=8.5023e-03 (Dt=4.742e-06) : 0.80440 s (5.47 ms, 0 us, 673 us, 790575 us, 5.40 ms)
+[it=1781] hydro_fvm compute time t=8.5023e-03 (Dt=4.742e-06) : 0.79564 s (4.18 ms, 0 us, 81 us, 785445 us, 4.04 ms)
 [rank 0] iteration #1782 - starting launcher [0][0] ...
 [rank 0] done
-[it=1782] hydro_fvm compute time t=8.5071e-03 (Dt=4.742e-06) : 0.80431 s (5.45 ms, 0 us, 706 us, 790476 us, 5.38 ms)
+[it=1782] hydro_fvm compute time t=8.5071e-03 (Dt=4.742e-06) : 0.79548 s (4.19 ms, 0 us, 79 us, 785288 us, 4.04 ms)
 [rank 0] iteration #1783 - starting launcher [0][0] ...
 [rank 0] done
-[it=1783] hydro_fvm compute time t=8.5118e-03 (Dt=4.742e-06) : 0.80448 s (5.44 ms, 0 us, 700 us, 790656 us, 5.39 ms)
+[it=1783] hydro_fvm compute time t=8.5118e-03 (Dt=4.742e-06) : 0.79567 s (4.19 ms, 0 us, 85 us, 785472 us, 4.03 ms)
 [rank 0] iteration #1784 - starting launcher [0][0] ...
 [rank 0] done
-[it=1784] hydro_fvm compute time t=8.5166e-03 (Dt=4.742e-06) : 0.80408 s (5.46 ms, 0 us, 696 us, 790220 us, 5.40 ms)
+[it=1784] hydro_fvm compute time t=8.5166e-03 (Dt=4.742e-06) : 0.79571 s (4.19 ms, 0 us, 79 us, 785512 us, 4.05 ms)
 [rank 0] iteration #1785 - starting launcher [0][0] ...
 [rank 0] done
-[it=1785] hydro_fvm compute time t=8.5213e-03 (Dt=4.742e-06) : 0.80454 s (5.47 ms, 0 us, 690 us, 790691 us, 5.39 ms)
+[it=1785] hydro_fvm compute time t=8.5213e-03 (Dt=4.742e-06) : 0.79602 s (4.32 ms, 0 us, 80 us, 785648 us, 4.06 ms)
 [rank 0] iteration #1786 - starting launcher [0][0] ...
 [rank 0] done
-[it=1786] hydro_fvm compute time t=8.5260e-03 (Dt=4.742e-06) : 0.80413 s (5.43 ms, 0 us, 694 us, 790315 us, 5.39 ms)
+[it=1786] hydro_fvm compute time t=8.5260e-03 (Dt=4.742e-06) : 0.79541 s (4.20 ms, 0 us, 79 us, 785122 us, 4.07 ms)
 [rank 0] iteration #1787 - starting launcher [0][0] ...
 [rank 0] done
-[it=1787] hydro_fvm compute time t=8.5308e-03 (Dt=4.742e-06) : 0.80384 s (5.50 ms, 0 us, 682 us, 789984 us, 5.39 ms)
+[it=1787] hydro_fvm compute time t=8.5308e-03 (Dt=4.742e-06) : 0.79730 s (4.08 ms, 0 us, 80 us, 787226 us, 4.03 ms)
 [rank 0] iteration #1788 - starting launcher [0][0] ...
 [rank 0] done
-[it=1788] hydro_fvm compute time t=8.5355e-03 (Dt=4.742e-06) : 0.80393 s (5.45 ms, 0 us, 701 us, 790080 us, 5.41 ms)
+[it=1788] hydro_fvm compute time t=8.5355e-03 (Dt=4.742e-06) : 0.79548 s (4.07 ms, 0 us, 79 us, 785412 us, 4.02 ms)
 [rank 0] iteration #1789 - starting launcher [0][0] ...
 [rank 0] done
-[it=1789] hydro_fvm compute time t=8.5403e-03 (Dt=4.742e-06) : 0.80405 s (5.46 ms, 0 us, 696 us, 790193 us, 5.41 ms)
+[it=1789] hydro_fvm compute time t=8.5403e-03 (Dt=4.742e-06) : 0.79541 s (4.02 ms, 0 us, 79 us, 785420 us, 4.02 ms)
 [rank 0] iteration #1790 - starting launcher [0][0] ...
 [rank 0] done
-[it=1790] hydro_fvm compute time t=8.5450e-03 (Dt=4.742e-06) : 0.80410 s (5.48 ms, 0 us, 695 us, 790256 us, 5.38 ms)
+[it=1790] hydro_fvm compute time t=8.5450e-03 (Dt=4.742e-06) : 0.79517 s (4.07 ms, 0 us, 81 us, 785115 us, 4.02 ms)
 [rank 0] iteration #1791 - starting launcher [0][0] ...
 [rank 0] done
-[it=1791] hydro_fvm compute time t=8.5497e-03 (Dt=4.742e-06) : 0.80435 s (5.46 ms, 0 us, 712 us, 790497 us, 5.39 ms)
+[it=1791] hydro_fvm compute time t=8.5497e-03 (Dt=4.742e-06) : 0.79543 s (4.06 ms, 0 us, 79 us, 785374 us, 4.03 ms)
 [rank 0] iteration #1792 - starting launcher [0][0] ...
 [rank 0] done
-[it=1792] hydro_fvm compute time t=8.5545e-03 (Dt=4.742e-06) : 0.80371 s (5.44 ms, 0 us, 667 us, 789877 us, 5.43 ms)
+[it=1792] hydro_fvm compute time t=8.5545e-03 (Dt=4.742e-06) : 0.79545 s (4.08 ms, 0 us, 80 us, 785405 us, 4.01 ms)
 [rank 0] iteration #1793 - starting launcher [0][0] ...
 [rank 0] done
-[it=1793] hydro_fvm compute time t=8.5592e-03 (Dt=4.742e-06) : 0.80459 s (5.48 ms, 0 us, 701 us, 790705 us, 5.40 ms)
+[it=1793] hydro_fvm compute time t=8.5592e-03 (Dt=4.742e-06) : 0.79586 s (4.07 ms, 0 us, 79 us, 785813 us, 4.02 ms)
 [rank 0] iteration #1794 - starting launcher [0][0] ...
 [rank 0] done
-[it=1794] hydro_fvm compute time t=8.5640e-03 (Dt=4.742e-06) : 0.80418 s (5.44 ms, 0 us, 701 us, 790384 us, 5.40 ms)
+[it=1794] hydro_fvm compute time t=8.5640e-03 (Dt=4.742e-06) : 0.79546 s (4.08 ms, 0 us, 77 us, 785400 us, 4.02 ms)
 [rank 0] iteration #1795 - starting launcher [0][0] ...
 [rank 0] done
-[it=1795] hydro_fvm compute time t=8.5687e-03 (Dt=4.742e-06) : 0.80390 s (5.50 ms, 0 us, 682 us, 790045 us, 5.38 ms)
+[it=1795] hydro_fvm compute time t=8.5687e-03 (Dt=4.742e-06) : 0.79554 s (4.07 ms, 0 us, 79 us, 785403 us, 4.11 ms)
 [rank 0] iteration #1796 - starting launcher [0][0] ...
 [rank 0] done
-[it=1796] hydro_fvm compute time t=8.5735e-03 (Dt=4.741e-06) : 0.80384 s (5.46 ms, 0 us, 698 us, 790005 us, 5.39 ms)
+[it=1796] hydro_fvm compute time t=8.5735e-03 (Dt=4.741e-06) : 0.79516 s (4.10 ms, 0 us, 79 us, 785067 us, 4.02 ms)
 [rank 0] iteration #1797 - starting launcher [0][0] ...
 [rank 0] done
-[it=1797] hydro_fvm compute time t=8.5782e-03 (Dt=4.741e-06) : 0.80453 s (5.46 ms, 0 us, 628 us, 790726 us, 5.42 ms)
+[it=1797] hydro_fvm compute time t=8.5782e-03 (Dt=4.741e-06) : 0.79547 s (4.09 ms, 0 us, 81 us, 785374 us, 4.03 ms)
 [rank 0] iteration #1798 - starting launcher [0][0] ...
 [rank 0] done
-[it=1798] hydro_fvm compute time t=8.5829e-03 (Dt=4.741e-06) : 0.80449 s (5.48 ms, 0 us, 680 us, 790643 us, 5.39 ms)
+[it=1798] hydro_fvm compute time t=8.5829e-03 (Dt=4.741e-06) : 0.79520 s (4.08 ms, 0 us, 81 us, 785112 us, 4.04 ms)
 [rank 0] iteration #1799 - starting launcher [0][0] ...
 [rank 0] done
-[it=1799] hydro_fvm compute time t=8.5877e-03 (Dt=4.741e-06) : 0.80421 s (5.47 ms, 0 us, 705 us, 790362 us, 5.40 ms)
+[it=1799] hydro_fvm compute time t=8.5877e-03 (Dt=4.741e-06) : 0.79526 s (4.07 ms, 0 us, 79 us, 785219 us, 4.01 ms)
 [rank 0] iteration #1800 - starting launcher [0][0] ...
 [rank 0] done
-[it=1800] hydro_fvm compute time t=8.5924e-03 (Dt=4.741e-06) : 0.80368 s (5.43 ms, 0 us, 695 us, 789878 us, 5.39 ms)
+[it=1800] hydro_fvm compute time t=8.5924e-03 (Dt=4.741e-06) : 0.79539 s (4.07 ms, 0 us, 82 us, 785309 us, 4.03 ms)
 [rank 0] iteration #1801 - starting launcher [0][0] ...
 [rank 0] done
-[it=1801] hydro_fvm compute time t=8.5972e-03 (Dt=4.741e-06) : 0.80432 s (5.45 ms, 0 us, 653 us, 790542 us, 5.38 ms)
+[it=1801] hydro_fvm compute time t=8.5972e-03 (Dt=4.741e-06) : 0.79555 s (4.07 ms, 0 us, 80 us, 785498 us, 4.02 ms)
 [rank 0] iteration #1802 - starting launcher [0][0] ...
 [rank 0] done
-[it=1802] hydro_fvm compute time t=8.6019e-03 (Dt=4.741e-06) : 0.80391 s (5.44 ms, 0 us, 688 us, 790113 us, 5.38 ms)
+[it=1802] hydro_fvm compute time t=8.6019e-03 (Dt=4.741e-06) : 0.79527 s (4.06 ms, 0 us, 82 us, 785241 us, 4.00 ms)
 [rank 0] iteration #1803 - starting launcher [0][0] ...
 [rank 0] done
-[it=1803] hydro_fvm compute time t=8.6066e-03 (Dt=4.741e-06) : 0.80452 s (5.46 ms, 0 us, 692 us, 790720 us, 5.38 ms)
+[it=1803] hydro_fvm compute time t=8.6066e-03 (Dt=4.741e-06) : 0.79554 s (4.06 ms, 0 us, 77 us, 785482 us, 4.04 ms)
 [rank 0] iteration #1804 - starting launcher [0][0] ...
 [rank 0] done
-[it=1804] hydro_fvm compute time t=8.6114e-03 (Dt=4.741e-06) : 0.80375 s (5.47 ms, 0 us, 687 us, 789904 us, 5.39 ms)
+[it=1804] hydro_fvm compute time t=8.6114e-03 (Dt=4.741e-06) : 0.79540 s (4.08 ms, 0 us, 79 us, 785342 us, 4.02 ms)
 [rank 0] iteration #1805 - starting launcher [0][0] ...
 [rank 0] done
-[it=1805] hydro_fvm compute time t=8.6161e-03 (Dt=4.741e-06) : 0.80438 s (5.45 ms, 0 us, 704 us, 790555 us, 5.38 ms)
+[it=1805] hydro_fvm compute time t=8.6161e-03 (Dt=4.741e-06) : 0.79544 s (4.04 ms, 0 us, 80 us, 785419 us, 4.02 ms)
 [rank 0] iteration #1806 - starting launcher [0][0] ...
 [rank 0] done
-[it=1806] hydro_fvm compute time t=8.6209e-03 (Dt=4.741e-06) : 0.80396 s (5.44 ms, 0 us, 693 us, 790136 us, 5.40 ms)
+[it=1806] hydro_fvm compute time t=8.6209e-03 (Dt=4.741e-06) : 0.79535 s (4.08 ms, 0 us, 79 us, 785296 us, 4.01 ms)
 [rank 0] iteration #1807 - starting launcher [0][0] ...
 [rank 0] done
-[it=1807] hydro_fvm compute time t=8.6256e-03 (Dt=4.741e-06) : 0.80396 s (5.40 ms, 0 us, 681 us, 790174 us, 5.41 ms)
+[it=1807] hydro_fvm compute time t=8.6256e-03 (Dt=4.741e-06) : 0.79553 s (4.07 ms, 0 us, 82 us, 785451 us, 4.04 ms)
 [rank 0] iteration #1808 - starting launcher [0][0] ...
 [rank 0] done
-[it=1808] hydro_fvm compute time t=8.6303e-03 (Dt=4.741e-06) : 0.80363 s (5.43 ms, 0 us, 645 us, 789865 us, 5.40 ms)
+[it=1808] hydro_fvm compute time t=8.6303e-03 (Dt=4.741e-06) : 0.79572 s (4.07 ms, 0 us, 79 us, 785592 us, 4.06 ms)
 [rank 0] iteration #1809 - starting launcher [0][0] ...
 [rank 0] done
-[it=1809] hydro_fvm compute time t=8.6351e-03 (Dt=4.741e-06) : 0.80429 s (5.44 ms, 0 us, 690 us, 790483 us, 5.39 ms)
+[it=1809] hydro_fvm compute time t=8.6351e-03 (Dt=4.741e-06) : 0.80026 s (4.12 ms, 0 us, 77 us, 790140 us, 4.05 ms)
 [rank 0] iteration #1810 - starting launcher [0][0] ...
 [rank 0] done
-[it=1810] hydro_fvm compute time t=8.6398e-03 (Dt=4.741e-06) : 0.80358 s (5.43 ms, 0 us, 667 us, 789807 us, 5.39 ms)
+[it=1810] hydro_fvm compute time t=8.6398e-03 (Dt=4.741e-06) : 0.79544 s (4.22 ms, 0 us, 80 us, 785234 us, 4.05 ms)
 [rank 0] iteration #1811 - starting launcher [0][0] ...
 [rank 0] done
-[it=1811] hydro_fvm compute time t=8.6446e-03 (Dt=4.741e-06) : 0.80400 s (5.42 ms, 0 us, 692 us, 790197 us, 5.39 ms)
+[it=1811] hydro_fvm compute time t=8.6446e-03 (Dt=4.741e-06) : 0.79681 s (4.21 ms, 0 us, 81 us, 786599 us, 4.06 ms)
 [rank 0] iteration #1812 - starting launcher [0][0] ...
 [rank 0] done
-[it=1812] hydro_fvm compute time t=8.6493e-03 (Dt=4.741e-06) : 0.80377 s (5.47 ms, 0 us, 680 us, 789921 us, 5.40 ms)
+[it=1812] hydro_fvm compute time t=8.6493e-03 (Dt=4.741e-06) : 0.79536 s (4.18 ms, 0 us, 80 us, 785129 us, 4.08 ms)
 [rank 0] iteration #1813 - starting launcher [0][0] ...
 [rank 0] done
-[it=1813] hydro_fvm compute time t=8.6541e-03 (Dt=4.741e-06) : 0.80419 s (5.45 ms, 0 us, 685 us, 790365 us, 5.39 ms)
+[it=1813] hydro_fvm compute time t=8.6541e-03 (Dt=4.741e-06) : 0.79582 s (4.19 ms, 0 us, 79 us, 785601 us, 4.05 ms)
 [rank 0] iteration #1814 - starting launcher [0][0] ...
 [rank 0] done
-[it=1814] hydro_fvm compute time t=8.6588e-03 (Dt=4.741e-06) : 0.80398 s (5.43 ms, 0 us, 692 us, 790162 us, 5.40 ms)
+[it=1814] hydro_fvm compute time t=8.6588e-03 (Dt=4.741e-06) : 0.79556 s (4.18 ms, 0 us, 82 us, 785347 us, 4.06 ms)
 [rank 0] iteration #1815 - starting launcher [0][0] ...
 [rank 0] done
-[it=1815] hydro_fvm compute time t=8.6635e-03 (Dt=4.741e-06) : 0.80347 s (5.44 ms, 0 us, 692 us, 789672 us, 5.39 ms)
+[it=1815] hydro_fvm compute time t=8.6635e-03 (Dt=4.741e-06) : 0.79554 s (4.20 ms, 0 us, 79 us, 785342 us, 4.07 ms)
 [rank 0] iteration #1816 - starting launcher [0][0] ...
 [rank 0] done
-[it=1816] hydro_fvm compute time t=8.6683e-03 (Dt=4.741e-06) : 0.80402 s (5.44 ms, 0 us, 665 us, 790240 us, 5.38 ms)
+[it=1816] hydro_fvm compute time t=8.6683e-03 (Dt=4.741e-06) : 0.79532 s (4.16 ms, 0 us, 79 us, 785167 us, 4.03 ms)
 [rank 0] iteration #1817 - starting launcher [0][0] ...
 [rank 0] done
-[it=1817] hydro_fvm compute time t=8.6730e-03 (Dt=4.741e-06) : 0.80439 s (5.45 ms, 0 us, 698 us, 790546 us, 5.39 ms)
+[it=1817] hydro_fvm compute time t=8.6730e-03 (Dt=4.741e-06) : 0.79580 s (4.20 ms, 0 us, 80 us, 785595 us, 4.04 ms)
 [rank 0] iteration #1818 - starting launcher [0][0] ...
 [rank 0] done
-[it=1818] hydro_fvm compute time t=8.6778e-03 (Dt=4.740e-06) : 0.80403 s (5.46 ms, 0 us, 703 us, 790175 us, 5.40 ms)
+[it=1818] hydro_fvm compute time t=8.6778e-03 (Dt=4.740e-06) : 0.79561 s (4.17 ms, 0 us, 79 us, 785411 us, 4.06 ms)
 [rank 0] iteration #1819 - starting launcher [0][0] ...
 [rank 0] done
-[it=1819] hydro_fvm compute time t=8.6825e-03 (Dt=4.740e-06) : 0.80453 s (5.46 ms, 0 us, 696 us, 790686 us, 5.39 ms)
+[it=1819] hydro_fvm compute time t=8.6825e-03 (Dt=4.740e-06) : 0.79925 s (4.18 ms, 0 us, 78 us, 789067 us, 4.05 ms)
 [rank 0] iteration #1820 - starting launcher [0][0] ...
 [rank 0] done
-[it=1820] hydro_fvm compute time t=8.6872e-03 (Dt=4.740e-06) : 0.80427 s (5.46 ms, 0 us, 655 us, 790492 us, 5.38 ms)
+[it=1820] hydro_fvm compute time t=8.6872e-03 (Dt=4.740e-06) : 0.79559 s (4.16 ms, 0 us, 78 us, 785424 us, 4.08 ms)
 [rank 0] iteration #1821 - starting launcher [0][0] ...
 [rank 0] done
-[it=1821] hydro_fvm compute time t=8.6920e-03 (Dt=4.740e-06) : 0.80436 s (5.48 ms, 0 us, 675 us, 790510 us, 5.39 ms)
+[it=1821] hydro_fvm compute time t=8.6920e-03 (Dt=4.740e-06) : 0.79575 s (4.20 ms, 0 us, 79 us, 785577 us, 4.05 ms)
 [rank 0] iteration #1822 - starting launcher [0][0] ...
 [rank 0] done
-[it=1822] hydro_fvm compute time t=8.6967e-03 (Dt=4.740e-06) : 0.80414 s (5.42 ms, 0 us, 664 us, 790369 us, 5.40 ms)
+[it=1822] hydro_fvm compute time t=8.6967e-03 (Dt=4.740e-06) : 0.79551 s (4.18 ms, 0 us, 79 us, 785304 us, 4.05 ms)
 [rank 0] iteration #1823 - starting launcher [0][0] ...
 [rank 0] done
-[it=1823] hydro_fvm compute time t=8.7015e-03 (Dt=4.740e-06) : 0.80465 s (5.42 ms, 0 us, 707 us, 790489 us, 5.51 ms)
+[it=1823] hydro_fvm compute time t=8.7015e-03 (Dt=4.740e-06) : 0.79570 s (4.19 ms, 0 us, 79 us, 785510 us, 4.06 ms)
 [rank 0] iteration #1824 - starting launcher [0][0] ...
 [rank 0] done
-[it=1824] hydro_fvm compute time t=8.7062e-03 (Dt=4.740e-06) : 0.80469 s (5.53 ms, 0 us, 678 us, 790644 us, 5.43 ms)
+[it=1824] hydro_fvm compute time t=8.7062e-03 (Dt=4.740e-06) : 0.79548 s (4.21 ms, 0 us, 80 us, 785289 us, 4.04 ms)
 [rank 0] iteration #1825 - starting launcher [0][0] ...
 [rank 0] done
-[it=1825] hydro_fvm compute time t=8.7109e-03 (Dt=4.740e-06) : 0.80425 s (5.51 ms, 0 us, 696 us, 790253 us, 5.44 ms)
+[it=1825] hydro_fvm compute time t=8.7109e-03 (Dt=4.740e-06) : 0.79571 s (4.19 ms, 0 us, 80 us, 785468 us, 4.06 ms)
 [rank 0] iteration #1826 - starting launcher [0][0] ...
 [rank 0] done
-[it=1826] hydro_fvm compute time t=8.7157e-03 (Dt=4.740e-06) : 0.80368 s (5.52 ms, 0 us, 699 us, 789772 us, 5.39 ms)
+[it=1826] hydro_fvm compute time t=8.7157e-03 (Dt=4.740e-06) : 0.79565 s (4.20 ms, 0 us, 79 us, 785438 us, 4.05 ms)
 [rank 0] iteration #1827 - starting launcher [0][0] ...
 [rank 0] done
-[it=1827] hydro_fvm compute time t=8.7204e-03 (Dt=4.740e-06) : 0.80454 s (5.44 ms, 0 us, 695 us, 790685 us, 5.41 ms)
+[it=1827] hydro_fvm compute time t=8.7204e-03 (Dt=4.740e-06) : 0.79616 s (4.18 ms, 0 us, 80 us, 785971 us, 4.04 ms)
 [rank 0] iteration #1828 - starting launcher [0][0] ...
 [rank 0] done
-[it=1828] hydro_fvm compute time t=8.7252e-03 (Dt=4.740e-06) : 0.80379 s (5.51 ms, 0 us, 699 us, 789877 us, 5.41 ms)
+[it=1828] hydro_fvm compute time t=8.7252e-03 (Dt=4.740e-06) : 0.79554 s (4.20 ms, 0 us, 79 us, 785231 us, 4.08 ms)
 [rank 0] iteration #1829 - starting launcher [0][0] ...
 [rank 0] done
-[it=1829] hydro_fvm compute time t=8.7299e-03 (Dt=4.740e-06) : 0.80445 s (5.48 ms, 0 us, 696 us, 790555 us, 5.42 ms)
+[it=1829] hydro_fvm compute time t=8.7299e-03 (Dt=4.740e-06) : 0.79557 s (4.09 ms, 0 us, 79 us, 785484 us, 4.03 ms)
 [rank 0] iteration #1830 - starting launcher [0][0] ...
 [rank 0] done
-[it=1830] hydro_fvm compute time t=8.7346e-03 (Dt=4.740e-06) : 0.80398 s (5.45 ms, 0 us, 707 us, 790056 us, 5.43 ms)
+[it=1830] hydro_fvm compute time t=8.7346e-03 (Dt=4.740e-06) : 0.79555 s (4.19 ms, 0 us, 78 us, 785372 us, 4.03 ms)
 [rank 0] iteration #1831 - starting launcher [0][0] ...
 [rank 0] done
-[it=1831] hydro_fvm compute time t=8.7394e-03 (Dt=4.740e-06) : 0.80433 s (5.52 ms, 0 us, 706 us, 790404 us, 5.41 ms)
+[it=1831] hydro_fvm compute time t=8.7394e-03 (Dt=4.740e-06) : 0.79574 s (4.21 ms, 0 us, 79 us, 785532 us, 4.04 ms)
 [rank 0] iteration #1832 - starting launcher [0][0] ...
 [rank 0] done
-[it=1832] hydro_fvm compute time t=8.7441e-03 (Dt=4.740e-06) : 0.80443 s (5.48 ms, 0 us, 670 us, 790558 us, 5.43 ms)
+[it=1832] hydro_fvm compute time t=8.7441e-03 (Dt=4.740e-06) : 0.79520 s (4.17 ms, 0 us, 80 us, 785040 us, 4.03 ms)
 [rank 0] iteration #1833 - starting launcher [0][0] ...
 [rank 0] done
-[it=1833] hydro_fvm compute time t=8.7489e-03 (Dt=4.740e-06) : 0.80387 s (5.47 ms, 0 us, 694 us, 789990 us, 5.42 ms)
+[it=1833] hydro_fvm compute time t=8.7489e-03 (Dt=4.740e-06) : 0.79596 s (4.17 ms, 0 us, 80 us, 785792 us, 4.03 ms)
 [rank 0] iteration #1834 - starting launcher [0][0] ...
 [rank 0] done
-[it=1834] hydro_fvm compute time t=8.7536e-03 (Dt=4.740e-06) : 0.80430 s (5.44 ms, 0 us, 708 us, 790455 us, 5.40 ms)
+[it=1834] hydro_fvm compute time t=8.7536e-03 (Dt=4.740e-06) : 0.79550 s (4.21 ms, 0 us, 79 us, 785324 us, 4.03 ms)
 [rank 0] iteration #1835 - starting launcher [0][0] ...
 [rank 0] done
-[it=1835] hydro_fvm compute time t=8.7583e-03 (Dt=4.740e-06) : 0.80361 s (5.49 ms, 0 us, 678 us, 789727 us, 5.39 ms)
+[it=1835] hydro_fvm compute time t=8.7583e-03 (Dt=4.740e-06) : 0.79578 s (4.20 ms, 0 us, 81 us, 785567 us, 4.06 ms)
 [rank 0] iteration #1836 - starting launcher [0][0] ...
 [rank 0] done
-[it=1836] hydro_fvm compute time t=8.7631e-03 (Dt=4.740e-06) : 0.80397 s (5.49 ms, 0 us, 685 us, 790093 us, 5.41 ms)
+[it=1836] hydro_fvm compute time t=8.7631e-03 (Dt=4.740e-06) : 0.79533 s (4.09 ms, 0 us, 78 us, 785184 us, 4.08 ms)
 [rank 0] iteration #1837 - starting launcher [0][0] ...
 [rank 0] done
-[it=1837] hydro_fvm compute time t=8.7678e-03 (Dt=4.740e-06) : 0.80410 s (5.44 ms, 0 us, 700 us, 790262 us, 5.41 ms)
+[it=1837] hydro_fvm compute time t=8.7678e-03 (Dt=4.740e-06) : 0.79538 s (4.10 ms, 0 us, 78 us, 785283 us, 4.05 ms)
 [rank 0] iteration #1838 - starting launcher [0][0] ...
 [rank 0] done
-[it=1838] hydro_fvm compute time t=8.7726e-03 (Dt=4.740e-06) : 0.80450 s (5.45 ms, 0 us, 682 us, 790661 us, 5.41 ms)
+[it=1838] hydro_fvm compute time t=8.7726e-03 (Dt=4.740e-06) : 0.79571 s (4.19 ms, 0 us, 78 us, 785503 us, 4.05 ms)
 [rank 0] iteration #1839 - starting launcher [0][0] ...
 [rank 0] done
-[it=1839] hydro_fvm compute time t=8.7773e-03 (Dt=4.740e-06) : 0.80456 s (5.48 ms, 0 us, 686 us, 790711 us, 5.39 ms)
+[it=1839] hydro_fvm compute time t=8.7773e-03 (Dt=4.740e-06) : 0.79560 s (4.20 ms, 0 us, 83 us, 785365 us, 4.06 ms)
 [rank 0] iteration #1840 - starting launcher [0][0] ...
 [rank 0] done
-[it=1840] hydro_fvm compute time t=8.7820e-03 (Dt=4.740e-06) : 0.80445 s (5.45 ms, 0 us, 687 us, 790631 us, 5.40 ms)
+[it=1840] hydro_fvm compute time t=8.7820e-03 (Dt=4.740e-06) : 0.79573 s (4.19 ms, 0 us, 79 us, 785485 us, 4.04 ms)
 [rank 0] iteration #1841 - starting launcher [0][0] ...
 [rank 0] done
-[it=1841] hydro_fvm compute time t=8.7868e-03 (Dt=4.739e-06) : 0.80448 s (5.46 ms, 0 us, 678 us, 790642 us, 5.39 ms)
+[it=1841] hydro_fvm compute time t=8.7868e-03 (Dt=4.739e-06) : 0.79554 s (4.06 ms, 0 us, 78 us, 785471 us, 4.05 ms)
 [rank 0] iteration #1842 - starting launcher [0][0] ...
 [rank 0] done
-[it=1842] hydro_fvm compute time t=8.7915e-03 (Dt=4.739e-06) : 0.80415 s (5.45 ms, 0 us, 705 us, 790311 us, 5.39 ms)
+[it=1842] hydro_fvm compute time t=8.7915e-03 (Dt=4.739e-06) : 0.79698 s (4.18 ms, 0 us, 80 us, 786764 us, 4.03 ms)
 [rank 0] iteration #1843 - starting launcher [0][0] ...
 [rank 0] done
-[it=1843] hydro_fvm compute time t=8.7963e-03 (Dt=4.739e-06) : 0.80420 s (5.45 ms, 0 us, 690 us, 790276 us, 5.44 ms)
+[it=1843] hydro_fvm compute time t=8.7963e-03 (Dt=4.739e-06) : 0.79556 s (4.08 ms, 0 us, 85 us, 785456 us, 4.04 ms)
 [rank 0] iteration #1844 - starting launcher [0][0] ...
 [rank 0] done
-[it=1844] hydro_fvm compute time t=8.8010e-03 (Dt=4.739e-06) : 0.80451 s (5.50 ms, 0 us, 699 us, 790616 us, 5.40 ms)
+[it=1844] hydro_fvm compute time t=8.8010e-03 (Dt=4.739e-06) : 0.79547 s (4.09 ms, 0 us, 84 us, 785355 us, 4.04 ms)
 [rank 0] iteration #1845 - starting launcher [0][0] ...
 [rank 0] done
-[it=1845] hydro_fvm compute time t=8.8057e-03 (Dt=4.739e-06) : 0.80422 s (5.46 ms, 0 us, 700 us, 790362 us, 5.39 ms)
+[it=1845] hydro_fvm compute time t=8.8057e-03 (Dt=4.739e-06) : 0.79548 s (4.07 ms, 0 us, 80 us, 785413 us, 4.03 ms)
 [rank 0] iteration #1846 - starting launcher [0][0] ...
 [rank 0] done
-[it=1846] hydro_fvm compute time t=8.8105e-03 (Dt=4.739e-06) : 0.80423 s (5.50 ms, 0 us, 697 us, 790347 us, 5.38 ms)
+[it=1846] hydro_fvm compute time t=8.8105e-03 (Dt=4.739e-06) : 0.79538 s (4.06 ms, 0 us, 79 us, 785298 us, 4.05 ms)
 [rank 0] iteration #1847 - starting launcher [0][0] ...
 [rank 0] done
-[it=1847] hydro_fvm compute time t=8.8152e-03 (Dt=4.739e-06) : 0.80383 s (5.49 ms, 0 us, 684 us, 789943 us, 5.40 ms)
+[it=1847] hydro_fvm compute time t=8.8152e-03 (Dt=4.739e-06) : 0.79552 s (4.06 ms, 0 us, 80 us, 785453 us, 4.03 ms)
 [rank 0] iteration #1848 - starting launcher [0][0] ...
 [rank 0] done
-[it=1848] hydro_fvm compute time t=8.8200e-03 (Dt=4.739e-06) : 0.80428 s (5.48 ms, 0 us, 705 us, 790413 us, 5.41 ms)
+[it=1848] hydro_fvm compute time t=8.8200e-03 (Dt=4.739e-06) : 0.79543 s (4.07 ms, 0 us, 82 us, 785236 us, 4.09 ms)
 [rank 0] iteration #1849 - starting launcher [0][0] ...
 [rank 0] done
-[it=1849] hydro_fvm compute time t=8.8247e-03 (Dt=4.739e-06) : 0.80422 s (5.48 ms, 0 us, 651 us, 790408 us, 5.40 ms)
+[it=1849] hydro_fvm compute time t=8.8247e-03 (Dt=4.739e-06) : 0.79564 s (4.13 ms, 0 us, 80 us, 785494 us, 4.05 ms)
 [rank 0] iteration #1850 - starting launcher [0][0] ...
 [rank 0] done
-[it=1850] hydro_fvm compute time t=8.8294e-03 (Dt=4.739e-06) : 0.80466 s (5.51 ms, 0 us, 705 us, 790697 us, 5.43 ms)
+[it=1850] hydro_fvm compute time t=8.8294e-03 (Dt=4.739e-06) : 0.79557 s (4.20 ms, 0 us, 79 us, 785341 us, 4.07 ms)
 [rank 0] iteration #1851 - starting launcher [0][0] ...
 [rank 0] done
-[it=1851] hydro_fvm compute time t=8.8342e-03 (Dt=4.739e-06) : 0.80426 s (5.50 ms, 0 us, 705 us, 790366 us, 5.39 ms)
+[it=1851] hydro_fvm compute time t=8.8342e-03 (Dt=4.739e-06) : 0.79566 s (4.21 ms, 0 us, 80 us, 785454 us, 4.06 ms)
 [rank 0] iteration #1852 - starting launcher [0][0] ...
 [rank 0] done
-[it=1852] hydro_fvm compute time t=8.8389e-03 (Dt=4.739e-06) : 0.80391 s (5.47 ms, 0 us, 678 us, 790055 us, 5.41 ms)
+[it=1852] hydro_fvm compute time t=8.8389e-03 (Dt=4.739e-06) : 0.79556 s (4.21 ms, 0 us, 80 us, 785343 us, 4.04 ms)
 [rank 0] iteration #1853 - starting launcher [0][0] ...
 [rank 0] done
-[it=1853] hydro_fvm compute time t=8.8436e-03 (Dt=4.739e-06) : 0.80424 s (5.45 ms, 0 us, 658 us, 790438 us, 5.40 ms)
+[it=1853] hydro_fvm compute time t=8.8436e-03 (Dt=4.739e-06) : 0.79595 s (4.30 ms, 0 us, 80 us, 785630 us, 4.05 ms)
 [rank 0] iteration #1854 - starting launcher [0][0] ...
 [rank 0] done
-[it=1854] hydro_fvm compute time t=8.8484e-03 (Dt=4.739e-06) : 0.80432 s (5.47 ms, 0 us, 699 us, 790451 us, 5.41 ms)
+[it=1854] hydro_fvm compute time t=8.8484e-03 (Dt=4.739e-06) : 0.79763 s (4.19 ms, 0 us, 80 us, 787433 us, 4.04 ms)
 [rank 0] iteration #1855 - starting launcher [0][0] ...
 [rank 0] done
-[it=1855] hydro_fvm compute time t=8.8531e-03 (Dt=4.739e-06) : 0.80379 s (5.45 ms, 0 us, 705 us, 789939 us, 5.40 ms)
+[it=1855] hydro_fvm compute time t=8.8531e-03 (Dt=4.739e-06) : 0.79587 s (4.23 ms, 0 us, 80 us, 785469 us, 4.13 ms)
 [rank 0] iteration #1856 - starting launcher [0][0] ...
 [rank 0] done
-[it=1856] hydro_fvm compute time t=8.8579e-03 (Dt=4.739e-06) : 0.80420 s (5.47 ms, 0 us, 705 us, 790338 us, 5.39 ms)
+[it=1856] hydro_fvm compute time t=8.8579e-03 (Dt=4.739e-06) : 0.79562 s (4.25 ms, 0 us, 79 us, 785339 us, 4.05 ms)
 [rank 0] iteration #1857 - starting launcher [0][0] ...
 [rank 0] done
-[it=1857] hydro_fvm compute time t=8.8626e-03 (Dt=4.739e-06) : 0.80453 s (5.45 ms, 0 us, 703 us, 790677 us, 5.41 ms)
+[it=1857] hydro_fvm compute time t=8.8626e-03 (Dt=4.739e-06) : 0.79546 s (4.20 ms, 0 us, 79 us, 785287 us, 4.04 ms)
 [rank 0] iteration #1858 - starting launcher [0][0] ...
 [rank 0] done
-[it=1858] hydro_fvm compute time t=8.8673e-03 (Dt=4.739e-06) : 0.80439 s (5.47 ms, 0 us, 688 us, 790542 us, 5.40 ms)
+[it=1858] hydro_fvm compute time t=8.8673e-03 (Dt=4.739e-06) : 0.79573 s (4.22 ms, 0 us, 80 us, 785510 us, 4.07 ms)
 [rank 0] iteration #1859 - starting launcher [0][0] ...
 [rank 0] done
-[it=1859] hydro_fvm compute time t=8.8721e-03 (Dt=4.739e-06) : 0.80447 s (5.45 ms, 0 us, 677 us, 790651 us, 5.40 ms)
+[it=1859] hydro_fvm compute time t=8.8721e-03 (Dt=4.739e-06) : 0.79563 s (4.23 ms, 0 us, 79 us, 785412 us, 4.06 ms)
 [rank 0] iteration #1860 - starting launcher [0][0] ...
 [rank 0] done
-[it=1860] hydro_fvm compute time t=8.8768e-03 (Dt=4.739e-06) : 0.80389 s (5.46 ms, 0 us, 653 us, 790106 us, 5.39 ms)
+[it=1860] hydro_fvm compute time t=8.8768e-03 (Dt=4.739e-06) : 0.79556 s (4.21 ms, 0 us, 80 us, 785316 us, 4.07 ms)
 [rank 0] iteration #1861 - starting launcher [0][0] ...
 [rank 0] done
-[it=1861] hydro_fvm compute time t=8.8816e-03 (Dt=4.739e-06) : 0.80455 s (5.46 ms, 0 us, 705 us, 790705 us, 5.40 ms)
+[it=1861] hydro_fvm compute time t=8.8816e-03 (Dt=4.739e-06) : 0.79609 s (4.22 ms, 0 us, 79 us, 785866 us, 4.05 ms)
 [rank 0] iteration #1862 - starting launcher [0][0] ...
 [rank 0] done
-[it=1862] hydro_fvm compute time t=8.8863e-03 (Dt=4.739e-06) : 0.80420 s (5.47 ms, 0 us, 690 us, 790362 us, 5.39 ms)
+[it=1862] hydro_fvm compute time t=8.8863e-03 (Dt=4.739e-06) : 0.79535 s (4.20 ms, 0 us, 80 us, 785157 us, 4.03 ms)
 [rank 0] iteration #1863 - starting launcher [0][0] ...
 [rank 0] done
-[it=1863] hydro_fvm compute time t=8.8910e-03 (Dt=4.739e-06) : 0.80456 s (5.47 ms, 0 us, 678 us, 790709 us, 5.40 ms)
+[it=1863] hydro_fvm compute time t=8.8910e-03 (Dt=4.739e-06) : 0.79565 s (4.21 ms, 0 us, 80 us, 785454 us, 4.03 ms)
 [rank 0] iteration #1864 - starting launcher [0][0] ...
 [rank 0] done
-[it=1864] hydro_fvm compute time t=8.8958e-03 (Dt=4.738e-06) : 0.80389 s (5.44 ms, 0 us, 701 us, 790065 us, 5.39 ms)
+[it=1864] hydro_fvm compute time t=8.8958e-03 (Dt=4.738e-06) : 0.79548 s (4.21 ms, 0 us, 78 us, 785266 us, 4.05 ms)
 [rank 0] iteration #1865 - starting launcher [0][0] ...
 [rank 0] done
-[it=1865] hydro_fvm compute time t=8.9005e-03 (Dt=4.738e-06) : 0.80446 s (5.46 ms, 0 us, 682 us, 790644 us, 5.37 ms)
+[it=1865] hydro_fvm compute time t=8.9005e-03 (Dt=4.738e-06) : 0.79551 s (4.20 ms, 0 us, 79 us, 785298 us, 4.05 ms)
 [rank 0] iteration #1866 - starting launcher [0][0] ...
 [rank 0] done
-[it=1866] hydro_fvm compute time t=8.9053e-03 (Dt=4.738e-06) : 0.80418 s (5.44 ms, 0 us, 699 us, 790353 us, 5.40 ms)
+[it=1866] hydro_fvm compute time t=8.9053e-03 (Dt=4.738e-06) : 0.79575 s (4.22 ms, 0 us, 78 us, 785511 us, 4.05 ms)
 [rank 0] iteration #1867 - starting launcher [0][0] ...
 [rank 0] done
-[it=1867] hydro_fvm compute time t=8.9100e-03 (Dt=4.738e-06) : 0.80385 s (5.47 ms, 0 us, 704 us, 789984 us, 5.39 ms)
+[it=1867] hydro_fvm compute time t=8.9100e-03 (Dt=4.738e-06) : 0.79575 s (4.21 ms, 0 us, 80 us, 785521 us, 4.05 ms)
 [rank 0] iteration #1868 - starting launcher [0][0] ...
 [rank 0] done
-[it=1868] hydro_fvm compute time t=8.9147e-03 (Dt=4.738e-06) : 0.80430 s (5.46 ms, 0 us, 683 us, 790455 us, 5.40 ms)
+[it=1868] hydro_fvm compute time t=8.9147e-03 (Dt=4.738e-06) : 0.79561 s (4.22 ms, 0 us, 80 us, 785388 us, 4.05 ms)
 [rank 0] iteration #1869 - starting launcher [0][0] ...
 [rank 0] done
-[it=1869] hydro_fvm compute time t=8.9195e-03 (Dt=4.738e-06) : 0.80482 s (5.46 ms, 0 us, 680 us, 790562 us, 5.50 ms)
+[it=1869] hydro_fvm compute time t=8.9195e-03 (Dt=4.738e-06) : 0.79563 s (4.21 ms, 0 us, 77 us, 785436 us, 4.06 ms)
 [rank 0] iteration #1870 - starting launcher [0][0] ...
 [rank 0] done
-[it=1870] hydro_fvm compute time t=8.9242e-03 (Dt=4.738e-06) : 0.80422 s (5.55 ms, 0 us, 665 us, 790110 us, 5.40 ms)
+[it=1870] hydro_fvm compute time t=8.9242e-03 (Dt=4.738e-06) : 0.79532 s (4.20 ms, 0 us, 79 us, 785151 us, 4.05 ms)
 [rank 0] iteration #1871 - starting launcher [0][0] ...
 [rank 0] done
-[it=1871] hydro_fvm compute time t=8.9289e-03 (Dt=4.738e-06) : 0.80460 s (5.50 ms, 0 us, 696 us, 790656 us, 5.41 ms)
+[it=1871] hydro_fvm compute time t=8.9289e-03 (Dt=4.738e-06) : 0.79949 s (4.22 ms, 0 us, 79 us, 789311 us, 4.04 ms)
 [rank 0] iteration #1872 - starting launcher [0][0] ...
 [rank 0] done
-[it=1872] hydro_fvm compute time t=8.9337e-03 (Dt=4.738e-06) : 0.80434 s (5.49 ms, 0 us, 709 us, 790410 us, 5.41 ms)
+[it=1872] hydro_fvm compute time t=8.9337e-03 (Dt=4.738e-06) : 0.79576 s (4.24 ms, 0 us, 78 us, 785505 us, 4.05 ms)
 [rank 0] iteration #1873 - starting launcher [0][0] ...
 [rank 0] done
-[it=1873] hydro_fvm compute time t=8.9384e-03 (Dt=4.738e-06) : 0.80375 s (5.47 ms, 0 us, 675 us, 789879 us, 5.41 ms)
+[it=1873] hydro_fvm compute time t=8.9384e-03 (Dt=4.738e-06) : 0.79565 s (4.19 ms, 0 us, 80 us, 785474 us, 4.03 ms)
 [rank 0] iteration #1874 - starting launcher [0][0] ...
 [rank 0] done
-[it=1874] hydro_fvm compute time t=8.9432e-03 (Dt=4.738e-06) : 0.80354 s (5.46 ms, 0 us, 702 us, 789667 us, 5.41 ms)
+[it=1874] hydro_fvm compute time t=8.9432e-03 (Dt=4.738e-06) : 0.79553 s (4.21 ms, 0 us, 80 us, 785312 us, 4.04 ms)
 [rank 0] iteration #1875 - starting launcher [0][0] ...
 [rank 0] done
-[it=1875] hydro_fvm compute time t=8.9479e-03 (Dt=4.738e-06) : 0.80415 s (5.45 ms, 0 us, 684 us, 790274 us, 5.40 ms)
+[it=1875] hydro_fvm compute time t=8.9479e-03 (Dt=4.738e-06) : 0.79581 s (4.26 ms, 0 us, 77 us, 785550 us, 4.04 ms)
 [rank 0] iteration #1876 - starting launcher [0][0] ...
 [rank 0] done
-[it=1876] hydro_fvm compute time t=8.9526e-03 (Dt=4.738e-06) : 0.80393 s (5.47 ms, 0 us, 702 us, 790059 us, 5.39 ms)
+[it=1876] hydro_fvm compute time t=8.9526e-03 (Dt=4.738e-06) : 0.79551 s (4.19 ms, 0 us, 80 us, 785314 us, 4.04 ms)
 [rank 0] iteration #1877 - starting launcher [0][0] ...
 [rank 0] done
-[it=1877] hydro_fvm compute time t=8.9574e-03 (Dt=4.738e-06) : 0.80459 s (5.51 ms, 0 us, 684 us, 790688 us, 5.41 ms)
+[it=1877] hydro_fvm compute time t=8.9574e-03 (Dt=4.738e-06) : 0.79582 s (4.24 ms, 0 us, 79 us, 785581 us, 4.04 ms)
 [rank 0] iteration #1878 - starting launcher [0][0] ...
 [rank 0] done
-[it=1878] hydro_fvm compute time t=8.9621e-03 (Dt=4.738e-06) : 0.80381 s (5.46 ms, 0 us, 689 us, 789952 us, 5.41 ms)
+[it=1878] hydro_fvm compute time t=8.9621e-03 (Dt=4.738e-06) : 0.79551 s (4.21 ms, 0 us, 79 us, 785294 us, 4.04 ms)
 [rank 0] iteration #1879 - starting launcher [0][0] ...
 [rank 0] done
-[it=1879] hydro_fvm compute time t=8.9668e-03 (Dt=4.738e-06) : 0.80419 s (5.48 ms, 0 us, 679 us, 790303 us, 5.41 ms)
+[it=1879] hydro_fvm compute time t=8.9668e-03 (Dt=4.738e-06) : 0.79676 s (4.21 ms, 0 us, 78 us, 786538 us, 4.04 ms)
 [rank 0] iteration #1880 - starting launcher [0][0] ...
 [rank 0] done
-[it=1880] hydro_fvm compute time t=8.9716e-03 (Dt=4.738e-06) : 0.80414 s (5.48 ms, 0 us, 663 us, 790277 us, 5.41 ms)
+[it=1880] hydro_fvm compute time t=8.9716e-03 (Dt=4.738e-06) : 0.79567 s (4.21 ms, 0 us, 79 us, 785448 us, 4.04 ms)
 [rank 0] iteration #1881 - starting launcher [0][0] ...
 [rank 0] done
-[it=1881] hydro_fvm compute time t=8.9763e-03 (Dt=4.738e-06) : 0.80449 s (5.49 ms, 0 us, 667 us, 790639 us, 5.40 ms)
+[it=1881] hydro_fvm compute time t=8.9763e-03 (Dt=4.738e-06) : 0.79578 s (4.22 ms, 0 us, 78 us, 785567 us, 4.06 ms)
 [rank 0] iteration #1882 - starting launcher [0][0] ...
 [rank 0] done
-[it=1882] hydro_fvm compute time t=8.9811e-03 (Dt=4.738e-06) : 0.80380 s (5.47 ms, 0 us, 688 us, 789949 us, 5.40 ms)
+[it=1882] hydro_fvm compute time t=8.9811e-03 (Dt=4.738e-06) : 0.79550 s (4.21 ms, 0 us, 79 us, 785315 us, 4.06 ms)
 [rank 0] iteration #1883 - starting launcher [0][0] ...
 [rank 0] done
-[it=1883] hydro_fvm compute time t=8.9858e-03 (Dt=4.738e-06) : 0.80437 s (5.45 ms, 0 us, 683 us, 790535 us, 5.39 ms)
+[it=1883] hydro_fvm compute time t=8.9858e-03 (Dt=4.738e-06) : 0.79579 s (4.21 ms, 0 us, 79 us, 785596 us, 4.06 ms)
 [rank 0] iteration #1884 - starting launcher [0][0] ...
 [rank 0] done
-[it=1884] hydro_fvm compute time t=8.9905e-03 (Dt=4.738e-06) : 0.80422 s (5.47 ms, 0 us, 693 us, 790352 us, 5.40 ms)
+[it=1884] hydro_fvm compute time t=8.9905e-03 (Dt=4.738e-06) : 0.79549 s (4.23 ms, 0 us, 78 us, 785231 us, 4.06 ms)
 [rank 0] iteration #1885 - starting launcher [0][0] ...
 [rank 0] done
-[it=1885] hydro_fvm compute time t=8.9953e-03 (Dt=4.738e-06) : 0.80456 s (5.52 ms, 0 us, 682 us, 790658 us, 5.40 ms)
+[it=1885] hydro_fvm compute time t=8.9953e-03 (Dt=4.738e-06) : 0.79567 s (4.35 ms, 0 us, 79 us, 785305 us, 4.06 ms)
 [rank 0] iteration #1886 - starting launcher [0][0] ...
 [rank 0] done
-[it=1886] hydro_fvm compute time t=9.0000e-03 (Dt=4.737e-06) : 0.80366 s (5.46 ms, 0 us, 706 us, 789793 us, 5.41 ms)
+[it=1886] hydro_fvm compute time t=9.0000e-03 (Dt=4.737e-06) : 0.79581 s (4.18 ms, 0 us, 81 us, 785611 us, 4.04 ms)
 [rank 0] iteration #1887 - starting launcher [0][0] ...
 [rank 0] done
-[it=1887] hydro_fvm compute time t=9.0047e-03 (Dt=4.737e-06) : 0.80385 s (5.49 ms, 0 us, 688 us, 789983 us, 5.38 ms)
+[it=1887] hydro_fvm compute time t=9.0047e-03 (Dt=4.737e-06) : 0.79556 s (4.21 ms, 0 us, 80 us, 785323 us, 4.05 ms)
 [rank 0] iteration #1888 - starting launcher [0][0] ...
 [rank 0] done
-[it=1888] hydro_fvm compute time t=9.0095e-03 (Dt=4.737e-06) : 0.80441 s (5.48 ms, 0 us, 706 us, 790495 us, 5.42 ms)
+[it=1888] hydro_fvm compute time t=9.0095e-03 (Dt=4.737e-06) : 0.79563 s (4.39 ms, 0 us, 82 us, 785223 us, 4.06 ms)
 [rank 0] iteration #1889 - starting launcher [0][0] ...
 [rank 0] done
-[it=1889] hydro_fvm compute time t=9.0142e-03 (Dt=4.737e-06) : 0.80456 s (5.47 ms, 0 us, 704 us, 790688 us, 5.39 ms)
+[it=1889] hydro_fvm compute time t=9.0142e-03 (Dt=4.737e-06) : 0.79564 s (4.22 ms, 0 us, 79 us, 785467 us, 4.03 ms)
 [rank 0] iteration #1890 - starting launcher [0][0] ...
 [rank 0] done
-[it=1890] hydro_fvm compute time t=9.0190e-03 (Dt=4.737e-06) : 0.80402 s (5.46 ms, 0 us, 695 us, 790155 us, 5.41 ms)
+[it=1890] hydro_fvm compute time t=9.0190e-03 (Dt=4.737e-06) : 0.79545 s (4.21 ms, 0 us, 77 us, 785125 us, 4.11 ms)
 [rank 0] iteration #1891 - starting launcher [0][0] ...
 [rank 0] done
-[it=1891] hydro_fvm compute time t=9.0237e-03 (Dt=4.737e-06) : 0.80456 s (5.45 ms, 0 us, 703 us, 790689 us, 5.41 ms)
+[it=1891] hydro_fvm compute time t=9.0237e-03 (Dt=4.737e-06) : 0.79990 s (4.24 ms, 0 us, 80 us, 789647 us, 4.04 ms)
 [rank 0] iteration #1892 - starting launcher [0][0] ...
 [rank 0] done
-[it=1892] hydro_fvm compute time t=9.0284e-03 (Dt=4.737e-06) : 0.80404 s (5.44 ms, 0 us, 699 us, 790211 us, 5.40 ms)
+[it=1892] hydro_fvm compute time t=9.0284e-03 (Dt=4.737e-06) : 0.79554 s (4.23 ms, 0 us, 78 us, 785309 us, 4.05 ms)
 [rank 0] iteration #1893 - starting launcher [0][0] ...
 [rank 0] done
-[it=1893] hydro_fvm compute time t=9.0332e-03 (Dt=4.737e-06) : 0.80444 s (5.44 ms, 0 us, 700 us, 790604 us, 5.40 ms)
+[it=1893] hydro_fvm compute time t=9.0332e-03 (Dt=4.737e-06) : 0.79591 s (4.21 ms, 0 us, 82 us, 785686 us, 4.06 ms)
 [rank 0] iteration #1894 - starting launcher [0][0] ...
 [rank 0] done
-[it=1894] hydro_fvm compute time t=9.0379e-03 (Dt=4.737e-06) : 0.80424 s (5.46 ms, 0 us, 677 us, 790410 us, 5.41 ms)
+[it=1894] hydro_fvm compute time t=9.0379e-03 (Dt=4.737e-06) : 0.79548 s (4.20 ms, 0 us, 79 us, 785190 us, 4.11 ms)
 [rank 0] iteration #1895 - starting launcher [0][0] ...
 [rank 0] done
-[it=1895] hydro_fvm compute time t=9.0426e-03 (Dt=4.737e-06) : 0.80387 s (5.51 ms, 0 us, 679 us, 790000 us, 5.39 ms)
+[it=1895] hydro_fvm compute time t=9.0426e-03 (Dt=4.737e-06) : 0.79547 s (4.25 ms, 0 us, 78 us, 785239 us, 4.05 ms)
 [rank 0] iteration #1896 - starting launcher [0][0] ...
 [rank 0] done
-[it=1896] hydro_fvm compute time t=9.0474e-03 (Dt=4.737e-06) : 0.80422 s (5.49 ms, 0 us, 645 us, 790413 us, 5.39 ms)
+[it=1896] hydro_fvm compute time t=9.0474e-03 (Dt=4.737e-06) : 0.79606 s (4.24 ms, 0 us, 80 us, 785815 us, 4.05 ms)
 [rank 0] iteration #1897 - starting launcher [0][0] ...
 [rank 0] done
-[it=1897] hydro_fvm compute time t=9.0521e-03 (Dt=4.737e-06) : 0.80440 s (5.46 ms, 0 us, 699 us, 790518 us, 5.42 ms)
+[it=1897] hydro_fvm compute time t=9.0521e-03 (Dt=4.737e-06) : 0.79577 s (4.19 ms, 0 us, 79 us, 785578 us, 4.05 ms)
 [rank 0] iteration #1898 - starting launcher [0][0] ...
 [rank 0] done
-[it=1898] hydro_fvm compute time t=9.0569e-03 (Dt=4.737e-06) : 0.80389 s (5.44 ms, 0 us, 668 us, 789754 us, 5.49 ms)
+[it=1898] hydro_fvm compute time t=9.0569e-03 (Dt=4.737e-06) : 0.79548 s (4.25 ms, 0 us, 79 us, 785221 us, 4.06 ms)
 [rank 0] iteration #1899 - starting launcher [0][0] ...
 [rank 0] done
-[it=1899] hydro_fvm compute time t=9.0616e-03 (Dt=4.737e-06) : 0.80423 s (5.54 ms, 0 us, 704 us, 790145 us, 5.42 ms)
+[it=1899] hydro_fvm compute time t=9.0616e-03 (Dt=4.737e-06) : 0.79583 s (4.24 ms, 0 us, 78 us, 785525 us, 4.08 ms)
 [rank 0] iteration #1900 - starting launcher [0][0] ...
 [rank 0] done
-[it=1900] hydro_fvm compute time t=9.0663e-03 (Dt=4.737e-06) : 0.80425 s (5.49 ms, 0 us, 672 us, 790355 us, 5.41 ms)
+[it=1900] hydro_fvm compute time t=9.0663e-03 (Dt=4.737e-06) : 0.79624 s (4.20 ms, 0 us, 82 us, 786003 us, 4.06 ms)
 [rank 0] iteration #1901 - starting launcher [0][0] ...
 [rank 0] done
-[it=1901] hydro_fvm compute time t=9.0711e-03 (Dt=4.737e-06) : 0.80449 s (5.48 ms, 0 us, 687 us, 790623 us, 5.39 ms)
+[it=1901] hydro_fvm compute time t=9.0711e-03 (Dt=4.737e-06) : 0.79678 s (4.22 ms, 0 us, 79 us, 786552 us, 4.04 ms)
 [rank 0] iteration #1902 - starting launcher [0][0] ...
 [rank 0] done
-[it=1902] hydro_fvm compute time t=9.0758e-03 (Dt=4.737e-06) : 0.80433 s (5.52 ms, 0 us, 696 us, 790411 us, 5.41 ms)
+[it=1902] hydro_fvm compute time t=9.0758e-03 (Dt=4.737e-06) : 0.79556 s (4.20 ms, 0 us, 80 us, 785339 us, 4.05 ms)
 [rank 0] iteration #1903 - starting launcher [0][0] ...
 [rank 0] done
-[it=1903] hydro_fvm compute time t=9.0805e-03 (Dt=4.737e-06) : 0.80342 s (5.47 ms, 0 us, 676 us, 789545 us, 5.43 ms)
+[it=1903] hydro_fvm compute time t=9.0805e-03 (Dt=4.737e-06) : 0.79559 s (4.21 ms, 0 us, 80 us, 785368 us, 4.05 ms)
 [rank 0] iteration #1904 - starting launcher [0][0] ...
 [rank 0] done
-[it=1904] hydro_fvm compute time t=9.0853e-03 (Dt=4.737e-06) : 0.80403 s (5.47 ms, 0 us, 698 us, 790121 us, 5.44 ms)
+[it=1904] hydro_fvm compute time t=9.0853e-03 (Dt=4.737e-06) : 0.79698 s (4.31 ms, 0 us, 78 us, 786630 us, 4.08 ms)
 [rank 0] iteration #1905 - starting launcher [0][0] ...
 [rank 0] done
-[it=1905] hydro_fvm compute time t=9.0900e-03 (Dt=4.737e-06) : 0.80437 s (5.47 ms, 0 us, 725 us, 790457 us, 5.42 ms)
+[it=1905] hydro_fvm compute time t=9.0900e-03 (Dt=4.737e-06) : 0.79576 s (4.19 ms, 0 us, 79 us, 785521 us, 4.12 ms)
 [rank 0] iteration #1906 - starting launcher [0][0] ...
 [rank 0] done
-[it=1906] hydro_fvm compute time t=9.0948e-03 (Dt=4.737e-06) : 0.80381 s (5.49 ms, 0 us, 706 us, 789892 us, 5.42 ms)
+[it=1906] hydro_fvm compute time t=9.0948e-03 (Dt=4.737e-06) : 0.79543 s (4.18 ms, 0 us, 78 us, 785274 us, 4.05 ms)
 [rank 0] iteration #1907 - starting launcher [0][0] ...
 [rank 0] done
-[it=1907] hydro_fvm compute time t=9.0995e-03 (Dt=4.737e-06) : 0.80459 s (5.52 ms, 0 us, 675 us, 790676 us, 5.41 ms)
+[it=1907] hydro_fvm compute time t=9.0995e-03 (Dt=4.737e-06) : 0.79568 s (4.19 ms, 0 us, 79 us, 785529 us, 4.03 ms)
 [rank 0] iteration #1908 - starting launcher [0][0] ...
 [rank 0] done
-[it=1908] hydro_fvm compute time t=9.1042e-03 (Dt=4.737e-06) : 0.80390 s (5.45 ms, 0 us, 702 us, 790028 us, 5.42 ms)
+[it=1908] hydro_fvm compute time t=9.1042e-03 (Dt=4.737e-06) : 0.79560 s (4.18 ms, 0 us, 79 us, 785396 us, 4.07 ms)
 [rank 0] iteration #1909 - starting launcher [0][0] ...
 [rank 0] done
-[it=1909] hydro_fvm compute time t=9.1090e-03 (Dt=4.736e-06) : 0.80406 s (5.48 ms, 0 us, 707 us, 790162 us, 5.42 ms)
+[it=1909] hydro_fvm compute time t=9.1090e-03 (Dt=4.736e-06) : 0.79584 s (4.17 ms, 0 us, 77 us, 785693 us, 4.02 ms)
 [rank 0] iteration #1910 - starting launcher [0][0] ...
 [rank 0] done
-[it=1910] hydro_fvm compute time t=9.1137e-03 (Dt=4.736e-06) : 0.80399 s (5.47 ms, 0 us, 686 us, 790116 us, 5.42 ms)
+[it=1910] hydro_fvm compute time t=9.1137e-03 (Dt=4.736e-06) : 0.79556 s (4.19 ms, 0 us, 79 us, 785375 us, 4.03 ms)
 [rank 0] iteration #1911 - starting launcher [0][0] ...
 [rank 0] done
-[it=1911] hydro_fvm compute time t=9.1184e-03 (Dt=4.736e-06) : 0.80456 s (5.48 ms, 0 us, 700 us, 790679 us, 5.40 ms)
+[it=1911] hydro_fvm compute time t=9.1184e-03 (Dt=4.736e-06) : 0.79560 s (4.15 ms, 0 us, 79 us, 785459 us, 4.03 ms)
 [rank 0] iteration #1912 - starting launcher [0][0] ...
 [rank 0] done
-[it=1912] hydro_fvm compute time t=9.1232e-03 (Dt=4.736e-06) : 0.80450 s (5.49 ms, 0 us, 675 us, 790629 us, 5.42 ms)
+[it=1912] hydro_fvm compute time t=9.1232e-03 (Dt=4.736e-06) : 0.79570 s (4.34 ms, 0 us, 80 us, 785364 us, 4.04 ms)
 [rank 0] iteration #1913 - starting launcher [0][0] ...
 [rank 0] done
-[it=1913] hydro_fvm compute time t=9.1279e-03 (Dt=4.736e-06) : 0.80445 s (5.46 ms, 0 us, 691 us, 790546 us, 5.45 ms)
+[it=1913] hydro_fvm compute time t=9.1279e-03 (Dt=4.736e-06) : 0.79549 s (4.21 ms, 0 us, 79 us, 785325 us, 4.04 ms)
 [rank 0] iteration #1914 - starting launcher [0][0] ...
 [rank 0] done
-[it=1914] hydro_fvm compute time t=9.1326e-03 (Dt=4.736e-06) : 0.80427 s (5.46 ms, 0 us, 704 us, 790411 us, 5.41 ms)
+[it=1914] hydro_fvm compute time t=9.1326e-03 (Dt=4.736e-06) : 0.79654 s (4.20 ms, 0 us, 80 us, 786318 us, 4.05 ms)
 [rank 0] iteration #1915 - starting launcher [0][0] ...
 [rank 0] done
-[it=1915] hydro_fvm compute time t=9.1374e-03 (Dt=4.736e-06) : 0.80417 s (5.46 ms, 0 us, 700 us, 790298 us, 5.42 ms)
+[it=1915] hydro_fvm compute time t=9.1374e-03 (Dt=4.736e-06) : 0.79559 s (4.22 ms, 0 us, 81 us, 785364 us, 4.04 ms)
 [rank 0] iteration #1916 - starting launcher [0][0] ...
 [rank 0] done
-[it=1916] hydro_fvm compute time t=9.1421e-03 (Dt=4.736e-06) : 0.80425 s (5.48 ms, 0 us, 702 us, 790366 us, 5.41 ms)
+[it=1916] hydro_fvm compute time t=9.1421e-03 (Dt=4.736e-06) : 0.79607 s (4.22 ms, 0 us, 79 us, 785836 us, 4.05 ms)
 [rank 0] iteration #1917 - starting launcher [0][0] ...
 [rank 0] done
-[it=1917] hydro_fvm compute time t=9.1469e-03 (Dt=4.736e-06) : 0.80444 s (5.46 ms, 0 us, 697 us, 790597 us, 5.41 ms)
+[it=1917] hydro_fvm compute time t=9.1469e-03 (Dt=4.736e-06) : 0.79579 s (4.37 ms, 0 us, 79 us, 785420 us, 4.07 ms)
 [rank 0] iteration #1918 - starting launcher [0][0] ...
 [rank 0] done
-[it=1918] hydro_fvm compute time t=9.1516e-03 (Dt=4.736e-06) : 0.80416 s (5.46 ms, 0 us, 701 us, 790320 us, 5.39 ms)
+[it=1918] hydro_fvm compute time t=9.1516e-03 (Dt=4.736e-06) : 0.79570 s (4.21 ms, 0 us, 79 us, 785463 us, 4.07 ms)
 [rank 0] iteration #1919 - starting launcher [0][0] ...
 [rank 0] done
-[it=1919] hydro_fvm compute time t=9.1563e-03 (Dt=4.736e-06) : 0.80439 s (5.47 ms, 0 us, 658 us, 790558 us, 5.41 ms)
+[it=1919] hydro_fvm compute time t=9.1563e-03 (Dt=4.736e-06) : 0.79581 s (4.22 ms, 0 us, 85 us, 785585 us, 4.06 ms)
 [rank 0] iteration #1920 - starting launcher [0][0] ...
 [rank 0] done
-[it=1920] hydro_fvm compute time t=9.1611e-03 (Dt=4.736e-06) : 0.80391 s (5.45 ms, 0 us, 693 us, 790061 us, 5.40 ms)
+[it=1920] hydro_fvm compute time t=9.1611e-03 (Dt=4.736e-06) : 0.79685 s (4.22 ms, 0 us, 82 us, 786605 us, 4.06 ms)
 [rank 0] iteration #1921 - starting launcher [0][0] ...
 [rank 0] done
-[it=1921] hydro_fvm compute time t=9.1658e-03 (Dt=4.736e-06) : 0.80452 s (5.49 ms, 0 us, 703 us, 790620 us, 5.41 ms)
+[it=1921] hydro_fvm compute time t=9.1658e-03 (Dt=4.736e-06) : 0.79567 s (4.17 ms, 0 us, 81 us, 785493 us, 4.04 ms)
 [rank 0] iteration #1922 - starting launcher [0][0] ...
 [rank 0] done
-[it=1922] hydro_fvm compute time t=9.1705e-03 (Dt=4.736e-06) : 0.80407 s (5.46 ms, 0 us, 702 us, 790184 us, 5.42 ms)
+[it=1922] hydro_fvm compute time t=9.1705e-03 (Dt=4.736e-06) : 0.79576 s (4.28 ms, 0 us, 80 us, 785479 us, 4.08 ms)
 [rank 0] iteration #1923 - starting launcher [0][0] ...
 [rank 0] done
-[it=1923] hydro_fvm compute time t=9.1753e-03 (Dt=4.736e-06) : 0.80428 s (5.47 ms, 0 us, 696 us, 790407 us, 5.40 ms)
+[it=1923] hydro_fvm compute time t=9.1753e-03 (Dt=4.736e-06) : 0.79587 s (4.17 ms, 0 us, 82 us, 785678 us, 4.05 ms)
 [rank 0] iteration #1924 - starting launcher [0][0] ...
 [rank 0] done
-[it=1924] hydro_fvm compute time t=9.1800e-03 (Dt=4.736e-06) : 0.80438 s (5.45 ms, 0 us, 679 us, 790549 us, 5.40 ms)
+[it=1924] hydro_fvm compute time t=9.1800e-03 (Dt=4.736e-06) : 0.79776 s (4.29 ms, 0 us, 80 us, 787360 us, 4.15 ms)
 [rank 0] iteration #1925 - starting launcher [0][0] ...
 [rank 0] done
-[it=1925] hydro_fvm compute time t=9.1847e-03 (Dt=4.736e-06) : 0.80413 s (5.45 ms, 0 us, 691 us, 790271 us, 5.41 ms)
+[it=1925] hydro_fvm compute time t=9.1847e-03 (Dt=4.736e-06) : 0.79541 s (4.08 ms, 0 us, 79 us, 785359 us, 4.02 ms)
 [rank 0] iteration #1926 - starting launcher [0][0] ...
 [rank 0] done
-[it=1926] hydro_fvm compute time t=9.1895e-03 (Dt=4.736e-06) : 0.80435 s (5.53 ms, 0 us, 685 us, 790428 us, 5.41 ms)
+[it=1926] hydro_fvm compute time t=9.1895e-03 (Dt=4.736e-06) : 0.79590 s (4.03 ms, 0 us, 79 us, 785900 us, 4.02 ms)
 [rank 0] iteration #1927 - starting launcher [0][0] ...
 [rank 0] done
-[it=1927] hydro_fvm compute time t=9.1942e-03 (Dt=4.736e-06) : 0.80428 s (5.47 ms, 0 us, 665 us, 790444 us, 5.41 ms)
+[it=1927] hydro_fvm compute time t=9.1942e-03 (Dt=4.736e-06) : 0.79564 s (4.08 ms, 0 us, 79 us, 785598 us, 4.04 ms)
 [rank 0] iteration #1928 - starting launcher [0][0] ...
 [rank 0] done
-[it=1928] hydro_fvm compute time t=9.1989e-03 (Dt=4.736e-06) : 0.80434 s (5.46 ms, 0 us, 699 us, 790489 us, 5.40 ms)
+[it=1928] hydro_fvm compute time t=9.1989e-03 (Dt=4.736e-06) : 0.79533 s (4.08 ms, 0 us, 79 us, 785276 us, 4.02 ms)
 [rank 0] iteration #1929 - starting launcher [0][0] ...
 [rank 0] done
-[it=1929] hydro_fvm compute time t=9.2037e-03 (Dt=4.736e-06) : 0.80401 s (5.46 ms, 0 us, 701 us, 790127 us, 5.43 ms)
+[it=1929] hydro_fvm compute time t=9.2037e-03 (Dt=4.736e-06) : 0.79585 s (4.07 ms, 0 us, 79 us, 785851 us, 4.01 ms)
 [rank 0] iteration #1930 - starting launcher [0][0] ...
 [rank 0] done
-[it=1930] hydro_fvm compute time t=9.2084e-03 (Dt=4.736e-06) : 0.80431 s (5.47 ms, 0 us, 706 us, 790436 us, 5.40 ms)
+[it=1930] hydro_fvm compute time t=9.2084e-03 (Dt=4.736e-06) : 0.79524 s (4.07 ms, 0 us, 79 us, 785189 us, 4.02 ms)
 [rank 0] iteration #1931 - starting launcher [0][0] ...
 [rank 0] done
-[it=1931] hydro_fvm compute time t=9.2132e-03 (Dt=4.735e-06) : 0.80461 s (5.46 ms, 0 us, 699 us, 790755 us, 5.40 ms)
+[it=1931] hydro_fvm compute time t=9.2132e-03 (Dt=4.735e-06) : 0.79561 s (4.03 ms, 0 us, 79 us, 785493 us, 4.11 ms)
 [rank 0] iteration #1932 - starting launcher [0][0] ...
 [rank 0] done
-[it=1932] hydro_fvm compute time t=9.2179e-03 (Dt=4.735e-06) : 0.80419 s (5.46 ms, 0 us, 699 us, 790357 us, 5.39 ms)
+[it=1932] hydro_fvm compute time t=9.2179e-03 (Dt=4.735e-06) : 0.79557 s (4.13 ms, 0 us, 78 us, 785463 us, 4.06 ms)
 [rank 0] iteration #1933 - starting launcher [0][0] ...
 [rank 0] done
-[it=1933] hydro_fvm compute time t=9.2226e-03 (Dt=4.735e-06) : 0.80409 s (5.46 ms, 0 us, 697 us, 790237 us, 5.39 ms)
+[it=1933] hydro_fvm compute time t=9.2226e-03 (Dt=4.735e-06) : 0.79620 s (4.15 ms, 0 us, 79 us, 786044 us, 4.04 ms)
 [rank 0] iteration #1934 - starting launcher [0][0] ...
 [rank 0] done
-[it=1934] hydro_fvm compute time t=9.2274e-03 (Dt=4.735e-06) : 0.80346 s (5.46 ms, 0 us, 704 us, 789592 us, 5.41 ms)
+[it=1934] hydro_fvm compute time t=9.2274e-03 (Dt=4.735e-06) : 0.79528 s (4.16 ms, 0 us, 78 us, 785105 us, 4.04 ms)
 [rank 0] iteration #1935 - starting launcher [0][0] ...
 [rank 0] done
-[it=1935] hydro_fvm compute time t=9.2321e-03 (Dt=4.735e-06) : 0.80435 s (5.45 ms, 0 us, 689 us, 790525 us, 5.39 ms)
+[it=1935] hydro_fvm compute time t=9.2321e-03 (Dt=4.735e-06) : 0.79578 s (4.20 ms, 0 us, 79 us, 785561 us, 4.05 ms)
 [rank 0] iteration #1936 - starting launcher [0][0] ...
 [rank 0] done
-[it=1936] hydro_fvm compute time t=9.2368e-03 (Dt=4.735e-06) : 0.80414 s (5.45 ms, 0 us, 702 us, 790292 us, 5.41 ms)
+[it=1936] hydro_fvm compute time t=9.2368e-03 (Dt=4.735e-06) : 0.79553 s (4.21 ms, 0 us, 79 us, 785305 us, 4.05 ms)
 [rank 0] iteration #1937 - starting launcher [0][0] ...
 [rank 0] done
-[it=1937] hydro_fvm compute time t=9.2416e-03 (Dt=4.735e-06) : 0.80401 s (5.50 ms, 0 us, 692 us, 790143 us, 5.40 ms)
+[it=1937] hydro_fvm compute time t=9.2416e-03 (Dt=4.735e-06) : 0.79710 s (4.33 ms, 0 us, 78 us, 786804 us, 4.04 ms)
 [rank 0] iteration #1938 - starting launcher [0][0] ...
 [rank 0] done
-[it=1938] hydro_fvm compute time t=9.2463e-03 (Dt=4.735e-06) : 0.80365 s (5.48 ms, 0 us, 700 us, 789773 us, 5.40 ms)
+[it=1938] hydro_fvm compute time t=9.2463e-03 (Dt=4.735e-06) : 0.79631 s (4.20 ms, 0 us, 83 us, 786134 us, 4.05 ms)
 [rank 0] iteration #1939 - starting launcher [0][0] ...
 [rank 0] done
-[it=1939] hydro_fvm compute time t=9.2510e-03 (Dt=4.735e-06) : 0.80453 s (5.43 ms, 0 us, 693 us, 790716 us, 5.39 ms)
+[it=1939] hydro_fvm compute time t=9.2510e-03 (Dt=4.735e-06) : 0.79577 s (4.22 ms, 0 us, 79 us, 785542 us, 4.04 ms)
 [rank 0] iteration #1940 - starting launcher [0][0] ...
 [rank 0] done
-[it=1940] hydro_fvm compute time t=9.2558e-03 (Dt=4.735e-06) : 0.80416 s (5.46 ms, 0 us, 701 us, 790313 us, 5.39 ms)
+[it=1940] hydro_fvm compute time t=9.2558e-03 (Dt=4.735e-06) : 0.79565 s (4.20 ms, 0 us, 79 us, 785447 us, 4.05 ms)
 [rank 0] iteration #1941 - starting launcher [0][0] ...
 [rank 0] done
-[it=1941] hydro_fvm compute time t=9.2605e-03 (Dt=4.735e-06) : 0.80444 s (5.48 ms, 0 us, 702 us, 790580 us, 5.38 ms)
+[it=1941] hydro_fvm compute time t=9.2605e-03 (Dt=4.735e-06) : 0.79574 s (4.27 ms, 0 us, 78 us, 785440 us, 4.03 ms)
 [rank 0] iteration #1942 - starting launcher [0][0] ...
 [rank 0] done
-[it=1942] hydro_fvm compute time t=9.2652e-03 (Dt=4.735e-06) : 0.80372 s (5.45 ms, 0 us, 698 us, 789879 us, 5.41 ms)
+[it=1942] hydro_fvm compute time t=9.2652e-03 (Dt=4.735e-06) : 0.79654 s (4.24 ms, 0 us, 80 us, 786341 us, 4.05 ms)
 [rank 0] iteration #1943 - starting launcher [0][0] ...
 [rank 0] done
-[it=1943] hydro_fvm compute time t=9.2700e-03 (Dt=4.735e-06) : 0.80436 s (5.48 ms, 0 us, 707 us, 790497 us, 5.39 ms)
+[it=1943] hydro_fvm compute time t=9.2700e-03 (Dt=4.735e-06) : 0.79571 s (4.19 ms, 0 us, 78 us, 785535 us, 4.02 ms)
 [rank 0] iteration #1944 - starting launcher [0][0] ...
 [rank 0] done
-[it=1944] hydro_fvm compute time t=9.2747e-03 (Dt=4.735e-06) : 0.80390 s (5.46 ms, 0 us, 701 us, 790061 us, 5.38 ms)
+[it=1944] hydro_fvm compute time t=9.2747e-03 (Dt=4.735e-06) : 0.79537 s (4.25 ms, 0 us, 77 us, 785137 us, 4.02 ms)
 [rank 0] iteration #1945 - starting launcher [0][0] ...
 [rank 0] done
-[it=1945] hydro_fvm compute time t=9.2794e-03 (Dt=4.735e-06) : 0.80422 s (5.46 ms, 0 us, 697 us, 790366 us, 5.39 ms)
+[it=1945] hydro_fvm compute time t=9.2794e-03 (Dt=4.735e-06) : 0.79559 s (4.21 ms, 0 us, 78 us, 785399 us, 4.02 ms)
 [rank 0] iteration #1946 - starting launcher [0][0] ...
 [rank 0] done
-[it=1946] hydro_fvm compute time t=9.2842e-03 (Dt=4.735e-06) : 0.80404 s (5.46 ms, 0 us, 698 us, 790215 us, 5.38 ms)
+[it=1946] hydro_fvm compute time t=9.2842e-03 (Dt=4.735e-06) : 0.79552 s (4.23 ms, 0 us, 78 us, 785281 us, 4.04 ms)
 [rank 0] iteration #1947 - starting launcher [0][0] ...
 [rank 0] done
-[it=1947] hydro_fvm compute time t=9.2889e-03 (Dt=4.735e-06) : 0.80395 s (5.49 ms, 0 us, 698 us, 790075 us, 5.39 ms)
+[it=1947] hydro_fvm compute time t=9.2889e-03 (Dt=4.735e-06) : 0.79583 s (4.21 ms, 0 us, 78 us, 785645 us, 4.01 ms)
 [rank 0] iteration #1948 - starting launcher [0][0] ...
 [rank 0] done
-[it=1948] hydro_fvm compute time t=9.2937e-03 (Dt=4.735e-06) : 0.80438 s (5.49 ms, 0 us, 696 us, 790486 us, 5.41 ms)
+[it=1948] hydro_fvm compute time t=9.2937e-03 (Dt=4.735e-06) : 0.79545 s (4.20 ms, 0 us, 79 us, 785264 us, 4.02 ms)
 [rank 0] iteration #1949 - starting launcher [0][0] ...
 [rank 0] done
-[it=1949] hydro_fvm compute time t=9.2984e-03 (Dt=4.735e-06) : 0.80420 s (5.50 ms, 0 us, 698 us, 790313 us, 5.39 ms)
+[it=1949] hydro_fvm compute time t=9.2984e-03 (Dt=4.735e-06) : 0.79555 s (4.22 ms, 0 us, 78 us, 785329 us, 4.03 ms)
 [rank 0] iteration #1950 - starting launcher [0][0] ...
 [rank 0] done
-[it=1950] hydro_fvm compute time t=9.3031e-03 (Dt=4.735e-06) : 0.80347 s (5.44 ms, 0 us, 690 us, 789635 us, 5.40 ms)
+[it=1950] hydro_fvm compute time t=9.3031e-03 (Dt=4.735e-06) : 0.79543 s (4.19 ms, 0 us, 79 us, 785299 us, 4.02 ms)
 [rank 0] iteration #1951 - starting launcher [0][0] ...
 [rank 0] done
-[it=1951] hydro_fvm compute time t=9.3079e-03 (Dt=4.735e-06) : 0.80412 s (5.45 ms, 0 us, 683 us, 790272 us, 5.42 ms)
+[it=1951] hydro_fvm compute time t=9.3079e-03 (Dt=4.735e-06) : 0.79597 s (4.22 ms, 0 us, 78 us, 785654 us, 4.08 ms)
 [rank 0] iteration #1952 - starting launcher [0][0] ...
 [rank 0] done
-[it=1952] hydro_fvm compute time t=9.3126e-03 (Dt=4.735e-06) : 0.80454 s (5.45 ms, 0 us, 702 us, 790692 us, 5.39 ms)
+[it=1952] hydro_fvm compute time t=9.3126e-03 (Dt=4.735e-06) : 0.79589 s (4.11 ms, 0 us, 77 us, 785803 us, 4.06 ms)
 [rank 0] iteration #1953 - starting launcher [0][0] ...
 [rank 0] done
-[it=1953] hydro_fvm compute time t=9.3173e-03 (Dt=4.735e-06) : 0.80450 s (5.45 ms, 0 us, 702 us, 790657 us, 5.40 ms)
+[it=1953] hydro_fvm compute time t=9.3173e-03 (Dt=4.735e-06) : 0.79574 s (4.21 ms, 0 us, 78 us, 785536 us, 4.06 ms)
 [rank 0] iteration #1954 - starting launcher [0][0] ...
 [rank 0] done
-[it=1954] hydro_fvm compute time t=9.3221e-03 (Dt=4.734e-06) : 0.80403 s (5.47 ms, 0 us, 702 us, 790172 us, 5.39 ms)
+[it=1954] hydro_fvm compute time t=9.3221e-03 (Dt=4.734e-06) : 0.79541 s (4.17 ms, 0 us, 78 us, 785256 us, 4.05 ms)
 [rank 0] iteration #1955 - starting launcher [0][0] ...
 [rank 0] done
-[it=1955] hydro_fvm compute time t=9.3268e-03 (Dt=4.734e-06) : 0.80449 s (5.51 ms, 0 us, 703 us, 790571 us, 5.40 ms)
+[it=1955] hydro_fvm compute time t=9.3268e-03 (Dt=4.734e-06) : 0.79569 s (4.19 ms, 0 us, 77 us, 785480 us, 4.06 ms)
 [rank 0] iteration #1956 - starting launcher [0][0] ...
 [rank 0] done
-[it=1956] hydro_fvm compute time t=9.3315e-03 (Dt=4.734e-06) : 0.80404 s (5.46 ms, 0 us, 676 us, 790200 us, 5.40 ms)
+[it=1956] hydro_fvm compute time t=9.3315e-03 (Dt=4.734e-06) : 0.79571 s (4.15 ms, 0 us, 77 us, 785548 us, 4.06 ms)
 [rank 0] iteration #1957 - starting launcher [0][0] ...
 [rank 0] done
-[it=1957] hydro_fvm compute time t=9.3363e-03 (Dt=4.734e-06) : 0.80419 s (5.47 ms, 0 us, 703 us, 790354 us, 5.40 ms)
+[it=1957] hydro_fvm compute time t=9.3363e-03 (Dt=4.734e-06) : 0.79559 s (4.17 ms, 0 us, 81 us, 785403 us, 4.05 ms)
 [rank 0] iteration #1958 - starting launcher [0][0] ...
 [rank 0] done
-[it=1958] hydro_fvm compute time t=9.3410e-03 (Dt=4.734e-06) : 0.80427 s (5.48 ms, 0 us, 660 us, 790441 us, 5.40 ms)
+[it=1958] hydro_fvm compute time t=9.3410e-03 (Dt=4.734e-06) : 0.79573 s (4.20 ms, 0 us, 79 us, 785516 us, 4.04 ms)
 [rank 0] iteration #1959 - starting launcher [0][0] ...
 [rank 0] done
-[it=1959] hydro_fvm compute time t=9.3457e-03 (Dt=4.734e-06) : 0.80439 s (5.46 ms, 0 us, 700 us, 790535 us, 5.39 ms)
+[it=1959] hydro_fvm compute time t=9.3457e-03 (Dt=4.734e-06) : 0.79569 s (4.21 ms, 0 us, 81 us, 785457 us, 4.05 ms)
 [rank 0] iteration #1960 - starting launcher [0][0] ...
 [rank 0] done
-[it=1960] hydro_fvm compute time t=9.3505e-03 (Dt=4.734e-06) : 0.80423 s (5.47 ms, 0 us, 684 us, 790380 us, 5.40 ms)
+[it=1960] hydro_fvm compute time t=9.3505e-03 (Dt=4.734e-06) : 0.79558 s (4.19 ms, 0 us, 81 us, 785373 us, 4.04 ms)
 [rank 0] iteration #1961 - starting launcher [0][0] ...
 [rank 0] done
-[it=1961] hydro_fvm compute time t=9.3552e-03 (Dt=4.734e-06) : 0.80447 s (5.45 ms, 0 us, 703 us, 790624 us, 5.39 ms)
+[it=1961] hydro_fvm compute time t=9.3552e-03 (Dt=4.734e-06) : 0.79583 s (4.20 ms, 0 us, 80 us, 785598 us, 4.05 ms)
 [rank 0] iteration #1962 - starting launcher [0][0] ...
 [rank 0] done
-[it=1962] hydro_fvm compute time t=9.3599e-03 (Dt=4.734e-06) : 0.80446 s (5.47 ms, 0 us, 692 us, 790608 us, 5.40 ms)
+[it=1962] hydro_fvm compute time t=9.3599e-03 (Dt=4.734e-06) : 0.79554 s (4.20 ms, 0 us, 79 us, 785341 us, 4.04 ms)
 [rank 0] iteration #1963 - starting launcher [0][0] ...
 [rank 0] done
-[it=1963] hydro_fvm compute time t=9.3647e-03 (Dt=4.734e-06) : 0.80467 s (5.49 ms, 0 us, 685 us, 790788 us, 5.41 ms)
+[it=1963] hydro_fvm compute time t=9.3647e-03 (Dt=4.734e-06) : 0.79569 s (4.19 ms, 0 us, 78 us, 785492 us, 4.04 ms)
 [rank 0] iteration #1964 - starting launcher [0][0] ...
 [rank 0] done
-[it=1964] hydro_fvm compute time t=9.3694e-03 (Dt=4.734e-06) : 0.80436 s (5.46 ms, 0 us, 696 us, 790520 us, 5.39 ms)
+[it=1964] hydro_fvm compute time t=9.3694e-03 (Dt=4.734e-06) : 0.79522 s (4.19 ms, 0 us, 77 us, 785072 us, 4.04 ms)
 [rank 0] iteration #1965 - starting launcher [0][0] ...
 [rank 0] done
-[it=1965] hydro_fvm compute time t=9.3741e-03 (Dt=4.734e-06) : 0.80404 s (5.46 ms, 0 us, 703 us, 790161 us, 5.42 ms)
+[it=1965] hydro_fvm compute time t=9.3741e-03 (Dt=4.734e-06) : 0.79547 s (4.15 ms, 0 us, 79 us, 785326 us, 4.06 ms)
 [rank 0] iteration #1966 - starting launcher [0][0] ...
 [rank 0] done
-[it=1966] hydro_fvm compute time t=9.3789e-03 (Dt=4.734e-06) : 0.80450 s (5.47 ms, 0 us, 684 us, 790664 us, 5.39 ms)
+[it=1966] hydro_fvm compute time t=9.3789e-03 (Dt=4.734e-06) : 0.79565 s (4.20 ms, 0 us, 77 us, 785362 us, 4.09 ms)
 [rank 0] iteration #1967 - starting launcher [0][0] ...
 [rank 0] done
-[it=1967] hydro_fvm compute time t=9.3836e-03 (Dt=4.734e-06) : 0.80400 s (5.45 ms, 0 us, 688 us, 790175 us, 5.40 ms)
+[it=1967] hydro_fvm compute time t=9.3836e-03 (Dt=4.734e-06) : 0.79558 s (4.16 ms, 0 us, 83 us, 785340 us, 4.06 ms)
 [rank 0] iteration #1968 - starting launcher [0][0] ...
 [rank 0] done
-[it=1968] hydro_fvm compute time t=9.3883e-03 (Dt=4.734e-06) : 0.80440 s (5.46 ms, 0 us, 689 us, 790579 us, 5.39 ms)
+[it=1968] hydro_fvm compute time t=9.3883e-03 (Dt=4.734e-06) : 0.79536 s (4.08 ms, 0 us, 78 us, 785304 us, 4.02 ms)
 [rank 0] iteration #1969 - starting launcher [0][0] ...
 [rank 0] done
-[it=1969] hydro_fvm compute time t=9.3931e-03 (Dt=4.734e-06) : 0.80406 s (5.45 ms, 0 us, 680 us, 790245 us, 5.40 ms)
+[it=1969] hydro_fvm compute time t=9.3931e-03 (Dt=4.734e-06) : 0.79553 s (4.07 ms, 0 us, 77 us, 785488 us, 4.01 ms)
 [rank 0] iteration #1970 - starting launcher [0][0] ...
 [rank 0] done
-[it=1970] hydro_fvm compute time t=9.3978e-03 (Dt=4.734e-06) : 0.80388 s (5.46 ms, 0 us, 703 us, 790028 us, 5.41 ms)
+[it=1970] hydro_fvm compute time t=9.3978e-03 (Dt=4.734e-06) : 0.79575 s (4.03 ms, 0 us, 78 us, 785709 us, 4.04 ms)
 [rank 0] iteration #1971 - starting launcher [0][0] ...
 [rank 0] done
-[it=1971] hydro_fvm compute time t=9.4025e-03 (Dt=4.734e-06) : 0.80454 s (5.49 ms, 0 us, 698 us, 790652 us, 5.40 ms)
+[it=1971] hydro_fvm compute time t=9.4025e-03 (Dt=4.734e-06) : 0.79559 s (4.05 ms, 0 us, 79 us, 785528 us, 4.05 ms)
 [rank 0] iteration #1972 - starting launcher [0][0] ...
 [rank 0] done
-[it=1972] hydro_fvm compute time t=9.4073e-03 (Dt=4.734e-06) : 0.80431 s (5.47 ms, 0 us, 703 us, 790435 us, 5.41 ms)
+[it=1972] hydro_fvm compute time t=9.4073e-03 (Dt=4.734e-06) : 0.79532 s (4.06 ms, 0 us, 78 us, 785276 us, 4.03 ms)
 [rank 0] iteration #1973 - starting launcher [0][0] ...
 [rank 0] done
-[it=1973] hydro_fvm compute time t=9.4120e-03 (Dt=4.734e-06) : 0.80495 s (5.47 ms, 0 us, 695 us, 790773 us, 5.49 ms)
+[it=1973] hydro_fvm compute time t=9.4120e-03 (Dt=4.734e-06) : 0.79548 s (4.06 ms, 0 us, 78 us, 785463 us, 4.04 ms)
 [rank 0] iteration #1974 - starting launcher [0][0] ...
 [rank 0] done
-[it=1974] hydro_fvm compute time t=9.4167e-03 (Dt=4.734e-06) : 0.80386 s (5.49 ms, 0 us, 701 us, 789817 us, 5.43 ms)
+[it=1974] hydro_fvm compute time t=9.4167e-03 (Dt=4.734e-06) : 0.79557 s (4.09 ms, 0 us, 79 us, 785472 us, 4.04 ms)
 [rank 0] iteration #1975 - starting launcher [0][0] ...
 [rank 0] done
-[it=1975] hydro_fvm compute time t=9.4215e-03 (Dt=4.734e-06) : 0.80437 s (5.54 ms, 0 us, 707 us, 790380 us, 5.41 ms)
+[it=1975] hydro_fvm compute time t=9.4215e-03 (Dt=4.734e-06) : 0.79542 s (4.05 ms, 0 us, 78 us, 785378 us, 4.03 ms)
 [rank 0] iteration #1976 - starting launcher [0][0] ...
 [rank 0] done
-[it=1976] hydro_fvm compute time t=9.4262e-03 (Dt=4.733e-06) : 0.80463 s (5.51 ms, 0 us, 658 us, 790716 us, 5.43 ms)
+[it=1976] hydro_fvm compute time t=9.4262e-03 (Dt=4.733e-06) : 0.79568 s (4.07 ms, 0 us, 78 us, 785556 us, 4.05 ms)
 [rank 0] iteration #1977 - starting launcher [0][0] ...
 [rank 0] done
-[it=1977] hydro_fvm compute time t=9.4309e-03 (Dt=4.733e-06) : 0.80445 s (5.45 ms, 0 us, 696 us, 790566 us, 5.42 ms)
+[it=1977] hydro_fvm compute time t=9.4309e-03 (Dt=4.733e-06) : 0.79580 s (4.09 ms, 0 us, 79 us, 785611 us, 4.09 ms)
 [rank 0] iteration #1978 - starting launcher [0][0] ...
 [rank 0] done
-[it=1978] hydro_fvm compute time t=9.4357e-03 (Dt=4.733e-06) : 0.80455 s (5.46 ms, 0 us, 678 us, 790700 us, 5.41 ms)
+[it=1978] hydro_fvm compute time t=9.4357e-03 (Dt=4.733e-06) : 0.79548 s (4.17 ms, 0 us, 78 us, 785303 us, 4.06 ms)
 [rank 0] iteration #1979 - starting launcher [0][0] ...
 [rank 0] done
-[it=1979] hydro_fvm compute time t=9.4404e-03 (Dt=4.733e-06) : 0.80462 s (5.46 ms, 0 us, 706 us, 790718 us, 5.42 ms)
+[it=1979] hydro_fvm compute time t=9.4404e-03 (Dt=4.733e-06) : 0.79596 s (4.21 ms, 0 us, 78 us, 785743 us, 4.04 ms)
 [rank 0] iteration #1980 - starting launcher [0][0] ...
 [rank 0] done
-[it=1980] hydro_fvm compute time t=9.4451e-03 (Dt=4.733e-06) : 0.80441 s (5.49 ms, 0 us, 659 us, 790523 us, 5.43 ms)
+[it=1980] hydro_fvm compute time t=9.4451e-03 (Dt=4.733e-06) : 0.79564 s (4.31 ms, 0 us, 79 us, 785322 us, 4.04 ms)
 [rank 0] iteration #1981 - starting launcher [0][0] ...
 [rank 0] done
-[it=1981] hydro_fvm compute time t=9.4499e-03 (Dt=4.733e-06) : 0.80455 s (5.46 ms, 0 us, 708 us, 790637 us, 5.43 ms)
+[it=1981] hydro_fvm compute time t=9.4499e-03 (Dt=4.733e-06) : 0.79567 s (4.19 ms, 0 us, 79 us, 785492 us, 4.04 ms)
 [rank 0] iteration #1982 - starting launcher [0][0] ...
 [rank 0] done
-[it=1982] hydro_fvm compute time t=9.4546e-03 (Dt=4.733e-06) : 0.80390 s (5.47 ms, 0 us, 706 us, 790009 us, 5.41 ms)
+[it=1982] hydro_fvm compute time t=9.4546e-03 (Dt=4.733e-06) : 0.79545 s (4.20 ms, 0 us, 77 us, 785237 us, 4.04 ms)
 [rank 0] iteration #1983 - starting launcher [0][0] ...
 [rank 0] done
-[it=1983] hydro_fvm compute time t=9.4593e-03 (Dt=4.733e-06) : 0.80435 s (5.51 ms, 0 us, 679 us, 790433 us, 5.42 ms)
+[it=1983] hydro_fvm compute time t=9.4593e-03 (Dt=4.733e-06) : 0.79561 s (4.20 ms, 0 us, 79 us, 785393 us, 4.05 ms)
 [rank 0] iteration #1984 - starting launcher [0][0] ...
 [rank 0] done
-[it=1984] hydro_fvm compute time t=9.4641e-03 (Dt=4.733e-06) : 0.80388 s (5.48 ms, 0 us, 703 us, 790005 us, 5.42 ms)
+[it=1984] hydro_fvm compute time t=9.4641e-03 (Dt=4.733e-06) : 0.79549 s (4.20 ms, 0 us, 82 us, 785288 us, 4.04 ms)
 [rank 0] iteration #1985 - starting launcher [0][0] ...
 [rank 0] done
-[it=1985] hydro_fvm compute time t=9.4688e-03 (Dt=4.733e-06) : 0.80442 s (5.47 ms, 0 us, 697 us, 790565 us, 5.41 ms)
+[it=1985] hydro_fvm compute time t=9.4688e-03 (Dt=4.733e-06) : 0.79585 s (4.20 ms, 0 us, 78 us, 785650 us, 4.03 ms)
 [rank 0] iteration #1986 - starting launcher [0][0] ...
 [rank 0] done
-[it=1986] hydro_fvm compute time t=9.4735e-03 (Dt=4.733e-06) : 0.80370 s (5.50 ms, 0 us, 703 us, 789781 us, 5.41 ms)
+[it=1986] hydro_fvm compute time t=9.4735e-03 (Dt=4.733e-06) : 0.79640 s (4.20 ms, 0 us, 78 us, 786190 us, 4.04 ms)
 [rank 0] iteration #1987 - starting launcher [0][0] ...
 [rank 0] done
-[it=1987] hydro_fvm compute time t=9.4783e-03 (Dt=4.733e-06) : 0.80443 s (5.50 ms, 0 us, 697 us, 790506 us, 5.41 ms)
+[it=1987] hydro_fvm compute time t=9.4783e-03 (Dt=4.733e-06) : 0.79547 s (4.20 ms, 0 us, 79 us, 785258 us, 4.05 ms)
 [rank 0] iteration #1988 - starting launcher [0][0] ...
 [rank 0] done
-[it=1988] hydro_fvm compute time t=9.4830e-03 (Dt=4.733e-06) : 0.80456 s (5.52 ms, 0 us, 674 us, 790657 us, 5.41 ms)
+[it=1988] hydro_fvm compute time t=9.4830e-03 (Dt=4.733e-06) : 0.79770 s (4.18 ms, 0 us, 79 us, 787508 us, 4.05 ms)
 [rank 0] iteration #1989 - starting launcher [0][0] ...
 [rank 0] done
-[it=1989] hydro_fvm compute time t=9.4877e-03 (Dt=4.733e-06) : 0.80419 s (5.47 ms, 0 us, 686 us, 790324 us, 5.41 ms)
+[it=1989] hydro_fvm compute time t=9.4877e-03 (Dt=4.733e-06) : 0.79542 s (4.22 ms, 0 us, 78 us, 785193 us, 4.05 ms)
 [rank 0] iteration #1990 - starting launcher [0][0] ...
 [rank 0] done
-[it=1990] hydro_fvm compute time t=9.4925e-03 (Dt=4.733e-06) : 0.80422 s (5.44 ms, 0 us, 687 us, 790376 us, 5.42 ms)
+[it=1990] hydro_fvm compute time t=9.4925e-03 (Dt=4.733e-06) : 0.79561 s (4.24 ms, 0 us, 78 us, 785380 us, 4.03 ms)
 [rank 0] iteration #1991 - starting launcher [0][0] ...
 [rank 0] done
-[it=1991] hydro_fvm compute time t=9.4972e-03 (Dt=4.733e-06) : 0.80415 s (5.47 ms, 0 us, 677 us, 790298 us, 5.41 ms)
+[it=1991] hydro_fvm compute time t=9.4972e-03 (Dt=4.733e-06) : 0.79598 s (4.34 ms, 0 us, 79 us, 785610 us, 4.06 ms)
 [rank 0] iteration #1992 - starting launcher [0][0] ...
 [rank 0] done
-[it=1992] hydro_fvm compute time t=9.5019e-03 (Dt=4.733e-06) : 0.80434 s (5.47 ms, 0 us, 652 us, 790492 us, 5.42 ms)
+[it=1992] hydro_fvm compute time t=9.5019e-03 (Dt=4.733e-06) : 0.79577 s (4.22 ms, 0 us, 78 us, 785548 us, 4.04 ms)
 [rank 0] iteration #1993 - starting launcher [0][0] ...
 [rank 0] done
-[it=1993] hydro_fvm compute time t=9.5067e-03 (Dt=4.733e-06) : 0.80402 s (5.48 ms, 0 us, 691 us, 790143 us, 5.41 ms)
+[it=1993] hydro_fvm compute time t=9.5067e-03 (Dt=4.733e-06) : 0.79630 s (4.21 ms, 0 us, 78 us, 786040 us, 4.06 ms)
 [rank 0] iteration #1994 - starting launcher [0][0] ...
 [rank 0] done
-[it=1994] hydro_fvm compute time t=9.5114e-03 (Dt=4.733e-06) : 0.80460 s (5.50 ms, 0 us, 698 us, 790697 us, 5.40 ms)
+[it=1994] hydro_fvm compute time t=9.5114e-03 (Dt=4.733e-06) : 0.79533 s (4.20 ms, 0 us, 86 us, 785092 us, 4.05 ms)
 [rank 0] iteration #1995 - starting launcher [0][0] ...
 [rank 0] done
-[it=1995] hydro_fvm compute time t=9.5161e-03 (Dt=4.733e-06) : 0.80399 s (5.47 ms, 0 us, 687 us, 790130 us, 5.41 ms)
+[it=1995] hydro_fvm compute time t=9.5161e-03 (Dt=4.733e-06) : 0.79582 s (4.23 ms, 0 us, 81 us, 785560 us, 4.06 ms)
 [rank 0] iteration #1996 - starting launcher [0][0] ...
 [rank 0] done
-[it=1996] hydro_fvm compute time t=9.5209e-03 (Dt=4.733e-06) : 0.80456 s (5.48 ms, 0 us, 685 us, 790686 us, 5.41 ms)
+[it=1996] hydro_fvm compute time t=9.5209e-03 (Dt=4.733e-06) : 0.79556 s (4.20 ms, 0 us, 78 us, 785253 us, 4.09 ms)
 [rank 0] iteration #1997 - starting launcher [0][0] ...
 [rank 0] done
-[it=1997] hydro_fvm compute time t=9.5256e-03 (Dt=4.733e-06) : 0.80423 s (5.47 ms, 0 us, 686 us, 790358 us, 5.41 ms)
+[it=1997] hydro_fvm compute time t=9.5256e-03 (Dt=4.733e-06) : 0.79558 s (4.22 ms, 0 us, 80 us, 785357 us, 4.03 ms)
 [rank 0] iteration #1998 - starting launcher [0][0] ...
 [rank 0] done
-[it=1998] hydro_fvm compute time t=9.5303e-03 (Dt=4.733e-06) : 0.80432 s (5.47 ms, 0 us, 686 us, 790472 us, 5.39 ms)
+[it=1998] hydro_fvm compute time t=9.5303e-03 (Dt=4.733e-06) : 0.79577 s (4.20 ms, 0 us, 80 us, 785564 us, 4.04 ms)
 [rank 0] iteration #1999 - starting launcher [0][0] ...
 [rank 0] done
-[it=1999] hydro_fvm compute time t=9.5351e-03 (Dt=4.732e-06) : 0.80432 s (5.49 ms, 0 us, 658 us, 790471 us, 5.41 ms)
-[it=2000] t=9.5398e-03 Total density : 4.7301802e+08, change in mass: 5.4e-15 (should be close to 0)
-Design frequency: 542.00 MHz
+[it=1999] hydro_fvm compute time t=9.5351e-03 (Dt=4.732e-06) : 0.79661 s (4.18 ms, 0 us, 81 us, 786412 us, 4.05 ms)
+[it=2000] t=9.5398e-03 Total density : 4.7301802e+08, change in mass: 6.0e-15 (should be close to 0)
+Design frequency: 550.00 MHz
 
 -----------------------------------------------------------
 CPU→FPGA
-Average execution time: (mean ± σ)   5497.9 us ± 42.1 µs
-                        (min … max)  5311.2 us … 5638.8 µs
+Average execution time: (mean ± σ)   4181.3 us ± 79.9 µs
+                        (min … max)  4006.1 us … 5442.0 µs
 
 -----------------------------------------------------------
 FPGA→CPU
-Average execution time: (mean ± σ)   5379.5 us ± 30.8 µs
-                        (min … max)  5327.3 us … 5636.7 µs
+Average execution time: (mean ± σ)   4044.9 us ± 26.9 µs
+                        (min … max)  3999.7 us … 4449.0 µs
 
 -----------------------------------------------------------
 TOTAL usage
-Average execution time: (mean ± σ)   804184.3 us ± 332.5 µs
-                        (min … max)  802964.6 us … 811063.2 µs
+Average execution time: (mean ± σ)   796462.8 us ± 31638.7 µs
+                        (min … max)  795027.5 us … 2210847.0 µs
 
 -----------------------------------------------------------
 TOTAL compute
-Average execution time: (mean ± σ)   790320.2 us ± 315.6 µs
-                        (min … max)  789127.4 us … 796467.6 µs
+Average execution time: (mean ± σ)   786270.8 us ± 31577.8 µs
+                        (min … max)  784969.0 us … 2197934.4 µs
 
 -----------------------------------------------------------
 boundaries X
-Average execution time: (mean ± σ)   691.9 us ± 14.1 µs
-                        (min … max)  615.6 us … 748.6 µs
+Average execution time: (mean ± σ)   79.4 us ± 2.8 µs
+                        (min … max)  76.2 us … 144.5 µs
 
 -----------------------------------------------------------
 boundaries Y
 Average execution time: (mean ± σ)   0.0 us ± 0.0 µs
                         (min … max)  0.0 us … 0.0 µs
 
-Total execution time: 1608.379 s
+Total execution time: 1592.934 s
 
 === Estimated II per kernel
-Assuming Design Frequency is 542.00 MHz
-update_boundaries_x   ~ II = 9.375
+Assuming Design Frequency is 550.00 MHz
+update_boundaries_x   ~ II = 1.092
 update_boundaries_y   ~ II = 0.000
-compute_hydro         ~ II = 1.071
-TOTAL usage           ~ II = 1.090
+compute_hydro         ~ II = 1.081
+TOTAL usage           ~ II = 1.095
 
 Timing Breakdown
  100 % (0.80 s) per iteration
-  98.3 % (0.79 s) Compute
-   1.4 % (0.01 s) Copies (0.7 % CPU→FPGA + 0.7 % FPGA→CPU) (0.01 s + 0.01 s)
-   0.1 % (0.00 s) Boundary Conditions (0.0 % BC X + 0.1 % BC Y) (0.00 s + 0.00 s)
+  98.7 % (0.79 s) Compute
+   1.0 % (0.01 s) Copies (0.5 % CPU→FPGA + 0.5 % FPGA→CPU) (0.00 s + 0.00 s)
+   0.0 % (0.00 s) Boundary Conditions (0.0 % BC X + 0.0 % BC Y) (0.00 s + 0.00 s)
 
 Subdomains : [1][1] = 1
 Problem size : 4.00e+08
 FPGA RAM usage : 23.85 GB (74.5 %)
 CACHE_SIZE usage : 40005 (61.0 %)
-Mass change : 5.36e-15
-Estimated Throughput : 31.833 GB/s (all code)
-Estimated Throughput : 32.392 GB/s (FPGA compute)
-Estimated Throughput : 0.233 GB/s (CPU to FPGA)
-Estimated Throughput : 0.238 GB/s (FPGA to CPU)
-Performance : 497.398 Mc/s (all code)
-Performance : 506.124 Mc/s (FPGA compute)
+Mass change : 5.96e-15
+Estimated Throughput : 32.142 GB/s (all code)
+Estimated Throughput : 32.559 GB/s (FPGA compute)
+Estimated Throughput : 0.306 GB/s (CPU to FPGA)
+Estimated Throughput : 0.316 GB/s (FPGA to CPU)
+Performance : 502.221 Mc/s (all code)
+Performance : 508.731 Mc/s (FPGA compute)
