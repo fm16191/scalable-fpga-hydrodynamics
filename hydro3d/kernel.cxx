@@ -2,7 +2,7 @@
 
 constexpr size_t ghost_size = 1;
 
-static inline void convert_to_primitives(const size_t index, DATATYPE &U_rho, DATATYPE &U_ux, DATATYPE &U_uy,
+static inline void convert_to_primitives_get_U(const size_t index, DATATYPE &U_rho, DATATYPE &U_ux, DATATYPE &U_uy,
                                          DATATYPE &U_uz, DATATYPE &U_p, DATATYPE &Q_rho, DATATYPE &Q_ux,
                                          DATATYPE &Q_uy, DATATYPE &Q_uz, DATATYPE &Q_p,
                                          const DATATYPE *__restrict__ cache_U_rho,
@@ -17,6 +17,33 @@ static inline void convert_to_primitives(const size_t index, DATATYPE &U_rho, DA
     U_uy  = cache_U_v[index];
     U_uz  = cache_U_w[index];
     U_p   = cache_U_E[index];
+
+    // Primitive variables
+    Q_rho = U_rho;
+    [[intel::fpga_register]] DATATYPE inv_Q_rho = ONE / Q_rho;
+    Q_ux = U_ux * inv_Q_rho;
+    Q_uy = U_uy * inv_Q_rho;
+    Q_uz = U_uz * inv_Q_rho;
+
+    // e_int = U_p * inv_Q_rho - HALF * (Q_ux * Q_ux) - HALF * (Q_uy * Q_uy);
+    [[intel::fpga_register]] DATATYPE temp_e_int = Q_ux*Q_ux + Q_uy*Q_uy + Q_uz*Q_uz;
+    [[intel::fpga_register]] DATATYPE e_int = U_p * inv_Q_rho - HALF * temp_e_int;
+    Q_p = gamma_minus_one * U_rho * e_int;
+}
+
+static inline void convert_to_primitives(const size_t index, DATATYPE &Q_rho, DATATYPE &Q_ux, DATATYPE &Q_uy,
+                                         DATATYPE &Q_uz, DATATYPE &Q_p, const DATATYPE *__restrict__ cache_U_rho,
+                                         const DATATYPE *__restrict__ cache_U_u,
+                                         const DATATYPE *__restrict__ cache_U_v,
+                                         const DATATYPE *__restrict__ cache_U_w,
+                                         const DATATYPE *__restrict__ cache_U_E, const DATATYPE gamma_minus_one)
+{
+    // Conservative variables
+    [[intel::fpga_register]] DATATYPE U_rho = cache_U_rho[index];
+    [[intel::fpga_register]] DATATYPE U_ux  = cache_U_u[index];
+    [[intel::fpga_register]] DATATYPE U_uy  = cache_U_v[index];
+    [[intel::fpga_register]] DATATYPE U_uz  = cache_U_w[index];
+    [[intel::fpga_register]] DATATYPE U_p   = cache_U_E[index];
 
     // Primitive variables
     Q_rho = U_rho;
@@ -178,21 +205,19 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
         [[intel::fpga_register]] DATATYPE Q_rho_right, Q_ux_right, Q_uy_right, Q_uz_right, Q_p_right;
 
         size_t index_right = index_ijk & (CACHE_SIZE - 1);
-        convert_to_primitives(index_right, U_rho_right, U_ux_right, U_uy_right, U_uz_right, U_p_right, Q_rho_right,
-                              Q_ux_right, Q_uy_right, Q_uz_right, Q_p_right, cache_U_rho, cache_U_ux, cache_U_uy,
-                              cache_U_uz, cache_U_E, gamma_minus_one);
+        convert_to_primitives_get_U(index_right, U_rho_right, U_ux_right, U_uy_right, U_uz_right, U_p_right,
+                                    Q_rho_right, Q_ux_right, Q_uy_right, Q_uz_right, Q_p_right, cache_U_rho,
+                                    cache_U_ux, cache_U_uy, cache_U_uz, cache_U_E, gamma_minus_one);
 
         // Compute fluxes
         /* First flux in X axis (i-1) */
         {
             size_t idx_left = (index_ipojk - 2 * zy_stride) & (CACHE_SIZE - 1);
 
-            [[intel::fpga_register]] DATATYPE U_rho_left, U_ux_left, U_uy_left, U_uz_left, U_p_left;
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left;
 
-            convert_to_primitives(idx_left, U_rho_left, U_ux_left, U_uy_left, U_uz_left, U_p_left, Q_rho_left,
-                                  Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho, cache_U_ux, cache_U_uy,
-                                  cache_U_uz, cache_U_E, gamma_minus_one);
+            convert_to_primitives(idx_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
+                                  cache_U_ux, cache_U_uy, cache_U_uz, cache_U_E, gamma_minus_one);
 
             compute_fluxes(Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, Q_rho_right, Q_ux_right,
                            Q_uy_right, Q_uz_right, Q_p_right, K, gamma, divgamma, fx1_rho, fx1_ux, fx1_uy, fx1_uz,
@@ -203,12 +228,10 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
         {
             size_t idx_left = index_ipojk & (CACHE_SIZE - 1);
 
-            [[intel::fpga_register]] DATATYPE U_rho_left, U_ux_left, U_uy_left, U_uz_left, U_p_left;
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left;
 
-            convert_to_primitives(idx_left, U_rho_left, U_ux_left, U_uy_left, U_uz_left, U_p_left, Q_rho_left,
-                                  Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho, cache_U_ux, cache_U_uy,
-                                  cache_U_uz, cache_U_E, gamma_minus_one);
+            convert_to_primitives(idx_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
+                                  cache_U_ux, cache_U_uy, cache_U_uz, cache_U_E, gamma_minus_one);
 
             compute_fluxes(Q_rho_right, Q_ux_right, Q_uy_right, Q_uz_right, Q_p_right, Q_rho_left, Q_ux_left,
                            Q_uy_left, Q_uz_left, Q_p_left, K, gamma, divgamma, fx2_rho, fx2_ux, fx2_uy, fx2_uz,
@@ -220,12 +243,10 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
             bool is_top_wall = (col_pos == 1);
             size_t idx_left = (index_ipojk - zy_stride - z_stride) & (CACHE_SIZE - 1);
 
-            [[intel::fpga_register]] DATATYPE U_rho_left, U_ux_left, U_uy_left, U_uz_left, U_p_left;
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left;
 
-            convert_to_primitives(idx_left, U_rho_left, U_ux_left, U_uy_left, U_uz_left, U_p_left, Q_rho_left,
-                                  Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho, cache_U_ux, cache_U_uy,
-                                  cache_U_uz, cache_U_E, gamma_minus_one);
+            convert_to_primitives(idx_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
+                                  cache_U_ux, cache_U_uy, cache_U_uz, cache_U_E, gamma_minus_one);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_top_wall ? Q_rho_right     : Q_rho_left;
             [[intel::fpga_register]] DATATYPE Q_uy_left_used  = is_top_wall ? -Q_uy_right     : Q_uy_left; // negate for wall
@@ -243,12 +264,10 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
             bool is_bottom_wall = (col_pos == y_stride - ghost_size - 1);
             size_t idx_left = (index_ipojk - zy_stride + z_stride) & (CACHE_SIZE - 1);
 
-            [[intel::fpga_register]] DATATYPE U_rho_left, U_ux_left, U_uy_left, U_uz_left, U_p_left;
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left;
 
-            convert_to_primitives(idx_left, U_rho_left, U_ux_left, U_uy_left, U_uz_left, U_p_left, Q_rho_left,
-                                  Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho, cache_U_ux, cache_U_uy,
-                                  cache_U_uz, cache_U_E, gamma_minus_one);
+            convert_to_primitives(idx_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
+                                  cache_U_ux, cache_U_uy, cache_U_uz, cache_U_E, gamma_minus_one);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_bottom_wall ? Q_rho_right     : Q_rho_left;
             [[intel::fpga_register]] DATATYPE Q_uy_left_used  = is_bottom_wall ? -Q_uy_right     : Q_uy_left;
@@ -266,12 +285,10 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
             bool is_back_wall = (dep_pos == 1);
             size_t idx_left = (index_ipojk - zy_stride - 1) & (CACHE_SIZE - 1);
 
-            [[intel::fpga_register]] DATATYPE U_rho_left, U_ux_left, U_uy_left, U_uz_left, U_p_left;
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left;
 
-            convert_to_primitives(idx_left, U_rho_left, U_ux_left, U_uy_left, U_uz_left, U_p_left, Q_rho_left,
-                                  Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho, cache_U_ux, cache_U_uy,
-                                  cache_U_uz, cache_U_E, gamma_minus_one);
+            convert_to_primitives(idx_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
+                                  cache_U_ux, cache_U_uy, cache_U_uz, cache_U_E, gamma_minus_one);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_back_wall ? Q_rho_right     : Q_rho_left;
             [[intel::fpga_register]] DATATYPE Q_uz_left_used  = is_back_wall ? -Q_uz_right     : Q_uz_left;
@@ -289,12 +306,10 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
             bool is_front_wall = (dep_pos == z_stride - ghost_size - 1);
             size_t idx_left = (index_ipojk - zy_stride + 1) & (CACHE_SIZE - 1);
 
-            [[intel::fpga_register]] DATATYPE U_rho_left, U_ux_left, U_uy_left, U_uz_left, U_p_left;
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left;
 
-            convert_to_primitives(idx_left, U_rho_left, U_ux_left, U_uy_left, U_uz_left, U_p_left, Q_rho_left,
-                                  Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho, cache_U_ux, cache_U_uy,
-                                  cache_U_uz, cache_U_E, gamma_minus_one);
+            convert_to_primitives(idx_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
+                                  cache_U_ux, cache_U_uy, cache_U_uz, cache_U_E, gamma_minus_one);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_front_wall ? Q_rho_right     : Q_rho_left;
             [[intel::fpga_register]] DATATYPE Q_uz_left_used  = is_front_wall ? -Q_uz_right     : Q_uz_left;
@@ -339,12 +354,6 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
         U_w_next   = U_uz_right  + x_uz  + y_uz  + z_uz ;
         U_E_next   = U_p_right   + x_E   + y_E   + z_E  ;
 
-        // U_rho_next = U_rho_right + DtDx*fx1_rho + DtDy*fy1_rho + DtDz*fz1_rho - DtDx*fx2_rho - DtDy*fy2_rho - DtDz*fz2_rho;
-        // U_u_next   = U_ux_right  + DtDx*fx1_ux  + DtDy*fy1_uy  + DtDz*fz1_uz  - DtDx*fx2_ux  - DtDy*fy2_uy  - DtDz*fz2_uz;
-        // U_v_next   = U_uy_right  + DtDx*fx1_uy  + DtDy*fy1_ux  + DtDz*fz1_uy  - DtDx*fx2_uy  - DtDy*fy2_ux  - DtDz*fz2_uy; // Care, switching UX and UY for fy !!
-        // U_w_next   = U_uz_right  + DtDx*fx1_uz  + DtDy*fy1_uz  + DtDz*fz1_ux  - DtDx*fx2_uz  - DtDy*fy2_uz  - DtDz*fz2_ux; // Care, switching UX and UZ for fz !!
-        // U_E_next   = U_p_right   + DtDx*fx1_E   + DtDy*fy1_E   + DtDz*fz1_E   - DtDx*fx2_E   - DtDy*fy2_E   - DtDz*fz2_E;
-
         d_rho_next[index_next] = U_rho_next;
         d_u_next[index_next]   = U_u_next;
         d_v_next[index_next]   = U_v_next;
@@ -353,22 +362,27 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
 
         // now compute Dt_next
         {
-            // [[intel::fpga_register]] DATATYPE U_rho, U_ux, U_uy, U_uz, U_p;
-            [[intel::fpga_register]] DATATYPE /* Q_rho, */ Q_ux, Q_uy, Q_uz, Q_p;
+            [[intel::fpga_register]] DATATYPE U_rho, U_ux, U_uy, U_uz, U_p;
+            [[intel::fpga_register]] DATATYPE Q_rho, Q_ux, Q_uy, Q_uz, Q_p;
             [[intel::fpga_register]] DATATYPE inv_Q_rho;
 
             // Conservative variables
+            U_rho = U_rho_next;
+            U_ux  = U_u_next;
+            U_uy  = U_v_next;
+            U_uz  = U_w_next;
+            U_p   = U_E_next;
 
             // Primitive variables
-            // Q_rho = U_rho_next;
-            inv_Q_rho = ONE / U_rho_next;
-            Q_ux = U_u_next * inv_Q_rho;
-            Q_uy = U_v_next * inv_Q_rho;
-            Q_uz = U_w_next * inv_Q_rho;
+            Q_rho = U_rho;
+            inv_Q_rho = ONE / Q_rho;
+            Q_ux = U_ux * inv_Q_rho;
+            Q_uy = U_uy * inv_Q_rho;
+            Q_uz = U_uz * inv_Q_rho;
 
             [[intel::fpga_register]] DATATYPE temp_e_int = Q_ux*Q_ux + Q_uy*Q_uy + Q_uz*Q_uz;
-            [[intel::fpga_register]] DATATYPE e_int = U_E_next * inv_Q_rho - HALF * temp_e_int;
-            Q_p = gamma_minus_one * U_rho_next * e_int;
+            [[intel::fpga_register]] DATATYPE e_int = U_p * inv_Q_rho - HALF * temp_e_int;
+            Q_p = gamma_minus_one * Q_rho * e_int;
 
             // compute speed of sound
             DATATYPE c_s = SQRT(gamma * Q_p * inv_Q_rho);
