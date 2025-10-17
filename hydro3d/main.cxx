@@ -51,34 +51,39 @@ static bool single_device_mode = false;
 constexpr size_t ghost_size = 1;
 
 class sub_domain {
-  public:
+    public:
     sycl::queue &queue;
 
-    size_t nb_x, nb_y, nb_z;
-    size_t x_stride, y_stride, z_stride, zy_stride;
-    size_t size, alloc_size;
+    size_t nb_x, nb_y, nb_z;             // Actual domain size (without ghost cells)
+    size_t x_stride, y_stride, z_stride; // Domain dimensions including ghost cells
+    size_t zy_stride;                    // Combined stride for z and y dimensions
+    size_t domain_size;                  // Total elements including ghost cells (x_stride * y_stride * z_stride)
+    size_t max_device_elements;          // Maximum device elements for alignment (size_max)
+    size_t buffer_size_bytes;            // Size in bytes for data transfer (domain_size * sizeof(DATATYPE))
+    size_t buffer_size_bytes2;           // Secondary buffer size (2 * domain_size * sizeof(DATATYPE))
 
-    vector<DATATYPE> h_rho, h_u, h_v, h_w, h_E;
+    vector<DATATYPE> h_rhoE, h_uvw;
 
-    // Device pointers
-    DATATYPE *d_rho = nullptr, *d_u = nullptr, *d_v = nullptr, *d_w = nullptr, *d_E = nullptr;
-    DATATYPE *d_rho_next = nullptr, *d_u_next = nullptr, *d_v_next = nullptr, *d_w_next = nullptr, *d_E_next = nullptr;
+    // Device pointers - allocated with max_device_elements for
+    // alignment/performance
+    DATATYPE *d_rhoE = nullptr, *d_uvw = nullptr;
+    DATATYPE *d_rhoE_next = nullptr, *d_uvw_next = nullptr;
     DATATYPE *Dt_next = nullptr;
 
     // Dummy constructor
     // Using std::optional would be a great improvement.
-    sub_domain(sycl::queue &q) : queue(q), nb_x(0), nb_y(0), nb_z(0),
-    x_stride(0), y_stride(0), z_stride(0), zy_stride(0), size(0), alloc_size(0) {}
+    sub_domain(sycl::queue &q) : queue(q), nb_x(0), nb_y(0), nb_z(0), x_stride(0), y_stride(0), z_stride(0),
+    zy_stride(0), domain_size(0), max_device_elements(0), buffer_size_bytes(0), buffer_size_bytes2(0) {}
 
     // Constructor
-    sub_domain(sycl::queue &q, size_t nx, size_t ny, size_t nz)
-        : queue(q), nb_x(nx), nb_y(ny), nb_z(nz) {
+    sub_domain(sycl::queue &q, size_t nx, size_t ny, size_t nz, size_t max_elements) : queue(q), nb_x(nx), nb_y(ny), nb_z(nz), max_device_elements(max_elements) {
         x_stride = nb_x + 2 * ghost_size;
         y_stride = nb_y + 2 * ghost_size;
         z_stride = nb_z + 2 * ghost_size;
-        zy_stride = y_stride * z_stride;
-        size = x_stride * zy_stride;
-        alloc_size = size * sizeof(DATATYPE);
+        zy_stride = z_stride * y_stride;
+        domain_size = x_stride * zy_stride;
+        buffer_size_bytes = 2 * domain_size * sizeof(DATATYPE);  // Size for actual data transfers
+        buffer_size_bytes2 = 3 * domain_size * sizeof(DATATYPE); // Size for actual data transfers
         init();
     }
 
@@ -93,43 +98,31 @@ class sub_domain {
     sub_domain(sub_domain &&other) noexcept = default;
     sub_domain &operator=(sub_domain &&other) noexcept = delete;
 
-  private:
+    private:
     void init() {
-        h_rho = vector<DATATYPE>(size);
-        h_u   = vector<DATATYPE>(size);
-        h_v   = vector<DATATYPE>(size);
-        h_w   = vector<DATATYPE>(size);
-        h_E   = vector<DATATYPE>(size);
+        // Host buffers: allocate only what we need (actual domain size)
+        h_rhoE = vector<DATATYPE>(2 * domain_size);
+        h_uvw = vector<DATATYPE>(3 * domain_size);
 
-        d_rho      = sycl::malloc_device<DATATYPE>(size, queue);
-        d_u        = sycl::malloc_device<DATATYPE>(size, queue);
-        d_v        = sycl::malloc_device<DATATYPE>(size, queue);
-        d_w        = sycl::malloc_device<DATATYPE>(size, queue);
-        d_E        = sycl::malloc_device<DATATYPE>(size, queue);
-        d_rho_next = sycl::malloc_device<DATATYPE>(size, queue);
-        d_u_next   = sycl::malloc_device<DATATYPE>(size, queue);
-        d_v_next   = sycl::malloc_device<DATATYPE>(size, queue);
-        d_w_next   = sycl::malloc_device<DATATYPE>(size, queue);
-        d_E_next   = sycl::malloc_device<DATATYPE>(size, queue);
-        Dt_next    = sycl::malloc_device<DATATYPE>(1, queue);
+        // Device buffers: allocate max_device_elements for alignment/performance benefits
+        // We won't use all of this allocation, but it helps with memory alignment
+        d_rhoE      = sycl::malloc_device<DATATYPE>(2 * max_device_elements, queue);
+        d_uvw       = sycl::malloc_device<DATATYPE>(3 * max_device_elements, queue);
+        d_rhoE_next = sycl::malloc_device<DATATYPE>(2 * max_device_elements, queue);
+        d_uvw_next  = sycl::malloc_device<DATATYPE>(3 * max_device_elements, queue);
+        Dt_next     = sycl::malloc_device<DATATYPE>(1, queue);
 
-        if (!d_rho || !d_u || !d_v || !d_w || !d_E || !d_rho_next || !d_u_next || !d_v_next || !d_w_next || !d_E_next || !Dt_next) {
+        if (!d_rhoE || !d_uvw || !d_rhoE_next || !d_uvw_next || !Dt_next) {
             throw std::bad_alloc();
         }
     }
 
     void cleanup() {
-        if (d_rho)      { sycl::free(d_rho, queue); d_rho = nullptr; }
-        if (d_u)        { sycl::free(d_u, queue); d_u = nullptr; }
-        if (d_v)        { sycl::free(d_v, queue); d_v = nullptr; }
-        if (d_w)        { sycl::free(d_w, queue); d_w = nullptr; }
-        if (d_E)        { sycl::free(d_E, queue); d_E = nullptr; }
-        if (d_rho_next) { sycl::free(d_rho_next, queue); d_rho_next = nullptr; }
-        if (d_u_next)   { sycl::free(d_u_next, queue); d_u_next = nullptr; }
-        if (d_v_next)   { sycl::free(d_v_next, queue); d_v_next = nullptr; }
-        if (d_w_next)   { sycl::free(d_w_next, queue); d_w_next = nullptr; }
-        if (d_E_next)   { sycl::free(d_E_next, queue); d_E_next = nullptr; }
-        if (Dt_next)    { sycl::free(Dt_next, queue); Dt_next = nullptr; }
+        if (d_rhoE) { sycl::free(d_rhoE, queue); d_rhoE = nullptr; }
+        if (d_uvw) { sycl::free(d_uvw, queue); d_uvw = nullptr; }
+        if (d_rhoE_next) { sycl::free(d_rhoE_next, queue); d_rhoE_next = nullptr; }
+        if (d_uvw_next) { sycl::free(d_uvw_next, queue); d_uvw_next = nullptr; }
+        if (Dt_next) { sycl::free(Dt_next, queue); Dt_next = nullptr; }
     }
 };
 
@@ -140,19 +133,19 @@ static int print_usage(char *exec)
     printf("Usage : %s [-xyztiowh]\n", exec);
     printf("\n");
     printf("Options : \n"
-           " -j Set the number of sub-domains in the X axis. (--sdx) Default : %ld\n"
-           " -k Set the number of sub-domains in the Y axis. (--sdy) Default : %ld\n"
-           " -l Set the number of sub-domains in the Y axis. (--sdz) Default : %ld\n"
-           " -x Set the number of spatial grid points in the X axis. Default : %ld\n"
-           " -y Set the number of spatial grid points in the Y axis. Default : %ld\n"
-           " -z Set the number of spatial grid points in the Z axis. Default : %ld\n"
-           " -t Set the time at which the simulation stops (does not translate to iterations count). Default : %.2e\n"
-           " -i Set the max number of iterations. First of iterations or timestep is reached stops the simulation. Default : no limitation\n"
-           " -o Set the output filename. Default : %s\n"
-           " -w Write result data each <w> timestep. Default : only write final result"
-           "\n"
-           " -h, --help Show this message and exit\n",
-           NB_SUBDOMAINS_X, NB_SUBDOMAINS_Y, NB_SUBDOMAINS_Z, NB_X, NB_Y, NB_Z, MAX_T, out_filename.c_str());
+        " -j Set the number of sub-domains in the X axis. (--sdx) Default : %ld\n"
+        " -k Set the number of sub-domains in the Y axis. (--sdy) Default : %ld\n"
+        " -l Set the number of sub-domains in the Y axis. (--sdz) Default : %ld\n"
+        " -x Set the number of spatial grid points in the X axis. Default : %ld\n"
+        " -y Set the number of spatial grid points in the Y axis. Default : %ld\n"
+        " -z Set the number of spatial grid points in the Z axis. Default : %ld\n"
+        " -t Set the time at which the simulation stops (does not translate to iterations count). Default : %.2e\n"
+        " -i Set the max number of iterations. First of iterations or timestep is reached stops the simulation. Default : no limitation\n"
+        " -o Set the output filename. Default : %s\n"
+        " -w Write result data each <w> timestep. Default : only write final result"
+        "\n"
+        " -h, --help Show this message and exit\n",
+        NB_SUBDOMAINS_X, NB_SUBDOMAINS_Y, NB_SUBDOMAINS_Z, NB_X, NB_Y, NB_Z, MAX_T, out_filename.c_str());
     return 0;
 }
 
@@ -185,9 +178,12 @@ static void write_results(const vector<vector<vector<sub_domain>>> &subdomains, 
                             const size_t j = SUBDOMAIN_SIZE_Y * sd_j + cur_j;
                             const size_t k = SUBDOMAIN_SIZE_Z * sd_k + cur_k;
 
-                            buffer << i << ',' << j << ',' << k << ',' << cur.h_rho[local_sd_index] << ','
-                                   << cur.h_E[local_sd_index] << ',' << cur.h_u[local_sd_index] << ','
-                                   << cur.h_v[local_sd_index] << ',' << cur.h_w[local_sd_index] << '\n';
+                            buffer << i << ',' << j << ',' << k << ','
+                                   << cur.h_rhoE[2 * local_sd_index] << ','
+                                   << cur.h_rhoE[2 * local_sd_index + 1] << ','
+                                   << cur.h_uvw[3 * local_sd_index] << ','
+                                   << cur.h_uvw[3 * local_sd_index + 1] << ','
+                                   << cur.h_uvw[3 * local_sd_index + 2] << '\n';
                         }
                     }
                 }
@@ -246,7 +242,7 @@ static double compute_total_mass(const vector<vector<vector<sub_domain>>> &subdo
                     for (size_t cur_j = ghost_size; cur_j < cur.y_stride - ghost_size; ++cur_j) {
                         for (size_t cur_k = ghost_size; cur_k < cur.z_stride - ghost_size; ++cur_k) {
                             const size_t local_sd_index = cur_i * cur.zy_stride + cur_j * cur.z_stride + cur_k;
-                            long double var = static_cast<long double>(cur.h_rho[local_sd_index]);
+                            long double var = static_cast<long double>(cur.h_rhoE[2*local_sd_index]);
                             long double t = total_mass + var;
                             // Kahan summation compensation: improves numerical accuracy by tracking lost low-order bits during floating-point addition.
                             if (fabsl(total_mass) >= var) c += (total_mass - t) + var;
@@ -270,9 +266,9 @@ static double ensure_mass_conservation(double initial_mass, const vector<vector<
     double current_mass = compute_total_mass(subdomains);
     if (rank == 0) {
         double mass_change = fabs(initial_mass - current_mass) / double(NB_X * NB_Y);
-    printf("[it=%4lu] t=%.4e Total density : %.7e, change in mass: %.1e (should be close to 0)\n", it, t,
-           current_mass, mass_change);
-    return mass_change;
+        printf("[it=%4lu] t=%.4e Total density : %.7e, change in mass: %.1e (should be close to 0)\n", it, t,
+               current_mass, mass_change);
+        return mass_change;
     }
     return 0.0;
 }
@@ -291,7 +287,7 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
     const double center_x = double(NB_X + 1) / 2.0;
     const double center_y = double(NB_Y + 1) / 2.0;
     const double center_z = double(NB_Z + 1) / 2.0;
-    const double radius = std::min(center_x, std::min(center_y, center_z)) / 3;
+    const double radius = std::min({ center_x, center_y, center_z }) / 3;
 
     for (size_t cur_i = 0; cur_i < cur.x_stride; ++cur_i) {
         for (size_t cur_j = 0; cur_j < cur.y_stride; ++cur_j) {
@@ -314,11 +310,11 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
                 U_uz  = default_uz;
 
                 // Conservative variables
-                cur.h_rho[local_sd_index] = U_rho;
-                cur.h_E[local_sd_index]   = U_p;
-                cur.h_u[local_sd_index]   = U_ux;
-                cur.h_v[local_sd_index]   = U_uy;
-                cur.h_w[local_sd_index]   = U_uz;
+                cur.h_rhoE[2*local_sd_index]   = U_rho;
+                cur.h_rhoE[2*local_sd_index+1] = U_p;
+                cur.h_uvw [3*local_sd_index]   = U_ux;
+                cur.h_uvw [3*local_sd_index+1] = U_uy;
+                cur.h_uvw [3*local_sd_index+2] = U_uz;
 
                 // Compute first Dt
                 // Primitive variables
@@ -346,14 +342,13 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
     }
 }
 
-
 static void update_bound(const sub_domain &from, sub_domain &to, const size_t index_from, const size_t index_to)
 {
-    to.h_rho[index_to] = from.h_rho[index_from];
-    to.h_u[index_to] = from.h_u[index_from];
-    to.h_v[index_to] = from.h_v[index_from];
-    to.h_w[index_to] = from.h_w[index_from];
-    to.h_E[index_to] = from.h_E[index_from];
+    to.h_rhoE[2*index_to]   = from.h_rhoE[2*index_from];   // rho
+    to.h_rhoE[2*index_to+1] = from.h_rhoE[2*index_from+1]; // E
+    to.h_uvw [3*index_to]   = from.h_uvw [3*index_from];   // u
+    to.h_uvw [3*index_to+1] = from.h_uvw [3*index_from+1]; // v
+    to.h_uvw [3*index_to+2] = from.h_uvw [3*index_from+2]; // w
 }
 
 static void update_ghost_cells_single_device(vector<vector<vector<sub_domain>>> &subdomains, it_timers_t &T)
@@ -365,6 +360,8 @@ static void update_ghost_cells_single_device(vector<vector<vector<sub_domain>>> 
     const size_t y_stride  = cur.y_stride;
     const size_t z_stride  = cur.z_stride;
     const size_t zy_stride = y_stride * z_stride;
+    const size_t copy_size_rhoE = 2*zy_stride * sizeof(DATATYPE);
+    const size_t copy_size_uvw  = 3*zy_stride * sizeof(DATATYPE);
 
     clock_gettime(CLOCK_MONOTONIC, &boundaries_x_t1);
 
@@ -372,21 +369,15 @@ static void update_ghost_cells_single_device(vector<vector<vector<sub_domain>>> 
     const size_t index_from = cur.nb_x * zy_stride;
     const size_t index_to   = 0;
 
-    std::memcpy(&cur.h_rho[index_to], &cur.h_rho[index_from], zy_stride * sizeof(cur.h_rho[0]));
-    std::memcpy(&cur.h_u[index_to],   &cur.h_u[index_from],   zy_stride * sizeof(cur.h_u[0]));
-    std::memcpy(&cur.h_v[index_to],   &cur.h_v[index_from],   zy_stride * sizeof(cur.h_v[0]));
-    std::memcpy(&cur.h_w[index_to],   &cur.h_w[index_from],   zy_stride * sizeof(cur.h_w[0]));
-    std::memcpy(&cur.h_E[index_to],   &cur.h_E[index_from],   zy_stride * sizeof(cur.h_E[0]));
+    std::memcpy(&cur.h_rhoE[2*index_to], &cur.h_rhoE[2*index_from], copy_size_rhoE);
+    std::memcpy(&cur.h_uvw [3*index_to], &cur.h_uvw [3*index_from], copy_size_uvw);
 
     // Copy first real plane (i = 1) to right ghost (i = nb_x + 1)
-    const size_t index_from2 = ghost_size * zy_stride;
-    const size_t index_to2   = (cur.nb_x + ghost_size) * zy_stride;
+    const size_t index_from2 = ghost_size*zy_stride;
+    const size_t index_to2 = (cur.nb_x + ghost_size)*zy_stride;
 
-    std::memcpy(&cur.h_rho[index_to2], &cur.h_rho[index_from2], zy_stride * sizeof(cur.h_rho[0]));
-    std::memcpy(&cur.h_u[index_to2],   &cur.h_u[index_from2],   zy_stride * sizeof(cur.h_u[0]));
-    std::memcpy(&cur.h_v[index_to2],   &cur.h_v[index_from2],   zy_stride * sizeof(cur.h_v[0]));
-    std::memcpy(&cur.h_w[index_to2],   &cur.h_w[index_from2],   zy_stride * sizeof(cur.h_w[0]));
-    std::memcpy(&cur.h_E[index_to2],   &cur.h_E[index_from2],   zy_stride * sizeof(cur.h_E[0]));
+    std::memcpy(&cur.h_rhoE[2*index_to2], &cur.h_rhoE[2*index_from2], copy_size_rhoE);
+    std::memcpy(&cur.h_uvw [3*index_to2], &cur.h_uvw [3*index_from2], copy_size_uvw);
 
     clock_gettime(CLOCK_MONOTONIC, &boundaries_x_t2);
     T.boundaries_x += get_time_us(boundaries_x_t1, boundaries_x_t2);
@@ -422,36 +413,24 @@ static void update_ghost_cells(vector<vector<vector<sub_domain>>> &subdomains, i
 
                 // Exchange yz-planes across X between ranks
                 const size_t yz_count = cur.zy_stride;
-                const size_t idx_from_right = cur.nb_x * cur.zy_stride;                 // last interior plane
-                const size_t idx_from_left  = ghost_size * cur.zy_stride;               // first interior plane
-                const size_t idx_to_left    = 0;                                        // left ghost plane
-                const size_t idx_to_right   = (cur.nb_x + ghost_size) * cur.zy_stride;  // right ghost plane
+                const size_t idx_from_right = cur.nb_x * cur.zy_stride;                // last interior plane
+                const size_t idx_from_left  = ghost_size * cur.zy_stride;              // first interior plane
+                const size_t idx_to_left    = 0;                                       // left ghost plane
+                const size_t idx_to_right   = (cur.nb_x + ghost_size) * cur.zy_stride; // right ghost plane
 
                 // Right interior -> left ghost (neighbor)
-                MPI_Isend(cur.h_rho.data() + idx_from_right, yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 11, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Isend(cur.h_u.data()   + idx_from_right, yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 12, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Isend(cur.h_v.data()   + idx_from_right, yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 13, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Isend(cur.h_w.data()   + idx_from_right, yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 15, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Isend(cur.h_E.data()   + idx_from_right, yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 14, MPI_COMM_WORLD, &requests[req++]);
+                MPI_Isend(cur.h_rhoE.data() + 2*idx_from_right, 2*yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 11, MPI_COMM_WORLD, &requests[req++]);
+                MPI_Isend(cur.h_uvw.data()  + 3*idx_from_right, 3*yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 12, MPI_COMM_WORLD, &requests[req++]);
 
-                MPI_Irecv(cur.h_rho.data() + idx_to_left, yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 11, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Irecv(cur.h_u.data()   + idx_to_left, yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 12, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Irecv(cur.h_v.data()   + idx_to_left, yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 13, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Irecv(cur.h_w.data()   + idx_to_left, yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 15, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Irecv(cur.h_E.data()   + idx_to_left, yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 14, MPI_COMM_WORLD, &requests[req++]);
+                MPI_Irecv(cur.h_rhoE.data() + 2*idx_to_left,    2*yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 11, MPI_COMM_WORLD, &requests[req++]);
+                MPI_Irecv(cur.h_uvw.data()  + 3*idx_to_left,    3*yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 12, MPI_COMM_WORLD, &requests[req++]);
 
                 // Left interior -> right ghost (neighbor)
-                MPI_Isend(cur.h_rho.data() + idx_from_left, yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 21, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Isend(cur.h_u.data()   + idx_from_left, yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 22, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Isend(cur.h_v.data()   + idx_from_left, yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 23, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Isend(cur.h_w.data()   + idx_from_left, yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 25, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Isend(cur.h_E.data()   + idx_from_left, yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 24, MPI_COMM_WORLD, &requests[req++]);
+                MPI_Isend(cur.h_rhoE.data() + 2*idx_from_left,  2*yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 21, MPI_COMM_WORLD, &requests[req++]);
+                MPI_Isend(cur.h_uvw.data()  + 3*idx_from_left,  3*yz_count, MPI_DATATYPE, other_rank, send_base_tag + sd_tag_offset + 22, MPI_COMM_WORLD, &requests[req++]);
 
-                MPI_Irecv(cur.h_rho.data() + idx_to_right, yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 21, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Irecv(cur.h_u.data()   + idx_to_right, yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 22, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Irecv(cur.h_v.data()   + idx_to_right, yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 23, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Irecv(cur.h_w.data()   + idx_to_right, yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 25, MPI_COMM_WORLD, &requests[req++]);
-                MPI_Irecv(cur.h_E.data()   + idx_to_right, yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 24, MPI_COMM_WORLD, &requests[req++]);
+                MPI_Irecv(cur.h_rhoE.data() + 2*idx_to_right,   2*yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 21, MPI_COMM_WORLD, &requests[req++]);
+                MPI_Irecv(cur.h_uvw.data()  + 3*idx_to_right,   3*yz_count, MPI_DATATYPE, other_rank, recv_base_tag + sd_tag_offset + 22, MPI_COMM_WORLD, &requests[req++]);
 
                 MPI_Waitall(req, requests, MPI_STATUSES_IGNORE);
 
@@ -490,7 +469,6 @@ int main(int argc, char *argv[])
 
     /* Argument parsing */
     const char *short_options = "j:k:l:x:y:z:t:i:o:w:h";
-
     const struct option long_options[] = { { "sdx", required_argument, nullptr, 'j' },
                                            { "sdy", required_argument, nullptr, 'k' },
                                            { "sdz", required_argument, nullptr, 'l' },
@@ -536,23 +514,23 @@ int main(int argc, char *argv[])
 
     if (rank == 0) {
         buffer << "Configuration : \n"
-            << "  Using Finite Volume method\n"
-            << "  Spatial Points X axis (nb_x)  : " << NB_X << "\n"
-            << "  Spatial Points Y axis (nb_y)  : " << NB_Y << "\n"
-            << "  Spatial Points Z axis (nb_z)  : " << NB_Z << "\n"
-            << "  Max Timestep (max_t)          : " << MAX_T << "\n"
-            << "  Max iterations (max_it)       : " << MAX_IT << "\n"
-            << "  Step in x (dx)                : " << DX << "\n"
-            << "  Step in y (dy)                : " << DY << "\n"
-            << "  Step in z (dz)                : " << DZ << "\n";
+               << "  Using Finite Volume method\n"
+               << "  Spatial Points X axis (nb_x)  : " << NB_X << "\n"
+               << "  Spatial Points Y axis (nb_y)  : " << NB_Y << "\n"
+               << "  Spatial Points Z axis (nb_z)  : " << NB_Z << "\n"
+               << "  Max Timestep (max_t)          : " << MAX_T << "\n"
+               << "  Max iterations (max_it)       : " << MAX_IT << "\n"
+               << "  Step in x (dx)                : " << DX << "\n"
+               << "  Step in y (dy)                : " << DY << "\n"
+               << "  Step in z (dz)                : " << DZ << "\n";
 
         if (write_interval) buffer << "  Write interval                : " << write_interval << "\n";
 
         // Check cache size
         needed_cache_size = 2 * (NB_Y + 2 * ghost_size) * (NB_Z + 2 * ghost_size) + 1;
         buffer << "\n"
-            << "  Device Max cache size (2*nb_y*nb_z)           : " << CACHE_SIZE << "\n"
-            << "  Used cache size                               : " << needed_cache_size << "\n";
+               << "  Device Max cache size (2*nb_y*nb_z)           : " << CACHE_SIZE << "\n"
+               << "  Used cache size                               : " << needed_cache_size << "\n";
         cerr << buffer.str();
         buffer.str(""); buffer.clear();
 
@@ -598,14 +576,35 @@ int main(int argc, char *argv[])
     const double needed_mem_gb = double(bytes_needed) / double(one_gb) / nprocs;
     // size_t max_problem_size = size_t(sqrt(double(global_mem_b) / double(sizeof(DATATYPE) * arrays_count)));
 
+#if FPGA_HARDWARE
+    // Safety offset used when estimating the maximum device elements to allocate.
+    constexpr size_t DEVICE_OFFSET = 8095;
+    size_t max_device_elements = global_mem_b / arrays_count / sizeof(DATATYPE) - DEVICE_OFFSET; // - k
+#else
+    size_t max_device_elements = domain_size;
+#endif
+
     buffer << "[rank " << rank << "] Device: " << device.get_info<info::device::name>() << "\n"
-           << "[rank " << rank << "] Max Work Group Size     : " << max_block_size << "\n"
-           << "[rank " << rank << "] Max EUCount             : " << max_EU_count << "\n"
-           << "[rank " << rank << "] Required Alignment      : " << base_align << " bits\n"
-           << "[rank " << rank << "] Cache Line Size         : " << page_sz << " bytes\n"
-           << "[rank " << rank << "] Max Global Memory       : " << std::fixed << std::setprecision(2) << global_mem_gb << " GB\n"
-           << "[rank " << rank << "] Estimated Required Mem  : " << std::fixed << std::setprecision(2) << needed_mem_gb << " GB\n"
+           << "[rank " << rank << "] Max Work Group Size        : " << max_block_size << "\n"
+           << "[rank " << rank << "] Max EUCount                : " << max_EU_count << "\n"
+           << "[rank " << rank << "] Required Alignment         : " << base_align << " bits\n"
+           << "[rank " << rank << "] Cache Line Size            : " << page_sz << " bytes\n"
+           << "[rank " << rank << "] Max Global Memory          : " << std::fixed << std::setprecision(2)
+           << global_mem_gb << " GB\n"
+           << "[rank " << rank << "] Estimated Required Mem     : " << std::fixed << std::setprecision(2)
+           << needed_mem_gb << " GB\n"
+        //    << "[rank " << rank << "] Max problem size (Max - k) : " << std::fixed
+        //    << std::setprecision(2) << max_device_elements << "\n"
         //    << "[rank " << rank << "] Max problem size        : " << std::fixed << std::setprecision(2) << max_problem_size << " GB\n"
+
+#if FPGA_HARDWARE
+           << "[rank " << rank << "] Allocation Strategy        : Maximum (FPGA alignment)\n"
+#else
+           << "[rank " << rank << "] Allocation Strategy        : Minimum (CPU/EMULATOR efficiency)\n"
+#endif
+           << "[rank " << rank << "] Max device elements        : " << std::fixed << std::setprecision(2)
+           << max_device_elements << "\n"
+
            << "\n";
 
     cerr << buffer.str();
@@ -671,7 +670,7 @@ int main(int argc, char *argv[])
                 if (sd_j == NB_SUBDOMAINS_Y - 1) nb_y += NB_Y % NB_SUBDOMAINS_Y;
                 if (sd_k == NB_SUBDOMAINS_Z - 1) nb_z += NB_Z % NB_SUBDOMAINS_Z;
 
-                line.emplace_back(queue, nb_x, nb_y, nb_z);
+                line.emplace_back(queue, nb_x, nb_y, nb_z, max_device_elements);
                 sub_domain &cur = line.back();
 
                 // Initialize initial conditions
@@ -685,11 +684,8 @@ int main(int argc, char *argv[])
                                               default_ux, default_uy, default_uz, min_Dt, C, min_spacing, gamma);
                 fprintf(stderr, "done\n");
 
-                queue.memcpy(cur.d_rho, cur.h_rho.data(), cur.alloc_size);
-                queue.memcpy(cur.d_u  , cur.h_u.data()  , cur.alloc_size);
-                queue.memcpy(cur.d_v  , cur.h_v.data()  , cur.alloc_size);
-                queue.memcpy(cur.d_w  , cur.h_w.data()  , cur.alloc_size);
-                queue.memcpy(cur.d_E  , cur.h_E.data()  , cur.alloc_size);
+                queue.memcpy(cur.d_rhoE, cur.h_rhoE.data(), cur.buffer_size_bytes);
+                queue.memcpy(cur.d_uvw, cur.h_uvw.data(), cur.buffer_size_bytes2);
                 queue.wait();
 
                 first_Dt = std::min(first_Dt, min_Dt);
@@ -725,7 +721,7 @@ int main(int argc, char *argv[])
     if (rank == 0) clock_gettime(CLOCK_MONOTONIC, &simu_t1);
     MPI_Barrier(MPI_COMM_WORLD);
 
-    // 
+    //
     double t = 0.0;
     size_t it = 0;
 
@@ -762,38 +758,28 @@ int main(int argc, char *argv[])
 
                     // fprintf(stderr, "Copy host to device ...");
                     clock_gettime(CLOCK_MONOTONIC, &host_to_device_t1);
-                    const size_t idx_from_left  = 0;
-                    const size_t idx_from_right = (cur.nb_x + ghost_size) * cur.zy_stride;
-                    const size_t yz_bytes = cur.zy_stride * sizeof(DATATYPE);
+                    const size_t idx_from_left  = 0 * cur.y_stride; // left ghost (i=0)
+                    const size_t idx_from_right = (cur.nb_x + ghost_size) * cur.zy_stride;  // right ghost (i=nb_x+1)
+                    const size_t ghost_plane_bytes = cur.zy_stride * sizeof(DATATYPE);      // plane size, 2 or 3 variables per element (rhoE or uvw)
 
-                    queue.memcpy(cur.d_rho + idx_from_left, cur.h_rho.data() + idx_from_left, yz_bytes);
-                    queue.memcpy(cur.d_u   + idx_from_left, cur.h_u.data()   + idx_from_left, yz_bytes);
-                    queue.memcpy(cur.d_v   + idx_from_left, cur.h_v.data()   + idx_from_left, yz_bytes);
-                    queue.memcpy(cur.d_w   + idx_from_left, cur.h_w.data()   + idx_from_left, yz_bytes);
-                    queue.memcpy(cur.d_E   + idx_from_left, cur.h_E.data()   + idx_from_left, yz_bytes);
-
-                    queue.memcpy(cur.d_rho + idx_from_right, cur.h_rho.data() + idx_from_right, yz_bytes);
-                    queue.memcpy(cur.d_u   + idx_from_right, cur.h_u.data()   + idx_from_right, yz_bytes);
-                    queue.memcpy(cur.d_v   + idx_from_right, cur.h_v.data()   + idx_from_right, yz_bytes);
-                    queue.memcpy(cur.d_w   + idx_from_right, cur.h_w.data()   + idx_from_right, yz_bytes);
-                    queue.memcpy(cur.d_E   + idx_from_right, cur.h_E.data()   + idx_from_right, yz_bytes);
+                    queue.memcpy(cur.d_rhoE + 2*idx_from_left, cur.h_rhoE.data()  + 2*idx_from_left,  2*ghost_plane_bytes);
+                    queue.memcpy(cur.d_uvw  + 3*idx_from_left, cur.h_uvw.data()   + 3*idx_from_left,  3*ghost_plane_bytes);
+                    queue.memcpy(cur.d_rhoE + 2*idx_from_right, cur.h_rhoE.data() + 2*idx_from_right, 2*ghost_plane_bytes);
+                    queue.memcpy(cur.d_uvw  + 3*idx_from_right, cur.h_uvw.data()  + 3*idx_from_right, 3*ghost_plane_bytes);
                     queue.wait();
                     clock_gettime(CLOCK_MONOTONIC, &host_to_device_t2);
                     // fprintf(stderr, " done \n");
 
                     printf("[rank %d] iteration #%ld - starting launcher [%lu][%lu][%lu] ...\n", rank, it, sd_i, sd_j, sd_k);
                     double fpga_hydro_compute =
-                        launcher(cur.d_rho, cur.d_u, cur.d_v, cur.d_w, cur.d_E, cur.d_rho_next, cur.d_u_next,
-                                 cur.d_v_next, cur.d_w_next, cur.d_E_next, cur.Dt_next, C, gamma, gamma_minus_one,
-                                 divgamma, K, cur.nb_x, cur.nb_y, cur.nb_z, DtDx, DtDy, DtDz, min_spacing, queue);
+                        launcher(cur.d_rhoE, cur.d_uvw, cur.d_rhoE_next, cur.d_uvw_next, cur.Dt_next, C, gamma,
+                                 gamma_minus_one, divgamma, K, cur.nb_x, cur.nb_y, cur.nb_z, DtDx, DtDy, DtDz,
+                                 min_spacing, queue);
                     queue.wait();
                     printf("[rank %d] done\n", rank);
-                
-                    std::swap(cur.d_rho, cur.d_rho_next);
-                    std::swap(cur.d_u  , cur.d_u_next);
-                    std::swap(cur.d_v  , cur.d_v_next);
-                    std::swap(cur.d_w  , cur.d_w_next);
-                    std::swap(cur.d_E  , cur.d_E_next);
+
+                    std::swap(cur.d_rhoE, cur.d_rhoE_next);
+                    std::swap(cur.d_uvw, cur.d_uvw_next);
                     queue.wait();
 
                     // Next Dt
@@ -806,24 +792,20 @@ int main(int argc, char *argv[])
                     clock_gettime(CLOCK_MONOTONIC, &device_to_host_t1);
 
                     // Update indexes left and right
-                    const size_t idx_real_first = 1 * cur.zy_stride;        // first real (i=1)
-                    const size_t idx_real_last  = cur.nb_x * cur.zy_stride; // last real  (i=nb_x)
+                    const size_t idx_real_first = 1 * cur.zy_stride;                  // first real (i=1)
+                    const size_t idx_real_last = cur.nb_x * cur.zy_stride;            // last real  (i=nb_x)
+                    const size_t real_plane_bytes = cur.zy_stride * sizeof(DATATYPE); // plane size, 2 or 3 variables
+                    // per element (rhoE or uvw)
 
-                    queue.memcpy(cur.h_rho.data() + idx_real_first, cur.d_rho + idx_real_first, yz_bytes);
-                    queue.memcpy(cur.h_u.data()   + idx_real_first, cur.d_u   + idx_real_first, yz_bytes);
-                    queue.memcpy(cur.h_v.data()   + idx_real_first, cur.d_v   + idx_real_first, yz_bytes);
-                    queue.memcpy(cur.h_w.data()   + idx_real_first, cur.d_w   + idx_real_first, yz_bytes);
-                    queue.memcpy(cur.h_E.data()   + idx_real_first, cur.d_E   + idx_real_first, yz_bytes);
+                    queue.memcpy(cur.h_rhoE.data() + 2*idx_real_first, cur.d_rhoE + 2*idx_real_first, 2*real_plane_bytes);
+                    queue.memcpy(cur.h_uvw.data()  + 3*idx_real_first, cur.d_uvw  + 3*idx_real_first, 3*real_plane_bytes);
 
-                    queue.memcpy(cur.h_rho.data() + idx_real_last, cur.d_rho + idx_real_last, yz_bytes);
-                    queue.memcpy(cur.h_u.data()   + idx_real_last, cur.d_u   + idx_real_last, yz_bytes);
-                    queue.memcpy(cur.h_v.data()   + idx_real_last, cur.d_v   + idx_real_last, yz_bytes);
-                    queue.memcpy(cur.h_w.data()   + idx_real_last, cur.d_w   + idx_real_last, yz_bytes);
-                    queue.memcpy(cur.h_E.data()   + idx_real_last, cur.d_E   + idx_real_last, yz_bytes);
+                    queue.memcpy(cur.h_rhoE.data() + 2*idx_real_last, cur.d_rhoE  + 2*idx_real_last,   2*real_plane_bytes);
+                    queue.memcpy(cur.h_uvw.data()  + 3*idx_real_last, cur.d_uvw   + 3*idx_real_last,   3*real_plane_bytes);
                     queue.wait();
                     clock_gettime(CLOCK_MONOTONIC, &device_to_host_t2);
                     // fprintf(stderr, " done \n");
-                
+
                     T->total_compute  += fpga_hydro_compute;
                     // T->total_compute2  += get_time_us(device_computation_t1, device_computation_t2);
                     T->host_to_device += get_time_us(host_to_device_t1, host_to_device_t2);
@@ -832,8 +814,8 @@ int main(int argc, char *argv[])
             }
         }
 
-        // Gather Every T.total_compute, T.host_to_device, T.device_to_host, T.boundaries_x, T.boundaries_y
-        // Sum them all to rank(0) => T.total_compute, T.host_to_device, T.device_to_host, T.boundaries_x, T.boundaries_y
+        // Gather Every T.total_compute, T.host_to_device, T.device_to_host, T.boundaries_x, T.boundaries_y Sum them all to rank(0) =>
+        // T.total_compute, T.host_to_device, T.device_to_host, T.boundaries_x, T.boundaries_y
         it_timers_t T_total;
         static_assert(sizeof(it_timers_t) == sizeof(double) * 8, "Timers struct must be packed with 7 doubles.");
         MPI_Reduce(T, &T_total, sizeof(it_timers_t) / sizeof(double), MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
@@ -847,7 +829,7 @@ int main(int argc, char *argv[])
             T->total_usage = get_time_us(total_usage_t1, total_usage_t2);
         }
 
-        if (write_interval && it % write_interval == 0 && it && it < MAX_IT && t < MAX_T) {
+        if (write_interval && it && (it % write_interval == 0) && it < MAX_IT && t < MAX_T) {
             for (size_t sd_i = 0; sd_i < NB_SUBDOMAINS_X; ++sd_i) {
                 for (size_t sd_j = 0; sd_j < NB_SUBDOMAINS_Y; ++sd_j) {
                     for (size_t sd_k = 0; sd_k < NB_SUBDOMAINS_Z; ++sd_k) {
@@ -856,11 +838,9 @@ int main(int argc, char *argv[])
 
                         sub_domain &cur = subdomains[sd_i][sd_j][sd_k];
 
-                        queue.memcpy(cur.h_rho.data(), cur.d_rho, cur.alloc_size);
-                        queue.memcpy(cur.h_u.data()  , cur.d_u  , cur.alloc_size);
-                        queue.memcpy(cur.h_v.data()  , cur.d_v  , cur.alloc_size);
-                        queue.memcpy(cur.h_w.data()  , cur.d_w  , cur.alloc_size);
-                        queue.memcpy(cur.h_E.data()  , cur.d_E  , cur.alloc_size);
+                        // Copy full buffer back to host for output
+                        queue.memcpy(cur.h_rhoE.data(), cur.d_rhoE, cur.buffer_size_bytes);
+                        queue.memcpy(cur.h_uvw.data() , cur.d_uvw , cur.buffer_size_bytes2);
                         queue.wait();
                     }
                 }
@@ -870,8 +850,8 @@ int main(int argc, char *argv[])
             write_results(subdomains, it, t);
         }
 
-        if (rank == 0) printf("[it=%4lu] hydro_fvm compute time t=%.4e (Dt=%.3e) : %.5f s (%.2f ms, %.0f us, %.0f us, %.0f us, %.2f ms)\n", it, t, Dt_local,
-            T->total_usage / 1e6, T->host_to_device / 1e3, T->boundaries_y,
+        if (rank == 0) printf("[it=%4lu] hydro_fvm compute time t=%.4e (Dt=%.3e) : %.5f s (%.2f ms, %.0f us, %.0f us, %.0f us, %.2f ms)\n",
+                   it, t, Dt_local, T->total_usage / 1e6, T->host_to_device / 1e3, T->boundaries_y,
                    T->boundaries_x, T->total_compute, T->device_to_host / 1e3);
 
         ++it;
@@ -890,11 +870,8 @@ int main(int argc, char *argv[])
 
                 sub_domain &cur = subdomains[sd_i][sd_j][sd_k];
 
-                queue.memcpy(cur.h_rho.data(), cur.d_rho, cur.alloc_size);
-                queue.memcpy(cur.h_u.data()  , cur.d_u  , cur.alloc_size);
-                queue.memcpy(cur.h_v.data()  , cur.d_v  , cur.alloc_size);
-                queue.memcpy(cur.h_w.data()  , cur.d_w  , cur.alloc_size);
-                queue.memcpy(cur.h_E.data()  , cur.d_E  , cur.alloc_size);
+                queue.memcpy(cur.h_rhoE.data(), cur.d_rhoE, cur.buffer_size_bytes);
+                queue.memcpy(cur.h_uvw.data(), cur.d_uvw, cur.buffer_size_bytes2);
                 queue.wait();
             }
         }
@@ -943,12 +920,12 @@ int main(int argc, char *argv[])
         printf(" %5.1lf %% (%.2lf s) Compute\n", res_total_compute.mean * pt, res_total_compute.mean / 1e6);
         double copies_total_s = res_host_to_device.mean + res_device_to_host.mean;
         printf(" %5.1lf %% (%.2lf s) Copies (%2.1lf %% CPU→FPGA + %2.1lf %% FPGA→CPU) (%.2lf s + %.2lf s)\n",
-            copies_total_s * pt, copies_total_s / 1e6, res_host_to_device.mean * pt, res_device_to_host.mean * pt,
-            res_host_to_device.mean / 1e6, res_device_to_host.mean / 1e6);
+               copies_total_s * pt, copies_total_s / 1e6, res_host_to_device.mean * pt, res_device_to_host.mean * pt,
+               res_host_to_device.mean / 1e6, res_device_to_host.mean / 1e6);
         double boundaries_total_s = res_boundaries_x.mean + res_boundaries_y.mean + res_boundaries_z.mean;
         printf(" %5.1lf %% (%.2lf s) Boundary Conditions (%2.1lf %% BC X + %2.1lf %% BC Y + %2.1lf %% BC Z) (%.2lf s + %.2lf s + %.2lf s)\n",
-            boundaries_total_s * pt, boundaries_total_s / 1e6, res_boundaries_x.mean * pt,
-            res_boundaries_y.mean * pt, res_boundaries_z.mean * pt, res_boundaries_x.mean / 1e6, res_boundaries_y.mean / 1e6, res_boundaries_z.mean / 1e6);
+               boundaries_total_s * pt, boundaries_total_s / 1e6, res_boundaries_x.mean * pt,
+               res_boundaries_y.mean * pt, res_boundaries_z.mean * pt, res_boundaries_x.mean / 1e6, res_boundaries_y.mean / 1e6, res_boundaries_z.mean / 1e6);
 
         printf("\n");
         printf("Subdomains : [%lu][%lu][%lu] = %lu\n", NB_SUBDOMAINS_X, NB_SUBDOMAINS_Y, NB_SUBDOMAINS_Z, NB_SUBDOMAINS_X * NB_SUBDOMAINS_Y * NB_SUBDOMAINS_Z);
@@ -957,14 +934,14 @@ int main(int argc, char *argv[])
         printf("CACHE_SIZE usage : %ld (%.1f %%)\n", needed_cache_size, double(needed_cache_size) / double(CACHE_SIZE) * 100);
         printf("Mass change : %.2e\n", final_mass_change);
 
-        const double total_bytes = sizeof(DATATYPE) * problem_size * arrays_count;
-        const size_t y_stride = NB_Y + 2 * ghost_size;
-        const size_t y_stride_bytes = y_stride * sizeof(DATATYPE);
+        const double total_bytes = arrays_count * problem_size * sizeof(DATATYPE);
+        const size_t zy_stride = (NB_Y + 2 * ghost_size) * (NB_Z + 2 * ghost_size);
+        const size_t zy_stride_bytes = NBVAR * zy_stride * sizeof(DATATYPE);
 
         printf("Estimated Throughput : %.3f GB/s (all code)\n", throughput(total_bytes, res_total_usage.mean));
         printf("Estimated Throughput : %.3f GB/s (FPGA compute)\n", throughput(total_bytes, res_total_compute.mean));
-        printf("Estimated Throughput : %.3f GB/s (CPU to FPGA)\n", throughput(y_stride_bytes, res_host_to_device.mean));
-        printf("Estimated Throughput : %.3f GB/s (FPGA to CPU)\n", throughput(y_stride_bytes, res_device_to_host.mean));
+        printf("Estimated Throughput : %.3f GB/s (CPU to FPGA)\n", throughput(zy_stride_bytes, res_host_to_device.mean));
+        printf("Estimated Throughput : %.3f GB/s (FPGA to CPU)\n", throughput(zy_stride_bytes, res_device_to_host.mean));
 
         printf("Performance : %.3f Mc/s (all code)\n", performance(problem_size, res_total_usage.mean));
         printf("Performance : %.3f Mc/s (FPGA compute)\n", performance(problem_size, res_total_compute.mean));

@@ -61,14 +61,12 @@ static inline double get_time_us(struct timespec start, struct timespec end)
            static_cast<double>(end.tv_nsec - start.tv_nsec) / 1e3;
 }
 
-extern "C" double launcher(DATATYPE *__restrict__ d_rho, DATATYPE *__restrict__ d_u, DATATYPE *__restrict__ d_v,
-                           DATATYPE *__restrict__ d_w, DATATYPE *__restrict__ d_E,
-                           DATATYPE *__restrict__ d_rho_next, DATATYPE *__restrict__ d_u_next,
-                           DATATYPE *__restrict__ d_v_next, DATATYPE *__restrict__ d_w_next,
-                           DATATYPE *__restrict__ d_E_next, DATATYPE *__restrict__ Dt_next, const DATATYPE C,
-                           const DATATYPE gamma, const DATATYPE gamma_minus_one, const DATATYPE divgamma,
-                           const DATATYPE K, const size_t NB_X, const size_t NB_Y, const size_t NB_Z,
-                           const DATATYPE &DtDx, const DATATYPE &DtDy, const DATATYPE &DtDz,
-                           const DATATYPE &min_spacing, sycl::queue queue);
+extern "C" double launcher(DATATYPE *__restrict__ d_rhoE, DATATYPE *__restrict__ d_uvw,
+                           DATATYPE *__restrict__ d_rhoE_next, DATATYPE *__restrict__ d_uvw_next,
+                           DATATYPE *__restrict__ Dt_next, const DATATYPE C, const DATATYPE gamma,
+                           const DATATYPE gamma_minus_one, const DATATYPE divgamma, const DATATYPE K,
+                           const size_t NB_X, const size_t NB_Y, const size_t NB_Z, const DATATYPE &DtDx,
+                           const DATATYPE &DtDy, const DATATYPE &DtDz, const DATATYPE &min_spacing,
+                           sycl::queue queue);
 
 #endif // KERNEL_H_

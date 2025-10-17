@@ -143,15 +143,12 @@ static void compute_fluxes(const DATATYPE Q_rho_left, const DATATYPE Q_ux_left, 
  * @param NB_X Block size of the x axis
  * @param NB_Y Block size of the y axis
  */
-static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYPE *__restrict__ d_u,
-                               const DATATYPE *__restrict__ d_v, const DATATYPE *__restrict__ d_w,
-                               const DATATYPE *__restrict__ d_E, DATATYPE *__restrict__ d_rho_next,
-                               DATATYPE *__restrict__ d_u_next, DATATYPE *__restrict__ d_v_next,
-                               DATATYPE *__restrict__ d_w_next, DATATYPE *__restrict__ d_E_next, const DATATYPE K,
-                               const DATATYPE gamma, const DATATYPE gamma_minus_one, const DATATYPE divgamma,
-                               const size_t &NB_X, const size_t &NB_Y, const size_t &NB_Z, const DATATYPE &DtDx,
-                               const DATATYPE &DtDy, const DATATYPE &DtDz, const DATATYPE &min_spacing,
-                               const DATATYPE C, DATATYPE *__restrict__ Dt_next)
+static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE *__restrict__ d_uvw,
+                               DATATYPE *__restrict__ d_rhoE_next, DATATYPE *__restrict__ d_uvw_next,
+                               const DATATYPE K, const DATATYPE gamma, const DATATYPE gamma_minus_one,
+                               const DATATYPE divgamma, const size_t &NB_X, const size_t &NB_Y, const size_t &NB_Z,
+                               const DATATYPE &DtDx, const DATATYPE &DtDy, const DATATYPE &DtDz,
+                               const DATATYPE &min_spacing, const DATATYPE C, DATATYPE *__restrict__ Dt_next)
 {
     const size_t x_stride = NB_X + 2;
     const size_t y_stride = NB_Y + 2;
@@ -172,15 +169,15 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
     for (unsigned t = 0; t < MIN_ACC; ++t) min_acc[t] = LITERAL(1e20);
 
     for (size_t l = 0; l < max; ++l){
-        // size_t index_ipojk = i * zy_stride + j * z_stride + k;
+        // size_t index_ipojk = (i+1) * zy_stride + j * z_stride + k;
         size_t index_ipojk = l;
         size_t index_ijk = l - zy_stride;
         size_t cache_index_ipojk = index_ipojk & (CACHE_SIZE - 1);
-        cache_U_rho[cache_index_ipojk] = d_rho[index_ipojk];
-        cache_U_ux[cache_index_ipojk]  = d_u[index_ipojk];
-        cache_U_uy[cache_index_ipojk]  = d_v[index_ipojk];
-        cache_U_uz[cache_index_ipojk]  = d_w[index_ipojk];
-        cache_U_E[cache_index_ipojk]   = d_E[index_ipojk];
+        cache_U_rho[cache_index_ipojk] = d_rhoE[2*index_ipojk];
+        cache_U_ux[cache_index_ipojk]  = d_uvw[3*index_ipojk];
+        cache_U_uy[cache_index_ipojk]  = d_uvw[3*index_ipojk+1];
+        cache_U_uz[cache_index_ipojk]  = d_uvw[3*index_ipojk+2];
+        cache_U_E[cache_index_ipojk]   = d_rhoE[2*index_ipojk+1];
 
         const size_t row_pos = l / zy_stride;
         const size_t col_pos = l % zy_stride / z_stride;
@@ -212,11 +209,11 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
         // Compute fluxes
         /* First flux in X axis (i-1) */
         {
-            size_t idx_left = (index_ipojk - 2 * zy_stride) & (CACHE_SIZE - 1);
+            size_t index_left = (index_ipojk - 2 * zy_stride) & (CACHE_SIZE - 1);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left;
 
-            convert_to_primitives(idx_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
+            convert_to_primitives(index_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
                                   cache_U_ux, cache_U_uy, cache_U_uz, cache_U_E, gamma_minus_one);
 
             compute_fluxes(Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, Q_rho_right, Q_ux_right,
@@ -226,11 +223,11 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
 
         /* Second flux in X axis (i+1) */
         {
-            size_t idx_left = index_ipojk & (CACHE_SIZE - 1);
+            size_t index_left = index_ipojk & (CACHE_SIZE - 1);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left;
 
-            convert_to_primitives(idx_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
+            convert_to_primitives(index_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
                                   cache_U_ux, cache_U_uy, cache_U_uz, cache_U_E, gamma_minus_one);
 
             compute_fluxes(Q_rho_right, Q_ux_right, Q_uy_right, Q_uz_right, Q_p_right, Q_rho_left, Q_ux_left,
@@ -241,18 +238,18 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
         /* First flux in Y axis (j-1) */
         {
             bool is_top_wall = (col_pos == 1);
-            size_t idx_left = (index_ipojk - zy_stride - z_stride) & (CACHE_SIZE - 1);
+            size_t index_left = (index_ijk - z_stride) & (CACHE_SIZE - 1);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left;
 
-            convert_to_primitives(idx_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
+            convert_to_primitives(index_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
                                   cache_U_ux, cache_U_uy, cache_U_uz, cache_U_E, gamma_minus_one);
 
-            [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_top_wall ? Q_rho_right     : Q_rho_left;
-            [[intel::fpga_register]] DATATYPE Q_uy_left_used  = is_top_wall ? -Q_uy_right     : Q_uy_left; // negate for wall
-            [[intel::fpga_register]] DATATYPE Q_ux_left_used  = is_top_wall ? Q_ux_right      : Q_ux_left;
-            [[intel::fpga_register]] DATATYPE Q_uz_left_used  = is_top_wall ? Q_uz_right      : Q_uz_left;
-            [[intel::fpga_register]] DATATYPE Q_p_left_used   = is_top_wall ? Q_p_right       : Q_p_left;
+            [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_top_wall ?  Q_rho_right : Q_rho_left;
+            [[intel::fpga_register]] DATATYPE Q_uy_left_used  = is_top_wall ? -Q_uy_right  : Q_uy_left; // negate for wall
+            [[intel::fpga_register]] DATATYPE Q_ux_left_used  = is_top_wall ?  Q_ux_right  : Q_ux_left;
+            [[intel::fpga_register]] DATATYPE Q_uz_left_used  = is_top_wall ?  Q_uz_right  : Q_uz_left;
+            [[intel::fpga_register]] DATATYPE Q_p_left_used   = is_top_wall ?  Q_p_right   : Q_p_left;
 
             compute_fluxes(Q_rho_left_used, Q_uy_left_used, Q_ux_left_used, Q_uz_left_used, Q_p_left_used,
                            Q_rho_right, Q_uy_right, Q_ux_right, Q_uz_right, Q_p_right, K, gamma, divgamma, fy1_rho,
@@ -262,18 +259,18 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
         /* Second flux in Y axis (j+1) */
         {
             bool is_bottom_wall = (col_pos == y_stride - ghost_size - 1);
-            size_t idx_left = (index_ipojk - zy_stride + z_stride) & (CACHE_SIZE - 1);
+            size_t index_left = (index_ijk + z_stride) & (CACHE_SIZE - 1);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left;
 
-            convert_to_primitives(idx_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
+            convert_to_primitives(index_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
                                   cache_U_ux, cache_U_uy, cache_U_uz, cache_U_E, gamma_minus_one);
 
-            [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_bottom_wall ? Q_rho_right     : Q_rho_left;
-            [[intel::fpga_register]] DATATYPE Q_uy_left_used  = is_bottom_wall ? -Q_uy_right     : Q_uy_left;
-            [[intel::fpga_register]] DATATYPE Q_ux_left_used  = is_bottom_wall ? Q_ux_right      : Q_ux_left;
-            [[intel::fpga_register]] DATATYPE Q_uz_left_used  = is_bottom_wall ? Q_uz_right      : Q_uz_left;
-            [[intel::fpga_register]] DATATYPE Q_p_left_used   = is_bottom_wall ? Q_p_right       : Q_p_left;
+            [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_bottom_wall ?  Q_rho_right : Q_rho_left;
+            [[intel::fpga_register]] DATATYPE Q_ux_left_used  = is_bottom_wall ?  Q_ux_right  : Q_ux_left;
+            [[intel::fpga_register]] DATATYPE Q_uy_left_used  = is_bottom_wall ? -Q_uy_right  : Q_uy_left; // negate for wall
+            [[intel::fpga_register]] DATATYPE Q_uz_left_used  = is_bottom_wall ?  Q_uz_right  : Q_uz_left;
+            [[intel::fpga_register]] DATATYPE Q_p_left_used   = is_bottom_wall ?  Q_p_right   : Q_p_left;
 
             compute_fluxes(Q_rho_right, Q_uy_right, Q_ux_right, Q_uz_right, Q_p_right, Q_rho_left_used,
                            Q_uy_left_used, Q_ux_left_used, Q_uz_left_used, Q_p_left_used, K, gamma, divgamma,
@@ -283,18 +280,18 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
         /* First flux in Z axis (k-1) */
         {
             bool is_back_wall = (dep_pos == 1);
-            size_t idx_left = (index_ipojk - zy_stride - 1) & (CACHE_SIZE - 1);
+            size_t index_left = (index_ijk - 1) & (CACHE_SIZE - 1);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left;
 
-            convert_to_primitives(idx_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
+            convert_to_primitives(index_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
                                   cache_U_ux, cache_U_uy, cache_U_uz, cache_U_E, gamma_minus_one);
 
-            [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_back_wall ? Q_rho_right     : Q_rho_left;
-            [[intel::fpga_register]] DATATYPE Q_uz_left_used  = is_back_wall ? -Q_uz_right     : Q_uz_left;
-            [[intel::fpga_register]] DATATYPE Q_uy_left_used  = is_back_wall ? Q_uy_right      : Q_uy_left;
-            [[intel::fpga_register]] DATATYPE Q_ux_left_used  = is_back_wall ? Q_ux_right      : Q_ux_left;
-            [[intel::fpga_register]] DATATYPE Q_p_left_used   = is_back_wall ? Q_p_right       : Q_p_left;
+            [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_back_wall ?  Q_rho_right : Q_rho_left;
+            [[intel::fpga_register]] DATATYPE Q_uz_left_used  = is_back_wall ? -Q_uz_right  : Q_uz_left; // negate for wall
+            [[intel::fpga_register]] DATATYPE Q_ux_left_used  = is_back_wall ?  Q_ux_right  : Q_ux_left;
+            [[intel::fpga_register]] DATATYPE Q_uy_left_used  = is_back_wall ?  Q_uy_right  : Q_uy_left;
+            [[intel::fpga_register]] DATATYPE Q_p_left_used   = is_back_wall ?  Q_p_right   : Q_p_left;
 
             compute_fluxes(Q_rho_left_used, Q_uz_left_used, Q_uy_left_used, Q_ux_left_used, Q_p_left_used,
                            Q_rho_right, Q_uz_right, Q_uy_right, Q_ux_right, Q_p_right, K, gamma, divgamma, fz1_rho,
@@ -304,30 +301,30 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
         /* Second flux in Z axis (k+1) */
         {
             bool is_front_wall = (dep_pos == z_stride - ghost_size - 1);
-            size_t idx_left = (index_ipojk - zy_stride + 1) & (CACHE_SIZE - 1);
+            size_t index_left = (index_ijk + 1) & (CACHE_SIZE - 1);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left;
 
-            convert_to_primitives(idx_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
+            convert_to_primitives(index_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_uz_left, Q_p_left, cache_U_rho,
                                   cache_U_ux, cache_U_uy, cache_U_uz, cache_U_E, gamma_minus_one);
 
-            [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_front_wall ? Q_rho_right     : Q_rho_left;
-            [[intel::fpga_register]] DATATYPE Q_uz_left_used  = is_front_wall ? -Q_uz_right     : Q_uz_left;
-            [[intel::fpga_register]] DATATYPE Q_uy_left_used  = is_front_wall ? Q_uy_right      : Q_uy_left;
-            [[intel::fpga_register]] DATATYPE Q_ux_left_used  = is_front_wall ? Q_ux_right      : Q_ux_left;
-            [[intel::fpga_register]] DATATYPE Q_p_left_used   = is_front_wall ? Q_p_right       : Q_p_left;
+            [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_front_wall ?  Q_rho_right : Q_rho_left;
+            [[intel::fpga_register]] DATATYPE Q_uz_left_used  = is_front_wall ? -Q_uz_right  : Q_uz_left; // negate for wall
+            [[intel::fpga_register]] DATATYPE Q_ux_left_used  = is_front_wall ?  Q_ux_right  : Q_ux_left;
+            [[intel::fpga_register]] DATATYPE Q_uy_left_used  = is_front_wall ?  Q_uy_right  : Q_uy_left;
+            [[intel::fpga_register]] DATATYPE Q_p_left_used   = is_front_wall ?  Q_p_right   : Q_p_left;
 
             compute_fluxes(Q_rho_right, Q_uz_right, Q_uy_right, Q_ux_right, Q_p_right, Q_rho_left_used,
                            Q_uz_left_used, Q_uy_left_used, Q_ux_left_used, Q_p_left_used, K, gamma, divgamma,
                            fz2_rho, fz2_ux, fz2_uy, fz2_uz, fz2_E);
         }
 
-        // Here we have finished updating the cell -> therefore we can do our store operation. All others
-        // cells *should* be in cache for good access latency.
+        // Here we have finished updating the cell -> therefore we can do our store operation. All others cells
+        // *should* be in cache for good access latency.
         const size_t index_next = index_ijk;
         // Care, we also inverted left & right for j+1 and i+1 fluxes, so need to minus fx2, fy2 and fz2 contributions.
 
-        // Next values ! - Conservative values
+        // Next conservative values
         [[intel::fpga_register]] DATATYPE U_rho_next, U_u_next, U_v_next, U_w_next, U_E_next;
 
         DATATYPE x_rho = DtDx * (fx1_rho - fx2_rho);
@@ -354,11 +351,11 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
         U_w_next   = U_uz_right  + x_uz  + y_uz  + z_uz ;
         U_E_next   = U_p_right   + x_E   + y_E   + z_E  ;
 
-        d_rho_next[index_next] = U_rho_next;
-        d_u_next[index_next]   = U_u_next;
-        d_v_next[index_next]   = U_v_next;
-        d_w_next[index_next]   = U_w_next;
-        d_E_next[index_next]   = U_E_next;
+        d_rhoE_next[2*index_next]   = U_rho_next;
+        d_uvw_next[3*index_next]    = U_u_next;
+        d_uvw_next[3*index_next+1]  = U_v_next;
+        d_uvw_next[3*index_next+2]  = U_w_next;
+        d_rhoE_next[2*index_next+1] = U_E_next;
 
         // now compute Dt_next
         {
@@ -391,17 +388,17 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
             DATATYPE Unorm = SQRT(temp_e_int);
             DATATYPE next_local_Dt = min_spacing / (c_s + Unorm);
 
-            // if (next_local_Dt < next_min_Dt) next_min_Dt = next_local_Dt;
+            if (next_local_Dt < next_min_Dt) next_min_Dt = next_local_Dt;
 
-            unsigned slot = static_cast<unsigned>(l & (MIN_ACC - 1));
-            double cur = min_acc[slot];
-            if (next_local_Dt < cur) min_acc[slot] = next_local_Dt;
+            // unsigned slot = static_cast<unsigned>(l & (MIN_ACC - 1));
+            // double cur = min_acc[slot];
+            // if (next_local_Dt < cur) min_acc[slot] = next_local_Dt;
         }
     }
 
-    next_min_Dt = min_acc[0];
-    for (unsigned t = 1; t < MIN_ACC; ++t)
-        if (min_acc[t] < next_min_Dt) next_min_Dt = min_acc[t];
+    // next_min_Dt = min_acc[0];
+    // for (unsigned t = 1; t < MIN_ACC; ++t)
+    //     if (min_acc[t] < next_min_Dt) next_min_Dt = min_acc[t];
 
     *Dt_next = C * next_min_Dt;
 }
@@ -415,24 +412,21 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rho, const DATATYP
  * @param NB_Y Block size of the y axis
  * @param queue the device queue
  */
-extern "C" double launcher(DATATYPE *__restrict__ d_rho, DATATYPE *__restrict__ d_u, DATATYPE *__restrict__ d_v,
-                           DATATYPE *__restrict__ d_w, DATATYPE *__restrict__ d_E,
-                           DATATYPE *__restrict__ d_rho_next, DATATYPE *__restrict__ d_u_next,
-                           DATATYPE *__restrict__ d_v_next, DATATYPE *__restrict__ d_w_next,
-                           DATATYPE *__restrict__ d_E_next, DATATYPE *__restrict__ Dt_next, const DATATYPE C,
-                           const DATATYPE gamma, const DATATYPE gamma_minus_one, const DATATYPE divgamma,
-                           const DATATYPE K, const size_t NB_X, const size_t NB_Y, const size_t NB_Z,
-                           const DATATYPE &DtDx, const DATATYPE &DtDy, const DATATYPE &DtDz,
-                           const DATATYPE &min_spacing, sycl::queue queue)
+extern "C" double launcher(DATATYPE *__restrict__ d_rhoE, DATATYPE *__restrict__ d_uvw,
+                           DATATYPE *__restrict__ d_rhoE_next, DATATYPE *__restrict__ d_uvw_next,
+                           DATATYPE *__restrict__ Dt_next, const DATATYPE C, const DATATYPE gamma,
+                           const DATATYPE gamma_minus_one, const DATATYPE divgamma, const DATATYPE K,
+                           const size_t NB_X, const size_t NB_Y, const size_t NB_Z, const DATATYPE &DtDx,
+                           const DATATYPE &DtDy, const DATATYPE &DtDz, const DATATYPE &min_spacing,
+                           sycl::queue queue)
 {
     struct timespec fpga_hydro3d_compute_t1, fpga_hydro3d_compute_t2;
 
     #ifdef REPORT
     queue.submit([&](sycl::handler &h) {
         h.single_task([=]() [[intel::kernel_args_restrict]] {
-            kernel_hydro3d_fvm(d_rho, d_u, d_v, d_w, d_E, d_rho_next, d_u_next, d_v_next, d_w_next, d_E_next, K,
-                               gamma, gamma_minus_one, divgamma, NB_X, NB_Y, NB_Z, DtDx, DtDy, DtDz, min_spacing,
-                               C, Dt_next);
+            kernel_hydro3d_fvm(d_rhoE, d_uvw, d_rhoE_next, d_uvw_next, K, gamma, gamma_minus_one, divgamma, NB_X,
+                               NB_Y, NB_Z, DtDx, DtDy, DtDz, min_spacing, C, Dt_next);
         });
     });
     queue.wait();
@@ -444,9 +438,8 @@ extern "C" double launcher(DATATYPE *__restrict__ d_rho, DATATYPE *__restrict__ 
     clock_gettime(CLOCK_MONOTONIC, &fpga_hydro3d_compute_t1);
     queue.submit([&](sycl::handler &h) {
         h.single_task([=]() [[intel::kernel_args_restrict]] {
-            kernel_hydro3d_fvm(d_rho, d_u, d_v, d_w, d_E, d_rho_next, d_u_next, d_v_next, d_w_next, d_E_next, K,
-                               gamma, gamma_minus_one, divgamma, NB_X, NB_Y, NB_Z, DtDx, DtDy, DtDz, min_spacing,
-                               C, Dt_next);
+            kernel_hydro3d_fvm(d_rhoE, d_uvw, d_rhoE_next, d_uvw_next, K, gamma, gamma_minus_one, divgamma, NB_X,
+                               NB_Y, NB_Z, DtDx, DtDy, DtDz, min_spacing, C, Dt_next);
         });
     });
     queue.wait();
