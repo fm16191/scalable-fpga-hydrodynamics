@@ -184,7 +184,7 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE
         // Compute fluxes
         /* First flux in X axis (i-1) */
         {
-            size_t index_left = (k - 2 * y_stride) & (CACHE_SIZE - 1);
+            size_t index_left = (index_ipoj - 2 * y_stride) & (CACHE_SIZE - 1);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_p_left;
 
@@ -212,17 +212,17 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE
         /* First flux in Y axis (j-1) */
         {
             bool is_top_wall = (col_pos == 1);
-            size_t index_left = (k - y_stride - 1) & (CACHE_SIZE - 1);
+            size_t index_left = (index_ij - 1) & (CACHE_SIZE - 1);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_p_left;
 
             convert_to_primitives(index_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_p_left, cache_U_rho, cache_U_ux,
                                   cache_U_uy, cache_U_E, gamma_minus_one);
 
-            [[intel::fpga_register]] DATATYPE Q_rho_left_used     = is_top_wall ?  Q_rho_right     : Q_rho_left;
-            [[intel::fpga_register]] DATATYPE Q_ux_left_used      = is_top_wall ?  Q_ux_right      : Q_ux_left;
-            [[intel::fpga_register]] DATATYPE Q_uy_left_used      = is_top_wall ? -Q_uy_right      : Q_uy_left;
-            [[intel::fpga_register]] DATATYPE Q_p_left_used       = is_top_wall ?  Q_p_right       : Q_p_left;
+            [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_top_wall ?  Q_rho_right : Q_rho_left;
+            [[intel::fpga_register]] DATATYPE Q_ux_left_used  = is_top_wall ?  Q_ux_right  : Q_ux_left;
+            [[intel::fpga_register]] DATATYPE Q_uy_left_used  = is_top_wall ? -Q_uy_right  : Q_uy_left;
+            [[intel::fpga_register]] DATATYPE Q_p_left_used   = is_top_wall ?  Q_p_right   : Q_p_left;
 
             // Care, switching UX and UY
             compute_fluxes(Q_rho_left_used, Q_uy_left_used, Q_ux_left_used, Q_p_left_used, Q_rho_right, Q_uy_right,
@@ -232,17 +232,17 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE
         /* Second flux in Y axis (j+1) */
         {
             bool is_bottom_wall = (col_pos == y_stride - ghost_size - 1);
-            size_t index_left = (k - y_stride + 1) & (CACHE_SIZE - 1);
+            size_t index_left = (index_ij + 1) & (CACHE_SIZE - 1);
 
             [[intel::fpga_register]] DATATYPE Q_rho_left, Q_ux_left, Q_uy_left, Q_p_left;
 
             convert_to_primitives(index_left, Q_rho_left, Q_ux_left, Q_uy_left, Q_p_left, cache_U_rho, cache_U_ux,
                                   cache_U_uy, cache_U_E, gamma_minus_one);
 
-            [[intel::fpga_register]] DATATYPE Q_rho_left_used     = is_bottom_wall ?  Q_rho_right     : Q_rho_left;
-            [[intel::fpga_register]] DATATYPE Q_ux_left_used      = is_bottom_wall ?  Q_ux_right      : Q_ux_left;
-            [[intel::fpga_register]] DATATYPE Q_uy_left_used      = is_bottom_wall ? -Q_uy_right      : Q_uy_left;
-            [[intel::fpga_register]] DATATYPE Q_p_left_used       = is_bottom_wall ?  Q_p_right       : Q_p_left;
+            [[intel::fpga_register]] DATATYPE Q_rho_left_used = is_bottom_wall ?  Q_rho_right : Q_rho_left;
+            [[intel::fpga_register]] DATATYPE Q_ux_left_used  = is_bottom_wall ?  Q_ux_right  : Q_ux_left;
+            [[intel::fpga_register]] DATATYPE Q_uy_left_used  = is_bottom_wall ? -Q_uy_right  : Q_uy_left;
+            [[intel::fpga_register]] DATATYPE Q_p_left_used   = is_bottom_wall ?  Q_p_right   : Q_p_left;
 
             // Care, switching UX and UY
             // Care, invert left & right, since right is our ij cell.
@@ -252,7 +252,7 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE
 
         // Here we have finished updating the cell -> therefore we can do our store operation. All others cells
         // *should* be in cache for good access latency. index = (i - 1) * stride + j;
-        size_t index_next = index_ij;
+        const size_t index_next = index_ij;
         // Care, we also inverted left & right for j+1 and i+1 fluxes, so need to minus fx2 and fy2.
 
         // Next conservative values

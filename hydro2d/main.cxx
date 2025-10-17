@@ -52,7 +52,7 @@ class sub_domain {
     sycl::queue &queue;
 
     size_t nb_x, nb_y;           // Actual domain size (without ghost cells)
-    size_t x_stride, y_stride;   // Domain size including ghost cells
+    size_t x_stride, y_stride;   // Domain dimensions including ghost cells
     size_t domain_size;          // Total elements including ghost cells (x_stride * y_stride)
     size_t max_device_elements;  // Maximum device elements for alignment (size_max)
     size_t buffer_size_bytes;    // Size in bytes for actual data transfers (2 * domain_size * sizeof(DATATYPE))
@@ -159,13 +159,13 @@ static void write_results(const vector<vector<sub_domain>> &subdomains, const si
             for (size_t cur_i = 0; cur_i < cur.nb_x; ++cur_i) {
                 for (size_t cur_j = 0; cur_j < cur.nb_y; ++cur_j) {
                     // local idx in subdomain .. accounting for ghost cells
-                    const size_t sd_index = (cur_i + ghost_size) * cur.y_stride + (cur_j + ghost_size);
+                    const size_t local_sd_index = (cur_i + ghost_size) * cur.y_stride + (cur_j + ghost_size);
                     // global position in the whole domain
                     const size_t i = SUBDOMAIN_SIZE_X * sd_i + cur_i;
                     const size_t j = SUBDOMAIN_SIZE_Y * sd_j + cur_j;
 
-                    buffer << i << ',' << j << ',' << cur.h_rhoE[2*sd_index] << ',' << cur.h_rhoE[2*sd_index+1] << ','
-                           << cur.h_uv[2*sd_index] << ',' << cur.h_uv[2*sd_index+1] << '\n';
+                    buffer << i << ',' << j << ',' << cur.h_rhoE[2*local_sd_index] << ',' << cur.h_rhoE[2*local_sd_index+1] << ','
+                           << cur.h_uv[2*local_sd_index] << ',' << cur.h_uv[2*local_sd_index+1] << '\n';
                 }
             }
         }
@@ -261,7 +261,7 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
 
     const double center_x = double(NB_X + 1) / 2.0;
     const double center_y = double(NB_Y + 1) / 2.0;
-    const double radius = std::min(center_x, center_y) / 3;
+    const double radius = std::min({ center_x, center_y }) / 3;
 
     for (size_t cur_i = 0; cur_i < cur.x_stride; ++cur_i) {
         for (size_t cur_j = 0; cur_j < cur.y_stride; ++cur_j) {
@@ -275,15 +275,15 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
             DATATYPE Q_rho, Q_ux, Q_uy, Q_p;
 
             U_rho = (distance <= radius ? u_inside : u_outside);
-            U_p   = (distance <= radius ? p_inside : p_outside) / gamma_minus_one; // why is gamma_minus_one used here?
+            U_p   = (distance <= radius ? p_inside : p_outside) / gamma_minus_one;
             U_ux  = default_ux;
             U_uy  = default_uy;
 
             // Conservative variables
-            cur.h_rhoE[2 * local_sd_index]   = U_rho;
-            cur.h_rhoE[2 * local_sd_index+1] = U_p;
-            cur.h_uv[2 * local_sd_index]     = U_ux;
-            cur.h_uv[2 * local_sd_index+1]   = U_uy;
+            cur.h_rhoE[2*local_sd_index]   = U_rho;
+            cur.h_rhoE[2*local_sd_index+1] = U_p;
+            cur.h_uv  [2*local_sd_index]   = U_ux;
+            cur.h_uv  [2*local_sd_index+1] = U_uy;
 
             // Compute first Dt
             // Primitive variables
@@ -332,17 +332,17 @@ static void update_ghost_cells_single_device(vector<vector<sub_domain>> &subdoma
     
     // Copy last real column (i = nb_x) to left ghost (i = 0)
     const size_t index_from = cur.nb_x * y_stride;
-    const size_t index_to = 0;
+    const size_t index_to   = 0;
     
     std::memcpy(&cur.h_rhoE[2*index_to], &cur.h_rhoE[2*index_from], copy_size);
-    std::memcpy(&cur.h_uv[2*index_to], &cur.h_uv[2*index_from], copy_size);
+    std::memcpy(&cur.h_uv  [2*index_to], &cur.h_uv  [2*index_from], copy_size);
     
     // Copy first real column (i = 1) to right ghost (i = nb_x + 1)
     const size_t index_from2 = ghost_size * y_stride;
-    const size_t index_to2 = (cur.nb_x + ghost_size) * y_stride;
+    const size_t index_to2   = (cur.nb_x + ghost_size) * y_stride;
     
     std::memcpy(&cur.h_rhoE[2*index_to2], &cur.h_rhoE[2*index_from2], copy_size);
-    std::memcpy(&cur.h_uv[2*index_to2], &cur.h_uv[2*index_from2], copy_size);
+    std::memcpy(&cur.h_uv  [2*index_to2], &cur.h_uv  [2*index_from2], copy_size);
     
     clock_gettime(CLOCK_MONOTONIC, &boundaries_x_t2);
     T.boundaries_x += get_time_us(boundaries_x_t1, boundaries_x_t2);
@@ -688,15 +688,15 @@ int main(int argc, char *argv[])
 
                 // fprintf(stderr, "Copy host to device ...");
                 clock_gettime(CLOCK_MONOTONIC, &host_to_device_t1);
-                const size_t idx_from_left  = 0 * cur.y_stride;                       // left ghost (i=0)
-                const size_t idx_from_right = (cur.nb_x + ghost_size) * cur.y_stride;  // right ghost (i=nb_x+1)
-                const size_t ghost_row_bytes = 2 * cur.y_stride * sizeof(DATATYPE);    // 2 variables per element
+                const size_t idx_from_left   = 0 * cur.y_stride;                       // left ghost (i=0)
+                const size_t idx_from_right  = (cur.nb_x + ghost_size) * cur.y_stride; // right ghost (i=nb_x+1)
+                const size_t ghost_row_bytes = cur.y_stride * sizeof(DATATYPE);        // rho size, 2 variables per element (rhoE, uv)
 
-                queue.memcpy(cur.d_rhoE + 2*idx_from_left , cur.h_rhoE.data() + 2*idx_from_left , ghost_row_bytes);
-                queue.memcpy(cur.d_uv   + 2*idx_from_left , cur.h_uv.data()   + 2*idx_from_left , ghost_row_bytes);
+                queue.memcpy(cur.d_rhoE + 2*idx_from_left , cur.h_rhoE.data() + 2*idx_from_left , 2*ghost_row_bytes);
+                queue.memcpy(cur.d_uv   + 2*idx_from_left , cur.h_uv.data()   + 2*idx_from_left , 2*ghost_row_bytes);
 
-                queue.memcpy(cur.d_rhoE + 2*idx_from_right, cur.h_rhoE.data() + 2*idx_from_right, ghost_row_bytes);
-                queue.memcpy(cur.d_uv   + 2*idx_from_right, cur.h_uv.data()   + 2*idx_from_right, ghost_row_bytes);
+                queue.memcpy(cur.d_rhoE + 2*idx_from_right, cur.h_rhoE.data() + 2*idx_from_right, 2*ghost_row_bytes);
+                queue.memcpy(cur.d_uv   + 2*idx_from_right, cur.h_uv.data()   + 2*idx_from_right, 2*ghost_row_bytes);
                 queue.wait();
                 clock_gettime(CLOCK_MONOTONIC, &host_to_device_t2);
                 // fprintf(stderr, " done \n");
@@ -723,15 +723,15 @@ int main(int argc, char *argv[])
                 clock_gettime(CLOCK_MONOTONIC, &device_to_host_t1);
 
                 // Copy back the real rows (not ghost cells) - first real row is at index 1, last real row is at index nb_x
-                const size_t idx_real_first = 1 * cur.y_stride;          // first real (i=1)
-                const size_t idx_real_last  = (cur.nb_x) * cur.y_stride; // last real  (i=nb_x)
-                const size_t real_row_bytes = 2 * cur.y_stride * sizeof(DATATYPE);  // 2 variables per element
+                const size_t idx_real_first = 1 * cur.y_stride;                 // first real (i=1)
+                const size_t idx_real_last  = (cur.nb_x) * cur.y_stride;        // last real  (i=nb_x)
+                const size_t real_row_bytes = cur.y_stride * sizeof(DATATYPE);  // rho size, 2 variables per element (rhoE, uv)
 
-                queue.memcpy(cur.h_rhoE.data() + 2*idx_real_first, cur.d_rhoE + 2*idx_real_first, real_row_bytes);
-                queue.memcpy(cur.h_uv.data()   + 2*idx_real_first, cur.d_uv   + 2*idx_real_first, real_row_bytes);
+                queue.memcpy(cur.h_rhoE.data() + 2*idx_real_first, cur.d_rhoE + 2*idx_real_first, 2*real_row_bytes);
+                queue.memcpy(cur.h_uv.data()   + 2*idx_real_first, cur.d_uv   + 2*idx_real_first, 2*real_row_bytes);
 
-                queue.memcpy(cur.h_rhoE.data() + 2*idx_real_last , cur.d_rhoE + 2*idx_real_last , real_row_bytes);
-                queue.memcpy(cur.h_uv.data()   + 2*idx_real_last , cur.d_uv   + 2*idx_real_last , real_row_bytes);
+                queue.memcpy(cur.h_rhoE.data() + 2*idx_real_last , cur.d_rhoE + 2*idx_real_last , 2*real_row_bytes);
+                queue.memcpy(cur.h_uv.data()   + 2*idx_real_last , cur.d_uv   + 2*idx_real_last , 2*real_row_bytes);
                 queue.wait();
                 clock_gettime(CLOCK_MONOTONIC, &device_to_host_t2);
                 // fprintf(stderr, " done \n");
@@ -758,7 +758,7 @@ int main(int argc, char *argv[])
             T->total_usage = get_time_us(total_usage_t1, total_usage_t2);
         }
 
-        if (write_interval && it && (it % write_interval == 0)) {
+        if (write_interval && it && (it % write_interval == 0) && it < MAX_IT && t < MAX_T) {
             for (size_t sd_i = 0; sd_i < NB_SUBDOMAINS_X; ++sd_i) {
                 for (size_t sd_j = 0; sd_j < NB_SUBDOMAINS_Y; ++sd_j) {
                     size_t sd_index = sd_i * NB_SUBDOMAINS_Y + sd_j;
@@ -858,7 +858,8 @@ int main(int argc, char *argv[])
         printf("Mass change : %.2e\n", final_mass_change);
 
         const double total_bytes = arrays_count * problem_size * sizeof(DATATYPE);
-        const size_t y_stride_bytes = arrays_count * (NB_Y + 2 * ghost_size) * sizeof(DATATYPE);
+        const size_t y_stride = NB_Y + 2 * ghost_size;
+        const size_t y_stride_bytes = NBVAR * y_stride * sizeof(DATATYPE);
 
         printf("Estimated Throughput : %.3f GB/s (all code)\n", throughput(total_bytes, res_total_usage.mean));
         printf("Estimated Throughput : %.3f GB/s (FPGA compute)\n", throughput(total_bytes, res_total_compute.mean));
