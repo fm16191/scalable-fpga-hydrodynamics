@@ -59,7 +59,7 @@ report: $(KERNEL_SRC)
 KERNEL_FPGA_SO := $(KERNEL_SRC:.cxx=.so)
 $(KERNEL_FPGA_SO): BUILD_TYPE := $(FLAGS_FPGA) -DFPGA_HARDWARE=1
 $(KERNEL_FPGA_SO): $(KERNEL_OBJ)
-	$(CCXX) -lmpi $(CXXFLAGS) $(BUILD_TYPE) -shared -Xshardware -Xsparallel=8 -Xsseed=2 -Xstarget=$(BOARD_NAME) -fsycl-link=image $^ -o $@ $(OPTION)
+	$(CCXX) -lmpi $(CXXFLAGS) $(BUILD_TYPE) -shared -Xshardware -Xsparallel=8 -Xsseed=77 -Xstarget=$(BOARD_NAME) -fsycl-link=image $^ -o $@ $(OPTION)
 
 fpga: BUILD_TYPE := $(FLAGS_FPGA) -DFPGA_HARDWARE=1
 recompile_fpga: BUILD_TYPE := $(FLAGS_FPGA) -DFPGA_HARDWARE=1
