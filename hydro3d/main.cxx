@@ -289,16 +289,16 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
     const double center_z = double(NB_Z + 1) / 2.0;
     const double radius = std::min({ center_x, center_y, center_z }) / 3;
 
-    for (size_t cur_i = 0; cur_i < cur.x_stride; ++cur_i) {
-        for (size_t cur_j = 0; cur_j < cur.y_stride; ++cur_j) {
-            for (size_t cur_k = 0; cur_k < cur.z_stride; ++cur_k) {
-                const size_t i = base_i + cur_i;
-                const size_t j = base_j + cur_j;
-                const size_t k = base_k + cur_k;
+    for (size_t cur_i = 0; cur_i < cur.nb_x; ++cur_i) {
+        for (size_t cur_j = 0; cur_j < cur.nb_y; ++cur_j) {
+            for (size_t cur_k = 0; cur_k < cur.nb_z; ++cur_k) {
+                const size_t i = base_i + cur_i + ghost_size;
+                const size_t j = base_j + cur_j + ghost_size;
+                const size_t k = base_k + cur_k + ghost_size;
                 double distance = sqrt((double(i) - center_x) * (double(i) - center_x) +
                                        (double(j) - center_y) * (double(j) - center_y) +
                                        (double(k) - center_z) * (double(k) - center_z));
-                const size_t local_sd_index = cur_i * cur.zy_stride + cur_j * cur.z_stride + cur_k;
+                const size_t local_sd_index = (cur_i+1) * cur.zy_stride + (cur_j+1) * cur.z_stride + (cur_k+1);
 
                 DATATYPE U_rho, inv_Q_rho, U_ux, U_uy, U_uz, U_p;
                 DATATYPE Q_rho, Q_ux, Q_uy, Q_uz, Q_p;
@@ -630,7 +630,7 @@ int main(int argc, char *argv[])
     constexpr DATATYPE default_uz = ZERO; // No initial z-velocity
 
     // Variable defines
-    constexpr DATATYPE C = LITERAL(0.5);     // Hard define CFL condition to limit numeric scheme instabilities
+    constexpr DATATYPE C = LITERAL(0.4);     // Hard define CFL condition to limit numeric scheme instabilities
     constexpr DATATYPE gamma = LITERAL(1.4); // Heat capacity Ratio
     constexpr DATATYPE K = LITERAL(1.1);     // Safety factor
 

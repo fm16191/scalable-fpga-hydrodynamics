@@ -263,13 +263,13 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
     const double center_y = double(NB_Y + 1) / 2.0;
     const double radius = std::min({ center_x, center_y }) / 3;
 
-    for (size_t cur_i = 0; cur_i < cur.x_stride; ++cur_i) {
-        for (size_t cur_j = 0; cur_j < cur.y_stride; ++cur_j) {
-            const size_t i = base_i + cur_i;
-            const size_t j = base_j + cur_j;
+    for (size_t cur_i = 0; cur_i < cur.nb_x; ++cur_i) {
+        for (size_t cur_j = 0; cur_j < cur.nb_y; ++cur_j) {
+            const size_t i = base_i + cur_i + ghost_size;
+            const size_t j = base_j + cur_j + ghost_size;
             double distance = sqrt((double(i) - center_x) * (double(i) - center_x) +
                                    (double(j) - center_y) * (double(j) - center_y));
-            const size_t local_sd_index = cur_i * cur.y_stride + cur_j;
+            const size_t local_sd_index = (cur_i+1) * cur.y_stride + (cur_j+1);
 
             DATATYPE U_rho, inv_Q_rho, U_ux, U_uy, U_p;
             DATATYPE Q_rho, Q_ux, Q_uy, Q_p;
@@ -702,10 +702,9 @@ int main(int argc, char *argv[])
                 // fprintf(stderr, " done \n");
 
                 printf("[rank %d] iteration #%ld - starting launcher [%lu][%lu] ...\n", rank, it, sd_i, sd_j);
-                double fpga_hydro_compute =
-                    launcher(cur.d_rhoE, cur.d_uv, cur.d_rhoE_next, cur.d_uv_next,
-                             cur.Dt_next, C, gamma, gamma_minus_one, divgamma, K, cur.nb_x, cur.nb_y,
-                             DtDx, DtDy, min_spacing, queue);
+                double fpga_hydro_compute = launcher(
+                    cur.d_rhoE, cur.d_uv, cur.d_rhoE_next, cur.d_uv_next, cur.Dt_next, C, gamma,
+                    gamma_minus_one, divgamma, K, cur.nb_x, cur.nb_y, DtDx, DtDy, min_spacing, queue);
                 queue.wait();
                 printf("[rank %d] done\n", rank);
 
