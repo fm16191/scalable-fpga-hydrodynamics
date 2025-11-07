@@ -1,8 +1,6 @@
 #include <cstring>
 #include <fstream>
 #include <iomanip>
-#include <iomanip>
-#include <iostream>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -16,7 +14,8 @@ using std::stringstream;
 using std::vector;
 
 struct it_timers_t {
-    double host_to_device, boundaries_x, boundaries_y, device_to_host, total_compute, total_usage, total_compute2;
+    double host_to_device = 0.0, boundaries_x = 0.0, boundaries_y = 0.0, device_to_host = 0.0, total_compute = 0.0,
+           total_usage = 0.0, total_compute2;
 };
 
 struct stats_t { double sum{}, min{}, max{}, mean{}, stddev{}; };
@@ -63,9 +62,11 @@ static stats_t print_stats(const vector<it_timers_t>& timers, T it_timers_t::*me
 }
 
 static double throughput(double bytes, double us) {
+    if (us == 0.0) return 0.0;
     return bytes / (us / 1e6) / 1e9;
 }
 static double performance(double points, double us) {
+    if (us == 0.0) return 0.0;
     return (points / (us / 1e6)) / 1e6;
 }
 static double ii(double us, double freq, double ops) {
@@ -90,7 +91,7 @@ static void read_frequency(const char* exec_name, double *frequency)
             // Scan first floating point after tag; leading spaces OK
             if (std::sscanf(line.c_str() + pos + tag_len, " %lf", &f) == 1 && f > 0.0) {
                 *frequency = f * 1e6;
-                printf("Design frequency: %.2f MHz\n", *frequency / 1e6);
+                printf("\nDesign frequency: %.2f MHz\n", *frequency / 1e6);
                 break;
             }
         }

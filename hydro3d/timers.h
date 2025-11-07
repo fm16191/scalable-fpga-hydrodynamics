@@ -62,9 +62,11 @@ static stats_t print_stats(const vector<it_timers_t>& timers, T it_timers_t::*me
 }
 
 static double throughput(double bytes, double us) {
+    if (us == 0.0) return 0.0;
     return bytes / (us / 1e6) / 1e9;
 }
 static double performance(double points, double us) {
+    if (us == 0.0) return 0.0;
     return (points / (us / 1e6)) / 1e6;
 }
 static double ii(double us, double freq, double ops) {
@@ -89,7 +91,7 @@ static void read_frequency(const char* exec_name, double *frequency)
             // Scan first floating point after tag; leading spaces OK
             if (std::sscanf(line.c_str() + pos + tag_len, " %lf", &f) == 1 && f > 0.0) {
                 *frequency = f * 1e6;
-                printf("Design frequency: %.2f MHz\n", *frequency / 1e6);
+                printf("\nDesign frequency: %.2f MHz\n", *frequency / 1e6);
                 break;
             }
         }
