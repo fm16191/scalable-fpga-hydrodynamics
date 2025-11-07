@@ -2,14 +2,13 @@
 
 constexpr size_t ghost_size = 1;
 
-static inline void convert_to_primitives_get_U(const size_t index, DATATYPE &U_rho, DATATYPE &U_ux, DATATYPE &U_uy,
-                                         DATATYPE &U_uz, DATATYPE &U_p, DATATYPE &Q_rho, DATATYPE &Q_ux,
-                                         DATATYPE &Q_uy, DATATYPE &Q_uz, DATATYPE &Q_p,
-                                         const DATATYPE *__restrict__ cache_U_rho,
-                                         const DATATYPE *__restrict__ cache_U_u,
-                                         const DATATYPE *__restrict__ cache_U_v,
-                                         const DATATYPE *__restrict__ cache_U_w,
-                                         const DATATYPE *__restrict__ cache_U_E, const DATATYPE gamma_minus_one)
+static inline void
+convert_to_primitives_get_U(const size_t index, DATATYPE &U_rho, DATATYPE &U_ux, DATATYPE &U_uy, DATATYPE &U_uz,
+                            DATATYPE &U_p, DATATYPE &Q_rho, DATATYPE &Q_ux, DATATYPE &Q_uy, DATATYPE &Q_uz,
+                            DATATYPE &Q_p, const DATATYPE *__restrict__ cache_U_rho,
+                            const DATATYPE *__restrict__ cache_U_u, const DATATYPE *__restrict__ cache_U_v,
+                            const DATATYPE *__restrict__ cache_U_w, const DATATYPE *__restrict__ cache_U_E,
+                            const DATATYPE gamma_minus_one)
 {
     // Conservative variables
     U_rho = cache_U_rho[index];
@@ -148,7 +147,7 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATY
                                const DATATYPE K, const DATATYPE gamma, const DATATYPE gamma_minus_one,
                                const DATATYPE divgamma, const size_t &NB_X, const size_t &NB_Y, const size_t &NB_Z,
                                const DATATYPE &DtDx, const DATATYPE &DtDy, const DATATYPE &DtDz,
-                               const DATATYPE &min_spacing, const DATATYPE C, DATATYPE *__restrict__ Dt_next)
+                               const DATATYPE &C_min, DATATYPE *__restrict__ Dt_next)
 {
     const size_t x_stride = NB_X + 2;
     const size_t y_stride = NB_Y + 2;
@@ -162,11 +161,12 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATY
     DATATYPE cache_U_uz[CACHE_SIZE];
     DATATYPE cache_U_E[CACHE_SIZE];
 
-    DATATYPE next_min_Dt = LITERAL(1e20);
+    // DATATYPE next_min_Dt = LITERAL(1e20);
+    DATATYPE max_speed = ZERO;
 
-    constexpr unsigned MIN_ACC = 4; // power of two, tune to II target / latency
-    [[intel::fpga_register]] double min_acc[MIN_ACC];
-    for (unsigned t = 0; t < MIN_ACC; ++t) min_acc[t] = LITERAL(1e20);
+    // constexpr unsigned MIN_ACC = 4; // power of two, tune to II target / latency
+    // [[intel::fpga_register]] double min_acc[MIN_ACC];
+    // for (unsigned t = 0; t < MIN_ACC; ++t) min_acc[t] = LITERAL(1e20);
 
     for (size_t l = 0; l < max; ++l){
         // size_t index_ipojk = (i+1) * zy_stride + j * z_stride + k;
@@ -352,9 +352,9 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATY
         U_E_next   = U_p_right   + x_E   + y_E   + z_E  ;
 
         d_rhoE_next[2*index_next]   = U_rho_next;
-        d_uvw_next[3*index_next]    = U_u_next;
-        d_uvw_next[3*index_next+1]  = U_v_next;
-        d_uvw_next[3*index_next+2]  = U_w_next;
+        d_uvw_next [3*index_next]   = U_u_next;
+        d_uvw_next [3*index_next+1] = U_v_next;
+        d_uvw_next [3*index_next+2] = U_w_next;
         d_rhoE_next[2*index_next+1] = U_E_next;
 
         // now compute Dt_next
@@ -386,9 +386,12 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATY
 
             // Compute Dt
             DATATYPE Unorm = SQRT(temp_e_int);
-            DATATYPE next_local_Dt = min_spacing / (c_s + Unorm);
+            // DATATYPE next_local_Dt = min_spacing / (c_s + Unorm);
+            DATATYPE speed = c_s + Unorm;
 
-            if (next_local_Dt < next_min_Dt) next_min_Dt = next_local_Dt;
+            // if (next_local_Dt < next_min_Dt) next_min_Dt = next_local_Dt;
+            // next_min_Dt = MMIN(next_min_Dt, next_local_Dt);
+            max_speed = MMAX(speed, max_speed);
 
             // unsigned slot = static_cast<unsigned>(l & (MIN_ACC - 1));
             // double cur = min_acc[slot];
@@ -400,7 +403,7 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATY
     // for (unsigned t = 1; t < MIN_ACC; ++t)
     //     if (min_acc[t] < next_min_Dt) next_min_Dt = min_acc[t];
 
-    *Dt_next = C * next_min_Dt;
+    *Dt_next = C_min / max_speed;
 }
 
 /*** Launcher for the device kernels (update boundary conditions, Dt computation, Hydro computation)
@@ -410,15 +413,15 @@ static void kernel_hydro3d_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATY
  * @param d_E Current state of the pressure
  * @param NB_X Block size of the x axis
  * @param NB_Y Block size of the y axis
+ * @param NB_Z Block size of the z axis
  * @param queue the device queue
  */
-extern "C" double launcher(DATATYPE *__restrict__ d_rhoE, DATATYPE *__restrict__ d_uvw,
+extern "C" double launcher(const DATATYPE *__restrict__ d_rhoE, const DATATYPE *__restrict__ d_uvw,
                            DATATYPE *__restrict__ d_rhoE_next, DATATYPE *__restrict__ d_uvw_next,
-                           DATATYPE *__restrict__ Dt_next, const DATATYPE C, const DATATYPE gamma,
+                           DATATYPE *__restrict__ Dt_next, const DATATYPE C_min, const DATATYPE gamma,
                            const DATATYPE gamma_minus_one, const DATATYPE divgamma, const DATATYPE K,
                            const size_t NB_X, const size_t NB_Y, const size_t NB_Z, const DATATYPE &DtDx,
-                           const DATATYPE &DtDy, const DATATYPE &DtDz, const DATATYPE &min_spacing,
-                           sycl::queue queue)
+                           const DATATYPE &DtDy, const DATATYPE &DtDz, sycl::queue queue)
 {
     struct timespec fpga_hydro3d_compute_t1, fpga_hydro3d_compute_t2;
 
@@ -426,7 +429,7 @@ extern "C" double launcher(DATATYPE *__restrict__ d_rhoE, DATATYPE *__restrict__
     queue.submit([&](sycl::handler &h) {
         h.single_task([=]() [[intel::kernel_args_restrict]] {
             kernel_hydro3d_fvm(d_rhoE, d_uvw, d_rhoE_next, d_uvw_next, K, gamma, gamma_minus_one, divgamma, NB_X,
-                               NB_Y, NB_Z, DtDx, DtDy, DtDz, min_spacing, C, Dt_next);
+                               NB_Y, NB_Z, DtDx, DtDy, DtDz, C_min, Dt_next);
         });
     });
     queue.wait();
@@ -439,7 +442,7 @@ extern "C" double launcher(DATATYPE *__restrict__ d_rhoE, DATATYPE *__restrict__
     queue.submit([&](sycl::handler &h) {
         h.single_task([=]() [[intel::kernel_args_restrict]] {
             kernel_hydro3d_fvm(d_rhoE, d_uvw, d_rhoE_next, d_uvw_next, K, gamma, gamma_minus_one, divgamma, NB_X,
-                               NB_Y, NB_Z, DtDx, DtDy, DtDz, min_spacing, C, Dt_next);
+                               NB_Y, NB_Z, DtDx, DtDy, DtDz, C_min, Dt_next);
         });
     });
     queue.wait();
