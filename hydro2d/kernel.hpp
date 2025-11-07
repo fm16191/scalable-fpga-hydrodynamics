@@ -39,7 +39,7 @@
 #endif
 
 constexpr size_t NBVAR{4};
-constexpr size_t CACHE_SIZE{65536}; // Must be > to 2x y_stride
+constexpr size_t CACHE_SIZE{1<<16}; // 65536 = 1<<16 // Must be > to 2x z_stride * y_stride
 
 #define SIZETNBVAR static_cast<size_t>(NBVAR)
 #define SIZETCACHE_SIZE static_cast<size_t>(CACHE_SIZE)
@@ -60,11 +60,11 @@ static inline double get_time_us(struct timespec start, struct timespec end)
            static_cast<double>(end.tv_nsec - start.tv_nsec) / 1e3;
 }
 
-extern "C" double launcher(DATATYPE *__restrict__ d_rhoE, DATATYPE *__restrict__ d_uv,
+extern "C" double launcher(const DATATYPE *__restrict__ d_rhoE, const DATATYPE *__restrict__ d_uv,
                            DATATYPE *__restrict__ d_rhoE_next, DATATYPE *__restrict__ d_uv_next,
-                           DATATYPE *__restrict__ Dt_next, const DATATYPE C, const DATATYPE gamma,
+                           DATATYPE *__restrict__ Dt_next, const DATATYPE C_min, const DATATYPE gamma,
                            const DATATYPE gamma_minus_one, const DATATYPE divgamma, const DATATYPE K,
                            const size_t NB_X, const size_t NB_Y, const DATATYPE &DtDx, const DATATYPE &DtDy,
-                           const DATATYPE &min_spacing, sycl::queue queue);
+                           sycl::queue queue);
 
 #endif // KERNEL_H_

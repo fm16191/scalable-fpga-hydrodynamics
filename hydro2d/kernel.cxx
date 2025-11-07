@@ -133,8 +133,7 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE
                              DATATYPE *__restrict__ d_rhoE_next, DATATYPE *__restrict__ d_uv_next,
                              const DATATYPE K, const DATATYPE gamma, const DATATYPE gamma_minus_one,
                              const DATATYPE divgamma, const size_t &NB_X, const size_t &NB_Y, const DATATYPE &DtDx,
-                             const DATATYPE &DtDy, const DATATYPE &min_spacing, const DATATYPE C,
-                             DATATYPE *__restrict__ Dt_next)
+                             const DATATYPE &DtDy, const DATATYPE &C_min, DATATYPE *__restrict__ Dt_next)
 {
     const size_t x_stride = NB_X + 2;
     const size_t y_stride = NB_Y + 2;
@@ -145,7 +144,8 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE
     DATATYPE cache_U_uy[CACHE_SIZE];
     DATATYPE cache_U_E[CACHE_SIZE];
 
-    DATATYPE next_min_Dt = LITERAL(1e20);
+    // DATATYPE next_min_Dt = LITERAL(1e20);
+    DATATYPE max_speed = ZERO;
 
     // Need to visit all cells except the opposite, in order to get ghost cells in cache.
     // Skip first and last cell, since this is a first order stencil.
@@ -153,10 +153,10 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE
         size_t index_ipoj = k;
         size_t index_ij = k - y_stride;
         size_t cache_index_ipoj = k & (CACHE_SIZE - 1);
-        cache_U_rho[cache_index_ipoj] = d_rhoE[2*k];
-        cache_U_ux[cache_index_ipoj]  = d_uv[2*k];
-        cache_U_uy[cache_index_ipoj]  = d_uv[2*k+1];
-        cache_U_E[cache_index_ipoj]   = d_rhoE[2*k+1];
+        cache_U_rho[cache_index_ipoj] = d_rhoE[2*index_ipoj];
+        cache_U_E[cache_index_ipoj]   = d_rhoE[2*index_ipoj+1];
+        cache_U_ux[cache_index_ipoj]  = d_uv  [2*index_ipoj];
+        cache_U_uy[cache_index_ipoj]  = d_uv  [2*index_ipoj+1];
 
         // ipoj row and col
         const size_t row_pos = k / y_stride;
@@ -256,8 +256,6 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE
         // Care, we also inverted left & right for j+1 and i+1 fluxes, so need to minus fx2 and fy2.
 
         // Next conservative values
-        [[intel::fpga_register]] DATATYPE U_rho_next, U_u_next, U_v_next, U_E_next;
-
         DATATYPE x_rho = DtDx * (fx1_rho - fx2_rho);
         DATATYPE x_ux  = DtDx * (fx1_ux  - fx2_ux );
         DATATYPE x_uy  = DtDx * (fx1_uy  - fx2_uy );
@@ -268,14 +266,15 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE
         DATATYPE y_uy  = DtDy * (fy1_ux  - fy2_ux );
         DATATYPE y_E   = DtDy * (fy1_E   - fy2_E  );
 
+        [[intel::fpga_register]] DATATYPE U_rho_next, U_u_next, U_v_next, U_E_next;
         U_rho_next = U_rho_right + x_rho + y_rho;
         U_u_next   = U_ux_right  + x_ux  + y_ux ;
         U_v_next   = U_uy_right  + x_uy  + y_uy ;
         U_E_next   = U_p_right   + x_E   + y_E  ;
 
         d_rhoE_next[2*index_next]   = U_rho_next;
-        d_uv_next[2*index_next]     = U_u_next;
-        d_uv_next[2*index_next+1]   = U_v_next;
+        d_uv_next  [2*index_next]   = U_u_next;
+        d_uv_next  [2*index_next+1] = U_v_next;
         d_rhoE_next[2*index_next+1] = U_E_next;
 
         // now compute Dt_next
@@ -306,13 +305,17 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE
 
             // Compute Dt
             DATATYPE Unorm = SQRT(temp_e_int);
-            DATATYPE next_local_Dt = min_spacing / (c_s + Unorm);
+            // DATATYPE next_local_Dt = min_spacing / (c_s + Unorm);
+            DATATYPE speed = c_s + Unorm;
 
-            if (next_local_Dt < next_min_Dt) next_min_Dt = next_local_Dt;
+            // if (next_local_Dt < next_min_Dt) next_min_Dt = next_local_Dt;
+            // next_min_Dt = MMIN(next_min_Dt, next_local_Dt);
+            max_speed = MMAX(speed, max_speed);
         }
     }
 
-    *Dt_next = C * next_min_Dt;
+    // *Dt_next = C * next_min_Dt;
+    *Dt_next = C_min / max_speed;
 }
 
 /*** Launcher for the device kernels (update boundary conditions, Dt computation, Hydro computation)
@@ -325,12 +328,12 @@ static void kernel_hydro_fvm(const DATATYPE *__restrict__ d_rhoE, const DATATYPE
  * @param queue the device queue
  */
 // extern "C" double launcher(const bool x_border_type, DATATYPE *__restrict__ d_rho, DATATYPE *__restrict__ d_u, DATATYPE *__restrict__ d_v,
-extern "C" double launcher(DATATYPE *__restrict__ d_rhoE, DATATYPE *__restrict__ d_uv,
+extern "C" double launcher(const DATATYPE *__restrict__ d_rhoE, const DATATYPE *__restrict__ d_uv,
                            DATATYPE *__restrict__ d_rhoE_next, DATATYPE *__restrict__ d_uv_next,
-                           DATATYPE *__restrict__ Dt_next, const DATATYPE C, const DATATYPE gamma,
+                           DATATYPE *__restrict__ Dt_next, const DATATYPE C_min, const DATATYPE gamma,
                            const DATATYPE gamma_minus_one, const DATATYPE divgamma, const DATATYPE K,
                            const size_t NB_X, const size_t NB_Y, const DATATYPE &DtDx, const DATATYPE &DtDy,
-                           const DATATYPE &min_spacing, sycl::queue queue)
+                           sycl::queue queue)
 {
     struct timespec fpga_hydro_compute_t1, fpga_hydro_compute_t2;
 
@@ -338,7 +341,7 @@ extern "C" double launcher(DATATYPE *__restrict__ d_rhoE, DATATYPE *__restrict__
     queue.submit([&](sycl::handler &h) {
         h.single_task([=]() [[intel::kernel_args_restrict]] {
             kernel_hydro_fvm(d_rhoE, d_uv, d_rhoE_next, d_uv_next, K, gamma, gamma_minus_one, divgamma, NB_X, NB_Y,
-                             DtDx, DtDy, min_spacing, C, Dt_next);
+                             DtDx, DtDy, C_min, Dt_next);
         });
     });
     queue.wait();
@@ -351,7 +354,7 @@ extern "C" double launcher(DATATYPE *__restrict__ d_rhoE, DATATYPE *__restrict__
     queue.submit([&](sycl::handler &h) {
         h.single_task([=]() [[intel::kernel_args_restrict]] {
             kernel_hydro_fvm(d_rhoE, d_uv, d_rhoE_next, d_uv_next, K, gamma, gamma_minus_one, divgamma, NB_X, NB_Y,
-                             DtDx, DtDy, min_spacing, C, Dt_next);
+                             DtDx, DtDy, C_min, Dt_next);
         });
     });
     queue.wait();

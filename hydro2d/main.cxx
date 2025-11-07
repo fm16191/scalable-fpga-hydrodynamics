@@ -55,8 +55,9 @@ class sub_domain {
     size_t x_stride, y_stride;   // Domain dimensions including ghost cells
     size_t domain_size;          // Total elements including ghost cells (x_stride * y_stride)
     size_t max_device_elements;  // Maximum device elements for alignment (size_max)
-    size_t buffer_size_bytes;    // Size in bytes for actual data transfers (2 * domain_size * sizeof(DATATYPE))
-
+    size_t buffer_size_bytes_rhoE;    // Size in bytes for actual data transfers (2 * domain_size * sizeof(DATATYPE))
+    size_t buffer_size_bytes_uv;    // Size in bytes for actual data transfers (2 * domain_size * sizeof(DATATYPE))
+    
     vector<DATATYPE> h_rhoE, h_uv;
 
     // Device pointers - allocated with max_device_elements for alignment/performance
@@ -66,15 +67,18 @@ class sub_domain {
 
     // Dummy constructor
     // Using std::optional would be a great improvement.
-    sub_domain(sycl::queue &q) : queue(q), nb_x(0), nb_y(0), x_stride(0), y_stride(0), 
-                                 domain_size(0), max_device_elements(0), buffer_size_bytes(0) {}
+    sub_domain(sycl::queue &q)
+        : queue(q), nb_x(0), nb_y(0), x_stride(0), y_stride(0), domain_size(0), max_device_elements(0),
+          buffer_size_bytes_rhoE(0), buffer_size_bytes_uv(0)
+    { }
 
     // Constructor
     sub_domain(sycl::queue &q, size_t nx, size_t ny, size_t max_elements) : queue(q), nb_x(nx), nb_y(ny), max_device_elements(max_elements) {
-        x_stride = nb_x + 2 * ghost_size;
-        y_stride = nb_y + 2 * ghost_size;
+        x_stride = nb_x + 2*ghost_size;
+        y_stride = nb_y + 2*ghost_size;
         domain_size = x_stride * y_stride;
-        buffer_size_bytes = 2 * domain_size * sizeof(DATATYPE);  // Size for actual data transfers
+        buffer_size_bytes_rhoE = 2*domain_size * sizeof(DATATYPE); // Size for actual data transfers
+        buffer_size_bytes_uv   = 2*domain_size * sizeof(DATATYPE); // Size for actual data transfers
         init();
     }
 
@@ -85,8 +89,29 @@ class sub_domain {
     sub_domain(const sub_domain &) = delete;
     sub_domain &operator=(const sub_domain &) = delete;
 
-    // Move constructor: defaulted
-    sub_domain(sub_domain &&other) noexcept = default;
+    // Move constructor
+    sub_domain(sub_domain &&other) noexcept
+        : queue(other.queue), nb_x(other.nb_x), nb_y(other.nb_y), x_stride(other.x_stride),
+          y_stride(other.y_stride), domain_size(other.domain_size), max_device_elements(other.max_device_elements),
+          buffer_size_bytes_rhoE(other.buffer_size_bytes_rhoE), buffer_size_bytes_uv(other.buffer_size_bytes_uv),
+          h_rhoE(std::move(other.h_rhoE)), h_uv(std::move(other.h_uv))
+    {
+        // Pilfer device pointers
+        d_rhoE      = other.d_rhoE;
+        d_uv        = other.d_uv;
+        d_rhoE_next = other.d_rhoE_next;
+        d_uv_next   = other.d_uv_next;
+        Dt_next     = other.Dt_next;
+
+
+        // Nullify other's pointers so its destructor does nothing
+        other.d_rhoE      = nullptr;
+        other.d_uv        = nullptr;
+        other.d_rhoE_next = nullptr;
+        other.d_uv_next   = nullptr;
+        other.Dt_next     = nullptr;
+    }
+
     sub_domain &operator=(sub_domain &&other) noexcept = delete;
 
   private:
@@ -164,8 +189,11 @@ static void write_results(const vector<vector<sub_domain>> &subdomains, const si
                     const size_t i = SUBDOMAIN_SIZE_X * sd_i + cur_i;
                     const size_t j = SUBDOMAIN_SIZE_Y * sd_j + cur_j;
 
-                    buffer << i << ',' << j << ',' << cur.h_rhoE[2*local_sd_index] << ',' << cur.h_rhoE[2*local_sd_index+1] << ','
-                           << cur.h_uv[2*local_sd_index] << ',' << cur.h_uv[2*local_sd_index+1] << '\n';
+                    buffer << i << ',' << j << ',' 
+                           << cur.h_rhoE[2*local_sd_index] << ','
+                           << cur.h_rhoE[2*local_sd_index+1] << ','
+                           << cur.h_uv  [2*local_sd_index] << ','
+                           << cur.h_uv  [2*local_sd_index+1] << '\n';
                 }
             }
         }
@@ -220,7 +248,7 @@ static double compute_total_mass(const vector<vector<sub_domain>> &subdomains)
             for (size_t cur_i = ghost_size; cur_i < cur.x_stride - ghost_size; ++cur_i) {
                 for (size_t cur_j = ghost_size; cur_j < cur.y_stride - ghost_size; ++cur_j) {
                     const size_t local_sd_index = cur_i * cur.y_stride + cur_j;
-                    long double var = static_cast<long double>(cur.h_rhoE[2 * local_sd_index]);
+                    long double var = static_cast<long double>(cur.h_rhoE[2*local_sd_index]);
                     long double t = total_mass + var;
                     // Kahan summation compensation: improves numerical accuracy by tracking lost low-order bits during floating-point addition.
                     if (fabsl(total_mass) >= var) c += (total_mass - t) + var;
@@ -253,7 +281,7 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
                                           const DATATYPE u_inside, const DATATYPE u_outside,
                                           const DATATYPE p_inside, const DATATYPE p_outside,
                                           const DATATYPE default_ux, const DATATYPE default_uy, DATATYPE &min_Dt,
-                                          const DATATYPE C, const DATATYPE min_spacing, const DATATYPE gamma)
+                                          const DATATYPE C_min, const DATATYPE gamma)
 {
     // Init condition : a very dense circle 1/4 the size of the simulation at its center
     min_Dt = LITERAL(1e20);
@@ -271,8 +299,8 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
                                    (double(j) - center_y) * (double(j) - center_y));
             const size_t local_sd_index = (cur_i+1) * cur.y_stride + (cur_j+1);
 
-            DATATYPE U_rho, inv_Q_rho, U_ux, U_uy, U_p;
-            DATATYPE Q_rho, Q_ux, Q_uy, Q_p;
+            DATATYPE U_rho, U_ux, U_uy, U_p;
+            DATATYPE Q_rho, inv_Q_rho, Q_ux, Q_uy, Q_p;
 
             U_rho = (distance <= radius ? u_inside : u_outside);
             U_p   = (distance <= radius ? p_inside : p_outside) / gamma_minus_one;
@@ -302,7 +330,7 @@ static void set_init_conditions_diffusion(sub_domain &cur, const size_t base_i, 
 
             // Compute Dt
             DATATYPE Unorm = SQRT(temp_e_int);
-            DATATYPE local_Dt = C * min_spacing / (c_s + Unorm);
+            DATATYPE local_Dt = C_min / (c_s + Unorm);
 
             min_Dt = std::min(min_Dt, local_Dt);
         }
@@ -314,8 +342,8 @@ static void update_bound(const sub_domain &from, sub_domain &to, const size_t in
 {
     to.h_rhoE[2*index_to]   = from.h_rhoE[2*index_from];   // rho
     to.h_rhoE[2*index_to+1] = from.h_rhoE[2*index_from+1]; // E
-    to.h_uv[2*index_to]     = from.h_uv[2*index_from];     // u
-    to.h_uv[2*index_to+1]   = from.h_uv[2*index_from+1];   // v
+    to.h_uv  [2*index_to]   = from.h_uv  [2*index_from];   // u
+    to.h_uv  [2*index_to+1] = from.h_uv  [2*index_from+1]; // v
 }
 
 static void update_ghost_cells_single_device(vector<vector<sub_domain>> &subdomains, it_timers_t &T){
@@ -472,7 +500,7 @@ int main(int argc, char *argv[])
         if (write_interval) buffer << "  Write interval                : " << write_interval << "\n";
 
         // Check cache size
-        needed_cache_size = 2 * (NB_Y + 2 * ghost_size) + 1;
+        needed_cache_size = 2 * (NB_Y + 2*ghost_size) + 1;
         buffer << "\n"
                << "  Device Max cache size (2*nb_y)                : " << CACHE_SIZE << "\n"
                << "  Used cache size                               : " << needed_cache_size << "\n";
@@ -516,15 +544,15 @@ int main(int argc, char *argv[])
 
     // Requirements
     constexpr size_t arrays_count = 2 * NBVAR;
-    const size_t domain_size = (NB_X + 2 * ghost_size) * (NB_Y + 2 * ghost_size);
+    const size_t domain_size = (NB_X + 2*ghost_size) * (NB_Y + 2*ghost_size);
     const size_t bytes_needed = sizeof(DATATYPE) * arrays_count * domain_size;
     const double needed_mem_gb = double(bytes_needed) / double(one_gb) / nprocs;
     // size_t max_problem_size = size_t(sqrt(double(global_mem_b) / double(sizeof(DATATYPE) * arrays_count)));
 
 #if FPGA_HARDWARE
     // Safety offset used when estimating the maximum device elements to allocate.
-    constexpr size_t DEVICE_OFFSET = 8095;
-    size_t max_device_elements = global_mem_b / arrays_count / sizeof(DATATYPE) - DEVICE_OFFSET; // - k
+    size_t max_device_elements = (global_mem_b/sizeof(DATATYPE) - bc_size*2 - 1) / arrays_count - 2000;
+    //                                                                    ^ 2 arrays, in, out
 #else
     size_t max_device_elements = domain_size;
 #endif
@@ -576,6 +604,7 @@ int main(int argc, char *argv[])
 
     constexpr DATATYPE gamma_minus_one = gamma - ONE;
     constexpr DATATYPE divgamma = ONE / gamma_minus_one;
+    const DATATYPE C_min = C * min_spacing;
 
     // Global scope within main/simulation function
     DATATYPE Dt_local;                // Host-side, used by all ranks
@@ -614,12 +643,12 @@ int main(int argc, char *argv[])
 
             fprintf(stderr, "Init device arrays ...       ");
             set_init_conditions_diffusion(cur, base_i, base_j, u_inside, u_outside, p_inside, p_outside,
-                                          default_ux, default_uy, min_Dt, C, min_spacing, gamma);
+                                          default_ux, default_uy, min_Dt, C_min, gamma);
             fprintf(stderr, "done\n");
 
             // Copy initial data to device using precomputed buffer size
-            queue.memcpy(cur.d_rhoE, cur.h_rhoE.data(), cur.buffer_size_bytes);
-            queue.memcpy(cur.d_uv  , cur.h_uv.data()  , cur.buffer_size_bytes);
+            queue.memcpy(cur.d_rhoE, cur.h_rhoE.data(), cur.buffer_size_bytes_rhoE);
+            queue.memcpy(cur.d_uv  , cur.h_uv.data()  , cur.buffer_size_bytes_uv);
             queue.wait();
 
             first_Dt = std::min(first_Dt, min_Dt);
@@ -702,9 +731,9 @@ int main(int argc, char *argv[])
                 // fprintf(stderr, " done \n");
 
                 printf("[rank %d] iteration #%ld - starting launcher [%lu][%lu] ...\n", rank, it, sd_i, sd_j);
-                double fpga_hydro_compute = launcher(
-                    cur.d_rhoE, cur.d_uv, cur.d_rhoE_next, cur.d_uv_next, cur.Dt_next, C, gamma,
-                    gamma_minus_one, divgamma, K, cur.nb_x, cur.nb_y, DtDx, DtDy, min_spacing, queue);
+                double fpga_hydro_compute =
+                    launcher(cur.d_rhoE, cur.d_uv, cur.d_rhoE_next, cur.d_uv_next, cur.Dt_next, C_min, gamma,
+                             gamma_minus_one, divgamma, K, cur.nb_x, cur.nb_y, DtDx, DtDy, queue);
                 queue.wait();
                 printf("[rank %d] done\n", rank);
 
@@ -766,18 +795,19 @@ int main(int argc, char *argv[])
                     sub_domain &cur = subdomains[sd_i][sd_j];
 
                     // Copy full buffer back to host for output
-                    queue.memcpy(cur.h_rhoE.data(), cur.d_rhoE, cur.buffer_size_bytes);
-                    queue.memcpy(cur.h_uv.data()  , cur.d_uv  , cur.buffer_size_bytes);
+                    queue.memcpy(cur.h_rhoE.data(), cur.d_rhoE, cur.buffer_size_bytes_rhoE);
+                    queue.memcpy(cur.h_uv.data()  , cur.d_uv  , cur.buffer_size_bytes_uv);
                     queue.wait();
                 }
             }
 
+            MPI_Barrier(MPI_COMM_WORLD);
             ensure_mass_conservation(initial_mass, subdomains, it, t);
             write_results(subdomains, it, t);
         }
 
-        if (rank == 0) printf("[it=%4lu] hydro_fvm compute time t=%.4e (Dt=%.3e) : %.5f s (%.2f ms, %.0f us, %.0f us, %.0f us, %.2f ms)\n", it, t, Dt_local,
-            T->total_usage / 1e6, T->host_to_device / 1e3, T->boundaries_y,
+        if (rank == 0) printf("[it=%4lu] hydro_fvm compute time t=%.4e (Dt=%.3e) : %.5f s (%.2f ms, %.0f us, %.0f us, %.0f us, %.2f ms)\n",
+                    it, t, Dt_local, T->total_usage / 1e6, T->host_to_device / 1e3, T->boundaries_y,
                    T->boundaries_x, T->total_compute, T->device_to_host / 1e3);
 
         ++it;
@@ -796,8 +826,8 @@ int main(int argc, char *argv[])
             sub_domain &cur = subdomains[sd_i][sd_j];
 
             // Copy full buffer back to host for final output
-            queue.memcpy(cur.h_rhoE.data(), cur.d_rhoE, cur.buffer_size_bytes);
-            queue.memcpy(cur.h_uv.data(), cur.d_uv, cur.buffer_size_bytes);
+            queue.memcpy(cur.h_rhoE.data(), cur.d_rhoE, cur.buffer_size_bytes_rhoE);
+            queue.memcpy(cur.h_uv.data()  , cur.d_uv  , cur.buffer_size_bytes_uv);
             queue.wait();
         }
     }
@@ -857,7 +887,7 @@ int main(int argc, char *argv[])
         printf("Mass change : %.2e\n", final_mass_change);
 
         const double total_bytes = arrays_count * problem_size * sizeof(DATATYPE);
-        const size_t y_stride = NB_Y + 2 * ghost_size;
+        const size_t y_stride = NB_Y + 2*ghost_size;
         const size_t y_stride_bytes = NBVAR * y_stride * sizeof(DATATYPE);
 
         printf("Estimated Throughput : %.3f GB/s (all code)\n", throughput(total_bytes, res_total_usage.mean));
